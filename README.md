@@ -1,2 +1,2 @@
-lineaireaglebra
+lineaire algebra
 ===============
