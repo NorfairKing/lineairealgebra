@@ -239,7 +239,7 @@ Geval 1: $k=1$
 0 &  0 & 0 & 0
 \end{pmatrix}
 \]
-Antwoord:\\
+Antwoord:
 \[
 V=\{ (1-a-b,a,b) | a,b \in \mathbb{R}\}
 \]\\
@@ -270,7 +270,7 @@ Geval 2a: $k = -2$\\
 0 &  0 &  0 & 1
 \end{pmatrix}
 \]
-Antwoord:\\
+Antwoord:
 \[
 V=\emptyset
 \]\\
@@ -292,14 +292,99 @@ Geval 2b: $k\neq-2$\\
 0 &  0 &  1 & \frac{1}{k+2}
 \end{pmatrix}
 \]
-Antwoord:\\
+Antwoord:
 \[
 V=\{(\frac{3}{k+2},\frac{1}{k+2},\frac{1}{k+2})\}
 \]\\
-
+\textbf{Samenvatting}:\\
+Als $k=1$ dan heeft het stelsel oneindig veel oplossingen:
+\[
+V=\{ (1-a-b,a,b) | a,b \in \mathbb{R}\}
+\]
+Als $k=-2$ dan heeft het stelsel geen oplossingen:
+\[
+V=\emptyset
+\]
+Anders heeft het stelsel precies één oplossing:
+\[
+V=\{(\frac{3}{k+2},\frac{1}{k+2},\frac{1}{k+2})\}
+\]
 
 \subsubsection*{b)}
+\begin{center}
+Wissel R1 en R2
+\end{center}
+\[
+\begin{pmatrix}
+1 &  k &  k+1\\
+k &  1 &  2
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - k\cdot R3\]
+\[
+\begin{pmatrix}
+1 &  k &  k+1\\
+0 &  1-k^2 &  -k^2-k+2
+\end{pmatrix}
+\]\\
+Geval1: $k=1$\\
+\[
+\begin{pmatrix}
+1 &  1 &  2\\
+0 &  0 &  0
+\end{pmatrix}
+\]
+Antwoord:
+\[
+V=\{(2-t,t) | t \in \mathbb{R}\}
+\]\\
+Geval2: $k=-1$\\
+\[
+\begin{pmatrix}
+1 & -1 &  0\\
+0 &  0 &  2
+\end{pmatrix}
+\]
+Antwoord:
+\[
+V=\emptyset
+\]\\
+Geval3: $k\neq 1 \wedge k\neq -1$\\
+\[ R2 \longmapsto \frac{1}{1-k^2}\cdot R2 \]
+\[
+\begin{pmatrix}
+1 &  k &  k+1\\
+0 &  1 &  -\frac{k+2}{k+1}
+\end{pmatrix}
+\]
+\[ R1 \longmapsto R1-k\cdot R2 \]
+\[
+\begin{pmatrix}
+1 &  0 &  \frac{2k^2+4k+1}{k+1}\\
+0 &  1 &  -\frac{k+2}{k+1}
+\end{pmatrix}
+\]
+Antwoord:
+\[
+V=\left\lbrace\left(\frac{2k^2+4k+1}{k+1},-\frac{k+2}{k+1}\right)\right\rbrace
+\]\\
+\textbf{Samenvatting}:\\
+Als $k=1$ dan heeft het stelsel oneindig veel oplossingen:
+\[
+V=\{(2-t,t) | t \in \mathbb{R}\}
+\]
+Als $k=-1$ dan heeft het stelsel geen oplossingen:
+\[
+V=\emptyset
+\]
+Anders heeft het stelsel precies één oplossing:
+\[
+V=\left\lbrace\left(\frac{2k^2+4k+1}{k+1},-\frac{k+2}{k+1}\right)\right\rbrace
+\]
+
 \subsubsection*{c)}
+
+
 
 \section{Opdrachten}
 \subsection*{opdracht 1.2}
