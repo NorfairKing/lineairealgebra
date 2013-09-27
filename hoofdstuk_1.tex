@@ -494,8 +494,185 @@ Anders heeft het stelsel precies één oplossing:
 V=\left\lbrace\left(2\frac{k+2}{k},-2,-2\right)\right\rbrace
 \]
 
+\subsection*{oef 13}
+
+\subsection*{oef 14}
+
+\subsection*{oef 15}
+\begin{center}
+Wissel R1 en R3
+\end{center}
+\[
+\begin{pmatrix}
+1 & 1 & ab & 1\\
+a & 1 & b & 1\\
+1 & a & b & 1\\
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - a\cdot R1 \]
+\[ R3 \longmapsto R3 - R1 \]
+\[
+\begin{pmatrix}
+1 & 1 & ab & 1\\
+0 & 1-a & b-a^2b & 1-a\\
+0 & a-1 & b-ab & 0\\
+\end{pmatrix}
+\]
+Geval 1: $a=1$
+\[
+\begin{pmatrix}
+1 & 1 & b & 1\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0\\
+\end{pmatrix}
+\]
+Antwoord:
+\[
+V = \{ (1-p-bq,p,q) | p,q \in \mathbb{R} \}
+\]\\
+Geval 2: $a \neq -1$
+\[ R2 \longmapsto \frac{1}{1-a}\cdot R2 \]
+\[ R3 \longmapsto \frac{1}{1-a}\cdot R3 \]
+\[
+\begin{pmatrix}
+1 & 1 & ab & 1\\
+0 & 1 & b(1+a) & 1\\
+0 & -1 & b & 0\\
+\end{pmatrix}
+\]
+\[ R1 \longmapsto R1 - R2 \]
+\[ R3 \longmapsto R3 + R2 \]
+\[
+\begin{pmatrix}
+1 & 0 & -b & 0\\
+0 & 1 & b(1+a) & 1\\
+0 & 0 & b(2+a) & 1\\
+\end{pmatrix}
+\]
+Geval 2a: $b=0 \vee a=-2$
+\[
+\begin{pmatrix}
+1 & 0 & -b & 0\\
+0 & 1 & b(1+a) & 1\\
+0 & 0 & 0 & 1\\
+\end{pmatrix}
+\]
+Antwoord:
+\[
+V=\emptyset
+\]\\
+Geval 2b: $b\neq \wedge a \neq -2$
+\[ R3 \longmapsto \frac{1}{b(2+a)}\cdot R3 \]
+\[
+\begin{pmatrix}
+1 & 0 & -b & 0\\
+0 & 1 & b(1+a) & 1\\
+0 & 0 & 1 & \frac{1}{b(2+a)}\\
+\end{pmatrix}
+\]
+\[ R1 \longmapsto R2 + b\cdot R3 \]
+\[ R2 \longmapsto R2 - b(1+a)\cdot R3 \]
+\[
+\begin{pmatrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & \frac{b(2+a)-1}{b(2+a)}\\
+0 & 0 & 1 & \frac{1}{b(2+a)}\\
+\end{pmatrix}
+\]
+Antwoord:
+\[
+V=\left\lbrace\left(0,\frac{b(2+a)-1}{b(2+a)}, \frac{1}{b(2+a)}\right)\right\rbrace
+\]\\
+\textbf{Samenvatting}:\\
+Als  $b=0 \vee a=-2$ dan heeft het stelsel oneindig veel oplossingen:
+\[
+V = \{ (1-p-bq,p,q) | p,q \in \mathbb{R} \}
+\]
+Als $k=-1$ dan heeft het stelsel geen oplossingen:
+\[
+V=\emptyset
+\]
+Anders heeft het stelsel precies één oplossing:
+\[
+V=\left\lbrace\left(0,\frac{b(2+a)-1}{b(2+a)}, \frac{1}{b(2+a)}\right)\right\rbrace
+\]
+
 \section{Opdrachten}
 \subsection*{opdracht 1.2}
+Om op een matrix een ERO uit te voeren, berekenen we eigenlijk de vermenigvuldiging van de matrix met de corresponderende elementaire matrix. Dus: $M' = M \cdot E$. Om de ERO om te keren vermenigvuldigen we $M'$ met een matrix $E^{-1}$ zodat $M'\cdot E^{-1} = M \cdot I = M$.
+Om aan te tonen dat alle elementaire rijoperaties inverteerbaar zijn, tonen we het aan voor elk van de EROs. Elk van de EROs komt overeen met een elementaire matrix (zie p 36). We bewijzen dat deze inverteerbaar zijn door de de inverse te construeren.
+\subsubsection*{$R_i\rightarrow \lambda R_i$}
+\[
+E=
+\begin{pmatrix}
+1 & 0 & 0 & \cdots & 0 & 0\\
+0 & 1 & 0 & \cdots & 0 & 0\\
+\vdots & \vdots & \ddots & \vdots& & \vdots\\
+0 & 0 & \cdots & \lambda & \cdots & 0\\
+\vdots & \vdots & & \vdots& \ddots & \vdots\\
+0 & 0 & \cdots & 0 & \cdots &1
+\end{pmatrix}
+\]
+met de $\lambda$ op rij $i$.\\
+De inverse hiervan is
+\[
+E^{-1}=
+\begin{pmatrix}
+1 & 0 & 0 & \cdots & 0 & 0\\
+0 & 1 & 0 & \cdots & 0 & 0\\
+\vdots & \vdots & \ddots & \vdots& & \vdots\\
+0 & 0 & \cdots & \frac{1}{\lambda} & \cdots & 0\\
+\vdots & \vdots & & \vdots& \ddots & \vdots\\
+0 & 0 & \cdots & 0 & \cdots &1
+\end{pmatrix}
+\]
+
+\subsubsection*{$R_i \leftrightarrow R_j$}
+\[
+E=
+\begin{pmatrix}
+1 & 0 & \cdots & 0 & \cdots & 0 & \cdots & 0\\
+0 & 1 & \cdots & 0 & \cdots & 0 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots& & \vdots & &\vdots\\
+0 & 0 & \cdots & 0 & \cdots & 1 & \cdots & 0\\
+\vdots & \vdots & & \vdots& \ddots & \vdots & &\vdots\\
+0 & 0 & \cdots & 1 & \cdots & 0 & \cdots & 0\\
+\vdots & \vdots & & \vdots & & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & 0 & \cdots & 0 & \cdots & 0
+\end{pmatrix}
+\]
+met de eerste $1$, niet op de hoofddiagonaal, op rij $i$ en de tweede op rij $j$.\\
+De inverse hiervan is $E^{-1} = E$
+
+\subsubsection*{$R_i \rightarrow R_i \lambda R_j$}
+\[
+E=
+\begin{pmatrix}
+1 & 0 & \cdots & 0 & \cdots & 0 & \cdots & 0\\
+0 & 1 & \cdots & 0 & \cdots & 0 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots& & \vdots & &\vdots\\
+0 & 0 & \cdots & 1 & \cdots & \lambda & \cdots & 0\\
+\vdots & \vdots & & \vdots& \ddots & \vdots & &\vdots\\
+0 & 0 & \cdots & 0 & \cdots & 1 & \cdots & 0\\
+\vdots & \vdots & & \vdots & & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & 0 & \cdots & 0 & \cdots & 0
+\end{pmatrix}
+\]
+met de $\lambda$ op rij $i$, kolom $j$.\\
+De inverse hiervan is 
+\[
+E^{-1}=
+\begin{pmatrix}
+1 & 0 & \cdots & 0 & \cdots & 0 & \cdots & 0\\
+0 & 1 & \cdots & 0 & \cdots & 0 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots& & \vdots & &\vdots\\
+0 & 0 & \cdots & 1 & \cdots & -\lambda & \cdots & 0\\
+\vdots & \vdots & & \vdots& \ddots & \vdots & &\vdots\\
+0 & 0 & \cdots & 0 & \cdots & 1 & \cdots & 0\\
+\vdots & \vdots & & \vdots & & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & 0 & \cdots & 0 & \cdots & 0
+\end{pmatrix}
+\]
 
 \subsection*{opdracht 1.23}
 
