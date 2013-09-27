@@ -206,6 +206,101 @@ Antwoord:\\
 Als $(b_3-b_1) - \frac{2}{5}(b_2-3b_1) = 0$ dan heeft het stelsel oneindig veel oplossingen.
 Als $(b_3-b_1) - \frac{2}{5}(b_2-3b_1) \neq 0$ dan heeft het stelsel geen oplossingen ($V=\emptyset$)
 
+\subsection*{oef 10}
+
+\subsection*{oef 11}
+
+\subsection*{oef 12}
+\subsubsection*{a)}
+\begin{center}
+Wissel R1 en R3, en daarna R2 en R1.
+\end{center}
+\[
+\begin{pmatrix}
+1 &  1 &  k & 1\\
+1 &  k &  1 & 1\\
+k &  1 &  1 & 1
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - R1\]
+\[ R3 \longmapsto R3 - k \cdot	R1\]
+\[
+\begin{pmatrix}
+1 &  1 &  k & 1\\
+0 & k-1& 1-k& 0\\
+0 & 1-k & 1-k^2 & 1-k
+\end{pmatrix}
+\]
+Geval 1: $k=1$
+\[
+\begin{pmatrix}
+1 &  1 & 1 & 1\\
+0 &  0 & 0 & 0\\
+0 &  0 & 0 & 0
+\end{pmatrix}
+\]
+Antwoord:\\
+\[
+V=\{ (1-a-b,a,b) | a,b \in \mathbb{R}\}
+\]\\
+Geval 2: $k\neq 1$\\ 
+\[ R2 \longmapsto \frac{1}{k-1}R2\]
+\[ R3 \longmapsto \frac{1}{1-k}R3\]
+\[
+\begin{pmatrix}
+1 &  1 &  k & 1\\
+0 &  1 & -1 & 0\\
+0 &  1 & k+1& 1
+\end{pmatrix}
+\]
+\[ R1 \longmapsto R1-R2\]
+\[ R3 \longmapsto R3-R1\]
+\[
+\begin{pmatrix}
+1 &  0 &  k+1 & 1\\
+0 &  1 & -1 & 0\\
+0 &  0 & k+2& 1
+\end{pmatrix}
+\]\\
+Geval 2a: $k = -2$\\
+\[
+\begin{pmatrix}
+1 &  0 & -1 & 1\\
+0 &  1 & -1 & 0\\
+0 &  0 &  0 & 1
+\end{pmatrix}
+\]
+Antwoord:\\
+\[
+V=\emptyset
+\]\\
+Geval 2b: $k\neq-2$\\
+\[ R3 \longmapsto \frac{1}{k+2}R3\]
+\[
+\begin{pmatrix}
+1 &  0 &  k+1 & 1\\
+0 &  1 & -1 & 0\\
+0 &  0 &  1 & \frac{1}{k+2}
+\end{pmatrix}
+\]
+\[ R1 \longmapsto R1 - (k+1)\cdot R3\]
+\[ R2 \longmapsto R2 + R3\]
+\[
+\begin{pmatrix}
+1 &  0 &  0 & \frac{3}{k+2}\\
+0 &  1 &  0 & \frac{1}{k+2}\\
+0 &  0 &  1 & \frac{1}{k+2}
+\end{pmatrix}
+\]
+Antwoord:\\
+\[
+V=\{(\frac{3}{k+2},\frac{1}{k+2},\frac{1}{k+2})\}
+\]\\
+
+
+\subsubsection*{b)}
+\subsubsection*{c)}
+
 \section{Opdrachten}
 \subsection*{opdracht 1.2}
 
