@@ -1,0 +1,108 @@
+#+SEQ_TODO: TODO(t) DELEGATED(l) OPTIONAL(o) | DONE(d)
+# ^ De vorige lijn is voor emacs, afblijven :p
+
+* DELEGATED Hoofdstuk 1
+** DELEGATED Oefeningen
+*** DELEGATED 1.7.1
+    DEADLINE: <2013-10-01 Die>
+    1. [ ] warree
+    2. [ ] fokdiekul
+    3. [X] NorfairKing
+    4. [ ] warree
+    5. [ ] fokdiekul
+    6. [X] NorfairKing
+    7. [ ] warree
+    8. [ ] fokdiekul
+    9. [X] NorfairKing
+    10. [ ] warree
+    11. [ ] fokdiekul
+    12. [X] NorfairKing
+    13. [ ] warree
+    14. [ ] fokdiekul
+    15. [X] NorfairKing
+    16. [ ] warree
+    17. [ ] fokdiekul
+*** DELEGATED 1.7.2
+    1. [ ] warree    
+    2. [ ] fokdiekul 
+    3. [ ] NorfairKing
+    4. [ ] noiseloopr
+    5. [ ] warree
+    6. [ ] fokdiekul
+    7. [ ] NorfairKing
+    8. [ ] noiseloop
+    9. [ ] warree
+    10. [ ] fokdiekul
+    11. [ ] NorfairKing
+    12. [ ] noiseloop
+    13. [ ] warree
+    14. [ ] fokdiekul
+    15. [ ] NorfairKing
+    16. [ ] noiseloop
+    17. [ ] warree
+    18. [ ] fokdiekul
+    19. [ ] NorfairKing
+    20. [ ] noiseloop
+    21. [ ] warree
+    22. [ ] fokdiekul
+    23. [ ] NorfairKing
+** DELEGATED Opdrachten
+   DEADLINE: <2013-10-01 Die>
+   - [ ] 1.2 NorfairKing
+   - [ ] 1.23 warree
+   - [ ] 1.33 fokdiekul
+** OPTIONAL Extra bewijzen
+   DEADLINE: <2013-10-01 Die>
+   - [ ] 1.10 warree
+   - [ ] 1.44 NorfairKing
+
+* DELEGATED Hoofdstuk 2
+** DELEGATED Oefeningen
+*** DELEGATED 2.4
+    1. [ ] warree    
+    2. [ ] fokdiekul 
+    3. [ ] NorfairKin
+    4. [ ] noiseloopr
+    5. [ ] warree    
+    6. [ ] fokdiekul 
+    7. [ ] NorfairKing
+    8. [ ] noiseloop
+    9. [ ] warree    
+    10. [ ] fokdiekul 
+    11. [ ] NorfairKing
+    12. [ ] noiseloop
+    13. [ ] warree    
+    14. [ ] fokdiekul 
+    15. [ ] NorfairKing
+    16. [ ] noiseloop
+    17. [ ] warree    
+    18. [ ] fokdiekul 
+    19. [ ] NorfairKing
+    20. [ ] noiseloop
+    21. [ ] warree    
+    22. [ ] fokdiekul 
+    23. [ ] NorfairKing
+    24. [ ] noiseloop
+    25. [ ] warree    
+    26. [ ] fokdiekul 
+    27. [ ] NorfairKing
+    28. [ ] noiseloop
+** DELEGATED Opdrachten 
+   - [ ] 2.14 warree
+   - [ ] 2.16 fokdiekul
+
+* TODO Hoofdstuk 3
+** TODO Oefeningen
+** TODO Opdrachten
+
+* TODO Hoofdstuk 4
+** TODO Oefeningen
+** TODO Opdrachten   
+
+* TODO Hoofdstuk 5
+** TODO Oefeningen
+** TODO Opdrachten
+
+* TODO Hoofdstuk 6
+** TODO Oefeningen
+** TODO Opdrachten
