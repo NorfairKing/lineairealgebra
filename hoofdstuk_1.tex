@@ -1,5 +1,5 @@
 \documentclass[10pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
+
 \usepackage[english]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -19,7 +19,85 @@
 
 \section{Oefeningen}
 \subsection*{oef 1}
+\subsubsection*{Echelonvorm}
+\subsubsection*{a)}
+Do row reduction:
+$\begin{pmatrix}
+3 & -6 & 9\\
+-2 & 7 & -2\\
+0 & 1 & 5
+\end{pmatrix}
+$
+\\
+The following steps are done sequentially:
+
+\begin{enumerate}
+\item Add 2/3 x row 1 to row 2
+\item Divide row 1 by 3:
+\item Subtract 1/3 × (row 2) from row 3:
+\item Multiply row 3 by 3/11:
+\item Subtract 4 × (row 3) from row 2:
+\item Subtract 3 × (row 3) from row 1:
+\item Divide row 2 by 3:
+\end{enumerate}
+
+$
+\begin{pmatrix}
+1 & -2 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}
+$
+\subsubsection*{b)}
+Do row reduction:
+$
+\begin{pmatrix}
+3 & -2 & -5 & 4\\
+-5 & 2 & 8 & -5\\
+-3 & 4 & 7 & -3\\
+2 & -3 & -5 & 8
+\end{pmatrix}
+$
+\\
+The following steps are done sequentially:
+\begin{enumerate}
+\item Swap row 1 with row 2:
+\item Add 3/5 × (row 1) to row 2:
+\item Multiply row 1 by -1:
+\item Multiply row 2 by -5:
+\item Add 3/5 × (row 1) to row 3:
+\item Multiply row 3 by 5:
+\item Subtract 2/5 × (row 1) from row 4:
+\item Multiply row 4 by 5:
+\item Swap row 2 with row 3:
+\item Subtract 2/7 × (row 2) from row 3:
+\item Multiply row 3 by -7/5:
+\item Add 11/14 × (row 2) to row 4:
+\item Multiply row 4 by 14/5:
+\item Add 1/3 × (row 3) to row 4:
+\item Multiply row 4 by 3/259:
+\item Subtract 7 × (row 4) from row 3:
+\item Subtract 5 × (row 4) from row 1:
+\item Divide row 3 by 3:
+\item Subtract 11 × (row 3) from row 2:
+\item Add 8 × (row 3) to row 1:
+\item Divide row 2 by 14:
+\item Add 2 × (row 2) to row 1:
+\item Divide row 1 by 5:
+\end{enumerate}
+De matrix staat nu wel in gereduceerde echelon vorm, maar dat is ook een echelon vorm ;) :
+\\
+\[
+\begin{pmatrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}
+\]
+
 \subsection*{oef 2}
+
 \subsection*{oef 3}
 \subsubsection*{Echelonvorm}
 \[
