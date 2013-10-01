@@ -24,8 +24,8 @@
     17. [ ] fokdiekul
 *** DELEGATED 1.7.2
     1. [ ] noiseloop
-    2. [ ] warree
-    3. [ ] fokdiekul
+    2. [ ] fokdiekul
+    3. [ ] warree
     4. [ ] NorfairKing
     5. [ ] Matzy93
     6. [ ] egonny
