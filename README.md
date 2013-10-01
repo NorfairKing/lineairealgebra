@@ -4,7 +4,7 @@ lineaire algebra
 Deelnemers:
 
 - noiseloop
-- warree
+- warreee
 - fokdiekul
 - NorfairKing
 - Matzy93
