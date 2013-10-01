@@ -17,7 +17,7 @@
 \pagebreak
 
 
-\section{Oefeningen}
+\section{Oefeningen 1.7.1}
 \subsection*{oef 1}
 \subsubsection*{Echelonvorm}
 \subsubsection*{a)}
@@ -915,6 +915,71 @@ V= \emptyset
 V = \left\lbrace\left(\frac{4b^{3}+2a^{2}-12}{(4-a^{2})(b^{2}+3)},\frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)},\frac{2}{b^{2}+3}\right)\right\rbrace
 \]
 \end{itemize}
+
+\section{Oefeningen 1.7.2}
+\subsection*{oef 9}
+\[
+\begin{pmatrix}
+a & b & 1 & 0\\
+c & 0 & 0 & 1
+\end{pmatrix}
+\]
+\[ R1 \longmapsto \frac{1}{a} R1 \]
+\[
+\begin{pmatrix}
+1 & \frac{b}{a} & \frac{1}{a} & 0\\
+c & 0 & 0 & 1
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - c \cdot R1\]
+\[
+\begin{pmatrix}
+1 & \frac{b}{a} & \frac{1}{a} & 0\\
+0 & -\frac{bc}{a} & \frac{c}{a} & 1
+\end{pmatrix}
+\]
+\[ R2 \longmapsto -\frac{a}{bc} R2 \]
+\[
+\begin{pmatrix}
+1 & \frac{b}{a} & \frac{1}{a} & 0\\
+0 & 1 & -\frac{1}{b} & -\frac{a}{bc}
+\end{pmatrix}
+\]
+\[ R1 \longmapsto R1 - \frac{b}{a} \cdot R2\]
+\[
+\begin{pmatrix}
+1 & 0 & \frac{2}{a} & -\frac{b}{a}\\
+0 & 1 & -\frac{1}{b} & -\frac{a}{bc}
+\end{pmatrix}
+\]
+\\De inverse van 
+\[
+\begin{pmatrix}
+a & b\\
+c & 0
+\end{pmatrix}
+\]
+is dus
+\[
+\begin{pmatrix}
+\frac{2}{a} & -\frac{b}{a}\\
+-\frac{1}{b} & -\frac{a}{bc}
+\end{pmatrix}
+\]
+Waarbij $a$,$b$,$c$ niet nul mogen zijn.\\
+Nu hebben we dus het stelsel:
+\[
+\left\lbrace
+\begin{array}{c c}
+a &= \frac{2}{a}\\
+b &= -\frac{b}{a}\\
+c &= -\frac{1}{b}\\
+d &= -\frac{a}{bc}
+\end{array}
+\right.
+\]
+De oplossingen van de stelsel zijn geven een antwoord op te vraag.
+
 
 \section{Opdrachten}
 \subsection*{opdracht 1.2}

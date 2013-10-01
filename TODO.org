@@ -31,8 +31,8 @@
     6. [ ] egonny
     7. [ ] noiseloop
     8. [ ] warree
-    9. [ ] fokdiekul
-    10. [ ] NorfairKing
+    9. [X] NorfairKing
+    10. [ ] fokdiekul
     11. [ ] Matzy93
     12. [ ] egonny 
     13. [ ] noiseloop
@@ -47,7 +47,7 @@
     22. [ ] NorfairKing
     23. [ ] Matzy93
 ** DELEGATED Opdrachten
-   DEADLINE: <2013-10-01 Die>
+   DEADLINE: <2013-10-07 Mon>
    - [ ] 1.2  egonny
    - [ ] 1.23 noiseloop
    - [ ] 1.33 warree
