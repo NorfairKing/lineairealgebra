@@ -1,4 +1,4 @@
-#+SEQ_TODO: TODO(t) DELEGATED(l) OPTIONAL(o) | DONE(d)
+#+SEQ_TODO: TODO(t) DELEGATED(l) |  OPTIONAL(o) DONE(d)
 # ^ De vorige lijn is voor emacs, afblijven :p
 
 * DELEGATED Hoofdstuk 1
