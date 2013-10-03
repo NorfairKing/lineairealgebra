@@ -1004,6 +1004,7 @@ d &= -\frac{a}{bc}
 De oplossingen van de stelsel zijn geven een antwoord op te vraag.
 
 \subsection*{oef 16}
+\subsubsection*{a)}
 Te bewijzen: $A$ is inverteerbaar $\Rightarrow \not \exists k\; A^k=0$ 
 \begin{proof}
 We bewijzen een equivalente bewering:
@@ -1018,6 +1019,184 @@ Stap 3: We bewijzen dat de stelling waar is voor $n=k+1$. (inductiestap)\\
 \[ A^{k+1}=0 \Leftrightarrow A^{k}\cdot A=0 \]
 Door de inductiehypothese weten we dat $A^{k}$ niet inverteerbaar is. Dat betekent dat $A^{k}$ rij-equivalent is met een matrix met een nulrij. $A^{k} \cdot A$ is dus ook niet inverteerbaar.
 \end{proof}
+
+\subsubsection*{b)}
+\begin{proof}
+Als we een matrix $\mathbb{I}-A$ vermeningvuldigen met zijn inverse $(\mathbb{I}+A+A^2+...+A^{k+1})$ zouden we $\mathbb{I}$ moeten uitkomen.
+\[ (\mathbb{I}-A)(\mathbb{I}+A+A^2+...+A^{k+1}) \]
+\[ = \mathbb{I}^{2} -A+A-A^{2}+A^{2}-...-A^{k-1}+A^{k-1}-A^{k}\]
+\[ = \mathbb{I}-A^{k}\]
+Omdat A nilpotent is met $A^k=0$, is dit gelijk aan $\mathbb{I}$
+\end{proof}
+
+\subsubsection*{oef 22}
+\[
+A=
+\begin{pmatrix}
+1 & -1 & 0 \\
+-1 & 2 & -1 \\
+0 & -1 & 2 
+\end{pmatrix}
+\]
+\[
+R2 \longmapsto R2+R1 \sim
+\begin{pmatrix}
+1 & 0 & 0\\
+1 & 1 & 0\\
+0 & 0 & 1 
+\end{pmatrix}
+=E_1
+\]
+\[
+\begin{pmatrix}
+1 & -1 & 0 \\
+0 & 1 & -1 \\
+0 & -1 & 2  
+\end{pmatrix}
+\]
+\[
+R2 \longmapsto R3+R1 \sim
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+1 & 0 & 1 
+\end{pmatrix}
+=E_2
+\]
+\[
+\begin{pmatrix}
+1 & -1 & 0 \\
+0 & 1 & -1 \\
+0 & 0 & 1 
+\end{pmatrix}
+\]
+Nu weten we dat
+\[
+E_2 \cdot E_1 \cdot A 
+=
+\begin{pmatrix}
+1 & 0 & 0\\
+1 & 1 & 0\\
+0 & 0 & 1 
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+1 & 0 & 1 
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+1 & -1 & 0 \\
+-1 & 2 & -1 \\
+0 & -1 & 2 
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & -1 & 0 \\
+0 & 1 & -1 \\
+0 & 0 & 1 
+\end{pmatrix}
+= U
+\]
+Dus
+\[
+A = E_1^{-1} \cdot E_2^{-1} \cdot U
+=
+\begin{pmatrix}
+1 & 0 & 0\\
+-1 & 1 & 0\\
+0 & 0 & 1 
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+-1 & 0 & 1 
+\end{pmatrix}
+\cdot
+U
+=
+\begin{pmatrix}
+1 & 0 & 0\\
+-1 & 1 & 0\\
+-1 & 0 & 0
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+1 & -1 & 0 \\
+0 & 1 & -1 \\
+0 & 0 & 1 
+\end{pmatrix}
+\]
+\subsubsection*{a)}
+\[
+\begin{pmatrix}
+1 & 0 & 0\\
+1 & 1 & 0\\
+1 & 0 & 0
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+1\\1\\1
+\end{pmatrix}
+=
+\begin{pmatrix}
+1\\2\\1
+\end{pmatrix}
+\]
+en
+\[
+\begin{pmatrix}
+1 & -1 & 0 \\
+0 & 1 & -1 \\
+0 & 0 & 1 
+\end{pmatrix}
+\cdot
+X
+=
+\begin{pmatrix}
+1\\2\\1
+\end{pmatrix}
+\]
+heeft als oplossingsverzameling:
+\[
+V=\{(4,3,1)\}
+\]
+\subsubsection*{b)}
+\[
+\begin{pmatrix}
+1 & 0 & 0\\
+1 & 1 & 0\\
+1 & 0 & 0
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+2\\0\\-1
+\end{pmatrix}
+=
+\begin{pmatrix}
+2\\2\\2
+\end{pmatrix}
+\]
+en
+\[
+\begin{pmatrix}
+1 & -1 & 0 \\
+0 & 1 & -1 \\
+0 & 0 & 1 
+\end{pmatrix}
+\cdot
+X
+=
+\begin{pmatrix}
+2\\2\\2
+\end{pmatrix}
+\]
+heeft als oplossingsverzameling:
+\[
+V=\{(6,4,2)\}
+\]
 
 \section{Opdrachten}
 \subsection*{opdracht 1.2}
