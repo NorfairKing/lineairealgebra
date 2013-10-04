@@ -6,22 +6,22 @@
 ** DELEGATED Oefeningen
 *** DELEGATED 1.7.1
     DEADLINE: <2013-10-01 Die>
-    1. [ ] warree
+    1. [X] warree
     2. [ ] fokdiekul
     3. [X] NorfairKing
-    4. [ ] warree
+    4. [X] warree
     5. [ ] fokdiekul
     6. [X] NorfairKing
-    7. [ ] warree
+    7. [X] warree
     8. [ ] fokdiekul
     9. [X] NorfairKing
-    10. [ ] warree
+    10. [X] warree
     11. [ ] fokdiekul
     12. [X] NorfairKing
-    13. [ ] warree
+    13. [X] warree
     14. [ ] fokdiekul
     15. [X] NorfairKing
-    16. [ ] warree
+    16. [X] warree
     17. [ ] fokdiekul
 *** DELEGATED 1.7.2
     1. [ ] noiseloop
