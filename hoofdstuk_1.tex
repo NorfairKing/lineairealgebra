@@ -1,11 +1,10 @@
 \documentclass[10pt,a4paper]{article}
 
 \usepackage[english]{babel}
-\usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-
+\usepackage{eurosym}
 \title{Oplossingen Lineaire Algebra 2013}
 \author{TODO}
 
@@ -18,7 +17,7 @@
 \pagebreak
 
 
-\section{Oefeningen 1.7.1}
+\section{Oefeningen}
 \subsection*{oef 1}
 \subsubsection*{Echelonvorm}
 \subsubsection*{a)}
@@ -260,7 +259,186 @@ V=\{(1,2a,a,-3b,b) | a,b \in \mathbb{R} \}
 \]
 
 \subsection*{oef 7}
+\subsubsection*{a)}
+\[
+\begin{pmatrix}
+2 & -3 & 0 & 8\\
+4 & -5 & 1 & 15\\
+2 & 0 & 4 & 1
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - 2\cdot R1\]
+\[ R3 \longmapsto R3 -  R1\]
+\[
+\begin{pmatrix}
+2 & -3 & 0 & 8\\
+0 & 1 & 1 & -1\\
+0 & 3 & 4 & -7
+\end{pmatrix}
+\]
 
+\[ R3 \longmapsto R3 - 3\cdot R2\]
+
+\[
+\begin{pmatrix}
+2 & -3 & 0 & 8\\
+0 & 1 & 1 & -1\\
+0 & 0 & 1 & -4
+\end{pmatrix}
+\]
+\[
+z = 4\]
+\[y = -4-1 = -5\]
+\[2x = -(-3\cdot -5) + 8=-7\]
+\[ x = -7/2\]
+
+Antwoord:
+\[
+V = \{(-\frac{7}{2},-5,4)\}
+\]
+
+\subsubsection*{b)}
+\[
+\begin{pmatrix}
+0 & 2 & -1 & 1\\
+4 & -10 & 3 & 5\\
+3 & -3 & 0 & 6
+\end{pmatrix}
+\]
+
+\[ R1 \leftrightarrow R3\]
+\[
+\begin{pmatrix}
+3 & -3 & 0 & 6\\
+4 & -10 & 3 & 5\\
+0 & 2 & -1 & 1
+\end{pmatrix}
+\]
+
+\[ R1 \longmapsto R1 / 3\]
+\[
+\begin{pmatrix}
+1 & -1 & 0 & 2\\
+4 & -10 & 3 & 5\\
+0 & 2 & -1 & 1
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - 4\cdot R1\]
+
+\[
+\begin{pmatrix}
+1 & -1 & 0 & 2\\
+0 & -6 & 3 & -3\\
+0 & 2 & -1 & 1
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 + 3\cdot R3\]
+\[
+\begin{pmatrix}
+1 & -1 & 0 & 2\\
+0 & 0 & 0 & 0\\
+0 & 2 & -1 & 1
+\end{pmatrix}
+\]
+\[ R2 \leftrightarrow R3\]
+
+\[
+\begin{pmatrix}
+1 & -1 & 0 & 2\\
+0 & 2 & -1 & 1\\
+0 & 0 & 0 & 0
+\end{pmatrix}
+\]
+Antwoord:
+\[
+V = \{(-\frac{\lambda+1}{2} + 2,\frac{\lambda+1}{2},\lambda) | \lambda \in \mathbb{R}\}
+\]
+
+\subsubsection*{c)}
+\[
+\begin{pmatrix}
+1 & 1 & 1 &-1&-2\\
+2 & -1 & 1 & -1 & 0\\
+3 & 2 & -1 & -1 & 1\\
+1 & 1 & 3 & -3 & -8
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - 2\cdot R1\]
+\[ R3 \longmapsto R3 - 3\cdot R1\]
+\[ R4 \longmapsto R4 - R1\]
+
+\[
+\begin{pmatrix}
+1 & 1 & 1 & -1 & -2\\
+0 & -3 & -1 & 1 & 4\\
+0 & -1 & -4 & 2 & 7\\
+0 & 0 & 2 & -2 & -6
+\end{pmatrix}
+\]
+\[ R2 \leftrightarrow R3\]
+
+\[
+\begin{pmatrix}
+1 & 1 & 1 & -1 & -2\\
+0 & -1 & -4 & 2 & 7\\
+0 & -3 & -1 & 1 & 4\\
+0 & 0 & 2 & -2 & -6
+\end{pmatrix}
+\]
+\[ R2 \longmapsto  -1\cdot R2\]
+
+\[
+\begin{pmatrix}
+1 & 1 & 1 & -1 & -2\\
+0 & 1 & 4 & -2 & -7\\
+0 & -3 & -1 & 1 & 4\\
+0 & 0 & 2 & -2 & -6
+\end{pmatrix}
+\]
+\[ R3 \longmapsto R3 + 3\cdot R2\]
+\[
+\begin{pmatrix}
+1 & 1 & 1 & -1 & -2\\
+0 & 1 & 4 & -2 & -7\\
+0 & 0 & 11 & 5 & 17\\
+0 & 0 & 2 & -2 & -6
+\end{pmatrix}
+\]
+\[ R3 \leftrightarrow R4\]
+
+\[
+\begin{pmatrix}
+1 & 1 & 1 & -1 & -2\\
+0 & 1 & 4 & -2 & -7\\
+0 & 0 & 2 & -2 & -6\\
+0 & 0 & 11 & 5 & 17
+\end{pmatrix}
+\]
+\[ R3 \longmapsto  \frac{R3}{2}
+\]
+
+\[
+\begin{pmatrix}
+1 & 1 & 1 & -1 & -2\\
+0 & 1 & 4 & -2 & -7\\
+0 & 0 & 1 & -1 & -3\\
+0 & 0 & 11 & 5 & 17
+\end{pmatrix}
+\]
+\[ R4 \longmapsto R4 - 11\cdot R3\]
+
+\[
+\begin{pmatrix}
+1 & 1 & 1 & -1 & -2\\
+0 & 1 & 4 & -2 & -7\\
+0 & 0 & 1 & -1 & -3\\
+0 & 0 & 0 & 16 & 17
+\end{pmatrix}
+\]
+Antwoord:
+\[
+V = \{(-\frac{175}{8},-\frac{135}{8}, -\frac{-31}{16}, \frac{17}{16})\}
+\]
 \subsection*{oef 8}
 
 \subsection*{oef 9}
@@ -302,10 +480,29 @@ Als $(b_3-b_1) - \frac{2}{5}(b_2-3b_1) = 0$ dan heeft het stelsel oneindig veel 
 Als $(b_3-b_1) - \frac{2}{5}(b_2-3b_1) \neq 0$ dan heeft het stelsel geen oplossingen ($V=\emptyset$)
 
 \subsection*{oef 10}
+\[
+\begin{pmatrix}
+1 & h & 1\\
+2 & 3 & k\\
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - 2 \cdot R1\]
 
+\[
+\begin{pmatrix}
+1 & h & 1\\
+0 & 3-2h & k-2\\
+\end{pmatrix}
+\]
+\subsubsection*{a) Geen oplossing:}
+Als $h = \frac{3}{2}$ en $k \neq 2$
+\subsubsection*{b) Unieke oplossing:}
+Als $h \neq \frac{3}{2}$
+\subsubsection*{c) Meerdere oplossingen:}
+Als $h = \frac{3}{2}$ en $k = 2$
 \subsection*{oef 11}
 
-1\subsection*{oef 12}
+\subsection*{oef 12}
 \subsubsection*{a)}
 \begin{center}
 Wissel R1 en R3, en daarna R2 en R1.
@@ -590,6 +787,28 @@ V=\left\lbrace\left(2\frac{k+2}{k},-2,-2\right)\right\rbrace
 \]
 
 \subsection*{oef 13}
+De onderlinge stand van twee rechten bestaat uit 3 mogelijkheden:
+\begin{enumerate}
+\item Evenwijdig = geen oplossing voor het stelsel.\\
+$1-ca = 0$ en $ d -bc \neq 0$
+\item Samenvallend = oneindig veel oplossingen voor het stelsel.\\
+$1-ca = 0$ en $ d -bc = 0$
+\item Snijdend = een unieke oplossing voor het stelsel.\\
+$1-ca \neq 0$
+\end{enumerate}
+\[
+\begin{pmatrix}
+1 & a & b\\
+c & 1 & d\\
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - c \cdot R1\]
+\[
+\begin{pmatrix}
+1 & a & b\\
+0 & 1-ca & d-cb\\
+\end{pmatrix}
+\]
 
 \subsection*{oef 14}
 
@@ -691,513 +910,30 @@ Anders heeft het stelsel precies één oplossing:
 \[
 V=\left\lbrace\left(0,\frac{b(2+a)-1}{b(2+a)}, \frac{1}{b(2+a)}\right)\right\rbrace
 \]
-
-\subsection*{Extra (oefenzitting)}
-\[
-\left\lbrace
-\begin{array}{c c c c c c c}
-ax &+& 4y &+& az &=& 0\\
-x  &+& ay &+& 3z &=& b\\
-(a+1)x &+& (a+4)y &+& (a-b^{2})z &=& b-2
-\end{array}
-\right\rbrace
-\]
-De matrix die hiermee overeen komt is:
-\[
-\begin{pmatrix}
-a & 4 & a & 0\\
-1 & a & 3 & b\\
-(a+1) & (a+4) & (a-b^{2}) & (b-2)\\
-\end{pmatrix}
-\]
-\begin{center}
-Wissel R1 en R2
-\end{center}
-\[
-\begin{pmatrix}
-1 & a & 3 & b\\
-a & 4 & a & 0\\
-(a+1) & (a+4) & (a-b^{2}) & (b-2)\\
-\end{pmatrix}
-\]
-\[ R2 \longmapsto R2 - a\cdot R1 \]
-\[ R3 \longmapsto R3 - (a+1)\cdot R1 \]
-\[
-\begin{pmatrix}
-1 & a & 3 & b\\
-0 & 4-a^{2} & -2a & -ab\\
-0 & 4-a^{2} & -b^{2}-2a-3 & -2-ab\\
-\end{pmatrix}
-\]
-\\Geval 1: $a=2$
-\[
-\begin{pmatrix}
-1 & 2 & 3 & b\\
-0 & 0 & -4 & -2b\\
-0 & 0 & -b^{2}-7 & -2-2b\\
-\end{pmatrix}
-\]
-\[ R2 \longmapsto \frac{-1}{4}R2 \]
-\[
-\begin{pmatrix}
-1 & 2 & 3 & b\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & -b^{2}-7 & -2-2b\\
-\end{pmatrix}
-\]
-\[ R1 \longmapsto R1 - 3\cdot R2 \]
-\[ R3 \longmapsto R3 + (b^{2}+7)\cdot R2 \]
-\[
-\begin{pmatrix}
-1 & 2 & 0 & -\frac{b}{2}\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & 0 & \frac{b^{3}+3b-4}{2}\\
-\end{pmatrix}
-\]
-\begin{center}
-Vereenvoudig
-\end{center}
-\[
-\begin{pmatrix}
-1 & 2 & 0 & -\frac{b}{2}\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & 0 & b^{3}+3b-4\\
-\end{pmatrix}
-\]
-\\Geval 1a: $b=1$
-\[
-\begin{pmatrix}
-1 & 2 & 0 & -\frac{1}{2}\\
-0 & 0 & 1 & \frac{1}{2}\\
-0 & 0 & 0 & 0\\
-\end{pmatrix}
-\]
-Antwoord:
-\[
-V = \left\lbrace \left(-\frac{1}{2}-2\lambda,\lambda,\frac{1}{2}\right)| \lambda \in \mathbb{R}\right\rbrace
-\]
-\\Geval 1b: $b\neq 1$
-\[
-\begin{pmatrix}
-1 & 2 & 0 & -\frac{b}{2}\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & 0 & b^{3}+3b-4\\
-\end{pmatrix}
-\]
-Antwoord:
-\[
-V = \emptyset
-\]
-\\Geval 2: $a=-2$
-\[
-\begin{pmatrix}
-1 & -2 & 3 & b\\
-0 & 0 & 4 & 2b\\
-0 & 0 & 1-b^{2} & 2b-2\\
-\end{pmatrix}
-\]
-\[ R2 \longmapsto \frac{1}{4}\cdot R2 \]
-\[
-\begin{pmatrix}
-1 & -2 & 3 & b\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & 1-b^{2} & 2b-2\\
-\end{pmatrix}
-\]
-\[ R1 \longmapsto R1 - 3\cdot R2 \]
-\[ R3 \longmapsto R3 - (1-b^{2})\cdot R2 \]
-\[
-\begin{pmatrix}
-1 & -2 & 0 & -\frac{b}{2}\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & 0 & \frac{b^3+3b-4}{2}\\
-\end{pmatrix}
-\]
-\begin{center}
-Vereenvoudig
-\end{center}
-\[
-\begin{pmatrix}
-1 & -2 & 0 & -\frac{b}{2}\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & 0 & b^3+3b-4\\
-\end{pmatrix}
-\]
-\\Geval 2a: $b=1$
-\[
-\begin{pmatrix}
-1 & -2 & 0 & -\frac{1}{2}\\
-0 & 0 & 1 & \frac{1}{2}\\
-0 & 0 & 0 & 0\\
-\end{pmatrix}
-\]
-Antwoord:
-\[
-V= \left\lbrace \left(2\lambda-\frac{1}{2},\lambda,\frac{1}{2}\right)| \lambda \in \mathbb{R}\right\rbrace
-\]
-\\Geval 2b: $b \neq 1$
-\[ R3 \longmapsto \frac{1}{b^3+3b-4}R3 \]
-\[
-\begin{pmatrix}
-1 & -2 & 0 & -\frac{b}{2}\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & 0 & 1\\
-\end{pmatrix}
-\]
-Antwoord:
-\[
-V= \emptyset
-\]
-\\Geval 3: $a\neq 2 \wedge a \neq -2$ 
-\[ R2 \longmapsto \frac{1}{4-a^{2}}R2 \]
-\[
-\begin{pmatrix}
-1 & a & 3 & b\\
-0 & 1 & \frac{-2a}{4-a^{2}} & \frac{-ab}{4-a^{2}}\\
-0 & 4-a^{2} & -b^{2}-2a-3 & -2-ab\\
-\end{pmatrix}
-\]
-\[ R1 \longmapsto R1 - a \cdot R2 \]
-\[ R3 \longmapsto R3 - (4-a^{2}) \cdot R2 \]
-\[
-\begin{pmatrix}
-1 & 0 & \frac{12-a^{2}}{4-a^{2}} & \frac{4b}{4-a^{2}}\\
-0 & 1 & \frac{-2a}{4-a^{2}} & \frac{-ab}{4-a^{2}}\\
-0 & 0 & -b^{2}-3 & -2\\
-\end{pmatrix}
-\]
-\[ R3 \longmapsto -\frac{1}{b^{2}+3}R3\]
-\[
-\begin{pmatrix}
-1 & 0 & \frac{12-a^{2}}{4-a^{2}} & \frac{4b}{4-a^{2}}\\
-0 & 1 & \frac{-2a}{4-a^{2}} & \frac{-ab}{4-a^{2}}\\
-0 & 0 & 1 & \frac{2}{b^{2}+3}\\
-\end{pmatrix}
-\]
-\[ R1 \longmapsto R1 - \frac{12-a^{2}}{4-a^{2}} \cdot R3 \]
-\[ R2 \longmapsto R2 + \frac{2a}{4-a^{2}} \cdot R3 \]
-\[
-\begin{pmatrix}
-1 & 0 & 0 & \frac{4b^{3}+2a^{2}-12}{(4-a^{2})(b^{2}+3)}\\
-0 & 1 & 0 & \frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)}\\
-0 & 0 & 1 & \frac{2}{b^{2}+3}\\
-\end{pmatrix}
-\]
-Antwoord:
-\[
-V = \left\lbrace\left(\frac{4b^{3}+2a^{2}-12}{(4-a^{2})(b^{2}+3)},\frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)},\frac{2}{b^{2}+3}\right)\right\rbrace
-\]
-\\Samenvatting:
-\begin{itemize}
-\item $a=2$
-\begin{itemize}
-\item $b=1$
-\[
-V = \left\lbrace \left(-\frac{1}{2}-2\lambda,\lambda,\frac{1}{2}\right)| \lambda \in \mathbb{R}\right\rbrace
-\]
-\item $b\neq 1$
-\[
-V = \emptyset
-\]
-\end{itemize}
-\item $a=-2$
-\begin{itemize}
-\item $b=1$
-\[
-V= \left\lbrace \left(2\lambda-\frac{1}{2},\lambda,\frac{1}{2}\right)| \lambda \in \mathbb{R}\right\rbrace
-\]
-\item $b\neq 1$
-\[
-V= \emptyset
-\]
-\end{itemize}
-\item $a\neq 2 \wedge a \neq -2$ 
-\[
-V = \left\lbrace\left(\frac{4b^{3}+2a^{2}-12}{(4-a^{2})(b^{2}+3)},\frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)},\frac{2}{b^{2}+3}\right)\right\rbrace
-\]
-\end{itemize}
-\section{Oefeningen 1.7.2}
-\subsection*{oef 4}
-\subsubsection*{a)}
-\begin{proof}
-Bewijs uit het ongerijmde:\\
-Stel $A\neq 0$, neem $X_1$ en $X_2$ zodat $AX_1 = 0$ en $AX_2=0$ met $X_1\neq X_2$
-\[
-AX_1 = AX_2 = 0
-\]
-Omdat $A=A$ zijn $X_1$ en $X_2$ gelijk.
-Contradictie.
-\end{proof}
-
-\subsubsection*{b)}
-\begin{proof}
-Rechtstreeks bewijs:\\
-\[
-AX=BX \Leftrightarrow AX - BX=0
-\]
-Dus $(A-B)X=0$.
-Dit betekent volgens de stelling in 4.a dat $A-B=0$.
-Nu zien we dat $A=B$.
-\end{proof}
-
-\subsection*{oef 9}
-\[
-\begin{pmatrix}
-a & b & 1 & 0\\
-c & 0 & 0 & 1
-\end{pmatrix}
-\]
-\[ R1 \longmapsto \frac{1}{a} R1 \]
-\[
-\begin{pmatrix}
-1 & \frac{b}{a} & \frac{1}{a} & 0\\
-c & 0 & 0 & 1
-\end{pmatrix}
-\]
-\[ R2 \longmapsto R2 - c \cdot R1\]
-\[
-\begin{pmatrix}
-1 & \frac{b}{a} & \frac{1}{a} & 0\\
-0 & -\frac{bc}{a} & \frac{c}{a} & 1
-\end{pmatrix}
-\]
-\[ R2 \longmapsto -\frac{a}{bc} R2 \]
-\[
-\begin{pmatrix}
-1 & \frac{b}{a} & \frac{1}{a} & 0\\
-0 & 1 & -\frac{1}{b} & -\frac{a}{bc}
-\end{pmatrix}
-\]
-\[ R1 \longmapsto R1 - \frac{b}{a} \cdot R2\]
-\[
-\begin{pmatrix}
-1 & 0 & \frac{2}{a} & -\frac{b}{a}\\
-0 & 1 & -\frac{1}{b} & -\frac{a}{bc}
-\end{pmatrix}
-\]
-\\De inverse van 
-\[
-\begin{pmatrix}
-a & b\\
-c & 0
-\end{pmatrix}
-\]
-is dus
-\[
-\begin{pmatrix}
-\frac{2}{a} & -\frac{b}{a}\\
--\frac{1}{b} & -\frac{a}{bc}
-\end{pmatrix}
-\]
-Waarbij $a$,$b$,$c$ niet nul mogen zijn.\\
-Nu hebben we dus het stelsel:
-\[
-\left\lbrace
-\begin{array}{c c}
-a &= \frac{2}{a}\\
-b &= -\frac{b}{a}\\
-c &= -\frac{1}{b}\\
-d &= -\frac{a}{bc}
-\end{array}
-\right.
-\]
-De oplossingen van de stelsel zijn geven een antwoord op te vraag.
-
 \subsection*{oef 16}
-\subsubsection*{a)}
-Te bewijzen: $A$ is inverteerbaar $\Rightarrow \not \exists k\; A^k=0$ 
-\begin{proof}
-We bewijzen een equivalente bewering:
-\[
-\exists k\ge 1:\;A^k=0 \Rightarrow\; \text{ A is niet inverteerbaar}
-\]
-Bewijs door volledige inductie:\\
-Stap 1 $k=1$: $A=0$ (basis)
-$A$ is niet inverteerbaar.\\
-Stap 2: Stel dat de stelling waar is voor een bepaalde $n=k$. (inductiehypothese)\\
-Stap 3: We bewijzen dat de stelling waar is voor $n=k+1$. (inductiestap)\\
-\[ A^{k+1}=0 \Leftrightarrow A^{k}\cdot A=0 \]
-Door de inductiehypothese weten we dat $A^{k}$ niet inverteerbaar is. Dat betekent dat $A^{k}$ rij-equivalent is met een matrix met een nulrij. $A^{k} \cdot A$ is dus ook niet inverteerbaar.
-\end{proof}
-
-\subsubsection*{b)}
-\begin{proof}
-Als we een matrix $\mathbb{I}-A$ vermeningvuldigen met zijn inverse $(\mathbb{I}+A+A^2+...+A^{k+1})$ zouden we $\mathbb{I}$ moeten uitkomen.
-\[ (\mathbb{I}-A)(\mathbb{I}+A+A^2+...+A^{k+1}) \]
-\[ = \mathbb{I}^{2} -A+A-A^{2}+A^{2}-...-A^{k-1}+A^{k-1}-A^{k}\]
-\[ = \mathbb{I}-A^{k}\]
-Omdat A nilpotent is met $A^k=0$, is dit gelijk aan $\mathbb{I}$
-\end{proof}
-
-\subsubsection*{oef 22}
-\[
-A=
-\begin{pmatrix}
-1 & -1 & 0 \\
--1 & 2 & -1 \\
-0 & -1 & 2 
-\end{pmatrix}
-\]
-\[
-R2 \longmapsto R2+R1 \sim
-\begin{pmatrix}
-1 & 0 & 0\\
-1 & 1 & 0\\
-0 & 0 & 1 
-\end{pmatrix}
-=E_1
-\]
+Haal de gegevens van de twee tabel door de eerste:
 \[
 \begin{pmatrix}
-1 & -1 & 0 \\
-0 & 1 & -1 \\
-0 & -1 & 2  
+4 & 1 & 1 & 1 & 16800\\
+2 & 2 & 2 & 1 & 18500\\
+1 & 3 & 1 & 3 & 21700\\
+3 & 4 & 3 & 2 & 32100\\
 \end{pmatrix}
 \]
-\[
-R2 \longmapsto R3+R1 \sim
-\begin{pmatrix}
-1 & 0 & 0\\
-0 & 1 & 0\\
-1 & 0 & 1 
-\end{pmatrix}
-=E_2
-\]
+Dit oplossen geeft:
 \[
 \begin{pmatrix}
-1 & -1 & 0 \\
-0 & 1 & -1 \\
-0 & 0 & 1 
+1 & 0 & 0 & 0 & 2100\\
+0 & 1 & 0 & 0 & 3100\\
+0 & 0 & 1 & 0 & 2800\\
+0 & 0 & 0 & 1 & 2500\\
 \end{pmatrix}
 \]
-Nu weten we dat
+Dit geeft voor Laurens:
 \[
-E_2 \cdot E_1 \cdot A 
-=
-\begin{pmatrix}
-1 & 0 & 0\\
-1 & 1 & 0\\
-0 & 0 & 1 
-\end{pmatrix}
-\cdot
-\begin{pmatrix}
-1 & 0 & 0\\
-0 & 1 & 0\\
-1 & 0 & 1 
-\end{pmatrix}
-\cdot
-\begin{pmatrix}
-1 & -1 & 0 \\
--1 & 2 & -1 \\
-0 & -1 & 2 
-\end{pmatrix}
-=
-\begin{pmatrix}
-1 & -1 & 0 \\
-0 & 1 & -1 \\
-0 & 0 & 1 
-\end{pmatrix}
-= U
+Premie = 2\cdot 2100 + 3\cdot 3100 + 2\cdot 2800 + 2\cdot 2500 = 24100
 \]
-Dus
-\[
-A = E_1^{-1} \cdot E_2^{-1} \cdot U
-=
-\begin{pmatrix}
-1 & 0 & 0\\
--1 & 1 & 0\\
-0 & 0 & 1 
-\end{pmatrix}
-\cdot
-\begin{pmatrix}
-1 & 0 & 0\\
-0 & 1 & 0\\
--1 & 0 & 1 
-\end{pmatrix}
-\cdot
-U
-=
-\begin{pmatrix}
-1 & 0 & 0\\
--1 & 1 & 0\\
--1 & 0 & 0
-\end{pmatrix}
-\cdot
-\begin{pmatrix}
-1 & -1 & 0 \\
-0 & 1 & -1 \\
-0 & 0 & 1 
-\end{pmatrix}
-\]
-\subsubsection*{a)}
-\[
-\begin{pmatrix}
-1 & 0 & 0\\
-1 & 1 & 0\\
-1 & 0 & 0
-\end{pmatrix}
-\cdot
-\begin{pmatrix}
-1\\1\\1
-\end{pmatrix}
-=
-\begin{pmatrix}
-1\\2\\1
-\end{pmatrix}
-\]
-en
-\[
-\begin{pmatrix}
-1 & -1 & 0 \\
-0 & 1 & -1 \\
-0 & 0 & 1 
-\end{pmatrix}
-\cdot
-X
-=
-\begin{pmatrix}
-1\\2\\1
-\end{pmatrix}
-\]
-heeft als oplossingsverzameling:
-\[
-V=\{(4,3,1)\}
-\]
-\subsubsection*{b)}
-\[
-\begin{pmatrix}
-1 & 0 & 0\\
-1 & 1 & 0\\
-1 & 0 & 0
-\end{pmatrix}
-\cdot
-\begin{pmatrix}
-2\\0\\-1
-\end{pmatrix}
-=
-\begin{pmatrix}
-2\\2\\2
-\end{pmatrix}
-\]
-en
-\[
-\begin{pmatrix}
-1 & -1 & 0 \\
-0 & 1 & -1 \\
-0 & 0 & 1 
-\end{pmatrix}
-\cdot
-X
-=
-\begin{pmatrix}
-2\\2\\2
-\end{pmatrix}
-\]
-heeft als oplossingsverzameling:
-\[
-V=\{(6,4,2)\}
-\]
-
+\subsection*{oef 17}
 \section{Opdrachten}
 \subsection*{opdracht 1.2}
 Om op een matrix een ERO uit te voeren, berekenen we eigenlijk de vermenigvuldiging van de matrix met de corresponderende elementaire matrix. Dus: $M' = M \cdot E$. Om de ERO om te keren vermenigvuldigen we $M'$ met een matrix $E^{-1}$ zodat $M'\cdot E^{-1} = M \cdot I = M$.
