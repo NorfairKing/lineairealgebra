@@ -2,6 +2,7 @@
 # ^ De vorige lijn is voor emacs, afblijven :p
 
 * DELEGATED Hoofdstuk 1
+  DEADLINE: <2013-10-08 Die>
 ** DELEGATED Oefeningen
 *** DELEGATED 1.7.1
     DEADLINE: <2013-10-01 Die>
@@ -57,6 +58,7 @@
    - [ ] 1.44 NorfairKing
 
 * TODO Hoofdstuk 2
+  DEADLINE: <2013-11-05 Die>
 ** TODO Oefeningen
 *** TODO 2.4
     1. [ ] 
@@ -92,17 +94,21 @@
    - [ ] 2.16
 
 * TODO Hoofdstuk 3
+  DEADLINE: <2013-11-05 Die>
 ** TODO Oefeningen
 ** TODO Opdrachten
 
 * TODO Hoofdstuk 4
+  DEADLINE: <2013-11-26 Die>
 ** TODO Oefeningen
 ** TODO Opdrachten   
 
 * TODO Hoofdstuk 5
+  DEADLINE: <2013-12-10 Die>
 ** TODO Oefeningen
 ** TODO Opdrachten
 
 * TODO Hoofdstuk 6
+  DEADLINE: <2013-12-17 Die>
 ** TODO Oefeningen
 ** TODO Opdrachten
