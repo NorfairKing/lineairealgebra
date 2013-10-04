@@ -263,38 +263,38 @@ V=\{(1,2a,a,-3b,b) | a,b \in \mathbb{R} \}
 \[
 \begin{pmatrix}
 2 & -3 & 0 & 8\\
-4 & -5 & 1 & 0\\
+4 & -5 & 1 & 15\\
 2 & 0 & 4 & 1
 \end{pmatrix}
 \]
 \[ R2 \longmapsto R2 - 2\cdot R1\]
-
+\[ R3 \longmapsto R3 -  R1\]
 \[
 \begin{pmatrix}
 2 & -3 & 0 & 8\\
-0 & 1 & 1 & -16\\
+0 & 1 & 1 & -1\\
 0 & 3 & 4 & -7
 \end{pmatrix}
 \]
-\[ R1 \longmapsto R1 / 2\]
+
 \[ R3 \longmapsto R3 - 3\cdot R2\]
 
 \[
 \begin{pmatrix}
 2 & -3 & 0 & 8\\
-0 & 1 & 1 & -16\\
-0 & 0 & 1 & 41
+0 & 1 & 1 & -1\\
+0 & 0 & 1 & -4
 \end{pmatrix}
 \]
 \[
-z = 41\]
-\[y = -16 -41 = -57\]
-\[2x = -(-3\cdot -57) + 8=-164\]
-\[ x = -82\]
+z = 4\]
+\[y = -4-1 = -5\]
+\[2x = -(-3\cdot -5) + 8=-7\]
+\[ x = -7/2\]
 
 Antwoord:
 \[
-V = \{(-82,-57,41)\}
+V = \{(-\frac{7}{2},-5,4)\}
 \]
 
 \subsubsection*{b)}
@@ -480,7 +480,26 @@ Als $(b_3-b_1) - \frac{2}{5}(b_2-3b_1) = 0$ dan heeft het stelsel oneindig veel 
 Als $(b_3-b_1) - \frac{2}{5}(b_2-3b_1) \neq 0$ dan heeft het stelsel geen oplossingen ($V=\emptyset$)
 
 \subsection*{oef 10}
+\[
+\begin{pmatrix}
+1 & h & 1\\
+2 & 3 & k\\
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - 2 \cdot R1\]
 
+\[
+\begin{pmatrix}
+1 & h & 1\\
+0 & 3-2h & k-2\\
+\end{pmatrix}
+\]
+\subsubsection*{a) Geen oplossing:}
+Als $h = \frac{3}{2}$ en $k \neq 2$
+\subsubsection*{b) Unieke oplossing:}
+Als $h \neq \frac{3}{2}$
+\subsubsection*{c) Meerdere oplossingen:}
+Als $h = \frac{3}{2}$ en $k = 2$
 \subsection*{oef 11}
 
 \subsection*{oef 12}
