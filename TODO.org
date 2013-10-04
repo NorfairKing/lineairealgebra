@@ -50,8 +50,8 @@
 ** DELEGATED Opdrachten
    DEADLINE: <2013-10-07 Mon>
    - [ ] 1.2  egonny
-   - [ ] 1.23 noiseloop
-   - [ ] 1.33 warree
+   - [ ] 1.23 warree
+   - [ ] 1.33 noiseloop
 ** OPTIONAL Extra bewijzen
    DEADLINE: <2013-10-01 Die>
    - [ ] 1.10 warree
