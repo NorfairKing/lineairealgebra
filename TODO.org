@@ -55,7 +55,7 @@
 ** OPTIONAL Extra bewijzen
    DEADLINE: <2013-10-01 Die>
    - [ ] 1.10 warree
-   - [ ] 1.44 NorfairKing
+   - [X] 1.44 NorfairKing
 
 * TODO Hoofdstuk 2
   DEADLINE: <2013-11-05 Die>
