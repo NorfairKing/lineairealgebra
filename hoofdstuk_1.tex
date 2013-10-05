@@ -1517,6 +1517,64 @@ E^{-1}=
 \]
 
 \subsection*{opdracht 1.23}
-
+\subsubsection*{1.}
+\[
+AA^T \ en \ A + A^T zijn \ symmetrisch:
+\]
+\[
+AA^T = (A\cdot A^T)^T
+\]
+$$eig: \ (A\cdot B)^T = B^T \cdot A^T $$
+$$AA^T = (A^T)^T \cdot A^T$$
+$$AA^T = A \cdot A^T$$
+\\
+$$A +A^T = (A +A^T)^T$$
+$$eig: (A+B)^T = A^T + B^T$$
+$$A +A^T = A^T + (A^T)^T$$
+$$A +A^T = A^T + A$$
+$$A +A^T = A + A^T$$
+\subsubsection*{2.}
+$$A - A^T \ is \ scheefsymmetrisch:$$
+$$A - A^T = -(A+(-A^T))^T$$
+$$A - A^T = -(A^T + (-A^T)^T)$$
+$$A - A^T = -A^T + A$$
+\subsubsection*{3.}
+$$ A =  \frac{1}{2}(A + A^T) + \frac{1}{2}(A - A^T)$$
+$$ A = \frac{1}{2}(A + A^T + A - A^T)$$
+$$ A = \frac{1}{2}(2\cdot A)$$
+$$ A = A$$
+\subsubsection*{4.}
+A is een vierkant matrix.\\
+Stel A = X + Y waarbij X symmertrisch is en Y scheefsymmetrisch.\\
+Dat is: $A^T$ = A en $B^T$ = -B.\\
+$$A^T = X^T + Y^T$$
+of: $$A^T = X - Y$$
+$$A + A^T = X + Y + X - Y = 2X$$
+$$A - A^T = X + Y - X + Y = 2Y$$
+Dus:
+$$X = \frac{A + A^T}{2}$$
+$$Y = \frac{A - A^T}{2}$$
+$$A = \frac{A + A^T}{2} + \frac{A - A^T}{2}$$
+\\
+$$
+A = \begin{pmatrix}
+1 & 3 & 4\\
+0 & 2 & -1\\
+0 & 0 & 3
+\end{pmatrix}
+$$
+$$
+A = \begin{pmatrix}
+1 & \frac{3}{2} & 2\\
+\frac{3}{2} & 2 & -\frac{1}{2}\\
+2 & -\frac{1}{2} & 3
+\end{pmatrix}
++
+\begin{pmatrix}
+0 & \frac{3}{2} & 2\\
+-\frac{3}{2} & 0 & -\frac{1}{2}\\
+-2 & -\frac{1}{2} & 0
+\end{pmatrix}
+$$
 \subsection*{opdracht 1.33}
 \end{document}
