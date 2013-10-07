@@ -1,3 +1,7 @@
+*.pdf
+*.swo
+*.swp
+
 *.aux
 *.glo
 *.idx
