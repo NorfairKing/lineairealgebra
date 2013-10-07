@@ -26,7 +26,7 @@
 *** DELEGATED 1.7.2
     1. [ ] noiseloop
     2. [ ] fokdiekul
-    3. [ ] warree
+    3. [X] warree
     4. [X] NorfairKing
     5. [ ] Matzy93
     6. [X] egonny
@@ -50,7 +50,7 @@
 ** DELEGATED Opdrachten
    DEADLINE: <2013-10-07 Mon>
    - [ ] 1.2  egonny
-   - [ ] 1.23 warree
+   - [X] 1.23 warree
    - [ ] 1.33 noiseloop
 ** OPTIONAL Extra bewijzen
    DEADLINE: <2013-10-01 Die>
