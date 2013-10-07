@@ -51,6 +51,7 @@
    DEADLINE: <2013-10-07 Mon>
    - [ ] 1.2  egonny
    - [X] 1.23 warreee
+   - [ ] 1.25 in oefenzitting+
    - [ ] 1.33 noiseloop
 ** OPTIONAL Extra bewijzen
    DEADLINE: <2013-10-01 Die>
