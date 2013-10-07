@@ -10,7 +10,7 @@
     2. [ ] fokdiekul
     3. [X] NorfairKing
     4. [X] warreee
-    5. [ ] fokdiekul
+    5. [X] fokdiekul
     6. [X] NorfairKing
     7. [X] warree
     8. [ ] fokdiekul
@@ -29,34 +29,34 @@
     2. [ ] fokdiekul
     3. [X] warreee 
     4. [X] NorfairKing
-    5. [ ] Matzy93
+    5. [X] Matzy93
     6. [X] egonny
     7. [ ] noiseloop
     8. [X] warreee 
     9. [X] NorfairKing
     10. [ ] fokdiekul
-    11. [ ] Matzy93
+    11. [?] Matzy93
     12. [ ] egonny 
     13. [ ] noiseloop
     14. [ ] warreee
     15. [ ] fokdiekul
     16. [X] NorfairKing
-    17. [ ] Matzy93
+    17. [X] Matzy93
     18. [ ] egonny
     19. [ ] noiseloop
-    20. [ ] warreee
+    20. [X] warreee
     21. [ ] fokdiekul
     22. [X] NorfairKing
-    23. [ ] Matzy93
+    23. [X] Matzy93
 ** DELEGATED Opdrachten
    DEADLINE: <2013-10-13 Son>
    - [X] 1.2  egonny
    - [X] 1.23 warreee
-   - [X] 1.25 in oefenzitting+
+   - [X] 1.25 in oefenzitting
    - [ ] 1.33 noiseloop
 ** OPTIONAL Extra bewijzen
    DEADLINE: <2013-10-01 Die>
-   - [ ] 1.10 warreee
+   - [X] 1.10 warreee
    - [X] 1.44 NorfairKing
 
 * TODO Hoofdstuk 2
