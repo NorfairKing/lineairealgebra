@@ -64,6 +64,15 @@
 ** TODO Oefeningen
 *** TODO Voorbereiding
     DEADLINE: <2013-10-13 Son>
+    - [ ] 1 - egonny
+      - [ ] a - noiseloop
+      - [ ] f - warreee
+      - [ ] h - fokdiekul
+      - [ ] j - NorfairKing
+    - [ ] 3 - egonny
+    - [ ] 4 - noiseloop
+      - [ ] a - warreee
+    - [ ] 9 - fokdiekul
 *** TODO In Oefenzitting
     DEADLINE: <2013-10-20 Son>
 *** TODO Extra
