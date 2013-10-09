@@ -68,7 +68,7 @@
       - [ ] a - noiseloop
       - [ ] f - warreee
       - [ ] h - fokdiekul
-      - [ ] j - NorfairKing
+      - [X] j - NorfairKing
     - [ ] 3 - egonny
     - [ ] 4 - noiseloop
       - [ ] a - warreee
