@@ -42,7 +42,7 @@
     15. [ ] fokdiekul
     16. [X] NorfairKing
     17. [X] Matzy93
-    18. [ ] egonny
+    18. [X] egonny
     19. [ ] noiseloop
     20. [X] warreee
     21. [ ] fokdiekul

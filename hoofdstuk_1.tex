@@ -1506,6 +1506,155 @@ A*I=I\\
 A=I
 \end{gather*}
 
+\subsection*{oef 18}
+\subsubsection*{a)}
+\[
+\begin{pmatrix}
+3 & -6 & 9\\
+-2 & 7 & -2\\
+0 & 1 & 5
+\end{pmatrix}
+\]
+\[ R1 \longmapsto \frac{1}{3} R1 \]
+\[
+\left.\begin{pmatrix}
+\frac{1}{3} & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\right.\Bigg|
+\begin{pmatrix}
+1 & -2 & 3\\
+-2 & 7 & -2\\
+0 & 1 & 5
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 + 2R1 \]
+\[
+\left.\begin{pmatrix}
+1 & 0 & 0\\
+1 & 2 & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\cdot E1
+\right.\Bigg|
+\begin{pmatrix}
+1 & -2 & 3\\
+0 & 3 & 4\\
+0 & 1 & 5
+\end{pmatrix}
+\]
+\[ R3 \longmapsto 3R3 - R2 \]
+\[
+\left.\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & -1 & 3
+\end{pmatrix}
+\cdot E2 \cdot E1
+\right.\Bigg|
+\begin{pmatrix}
+1 & -2 & 3\\
+0 & 3 & 4\\
+0 & 0 & 11
+\end{pmatrix}
+\]
+
+\[ U = 
+\begin{pmatrix}
+1 & -2 & 3\\
+0 & 3 & 4\\
+0 & 0 & 11
+\end{pmatrix}
+\]
+\[ L = E_1^{-1} \cdot E_2^{-1} \cdot E_3^{-1}
+= \begin{pmatrix}
+3 & 0 & 0\\
+-2 & 1 & 0\\
+0 & \frac{1}{3} & \frac{1}{3}
+\end{pmatrix}
+\]
+
+\subsubsection*{b)}
+\[
+\begin{pmatrix}
+3 & -2 & -5 & 4\\
+-5 & 2 & 8 & -5\\
+-3 & 4 & 7 & -3\\
+2 & -3 & -5 & 8
+\end{pmatrix}
+\]
+\[ R2 \longmapsto 3R2 + 5R1 \]
+\[ R3 \longmapsto 3R3 + 3R1 \]
+\[ R4 \longmapsto 3R4 - 2R1 \]
+\[
+\left.\begin{pmatrix}
+1 & 0 & 0 & 0\\
+5 & 3 & 0 & 0\\
+3 & 0 & 3 & 0\\
+-2 & 0 & 0 & 3
+\end{pmatrix}
+\right.\Bigg|
+\begin{pmatrix}
+3 & -2 & -5 & 4\\
+0 & -4 & 14 & 5\\
+0 & 6 & -6 & 3\\
+0 & -5 & -5 & 16
+\end{pmatrix}
+\]
+\[ R3 \longmapsto -4R3 - 6R2 \]
+\[ R4 \longmapsto -4R4 + 5R2\]
+\[
+\left.\begin{pmatrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & -6 & -4 & 0\\
+0 & 5 & 0 & -4
+\end{pmatrix}
+\cdot E1
+\right.\Bigg|
+\begin{pmatrix}
+3 & -2 & -5 & 4\\
+0 & -4 & 14 & 5\\
+0 & 0 & -60 & -42\\
+0 & 0 & 90 & -39
+\end{pmatrix}
+\]
+\[ R4 \longmapsto -2R4 - 3R3 \]
+\[
+\left.\begin{pmatrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & -3 & -2
+\end{pmatrix}
+\cdot E2 \cdot E1
+\right.\Bigg|
+\begin{pmatrix}
+3 & -2 & -5 & 4\\
+0 & -4 & 14 & 5\\
+0 & 0 & -60 & -42\\
+0 & 0 & 0 & 204
+\end{pmatrix}
+\]
+
+\[ U = 
+\begin{pmatrix}
+3 & -2 & -5 & 4\\
+0 & -4 & 14 & 5\\
+0 & 0 & -60 & -42\\
+0 & 0 & 0 & 204
+\end{pmatrix}
+\]
+\[ L = E_1^{-1} \cdot E_2^{-1} \cdot E_3^{-1}
+= \begin{pmatrix}
+1 & 0 & 0 & 0\\
+-\frac{5}{3} & \frac{1}{3} & 0 & 0\\
+-1 & -\frac{1}{2} & -\frac{1}{12} & 0\\
+\frac{2}{3} & \frac{5}{12} & \frac{1}{8} & \frac{1}{24}
+\end{pmatrix}
+\]
+
 
 \subsection*{oef 20}
 $$ A = LU = \begin{pmatrix}
