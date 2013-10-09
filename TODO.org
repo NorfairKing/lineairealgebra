@@ -59,8 +59,8 @@
    - [X] 1.10 warreee
    - [X] 1.44 NorfairKing
 
-* TODO Hoofdstuk 2
-  DEADLINE: <2013-11-05 Die>
+* DELEGATED Hoofdstuk 2
+  CLOSED: [2013-10-08 Die 22:23] DEADLINE: <2013-11-05 Die>
 ** TODO Oefeningen
 *** TODO Voorbereiding
     DEADLINE: <2013-10-13 Son>

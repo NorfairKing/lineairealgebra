@@ -23,6 +23,78 @@
 \pagebreak
 
 \section{2.4}
+\subsection*{oef 1}
+\subsubsection*{j)}
+Door rijoperaties:\\
+\[
+\begin{vmatrix}
+3 & -7 & 8 & 9 & -6\\
+0 & 2 & -5 & 7 & 3\\
+0 & 0 & 1 & 5 & 0\\
+0 & 0 & 2 & 4 & -1\\
+0 & 0 & 0 & -2 & 0
+\end{vmatrix}
+\overset{R4 \longmapsto R4-2R3}{=}
+\begin{vmatrix}
+3 & -7 & 8 & 9 & -6\\
+0 & 2 & -5 & 7 & 3\\
+0 & 0 & 1 & 5 & 0\\
+0 & 0 & 0 & -6 & -1\\
+0 & 0 & 0 & -2 & 0
+\end{vmatrix}
+\]
+\[
+\overset{R5 \longmapsto R5-\frac{-2}{6}R4}{=}
+\begin{vmatrix}
+3 & -7 & 8 & 9 & -6\\
+0 & 2 & -5 & 7 & 3\\
+0 & 0 & 1 & 5 & 0\\
+0 & 0 & 0 & -6 & -1\\
+0 & 0 & 0 & 0 & \frac{-2}{6}
+\end{vmatrix}
+=
+3\cdot 2 \cdot 1 \cdot (-6) \cdot (-\frac{2}{6}) = 12
+\]\\
+Door ontwikkeling:
+\[
+\begin{vmatrix}
+3 & -7 & 8 & 9 & -6\\
+0 & 2 & -5 & 7 & 3\\
+0 & 0 & 1 & 5 & 0\\
+0 & 0 & 2 & 4 & -1\\
+0 & 0 & 0 & -2 & 0
+\end{vmatrix}
+=
+3 \cdot
+\begin{vmatrix}
+2 & -5 & 7 & 3\\
+0 & 1 & 5 & 0\\
+0 & 2 & 4 & -1\\
+0 & 0 & -2 & 0
+\end{vmatrix}
+=
+3 \cdot 2 \cdot
+\begin{vmatrix}
+1 & 5 & 0\\
+2 & 4 & -1\\
+0 & -2 & 0
+\end{vmatrix}
+\]
+\[
+3\cdot 2\cdot \left( 
+\begin{vmatrix}
+4 & -1\\
+-2 & 0
+\end{vmatrix}
+-2\cdot
+\begin{vmatrix}
+5 & 0\\
+-2 & 0
+\end{vmatrix}
+\right)
+=
+3\cdot 2 \cdot 2 = 12
+\]
 \section{Opdrachten}
 \subsection{2.14}
 \subsection{2.16}
