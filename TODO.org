@@ -69,7 +69,7 @@
       - [ ] f - warreee
       - [ ] h - fokdiekul
       - [X] j - NorfairKing
-    - [ ] 3 - egonny
+    - [X] 3 - egonny
     - [ ] 4 - noiseloop
       - [ ] a - warreee
     - [ ] 9 - fokdiekul
