@@ -119,7 +119,23 @@ $x^2 + 2x$ voor $x_3, x_4$ met $x_3 = -2$ en $x_4 = 0$
 $det(AB) = 0$ voor $x$ met $x \in \{-2, 0, 1, 4\}$.
 
 \section{Opdrachten}
-\subsection{2.14}
-\subsection{2.16}
-
+\subsection*{2.14}
+\subsection*{2.16}
+\subsubsection*{1.}
+Permutaties van $\{1,2,3,4\}$:
+$$
+\{\{1, 2, 3, 4\}, \{1, 2, 4, 3\}, \{1, 3, 2, 4\}, \{1, 3, 4, 2\},$$
+$$ \{1, 4, 2, 3\}, \{1, 4, 3, 2\}, \{2, 1, 3, 4\}, \{2, 1, 4, 3\}, $$ 
+$$\{2, 3, 1, 4\}, \{2, 3, 4, 1\}, \{2, 4, 1, 3\}, \{2, 4, 3, 1\}, $$
+$$\{3, 1, 2, 4\}, \{3, 1, 4, 2\}, \{3, 2, 1, 4\}, \{3, 2, 4, 1\}, $$ $$
+\{3, 4, 1, 2\}, \{3, 4, 2, 1\}, \{4, 1, 2, 3\}, \{4, 1, 3, 2\}, $$
+$$\{4, 2, 1, 3\}, \{4, 2, 3, 1\}, \{4, 3, 1, 2\}, \{4, 3, 2, 1\}\}
+$$
+Wat men eigenlijk doet voor een algemene matrix met deze permutaties is het volgende: begin met de standaard volgorde dit is: $\{1,2,3,4\}$.\\ Zet hieronder telkens een permutatie van deze volgorde, bijvoorbeeld:
+$$\begin{pmatrix}
+1 & 2 & 3 & 4\\
+2 & 3 & 4 & 1
+\end{pmatrix}
+$$
+Nu zijn de paarsgewijze koppels telkens de elementen uit de $4x4$ matrix die je moet nemen: $a_{12}$, $a_{23}$, $a_{34}$, $a_{41}$.
 \end{document}
