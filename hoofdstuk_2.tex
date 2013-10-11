@@ -140,4 +140,23 @@ $$
 Nu zijn de paarsgewijze koppels telkens de elementen uit de $4x4$ matrix die je moet nemen: $a_{12}$, $a_{23}$, $a_{34}$, $a_{41}$.\\
 We kunnen nu ook nog het teken bepalen door te kijken naar het aan inversies:\\
 $$1 < 2 \rightarrow 2 < 3$$
+$$1 < 3 \rightarrow 3 < 4$$
+$$1 < 4 \rightarrow 2 > 1 \ inversie$$
+$$2 < 3 \rightarrow 3 < 4$$
+$$2 < 4 \rightarrow 3 > 1 \ inversie$$
+$$3 < 4 \rightarrow 4 > 1 \ inversie$$
+Er zijn dus in totaal 3 inversies, het teken van de permutatie is dus negatief:
+$$-a_{12}\cdot a_{23}\cdot a_{34}\cdot a_{41}$$
+Op een algemene matrix:
+$$
+\begin{pmatrix}
+a & b & c & d\\
+e & f & g & h\\
+i & j & k & l\\
+m & n & o & p
+\end{pmatrix}
+$$
+zou dit dan zijn:
+$$-b\cdot g\cdot l\cdot m$$
+Voor de uiteindelijke determinant moeten we deze stappen dus herhalen voor al de permutaties.
 \end{document}
