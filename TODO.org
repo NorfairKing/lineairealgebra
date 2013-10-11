@@ -5,12 +5,12 @@
   DEADLINE: <2013-10-08 Die>
 ** DELEGATED Oefeningen
 *** DELEGATED 1.7.1
-    DEADLINE: <2013-10-01 Die>
+    DEADLINE: <2013-10-06 Son>
     1. [X] warree
     2. [ ] fokdiekul
     3. [X] NorfairKing
     4. [X] warreee
-    5. [ ] fokdiekul
+    5. [X] fokdiekul
     6. [X] NorfairKing
     7. [X] warree
     8. [ ] fokdiekul
@@ -24,72 +24,61 @@
     16. [X] warreee
     17. [ ] fokdiekul
 *** DELEGATED 1.7.2
+    DEADLINE: <2013-10-13 Son>
     1. [ ] noiseloop
     2. [ ] fokdiekul
     3. [X] warreee 
     4. [X] NorfairKing
-    5. [ ] Matzy93
+    5. [X] Matzy93
     6. [X] egonny
     7. [ ] noiseloop
     8. [X] warreee 
     9. [X] NorfairKing
     10. [ ] fokdiekul
-    11. [ ] Matzy93
-    12. [ ] egonny 
+    11. [?] Matzy93
+    12. [X] egonny 
     13. [ ] noiseloop
     14. [ ] warreee
     15. [ ] fokdiekul
     16. [X] NorfairKing
-    17. [ ] Matzy93
-    18. [ ] egonny
+    17. [X] Matzy93
+    18. [X] egonny
     19. [ ] noiseloop
-    20. [ ] warreee
+    20. [X] warreee
     21. [ ] fokdiekul
     22. [X] NorfairKing
-    23. [ ] Matzy93
+    23. [X] Matzy93
 ** DELEGATED Opdrachten
-   DEADLINE: <2013-10-07 Mon>
-   - [ ] 1.2  egonny
+   DEADLINE: <2013-10-13 Son>
+   - [X] 1.2  egonny
    - [X] 1.23 warreee
+   - [X] 1.25 in oefenzitting
    - [ ] 1.33 noiseloop
 ** OPTIONAL Extra bewijzen
    DEADLINE: <2013-10-01 Die>
-   - [ ] 1.10 warreee
+   - [X] 1.10 warreee
    - [X] 1.44 NorfairKing
 
-* TODO Hoofdstuk 2
-  DEADLINE: <2013-11-05 Die>
+* DELEGATED Hoofdstuk 2
+  CLOSED: [2013-10-08 Die 22:23] DEADLINE: <2013-11-05 Die>
 ** TODO Oefeningen
-*** TODO 2.4
-    1. [ ] 
-    2. [ ] 
-    3. [ ] 
-    4. [ ] 
-    5. [ ] 
-    6. [ ] 
-    7. [ ] 
-    8. [ ] 
-    9. [ ] 
-    10. [ ] 
-    11. [ ] 
-    12. [ ] 
-    13. [ ] 
-    14. [ ] 
-    15. [ ] 
-    16. [ ] 
-    17. [ ] 
-    18. [ ] 
-    19. [ ] 
-    20. [ ] 
-    21. [ ] 
-    22. [ ] 
-    23. [ ] 
-    24. [ ] 
-    25. [ ] 
-    26. [ ] 
-    27. [ ] 
-    28. [ ] 
+*** TODO Voorbereiding
+    DEADLINE: <2013-10-13 Son>
+    - [ ] 1 - egonny
+      - [ ] a - noiseloop
+      - [ ] f - warreee
+      - [ ] h - fokdiekul
+      - [X] j - NorfairKing
+    - [X] 3 - egonny
+    - [ ] 4 - noiseloop
+      - [ ] a - warreee
+    - [ ] 9 - fokdiekul
+*** TODO In Oefenzitting
+    DEADLINE: <2013-10-20 Son>
+*** TODO Extra
+    DEADLINE: <2013-10-20 Son>
 ** TODO Opdrachten 
+   DEADLINE: <2013-10-20 Son>
    - [ ] 2.14 
    - [ ] 2.16
 

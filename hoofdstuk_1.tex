@@ -103,6 +103,7 @@ De matrix staat nu wel in gereduceerde echelon vorm, maar dat is ook een echelon
 \]
 
 \subsection*{oef 2}
+TODO
 
 \subsection*{oef 3}
 \subsubsection*{Echelonvorm}
@@ -186,6 +187,7 @@ Dit triviaal direct te bepalen door de laatste rij:
 V=\emptyset
 \]
 \subsection*{oef 5}
+TODO
 
 \subsection*{oef 6}
 \subsubsection*{a)}
@@ -446,6 +448,7 @@ Antwoord:
 V = \{(-\frac{175}{8},-\frac{135}{8}, -\frac{-31}{16}, \frac{17}{16})\}
 \]
 \subsection*{oef 8}
+TODO
 
 \subsection*{oef 9}
 \[
@@ -507,6 +510,7 @@ Als $h \neq \frac{3}{2}$
 \subsubsection*{c) Meerdere oplossingen:}
 Als $h = \frac{3}{2}$ en $k = 2$
 \subsection*{oef 11}
+TODO
 
 \subsection*{oef 12}
 \subsubsection*{a)}
@@ -817,6 +821,7 @@ c & 1 & d\\
 \]
 
 \subsection*{oef 14}
+TODO
 
 \subsection*{oef 15}
 \begin{center}
@@ -940,6 +945,8 @@ Dit geeft voor Laurens:
 Premie = 2\cdot 2100 + 3\cdot 3100 + 2\cdot 2800 + 2\cdot 2500 = 24100
 \]
 \subsection*{oef 17}
+TODO
+
 \subsection*{Extra (oefenzitting)}
 \[
 \left\lbrace
@@ -1183,12 +1190,19 @@ $$
 \subsubsection*{a)}
 \begin{proof}
 Bewijs uit het ongerijmde:\\
-Stel $A\neq 0$, neem $X_1$ en $X_2$ zodat $AX_1 = 0$ en $AX_2=0$ met $X_1\neq X_2$
+Stel $A \neq 0$, dan $\exists i, j: A_{ij} \neq 0$.
 \[
-AX_1 = AX_2 = 0
+0= A \cdot
+\begin{pmatrix}
+0\\\vdots\\a\\\vdots\\0
+\end{pmatrix}
+=
+\begin{pmatrix}
+A_{1j}\\\vdots\\A_{nj}
+\end{pmatrix}
+\neq 0
 \]
-Omdat $A=A$ zijn $X_1$ en $X_2$ gelijk.
-Contradictie.
+Met de $a$ op de $i$de rij.
 \end{proof}
 
 \subsubsection*{b)}
@@ -1202,6 +1216,36 @@ Dit betekent volgens de stelling in 4.a dat $A-B=0$.
 Nu zien we dat $A=B$.
 \end{proof}
 
+\subsection*{oef 5}
+\[
+   A^2 = A*A = \left( \begin{array}{ccc}
+    1 & 2 & 0 \\
+    -3 & 4 & 0 \\
+    0 & 0 & 5 \\
+  \end{array} \right) * \left( \begin{array}{ccc}
+    1 & 2 & 0 \\
+    -3 & 4 & 0 \\
+    0 & 0 & 5 \\
+  \end{array} \right) = \left( \begin{array}{ccc}
+    -5 & 10 & 0 \\
+    -15 & 10 & 0 \\
+    0 & 0 & 25 \\
+  \end{array} \right) 
+  \]
+\[ 
+  A^3 = A^2 * A = \left( \begin{array}{ccc}
+    -35 & 30 & 0 \\
+    -45 & 10 & 0 \\
+    0 & 0 & 25 \\
+  \end{array} \right)
+\]
+\[
+f(A) = 3*A^3 + A^2 - 2*A + 3*I =  \left( \begin{array}{ccc}
+    -119 & 96 & 0 \\
+    -166 & 35 & 0 \\
+    0 & 0 & 393 \\
+  \end{array} \right)
+\]
 \subsection*{oef 6}
 \subsubsection*{a)}
 $$ AB =
@@ -1385,6 +1429,30 @@ d &= -\frac{a}{bc}
 \]
 De oplossingen van de stelsel zijn geven een antwoord op te vraag.
 
+\subsection*{oef 11}
+TODO
+
+\subsection*{oef 12}
+\subsubsection*{a)}
+Wanneer alle getallen op de diagonaal verschillend van nul zijn.
+\subsubsection*{b)}
+Als
+$$ D = \begin{pmatrix}
+a_{11} & 0 & \cdots & 0 & 0\\
+0 & a_{22} & \cdots & 0 & 0\\
+\vdots & \vdots & \ddots & \vdots & \vdots\\
+0 & 0 & \cdots & a_{n-1,n-1} & 0 \\
+0 & 0 & \cdots & 0 & a_{n,n}
+\end{pmatrix}
+$$, dan
+$$ D^{-1} = \begin{pmatrix}
+(a_{11})^{-1} & 0 & \cdots & 0 & 0\\
+0 & (a_{22})^{-1} & \cdots & 0 & 0\\
+\vdots & \vdots & \ddots & \vdots & \vdots\\
+0 & 0 & \cdots & (a_{n-1,n-1})^{-1} & 0 \\
+0 & 0 & \cdots & 0 & (a_{n,n})^{-1}
+\end{pmatrix}
+$$
 
 \subsection*{oef 16}
 \subsubsection*{a)}
@@ -1398,9 +1466,14 @@ Bewijs door volledige inductie:\\
 Stap 1 $k=1$: $A=O$ (basis)
 $A$ is niet inverteerbaar.\\
 Stap 2: Stel dat de stelling waar is voor een bepaalde $n=k$. (inductiehypothese)\\
+
 Stap 3: We bewijzen dat de stelling waar is voor $n=k+1$. (inductiestap)\\
 \[ A^{k+1}=O \Leftrightarrow A^{k}\cdot A=O \]
 Door de inductiehypothese weten we dat $A^{k}$ niet inverteerbaar is. Dat betekent dat $A^{k}$ rij-equivalent is met een matrix met een nulrij. $A^{k} \cdot A$ is dus ook niet inverteerbaar.
+
+Conclusie:\\
+Door de inductiehypothese weten we dat $A^{k}$ inverteerbaar is.We weten ook dat $A$ inverteerbaar is. $A^{k} \cdot A$ is dus ook inverteerbaar.
+
 \end{proof}
 
 \subsubsection*{b)}
@@ -1411,6 +1484,181 @@ Als we een matrix $\mathbb{I}-A$ vermeningvuldigen met zijn inverse $(\mathbb{I}
 \[ = \mathbb{I}-A^{k}\]
 Omdat A nilpotent is met $A^k=0$, is dit gelijk aan $\mathbb{I}$
 \end{proof}
+
+\subsection*{oef 17}
+\subsubsection*{a)}
+\[
+A= \left(\begin{array} {cc}
+    1 & 1\\
+    0 & 0\\
+\end{array} \right)
+\]
+
+\subsubsection*{b)}
+\[
+A*A=A 
+\]
+\[
+A*A^{-1}=A
+\]
+
+\begin{gather*}
+A*A=A /*A^{-1}\\
+A*(A*A^{-1})=A*A^{-1}\\
+A*I=I\\
+A=I
+\end{gather*}
+
+\subsection*{oef 18}
+\subsubsection*{a)}
+\[
+\begin{pmatrix}
+3 & -6 & 9\\
+-2 & 7 & -2\\
+0 & 1 & 5
+\end{pmatrix}
+\]
+\[ R1 \longmapsto \frac{1}{3} R1 \]
+\[
+\left.\begin{pmatrix}
+\frac{1}{3} & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\right.\Bigg|
+\begin{pmatrix}
+1 & -2 & 3\\
+-2 & 7 & -2\\
+0 & 1 & 5
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 + 2R1 \]
+\[
+\left.\begin{pmatrix}
+1 & 0 & 0\\
+1 & 2 & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\cdot E1
+\right.\Bigg|
+\begin{pmatrix}
+1 & -2 & 3\\
+0 & 3 & 4\\
+0 & 1 & 5
+\end{pmatrix}
+\]
+\[ R3 \longmapsto 3R3 - R2 \]
+\[
+\left.\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & -1 & 3
+\end{pmatrix}
+\cdot E2 \cdot E1
+\right.\Bigg|
+\begin{pmatrix}
+1 & -2 & 3\\
+0 & 3 & 4\\
+0 & 0 & 11
+\end{pmatrix}
+\]
+
+\[ U = 
+\begin{pmatrix}
+1 & -2 & 3\\
+0 & 3 & 4\\
+0 & 0 & 11
+\end{pmatrix}
+\]
+\[ L = E_1^{-1} \cdot E_2^{-1} \cdot E_3^{-1}
+= \begin{pmatrix}
+3 & 0 & 0\\
+-2 & 1 & 0\\
+0 & \frac{1}{3} & \frac{1}{3}
+\end{pmatrix}
+\]
+
+\subsubsection*{b)}
+\[
+\begin{pmatrix}
+3 & -2 & -5 & 4\\
+-5 & 2 & 8 & -5\\
+-3 & 4 & 7 & -3\\
+2 & -3 & -5 & 8
+\end{pmatrix}
+\]
+\[ R2 \longmapsto 3R2 + 5R1 \]
+\[ R3 \longmapsto 3R3 + 3R1 \]
+\[ R4 \longmapsto 3R4 - 2R1 \]
+\[
+\left.\begin{pmatrix}
+1 & 0 & 0 & 0\\
+5 & 3 & 0 & 0\\
+3 & 0 & 3 & 0\\
+-2 & 0 & 0 & 3
+\end{pmatrix}
+\right.\Bigg|
+\begin{pmatrix}
+3 & -2 & -5 & 4\\
+0 & -4 & 14 & 5\\
+0 & 6 & -6 & 3\\
+0 & -5 & -5 & 16
+\end{pmatrix}
+\]
+\[ R3 \longmapsto -4R3 - 6R2 \]
+\[ R4 \longmapsto -4R4 + 5R2\]
+\[
+\left.\begin{pmatrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & -6 & -4 & 0\\
+0 & 5 & 0 & -4
+\end{pmatrix}
+\cdot E1
+\right.\Bigg|
+\begin{pmatrix}
+3 & -2 & -5 & 4\\
+0 & -4 & 14 & 5\\
+0 & 0 & -60 & -42\\
+0 & 0 & 90 & -39
+\end{pmatrix}
+\]
+\[ R4 \longmapsto -2R4 - 3R3 \]
+\[
+\left.\begin{pmatrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & -3 & -2
+\end{pmatrix}
+\cdot E2 \cdot E1
+\right.\Bigg|
+\begin{pmatrix}
+3 & -2 & -5 & 4\\
+0 & -4 & 14 & 5\\
+0 & 0 & -60 & -42\\
+0 & 0 & 0 & 204
+\end{pmatrix}
+\]
+
+\[ U = 
+\begin{pmatrix}
+3 & -2 & -5 & 4\\
+0 & -4 & 14 & 5\\
+0 & 0 & -60 & -42\\
+0 & 0 & 0 & 204
+\end{pmatrix}
+\]
+\[ L = E_1^{-1} \cdot E_2^{-1} \cdot E_3^{-1}
+= \begin{pmatrix}
+1 & 0 & 0 & 0\\
+-\frac{5}{3} & \frac{1}{3} & 0 & 0\\
+-1 & -\frac{1}{2} & -\frac{1}{12} & 0\\
+\frac{2}{3} & \frac{5}{12} & \frac{1}{8} & \frac{1}{24}
+\end{pmatrix}
+\]
+
+
 \subsection*{oef 20}
 $$ A = LU = \begin{pmatrix}
 1 & 0 & 0\\
@@ -1613,6 +1861,120 @@ heeft als oplossingsverzameling:
 \[
 V=\{(6,4,2)\}
 \]
+
+\subsection*{oef 23}
+\subsubsection*{a)}
+False
+\[
+A=\left(\begin{array}{cc}
+    0 & 1\\
+    0 & 2\\
+\end{array} \right)
+\]
+\[
+B=\left(\begin{array}{cc}
+    1 & 1\\
+    3 & 4\\
+\end{array} \right)
+\]
+\[
+C=\left(\begin{array}{cc}
+    2 & 5\\
+    3 & 4\\
+\end{array} \right)
+\]
+\subsubsection*{b)}
+ False
+\[
+A=\left(\begin{array}{cc}
+    0 & 0\\
+    0 & 1\\
+\end{array} \right)
+\]
+\[
+B=\left(\begin{array}{cc}
+    1 & 0\\
+    0 & 0\\
+\end{array} \right)
+\]
+\subsubsection*{c)}
+\begin{gather*}
+A=A^{-1}\\
+B=B^{-1}\\
+\\
+(A*B)^{-1}=B^{-1}*A^{-1}=B*A
+\end{gather*}
+
+\subsubsection*{d)}
+False
+\begin{gather*}
+A=I\\
+B=-I\\
+A+B=0
+\end{gather*}
+
+\subsubsection*{e)}
+ True
+\begin{gather*}
+A=A^{T}\\
+B=B^{T}\\
+A*B=(A*B)^{T}\\
+\\
+A*B=(A*B)^{T}=B^T*A^T=B*A
+\end{gather*}
+
+\subsubsection*{f)}
+\[
+A*B = \left( \begin{array}{ccc}
+    0 & 1 & 0 \\
+    1 & 0 & 0 \\
+    0 & 0 & 1 \\
+  \end{array} \right) * \left( \begin{array}{ccc}
+    1 & 0 & 0 \\
+    0 & 0 & 1 \\
+    0 & 1 & 0 \\
+  \end{array} \right) = \left( \begin{array}{ccc}
+    0 & 0 & 1 \\
+    1 & 0 & 0 \\
+    0 & 1 & 0 \\
+ \end{array} \right) 
+ \]
+
+\subsubsection*{g)}
+True (not sure of the proof)
+Let \[A*B\] be and invertible matrix and A a non-invertible matrix. Then there is a matrix D such  as \[A*B*D=I\] namely a right inverse of the matrix \[A*B\] However \[B*D\] is a right inverse of the matrix  A, which leads to A is invertible.
+
+\subsubsection*{h)}
+ False
+\[
+E_1=\left( \begin{array}{cc}
+    5 & 0\\
+    0 & 2\\
+\end{array}\right)
+\]
+\[
+E_2=\left( \begin{array}{cc}
+    0 & 1\\
+    1 & 0\\
+\end{array}\right)
+\]
+\[
+E_1*E_2=\left( \begin{array}{cc}
+    0 & 5\\
+    1 & 0\\
+\end{array}\right)
+\]
+\[
+E_2*E_1=\left( \begin{array}{cc}
+    0 & 1\\
+    5 & 0\\
+\end{array}\right)
+\]
+
+
+\subsection*{Extra (oefenzitting)}
+
+
 \section{Opdrachten}
 \subsection*{opdracht 1.2}
 Om op een matrix een ERO uit te voeren, berekenen we eigenlijk de vermenigvuldiging van de matrix met de corresponderende elementaire matrix. Dus: $M' = M \cdot E$. Om de ERO om te keren vermenigvuldigen we $M'$ met een matrix $E^{-1}$ zodat $M'\cdot E^{-1} = M \cdot I = M$.
@@ -1750,5 +2112,26 @@ A = \begin{pmatrix}
 -2 & -\frac{1}{2} & 0
 \end{pmatrix}
 $$
+\subsection*{opdracht 1.25}
+\[
+Tr(A) = \sum^{n}_{i=1}(A)_{ii}
+\]
+Bij vierkante matrices:
+\[
+(A\cdot B)_{ij} = \sum^{n}_{j=1}(A)_{ij}(B)_{ji}
+\]
+Nu weten we dat:
+\[
+Tr(A\cdot B) =\sum^{n}_{i=1}(A\cdot B)_{ii}=\sum^{n}_{i=1}\sum^{n}_{j=1}(A)_{ij}(B)_{ji}
+\]
+en
+\[
+Tr(B\cdot A) =\sum^{n}_{i=1}(B\cdot A)_{ii}=\sum^{n}_{i=1}\sum^{n}_{j=1}(B)_{ij}(A)_{ji}
+\]
+We zien nu dat
+\[
+Tr(A\cdot B) = Tr(B\cdot A)
+\]
+
 \subsection*{opdracht 1.33}
 \end{document}
