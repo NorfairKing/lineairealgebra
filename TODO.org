@@ -80,7 +80,7 @@
 ** TODO Opdrachten 
    DEADLINE: <2013-10-20 Son>
    - [ ] 2.14 
-   - [ ] 2.16
+   - [X] 2.16 - warreee
 
 * TODO Hoofdstuk 3
   DEADLINE: <2013-11-05 Die>
