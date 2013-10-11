@@ -1390,18 +1390,17 @@ De oplossingen van de stelsel zijn geven een antwoord op te vraag.
 \subsubsection*{a)}
 Te bewijzen: $A$ is inverteerbaar $\Rightarrow \not \exists k\; A^k=O$ 
 \begin{proof}
-We bewijzen:
+We bewijzen een equivalente bewering:
 \[
-A \text{ is inverteerbaar } \Rightarrow A^{k} \text{ is inverteerbaar }
+\exists k\ge 1:\;A^k=O \Rightarrow\; \text{ A is niet inverteerbaar}
 \]
-Dit is equivalent.\\
 Bewijs door volledige inductie:\\
-Stap 1: $k=1$ (basis)
-$A$ is inverteerbaar.\\
+Stap 1 $k=1$: $A=O$ (basis)
+$A$ is niet inverteerbaar.\\
 Stap 2: Stel dat de stelling waar is voor een bepaalde $n=k$. (inductiehypothese)\\
-We bewijzen dat de stelling waar is voor $n=k+1$. (inductiestap)\\
-\[ A^{k+1} =A^{k}\cdot A \]
-Door de inductiehypothese weten we dat $A^{k}$ inverteerbaar is.We weten ook dat $A$ inverteerbaar is. $A^{k} \cdot A$ is dus ook inverteerbaar.
+Stap 3: We bewijzen dat de stelling waar is voor $n=k+1$. (inductiestap)\\
+\[ A^{k+1}=O \Leftrightarrow A^{k}\cdot A=O \]
+Door de inductiehypothese weten we dat $A^{k}$ niet inverteerbaar is. Dat betekent dat $A^{k}$ rij-equivalent is met een matrix met een nulrij. $A^{k} \cdot A$ is dus ook niet inverteerbaar.
 \end{proof}
 
 \subsubsection*{b)}
