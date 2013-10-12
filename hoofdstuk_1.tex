@@ -1344,6 +1344,70 @@ $$ C =
 4 & -2 & 0
 \end{pmatrix}
 $$
+\subsection*{oef 7}
+\subsubsection*{a}
+
+\[
+\begin{pmatrix}
+2 & 1 & 3 & 1 & 0 & 0\\
+-1 & 2 & 0 & 0 & 1 & 0\\
+3 & -2 & 1 & 0 & 0 & 1
+\end{pmatrix}
+\]   
+\[ R1 \Leftrightarrow R2 \]
+\[ R1 \longmapsto R1 * -1\cdot R1\]
+\[
+\begin{pmatrix}
+1 & -2 & 0 & 0 & -1 & 0\\
+2 & 1 & 3 & 1 & 0 & 0\\
+3 & -2 & 1 & 0 & 0 & 1
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - 2\cdot R1 \]
+\[ R3 \longmapsto R3 - 3\cdot R1 \]
+\[
+\begin{pmatrix}
+1 & -2 & 0 & 0 & -1 & 0\\
+0 & 5 & 3 & 1 & 2 & 0\\
+0 & 4 & 1 & 0 & 3 & 1
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - R3 \]
+\[
+\begin{pmatrix}
+1 & -2 & 0 & 0 & -1 & 0\\
+0 & 1 & 2 & 1 & -1 & 0\\
+0 & 4 & 1 & 0 & 3 & 1
+\end{pmatrix}
+\]
+\[ R1 \longmapsto R1 + 2\cdot R2 \]
+\[ R3 \longmapsto R3 - 4\cdot R1 \]
+\[
+\begin{pmatrix}
+1 & 0 & 4 & 2 & -3 & 0\\
+0 & 1 & 2 & 1 & -1 & 0\\
+0 & 0 & -7 & -4 & 7 & 1
+\end{pmatrix}
+\]
+\[ R3 \longmapsto R3 \div -7  \]
+\[
+\begin{pmatrix}
+1 & 0 & 4 & 2 & -3 & 0\\
+0 & 1 & 2 & 1 & -1 & 0\\
+0 & 0 & 1 & \frac{-4}{7} & -1 & \frac{-1}{7}
+\end{pmatrix}
+\]
+\[ R1 \longmapsto R1  - 4 \cdot R3 \]
+\[ R2 \longmapsto R2 - 2 \cdot R3 \]
+\[
+\begin{pmatrix}
+1 & 0 & 0 & \frac{6}{14} & 1 & 0\frac{4}{7}\\
+0 & 1 & 0 & \frac{-1}{7} & 1 & \frac{2}{7}\\
+0 & 0 & 1 & \frac{-4}{7} & -1 & \frac{-1}{7}
+\end{pmatrix}
+\]
+\subsubsection*{c}
+
 
 \subsection*{oef 8}
 \subsubsection*{a)}
