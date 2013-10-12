@@ -38,7 +38,7 @@
     11. [?] Matzy93
     12. [X] egonny 
     13. [ ] noiseloop
-    14. [ ] warreee
+    14. [X] warreee
     15. [ ] fokdiekul
     16. [X] NorfairKing
     17. [X] Matzy93
@@ -66,12 +66,12 @@
     DEADLINE: <2013-10-13 Son>
     - [ ] 1 - egonny
       - [ ] a - noiseloop
-      - [ ] f - warreee
+      - [X] f - warreee
       - [ ] h - fokdiekul
       - [X] j - NorfairKing
     - [X] 3 - egonny
     - [ ] 4 - noiseloop
-      - [ ] a - warreee
+      - [X] a - warreee
     - [ ] 9 - fokdiekul
 *** TODO In Oefenzitting
     DEADLINE: <2013-10-20 Son>
