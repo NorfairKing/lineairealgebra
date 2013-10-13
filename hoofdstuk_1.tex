@@ -1467,6 +1467,22 @@ $
 \end{pmatrix}
 $
 
+\subsection*{oef 2}
+\[(2A-B)C = 
+\begin{pmatrix}
+2 &  1 &  1\\
+8 &  3 &  2\\
+2 &  4 &  3
+\end{pmatrix}
+\]
+\[ CC^T =
+\begin{pmatrix}
+4 &  9 &  -1\\
+9 &  17 &  -6\\
+-1 &  -6 &  -1
+\end{pmatrix}
+\]
+
 \subsection*{oef 3}
 $$(A - B)^T = A^T - B^T$$
 Dus:
@@ -1788,6 +1804,13 @@ d &= -\frac{a}{bc}
 \]
 De oplossingen van de stelsel zijn geven een antwoord op te vraag.
 
+\subsection*{oef 10}
+\[R2 \longmapsto R2 - R1 \]
+\[R3 \longmapsto R3 -4\cdot R1 \]
+\[R3 \longmapsto R3 -2\cdot R2 \]
+\[R3 \longmapsto R3/2 \]
+\[...\]
+
 \subsection*{oef 11}
 TODO
 
@@ -1896,6 +1919,16 @@ A^{-1}=
 \frac{1}{3} & 0 & -2
 \end{pmatrix}
 $$
+
+\subsection*{oef 15}
+\[
+\begin{pmatrix}
+1 & 0 & 0\\
+a & 1 & 0\\
+b & c & 1
+\end{pmatrix}
+\]
+
 \subsection*{oef 16}
 \subsubsection*{a)}
 Te bewijzen: $A$ is inverteerbaar $\Rightarrow \not \exists k\; A^k=O$ 
@@ -2135,6 +2168,97 @@ $$
 $$
 De oplossing van dit stelsel is:\\
 $$V = {(4,2,3)}$$
+
+\subsection*{oef 21}
+\[
+\begin{pmatrix}
+1 & 1 & 1\\
+1 & 4 & 5\\
+1 & 4 & 7
+\end{pmatrix}
+\]
+\[R2 \longmapsto R2-R1\]
+\[
+\begin{pmatrix}
+1 & 0 & 0\\
+-1 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+1 & 1 & 1\\
+0 & 3 & 4\\
+1 & 4 & 7
+\end{pmatrix}
+\]
+\[R3 \longmapsto R3-R1\]
+\[ E1 \cdot
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+-1 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+1 & 1 & 1\\
+0 & 3 & 4\\
+0 & 3 & 6
+\end{pmatrix}
+\]
+\[R3 \longmapsto R3-R2\]
+\[ E1 \cdot E2 \cdot
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & -1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+1 & 1 & 1\\
+0 & 3 & 4\\
+0 & 0 & 2
+\end{pmatrix}
+\]
+\[\]
+\[E1 \cdot E2 \cdot E3 \cdot A = 
+\begin{pmatrix}
+1 & 1 & 1\\
+0 & 3 & 4\\
+0 & 0 & 2
+\end{pmatrix}
+= U \]
+\[A = E1^{-1} \cdot E2^{-1} \cdot E3^{-1} \cdot U\]
+\[
+\begin{pmatrix}
+1 & 0 & 0\\
+1 & 1 & 0\\
+1 & 1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+1 & 1 & 1\\
+0 & 3 & 4\\
+0 & 0 & 2
+\end{pmatrix}
+= B\]
+\[ Y =
+\begin{pmatrix}
+1 \\
+2 \\
+2 
+\end{pmatrix}
+\]
+\[
+\begin{pmatrix}
+1 & 1 & 1\\
+0 & 3 & 4\\
+0 & 0 & 2
+\end{pmatrix}
+\cdot X = Y\]
+\[ X =
+\begin{pmatrix}
+2/3\\
+-2/3\\
+1
+\end{pmatrix}
+\]
+
 \subsection*{oef 22}
 \[
 A=
