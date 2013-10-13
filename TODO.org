@@ -25,19 +25,19 @@
     17. [ ] fokdiekul
 *** DELEGATED 1.7.2
     DEADLINE: <2013-10-13 Son>
-    1. [ ] noiseloop
+    1. [X] noiseloop
     2. [ ] fokdiekul
     3. [X] warreee 
     4. [X] NorfairKing
     5. [X] Matzy93
     6. [X] egonny
-    7. [ ] noiseloop
+    7. [X] noiseloop
     8. [X] warreee 
     9. [X] NorfairKing
     10. [ ] fokdiekul
     11. [?] Matzy93
     12. [X] egonny 
-    13. [ ] noiseloop
+    13. [X] noiseloop
     14. [X] warreee
     15. [ ] fokdiekul
     16. [X] NorfairKing
