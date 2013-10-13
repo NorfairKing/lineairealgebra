@@ -43,7 +43,7 @@
     16. [X] NorfairKing
     17. [X] Matzy93
     18. [X] egonny
-    19. [ ] noiseloop
+    19. [X] noiseloop
     20. [X] warreee
     21. [ ] fokdiekul
     22. [X] NorfairKing
@@ -53,7 +53,7 @@
    - [X] 1.2  egonny
    - [X] 1.23 warreee
    - [X] 1.25 in oefenzitting
-   - [ ] 1.33 noiseloop
+   - [oefz morgen] 1.33 noiseloop
 ** OPTIONAL Extra bewijzen
    DEADLINE: <2013-10-01 Die>
    - [X] 1.10 warreee
