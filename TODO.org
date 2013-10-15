@@ -86,18 +86,18 @@
     - [ ] EXTRA fokdiekul (opgave staat in bestand)
     DEADLINE: <2013-10-20 Son>
 *** TODO Extra
-    - [ ] 1 fokdiekul   
-      - [ ] b NorfairKing 
+    - [-] 1 fokdiekul   
+      - [X] b NorfairKing 
       - [ ] c egonny      
       - [ ] d noiseloop   
       - [ ] e warreee     
       - [ ] g fokdiekul   
-      - [ ] i NorfairKing 
+      - [X] i NorfairKing 
     - [ ] 2 egonny      
     - [ ] 4 noiseloop   
       - [ ] b warreee     
       - [ ] c fokdiekul   
-    - [ ] 5 NorfairKing 
+    - [X] 5 NorfairKing 
     - [ ] 6 egonny      
       - [ ] a noiseloop   
       - [ ] b warreee     
