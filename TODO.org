@@ -74,12 +74,81 @@
       - [X] a - warreee
     - [ ] 9 - fokdiekul
 *** TODO In Oefenzitting
+    - [ ] 14 NorfairKing (a,b)
+    - [ ] 24 egonny
+    - [ ] 27 noiseloop
+      - [ ] a warreee
+      - [ ] f fokdiekul   
+      - [ ] h NorfairKing 
+      - [ ] i egonny      
+      - [ ] k noiseloop   
+      - [ ] l warreee        
+    - [ ] EXTRA fokdiekul (opgave staat in bestand)
     DEADLINE: <2013-10-20 Son>
 *** TODO Extra
+    - [ ] 1 fokdiekul   
+      - [ ] b NorfairKing 
+      - [ ] c egonny      
+      - [ ] d noiseloop   
+      - [ ] e warreee     
+      - [ ] g fokdiekul   
+      - [ ] i NorfairKing 
+    - [ ] 2 egonny      
+    - [ ] 4 noiseloop   
+      - [ ] b warreee     
+      - [ ] c fokdiekul   
+    - [ ] 5 NorfairKing 
+    - [ ] 6 egonny      
+      - [ ] a noiseloop   
+      - [ ] b warreee     
+      - [ ] c fokdiekul   
+    - [ ] 7 NorfairKing 
+    - [ ] 8 egonny      
+    - [ ] 10 noiseloop   
+    - [ ] 11 warreee     
+      - [ ] a fokdiekul   
+      - [ ] b NorfairKing 
+      - [ ] c egonny      
+    - [ ] 12 noiseloop   
+    - [ ] 13 warreee     
+    - [ ] 15 fokdiekul   
+    - [ ] 16 NorfairKing 
+      - [ ] a egonny      
+      - [ ] b noiseloop   
+      - [ ] c warreee     
+      - [ ] d fokdiekul   
+    - [ ] 17 NorfairKing 
+    - [ ] 18 egonny      
+    - [ ] 19 noiseloop   
+      - [ ] a warreee     
+      - [ ] b fokdiekul   
+    - [ ] 20  NorfairKing 
+      - [ ] a egonny      
+      - [ ] b noiseloop   
+      - [ ] c warreee     
+    - [ ] 21 fokdiekul   
+    - [ ] 22 NorfairKing 
+      - [ ] a egonny      
+      - [ ] b noiseloop   
+      - [ ] c warreee     
+    - [ ] 23 fokdiekul   
+    - [ ] 25 NorfairKing 
+    - [ ] 26 egonny      
+    - [ ] 27 noiseloop   
+      - [ ] b warreee     
+      - [ ] c fokdiekul   
+      - [ ] d NorfairKing 
+      - [ ] e egonny      
+      - [ ] g noiseloop   
+      - [ ] j warreee     
+      - [ ] m fokdiekul   
+      - [ ] n NorfairKing 
+    - [ ] 28  egonny      
+              
     DEADLINE: <2013-10-20 Son>
 ** TODO Opdrachten 
    DEADLINE: <2013-10-20 Son>
-   - [ ] 2.14 
+   - [ ] 2.14 - egonny 
    - [X] 2.16 - warreee
 
 * TODO Hoofdstuk 3
