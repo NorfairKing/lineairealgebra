@@ -232,6 +232,43 @@ Stel dat het klopt voor $F_{n-1}$\\
 Te Bewijzen: het klopt voor $F_{n}$\\
 Dit kunnen we doen door de uitleg die eerder gegeven werd.
 
+\subsection*{oef 14}
+Voor elke scheefsymmetrische matrix geldt:
+\[
+A^T= -A
+\]
+\subsubsection*{Te bewijzen}
+Voor $A\in R^{m\times n}$ met $n$ oneven.
+\[
+det(A) = 0
+\]
+\subsubsection*{Bewijs}
+\[
+A^T = -A
+\]
+\[
+det(A^T) = det(-A)
+\]
+We weten:
+\[
+det(A^T) = det(A) \text{ en } det(-A) = (-1)^n det(A)
+\]
+dus
+\[
+det(A) = det(-A) \Rightarrow det(A) = 0
+\]
+
+\subsubsection*{tegenvoorbeeld}
+\[
+\begin{vmatrix}
+0 & -1 & 0 & 0\\
+1 & 0 & -1 & 0\\
+0 & 1 & 0 & -1\\
+0 & 0 & 1 & 0
+\end{vmatrix}
+\]
+
+
 \subsection*{extra}
 Schrijf de volgende uitdrukking als een product van vier niet triviale factoren.
 \[
