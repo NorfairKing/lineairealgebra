@@ -74,12 +74,12 @@
       - [X] a - warreee
     - [ ] 9 - fokdiekul
 *** TODO In Oefenzitting
-    - [ ] 14 NorfairKing (a,b)
+    - [X] 14 NorfairKing (a,b)
     - [ ] 24 egonny
-    - [ ] 27 noiseloop
+    - [-] 27 noiseloop
       - [ ] a warreee
       - [ ] f fokdiekul   
-      - [ ] h NorfairKing 
+      - [X] h NorfairKing 
       - [ ] i egonny      
       - [ ] k noiseloop   
       - [ ] l warreee        
