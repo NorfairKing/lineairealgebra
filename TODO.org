@@ -143,7 +143,7 @@
       - [ ] j warreee     
       - [ ] m fokdiekul   
       - [ ] n NorfairKing 
-    - [ ] 28  egonny      
+    - [ ] 28 egonny      
               
     DEADLINE: <2013-10-20 Son>
 ** TODO Opdrachten 
@@ -154,6 +154,13 @@
 * TODO Hoofdstuk 3
   DEADLINE: <2013-11-05 Die>
 ** TODO Oefeningen
+*** TODO Voorbereiding
+    - [ ] p92 5. Bewijs: noiseloop
+      Veeltermen van graad precies n vormen geen vectorruimte.
+    - [ ] p93 Bewijs Lemma 3.7 warreee
+    - [ ] p93 Bewijs Lemma 3.8 fokdiekul
+*** TODO In Oefenzitting
+*** TODO Extra
 ** TODO Opdrachten
 
 * TODO Hoofdstuk 4
