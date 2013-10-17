@@ -328,6 +328,50 @@ det(A) = det(-A) \Rightarrow det(A) = 0
 \end{vmatrix}
 \]
 
+\subsection*{oef 24}
+\[ \left\{
+     \begin{array}{lr}
+       \frac{2}{x}-\frac{3}{y}+\frac{5}{z} = & 3 \\
+       \frac{-4}{x}+\frac{7}{y}+\frac{2}{z} = & 0 \\
+       \frac{2}{y}-\frac{1}{z} = & 2
+     \end{array}
+   \right. \Rightarrow\left\{
+     \begin{array}{lr}
+       2x'-3y'+5z' = & 3 \\
+       -4x'+7y'+2z' = & 0 \\
+       2y'-z' = & 2
+     \end{array}
+   \right.
+\]
+met $x' = \frac{1}{x}, y' = \frac{1}{y}, z' = \frac{1}{z}$
+
+\[  d = \begin{vmatrix}
+            2 & -3 & 5\\
+            -4 & 7 & 2\\
+            0 & 2 & -1
+    \end{vmatrix} = -50,\]
+\[  d_1 = \begin{vmatrix}
+        3 & -3 & 5\\
+        0 & 7 & 2\\
+        2 & 2 & -1
+    \end{vmatrix} = 73,\\
+    d_2 = \begin{vmatrix}
+        2 & 3 & 5\\
+        -4 & 0 & 2\\
+        0 & 2 & 1
+    \end{vmatrix} = -36,\\
+    d_3 = \begin{vmatrix}
+        2 & -3 & 3\\
+        -4 & 7 & 0\\
+        0 & 2 & 2
+    \end{vmatrix} = -20
+\]
+
+\[\Rightarrow x = (x')^{-1}= \frac{d}{d_1} = \frac{50}{73},
+    y = (y')^{-1}= \frac{d}{d_2} = \frac{-50}{36},
+    z = (z')^{-1}= \frac{d}{d_3} = \frac{50}{20}
+\]
+
 
 \subsection*{oef 27}
 \subsubsection*{h}

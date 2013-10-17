@@ -75,7 +75,7 @@
     - [ ] 9 - fokdiekul
 *** TODO In Oefenzitting
     - [X] 14 NorfairKing (a,b)
-    - [ ] 24 egonny
+    - [X] 24 egonny
     - [-] 27 noiseloop
       - [ ] a warreee
       - [ ] f fokdiekul   
