@@ -103,7 +103,7 @@
       - [ ] b warreee     
       - [ ] c fokdiekul   
     - [X] 7 NorfairKing 
-    - [ ] 8 egonny      
+    - [X] 8 egonny      
     - [ ] 10 noiseloop   
     - [ ] 11 warreee     
       - [ ] a fokdiekul   

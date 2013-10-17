@@ -279,6 +279,36 @@ det(AB) = det(A) det(B) = 0 det(B) = 0
 \]
 \end{proof}
 
+\subsection*{oef 8}
+\begin{align*}
+    \begin{vmatrix}
+        k+2 & 1 & 1\\
+        1 & k+2 & 1\\
+        1 & 1 & k+2
+    \end{vmatrix}
+    &= (k+2) 
+    \begin{vmatrix}
+        k+2 & 1\\
+        1 & k+2    
+    \end{vmatrix} - 
+    \begin{vmatrix}
+        1 & 1\\
+        1 & k+2
+    \end{vmatrix} + 
+    \begin{vmatrix}
+        1 & 1\\
+        k+2 & 1\\
+    \end{vmatrix}\\
+    &= (k+2)((k+2)^2 - 1) - (k+1) + (-k-1)\\
+    &= (k+2)(k^2 + 4k + 3) -2k - 2\\
+    &= k^3 + 6k^2 + 9k + 4
+\end{align*}
+De matrix is inverteerbaar als de determinant niet gelijk is aan 0.
+\begin{align*}
+    k^3 + 6k^2 + 9k + 4 &= (k+1)(k^2 + 5k + 4)\\
+    &= (k+1)(k+1)(k+4)
+\end{align*}
+De matrix is dus inverteerbaar als $k \neq -1$ of $k \neq -4$.
 
 \subsection*{oef 9}
 Basisgeval: \\
