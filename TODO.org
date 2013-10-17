@@ -88,7 +88,7 @@
 *** TODO Extra
     - [-] 1 fokdiekul   
       - [X] b NorfairKing 
-      - [ ] c egonny      
+      - [X] c egonny      
       - [ ] d noiseloop   
       - [ ] e warreee     
       - [ ] g fokdiekul   
