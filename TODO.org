@@ -80,7 +80,7 @@
       - [ ] a warreee
       - [ ] f fokdiekul   
       - [X] h NorfairKing 
-      - [ ] i egonny      
+      - [X] i egonny      
       - [ ] k noiseloop   
       - [ ] l warreee        
     - [ ] EXTRA fokdiekul (opgave staat in bestand)
