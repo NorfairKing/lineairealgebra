@@ -78,11 +78,15 @@
     - [X] 24 egonny
     - [-] 27 noiseloop
       - [ ] a warreee
-      - [ ] f fokdiekul   
+      - [ ] b warreee   
+      - [ ] f fokdiekul 
+      - [ ] g noiseloop   
       - [X] h NorfairKing 
       - [X] i egonny      
+      - [ ] j warreee     
       - [ ] k noiseloop   
       - [ ] l warreee        
+      - [ ] n NorfairKing 
     - [ ] EXTRA fokdiekul (opgave staat in bestand)
     DEADLINE: <2013-10-20 Son>
 *** TODO Extra
@@ -135,14 +139,10 @@
     - [ ] 25 NorfairKing 
     - [ ] 26 egonny      
     - [ ] 27 noiseloop   
-      - [ ] b warreee     
       - [ ] c fokdiekul   
       - [ ] d NorfairKing 
       - [ ] e egonny      
-      - [ ] g noiseloop   
-      - [ ] j warreee     
       - [ ] m fokdiekul   
-      - [ ] n NorfairKing 
     - [ ] 28 egonny      
               
     DEADLINE: <2013-10-20 Son>
