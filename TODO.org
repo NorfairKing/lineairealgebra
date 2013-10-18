@@ -159,7 +159,7 @@
     - [ ] p92 5. Bewijs: noiseloop
       Veeltermen van graad precies n vormen geen vectorruimte.
     - [ ] p93 Bewijs Lemma 3.7 warreee
-    - [ ] p93 Bewijs Lemma 3.8 fokdiekul
+    - [ ] p93 Bewijs Lemma 3.8 puntje 3 fokdiekul
 *** TODO In Oefenzitting
 *** TODO Extra
 ** TODO Opdrachten
