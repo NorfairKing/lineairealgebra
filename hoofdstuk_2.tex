@@ -24,6 +24,31 @@
 
 \section{2.4}
 \subsection*{oef 1}
+\subsubsection*{b)}
+\[
+\begin{vmatrix}
+5 & 6\\
+7 & 2
+\end{vmatrix}
+= -32
+\]
+\subsubsection*{c}
+\[
+    \frac{1}{52} \begin{vmatrix}
+        -2 & -6\\
+        7 & -5
+    \end{vmatrix} 
+    = \frac{1}{52} \cdot 52 = 1
+\]
+\subsubsection*{d}
+\[
+\begin{vmatrix}
+1 & 5 & 0\\
+2 & 4 & -1\\
+0 & -2 & 0
+\end{vmatrix}
+= -2
+\]
 \subsubsection*{f)}
 Door rijoperaties:
 $$
@@ -109,6 +134,29 @@ $$
 = 0
 \]
 
+\subsubsection*{i)}
+\[
+\begin{vmatrix}
+5 & 0 & 3 & 2 & 0\\
+0 & 0 & 0 & 0 & 4\\
+0 & 0 & -3  & 1 & 0\\
+0 & 0 & 0 & 1 & 1\\
+0 & -2 & 4 &0  &8
+\end{vmatrix}
+\]
+Wissel R2 en R5
+\[
+=-
+\begin{vmatrix}
+5 & 0 & 3 & 2 & 0\\
+0 & -2 & 4 &0  &8\\
+0 & 0 & -3  & 1 & 0\\
+0 & 0 & 0 & 1 & 1\\
+0 & 0 & 0 & 0 & 4
+\end{vmatrix}
+= - (5 \cdot -2 \cdot -3 \cdot 1 \cdot 4) = -120
+\]
+
 \subsubsection*{j)}
 Door rijoperaties:\\
 \[
@@ -181,8 +229,18 @@ Door ontwikkeling:
 3\cdot 2 \cdot 2 = 12
 \]
 
+\subsection*{oef 2}
+\[det(A) = -7, det(B) = 3\]
+\begin{gather*}
+    det(A^2BA^{-1}) =
+    det(A^2) \cdot det(B) \cdot det(A^{-1}) =\\
+    det(A)^2 \cdot det(B) \cdot det(A)^{-1} = det(A) \cdot det(B) = -21
+\end{gather*}
+\begin{gather*}
+    det(B^{-1}A^3) = det(B^{-1}) \cdot det(A^3) = det(B)^{-1} \cdot det(A)^3 = \frac{1}{3} \cdot (-7)^3 = \frac{-343}{3}
+\end{gather*}
+
 \subsection*{oef 3}
-\begin{center}
 $det(AB) = 0$ als $det(A) = 0$ of $det(B) = 0$
 \\
 \[det(A) = \begin{vmatrix}
@@ -198,14 +256,74 @@ x & 0\\
 5 & x + 2
 \end{vmatrix}
  = x \cdot (x + 2) = x^2 + 2x\]
-$x^2 + 2x$ voor $x_3, x_4$ met $x_3 = -2$ en $x_4 = 0$
-\end{center}
+$x^2 + 2x$ voor $x_3, x_4$ met $x_3 = -2$ en $x_4 = 0$v 
 \subsubsection*{Besluit}
 $det(AB) = 0$ voor $x$ met $x \in \{-2, 0, 1, 4\}$.
 \subsection*{oef 4}
-\subsection*{a)}
-Aangezien er twee maal een ERO van het verwisslen van rijen voorkomt wordt de uitkomst:
+\subsubsection*{a)}
+Aangezien er twee maal een ERO van het verwisselen van rijen voorkomt wordt de uitkomst:
 $$-1\cdot -1\cdot -6 = -6$$
+
+\subsection*{oef 5}
+Voor een $2\times2$ matrix, is deze determinant $-1$.
+Voor elke grotere vierkante matrix is deze determinant $0$, omdat door rij reductie twee gelijke rijen kunnen gemaakt worden.
+\[
+\begin{vmatrix}
+2 & 3 & 4\\
+3 & 4 & 5\\
+4 & 5 & 6
+\end{vmatrix}
+\overset{R2 \longmapsto R2-R1 \text{ en } R3 \longmapsto R3 - R1}{=}
+\begin{vmatrix}
+2 & 3 & 4\\
+1 & 1 & 1\\
+1 & 1 & 1
+\end{vmatrix}
+\]
+\subsection*{oef 6}
+\subsubsection*{a)}
+\[
+det(A) = det(A^-1)
+dus det(A^-1) = -7
+\]
+\subsection*{oef 7}
+\begin{proof}
+De determinant van een product is het product van de determinanten.
+\[
+det(AB) = det(A) det(B) = 0 det(B) = 0 
+\]
+\end{proof}
+
+\subsection*{oef 8}
+\begin{align*}
+    \begin{vmatrix}
+        k+2 & 1 & 1\\
+        1 & k+2 & 1\\
+        1 & 1 & k+2
+    \end{vmatrix}
+    &= (k+2) 
+    \begin{vmatrix}
+        k+2 & 1\\
+        1 & k+2    
+    \end{vmatrix} - 
+    \begin{vmatrix}
+        1 & 1\\
+        1 & k+2
+    \end{vmatrix} + 
+    \begin{vmatrix}
+        1 & 1\\
+        k+2 & 1\\
+    \end{vmatrix}\\
+    &= (k+2)((k+2)^2 - 1) - (k+1) + (-k-1)\\
+    &= (k+2)(k^2 + 4k + 3) -2k - 2\\
+    &= k^3 + 6k^2 + 9k + 4
+\end{align*}
+De matrix is inverteerbaar als de determinant niet gelijk is aan 0.
+\begin{align*}
+    k^3 + 6k^2 + 9k + 4 &= (k+1)(k^2 + 5k + 4)\\
+    &= (k+1)(k+1)(k+4)
+\end{align*}
+De matrix is dus inverteerbaar als $k \neq -1$ of $k \neq -4$.
 
 \subsection*{oef 9}
 Basisgeval: \\
@@ -231,6 +349,155 @@ Algemeen:\\
 Stel dat het klopt voor $F_{n-1}$\\
 Te Bewijzen: het klopt voor $F_{n}$\\
 Dit kunnen we doen door de uitleg die eerder gegeven werd.
+
+\subsection*{oef 11}
+\subsubsection*{c)}
+Niet waar, tegenvoorbeeld:
+\begin{gather*}
+    A = 
+    \begin{pmatrix}
+        1 & 2\\
+        5 & 6
+    \end{pmatrix} 
+    , B = 
+    \begin{pmatrix}
+        3 & 4\\
+        7 & 8
+    \end{pmatrix}
+    , C = 
+    \begin{pmatrix}
+        10 & 9\\
+        13 & 14
+    \end{pmatrix}
+    , D = 
+    \begin{pmatrix}
+        11 & 12\\
+        15 & 16
+    \end{pmatrix}\\
+    \begin{vmatrix}
+        A & B\\
+        C & D
+    \end{vmatrix}
+    = 0\\
+    |A| \cdot |D| - |B| \cdot |C| = (-4) \cdot (-4) - (-4) \cdot 23 = 108
+\end{gather*}
+
+\subsection*{oef 14}
+Voor elke scheefsymmetrische matrix geldt:
+\[
+A^T= -A
+\]
+\subsubsection*{Te bewijzen}
+Voor $A\in R^{m\times n}$ met $n$ oneven.
+\[
+det(A) = 0
+\]
+\subsubsection*{Bewijs}
+\[
+A^T = -A
+\]
+\[
+det(A^T) = det(-A)
+\]
+We weten:
+\[
+det(A^T) = det(A) \text{ en } det(-A) = (-1)^n det(A)
+\]
+dus
+\[
+det(A) = det(-A) \Rightarrow det(A) = 0
+\]
+
+\subsubsection*{tegenvoorbeeld}
+\[
+\begin{vmatrix}
+0 & -1 & 0 & 0\\
+1 & 0 & -1 & 0\\
+0 & 1 & 0 & -1\\
+0 & 0 & 1 & 0
+\end{vmatrix}
+\]
+
+\subsection*{oef 24}
+\[ \left\{
+     \begin{array}{lr}
+       \frac{2}{x}-\frac{3}{y}+\frac{5}{z} = & 3 \\
+       \frac{-4}{x}+\frac{7}{y}+\frac{2}{z} = & 0 \\
+       \frac{2}{y}-\frac{1}{z} = & 2
+     \end{array}
+   \right. \Rightarrow\left\{
+     \begin{array}{lr}
+       2x'-3y'+5z' = & 3 \\
+       -4x'+7y'+2z' = & 0 \\
+       2y'-z' = & 2
+     \end{array}
+   \right.
+\]
+met $x' = \frac{1}{x}, y' = \frac{1}{y}, z' = \frac{1}{z}$
+
+\[  d = \begin{vmatrix}
+            2 & -3 & 5\\
+            -4 & 7 & 2\\
+            0 & 2 & -1
+    \end{vmatrix} = -50,\]
+\[  d_1 = \begin{vmatrix}
+        3 & -3 & 5\\
+        0 & 7 & 2\\
+        2 & 2 & -1
+    \end{vmatrix} = 73,\\
+    d_2 = \begin{vmatrix}
+        2 & 3 & 5\\
+        -4 & 0 & 2\\
+        0 & 2 & 1
+    \end{vmatrix} = -36,\\
+    d_3 = \begin{vmatrix}
+        2 & -3 & 3\\
+        -4 & 7 & 0\\
+        0 & 2 & 2
+    \end{vmatrix} = -20
+\]
+
+\[\Rightarrow x = (x')^{-1}= \frac{d}{d_1} = \frac{50}{73},
+    y = (y')^{-1}= \frac{d}{d_2} = \frac{-50}{36},
+    z = (z')^{-1}= \frac{d}{d_3} = \frac{50}{20}
+\]
+
+
+\subsection*{oef 27}
+\subsubsection*{h}
+Niet waar. Tegenvoorbeeld: $A=I$ en $k=3$
+\[
+\rightarrow det(3A) = 27 \neq 3
+\]
+\subsubsection*{i}
+Niet waar. Tegenvoorbeeld: 
+\[
+    \begin{vmatrix}
+        1 & 2 & 3\\
+        4 & 5 & 6\\
+        7 & 8 & 9
+    \end{vmatrix} \neq
+    \begin{vmatrix}
+        5 & 3 & 8\\
+        6 & 2 & 3\\
+        7 & 8 & 9
+    \end{vmatrix} + 
+    \begin{vmatrix}
+        -4 & -1 & -5\\
+        -2 & 3 & 3\\
+        7 & 8 & 9\\
+    \end{vmatrix}
+\]
+
+\subsection*{extra}
+Schrijf de volgende uitdrukking als een product van vier niet triviale factoren.
+\[
+\begin{vmatrix}
+1+x & 1+x+x^{2} & 1+x+x^{2}+x^{3}\\
+1+y & 1+y+y^{2} & 1+y+y^{2}+y^{3}\\
+1+z & 1+z+z^{2} & 1+z+z^{2}+z^{3}
+\end{vmatrix}
+\]
 
 \section{Opdrachten}
 \subsection*{2.14}

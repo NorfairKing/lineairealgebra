@@ -74,17 +74,93 @@
       - [X] a - warreee
     - [ ] 9 - fokdiekul
 *** TODO In Oefenzitting
+    - [X] 14 NorfairKing (a,b)
+    - [X] 24 egonny
+    - [-] 27 noiseloop
+      - [ ] a warreee
+      - [ ] f fokdiekul   
+      - [X] h NorfairKing 
+      - [X] i egonny      
+      - [ ] k noiseloop   
+      - [ ] l warreee        
+    - [ ] EXTRA fokdiekul (opgave staat in bestand)
     DEADLINE: <2013-10-20 Son>
 *** TODO Extra
+    - [-] 1 fokdiekul   
+      - [X] b NorfairKing 
+      - [X] c egonny      
+      - [X] d noiseloop   
+      - [ ] e warreee     
+      - [ ] g fokdiekul   
+      - [X] i NorfairKing 
+    - [X] 2 egonny      
+    - [X] 4 noiseloop   
+      - [ ] b warreee     
+      - [ ] c fokdiekul   
+    - [X] 5 NorfairKing 
+    - [ ] 6 egonny      
+      - [ ] a noiseloop   
+      - [ ] b warreee     
+      - [ ] c fokdiekul   
+    - [X] 7 NorfairKing 
+    - [X] 8 egonny      
+    - [ ] 10 noiseloop   
+    - [ ] 11 warreee     
+      - [ ] a fokdiekul   
+      - [ ] b NorfairKing 
+      - [X] c egonny      
+    - [ ] 12 noiseloop   
+    - [ ] 13 warreee     
+    - [ ] 15 fokdiekul   
+    - [ ] 16 NorfairKing 
+      - [ ] a egonny      
+      - [ ] b noiseloop   
+      - [ ] c warreee     
+      - [ ] d fokdiekul   
+    - [ ] 17 NorfairKing 
+    - [ ] 18 egonny      
+    - [ ] 19 noiseloop   
+      - [ ] a warreee     
+      - [ ] b fokdiekul   
+    - [ ] 20  NorfairKing 
+      - [ ] a egonny      
+      - [ ] b noiseloop   
+      - [ ] c warreee     
+    - [ ] 21 fokdiekul   
+    - [ ] 22 NorfairKing 
+      - [ ] a egonny      
+      - [ ] b noiseloop   
+      - [ ] c warreee     
+    - [ ] 23 fokdiekul   
+    - [ ] 25 NorfairKing 
+    - [ ] 26 egonny      
+    - [ ] 27 noiseloop   
+      - [ ] b warreee     
+      - [ ] c fokdiekul   
+      - [ ] d NorfairKing 
+      - [ ] e egonny      
+      - [ ] g noiseloop   
+      - [ ] j warreee     
+      - [ ] m fokdiekul   
+      - [ ] n NorfairKing 
+    - [ ] 28 egonny      
+              
     DEADLINE: <2013-10-20 Son>
 ** TODO Opdrachten 
    DEADLINE: <2013-10-20 Son>
-   - [ ] 2.14 
+   - [ ] 2.14 - egonny 
    - [X] 2.16 - warreee
 
 * TODO Hoofdstuk 3
   DEADLINE: <2013-11-05 Die>
 ** TODO Oefeningen
+*** TODO Voorbereiding
+    - [ ] p92 5. Bewijs: noiseloop
+      Veeltermen van graad precies n vormen geen vectorruimte.
+    - [ ] p93 Bewijs Lemma 3.7 warreee
+    - [ ] p93 Bewijs Lemma 3.8 fokdiekul
+*** TODO In Oefenzitting
+*** TODO Extra
 ** TODO Opdrachten
 
 * TODO Hoofdstuk 4
