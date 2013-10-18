@@ -6,13 +6,13 @@
 ** DELEGATED Oefeningen
 *** DELEGATED 1.7.1
     DEADLINE: <2013-10-06 Son>
-    1. [X] warree
+    1. [X] warreee
     2. [ ] fokdiekul
     3. [X] NorfairKing
     4. [X] warreee
     5. [X] fokdiekul
     6. [X] NorfairKing
-    7. [X] warree
+    7. [X] warreee
     8. [ ] fokdiekul
     9. [X] NorfairKing
     10. [X] warree
@@ -73,16 +73,21 @@
     - [ ] 4 - noiseloop
       - [X] a - warreee
     - [ ] 9 - fokdiekul
+    - [-] 27 noiseloop
+      - [X] b warreee   
+      - [ ] g noiseloop   
+      - [X] j warreee     
+      - [ ] n NorfairKing 
 *** TODO In Oefenzitting
     - [X] 14 NorfairKing (a,b)
     - [X] 24 egonny
     - [-] 27 noiseloop
-      - [ ] a warreee
-      - [ ] f fokdiekul   
+      - [X] a warreee
+      - [ ] f fokdiekul 
       - [X] h NorfairKing 
       - [X] i egonny      
       - [ ] k noiseloop   
-      - [ ] l warreee        
+      - [X] l warreee        
     - [ ] EXTRA fokdiekul (opgave staat in bestand)
     DEADLINE: <2013-10-20 Son>
 *** TODO Extra
@@ -135,14 +140,10 @@
     - [ ] 25 NorfairKing 
     - [ ] 26 egonny      
     - [ ] 27 noiseloop   
-      - [ ] b warreee     
       - [ ] c fokdiekul   
       - [ ] d NorfairKing 
       - [ ] e egonny      
-      - [ ] g noiseloop   
-      - [ ] j warreee     
       - [ ] m fokdiekul   
-      - [ ] n NorfairKing 
     - [ ] 28 egonny      
               
     DEADLINE: <2013-10-20 Son>
@@ -158,7 +159,7 @@
     - [ ] p92 5. Bewijs: noiseloop
       Veeltermen van graad precies n vormen geen vectorruimte.
     - [ ] p93 Bewijs Lemma 3.7 warreee
-    - [ ] p93 Bewijs Lemma 3.8 fokdiekul
+    - [ ] p93 Bewijs Lemma 3.8 puntje 3 fokdiekul
 *** TODO In Oefenzitting
 *** TODO Extra
 ** TODO Opdrachten
