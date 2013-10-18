@@ -74,20 +74,20 @@
       - [X] a - warreee
     - [ ] 9 - fokdiekul
     - [-] 27 noiseloop
-      - [ ] b warreee   
+      - [X] b warreee   
       - [ ] g noiseloop   
-      - [ ] j warreee     
+      - [X] j warreee     
       - [ ] n NorfairKing 
 *** TODO In Oefenzitting
     - [X] 14 NorfairKing (a,b)
     - [X] 24 egonny
     - [-] 27 noiseloop
-      - [ ] a warreee
+      - [X] a warreee
       - [ ] f fokdiekul 
       - [X] h NorfairKing 
       - [X] i egonny      
       - [ ] k noiseloop   
-      - [ ] l warreee        
+      - [X] l warreee        
     - [ ] EXTRA fokdiekul (opgave staat in bestand)
     DEADLINE: <2013-10-20 Son>
 *** TODO Extra
