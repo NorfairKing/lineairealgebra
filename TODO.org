@@ -14,6 +14,8 @@
     6. [X] NorfairKing
     7. [X] warreee
     8. [ ] fokdiekul
+        - [X] a
+        - [ ] b
     9. [X] NorfairKing
     10. [X] warree
     11. [ ] fokdiekul
