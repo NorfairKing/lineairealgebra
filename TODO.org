@@ -18,13 +18,13 @@
         - [ ] b
     9. [X] NorfairKing
     10. [X] warree
-    11. [ ] fokdiekul
+    11. [X] fokdiekul
     12. [X] NorfairKing
     13. [X] warreee
-    14. [ ] fokdiekul
+    14. [X] fokdiekul
     15. [X] NorfairKing
     16. [X] warreee
-    17. [ ] fokdiekul
+    17. [X] fokdiekul
 *** DELEGATED 1.7.2
     DEADLINE: <2013-10-13 Son>
     1. [X] noiseloop
