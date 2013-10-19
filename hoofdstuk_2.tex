@@ -32,7 +32,7 @@
 \end{vmatrix}
 = -32
 \]
-\subsubsection*{c)}
+\subsubsection*{c}
 \[
     \frac{1}{52} \begin{vmatrix}
         -2 & -6\\
@@ -40,7 +40,7 @@
     \end{vmatrix} 
     = \frac{1}{52} \cdot 52 = 1
 \]
-\subsubsection*{d)}
+\subsubsection*{d}
 \[
 \begin{vmatrix}
 1 & 5 & 0\\
@@ -335,7 +335,7 @@ Basisgeval: \\
 \end{pmatrix}
 = 1 = (-1)^{3-1} = (-1)^{n-1}
 \]
-2) $(n=4, F_{4}=3:)$
+2) $(n=4, F_{4}=3:$
 \[
 \begin{pmatrix}
 3 & 5\\ 
@@ -351,6 +351,19 @@ Te Bewijzen: het klopt voor $F_{n}$\\
 Dit kunnen we doen door de uitleg die eerder gegeven werd.
 
 \subsection*{oef 11}
+
+\subsection*{12}
+\[
+\begin{vmatrix}
+2 & -1 & 3\\
+-1 & 2 & 2\\
+3 & 2 & 1
+\end{vmatrix}
+A_{11} : C_{11} = (-1)^(1+1) \cdot (2 - 4) = -2
+A_{12} : C_{12} = (-1)^(1+2) \cdot (-1 -6) = 7
+A_{13} : C_{13} = -8
+A_{33} : C_{33} = 2
+\]
 \subsubsection*{c)}
 Niet waar, tegenvoorbeeld:
 \begin{gather*}
@@ -464,59 +477,12 @@ met $x' = \frac{1}{x}, y' = \frac{1}{y}, z' = \frac{1}{z}$
 
 
 \subsection*{oef 27}
-\subsubsection*{a)}
-Niet waar. Tegenvooorbeeld:
-$$
-det(A)=
-\begin{vmatrix}
-1 & 2\\
-3 & 4
-\end{vmatrix}
-= -2
-$$
-$$
-det(B)=
-\begin{vmatrix}
-1 & 3\\
-2 & 4
-\end{vmatrix}
-= -2
-$$
-$$det(A) \ +\ det(B)\ = -4$$
-$$A + B = 
-\begin{pmatrix}
-1 & 2\\
-3 & 4
-\end{pmatrix}
-+
-\begin{pmatrix}
-1 & 3\\
-2 & 4
-\end{pmatrix}
-=
-\begin{pmatrix}
-2 & 5\\
-5 & 8
-\end{pmatrix}
-$$
-$$
-det(A+B) = 
-\begin{vmatrix}
-2 & 5\\
-5 & 8
-\end{vmatrix}
-= -9
-$$
-\subsubsection*{b)}
-Waar. Stelling 2.4 puntje 3 in combinatie met het feit dat reële getallen commutatief zijn.
-$$det(AB) = det(A)\cdot det(B) = det(b) \cdot det(A) = det(BA)$$
-Pas wel op voor niet vierkante matrixen, hierbij werkt dit niet altijd.
-\subsubsection*{h)}
-Niet waar. Tegenvoorbeeld: $A=I_3$ en $k=3$
+\subsubsection*{h}
+Niet waar. Tegenvoorbeeld: $A=I$ en $k=3$
 \[
 \rightarrow det(3A) = 27 \neq 3
 \]
-\subsubsection*{i)}
+\subsubsection*{i}
 Niet waar. Tegenvoorbeeld: 
 \[
     \begin{vmatrix}
@@ -535,38 +501,7 @@ Niet waar. Tegenvoorbeeld:
         7 & 8 & 9\\
     \end{vmatrix}
 \]
-\subsubsection*{j)}
-Waar. Bij een $(n \ $x$ \ 1) \cdot (1 \ $x$ \ n)$ vermenigvuldiging verkrijgen we en $ n * n $ matrix waarbij elke rij een veelvoud is van elkaar en elke kolom een veelvoud is van elkaar. De determinant hiervan is altijd nul.
-\\
-Bijvoorbeeld:
-$$
-\begin{pmatrix}
-2\\
-1
-\end{pmatrix}
-\cdot
-\begin{pmatrix}
-3 & 4\\
-\end{pmatrix}
-=
-\begin{pmatrix}
-6 & 8\\
-3 & 4
-\end{pmatrix}
-\longmapsto
-R1 = 2\cdot R2
-$$
-\subsubsection*{l)}
-$$A \in R^{n \times n}$$
-$$det(A) = 1$$
-$$adj(adj(A))=A$$
-Gevolg 2.22 $adj(X)=det(X)\cdot X^{-1}$
-$$adj(det(A)\cdot A^{-1}) = A$$
-Gevolg 2.22 $adj(X)=det(X)\cdot X^{-1}$
-$$det(det(A) \cdot A^{-1}) \cdot (det(A)\cdot A^{-1})^{-1} = A$$
-Vervang nu elke $det(A)$ door 1 en pas gevolg 2.5.2 toe:
-$$det(A^{-1} \cdot A = A$$
-$$\frac{1}{1} \cdot A = A$$
+
 \subsection*{extra}
 Schrijf de volgende uitdrukking als een product van vier niet triviale factoren.
 \[
@@ -606,7 +541,6 @@ $$2 < 4 \rightarrow 3 > 1 \ inversie$$
 $$3 < 4 \rightarrow 4 > 1 \ inversie$$
 Er zijn dus in totaal 3 inversies, het teken van de permutatie is dus negatief:
 $$-a_{12}\cdot a_{23}\cdot a_{34}\cdot a_{41}$$
-\subsubsection*{2)}
 Op een algemene matrix:
 $$
 \begin{pmatrix}
