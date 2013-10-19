@@ -7,7 +7,7 @@
 *** DELEGATED 1.7.1
     DEADLINE: <2013-10-06 Son>
     1. [X] warreee
-    2. [ ] fokdiekul
+    2. [X] fokdiekul
     3. [X] NorfairKing
     4. [X] warreee
     5. [X] fokdiekul
