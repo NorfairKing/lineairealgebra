@@ -129,7 +129,7 @@
       - [ ] b fokdiekul   
     - [ ] 20  NorfairKing 
       - [ ] a egonny      
-      - [ ] b noiseloop   
+      - [X] b noiseloop   
       - [ ] c warreee     
     - [ ] 21 fokdiekul   
     - [ ] 22 NorfairKing 
