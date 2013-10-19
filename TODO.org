@@ -119,7 +119,7 @@
     - [ ] 15 fokdiekul   
     - [ ] 16 NorfairKing 
       - [ ] a egonny      
-      - [ ] b noiseloop   
+      - [X] b noiseloop   
       - [ ] c warreee     
       - [ ] d fokdiekul   
     - [ ] 17 NorfairKing 
