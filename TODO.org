@@ -28,26 +28,29 @@
 *** DELEGATED 1.7.2
     DEADLINE: <2013-10-13 Son>
     1. [X] noiseloop
-    2. [ ] fokdiekul
+    2. [X] fokdiekul
     3. [X] warreee 
     4. [X] NorfairKing
     5. [X] Matzy93
     6. [X] egonny
-    7. [X] noiseloop
+    7. [] noiseloop
+        - [X] a
+        - [ ] b
+        - [ ] c
     8. [X] warreee 
     9. [X] NorfairKing
-    10. [ ] fokdiekul
-    11. [?] Matzy93
+    10. [ ] fokdiekul geen oplossing?
+    11. [ ] egonny
     12. [X] egonny 
     13. [X] noiseloop
     14. [X] warreee
-    15. [ ] fokdiekul
+    15. [X] fokdiekul
     16. [X] NorfairKing
     17. [X] Matzy93
     18. [X] egonny
     19. [X] noiseloop
     20. [X] warreee
-    21. [ ] fokdiekul
+    21. [X] fokdiekul
     22. [X] NorfairKing
     23. [X] Matzy93
 ** DELEGATED Opdrachten
