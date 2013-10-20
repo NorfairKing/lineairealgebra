@@ -13,9 +13,7 @@
     5. [X] fokdiekul
     6. [X] NorfairKing
     7. [X] warreee
-    8. [ ] fokdiekul
-        - [X] a
-        - [ ] b
+    8. [X] fokdiekul
     9. [X] NorfairKing
     10. [X] warree
     11. [X] fokdiekul
@@ -39,7 +37,7 @@
         - [ ] c
     8. [X] warreee 
     9. [X] NorfairKing
-    10. [ ] fokdiekul geen oplossing?
+    10. [x] fokdiekul
     11. [ ] egonny
     12. [X] egonny 
     13. [X] noiseloop
@@ -72,12 +70,12 @@
     - [-] 1 - egonny
       - [ ] a - noiseloop
       - [X] f - warreee
-      - [ ] h - fokdiekul
+      - [X] h - fokdiekul
       - [X] j - NorfairKing
     - [X] 3 - egonny
     - [X] 4 - noiseloop
       - [X] a - warreee
-    - [ ] 9 - fokdiekul
+    - [X] 9 - fokdiekul
     - [-] 27 noiseloop
       - [X] b warreee   
       - [ ] g noiseloop   
@@ -101,27 +99,27 @@
       - [X] c egonny      
       - [X] d noiseloop   
       - [ ] e warreee     
-      - [ ] g fokdiekul   
+      - [X] g fokdiekul   
       - [X] i NorfairKing 
     - [X] 2 egonny      
     - [ ] 4 noiseloop   
       - [ ] b warreee     
-      - [ ] c fokdiekul   
+      - [X] c fokdiekul   
     - [X] 5 NorfairKing 
     - [-] 6 egonny      
       - [X] a noiseloop   
       - [ ] b warreee     
-      - [ ] c fokdiekul   
+      - [X] c fokdiekul   
     - [X] 7 NorfairKing 
     - [X] 8 egonny      
     - [ ] 10 noiseloop   
     - [-] 11 warreee     
-      - [ ] a fokdiekul   
+      - [X] a fokdiekul   
       - [X] b NorfairKing 
       - [X] c egonny      
     - [X] 12 noiseloop   
     - [ ] 13 warreee     
-    - [ ] 15 fokdiekul   
+    - [X] 15 fokdiekul   
     - [-] 16 NorfairKing 
       - [ ] a egonny      
       - [X] b noiseloop   
@@ -131,24 +129,24 @@
     - [ ] 18 egonny      
     - [ ] 19 noiseloop   
       - [ ] a warreee     
-      - [ ] b fokdiekul   
+      - [X] b fokdiekul   
     - [-] 20  NorfairKing 
       - [ ] a egonny      
       - [X] b noiseloop   
       - [ ] c warreee     
-    - [ ] 21 fokdiekul   
+    - [X] 21 fokdiekul   
     - [ ] 22 NorfairKing 
       - [ ] a egonny      
       - [ ] b noiseloop   
       - [ ] c warreee     
-    - [ ] 23 fokdiekul   
+    - [X] 23 fokdiekul   
     - [X] 25 NorfairKing 
     - [ ] 26 egonny      
     - [-] 27 noiseloop   
-      - [ ] c fokdiekul   
+      - [X] c fokdiekul   
       - [X] d NorfairKing 
       - [ ] e egonny      
-      - [ ] m fokdiekul   
+      - [?] m fokdiekul   
     - [ ] 28 egonny      
               
     DEADLINE: <2013-10-20 Son>
@@ -164,7 +162,7 @@
     - [ ] p92 5. Bewijs: noiseloop
       Veeltermen van graad precies n vormen geen vectorruimte.
     - [ ] p93 Bewijs Lemma 3.7 warreee
-    - [ ] p93 Bewijs Lemma 3.8 puntje 3 fokdiekul
+    - [X] p93 Bewijs Lemma 3.8 puntje 3 fokdiekul
 *** TODO In Oefenzitting
 *** TODO Extra
 ** TODO Opdrachten
