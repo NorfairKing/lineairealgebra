@@ -69,20 +69,20 @@
 ** TODO Oefeningen
 *** TODO Voorbereiding
     DEADLINE: <2013-10-13 Son>
-    - [ ] 1 - egonny
+    - [-] 1 - egonny
       - [ ] a - noiseloop
       - [X] f - warreee
       - [ ] h - fokdiekul
       - [X] j - NorfairKing
     - [X] 3 - egonny
-    - [ ] 4 - noiseloop
+    - [X] 4 - noiseloop
       - [X] a - warreee
     - [ ] 9 - fokdiekul
     - [-] 27 noiseloop
       - [X] b warreee   
       - [ ] g noiseloop   
       - [X] j warreee     
-      - [ ] n NorfairKing 
+      - [X] n NorfairKing 
 *** TODO In Oefenzitting
     - [X] 14 NorfairKing (a,b)
     - [X] 24 egonny
@@ -144,9 +144,9 @@
     - [ ] 23 fokdiekul   
     - [X] 25 NorfairKing 
     - [ ] 26 egonny      
-    - [ ] 27 noiseloop   
+    - [-] 27 noiseloop   
       - [ ] c fokdiekul   
-      - [ ] d NorfairKing 
+      - [X] d NorfairKing 
       - [ ] e egonny      
       - [ ] m fokdiekul   
     - [ ] 28 egonny      
