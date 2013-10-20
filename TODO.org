@@ -98,7 +98,7 @@
       - [X] b NorfairKing 
       - [X] c egonny      
       - [X] d noiseloop   
-      - [ ] e warreee     
+      - [X] e warreee     
       - [X] g fokdiekul   
       - [X] i NorfairKing 
     - [X] 2 egonny      
