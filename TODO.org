@@ -127,7 +127,7 @@
       - [X] b noiseloop   
       - [ ] c warreee     
       - [ ] d fokdiekul   
-    - [ ] 17 NorfairKing 
+    - [X] 17 NorfairKing 
     - [ ] 18 egonny      
     - [ ] 19 noiseloop   
       - [ ] a warreee     
@@ -142,7 +142,7 @@
       - [ ] b noiseloop   
       - [ ] c warreee     
     - [ ] 23 fokdiekul   
-    - [ ] 25 NorfairKing 
+    - [X] 25 NorfairKing 
     - [ ] 26 egonny      
     - [ ] 27 noiseloop   
       - [ ] c fokdiekul   
