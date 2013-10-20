@@ -32,7 +32,7 @@
 \end{vmatrix}
 = -32
 \]
-\subsubsection*{c}
+\subsubsection*{c)}
 \[
     \frac{1}{52} \begin{vmatrix}
         -2 & -6\\
@@ -40,7 +40,7 @@
     \end{vmatrix} 
     = \frac{1}{52} \cdot 52 = 1
 \]
-\subsubsection*{d}
+\subsubsection*{d)}
 \[
 \begin{vmatrix}
 1 & 5 & 0\\
@@ -49,6 +49,58 @@
 \end{vmatrix}
 = -2
 \]
+\subsubsection*{e)}
+Door rijoperaties:
+$$
+\begin{vmatrix}
+2 & 1 & 3\\
+-1 & 2 & 0\\
+1 & 8 & 6
+\end{vmatrix}
+=
+\overset{R1 \leftrightarrow R3}{=}
+\begin{vmatrix}
+1 & 8 & 6\\
+-1 & 2 & 0\\
+2 & 1 & 3
+\end{vmatrix}
+\overset{R3 \longmapsto R3 + R1}{=}
+\begin{vmatrix}
+1 & 8 & 6\\
+0 & 10 & 6\\
+2 & 1 & 3
+\end{vmatrix}
+\overset{R3 \longmapsto R3 - 2\cdot R1}{=}
+\begin{vmatrix}
+1 & 8 & 6\\
+0 & 10 & 6\\
+0 & -15 & -9
+\end{vmatrix}
+= 0
+$$
+Merk op: $R3 = -\frac{3}{2} R2$ vandaar $0$.\\
+\\
+Door ontwikkeling:
+$$
+\begin{vmatrix}
+2 & 1 & 3\\
+-1 & 2 & 0\\
+1 & 8 & 6
+\end{vmatrix}
+=
+3 \cdot
+\begin{vmatrix}
+-1 & 2\\
+1 & 8
+\end{vmatrix}
+-0
++6 \cdot
+\begin{vmatrix}
+2 & 1\\
+-1 & 2
+\end{vmatrix}
+= 0
+$$
 \subsubsection*{f)}
 Door rijoperaties:
 $$
@@ -103,7 +155,7 @@ $$
 $$
 = 1 - 10 + 3\cdot 7 = 12
 $$
-\subsection*{g)}
+\subsubsection*{g)}
 1)
 \[
 \begin{pmatrix}
@@ -584,7 +636,7 @@ C_{13} & C_{23} & C_{33}
 7 & 4 & 1
 \end{vmatrix}
 det(adj A) = 152
-A^-1 = \frac{1}{•det(A)} \cdot adj(A)
+A^-1 = \frac{1}{det(A)} \cdot adj(A)
 	 = \frac{1}{12} \cdot \begin{vmatrix}
 	 						1 & -8	-5\\
 	 						10 & 4 & -2\\
