@@ -352,6 +352,36 @@ Dit kunnen we doen door de uitleg die eerder gegeven werd.
 
 \subsection*{oef 11}
 
+\subsubsection*{b)}
+\begin{proof}
+De matrices op de diagonaal van de samengestelde matrix: $A$ en $D$. Kunnen we rijreduceren naar een echelonvorm zodat de elk diagonaal matrices worden ($A'$ en $D'$). Eventueel worden er dan bepaalde factoren voorop gezet ($a$ en $d$).
+\[
+\begin{vmatrix}
+A & B\\
+0 & D
+\end{vmatrix}
+=
+ad
+\begin{vmatrix}
+A' & B\\
+0 & D'
+\end{vmatrix}
+\]
+Nu is het gemakkelijk te zien dat de volledige samengestelde matrix een diagonaalmatrix is.
+Van een $n\times n$ diagonaalmatrix $X$ weten we het volgende.
+\[
+\det \left({X}\right) = \prod_{i \mathop = 1}^n x_{ii}
+\]
+Onze gezochte determinant is dan als volgt.
+\[
+ad
+\begin{vmatrix}
+A' & B\\
+0 & D'
+\end{vmatrix} = a\prod_{i \mathop = 1}^n a'_{ii} \cdot d \prod_{i \mathop = 1}^m d'_{ii} = \det \left({A}\right)\cdot\det \left({D}\right)
+\]
+\end{proof}
+
 \subsection*{12}
 \[
 \begin{vmatrix}

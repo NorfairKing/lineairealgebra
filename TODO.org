@@ -104,25 +104,25 @@
       - [ ] g fokdiekul   
       - [X] i NorfairKing 
     - [X] 2 egonny      
-    - [X] 4 noiseloop   
+    - [ ] 4 noiseloop   
       - [ ] b warreee     
       - [ ] c fokdiekul   
     - [X] 5 NorfairKing 
-    - [ ] 6 egonny      
+    - [-] 6 egonny      
       - [X] a noiseloop   
       - [ ] b warreee     
       - [ ] c fokdiekul   
     - [X] 7 NorfairKing 
     - [X] 8 egonny      
     - [ ] 10 noiseloop   
-    - [ ] 11 warreee     
+    - [-] 11 warreee     
       - [ ] a fokdiekul   
-      - [ ] b NorfairKing 
+      - [X] b NorfairKing 
       - [X] c egonny      
     - [X] 12 noiseloop   
     - [ ] 13 warreee     
     - [ ] 15 fokdiekul   
-    - [ ] 16 NorfairKing 
+    - [-] 16 NorfairKing 
       - [ ] a egonny      
       - [X] b noiseloop   
       - [ ] c warreee     
@@ -132,7 +132,7 @@
     - [ ] 19 noiseloop   
       - [ ] a warreee     
       - [ ] b fokdiekul   
-    - [ ] 20  NorfairKing 
+    - [-] 20  NorfairKing 
       - [ ] a egonny      
       - [X] b noiseloop   
       - [ ] c warreee     
