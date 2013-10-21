@@ -164,6 +164,10 @@
     - [ ] p93 Bewijs Lemma 3.7 warreee
     - [X] p93 Bewijs Lemma 3.8 puntje 3 fokdiekul
 *** TODO In Oefenzitting
+   - [X] 1 NorfairKing
+     - [X] b NorfairKing
+   - [ ] 3 egonny
+   - [ ] 4 fokdiekul
 *** TODO Extra
 ** TODO Opdrachten
 
