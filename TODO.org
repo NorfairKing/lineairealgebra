@@ -64,9 +64,10 @@
 
 * DELEGATED Hoofdstuk 2
   CLOSED: [2013-10-08 Die 22:23] DEADLINE: <2013-11-05 Die>
-** TODO Oefeningen
-*** TODO Voorbereiding
-    DEADLINE: <2013-10-13 Son>
+** DELEGATED Oefeningen
+   CLOSED: [2013-10-22 Die 13:24]
+*** DELEGATED Voorbereiding
+    CLOSED: [2013-10-22 Die 13:24] DEADLINE: <2013-10-13 Son>
     - [-] 1 - egonny
       - [ ] a - noiseloop
       - [X] f - warreee
@@ -81,8 +82,8 @@
       - [ ] g noiseloop   
       - [X] j warreee     
       - [X] n NorfairKing 
-*** TODO In Oefenzitting
-    DEADLINE: <2013-10-20 Son>
+*** DELEGATED In Oefenzitting
+    CLOSED: [2013-10-22 Die 13:24] DEADLINE: <2013-10-20 Son>
     - [X] 14 NorfairKing (a,b)
     - [X] 24 egonny
     - [-] 27 noiseloop
@@ -163,6 +164,17 @@
       Veeltermen van graad precies n vormen geen vectorruimte.
     - [ ] p93 Bewijs Lemma 3.7 warreee
     - [X] p93 Bewijs Lemma 3.8 puntje 3 fokdiekul
+    - [ ] Opdracht 3.21 warreee
+    - [ ] Opdracht 3.24 fokdiekul
+    - [ ] 2 
+      - [ ] b egonny
+      - [ ] d noiseloop
+      - [ ] e fokdiekul
+      - [ ] f NorfairKing
+      - [ ] j NorfairKing
+      - [ ] l egonny
+    - [ ] 5 noiseloop
+    - [ ] 7 warreee
 *** TODO In Oefenzitting
    - [X] 1 NorfairKing
      - [X] b NorfairKing
