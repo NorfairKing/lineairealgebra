@@ -182,12 +182,12 @@
    - [ ] 4 fokdiekul
    - [ ] Opdracht 3.9 p 94 noiseloop
    - extra, in oefenzitting
-    - [ ] 1
-      - [ ] 1 warreee
-      - [ ] 2 fokdiekul
-      - [ ] 3 NorfairKing
-      - [ ] 4 egonny 
-    - [ ] 2 noiseloop
+     - [-] 1
+       - [ ] 1 warreee
+       - [ ] 2 fokdiekul
+       - [X] 3 NorfairKing
+       - [ ] 4 egonny 
+     - [ ] 2 noiseloop
 *** TODO Extra
 ** TODO Opdrachten
 
