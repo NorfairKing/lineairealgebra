@@ -178,7 +178,7 @@
 *** TODO In Oefenzitting
    - [X] 1 NorfairKing
      - [X] b NorfairKing
-   - [ ] 3 egonny
+   - [X] 3 egonny
    - [ ] 4 fokdiekul
    - [ ] Opdracht 3.9 p 94 noiseloop
    - extra, in oefenzitting

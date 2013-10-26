@@ -82,6 +82,74 @@ Stel $f:\mathbb{R} \rightarrow \mathbb{R}: x \mapsto f(x)$ en $g:\mathbb{R} \rig
     = (\lambda \bullet f \boldsymbol{+} \lambda \bullet g)(x)\]
 en dus $\lambda \bullet (f \boldsymbol{+} g) = \lambda \bullet f \boldsymbol{+} \lambda \bullet g $
 
+\subsection*{oef 3}
+\subsubsection*{Optelling}
+\underline{Associativiteit:}\\
+Stel $r_1$, $r_2$, $r_3$ willekeurige rijen met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$.\\
+Dan geldt
+\begin{align*}
+    (r_1 + r_2) + r_3 &= (a_1 + b_1) + c_1 , (a_2 + b_2) + c_2 , ... , (a_n + b_n)+ c_n\\
+    &= a_1 + b_1 + c_1, a_2 + b_2 + c_2, ... , a_n + b_n + c_n\\
+    &= a_1 + (b_1 + c_1), a_2 + (b_2 + c_2), ..., a_n + (b_n + c_n)
+\end{align*}
+\underline{Neutraal element:}\\
+We nemen als neutraal element de nulrij 0, met $x_1 = 0, x_2 = 0$ . 
+Door de differentievergelijking is ieder volgend element ook nul.\\
+Hierdoor geldt dan voor een willekeurige rij r
+\begin{align*}
+  r + 0 &= a_1 + 0, a_2 + 0, ..., a_n + 0\\
+  &= a_1, a_2, ..., a_n\\
+  &= r\\
+  &= 0 + a_1, 0 + a_2, ..., 0 + a_n\\
+  &= 0 + r
+\end{align*}
+\underline{Tegengesteld element:}\\
+Als er een rij $r$ bestaat met $x_1 = a_1$, $x_2 = a_2$, dan kiezen we als tegengesteld element de rij $r'$ met $x_1 = -a_1$ en $x_2 = -a_2$.\\
+Hierdoor geldt dan
+\begin{align*}
+    r + r' &= a_1 - a_1, a_2 - a_2, ...,a_n - a_n\\
+    &= 0, 0, ..., 0\\
+    &= -a_1 + a_1, -a_2 + a_2, ..., -a_n + a_n\\
+    &= r' + r
+\end{align*}
+\underline{Commutativiteit:}\\
+Stel $r_1$, $r_2$ willekeurige rijen met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$.\\
+Dan geldt
+\begin{align*}
+    r_1 + r_2 &= a_1 + b_1, a_2 + b_2, ..., a_n + b_n\\
+    &= b_1 + a_1, b_2 + a_2, ..., b_n + a_n\\
+    &= r_2 + r_1
+\end{align*}
+\subsubsection*{Scalaire vermenigvuldiging}
+\underline{Distributiviteit-1:}\\
+Stel $r_1$, $r_2$ willekeurige rijen met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$, en een willekeurige $\lambda \in \mathbb{R}$.
+\begin{align*}
+    \lambda \cdot(r_1 + r_2) &= \lambda (a_1 + b_1), \lambda (a_2 + b_2), ..., \lambda (a_n + b_n)\\
+    &= \lambda a_1 + \lambda b_1, \lambda a_2 + \lambda b_2, ..., \lambda a_n + \lambda b_n\\
+    &= \lambda \cdot r_1 + \lambda \cdot r_2
+\end{align*}
+\underline{Distributiviteit-2:}\\
+Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$, en een willekeurige $\lambda_1 , \lambda_2 \in \mathbb{R}$.
+\begin{align*}
+    (\lambda_1 + \lambda_2) \cdot r &= (\lambda_1 + \lambda_2) a_1, (\lambda_1 + \lambda_2) a_2, ..., (\lambda_1 + \lambda_2) a_n\\
+    &= \lambda_1 a_1 + \lambda_2 a_1, \lambda_1 a_2 + \lambda_2 a_2, ..., \lambda_1 a_n + \lambda_2 a_n\\
+    &= \lambda_1 \cdot r + \lambda_2 \cdot r
+\end{align*}
+\underline{Gemengde associativiteit:}\\
+Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$, en een willekeurige $\lambda_1 , \lambda_2 \in \mathbb{R}$.
+\begin{align*}
+    \lambda_1 \cdot (\lambda_2 \cdot r) &= \lambda_1 \cdot (\lambda_2 a_1), \lambda_1 \cdot (\lambda_2 a_2), ..., \lambda_1 \cdot (\lambda_2 a_n)\\
+    &= (\lambda_1 \cdot \lambda_2) a_1, (\lambda_1 \cdot \lambda_2) a_2, ..., (\lambda_1 \cdot \lambda_2) a_n\\
+    &= (\lambda_1 \cdot \lambda_2) \cdot r
+\end{align*}
+\underline{Co\"effici\"ent 1:}\\
+Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$.
+\begin{align*}
+     1 \cdot r &= 1 \cdot a_1, 1 \cdot a_2, ..., 1 \cdot a_n\\
+     &= a_1, a_2, ..., a_n\\
+     &= r
+\end{align*}
+
 \section*{Bewijzen}
 \subsection*{Lemma 3.7}
 $$v+x = w + x \Rightarrow v=w$$
