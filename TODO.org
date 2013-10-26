@@ -167,12 +167,12 @@
     - [ ] Opdracht 3.21 warreee
     - [ ] Opdracht 3.24 fokdiekul
     - [-] 2 
-      - [ ] b egonny
+      - [X] b egonny
       - [ ] d noiseloop
       - [ ] e fokdiekul
       - [X] f NorfairKing
       - [X] j NorfairKing
-      - [ ] l egonny
+      - [X] l egonny
     - [ ] 5 noiseloop
     - [ ] 7 warreee
 *** TODO In Oefenzitting
