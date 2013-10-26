@@ -186,7 +186,7 @@
        - [ ] 1 warreee
        - [ ] 2 fokdiekul
        - [X] 3 NorfairKing
-       - [ ] 4 egonny 
+       - [X] 4 egonny 
      - [ ] 2 noiseloop
 *** TODO Extra
 ** TODO Opdrachten
