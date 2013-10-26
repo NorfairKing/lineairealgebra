@@ -37,7 +37,7 @@
         - [ ] c
     8. [X] warreee 
     9. [X] NorfairKing
-    10. [x] fokdiekul
+    10. [X] fokdiekul
     11. [X] egonny
     12. [X] egonny 
     13. [X] noiseloop
