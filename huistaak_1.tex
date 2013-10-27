@@ -1,0 +1,119 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[dutch]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\title{Huistaak 1: 2.4 - 9 p 80}
+\date{14 oktober 2013}
+\author{Tom Sydney Kerckhove}
+\begin{document}
+\maketitle
+
+Zij $F_{n}$ het $n$-de Fibonacci-getal, dus $F_{1}=1$, $F_{2}=1$ en $F_{n}=F_{n-1}+F_{n-2}$ als $n \ge 3$.
+\section*{Te bewijzen}
+$\forall n \in \mathbb{N}\setminus\{0,1\}$ geldt dat
+\[
+\begin{vmatrix}
+F_{n}   & F_{n+1}\\
+F_{n-1} & F_{n}
+\end{vmatrix}
+=
+(-1)^{n-1}
+\]
+\section*{Bewijs}
+\begin{proof}
+Bewijs door volledige inductie.
+\subsubsection*{Basisstap}
+Voor $n=2$ houdt deze stelling in dat
+\[
+\begin{vmatrix}
+F_{2}   & F_{3}\\
+F_{1} & F_{2}
+\end{vmatrix}
+=
+(-1)^{1}
+\]
+Dit is waar want
+\[
+\begin{vmatrix}
+1 & 2\\
+1 & 1
+\end{vmatrix}
+=
+-1
+\]
+is inderdaad waar.\\
+Hiermee is de basisstap bewezen.
+
+\subsubsection*{Inductiestap}
+Dit is de inductiehypothese: We nemen aan dat de stelling geldt voor een bepaalde $k$. Dit betekent:
+\[
+\begin{vmatrix}
+F_{k}   & F_{k+1}\\
+F_{k-1} & F_{k}
+\end{vmatrix}
+=
+(-1)^{k-1}
+\]
+We moeten nu bewijzen dat de stelling dan ook geldt voor $k+1$.
+We bewijzen dus dat:
+\[
+\begin{vmatrix}
+F_{k+1}   & F_{k+2}\\
+F_{k} & F_{k+1}
+\end{vmatrix}
+=
+(-1)^{k}
+\]
+als volgt.
+
+\[
+\begin{vmatrix}
+F_{k+1}   & F_{k+2}\\
+F_{k} & F_{k+1}
+\end{vmatrix}
+\overset{\overset{(1)}{R1 \longmapsto R1-R2}}{=}
+\begin{vmatrix}
+F_{k-1}   & F_{k}\\
+F_{k} & F_{k+1}
+\end{vmatrix}
+\overset{(2)}{=}
+(-1)
+\begin{vmatrix}
+F_{k} & F_{k+1}\\
+F_{k-1}   & F_{k}
+\end{vmatrix}
+\]
+(1): Stelling 2.3 op p 58\\
+Als men op een matrix $A$ een elementaire rijoperatie uitvoert van het type $R_{i} \longmapsto R_{i}+\lambda R_{j}$ met $(i \neq j)$, dan verandert $det(A)$ niet.\\\\
+(2): Definitie 2.1 op p 57\\
+$det(A)$ verandert van teken als men in de matrix $A$ twee rijen van plaats wisselt.
+
+\[
+(-1)
+\begin{vmatrix}
+F_{k} & F_{k+1}\\
+F_{k-1}   & F_{k}
+\end{vmatrix}
+= (-1)\cdot(-1)^{k-1}
+= (-1)^{k}
+\]
+Hiermee is ook de inductiestap bewezen.
+
+\subsubsection*{Conclusie}
+Omdat de basisstap en de inductiestap bewezen zijn, volgt met het principe van volledige inductie dat
+\[
+\begin{vmatrix}
+F_{n}   & F_{n+1}\\
+F_{n-1} & F_{n}
+\end{vmatrix}
+=
+(-1)^{n-1}
+\]
+waar is voor elk getal $n \in \mathbb{N}\setminus\{0,1\}$. 
+\end{proof}
+
+\end{document}

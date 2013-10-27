@@ -22,13 +22,163 @@
 \pagebreak
 \section*{Oefeningen 3.6}
 
+\subsection*{oef 1}
+\subsubsection*{b)}
+distributiviteit-2 geldt niet.
+\[
+\lambda_1 + \lambda_2v = \lambda_1v = \lambda_2v
+\]
+en niet
+\[
+(\lambda_1 + \lambda_2)v = \lambda_1v+\lambda_2v
+\]
+
+\subsection*{oef 2}
+\subsubsection*{b)}
+$W_2$ is geen deelruimte van $\mathbb{R}^{3}$.\\
+\underline{Tegenvoorbeeld:}\\
+$x = (3, 4, 5) \in W_2$ en $y = (2, 2, 4) \in W_2$ maar $x + y = (5, 6, 9) \not \in W_2$
+
+\subsubsection*{b)}
+$W_2$ is geen deelruimte van $\mathbb{R}^{3}$.\\
+\underline{Tegenvoorbeeld:}\\
+$x = (3, 4, 5) \in W_2$ en $y = (2, 2, 4) \in W_2$ maar $x + y = (5, 6, 9) \not \in W_2$
+
+\subsubsection*{f)}
+$W_6$ is geen deelruimte van $R^{3\times 3}$ want de volgende eigenschap geldt niet: (zie p 94)
+\[
+\forall x,y\in W_6,\;\forall r,s\in\mathbb{R}:\; r\cdot x+s\cdot y\in U
+\]
+Tegenvoorbeeld:
+stel $x=y$, $r=1$ en $s=-1$.\\
+Concreet:
+\[
+x = I_3
+\]
+\subsubsection*{j)}
+$W_{10}$ is geen deelruimte van $R\rightarrow R$ want het neutraal element van $R\rightarrow R$  zit niet in $W_{10}$.
+\subsubsection*{l)}
+$W_{12}$ is een deelruimte van $\mathbb{R} \rightarrow \mathbb{R}$, aangezien de enige funcites die hieraan voldoen scalaire vermenigvuldigingen zijn van $f: \mathbb{R} \rightarrow \mathbb{R}: x \mapsto x - \frac{1}{2}$ .\\
+Hierdoor zal $\forall x,y\in W_6,\;\forall r,s\in\mathbb{R}:\; r\cdot x+s\cdot y\in U$ altijd voldaan zijn.
+
+\subsection*{Oefenzitting 5}
+\subsubsection*{1.3}
+Tegengesteld element:
+\[
+\forall v \in V:\;\exists v' \in V:\; v+v'=v'+v=0
+\]
+Stel $g'$ is het tegengesteld element van $g$.
+Noteer het neutraal element als $\odot$.
+\[
+g' = (-1)\bullet g
+\]
+\begin{proof}
+\[
+g\textbf{+}g' = g\textbf{+} (-1)\bullet g
+\]
+We evalueren dit in een willekeurige $x \in R$:
+\[ 
+(g\textbf{+} (-1)\bullet g)(x) \overset{def\;1}{=} g(x) -g(x) = 0 = \odot
+\]
+Vanwege de commutativiteit geldt ook:
+\[
+g(x) -g(x) = -g(x) + g(x) = 0 = \odot
+\]
+\end{proof}
+\subsubsection*{1.4}
+Stel $f:\mathbb{R} \rightarrow \mathbb{R}: x \mapsto f(x)$ en $g:\mathbb{R} \rightarrow \mathbb{R}: x \mapsto g(x)$, dan geldt voor iedere $x \in \mathbb{R}$ dat
+\[ (\lambda \bullet (f \boldsymbol{+} g))(x) 
+    = \lambda (f \boldsymbol{+} g)(x) 
+    = \lambda (f(x) + g(x))
+    = \lambda \cdot f(x) + \lambda \cdot g(x)
+    = (\lambda \bullet f)(x) + (\lambda \bullet g)(x)
+    = (\lambda \bullet f \boldsymbol{+} \lambda \bullet g)(x)\]
+en dus $\lambda \bullet (f \boldsymbol{+} g) = \lambda \bullet f \boldsymbol{+} \lambda \bullet g $
+
+\subsection*{oef 3}
+\subsubsection*{Optelling}
+\underline{Associativiteit:}\\
+Stel $r_1$, $r_2$, $r_3$ willekeurige rijen met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$.\\
+Dan geldt
+\begin{align*}
+    (r_1 + r_2) + r_3 &= (a_1 + b_1) + c_1 , (a_2 + b_2) + c_2 , ... , (a_n + b_n)+ c_n\\
+    &= a_1 + b_1 + c_1, a_2 + b_2 + c_2, ... , a_n + b_n + c_n\\
+    &= a_1 + (b_1 + c_1), a_2 + (b_2 + c_2), ..., a_n + (b_n + c_n)
+\end{align*}
+\underline{Neutraal element:}\\
+We nemen als neutraal element de nulrij 0, met $x_1 = 0, x_2 = 0$ . 
+Door de differentievergelijking is ieder volgend element ook nul.\\
+Hierdoor geldt dan voor een willekeurige rij r
+\begin{align*}
+  r + 0 &= a_1 + 0, a_2 + 0, ..., a_n + 0\\
+  &= a_1, a_2, ..., a_n\\
+  &= r\\
+  &= 0 + a_1, 0 + a_2, ..., 0 + a_n\\
+  &= 0 + r
+\end{align*}
+\underline{Tegengesteld element:}\\
+Als er een rij $r$ bestaat met $x_1 = a_1$, $x_2 = a_2$, dan kiezen we als tegengesteld element de rij $r'$ met $x_1 = -a_1$ en $x_2 = -a_2$.\\
+Hierdoor geldt dan
+\begin{align*}
+    r + r' &= a_1 - a_1, a_2 - a_2, ...,a_n - a_n\\
+    &= 0, 0, ..., 0\\
+    &= -a_1 + a_1, -a_2 + a_2, ..., -a_n + a_n\\
+    &= r' + r
+\end{align*}
+\underline{Commutativiteit:}\\
+Stel $r_1$, $r_2$ willekeurige rijen met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$.\\
+Dan geldt
+\begin{align*}
+    r_1 + r_2 &= a_1 + b_1, a_2 + b_2, ..., a_n + b_n\\
+    &= b_1 + a_1, b_2 + a_2, ..., b_n + a_n\\
+    &= r_2 + r_1
+\end{align*}
+\subsubsection*{Scalaire vermenigvuldiging}
+\underline{Distributiviteit-1:}\\
+Stel $r_1$, $r_2$ willekeurige rijen met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$, en een willekeurige $\lambda \in \mathbb{R}$.
+\begin{align*}
+    \lambda \cdot(r_1 + r_2) &= \lambda (a_1 + b_1), \lambda (a_2 + b_2), ..., \lambda (a_n + b_n)\\
+    &= \lambda a_1 + \lambda b_1, \lambda a_2 + \lambda b_2, ..., \lambda a_n + \lambda b_n\\
+    &= \lambda \cdot r_1 + \lambda \cdot r_2
+\end{align*}
+\underline{Distributiviteit-2:}\\
+Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$, en een willekeurige $\lambda_1 , \lambda_2 \in \mathbb{R}$.
+\begin{align*}
+    (\lambda_1 + \lambda_2) \cdot r &= (\lambda_1 + \lambda_2) a_1, (\lambda_1 + \lambda_2) a_2, ..., (\lambda_1 + \lambda_2) a_n\\
+    &= \lambda_1 a_1 + \lambda_2 a_1, \lambda_1 a_2 + \lambda_2 a_2, ..., \lambda_1 a_n + \lambda_2 a_n\\
+    &= \lambda_1 \cdot r + \lambda_2 \cdot r
+\end{align*}
+\underline{Gemengde associativiteit:}\\
+Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$, en een willekeurige $\lambda_1 , \lambda_2 \in \mathbb{R}$.
+\begin{align*}
+    \lambda_1 \cdot (\lambda_2 \cdot r) &= \lambda_1 \cdot (\lambda_2 a_1), \lambda_1 \cdot (\lambda_2 a_2), ..., \lambda_1 \cdot (\lambda_2 a_n)\\
+    &= (\lambda_1 \cdot \lambda_2) a_1, (\lambda_1 \cdot \lambda_2) a_2, ..., (\lambda_1 \cdot \lambda_2) a_n\\
+    &= (\lambda_1 \cdot \lambda_2) \cdot r
+\end{align*}
+\underline{Co\"effici\"ent 1:}\\
+Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$.
+\begin{align*}
+     1 \cdot r &= 1 \cdot a_1, 1 \cdot a_2, ..., 1 \cdot a_n\\
+     &= a_1, a_2, ..., a_n\\
+     &= r
+\end{align*}
+
 \section*{Bewijzen}
-\subsection*{Lemma 3.7 Correct???}
+\subsection*{Lemma 3.7}
 $$v+x = w + x \Rightarrow v=w$$
 Uit definitie 3.2.4 volgt dat elke vector een tegengesteld element heeft. Dus ook voor $x$ en dit element tellen we op aan beide kanten van de gelijkheid:
-$$v+x+x' = w + x + x'$$
-Aangezien $x + x' = 0$ volgt:
-$$v = w$$
+$$(v+x)+x' = (w + x) + x'$$
+associativiteit
+\[
+v+(x+x') = w + (x + x')
+\]
+neutraal element
+\[
+v + 0 = w + 0
+\]
+\[
+v = w
+\]
 
 \subsection*{Lemma 3.8 punt 3}
 \[(-\lambda)v = -(\lambda v) = \lambda(-v)\]
@@ -38,6 +188,13 @@ $$v = w$$
 \[Dus: -\lambda v = tegengstelde \cdot \lambda v\]
 \[(-\lambda)v = -(\lambda v) = \lambda(-v) \]
 
-
 \section*{Opdrachten}
+\subsection*{3.9}
+\[
+Coefficient c.
+c \cdot v = 0 \rightarrow c = 0 of v = 0
+we weten (-1)v = -v = 1(-v) (lemma3.8/2)
+nu:  c \cdot v = 0 = v \cdot c
+	v = 0 of c = 0
+\]
 \end{document}
