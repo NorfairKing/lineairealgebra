@@ -31,10 +31,10 @@
     4. [X] NorfairKing
     5. [X] Matzy93
     6. [X] egonny
-    7. [] noiseloop
+    7. [X] noiseloop
         - [X] a
-        - [ ] b
-        - [ ] c
+        - [X] b
+        - [X] c
     8. [X] warreee 
     9. [X] NorfairKing
     10. [X] fokdiekul
