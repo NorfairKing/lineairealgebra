@@ -113,7 +113,7 @@
       - [X] c fokdiekul   
     - [X] 7 NorfairKing 
     - [X] 8 egonny      
-    - [ ] 10 noiseloop   
+    - [?] 10 noiseloop   
     - [-] 11 warreee     
       - [X] a fokdiekul   
       - [X] b NorfairKing 
