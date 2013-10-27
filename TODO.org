@@ -125,7 +125,7 @@
       - [ ] a egonny      
       - [X] b noiseloop   
       - [ ] c warreee     
-      - [ ] d fokdiekul   
+      - [X] d fokdiekul   
     - [X] 17 NorfairKing 
     - [ ] 18 egonny      
     - [ ] 19 noiseloop   
