@@ -180,7 +180,7 @@
      - [X] b NorfairKing
    - [X] 3 egonny
    - [ ] 4 fokdiekul
-   - [ ] Opdracht 3.9 p 94 noiseloop
+   - [X] Opdracht 3.9 p 94 noiseloop
    - extra, in oefenzitting
      - [-] 1
        - [ ] 1 warreee
