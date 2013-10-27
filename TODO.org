@@ -169,7 +169,7 @@
     - [ ] Opdracht 3.24 fokdiekul
     - [-] 2 
       - [X] b egonny
-      - [ ] d noiseloop
+      - [X] d noiseloop
       - [ ] e fokdiekul
       - [X] f NorfairKing
       - [X] j NorfairKing
