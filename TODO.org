@@ -166,11 +166,11 @@
     - [ ] p93 Bewijs Lemma 3.7 warreee
     - [X] p93 Bewijs Lemma 3.8 puntje 3 fokdiekul
     - [ ] Opdracht 3.21 warreee
-    - [ ] Opdracht 3.24 fokdiekul
+    - [X/?] Opdracht 3.24 fokdiekul
     - [-] 2 
       - [X] b egonny
       - [X] d noiseloop
-      - [ ] e fokdiekul
+      - [X] e fokdiekul
       - [X] f NorfairKing
       - [X] j NorfairKing
       - [X] l egonny
