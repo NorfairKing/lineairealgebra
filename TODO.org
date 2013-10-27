@@ -69,7 +69,7 @@
 *** DELEGATED Voorbereiding
     CLOSED: [2013-10-22 Die 13:24] DEADLINE: <2013-10-13 Son>
     - [-] 1 - egonny
-      - [ ] a - noiseloop
+      - [X] a - noiseloop
       - [X] f - warreee
       - [X] h - fokdiekul
       - [X] j - NorfairKing
