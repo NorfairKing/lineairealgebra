@@ -79,7 +79,7 @@
     - [X] 9 - fokdiekul
     - [-] 27 noiseloop
       - [X] b warreee   
-      - [ ] g noiseloop   
+      - [X] g noiseloop   
       - [X] j warreee     
       - [X] n NorfairKing 
 *** DELEGATED In Oefenzitting
