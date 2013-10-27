@@ -1,11 +1,12 @@
 #+SEQ_TODO: TODO(t) | DELEGATED(l)  OPTIONAL(o) DONE(d)
 # ^ De vorige lijn is voor emacs, afblijven :p
 
-* DELEGATED Hoofdstuk 1
-  DEADLINE: <2013-10-08 Die>
-** DELEGATED Oefeningen
-*** DELEGATED 1.7.1
-    DEADLINE: <2013-10-06 Son>
+* DONE Hoofdstuk 1
+  CLOSED: [2013-10-27 Son 14:04] DEADLINE: <2013-10-08 Die>
+** DONE Oefeningen
+   CLOSED: [2013-10-27 Son 14:03]
+*** DONE 1.7.1
+    CLOSED: [2013-10-27 Son 14:03] DEADLINE: <2013-10-06 Son>
     1. [X] warreee
     2. [X] fokdiekul
     3. [X] NorfairKing
@@ -23,8 +24,8 @@
     15. [X] NorfairKing
     16. [X] warreee
     17. [X] fokdiekul
-*** DELEGATED 1.7.2
-    DEADLINE: <2013-10-13 Son>
+*** DONE 1.7.2
+    CLOSED: [2013-10-27 Son 14:03] DEADLINE: <2013-10-13 Son>
     1. [X] noiseloop
     2. [X] fokdiekul
     3. [X] warreee 
@@ -51,14 +52,14 @@
     21. [X] fokdiekul
     22. [X] NorfairKing
     23. [X] Matzy93
-** DELEGATED Opdrachten
-   DEADLINE: <2013-10-13 Son>
+** DONE Opdrachten
+   CLOSED: [2013-10-27 Son 14:03] DEADLINE: <2013-10-13 Son>
    - [X] 1.2  egonny
    - [X] 1.23 warreee
    - [X] 1.25 in oefenzitting
    - [oefz morgen] 1.33 noiseloop
-** OPTIONAL Extra bewijzen
-   DEADLINE: <2013-10-01 Die>
+** DONE Extra bewijzen
+   CLOSED: [2013-10-27 Son 14:03] DEADLINE: <2013-10-01 Die>
    - [X] 1.10 warreee
    - [X] 1.44 NorfairKing
 
