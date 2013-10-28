@@ -163,7 +163,7 @@
 *** TODO Voorbereiding
     - [ ] p92 5. Bewijs: noiseloop
       Veeltermen van graad precies n vormen geen vectorruimte.
-    - [ ] p93 Bewijs Lemma 3.7 warreee
+    - [X] p93 Bewijs Lemma 3.7 warreee
     - [X] p93 Bewijs Lemma 3.8 puntje 3 fokdiekul
     - [X] Opdracht 3.21 warreee
     - [?] Opdracht 3.24 fokdiekul
@@ -175,7 +175,7 @@
       - [X] j NorfairKing
       - [X] l egonny
     - [ ] 5 noiseloop
-    - [ ] 7 warreee
+    - [X] 7 warreee
 *** TODO In Oefenzitting
    - [X] 1 NorfairKing
      - [X] b NorfairKing
@@ -184,7 +184,7 @@
    - [X] Opdracht 3.9 p 94 warreee
    - extra, in oefenzitting
      - [-] 1
-       - [ ] 1 warreee
+       - [X] 1 warreee
        - [ ] 2 fokdiekul
        - [X] 3 NorfairKing
        - [X] 4 egonny 
