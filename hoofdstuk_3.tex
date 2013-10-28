@@ -26,7 +26,7 @@
 \subsubsection*{b)}
 distributiviteit-2 geldt niet.
 \[
-\lambda_1 + \lambda_2v = \lambda_1v = \lambda_2v
+(\lambda_1 + \lambda_2)v = \lambda_1v = \lambda_2v
 \]
 en niet
 \[
@@ -47,10 +47,6 @@ $ \sum\limits_{i=1,j=1}^a (A+B)_{ij} = \sum\limits_{i=1,j=1}^a A_{ij} + \sum\lim
 *) $ A \in W_5, \lambda \in R \longmapsto \lambda A \in W_5$ \\
 $ \sum\limits_{i=1,j=1}^a (\lambda A)_{ij} = \lambda \sum\limits_{i=1,j=1}^a A_{ij} = \lambda 0 = 0$
 
-\subsubsection*{b)}
-$W_2$ is geen deelruimte van $\mathbb{R}^{3}$.\\
-\underline{Tegenvoorbeeld:}\\
-$x = (3, 4, 5) \in W_2$ en $y = (2, 2, 4) \in W_2$ maar $x + y = (5, 6, 9) \not \in W_2$
 
 \subsubsection*{f)}
 $W_6$ is geen deelruimte van $R^{3\times 3}$ want de volgende eigenschap geldt niet: (zie p 94)
@@ -69,39 +65,7 @@ $W_{10}$ is geen deelruimte van $R\rightarrow R$ want het neutraal element van $
 $W_{12}$ is een deelruimte van $\mathbb{R} \rightarrow \mathbb{R}$, aangezien de enige funcites die hieraan voldoen scalaire vermenigvuldigingen zijn van $f: \mathbb{R} \rightarrow \mathbb{R}: x \mapsto x - \frac{1}{2}$ .\\
 Hierdoor zal $\forall x,y\in W_6,\;\forall r,s\in\mathbb{R}:\; r\cdot x+s\cdot y\in U$ altijd voldaan zijn.
 
-\subsection*{Oefenzitting 5}
-\subsubsection*{1.3}
-Tegengesteld element:
-\[
-\forall v \in V:\;\exists v' \in V:\; v+v'=v'+v=0
-\]
-Stel $g'$ is het tegengesteld element van $g$.
-Noteer het neutraal element als $\odot$.
-\[
-g' = (-1)\bullet g
-\]
-\begin{proof}
-\[
-g\textbf{+}g' = g\textbf{+} (-1)\bullet g
-\]
-We evalueren dit in een willekeurige $x \in R$:
-\[ 
-(g\textbf{+} (-1)\bullet g)(x) \overset{def\;1}{=} g(x) -g(x) = 0 = \odot
-\]
-Vanwege de commutativiteit geldt ook:
-\[
-g(x) -g(x) = -g(x) + g(x) = 0 = \odot
-\]
-\end{proof}
-\subsubsection*{1.4}
-Stel $f:\mathbb{R} \rightarrow \mathbb{R}: x \mapsto f(x)$ en $g:\mathbb{R} \rightarrow \mathbb{R}: x \mapsto g(x)$, dan geldt voor iedere $x \in \mathbb{R}$ dat
-\[ (\lambda \bullet (f \boldsymbol{+} g))(x) 
-    = \lambda (f \boldsymbol{+} g)(x) 
-    = \lambda (f(x) + g(x))
-    = \lambda \cdot f(x) + \lambda \cdot g(x)
-    = (\lambda \bullet f)(x) + (\lambda \bullet g)(x)
-    = (\lambda \bullet f \boldsymbol{+} \lambda \bullet g)(x)\]
-en dus $\lambda \bullet (f \boldsymbol{+} g) = \lambda \bullet f \boldsymbol{+} \lambda \bullet g $
+
 
 \subsection*{oef 3}
 \subsubsection*{Optelling}
@@ -170,23 +134,55 @@ Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1}
      &= a_1, a_2, ..., a_n\\
      &= r
 \end{align*}
+\section*{Oefenzitting 5}
+\subsection*{oef 1}
 
+\subsubsection*{1.3}
+Tegengesteld element:
+\[
+\forall v \in V:\;\exists v' \in V:\; v+v'=v'+v=0
+\]
+Stel $g'$ is het tegengesteld element van $g$.
+Noteer het neutraal element als $\odot$.
+\[
+g' = (-1)\bullet g
+\]
+\begin{proof}
+\[
+g\textbf{+}g' = g\textbf{+} (-1)\bullet g
+\]
+We evalueren dit in een willekeurige $x \in R$:
+\[ 
+(g\textbf{+} (-1)\bullet g)(x) \overset{def\;1}{=} g(x) -g(x) = 0 = \odot
+\]
+Vanwege de commutativiteit geldt ook:
+\[
+g(x) -g(x) = -g(x) + g(x) = 0 = \odot
+\]
+\end{proof}
+\subsubsection*{1.4}
+Stel $f:\mathbb{R} \rightarrow \mathbb{R}: x \mapsto f(x)$ en $g:\mathbb{R} \rightarrow \mathbb{R}: x \mapsto g(x)$, dan geldt voor iedere $x \in \mathbb{R}$ dat
+\[ (\lambda \bullet (f \boldsymbol{+} g))(x) 
+    = \lambda (f \boldsymbol{+} g)(x) 
+    = \lambda (f(x) + g(x))
+    = \lambda \cdot f(x) + \lambda \cdot g(x)
+    = (\lambda \bullet f)(x) + (\lambda \bullet g)(x)
+    = (\lambda \bullet f \boldsymbol{+} \lambda \bullet g)(x)\]
+en dus $\lambda \bullet (f \boldsymbol{+} g) = \lambda \bullet f \boldsymbol{+} \lambda \bullet g $
 \section*{Bewijzen}
 \subsection*{Lemma 3.7}
+
 $$v+x = w + x \Rightarrow v=w$$
-Uit definitie 3.2.4 volgt dat elke vector een tegengesteld element heeft. Dus ook voor $x$ en dit element tellen we op aan beide kanten van de gelijkheid:
-$$(v+x)+x' = (w + x) + x'$$
-associativiteit
-\[
-v+(x+x') = w + (x + x')
-\]
-neutraal element
-\[
-v + 0 = w + 0
-\]
-\[
-v = w
-\]
+Neem $v,w,x \in V$ en we nemen aan dat $v+x = w+x$\\
+\begin{align*}
+v = v + 0 \tag{neutraal element}\\
+= v + (x - x) \tag{invers element}\\
+=(v+x) -x \tag{communativiteit}\\
+=(w+x) -x \tag{dit hebben we aangenomen}\\
+= w +(x-x) \tag{communitativiteit}\\
+= w+0 \tag{invers element}\\
+=w \tag{neutraal element}
+\end{align*}
 
 \subsection*{Lemma 3.8 punt 3}
 \[(-\lambda)v = -(\lambda v) = \lambda(-v)\]
