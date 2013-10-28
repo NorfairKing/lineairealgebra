@@ -216,13 +216,40 @@ v = 1\cdot v \tag{co\"efficient}
 \end{align*}
 
 \end{enumerate}
+\subsection*{3.21}
+Om aan te tonen dat $U_1 + U_2$ deelruimten zijn van $V$ dan moeten we de drie eigenschappen van een deelruimte aantonen:
+\begin{enumerate}
+\item We moeten aantonen dat $0 \in U_1 + U_2$.\\
+We weten dat $U_1$ en $U_2$ deelruimten zijn van $V$.\\
+Dus $0 \in U_1$ en $0 \in U_2$ samen met het feit dat $0 = 0 + 0$ volgt dat $0 \in U_1 + U_2$.
+
+\item We moeten aantonen $\forall x,y \in U_1 + U_2$ geldt: $x + y \in U_1 + U_2$.\\
+Veronderstel dat twee willekeurige vectoren $x$ en $y \in U_1 + U_2$ bestaan.\\
+Dan volgt uit de definitie van $U_1 + U_2$ dat er twee vectoren $x_1$ en $y_1 \in U_1$ en $x_2$ en $y_2 \in U_2$ bestaan zodat $x = x_1 + x_2$ en $y = y_1 + y_2$.\\
+Hieruit volgt:
+$$x + y = (x_1 + x_2) + (y_1 + y_2) = (x_1 + y_1) + (x_2 + y_2)$$
+Omdat $x_1, y_1 \in U_1$ en $U_1$ is een deelruimte van V, $x_1 + y_1 \in U_1$.\\
+Omdat $x_2, y_2 \in U_2$ en $U_2$ is een deelruimte van V, $x_2 + y_2 \in U_2$.\\
+Nu hebben we aangetoond dat $x+y$ de som is van een vector in $U_1$ en een vector in $U_2$. 
+Dus $x + y \in U_1 + U_2$ door de definitie van $U_1 + U_2$ en aangezien $x$ en $y$ willekeurig waren geldt dit voor alle $x,y \in U_1 + U_2$.
+
+\item We moeten aantonen dat $\forall x \in U_1 + U_2$ en $\forall r \in \mathbb{R}$ geldt: $rx \in U$.
+
+Veronderstel dat een willekeurige $x \in U_1 + U_2$ en $r \in \mathbb{R}$ bestaan. Dan volgt uit de definitie van $U_1 + U_2$ dat er een $x_1 \in U_1$ en $x_2 \in U_2$ bestaan zodat $x = x_1 + x_2$.\\
+Hieruit volgt:
+$$rx = r(x_1+x_2) = rx_1+rx_2$$
+Omdat $x_1 \in U_1$ en $U_1$ is een deelruimte van V, $rx_1 \in U_1$.\\
+Omdat $x_2 \in U_2$ en $U_2$ is een deelruimte van V, $rx_2 \in U_2$.\\
+Nu hebben we aangetoond dat $rx$ de som is van een vector in $U_1$ en een vector in $U_2$. 
+Dus $rx \in U_1 + U_2$ door de definitie van $U_1 + U_2$ en aangezien $x$ en $r$ willekeurig waren geldt dit voor alle $r \in \mathbb{R}$ en $x \in U_1 + U_2$.
+\end{enumerate}
 \subsection*{3.24}
 
 1) 
 Neem \\ 
-$U_1 = {x,0,0} $\\
-$U_2 =  {0,y,0} $\\
-$U_3 = {x,y,0} $\\
+$$U_1 = \{(x,0,0)\} $$
+$$U_2 =  \{ (0,y,0)\} $$
+$$U_3 = \{ (x,y,0)\} $$
 2) ???
 
 \end{document}
