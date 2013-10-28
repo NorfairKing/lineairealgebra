@@ -11,8 +11,12 @@
   \let\@ifnextchar\new@ifnextchar
   \array{#1}}
 \makeatother
-\title{Oplossingen Lineaire Algebra 2013}
-\author{TODO}
+\title{Oplossingen Lineaire Algebra 2013 Hoofdstuk 1}
+\author{Syd Kerckhove}
+\author{Nicholas Haesen}
+\author{Thomas Dierckx}
+\author{Ward Schodts}
+\author{Egon Okerman, Ward Schodts, Thomas Dierckx, \\Syd Kerckhove, Nicholas Haesen}
 
 
 \begin{document}
@@ -1267,230 +1271,7 @@ De totale winst bedraagt 900euro. \\
 De winst uit fonds B is 315euro. \\
 A=8500 en C = 2000
 
-\subsection*{Extra (oefenzitting)}
-\[
-\left\lbrace
-\begin{array}{c c c c c c c}
-ax &+& 4y &+& az &=& 0\\
-x  &+& ay &+& 3z &=& b\\
-(a+1)x &+& (a+4)y &+& (a-b^{2})z &=& b-2
-\end{array}
-\right\rbrace
-\]
-De matrix die hiermee overeen komt is:
-\[
-\begin{pmatrix}
-a & 4 & a & 0\\
-1 & a & 3 & b\\
-(a+1) & (a+4) & (a-b^{2}) & (b-2)\\
-\end{pmatrix}
-\]
-\begin{center}
-Wissel R1 en R2
-\end{center}
-\[
-\begin{pmatrix}
-1 & a & 3 & b\\
-a & 4 & a & 0\\
-(a+1) & (a+4) & (a-b^{2}) & (b-2)\\
-\end{pmatrix}
-\]
-\[ R2 \longmapsto R2 - a\cdot R1 \]
-\[ R3 \longmapsto R3 - (a+1)\cdot R1 \]
-\[
-\begin{pmatrix}
-1 & a & 3 & b\\
-0 & 4-a^{2} & -2a & -ab\\
-0 & 4-a^{2} & -b^{2}-2a-3 & -2-ab\\
-\end{pmatrix}
-\]
-\\Geval 1: $a=2$
-\[
-\begin{pmatrix}
-1 & 2 & 3 & b\\
-0 & 0 & -4 & -2b\\
-0 & 0 & -b^{2}-7 & -2-2b\\
-\end{pmatrix}
-\]
-\[ R2 \longmapsto \frac{-1}{4}R2 \]
-\[
-\begin{pmatrix}
-1 & 2 & 3 & b\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & -b^{2}-7 & -2-2b\\
-\end{pmatrix}
-\]
-\[ R1 \longmapsto R1 - 3\cdot R2 \]
-\[ R3 \longmapsto R3 + (b^{2}+7)\cdot R2 \]
-\[
-\begin{pmatrix}
-1 & 2 & 0 & -\frac{b}{2}\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & 0 & \frac{b^{3}+3b-4}{2}\\
-\end{pmatrix}
-\]
-\begin{center}
-Vereenvoudig
-\end{center}
-\[
-\begin{pmatrix}
-1 & 2 & 0 & -\frac{b}{2}\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & 0 & b^{3}+3b-4\\
-\end{pmatrix}
-\]
-\\Geval 1a: $b=1$
-\[
-\begin{pmatrix}
-1 & 2 & 0 & -\frac{1}{2}\\
-0 & 0 & 1 & \frac{1}{2}\\
-0 & 0 & 0 & 0\\
-\end{pmatrix}
-\]
-Antwoord:
-\[
-V = \left\lbrace \left(-\frac{1}{2}-2\lambda,\lambda,\frac{1}{2}\right)| \lambda \in \mathbb{R}\right\rbrace
-\]
-\\Geval 1b: $b\neq 1$
-\[
-\begin{pmatrix}
-1 & 2 & 0 & -\frac{b}{2}\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & 0 & b^{3}+3b-4\\
-\end{pmatrix}
-\]
-Antwoord:
-\[
-V = \emptyset
-\]
-\\Geval 2: $a=-2$
-\[
-\begin{pmatrix}
-1 & -2 & 3 & b\\
-0 & 0 & 4 & 2b\\
-0 & 0 & 1-b^{2} & 2b-2\\
-\end{pmatrix}
-\]
-\[ R2 \longmapsto \frac{1}{4}\cdot R2 \]
-\[
-\begin{pmatrix}
-1 & -2 & 3 & b\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & 1-b^{2} & 2b-2\\
-\end{pmatrix}
-\]
-\[ R1 \longmapsto R1 - 3\cdot R2 \]
-\[ R3 \longmapsto R3 - (1-b^{2})\cdot R2 \]
-\[
-\begin{pmatrix}
-1 & -2 & 0 & -\frac{b}{2}\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & 0 & \frac{b^3+3b-4}{2}\\
-\end{pmatrix}
-\]
-\begin{center}
-Vereenvoudig
-\end{center}
-\[
-\begin{pmatrix}
-1 & -2 & 0 & -\frac{b}{2}\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & 0 & b^3+3b-4\\
-\end{pmatrix}
-\]
-\\Geval 2a: $b=1$
-\[
-\begin{pmatrix}
-1 & -2 & 0 & -\frac{1}{2}\\
-0 & 0 & 1 & \frac{1}{2}\\
-0 & 0 & 0 & 0\\
-\end{pmatrix}
-\]
-Antwoord:
-\[
-V= \left\lbrace \left(2\lambda-\frac{1}{2},\lambda,\frac{1}{2}\right)| \lambda \in \mathbb{R}\right\rbrace
-\]
-\\Geval 2b: $b \neq 1$
-\[ R3 \longmapsto \frac{1}{b^3+3b-4}R3 \]
-\[
-\begin{pmatrix}
-1 & -2 & 0 & -\frac{b}{2}\\
-0 & 0 & 1 & \frac{b}{2}\\
-0 & 0 & 0 & 1\\
-\end{pmatrix}
-\]
-Antwoord:
-\[
-V= \emptyset
-\]
-\\Geval 3: $a\neq 2 \wedge a \neq -2$ 
-\[ R2 \longmapsto \frac{1}{4-a^{2}}R2 \]
-\[
-\begin{pmatrix}
-1 & a & 3 & b\\
-0 & 1 & \frac{-2a}{4-a^{2}} & \frac{-ab}{4-a^{2}}\\
-0 & 4-a^{2} & -b^{2}-2a-3 & -2-ab\\
-\end{pmatrix}
-\]
-\[ R1 \longmapsto R1 - a \cdot R2 \]
-\[ R3 \longmapsto R3 - (4-a^{2}) \cdot R2 \]
-\[
-\begin{pmatrix}
-1 & 0 & \frac{12-a^{2}}{4-a^{2}} & \frac{4b}{4-a^{2}}\\
-0 & 1 & \frac{-2a}{4-a^{2}} & \frac{-ab}{4-a^{2}}\\
-0 & 0 & -b^{2}-3 & -2\\
-\end{pmatrix}
-\]
-\[ R3 \longmapsto -\frac{1}{b^{2}+3}R3\]
-\[
-\begin{pmatrix}
-1 & 0 & \frac{12-a^{2}}{4-a^{2}} & \frac{4b}{4-a^{2}}\\
-0 & 1 & \frac{-2a}{4-a^{2}} & \frac{-ab}{4-a^{2}}\\
-0 & 0 & 1 & \frac{2}{b^{2}+3}\\
-\end{pmatrix}
-\]
-\[ R1 \longmapsto R1 - \frac{12-a^{2}}{4-a^{2}} \cdot R3 \]
-\[ R2 \longmapsto R2 + \frac{2a}{4-a^{2}} \cdot R3 \]
-\[
-\begin{pmatrix}
-1 & 0 & 0 & \frac{4b^{3}+2a^{2}-12}{(4-a^{2})(b^{2}+3)}\\
-0 & 1 & 0 & \frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)}\\
-0 & 0 & 1 & \frac{2}{b^{2}+3}\\
-\end{pmatrix}
-\]
-Antwoord:
-\[
-V = \left\lbrace\left(\frac{4b^{3}+2a^{2}-12}{(4-a^{2})(b^{2}+3)},\frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)},\frac{2}{b^{2}+3}\right)\right\rbrace
-\]
-\\Samenvatting:
-\begin{itemize}
-\item $a=2$
-\begin{itemize}
-\item $b=1$
-\[
-V = \left\lbrace \left(-\frac{1}{2}-2\lambda,\lambda,\frac{1}{2}\right)| \lambda \in \mathbb{R}\right\rbrace
-\]
-\item $b\neq 1$
-\[
-V = \emptyset
-\]
-\end{itemize}
-\item $a=-2$
-\begin{itemize}
-\item $b=1$
-\[
-V= \left\lbrace \left(2\lambda-\frac{1}{2},\lambda,\frac{1}{2}\right)| \lambda \in \mathbb{R}\right\rbrace
-\]
-\item $b\neq 1$
-\[
-V= \emptyset
-\]
-\end{itemize}
-\item $a\neq 2 \wedge a \neq -2$ 
-\[
-V = \left\lbrace\left(\frac{4b^{3}+2a^{2}-12}{(4-a^{2})(b^{2}+3)},\frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)},\frac{2}{b^{2}+3}\right)\right\rbrace
-\]
-\end{itemize}
+
 \section{Oefeningen 1.7.2}
 
 \subsection*{oef 1}
@@ -2768,9 +2549,230 @@ E_2*E_1=\left( \begin{array}{cc}
 \end{array}\right)
 \]
 
-
 \subsection*{Extra (oefenzitting)}
-
+\[
+\left\lbrace
+\begin{array}{c c c c c c c}
+ax &+& 4y &+& az &=& 0\\
+x  &+& ay &+& 3z &=& b\\
+(a+1)x &+& (a+4)y &+& (a-b^{2})z &=& b-2
+\end{array}
+\right\rbrace
+\]
+De matrix die hiermee overeen komt is:
+\[
+\begin{pmatrix}
+a & 4 & a & 0\\
+1 & a & 3 & b\\
+(a+1) & (a+4) & (a-b^{2}) & (b-2)\\
+\end{pmatrix}
+\]
+\begin{center}
+Wissel R1 en R2
+\end{center}
+\[
+\begin{pmatrix}
+1 & a & 3 & b\\
+a & 4 & a & 0\\
+(a+1) & (a+4) & (a-b^{2}) & (b-2)\\
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - a\cdot R1 \]
+\[ R3 \longmapsto R3 - (a+1)\cdot R1 \]
+\[
+\begin{pmatrix}
+1 & a & 3 & b\\
+0 & 4-a^{2} & -2a & -ab\\
+0 & 4-a^{2} & -b^{2}-2a-3 & -2-ab\\
+\end{pmatrix}
+\]
+\\Geval 1: $a=2$
+\[
+\begin{pmatrix}
+1 & 2 & 3 & b\\
+0 & 0 & -4 & -2b\\
+0 & 0 & -b^{2}-7 & -2-2b\\
+\end{pmatrix}
+\]
+\[ R2 \longmapsto \frac{-1}{4}R2 \]
+\[
+\begin{pmatrix}
+1 & 2 & 3 & b\\
+0 & 0 & 1 & \frac{b}{2}\\
+0 & 0 & -b^{2}-7 & -2-2b\\
+\end{pmatrix}
+\]
+\[ R1 \longmapsto R1 - 3\cdot R2 \]
+\[ R3 \longmapsto R3 + (b^{2}+7)\cdot R2 \]
+\[
+\begin{pmatrix}
+1 & 2 & 0 & -\frac{b}{2}\\
+0 & 0 & 1 & \frac{b}{2}\\
+0 & 0 & 0 & \frac{b^{3}+3b-4}{2}\\
+\end{pmatrix}
+\]
+\begin{center}
+Vereenvoudig
+\end{center}
+\[
+\begin{pmatrix}
+1 & 2 & 0 & -\frac{b}{2}\\
+0 & 0 & 1 & \frac{b}{2}\\
+0 & 0 & 0 & b^{3}+3b-4\\
+\end{pmatrix}
+\]
+\\Geval 1a: $b=1$
+\[
+\begin{pmatrix}
+1 & 2 & 0 & -\frac{1}{2}\\
+0 & 0 & 1 & \frac{1}{2}\\
+0 & 0 & 0 & 0\\
+\end{pmatrix}
+\]
+Antwoord:
+\[
+V = \left\lbrace \left(-\frac{1}{2}-2\lambda,\lambda,\frac{1}{2}\right)| \lambda \in \mathbb{R}\right\rbrace
+\]
+\\Geval 1b: $b\neq 1$
+\[
+\begin{pmatrix}
+1 & 2 & 0 & -\frac{b}{2}\\
+0 & 0 & 1 & \frac{b}{2}\\
+0 & 0 & 0 & b^{3}+3b-4\\
+\end{pmatrix}
+\]
+Antwoord:
+\[
+V = \emptyset
+\]
+\\Geval 2: $a=-2$
+\[
+\begin{pmatrix}
+1 & -2 & 3 & b\\
+0 & 0 & 4 & 2b\\
+0 & 0 & 1-b^{2} & 2b-2\\
+\end{pmatrix}
+\]
+\[ R2 \longmapsto \frac{1}{4}\cdot R2 \]
+\[
+\begin{pmatrix}
+1 & -2 & 3 & b\\
+0 & 0 & 1 & \frac{b}{2}\\
+0 & 0 & 1-b^{2} & 2b-2\\
+\end{pmatrix}
+\]
+\[ R1 \longmapsto R1 - 3\cdot R2 \]
+\[ R3 \longmapsto R3 - (1-b^{2})\cdot R2 \]
+\[
+\begin{pmatrix}
+1 & -2 & 0 & -\frac{b}{2}\\
+0 & 0 & 1 & \frac{b}{2}\\
+0 & 0 & 0 & \frac{b^3+3b-4}{2}\\
+\end{pmatrix}
+\]
+\begin{center}
+Vereenvoudig
+\end{center}
+\[
+\begin{pmatrix}
+1 & -2 & 0 & -\frac{b}{2}\\
+0 & 0 & 1 & \frac{b}{2}\\
+0 & 0 & 0 & b^3+3b-4\\
+\end{pmatrix}
+\]
+\\Geval 2a: $b=1$
+\[
+\begin{pmatrix}
+1 & -2 & 0 & -\frac{1}{2}\\
+0 & 0 & 1 & \frac{1}{2}\\
+0 & 0 & 0 & 0\\
+\end{pmatrix}
+\]
+Antwoord:
+\[
+V= \left\lbrace \left(2\lambda-\frac{1}{2},\lambda,\frac{1}{2}\right)| \lambda \in \mathbb{R}\right\rbrace
+\]
+\\Geval 2b: $b \neq 1$
+\[ R3 \longmapsto \frac{1}{b^3+3b-4}R3 \]
+\[
+\begin{pmatrix}
+1 & -2 & 0 & -\frac{b}{2}\\
+0 & 0 & 1 & \frac{b}{2}\\
+0 & 0 & 0 & 1\\
+\end{pmatrix}
+\]
+Antwoord:
+\[
+V= \emptyset
+\]
+\\Geval 3: $a\neq 2 \wedge a \neq -2$ 
+\[ R2 \longmapsto \frac{1}{4-a^{2}}R2 \]
+\[
+\begin{pmatrix}
+1 & a & 3 & b\\
+0 & 1 & \frac{-2a}{4-a^{2}} & \frac{-ab}{4-a^{2}}\\
+0 & 4-a^{2} & -b^{2}-2a-3 & -2-ab\\
+\end{pmatrix}
+\]
+\[ R1 \longmapsto R1 - a \cdot R2 \]
+\[ R3 \longmapsto R3 - (4-a^{2}) \cdot R2 \]
+\[
+\begin{pmatrix}
+1 & 0 & \frac{12-a^{2}}{4-a^{2}} & \frac{4b}{4-a^{2}}\\
+0 & 1 & \frac{-2a}{4-a^{2}} & \frac{-ab}{4-a^{2}}\\
+0 & 0 & -b^{2}-3 & -2\\
+\end{pmatrix}
+\]
+\[ R3 \longmapsto -\frac{1}{b^{2}+3}R3\]
+\[
+\begin{pmatrix}
+1 & 0 & \frac{12-a^{2}}{4-a^{2}} & \frac{4b}{4-a^{2}}\\
+0 & 1 & \frac{-2a}{4-a^{2}} & \frac{-ab}{4-a^{2}}\\
+0 & 0 & 1 & \frac{2}{b^{2}+3}\\
+\end{pmatrix}
+\]
+\[ R1 \longmapsto R1 - \frac{12-a^{2}}{4-a^{2}} \cdot R3 \]
+\[ R2 \longmapsto R2 + \frac{2a}{4-a^{2}} \cdot R3 \]
+\[
+\begin{pmatrix}
+1 & 0 & 0 & \frac{4b^{3}+2a^{2}-12}{(4-a^{2})(b^{2}+3)}\\
+0 & 1 & 0 & \frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)}\\
+0 & 0 & 1 & \frac{2}{b^{2}+3}\\
+\end{pmatrix}
+\]
+Antwoord:
+\[
+V = \left\lbrace\left(\frac{4b^{3}+2a^{2}-12}{(4-a^{2})(b^{2}+3)},\frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)},\frac{2}{b^{2}+3}\right)\right\rbrace
+\]
+\\Samenvatting:
+\begin{itemize}
+\item $a=2$
+\begin{itemize}
+\item $b=1$
+\[
+V = \left\lbrace \left(-\frac{1}{2}-2\lambda,\lambda,\frac{1}{2}\right)| \lambda \in \mathbb{R}\right\rbrace
+\]
+\item $b\neq 1$
+\[
+V = \emptyset
+\]
+\end{itemize}
+\item $a=-2$
+\begin{itemize}
+\item $b=1$
+\[
+V= \left\lbrace \left(2\lambda-\frac{1}{2},\lambda,\frac{1}{2}\right)| \lambda \in \mathbb{R}\right\rbrace
+\]
+\item $b\neq 1$
+\[
+V= \emptyset
+\]
+\end{itemize}
+\item $a\neq 2 \wedge a \neq -2$ 
+\[
+V = \left\lbrace\left(\frac{4b^{3}+2a^{2}-12}{(4-a^{2})(b^{2}+3)},\frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)},\frac{2}{b^{2}+3}\right)\right\rbrace
+\]
+\end{itemize}
 
 \section{Opdrachten}
 \subsection*{opdracht 1.2}
