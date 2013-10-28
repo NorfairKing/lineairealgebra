@@ -134,6 +134,29 @@ Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1}
      &= a_1, a_2, ..., a_n\\
      &= r
 \end{align*}
+\subsection*{oef 7}
+Om te zien of een vector $d$ tot een deelruimte behoort opgespannen door vectoren $v_1$ en $v_2$ en $v_3$ moeten we zien of er een lineaire combinatie bestaat zodat  $$a\cdot v_1 + b\cdot v_2 + c\cdot v_3 = d$$
+Dus:
+$$a(2,-1,3,2) + b(-1,1,1,-3) + c(1,1,9,-5) \overset{?}{=} (3,-1,0,-1)$$
+We gieten dit in een matrix:
+$$
+\begin{pmatrix}
+2 & -1 & 1 &3\\
+-1 & 1 & 1 & -1\\
+3 & 1 &9 & 0\\
+2 & -3 &-5& -1
+\end{pmatrix}
+$$
+Door rijreductie verkrijgen we volgende matrix:
+$$
+\begin{pmatrix}
+1&0&2&0\\
+0&1&3&0\\
+0&0&0&1\\
+0&0&0&0
+\end{pmatrix}
+$$
+Dit is een ongeldige matrix en dus bestaat er geen lineaire combinatie zodat de vector $d$ gevormd wordt. De vector behoort dus niet tot de deelruimte.
 \section*{Oefenzitting 5}
 \subsection*{oef 1}
 
