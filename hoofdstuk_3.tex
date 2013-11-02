@@ -157,6 +157,25 @@ $$
 \end{pmatrix}
 $$
 Dit is een ongeldige matrix en dus bestaat er geen lineaire combinatie zodat de vector $d$ gevormd wordt. De vector behoort dus niet tot de deelruimte.
+\subsection*{oef 12}
+Moest dit waar zijn dan mag er uit de verzameling $\{ e_1-e_2,e_2-e_3,\dots ,e_{n-1}-e_n,e_n-e_1\}$ geen enkel element bestaan dat een combinatie is van de andere elementen.
+$$
+\text{We zien nu voor}\ 1 \leq i \leq n:
+$$
+$$ 
+(e_1-e_2)+(e_2-e_3)+\dots +(e_{i-1}-e_i)+(e_{i+1}-e_{i+2})+\dots + (e_n - e_1)
+$$
+$$
+= (\not e_1-\not e_2+\not e_2-\not e_3+\dots +\not e_{i-1}-e_i+e_{i+1}-\not e_{i+2}+\dots + \not e_n - \not e_1)
+$$
+$$
+= -e_i + e_{i+1}
+$$
+Dus voor een willkeurige vector:
+$$
+e_i - e_{i+1} = -\left((e_1-e_2)+(e_2-e_3)+\dots +(e_{i-1}-e_i)+(e_{i+1}-e_{i+2})+\dots + (e_n - e_1)\right)
+$$
+Kunnen we dus telkens een combinatie vinden uit de andere vectoren, hierdoor is het geen vrij deel. 
 \section*{Oefenzitting 5}
 \subsection*{oef 1}
 \subsubsection*{1.1}
