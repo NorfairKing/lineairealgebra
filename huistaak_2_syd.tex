@@ -1,0 +1,89 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[dutch]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\title{Huistaak 2: 3.6.11 en 3.6.15}
+\date{4 November 2013}
+\author{Tom Sydney Kerckhove}
+\begin{document}
+\maketitle
+
+\section{3.6.11}
+\subsection{Opgave}
+Vind $k\in R$ zodat het volgende geldt.
+\[
+\begin{pmatrix}
+1\\k\\5
+\end{pmatrix}
+\in 
+vct
+\left\lbrace
+\begin{pmatrix}
+1\\-3\\2
+\end{pmatrix}
+,
+\begin{pmatrix}
+2\\-1\\1
+\end{pmatrix}
+\right\rbrace
+\]
+\subsection{Oplossing}
+De $k$ die we zoeken, voldoet aan de volgende vergelijkingen.
+\[
+\left\lbrace
+\begin{array}{c c c}
+1 &= x   &+ 2y\\
+5 &= 2x  &+ y\\
+k &= -3x &- y\\
+\end{array}
+\right.
+\]
+Dit is een stelsel van drie vergelijkingen met drie onbekenden waarvan de oplossingsverzameling $V$ is.
+\[
+V = \{ (3,-1,-8) \}
+\]
+De gezochte $k$ is dus de volgende.
+\[
+k = -8
+\]
+\pagebreak
+\section{3.6.15}
+\subsection{Opgave}
+Zij $(\mathbb{R},\mathbb{V},+)$ een vectorruimte.
+Zij $v_1,v_2,...,v_n \in \mathbb{V}$ en $v \in \mathbb{V}$ zodat $v_1,v_2,...,v_n$ lineair onafhankelijk zijn.
+
+Toon aan:
+$v_1,v_2,...,v_n, v$ zijn lineair afhankelijk $\Leftrightarrow$ $v$ is een lineaire combinatie van $v_1,v_2,...,v_n$
+
+\subsection{Te bewijzen}
+Met behulp van de definitie van lineaire afhankelijkheid en lineaire combinatie schrijven we dit formeler op als volgt.
+\[
+\exists r_1,r_2,...,r_n,r:\ v_1\cdot r_1 + v_2\cdot r_2...v_n \cdot r_n + v \cdot r = 0
+\]
+\[\Leftrightarrow \]
+\[\exists r_1,r_2,...,r_n,r:\ v_1\cdot r_1 + v_2\cdot r_2...v_n \cdot r_n = v \cdot r \]
+\subsection{Bewijs}
+\begin{proof}
+Rechtstreeks bewijs
+\[
+\exists r_1,r_2,...,r_n,r:\ v_1\cdot r_1 + v_2\cdot r_2...v_n \cdot r_n + v \cdot r = 0
+\]
+In woorden betekent dit dat elk van de $v$'s voor het gelijkheidsteken kan geschreven worden als een lineaire combinatie van de andere. $v$ dus ook.\\
+Formeler:
+\[
+v_1\cdot r_1 + v_2\cdot r_2...v_n \cdot r_n + v \cdot r = 0
+\]
+\[
+\Leftrightarrow v_1\cdot r_1 + v_2\cdot r_2...v_n \cdot r_n = - v \cdot r 
+\]
+\[\Leftrightarrow \exists r_1,r_2,...,r_n,r:\ v_1\cdot r_1 + v_2\cdot r_2...v_n \cdot r_n = v \cdot r \]
+De laatste bewering is waar, want neem voor $r_1,r_2,...,r_n$ dezelfde als in de stap ervoor, en voor $r$ het tegenstelde van de $r$ uit de stap ervoor.
+We gaan via equivalenties rechtstreeks van het linker lid van het te bewijzen naar het rechterlid. Hiermee is de stelling bewezen omdat $(\Leftrightarrow)$ transitief is.
+\end{proof}
+
+
+\end{document}
