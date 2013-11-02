@@ -177,7 +177,7 @@
     - [ ] 5 noiseloop
     - [X] 7 warreee
     - [X] 12 warreee
-    - [ ] 13 NorfairKing	
+    - [X] 13 warreee
 *** TODO In Oefenzitting
    - [X] 1 NorfairKing
      - [X] b NorfairKing

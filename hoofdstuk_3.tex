@@ -177,6 +177,38 @@ e_i - e_{i+1} = -\left((e_1-e_2)+(e_2-e_3)+\dots +(e_{i-1}-e_i)+(e_{i+1}-e_{i+2}
 $$
 kunnen we dus telkens een combinatie vinden uit de andere vectoren, hierdoor is het geen vrij deel. 
 \subsection*{oef 13}
+Hiervoor kunnen we aantonen dat $\{1+X,1+X^2,X+X^2\}$ minimaal voortbrengend is, hiervoor laten we zien dat elke vector uit  $(\mathbb{R},\mathbb{R}[X]_{\leq 2},+)$ een lineaire combinatie is van de basisvectoren:
+$$aX^2 + bX + c = \lambda_{1} (1+X) + \lambda_{2} (1+X^2) + \lambda_{3} (X+X^2)$$
+Als we deze vergelijking uitwerking uitwerken krijgen we:
+$$a = \lambda_{1} + \lambda_2$$
+$$b = \lambda_1 + \lambda_3$$
+$$c = \lambda_1 + \lambda_2$$
+Dit is een stelsel met exact 1 oplossing. Hierme tonen we aan dat het stelsel voortbrengend is en minimaal voortbrengend. Moesten we nog extra vergelijkingen er aan toevoegen zouden we redundantie invoeren of het stelsel onoplosbaar maken.
+\\
+\\
+De co\"ordinaten van de vector $4 -3X + X^2$ kunnen we berekenen ze in een stelsel te gieten:
+$$
+\begin{pmatrix}
+1&1&0&4\\
+1&0&1&-3\\
+0&1&1&1
+\end{pmatrix}
+$$
+Via rijoperaties verkrijgen we dan:
+$$
+\begin{pmatrix}
+1&0&0&0\\
+0&1&0&4\\
+0&0&1&-3
+\end{pmatrix}
+$$
+Dit komt overeen met de co\"ordinaten $(0,4,-3)$.
+\\
+\\
+Het co\"ordinatenstel $(2,-3,1)$ komt dan weer overeen met:
+$$
+2\cdot (1+X) -3 \cdot (1+X^2)+ 1\cdot (X+X^2)= -1 +3X-2X^2
+$$
 \section*{Oefenzitting 5}
 \subsection*{oef 1}
 \subsubsection*{1.1}
