@@ -163,6 +163,36 @@ $$
 \end{pmatrix}
 $$
 Dit is een ongeldige matrix en dus bestaat er geen lineaire combinatie zodat de vector $d$ gevormd wordt. De vector behoort dus niet tot de deelruimte.
+
+\subsection*{oef 8}
+We willen $p(X)$ opschrijven als lineaire combinatie van $p_1(X), p_2(X), p_3(X)$, dus $p(X) = \lambda_1 p_1(X) + \lambda_2 p_2(X) + \lambda_2 p_3(X)$.
+Hiervoor lossen we het volgende stelsel op:
+\[
+\left\{
+\begin{array}{l l l l l}
+  -1 &= &\lambda_1 &+ 2 \lambda_2 &+ 3 \lambda_3\\
+  -3 &= &2 \lambda_1 &+ 5 \lambda_2 &+ 8 \lambda_3\\
+  3 &= &\lambda_1 &&- 2 \lambda_3
+\end{array}
+\right.
+\]
+Dit vullen we in in een matrix, die we hierna oplossen m.b.v. rijreductie.
+\[
+\begin{pmatrix}[ccc|c]
+  1 & 2 & 3 & -1\\
+  2 & 5 & 8 & -3\\
+  1 & 0 & -2 & 3
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}[ccc|c]
+  1 & 0 & 0 & -1\\
+  0 & 1 & 0 & 3\\
+  0 & 0 & 1 & -2
+\end{pmatrix}
+\]
+We resulteren dus dat $p(X) = - p_1(X) + 3 p_2(X) - 2 p_3(X)$.
+
+
 \subsection*{oef 9}
 $$f(x)+g(x)-h(x)+0\cdot exp(x) = 0$$
 $$1 - 1 + 0 = 0$$
