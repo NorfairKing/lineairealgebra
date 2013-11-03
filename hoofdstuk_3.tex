@@ -62,8 +62,14 @@ x = I_3
 \subsubsection*{j)}
 $W_{10}$ is geen deelruimte van $R\rightarrow R$ want het neutraal element van $R\rightarrow R$  zit niet in $W_{10}$.
 \subsubsection*{l)}
-$W_{12}$ is een deelruimte van $\mathbb{R} \rightarrow \mathbb{R}$, aangezien de enige functies die hieraan voldoen scalaire vermenigvuldigingen zijn van $f: \mathbb{R} \rightarrow \mathbb{R}: x \mapsto x - \frac{1}{2}$ .\\
-Hierdoor zal $\forall x,y\in W_6,\;\forall r,s\in\mathbb{R}:\; r\cdot x+s\cdot y\in U$ altijd voldaan zijn.
+Neem $f, g \in W_{12}$ en $\lambda, \mu \in \mathbb{R}$ willekeurig.\\
+Omdat $f$ en $g$ integreerbaar zijn, is $\lambda f + \mu g$ integreerbaar.
+\begin{align*}
+  \int^1_0 (\lambda f + \mu g)(x)dx &= \int^1_0(\lambda f(x) + \mu g(x))dx\\
+  &= \int^1_0 \lambda f(x)dx + \int^1_0 \mu g(x)dx\\
+  &= \lambda \int^1_0 f(x)dx + \mu \int^1_0 g(x)dx = \lambda \cdot 0 + \mu \cdot 0 = 0
+\end{align*}
+$W_{12}$ is dus een deelruimte van $\mathbb{R} \rightarrow \mathbb{R}$.
 
 
 

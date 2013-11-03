@@ -173,7 +173,7 @@
       - [X] e fokdiekul
       - [X] f NorfairKing
       - [X] j NorfairKing
-      - [ ] l egonny Moet verbeterd worden
+      - [X] l egonny
     - [ ] 5 noiseloop
     - [X] 7 warreee
     - [X] 12 warreee
