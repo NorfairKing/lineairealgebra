@@ -196,7 +196,13 @@
    - [X] 8 egonny
    - [X] 9 warreee
    - [ ] 10 noiseloop
-
+   - [ ] 11 huistaak
+   - [ ] 14 noiseloop 
+   - [ ] 15 huistaak
+   - [ ] 17 
+     - [ ] b warreee
+   - [ ] 25 fokdiekul
+   - [ ] 27 egonny
 *** TODO Extra
 ** TODO Opdrachten
 
