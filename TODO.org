@@ -192,7 +192,7 @@
        - [X] 4 egonny 
      - [ ] 2 noiseloop
    - [ ] 4 fokdiekul
-   - [ ] 6 NorfairKing
+   - [X] 6 NorfairKing
    - [X] 8 egonny
    - [X] 9 warreee
    - [ ] 10 noiseloop

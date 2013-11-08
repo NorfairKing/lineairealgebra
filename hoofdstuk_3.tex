@@ -1,6 +1,5 @@
 \documentclass[10pt,a4paper]{article}
 
-\usepackage[english]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -140,6 +139,54 @@ Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1}
      &= a_1, a_2, ..., a_n\\
      &= r
 \end{align*}
+
+\subsection*{oef 6}
+\subsubsection*{Gegeven}
+$U$ en $W$ zijn deelruimten van een vectorruimte $(\mathbb{R},V,+)$.
+\subsubsection*{Te Bewijzen}
+\[
+U \cup W \text{ is een deelruimte van }V \Leftrightarrow U \subset W \vee W \subset U
+\]
+\subsubsection*{Bewijs}
+\begin{proof} Samengesteld bewijs.
+\\Deel 1: $(\Rightarrow)$
+\\ Te bewijzen:
+\[
+U \cup W \text{ is een deelruimte van }V \Rightarrow U \subset W \vee W \subset U
+\]
+Bewijs uit het ongerijmde.
+\\Stel dat $\neg(U \subset W \wedge W \subset U)$.
+\\Dit is equivalent met $U \not\subset W \wedge W \not\subset U$.
+Vanuit de definitie van deelverzameling betekent deze bewering het volgende.
+\[
+(\exists w': w' \in W \wedge w' \not\in U) \wedge (\exists u': u' \in U \wedge u' \not\in W) 
+\]
+We moeten nu tot een contradictie komen met "$U\cup W \text{ is een deelruimte van }V$".
+$U\cup W \text{ is een deelruimte van }V$ betekent vanuit de definitie het volgende.
+\[
+\forall w, u \in ĉ,\; \forall \lambda_1 , \lambda_2 \in \mathbb{R}: \lambda_1\cdot u + \lambda_2\cdot w \in U\cup W
+\]
+Aangezien deze bewering geldt voor elke $w,i \in U\cup W$, geldt ze ook voor $w'$ en $u'$.
+We weten nu het volgende.
+\[
+\forall \lambda_1 , \lambda_2 \in \mathbb{R}: \lambda_1\cdot u' + \lambda_2\cdot w' \in U\cup W
+\]
+met $w' \in W \wedge w' \not\in U$ en $u' \in U \wedge u' \not\in W$.\\
+Als dit geldt voor elke $\lambda_1$ en $\lambda_2$, geldt het ook voor $\lambda_1= \lambda_2 = 1$ en geldt dus het volgende.
+\[
+u' + w' \in U \cup W
+\]
+We weten dat dit niet klopt, want stel als $u' + w' \in U \cup W$ en $u' \in U$, dan $w' \in U$. Contradictie.
+\\Deel 2: $(\Leftarrow)$
+\\ Te bewijzen:
+\[
+U \cup W \text{ is een deelruimte van }V \Leftarrow U \subset W \vee W \subset U
+\]
+Direct bewijs.\\
+Stel $U \subset W$. (Het andere geval is volledig analoog)\\
+Als $U \subset W$, dan is $U\cup W = W$. Van $W$ is gegeven dat het een deelruimte is van $W$. Hiermee is bewezen dat $U\cup W$ een deelruimte is van $V$.6
+\end{proof}
+
 \subsection*{oef 7}
 Om te zien of een vector $d$ tot een deelruimte behoort opgespannen door vectoren $v_1$ en $v_2$ en $v_3$ moeten we zien of er een lineaire combinatie bestaat zodat  $$a\cdot v_1 + b\cdot v_2 + c\cdot v_3 = d$$
 Dus:
