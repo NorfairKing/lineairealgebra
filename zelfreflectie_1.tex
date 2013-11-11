@@ -2,4 +2,162 @@
 \begin{document}
 
 \part{Zelfreflectie 1}
+\section{oef 1}
+\begin{itemize}
+\item echelonvorm
+\item trapvorm
+\item rijgereduceert
+\end{itemize}
+\section{oef 2}
+\subsection*{a)}
+\[
+\left[
+\begin{array}{l l l l l | r}
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+\end{array}
+\right]
+\]
+\subsection*{b)}
+Niet mogelijk, daarvoor hebben we niet genoeg vergelijkingen
+\subsection*{c)}
+\[
+\left[
+\begin{array}{l l l l l | r}
+1 & 0 & 0 & 0 & 0 & 1\\
+0 & 1 & 0 & 0 & 0 & 2\\
+0 & 0 & 1 & 0 & 0 & 3\\
+0 & 0 & 0 & 1 & 0 & 4\\
+\end{array}
+\right]
+\]
+\subsection*{d)}
+\[
+\left[
+\begin{array}{l l l l l | r}
+1 & 0 & 0 & 0 & 0 & 1\\
+0 & 1 & 0 & 0 & 0 & 2\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+\end{array}
+\right]
+\]
+\subsection*{e)}
+\[
+\left[
+\begin{array}{l l l l l | r}
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0\\
+\end{array}
+\right]
+\]
+
+\section{oef 3}
+\begin{itemize}
+\item 1
+\item 0
+\item $\infty$
+\item 1
+\end{itemize}
+
+\section{oef 4}
+$\lambda$ is een vrije variabele, $a$ is een parameter.
+\[
+\{(a-\lambda, 2+a\lambda, \lambda) | \lambda \in \mathbb{R}\}
+\]
+
+\section{oef 5}
+\subsection*{gegeven}
+$B$ is de linkerinverse van $A$. $A,B \in R^{n\times n}$
+\subsection*{te bewijzen}
+$B$ is de inverse van $A$.
+\subsection*{bewijs}
+\begin{proof}
+Rechtstreeks bewijs.\\
+Hetgeen gegeven is valt formeler te bewoorden als volgt.
+\[
+B\cdot A = \mathbb{I}_n
+\]
+Hetgeen te bewijzen is houdt het volgende in.
+\[
+B\cdot A = \mathbb{I}_n = A \cdot B
+\]
+De eerste van deze twee vergelijkingen is dus al gegeven.
+We bewijzen het tweede deel. We beginnen met iets dat triviaal is, en bewijzen daaruit rechtstreeks hetgeen te bewijzen valt.\\
+\[A\cdot B = \mathbb{I}_n\]
+\[A\cdot B \cdot A = \mathbb{I}_n \cdot A\]
+\[A\cdot\mathbb{I}_n = A\]
+\[A = A\]
+\[True\]
+\end{proof}
+\section{oef 6}
+\subsection*{gegeven}
+\[
+A \in R^{n\times m}
+\]
+\[
+B \in R^{m\times k}
+\]
+\[
+C \in R^{k\times l}
+\]
+\subsection*{a)}
+\subsubsection*{te bewijzen}
+\[
+A(BC) = (AB)C
+\]
+\subsubsection*{bewijs}
+\begin{proof}
+Rechtstreeks bewijs.\\
+Zie p 32, eigenschappen. Het te bewijzen geldt als de afmetingen kloppen.
+We moeten dus enkel nog bewijzen dat de afmetingen kloppen.
+\[
+(AB) \ in R^{n\times k} \text{ en } (BC) \in R^{m\times l}
+\]
+\[
+ABC \in  R^{n\times n}
+\]
+\end{proof}
+
+\subsection*{b)}
+\subsubsection*{te bewijzen}
+\[
+(AB)^{T} = B^{T}A^{T}
+\]
+Zie p 32, eigenschappen. Het te bewijzen geldt als de afmetingen kloppen.
+We moeten dus enkel nog bewijzen dat de afmetingen kloppen.
+\[
+(AB) \in R^{n\times k}
+\]
+\[
+(AB)^T \in R^{k\times n}
+\]
+\[
+B^{T} \in B \in R^{k\times m}
+\]
+\[
+A^{T} \in B \in R^{m\times n}
+\]
+\[
+ B^{T}A^{T} \in R^{k\times n}
+\]
+\subsubsection*{bewijs}
+\section{oef 7}
+Geen idee, lijkt te evident om op te lossen.
+\section{oef 8}
+\begin{proof}
+\[
+E_k\cdots E_1\cdot A = \mathbb{I}_n
+\]
+\[
+E_k\cdots E_1\cdot A \cdot A^{-1} = \mathbb{I}_n \cdot A^{-1} 
+\]
+\[
+E_k\cdots E_1\cdot \mathbb{I}_n =  \cdot A^{-1} 
+\]
+\end{proof}
 \end{document}
