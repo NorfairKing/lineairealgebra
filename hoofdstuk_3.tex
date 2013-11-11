@@ -1,27 +1,10 @@
-\documentclass[10pt,a4paper]{article}
-
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\makeatletter
-\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
-  \hskip -\arraycolsep
-  \let\@ifnextchar\new@ifnextchar
-  \array{#1}}
-\makeatother
-\title{Oplossingen Lineaire Algebra 2013}
-\author{TODO}
-
-
+\documentclass[lineaire_algebra_oplossingen.tex]{subfiles}
 \begin{document}
-\maketitle
-\pagebreak
-\tableofcontents
-\pagebreak
-\section*{Oefeningen 3.6}
 
-\subsection*{oef 1}
+\part{Hoofdstuk 3}
+\section{Oefeningen 3.6}
+
+\subsection{oef 1}
 \subsubsection*{b)}
 distributiviteit-2 geldt niet.
 \[
@@ -32,7 +15,7 @@ en niet
 (\lambda_1 + \lambda_2)v = \lambda_1v+\lambda_2v
 \]
 
-\subsection*{oef 2}
+\subsection{oef 2}
 \subsubsection*{b)}
 $W_2$ is geen deelruimte van $\mathbb{R}^{3}$.\\
 \underline{Tegenvoorbeeld:}\\
@@ -72,7 +55,7 @@ $W_{12}$ is dus een deelruimte van $\mathbb{R} \rightarrow \mathbb{R}$.
 
 
 
-\subsection*{oef 3}
+\subsection{oef 3}
 \subsubsection*{Optelling}
 \underline{Associativiteit:}\\
 Stel $r_1$, $r_2$, $r_3$ willekeurige rijen met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$.\\
@@ -140,7 +123,7 @@ Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1}
      &= r
 \end{align*}
 
-\subsection*{oef 6}
+\subsection{oef 6}
 \subsubsection*{Gegeven}
 $U$ en $W$ zijn deelruimten van een vectorruimte $(\mathbb{R},V,+)$.
 \subsubsection*{Te Bewijzen}
@@ -187,7 +170,7 @@ Stel $U \subset W$. (Het andere geval is volledig analoog)\\
 Als $U \subset W$, dan is $U\cup W = W$. Van $W$ is gegeven dat het een deelruimte is van $W$. Hiermee is bewezen dat $U\cup W$ een deelruimte is van $V$.6
 \end{proof}
 
-\subsection*{oef 7}
+\subsection{oef 7}
 Om te zien of een vector $d$ tot een deelruimte behoort opgespannen door vectoren $v_1$ en $v_2$ en $v_3$ moeten we zien of er een lineaire combinatie bestaat zodat  $$a\cdot v_1 + b\cdot v_2 + c\cdot v_3 = d$$
 Dus:
 $$a(2,-1,3,2) + b(-1,1,1,-3) + c(1,1,9,-5) \overset{?}{=} (3,-1,0,-1)$$
@@ -211,7 +194,7 @@ $$
 $$
 Dit is een ongeldige matrix en dus bestaat er geen lineaire combinatie zodat de vector $d$ gevormd wordt. De vector behoort dus niet tot de deelruimte.
 
-\subsection*{oef 8}
+\subsection{oef 8}
 We willen $p(X)$ opschrijven als lineaire combinatie van $p_1(X), p_2(X), p_3(X)$, dus $p(X) = \lambda_1 p_1(X) + \lambda_2 p_2(X) + \lambda_2 p_3(X)$.
 Hiervoor lossen we het volgende stelsel op:
 \[
@@ -240,7 +223,7 @@ Dit vullen we in in een matrix, die we hierna oplossen m.b.v. rijreductie.
 We resulteren dus dat $p(X) = - p_1(X) + 3 p_2(X) - 2 p_3(X)$.
 
 
-\subsection*{oef 9}
+\subsection{oef 9}
 $$f(x)+g(x)-h(x)+0\cdot exp(x) = 0$$
 $$1 - 1 + 0 = 0$$
 Dit is een lineaire combinatie waarbij niet alle co\"effi\"enten nul zijn en toch de nulvector als oplossing geeft. Hierdoor is
@@ -264,7 +247,7 @@ $$
 e_i - e_{i+1} = -\left((e_1-e_2)+(e_2-e_3)+\dots +(e_{i-1}-e_i)+(e_{i+1}-e_{i+2})+\dots + (e_n - e_1)\right)
 $$
 kunnen we dus telkens een combinatie vinden uit de andere vectoren, hierdoor is het geen vrij deel. 
-\subsection*{oef 13}
+\subsection{oef 13}
 Hiervoor kunnen we aantonen dat $\{1+X,1+X^2,X+X^2\}$ minimaal voortbrengend is, hiervoor laten we zien dat elke vector uit  $(\mathbb{R},\mathbb{R}[X]_{\leq 2},+)$ een lineaire combinatie is van de basisvectoren:
 $$aX^2 + bX + c = \lambda_{1} (1+X) + \lambda_{2} (1+X^2) + \lambda_{3} (X+X^2)$$
 Als we deze vergelijking uitwerking uitwerken krijgen we:
@@ -297,8 +280,8 @@ Het co\"ordinatenstel $(2,-3,1)$ komt dan weer overeen met:
 $$
 2\cdot (1+X) -3 \cdot (1+X^2)+ 1\cdot (X+X^2)= -1 +3X-2X^2
 $$
-\section*{Oefenzitting 5}
-\subsection*{oef 1}
+\section{Oefenzitting 5}
+\subsection{oef 1}
 \subsubsection*{1.1}
 \underline{+} is de som van de functies\\
 Neem $f,g,h \in \mathbb{R}^{\mathbb{R}}$ willekeurig.\\
@@ -346,8 +329,8 @@ Stel $f:\mathbb{R} \rightarrow \mathbb{R}: x \mapsto f(x)$ en $g:\mathbb{R} \rig
     = (\lambda \bullet f)(x) + (\lambda \bullet g)(x)
     = (\lambda \bullet f \boldsymbol{+} \lambda \bullet g)(x)\]
 en dus $\lambda \bullet (f \boldsymbol{+} g) = \lambda \bullet f \boldsymbol{+} \lambda \bullet g $
-\section*{Bewijzen}
-\subsection*{Lemma 3.7}
+\section{Bewijzen}
+\subsection{Lemma 3.7}
 
 $$v+x = w + x \Rightarrow v=w$$
 Neem $v,w,x \in V$ en we nemen aan dat $v+x = w+x$\\
@@ -361,7 +344,7 @@ v = v + 0 \tag{neutraal element}\\
 =w \tag{neutraal element}
 \end{align*}
 
-\subsection*{Lemma 3.8 punt 3}
+\subsection{Lemma 3.8 punt 3}
 \[(-\lambda)v = -(\lambda v) = \lambda(-v)\]
 \[stel:w=0\]
 \[(\lambda)(v+w) = \lambda(v) + \lambda(w) = \lambda(v) + \lambda(0) = \lambda(v) = (\lambda v) \]
@@ -369,8 +352,8 @@ v = v + 0 \tag{neutraal element}\\
 \[Dus: -\lambda v = tegengstelde \cdot \lambda v\]
 \[(-\lambda)v = -(\lambda v) = \lambda(-v) \]
 
-\section*{Opdrachten}
-\subsection*{3.9}
+\section{Opdrachten}
+\subsection{3.9}
 Neem aan dat $\lambda \cdot v = 0$ voor $\lambda \in \mathbb{R}$ en $v \in V$.\\
 Er zijn dan twee mogelijkheden:\\
 \begin{enumerate}
@@ -389,7 +372,7 @@ v = 1\cdot v \tag{co\"efficient}
 \end{align*}
 
 \end{enumerate}
-\subsection*{3.21}
+\subsection{3.21}
 Om aan te tonen dat $U_1 + U_2$ deelruimten zijn van $V$ dan moeten we de drie eigenschappen van een deelruimte aantonen:
 \begin{enumerate}
 \item We moeten aantonen dat $0 \in U_1 + U_2$.\\
@@ -416,7 +399,7 @@ Omdat $x_2 \in U_2$ en $U_2$ is een deelruimte van V, $rx_2 \in U_2$.\\
 Nu hebben we aangetoond dat $rx$ de som is van een vector in $U_1$ en een vector in $U_2$. 
 Dus $rx \in U_1 + U_2$ door de definitie van $U_1 + U_2$ en aangezien $x$ en $r$ willekeurig waren geldt dit voor alle $r \in \mathbb{R}$ en $x \in U_1 + U_2$.
 \end{enumerate}
-\subsection*{3.24}
+\subsection{3.24}
 
 1) 
 Neem \\ 

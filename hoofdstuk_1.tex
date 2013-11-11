@@ -1,34 +1,9 @@
-\documentclass[10pt,a4paper]{article}
-
-\usepackage[english]{babel}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\makeatletter
-\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
-  \hskip -\arraycolsep
-  \let\@ifnextchar\new@ifnextchar
-  \array{#1}}
-\makeatother
-\title{Oplossingen Lineaire Algebra 2013 Hoofdstuk 1}
-\author{Syd Kerckhove}
-\author{Nicholas Haesen}
-\author{Thomas Dierckx}
-\author{Ward Schodts}
-\author{Egon Okerman, Ward Schodts, Thomas Dierckx, \\Syd Kerckhove, Nicholas Haesen}
-
-
+\documentclass[lineaire_algebra_oplossingen.tex]{subfiles}
 \begin{document}
 
-\maketitle
-\pagebreak
-\tableofcontents
-\pagebreak
-
-
+\part{Hoofdstuk 1}
 \section{Oefeningen 1.7.1}
-\subsection*{oef 1}
+\subsection{oef 1}
 \subsubsection*{Echelonvorm}
 \subsubsection*{a)}
 
@@ -165,7 +140,7 @@ $$
 0 & 0 & 0 & 1
 \end{pmatrix}
 $$
-\subsection*{oef 2}
+\subsection{oef 2}
 \subsubsection*{a)}
 \[
 \begin{pmatrix}
@@ -244,7 +219,7 @@ $$
 \]
 \[...\]
 
-\subsection*{oef 3}
+\subsection{oef 3}
 \subsubsection*{Echelonvorm}
 \[
 \begin{pmatrix}
@@ -307,7 +282,7 @@ Wissel R3 en R4
 \end{pmatrix}
 \]
 
-\subsection*{oef 4}
+\subsection{oef 4}
 \subsubsection*{a)}
 Het oplossingsstelsel is bijna letterlijk af te lezen:\\
 Stel $t=\lambda$ dan is:\\
@@ -325,8 +300,8 @@ Dit triviaal direct te bepalen door de laatste rij:
 \[
 V=\emptyset
 \]
-\subsection*{oef 5}
-\subsection*{5a)}
+\subsection{oef 5}
+\subsubsection*{a)}
 \[
 \begin{pmatrix}
 1 &  2 &  4\\
@@ -356,7 +331,7 @@ V=\emptyset
 \[ Y=-1\]
 \[ X=-2\]
 
-\subsection*{5b)}
+\subsubsection*{b)}
 \[
 \begin{pmatrix}
 3 &  2 &  4\\
@@ -383,7 +358,7 @@ V=\emptyset
 \end{pmatrix}
 \]
 
-\subsection*{5c)}
+\subsubsection*{c)}
 \[
 \begin{pmatrix}
 1 &  2 &  -3\\
@@ -409,7 +384,7 @@ V=\emptyset
 \end{pmatrix}
 \]
 
-\subsection*{5d)}
+\subsubsection*{d)}
 \[
 \begin{pmatrix}
 1 &  1 &  -2 & 1 & 3\\
@@ -436,7 +411,7 @@ V=\emptyset
 \end{pmatrix}
 \]
 
-\subsection*{oef 6}
+\subsection{oef 6}
 \subsubsection*{a)}
 \[
 \begin{pmatrix}
@@ -513,7 +488,7 @@ Antwoord:
 V=\{(1,2a,a,-3b,b) | a,b \in \mathbb{R} \}
 \]
 
-\subsection*{oef 7}
+\subsection{oef 7}
 \subsubsection*{a)}
 \[
 \begin{pmatrix}
@@ -694,8 +669,8 @@ Antwoord:
 \[
 V = \{(-\frac{175}{8},-\frac{135}{8}, -\frac{-31}{16}, \frac{17}{16})\}
 \]
-\subsection*{oef 8}
-\subsection*{8a)}
+\subsection{oef 8}
+\subsubsection*{a)}
 \[
 \begin{pmatrix}
 2 &  i &  -(1+i) & 1 \\
@@ -724,7 +699,7 @@ V = \{(-\frac{175}{8},-\frac{135}{8}, -\frac{-31}{16}, \frac{17}{16})\}
 \]
 \[...\]
 
-\subsection*{oef 9}
+\subsection{oef 9}
 \[
 \begin{pmatrix}
 2 &  1 &  7 & b_1\\
@@ -762,7 +737,7 @@ Antwoord:\\
 Als $(b_3-b_1) - \frac{2}{5}(b_2-3b_1) = 0$ dan heeft het stelsel oneindig veel oplossingen.
 Als $(b_3-b_1) - \frac{2}{5}(b_2-3b_1) \neq 0$ dan heeft het stelsel geen oplossingen ($V=\emptyset$)
 
-\subsection*{oef 10}
+\subsection{oef 10}
 \[
 \begin{pmatrix}
 1 & h & 1\\
@@ -783,7 +758,7 @@ Als $h = \frac{3}{2}$ en $k \neq 2$
 Als $h \neq \frac{3}{2}$
 \subsubsection*{c) Meerdere oplossingen:}
 Als $h = \frac{3}{2}$ en $k = 2$
-\subsection*{oef 11}
+\subsection{oef 11}
 \[
 \begin{pmatrix}
 -3 &  h &  1\\
@@ -804,7 +779,7 @@ Als $k \neq -2h \Rightarrow$ voor alle koppels (h,k) $\not \in \{(\lambda, -2\la
 \subsubsection*{c) Meerdere oplossingen:}
 Nooit, er is immers geen nulrij mogelijk.
 
-\subsection*{oef 12}
+\subsection{oef 12}
 \subsubsection*{a)}
 \begin{center}
 Wissel R1 en R3, en daarna R2 en R1.
@@ -1088,7 +1063,7 @@ Anders heeft het stelsel precies één oplossing:
 V=\left\lbrace\left(2\frac{k+2}{k},-2,-2\right)\right\rbrace
 \]
 
-\subsection*{oef 13}
+\subsection{oef 13}
 De onderlinge stand van twee rechten bestaat uit 3 mogelijkheden:
 \begin{enumerate}
 \item Evenwijdig = geen oplossing voor het stelsel.\\
@@ -1112,7 +1087,7 @@ c & 1 & d\\
 \end{pmatrix}
 \]
 
-\subsection*{oef 14}
+\subsection{oef 14}
 \[R1 \leftrightarrow R2 \]
 \[R2 \longmapsto R2 + b\cdot R1\]
 \[R3 \longmapsto R3 - R1\]
@@ -1135,7 +1110,7 @@ c & 1 & d\\
 \[\]
 2b) b =/= 2: 1 oplossing
 
-\subsection*{oef 15}
+\subsection{oef 15}
 \begin{center}
 Wissel R1 en R3
 \end{center}
@@ -1233,7 +1208,7 @@ Anders heeft het stelsel precies één oplossing:
 \[
 V=\left\lbrace\left(0,\frac{b(2+a)-1}{b(2+a)}, \frac{1}{b(2+a)}\right)\right\rbrace
 \]
-\subsection*{oef 16}
+\subsection{oef 16}
 Haal de gegevens van de twee tabel door de eerste:
 \[
 \begin{pmatrix}
@@ -1256,8 +1231,8 @@ Dit geeft voor Laurens:
 \[
 Premie = 2\cdot 2100 + 3\cdot 3100 + 2\cdot 2800 + 2\cdot 2500 = 24100
 \]
-\subsection*{oef 17}
-\subsection*{17a)}
+\subsection{oef 17}
+\subsubsection*{a)}
 \[A + B + C = 15000\]
 \[0.05A + 0.07B + 0.08C = 870\]
 \[A-2B-2C=0\]
@@ -1265,7 +1240,7 @@ Premie = 2\cdot 2100 + 3\cdot 3100 + 2\cdot 2800 + 2\cdot 2500 = 24100
 \[X = 10000\]
 \[Y = 3000\]
 \[Z = 2000\]
-\subsection*{17b)}
+\subsubsection*{b)}
 Skralan belegt 4500euro in fonds B, \\
 De totale winst bedraagt 900euro. \\
 De winst uit fonds B is 315euro. \\
@@ -1274,7 +1249,7 @@ A=8500 en C = 2000
 
 \section{Oefeningen 1.7.2}
 
-\subsection*{oef 1}
+\subsection{oef 1}
 \subsubsection*{(AB)C}
 (AB) result:
 $
@@ -1309,7 +1284,7 @@ $
 \end{pmatrix}
 $
 
-\subsection*{oef 2}
+\subsection{oef 2}
 \[(2A-B)C = 
 \begin{pmatrix}
 2 &  1 &  1\\
@@ -1325,7 +1300,7 @@ $
 \end{pmatrix}
 \]
 
-\subsection*{oef 3}
+\subsection{oef 3}
 $$(A - B)^T = A^T - B^T$$
 Dus:
 $$A+B^T = A^T - B^T$$
@@ -1339,7 +1314,7 @@ $$ B =
 \frac{-1}{2} & \frac{-3}{2} & 0
 \end{pmatrix}
 $$
-\subsection*{oef 4}
+\subsection{oef 4}
 \subsubsection*{a)}
 \begin{proof}
 Bewijs uit het ongerijmde:\\
@@ -1369,7 +1344,7 @@ Dit betekent volgens de stelling in 4.a dat $A-B=0$.
 Nu zien we dat $A=B$.
 \end{proof}
 
-\subsection*{oef 5}
+\subsection{oef 5}
 \[
    A^2 = A*A = \left( \begin{array}{ccc}
     1 & 2 & 0 \\
@@ -1399,7 +1374,7 @@ f(A) = 3*A^3 + A^2 - 2*A + 3*I =  \left( \begin{array}{ccc}
     0 & 0 & 393 \\
   \end{array} \right)
 \]
-\subsection*{oef 6}
+\subsection{oef 6}
 \subsubsection*{a)}
 $$ AB =
 \begin{pmatrix}
@@ -1461,8 +1436,125 @@ $$ C =
 4 & -2 & 0
 \end{pmatrix}
 $$
-\subsection*{oef 7}
-\subsubsection*{c}
+\subsection{oef 7}
+\subsubsection*{a)}
+
+\[
+\begin{pmatrix}
+2 & 1 & 3 & 1 & 0 & 0\\
+-1 & 2 & 0 & 0 & 1 & 0\\
+3 & -2 & 1 & 0 & 0 & 1
+\end{pmatrix}
+\]   
+\[ R1 \Leftrightarrow R2 \]
+\[ R1 \longmapsto R1 * -1\cdot R1\]
+\[
+\begin{pmatrix}
+1 & -2 & 0 & 0 & -1 & 0\\
+2 & 1 & 3 & 1 & 0 & 0\\
+3 & -2 & 1 & 0 & 0 & 1
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - 2\cdot R1 \]
+\[ R3 \longmapsto R3 - 3\cdot R1 \]
+\[
+\begin{pmatrix}
+1 & -2 & 0 & 0 & -1 & 0\\
+0 & 5 & 3 & 1 & 2 & 0\\
+0 & 4 & 1 & 0 & 3 & 1
+\end{pmatrix}
+\]
+\[ R2 \longmapsto R2 - R3 \]
+\[
+\begin{pmatrix}
+1 & -2 & 0 & 0 & -1 & 0\\
+0 & 1 & 2 & 1 & -1 & 0\\
+0 & 4 & 1 & 0 & 3 & 1
+\end{pmatrix}
+\]
+\[ R1 \longmapsto R1 + 2\cdot R2 \]
+\[ R3 \longmapsto R3 - 4\cdot R1 \]
+\[
+\begin{pmatrix}
+1 & 0 & 4 & 2 & -3 & 0\\
+0 & 1 & 2 & 1 & -1 & 0\\
+0 & 0 & -7 & -4 & 7 & 1
+\end{pmatrix}
+\]
+\[ R3 \longmapsto R3 \div -7  \]
+\[
+\begin{pmatrix}
+1 & 0 & 4 & 2 & -3 & 0\\
+0 & 1 & 2 & 1 & -1 & 0\\
+0 & 0 & 1 & \frac{-4}{7} & -1 & \frac{-1}{7}
+\end{pmatrix}
+\]
+\[ R1 \longmapsto R1  - 4 \cdot R3 \]
+\[ R2 \longmapsto R2 - 2 \cdot R3 \]
+\[
+\begin{pmatrix}
+1 & 0 & 0 & \frac{6}{14} & 1 & 0\frac{4}{7}\\
+0 & 1 & 0 & \frac{-1}{7} & 1 & \frac{2}{7}\\
+0 & 0 & 1 & \frac{-4}{7} & -1 & \frac{-1}{7}
+\end{pmatrix}
+\]
+\subsubsection*{b)}
+\[
+\begin{vmatrix}
+1 & 3 & 1 & 1 & 1 & 0 & 0 & 0\\
+2 & 5 & 2 & 2 & 0 & 1 & 0 & 0\\
+1 & 3 & 8 & 9 & 0 & 0 & 1 & 0\\
+1 & 3 & 2 & 2 & 0 & 0 & 0 & 1
+\end{vmatrix}
+\]
+\[ E1 is \]
+\[
+\begin{vmatrix}
+1 & 0 & 0 & 0\\
+-2 & 1 & 0 & 0\\
+-1 & 0 & 1 & 0\\
+-1 & 0 & 0 & 1
+\end{vmatrix}
+\]
+\[ E2 is \]
+\[
+\begin{vmatrix}
+1 & 0 & 3 & -1\\
+0 & -1 & 0 & 0\\
+0 & 0 & 1 & -7\\
+0 & 0 & 0 & 1
+\end{vmatrix}
+\]
+\[ E3 is \]
+\[
+\begin{vmatrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & -1 & 1
+\end{vmatrix}
+\]
+\[ E4 is \]
+\[
+\begin{vmatrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & 1 & 0
+\end{vmatrix}
+\]
+\[ inverse is  \]
+\[
+\begin{vmatrix}
+1 & 0 & 0 & 0 & -4 & 3 & 0 & -1\\
+0 & 1 & 0 & 0 & 2 & -1 & 0 & 0\\
+0 & 0 & 1 & 0 & -7 & 0 & -1 & 8\\
+0 & 0 & 0 & 1 & 6 & 0 & 1 & -7
+\end{vmatrix}
+\]
+\[ A is E4 \cdot E3 \cdot E2 \cdot E1 \cdot A^-1 \]
+
+\subsubsection*{c)}
 \[
 \begin{vmatrix}
 1 & 1 & 3 & 1 & 0 & 0\\
@@ -1539,125 +1631,8 @@ $$
 \]
 \[ nu is A gelijk aan E4 \cdot E3 \cdot E2 \cdot E1 \cdot A^-1 \]
 \[ het product van A met A^-1 was de eenheidsmatrix. \]
-\subsubsection*{b}
-\[
-\begin{vmatrix}
-1 & 3 & 1 & 1 & 1 & 0 & 0 & 0\\
-2 & 5 & 2 & 2 & 0 & 1 & 0 & 0\\
-1 & 3 & 8 & 9 & 0 & 0 & 1 & 0\\
-1 & 3 & 2 & 2 & 0 & 0 & 0 & 1
-\end{vmatrix}
-\]
-\[ E1 is \]
-\[
-\begin{vmatrix}
-1 & 0 & 0 & 0\\
--2 & 1 & 0 & 0\\
--1 & 0 & 1 & 0\\
--1 & 0 & 0 & 1
-\end{vmatrix}
-\]
-\[ E2 is \]
-\[
-\begin{vmatrix}
-1 & 0 & 3 & -1\\
-0 & -1 & 0 & 0\\
-0 & 0 & 1 & -7\\
-0 & 0 & 0 & 1
-\end{vmatrix}
-\]
-\[ E3 is \]
-\[
-\begin{vmatrix}
-1 & 0 & 0 & 0\\
-0 & 1 & 0 & 0\\
-0 & 0 & 1 & 0\\
-0 & 0 & -1 & 1
-\end{vmatrix}
-\]
-\[ E4 is \]
-\[
-\begin{vmatrix}
-1 & 0 & 0 & 0\\
-0 & 1 & 0 & 0\\
-0 & 0 & 0 & 1\\
-0 & 0 & 1 & 0
-\end{vmatrix}
-\]
-\[ inverse is  \]
-\[
-\begin{vmatrix}
-1 & 0 & 0 & 0 & -4 & 3 & 0 & -1\\
-0 & 1 & 0 & 0 & 2 & -1 & 0 & 0\\
-0 & 0 & 1 & 0 & -7 & 0 & -1 & 8\\
-0 & 0 & 0 & 1 & 6 & 0 & 1 & -7
-\end{vmatrix}
-\]
-\[ A is E4 \cdot E3 \cdot E2 \cdot E1 \cdot A^-1 \]
 
-\subsubsection*{a}
-
-\[
-\begin{pmatrix}
-2 & 1 & 3 & 1 & 0 & 0\\
--1 & 2 & 0 & 0 & 1 & 0\\
-3 & -2 & 1 & 0 & 0 & 1
-\end{pmatrix}
-\]   
-\[ R1 \Leftrightarrow R2 \]
-\[ R1 \longmapsto R1 * -1\cdot R1\]
-\[
-\begin{pmatrix}
-1 & -2 & 0 & 0 & -1 & 0\\
-2 & 1 & 3 & 1 & 0 & 0\\
-3 & -2 & 1 & 0 & 0 & 1
-\end{pmatrix}
-\]
-\[ R2 \longmapsto R2 - 2\cdot R1 \]
-\[ R3 \longmapsto R3 - 3\cdot R1 \]
-\[
-\begin{pmatrix}
-1 & -2 & 0 & 0 & -1 & 0\\
-0 & 5 & 3 & 1 & 2 & 0\\
-0 & 4 & 1 & 0 & 3 & 1
-\end{pmatrix}
-\]
-\[ R2 \longmapsto R2 - R3 \]
-\[
-\begin{pmatrix}
-1 & -2 & 0 & 0 & -1 & 0\\
-0 & 1 & 2 & 1 & -1 & 0\\
-0 & 4 & 1 & 0 & 3 & 1
-\end{pmatrix}
-\]
-\[ R1 \longmapsto R1 + 2\cdot R2 \]
-\[ R3 \longmapsto R3 - 4\cdot R1 \]
-\[
-\begin{pmatrix}
-1 & 0 & 4 & 2 & -3 & 0\\
-0 & 1 & 2 & 1 & -1 & 0\\
-0 & 0 & -7 & -4 & 7 & 1
-\end{pmatrix}
-\]
-\[ R3 \longmapsto R3 \div -7  \]
-\[
-\begin{pmatrix}
-1 & 0 & 4 & 2 & -3 & 0\\
-0 & 1 & 2 & 1 & -1 & 0\\
-0 & 0 & 1 & \frac{-4}{7} & -1 & \frac{-1}{7}
-\end{pmatrix}
-\]
-\[ R1 \longmapsto R1  - 4 \cdot R3 \]
-\[ R2 \longmapsto R2 - 2 \cdot R3 \]
-\[
-\begin{pmatrix}
-1 & 0 & 0 & \frac{6}{14} & 1 & 0\frac{4}{7}\\
-0 & 1 & 0 & \frac{-1}{7} & 1 & \frac{2}{7}\\
-0 & 0 & 1 & \frac{-4}{7} & -1 & \frac{-1}{7}
-\end{pmatrix}
-\]
-
-\subsection*{oef 8}
+\subsection{oef 8}
 \subsubsection*{a)}
 $$
 \begin{pmatrix}[ccc|ccc]
@@ -1713,7 +1688,7 @@ $$
 \end{pmatrix}
 $$
 Aangezien hier enkel rijopraties van type II zijn gebruikt is de inverse van deze matrix zichzelf.
-\subsection*{oef 9}
+\subsection{oef 9}
 
 \[
 \begin{pmatrix}
@@ -1777,8 +1752,8 @@ d &= -\frac{a}{bc}
 \]
 De oplossingen van de stelsel zijn geven een antwoord op te vraag.
 
-\subsection*{oef 10}
-\subsection*{10a)}
+\subsection{oef 10}
+\subsubsection*{a)}
 \[R2 \longmapsto R2 - R1 \]
 \[R3 \longmapsto R3 -4\cdot R1 \]
 \[R3 \longmapsto R3 -2\cdot R2 \]
@@ -1800,7 +1775,7 @@ De oplossingen van de stelsel zijn geven een antwoord op te vraag.
 14
 \end{pmatrix}
 \]
-\subsection*{10b)}
+\subsubsection*{b)}
 \[A^{-1}.B = 
 \begin{pmatrix}
 -1/7 & -16/7 & 10/7\\
@@ -1821,10 +1796,10 @@ De oplossingen van de stelsel zijn geven een antwoord op te vraag.
 \end{pmatrix}
 \]
 
-\subsection*{oef 11}
+\subsection{oef 11}
 TODO
 
-\subsection*{oef 12}
+\subsection{oef 12}
 \subsubsection*{a)}
 Wanneer alle getallen op de diagonaal verschillend van nul zijn.
 \subsubsection*{b)}
@@ -1846,7 +1821,7 @@ $$ D^{-1} = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-\subsection*{oef 13}
+\subsection{oef 13}
 
 \begin{proof}
 
@@ -1860,7 +1835,7 @@ $$A^T\cdot (A^{-1})^T = (A^{-1}\cdot A)^T = I^T = I$$
 This proofs that $(A^T)^{-1} = (A^{-1})^T$
 \end{proof}
 
-\subsection*{oef 14}
+\subsection{oef 14}
 $$
 A = 
 \begin{pmatrix}
@@ -1932,7 +1907,7 @@ A^{-1}=
 \end{pmatrix}
 $$
 
-\subsection*{oef 15}
+\subsection{oef 15}
 \[
 \begin{pmatrix}
 1 & 0 & 0\\
@@ -1941,7 +1916,7 @@ b & c & 1
 \end{pmatrix}
 \]
 
-\subsection*{oef 16}
+\subsection{oef 16}
 \subsubsection*{a)}
 Te bewijzen: $A$ is inverteerbaar $\Rightarrow \not \exists k\; A^k=O$ 
 \begin{proof}
@@ -1972,7 +1947,7 @@ Als we een matrix $\mathbb{I}-A$ vermeningvuldigen met zijn inverse $(\mathbb{I}
 Omdat A nilpotent is met $A^k=0$, is dit gelijk aan $\mathbb{I}$
 \end{proof}
 
-\subsection*{oef 17}
+\subsection{oef 17}
 \subsubsection*{a)}
 \[
 A= \left(\begin{array} {cc}
@@ -1996,7 +1971,7 @@ A*I=I\\
 A=I
 \end{gather*}
 
-\subsection*{oef 18}
+\subsection{oef 18}
 \subsubsection*{a)}
 \[
 \begin{pmatrix}
@@ -2146,7 +2121,7 @@ A=I
 \]
 
 
-\subsection*{oef 20}
+\subsection{oef 20}
 $$ A = LU = \begin{pmatrix}
 1 & 0 & 0\\
 -1 & 1 & 0\\
@@ -2181,7 +2156,7 @@ $$
 De oplossing van dit stelsel is:\\
 $$V = {(4,2,3)}$$
 
-\subsection*{oef 21}
+\subsection{oef 21}
 \[
 \begin{pmatrix}
 1 & 1 & 1\\
@@ -2271,7 +2246,7 @@ $$V = {(4,2,3)}$$
 \end{pmatrix}
 \]
 
-\subsection*{oef 22}
+\subsection{oef 22}
 \[
 A=
 \begin{pmatrix}
@@ -2440,7 +2415,7 @@ heeft als oplossingsverzameling:
 V=\{(6,4,2)\}
 \]
 
-\subsection*{oef 23}
+\subsection{oef 23}
 \subsubsection*{a)}
 False
 \[
@@ -2549,7 +2524,7 @@ E_2*E_1=\left( \begin{array}{cc}
 \end{array}\right)
 \]
 
-\subsection*{Extra (oefenzitting)}
+\subsection{Extra (oefenzitting)}
 \[
 \left\lbrace
 \begin{array}{c c c c c c c}
@@ -2775,7 +2750,7 @@ V = \left\lbrace\left(\frac{4b^{3}+2a^{2}-12}{(4-a^{2})(b^{2}+3)},\frac{-ab^{3}-
 \end{itemize}
 
 \section{Opdrachten}
-\subsection*{opdracht 1.2}
+\subsection{opdracht 1.2}
 Om op een matrix een ERO uit te voeren, berekenen we eigenlijk de vermenigvuldiging van de matrix met de corresponderende elementaire matrix. Dus: $M' = M \cdot E$. Om de ERO om te keren vermenigvuldigen we $M'$ met een matrix $E^{-1}$ zodat $M'\cdot E^{-1} = M \cdot I = M$.
 Om aan te tonen dat alle elementaire rijoperaties inverteerbaar zijn, tonen we het aan voor elk van de EROs. Elk van de EROs komt overeen met een elementaire matrix (zie p 36). We bewijzen dat deze inverteerbaar zijn door de de inverse te construeren.
 \subsubsection*{$R_i\rightarrow \lambda R_i$}
@@ -2851,7 +2826,7 @@ E^{-1}=
 \end{pmatrix}
 \]
 
-\subsection*{opdracht 1.23}
+\subsection{opdracht 1.23}
 \subsubsection*{1.}
 \[
 AA^T \ en \ A + A^T zijn \ symmetrisch:
@@ -2911,7 +2886,7 @@ A = \begin{pmatrix}
 -2 & -\frac{1}{2} & 0
 \end{pmatrix}
 $$
-\subsection*{opdracht 1.25}
+\subsection{opdracht 1.25}
 \[
 Tr(A) = \sum^{n}_{i=1}(A)_{ii}
 \]
@@ -2932,5 +2907,5 @@ We zien nu dat
 Tr(A\cdot B) = Tr(B\cdot A)
 \]
 
-\subsection*{opdracht 1.33}
+\subsection{opdracht 1.33}
 \end{document}

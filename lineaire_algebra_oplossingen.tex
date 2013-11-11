@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}
+\usepackage[dutch]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{subfiles}
+\usepackage[final]{pdfpages}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+
+\title{Oplossingen Oefeningen:\\Lineaire Algebra}
+\author{
+Ward Schots,\\
+Thomas Dierckx,\\
+Nicholas Haesen,\\
+Egon Okerman,\\
+Tom Sydney Kerckhove}
+
+\date{2013-2014}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+\tableofcontents
+\pagebreak
+
+\subfile{hoofdstuk_1}
+\subfile{hoofdstuk_2}
+\subfile{hoofdstuk_3}
+\subfile{hoofdstuk_4}
+\subfile{hoofdstuk_5}
+\subfile{hoofdstuk_6}
+
+\subfile{huistaak_1}
+\subfile{huistaak_2}
+
+\end{document}

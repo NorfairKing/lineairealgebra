@@ -1,29 +1,9 @@
-\documentclass[10pt,a4paper]{article}
-
-\usepackage[english]{babel}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\makeatletter
-\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
-  \hskip -\arraycolsep
-  \let\@ifnextchar\new@ifnextchar
-  \array{#1}}
-\makeatother
-\title{Oplossingen Lineaire Algebra 2013}
-\author{TODO}
-
-
+\documentclass[lineaire_algebra_oplossingen.tex]{subfiles}
 \begin{document}
 
-\maketitle
-\pagebreak
-\tableofcontents
-\pagebreak
-
+\part{Hoofdstuk 2}
 \section{2.4}
-\subsection*{oef 1}
+\subsection{oef 1}
 \subsubsection*{a}
 \[
 \begin{vmatrix}
@@ -359,7 +339,7 @@ Door ontwikkeling:
 3\cdot 2 \cdot 2 = 12
 \]
 
-\subsection*{oef 2}
+\subsection{oef 2}
 \[det(A) = -7, det(B) = 3\]
 \begin{gather*}
     det(A^2BA^{-1}) =
@@ -370,7 +350,7 @@ Door ontwikkeling:
     det(B^{-1}A^3) = det(B^{-1}) \cdot det(A^3) = det(B)^{-1} \cdot det(A)^3 = \frac{1}{3} \cdot (-7)^3 = \frac{-343}{3}
 \end{gather*}
 
-\subsection*{oef 3}
+\subsection{oef 3}
 $det(AB) = 0$ als $det(A) = 0$ of $det(B) = 0$
 \\
 \[det(A) = \begin{vmatrix}
@@ -389,7 +369,7 @@ x & 0\\
 $x^2 + 2x$ voor $x_3, x_4$ met $x_3 = -2$ en $x_4 = 0$v 
 \subsubsection*{Besluit}
 $det(AB) = 0$ voor $x$ met $x \in \{-2, 0, 1, 4\}$.
-\subsection*{oef 4}
+\subsection{oef 4}
 \subsubsection*{a)}
 Aangezien er twee maal een ERO van het verwisselen van rijen voorkomt wordt de uitkomst:
 $$-1\cdot -1\cdot -6 = -6$$
@@ -413,7 +393,7 @@ Voor elke grotere vierkante matrix is deze determinant $0$, omdat door rij reduc
 1 & 1 & 1
 \end{vmatrix}
 \]
-\subsection*{oef 6}
+\subsection{oef 6}
 \subsubsection*{a)}
 \[
 det(A^{-1}) = \frac{1}{det(A)} $$
@@ -426,7 +406,7 @@ $$ det(2(A^{-1}) = 4\cdot det(A^{-1}) = 4 \cdot \frac{1}{-7} = \frac{-4}{7}
 $$
 \subsubsection*{c)}
 \[ det((2A)^{-1}) = det(2A)^{-1} = 2^{3}det(A)^{-1} = -8/7\]
-\subsection*{oef 7}
+\subsection{oef 7}
 \begin{proof}
 De determinant van een product is het product van de determinanten.
 \[
@@ -434,7 +414,7 @@ det(AB) = det(A) det(B) = 0 det(B) = 0
 \]
 \end{proof}
 
-\subsection*{oef 8}
+\subsection{oef 8}
 \begin{align*}
     \begin{vmatrix}
         k+2 & 1 & 1\\
@@ -465,7 +445,7 @@ De matrix is inverteerbaar als de determinant niet gelijk is aan 0.
 \end{align*}
 De matrix is dus inverteerbaar als $k \neq -1$ of $k \neq -4$.
 
-\subsection*{oef 9}
+\subsection{oef 9}
 Basisgeval: \\
 1) $(n=3, F_{3}=2):$
 \[ 
@@ -490,7 +470,7 @@ Stel dat het klopt voor $F_{n-1}$\\
 Te Bewijzen: het klopt voor $F_{n}$\\
 Dit kunnen we doen door de uitleg die eerder gegeven werd.
 
-\subsection*{oef 11}
+\subsection{oef 11}
 \subsubsection*{a)}
 Waar: We kunnen de determinant van de matrix bepalen door er een bovendriehoeksmatrix van te maken en dan de elementen op de diagonaal te vermenigvuldigen. Dit kunnen we doen door zowel van A als D een bovendriehoeksmatrix te maken. Als we dit doen worden enkel de elementen van respectievelijk A en D aangepast (alle nullen blijven) dus de determinant is gelijk aan de det(A). det(B)
 
@@ -556,7 +536,7 @@ Niet waar, tegenvoorbeeld:
 \end{gather*}
 
 
-\subsection*{oef 12}
+\subsection{oef 12}
 \[
 \begin{vmatrix}
 2 & -1 & 3\\
@@ -568,7 +548,7 @@ A_{12} : C_{12} = (-1)^(1+2) \cdot (-1 -6) = 7
 A_{13} : C_{13} = -8
 A_{33} : C_{33} = 2
 \]
-\subsection*{oef 13}
+\subsection{oef 13}
 $$
 \begin{vmatrix}
 a & a^4 & a^7\\
@@ -584,7 +564,7 @@ a^3 & a^6 & a^9
 = 0
 $$
 Dit kan ook zo gedaan worden voor de derde rij. Vanaf dat ereen nulrij in zit weten we dat de determinant nul is.
-\subsection*{oef 14}
+\subsection{oef 14}
 Voor elke scheefsymmetrische matrix geldt:
 \[
 A^T= -A
@@ -619,7 +599,7 @@ det(A) = det(-A) \Rightarrow det(A) = 0
 0 & 0 & 1 & 0
 \end{vmatrix}
 \]
-\subsubsection*{oef 15}
+\subsection{oef 15}
 \[ det(A-nI_{n})=0 \longmapsto \]
 \[
 \begin{pmatrix}
@@ -644,7 +624,7 @@ det(A) = det(-A) \Rightarrow det(A) = 0
 \]
 \[ \text{Als we deze matrix naar echelonvorm brengen zullen altijd een nulrij krijgen. Dus det=0}\]
 
-\subsubsection*{16}
+\subsection{oef 16}
 \subsubsection*{b)}
 \[
 \begin{vmatrix}
@@ -675,7 +655,7 @@ A^-1 = \frac{1}{det(A)} \cdot adj(A)
 \]
 
 
-\subsection*{oef 17}
+\subsection{oef 17}
 \[
 adj(A)=
 \begin{pmatrix}
@@ -685,9 +665,9 @@ adj(A)=
 \end{pmatrix}
 \]
 
-\subsection*{oef 19}
+\subsection{oef 19}
 \subsubsection*{19b)}
-\[ \text{De uitleg staat tss "(())"}\]
+De uitleg staat tss "(())"
 \[adj(A).A = det(A).I_{n}\]
 \[adj(A.(adj(A))) = det(A)^{n-1}.I_{n}\]
 \[((adj(A.B)=adj(A).adj(B)))\]
@@ -698,7 +678,7 @@ adj(A)=
 \[((\text{We gaan er van uit dat de det(A) niet gelijk is aan nul }))\]
 \[adj(adj(A)) = det(A)^{n-2}.A\]
 
-\subsection*{oef 20}
+\subsection{oef 20}
 \subsubsection*{b)}
 \[
 WAAR.
@@ -751,7 +731,7 @@ wat opnieuw CM(A) oplevert.
 \end{pmatrix}
 /2 = -11/2 \]
 
-\subsection*{oef 24}
+\subsection{oef 24}
 \[ \left\{
      \begin{array}{lr}
        \frac{2}{x}-\frac{3}{y}+\frac{5}{z} = & 3 \\
@@ -795,7 +775,7 @@ met $x' = \frac{1}{x}, y' = \frac{1}{y}, z' = \frac{1}{z}$
     z = (z')^{-1}= \frac{d}{d_3} = \frac{50}{20}
 \]
 
-\subsection*{oef 25}
+\subsection{oef 25}
 De beschreven determinant ziet er als volgt uit.
 \[
 \begin{vmatrix}
@@ -830,7 +810,7 @@ x_i
 \]
 
 
-\subsection*{oef 27}
+\subsection{oef 27}
 \subsubsection*{c)}
 \[ \text{Niet waar, Stel c=2, n=3 en A=}
 \begin{pmatrix}
@@ -908,8 +888,8 @@ Schrijf de volgende uitdrukking als een product van vier niet triviale factoren.
 \]
 
 \section{Opdrachten}
-\subsection*{2.14}
-\subsection*{2.16}
+\subsection{2.14}
+\subsection{2.16}
 \subsubsection*{1.}
 Permutaties van $\{1,2,3,4\}$:
 $$
