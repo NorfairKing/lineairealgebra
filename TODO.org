@@ -201,8 +201,18 @@
    - [ ] 15 huistaak
    - [ ] 17 
      - [ ] b warreee
+   - [ ] 19
+     - [ ] b noiseloop
    - [ ] 25 fokdiekul
-   - [ ] 27 egonny
+   - [ ] 26 egonny
+   - [ ] 27 
+     - [ ] a warreee
+     - [ ] b fokdiekul
+     - [ ] c NorfairKing
+     - [ ] d egonny
+     - [ ] e noiseloop
+     - [ ] f warreee
+   - [ ] 30 fokdiekul
 *** TODO Extra
 ** TODO Opdrachten 
    - 3.9 p94    noiseloop  
