@@ -215,18 +215,18 @@
    - [ ] 30 fokdiekul
 *** TODO Extra
 ** TODO Opdrachten 
-   - 3.9 p94    noiseloop  
-   - 3.17 p97   warreee    
-   - 3.18 p98   fokdiekul  
-   - 3.21 p99   NorfairKing
-   - 3.23 p100  egonny     
-   - 3.24 p100  noiseloop  
-   - 3.29 p103  warreee    
-   - 3.48 p113  fokdiekul  
-   - 3.51 p115  NorfairKing
-   - 3.55 p 116 egonny     
-   - 3.59 p 118 noiseloop
-   - 3.64 p 123 warreee
+   - [ ] 3.9 p94    noiseloop  
+   - [ ] 3.17 p97   warreee    
+   - [ ] 3.18 p98   fokdiekul  
+   - [ ] 3.21 p99   NorfairKing
+   - [ ] 3.23 p100  egonny     
+   - [ ] 3.24 p100  noiseloop  
+   - [ ] 3.29 p103  warreee    
+   - [ ] 3.48 p113  fokdiekul  
+   - [ ] 3.51 p115  NorfairKing
+   - [ ] 3.55 p 116 egonny     
+   - [ ] 3.59 p 118 noiseloop
+   - [ ] 3.64 p 123 warreee
 * TODO Hoofdstuk 4
   DEADLINE: <2013-11-26 Die>
 ** TODO Oefeningen
