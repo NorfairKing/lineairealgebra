@@ -209,7 +209,7 @@
      - [ ] a warreee
      - [X] b egonny
      - [ ] c NorfairKing
-     - [ ] d egonny
+     - [X] d egonny
      - [ ] e noiseloop
      - [ ] f warreee
    - [ ] 30 fokdiekul
