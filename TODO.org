@@ -178,8 +178,8 @@
     - [X] 7 warreee
     - [X] 12 warreee
     - [X] 13 warreee
-    - [ ] 19
-      - [ ] b noiseloop
+    - [-] 19
+      - [X] b egonny
     - [ ] 26 egonny
 *** TODO In Oefenzitting
    - [X] 1 NorfairKing
