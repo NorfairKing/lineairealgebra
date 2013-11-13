@@ -180,7 +180,7 @@
     - [X] 13 warreee
     - [-] 19
       - [X] b egonny
-    - [ ] 26 egonny
+    - [X] 26 egonny
 *** TODO In Oefenzitting
    - [X] 1 NorfairKing
      - [X] b NorfairKing
@@ -207,7 +207,7 @@
    - [ ] 25 fokdiekul
    - [ ] 27
      - [ ] a warreee
-     - [ ] b fokdiekul
+     - [X] b egonny
      - [ ] c NorfairKing
      - [ ] d egonny
      - [ ] e noiseloop
