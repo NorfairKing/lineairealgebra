@@ -203,10 +203,10 @@
    - [ ] 14 noiseloop 
    - [ ] 15 huistaak
    - [ ] 17 
-     - [ ] b warreee
+     - [X] b warreee
    - [ ] 25 fokdiekul
    - [ ] 27
-     - [ ] a warreee
+     - [X] a warreee
      - [X] b egonny
      - [ ] c NorfairKing
      - [X] d egonny
