@@ -38,7 +38,21 @@ Als $det(A) \neq 0$ dan zal $A$ niet gereduceerd kunnen worden naar een matrix m
 \end{proof}
 
 \section{oef 7}
-
+Zij $U$ en $W$ deelruimten van de vectorruimte $V$
+\subsection*{Te bewijzen}
+$dim(U) + dim(W) = dim(U+W)$ $\Leftrightarrow$ $V = U \oplus W$.
+\subsection*{Bewijs}
+\begin{proof}
+Rechtstreeks bewijs.
+\subsubsection*{$\Rightarrow$}
+$dim(U) + dim(W) = dim(U+W)= dim(U+W) + dim(U\cap W)$
+\[
+dim(U\cap W) = 0
+\]
+$U \cap W$ is een deelruimte van $V$ en $dim(U\cap W) = 0$ dus $U \cap W = \{\vec{0}\}$.
+$U+W = U\oplus W$ (p 99). $U$ en $W$ zijn deelruimten van $V$ dus $U\oplus W$ is een deelruimte van $V$(p 99). Omdat $U$ en $W$ deelruimten zijn van $W$, geldt $dim(U \oplus W) = dim(V)$ (p115). Omdat $dim(U \oplus W) = dim(V)$ en $U \oplus W$ is een deelruimte van $V$ geldt dat $U \oplus V = V$.
+\subsubsection*{$\Leftarrow$}
+\end{proof}
 
 \section{oef 8}
 Propositie 3.14 zegt dat elke doorsnede van twee deelruimten een deelruimte is. Neem nu drie deelruimten van $V$. Neem de doorsnede van de eerste twee, en daarvan de doorsnede met de derde. Nu weten we dat voor elke $3$ deelruimten, de doorsnede ervan een deelruimte is. Dit kunnen we itereren voor elke $k \in \mathbb{N}$. Oneindig veel deelruimten geldt dit ook.
