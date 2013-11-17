@@ -81,10 +81,85 @@ f(I_n) = 1
 \[
 True
 \]
-
-
 \end{proof}
+
 \section{oef 3}
+\subsection*{Te bewijzen}
+\[
+\begin{vmatrix}
+1 & x_1 & x_1^2 & \hdots & x_1^{n-1}\\
+1 & x_2 & x_2^2 & \hdots & x_2^{n-1}\\
+\vdots &\vdots &\vdots & \ddots & \vdots \\
+1 & x_n & x_n^2 & \hdots & x_n^{n-1}\\
+\end{vmatrix}
+=
+\prod_{i>j}(x_i-x_j)
+\]
+\subsection*{Bewijs}
+\begin{proof}
+Bewijs door inductie.\\
+\subsubsection*{stap 1: (basis)}
+De beweging geldt voor $n=2$.
+\[
+\begin{vmatrix}
+1 & x_1\\
+1 & x_2
+\end{vmatrix}
+=
+(x_2-x_1) = \prod_{i>j}(x_i-x_j)
+\]
+\subsubsection*{stap 2: (inductiestap)}
+Stel dat de bewering geldt voor een bepaalde $k$. We bewijzen nu dat de bewering geldt voor $k+1$.
+De determinant van $V_{k+1}$ ziet er dan als volgt uit
+\[
+det(V_{k+1}) =
+\begin{vmatrix}
+1 & x_1 & x_1^2 & \hdots & x_1^{k}\\
+1 & x_2 & x_2^2 & \hdots & x_2^{k}\\
+\vdots &\vdots &\vdots & \ddots & \vdots \\
+1 & x_{k+1} & x_{k+1}^2 & \hdots & x_{k+1}^{k}\\
+\end{vmatrix}
+\]
+We trekken nu van elke rij behalve de eerste de eerste af. De waarde van de determinant verandert niet, en we krijgen de volgende uitdrukking.
+\[
+det(V_{k+1}) =
+\begin{vmatrix}
+1 & x_1 & x_1^2 & \hdots & x_1^{k}\\
+0 & x_2-x_1 & x_2^2-x_1^2 & \hdots & x_2^{k}-x_1^{k}\\
+\vdots &\vdots &\vdots & \ddots & \vdots \\
+0 & x_{k+1}-x_1 & x_{k+1}^2-x_1^2  & \hdots & x_{k+1}^{k}-x_1^{k}\\
+\end{vmatrix}
+\]
+Nu trekken we(in volgorde, van achter naar voor) $x_1$ keer kolom $n-1$ van kolom $n$ af voor elke $n > 1$. We krijgen dan de volgende uitdrukking, na enig gefoefel.
+\[
+det(V_{k+1}) =
+\begin{vmatrix}
+1 & 0 & 0 & \hdots & 0\\
+0 & x_2-x_1 & (x_2-x_1)x_2 & \hdots & (x_2-x_1)x_2^{k-1}\\
+\vdots &\vdots &\vdots & \ddots & \vdots \\
+0 & x_{k+1}-x_1 & (x_{k+1}-x_1)x_{k+1}^2  & \hdots & (x_{k+1}-x_1)x_{k+1}^{k-1}\\
+\end{vmatrix}
+\]
+In elke rij $j \neq 1$ kunnen we $x_j-x_1$ afzonderen.
+\[
+det(V_{k+1}) =
+\prod_{k=2}^n(x_k-x_1)
+\begin{vmatrix}
+1 & 0 & 0 & \hdots & 0\\
+0 & 1 & x_2 & \hdots & x_2^{k-1}\\
+\vdots &\vdots &\vdots & \ddots & \vdots \\
+0 & 1 & x_{k+1}^2  & \hdots & x_{k+1}^{k-1}\\
+\end{vmatrix}
+\]
+De determinant die na het product nog overblijf is een determinant van vandermonde $V_k$.
+\[
+det(V_{k+1}) =
+\prod_{k=2}^n(x_k-x_1)
+\prod_{i>j,j>2}(x_i-x_j)
+= \prod_{i>j}(x_i-x_j)
+\]
+\end{proof}
+
 \section{oef 4}
 \section{oef 5}
 \section{oef 6}
