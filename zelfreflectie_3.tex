@@ -20,6 +20,17 @@ $\beta$ is maximaal vrij want elke vector in $V$ in is een lineaire combinatie v
 Stel dat $\beta$ niet minimaal voortbrengend zou zijn zou $\beta$ uitgedunt kunnen worden tot $\beta'$ door er $b$ uit te halen zodat $\beta'$ nog steeds voortbrengend is. Als dit waar is dan zou $b$ een lineaire combinatie zijn van de vectoren uit $\beta'$. Dit is in contradictie met het feit dat $V$ vrij is. $\beta$ is dus minimaal voortbrengend.
 \end{proof}
 \section{oef 6}
+\subsection*{Te bewijzen}
+Zij $v_1,v_2,...,v_n \in R^n$ $n$. Zij $A$ de matrix met in de kolommen de vectoren $v_1,v_2,...,v_n \in R^n$.
+$v_1,v_2,...,v_n \in R^n$ vormen een basis van $R^n \Leftrightarrow det(A) \neq 0$.
+\subsection*{Bewijs}
+\begin{proof}
+Rechtstreeks bewijs.
+\subsubsection*{$\Rightarrow$}
+$v_1,v_2,...,v_n$ is een basis van $R^n$ dus $v_1,v_2,...,v_n$ is vrij en voortbrengend. Omdat $v_1,v_2,...,v_n$ vrij is, zal $det(A)$ niet nul zijn. ($A$ kan niet rijgereduceert worden naar een matrix met een nulrij, want $v_1,v_2,...,v_n$ is vrij.)
+\subsubsection*{$\Leftarrow$}
+Als $det(A) \neq 0$ dan zal $A$ niet gereduceerd kunnen worden naar een matrix met een nulrij. Dit houdt in dat de kolommen van $A$ lineair onafhankelijk zijn. Omdat het aantal vectoren in de gevormde deelverzameling gelijk is aan $n$, zal deze deelverzameling een basis zijn voor $R^n$.
+\end{proof}
 \section{oef 7}
 \section{oef 8}
 \section{oef 9}
