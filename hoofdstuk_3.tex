@@ -447,11 +447,40 @@ Dit is juist volgens de definitie van vectorsom en scalaire vermenigvuldiging.
 \subsubsection*{d)}
 $v_3 = (1,1)$
 
-\subsection*{oef 30}
+\subsection{oef 30}
 
+\subsection{oef 32}
+We berekenen alle $a$ waarvoor de vier gegeven basisvectoren lineair afhankelijk zijn.
+\[
+\begin{vmatrix}
+4+a & 3 & 3 & 0\\
+2 & a-1 & 5 & 10+a\\
+0 & 0 & a+1 & 0\\
+-2 & -1 & -5 & 0
+\end{vmatrix}
+= -(2-a)(10+a)(a+1)=0
+\]
+\[
+\Leftrightarrow 
+\left\lbrace
+\begin{array}{c c}
+a = 2 &\vee\\
+a = -10 &\vee\\
+a = -1\\
+\end{array}
+\right.
+\]
+Nu weten we dus dat als $a$ \textit{niet} \'e\'en van die waarden aanneemt, de doorsnede van $U$ en $W$, $\{\vec{0}\}$ zal zijn. Een basis van $\{\vec{0}\}$ is de lege verzameling en de dimensie ervan is $0$.
+Tenslotte bepalen we nog voor de speciale gevallen van $a$ de dimensie en een basis.
+\subsubsection*{$a = 2$}
+TODO
+\subsubsection*{$a=-10$}
+TODO
+\subsubsection*{$a=-1$}
+TODO
 
 \section{Oefenzitting 5}
-\subsection*{oef 1}
+\subsection{oef 1}
 \subsubsection*{1.1}
 \underline{+} is de som van de functies\\
 Neem $f,g,h \in \mathbb{R}^{\mathbb{R}}$ willekeurig.\\
@@ -490,7 +519,7 @@ Vanwege de commutativiteit geldt ook:
 g(x) -g(x) = -g(x) + g(x) = 0 = \odot
 \]
 \end{proof}
-\subsubsection*{1.4}
+\subsubsection{1.4}
 Stel $f:\mathbb{R} \rightarrow \mathbb{R}: x \mapsto f(x)$ en $g:\mathbb{R} \rightarrow \mathbb{R}: x \mapsto g(x)$, dan geldt voor iedere $x \in \mathbb{R}$ dat
 \[ (\lambda \bullet (f \boldsymbol{+} g))(x) 
     = \lambda (f \boldsymbol{+} g)(x) 
@@ -500,7 +529,7 @@ Stel $f:\mathbb{R} \rightarrow \mathbb{R}: x \mapsto f(x)$ en $g:\mathbb{R} \rig
     = (\lambda \bullet f \boldsymbol{+} \lambda \bullet g)(x)\]
 en dus $\lambda \bullet (f \boldsymbol{+} g) = \lambda \bullet f \boldsymbol{+} \lambda \bullet g $
 \section{Bewijzen}
-\subsection*{Lemma 3.7}
+\subsection{Lemma 3.7}
 
 $$v+x = w + x \Rightarrow v=w$$
 Neem $v,w,x \in V$ en we nemen aan dat $v+x = w+x$\\
@@ -514,7 +543,7 @@ v = v + 0 \tag{neutraal element}\\
 =w \tag{neutraal element}
 \end{align*}
 
-\subsection*{Lemma 3.8 punt 3}
+\subsection{Lemma 3.8 punt 3}
 \[(-\lambda)v = -(\lambda v) = \lambda(-v)\]
 \[stel:w=0\]
 \[(\lambda)(v+w) = \lambda(v) + \lambda(w) = \lambda(v) + \lambda(0) = \lambda(v) = (\lambda v) \]
@@ -523,7 +552,7 @@ v = v + 0 \tag{neutraal element}\\
 \[(-\lambda)v = -(\lambda v) = \lambda(-v) \]
 
 \section{Opdrachten}
-\subsection*{3.9}
+\subsection{3.9}
 Neem aan dat $\lambda \cdot v = 0$ voor $\lambda \in \mathbb{R}$ en $v \in V$.\\
 Er zijn dan twee mogelijkheden:\\
 \begin{enumerate}
@@ -542,7 +571,7 @@ v = 1\cdot v \tag{co\"efficient}
 \end{align*}
 
 \end{enumerate}
-\subsection*{3.21}
+\subsection{3.21}
 Om aan te tonen dat $U_1 + U_2$ deelruimten zijn van $V$ dan moeten we de drie eigenschappen van een deelruimte aantonen:
 \begin{enumerate}
 \item We moeten aantonen dat $0 \in U_1 + U_2$.\\
@@ -569,7 +598,7 @@ Omdat $x_2 \in U_2$ en $U_2$ is een deelruimte van V, $rx_2 \in U_2$.\\
 Nu hebben we aangetoond dat $rx$ de som is van een vector in $U_1$ en een vector in $U_2$. 
 Dus $rx \in U_1 + U_2$ door de definitie van $U_1 + U_2$ en aangezien $x$ en $r$ willekeurig waren geldt dit voor alle $r \in \mathbb{R}$ en $x \in U_1 + U_2$.
 \end{enumerate}
-\subsection*{3.24}
+\subsection{3.24}
 
 1) 
 Neem \\ 
