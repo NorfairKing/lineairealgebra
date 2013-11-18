@@ -3,16 +3,73 @@
 
 \part{Zelfreflectie 3}
 \section{oef 1}
+\subsection*{a)}
+vrij, lineair onafhankelijk
+\subsection*{b)}
+niet vrij, lineair afhankelijk
+
 \section{oef 2}
+De tweede bewering. Deze oefening beschrijft precies wat er mis is met de cursus.
+
 \section{oef 3}
+Ja. Het triviaal voorbeeld is natuurlijk $\{\vec{0}\}$. Als dit niet voldoende is, bestaan er ook nog binaire ringen. Dit zijn ook vectorruimten, als we de bewerkingen goed defini\"eren.
+
 \section{oef 4}
+De deelruimten van de gepunte ruimte zijn ruimtes, vlakken of rechten door de oorsprong, en de deelruimte met enkel de oorsprong. Twee lineair onafhankelijke vectoren spannen een vlak op. één vector spant een rechte op. Dire lineair onafhankelijke vectoren spannen opnieuw de ruimte op. 
+
 \section{oef 5}
+Een basis is voortbrengend en vrij (definitie). Noem $\beta = \{v_1,v_2,...,v_n\}$ de basis van $V$.
+\begin{proof}
+$\beta$ is maximaal vrij want elke vector in $V$ in is een lineaire combinatie van de vectoren in $\beta$. Als één van die vectoren aan $\beta$ toegevoegd zou worden, zou $\beta$ dus niet meer vrij zijn. Dit is precies de definitie van maximaal vrij.\\
+Stel dat $\beta$ niet minimaal voortbrengend zou zijn zou $\beta$ uitgedunt kunnen worden tot $\beta'$ door er $b$ uit te halen zodat $\beta'$ nog steeds voortbrengend is. Als dit waar is dan zou $b$ een lineaire combinatie zijn van de vectoren uit $\beta'$. Dit is in contradictie met het feit dat $V$ vrij is. $\beta$ is dus minimaal voortbrengend.
+\end{proof}
+
 \section{oef 6}
+\subsection*{Te bewijzen}
+Zij $v_1,v_2,...,v_n \in R^n$ $n$. Zij $A$ de matrix met in de kolommen de vectoren $v_1,v_2,...,v_n \in R^n$.
+$v_1,v_2,...,v_n \in R^n$ vormen een basis van $R^n \Leftrightarrow det(A) \neq 0$.
+\subsection*{Bewijs}
+\begin{proof}
+Rechtstreeks bewijs.
+\subsubsection*{$\Rightarrow$}
+$v_1,v_2,...,v_n$ is een basis van $R^n$ dus $v_1,v_2,...,v_n$ is vrij en voortbrengend. Omdat $v_1,v_2,...,v_n$ vrij is, zal $det(A)$ niet nul zijn. ($A$ kan niet rijgereduceert worden naar een matrix met een nulrij, want $v_1,v_2,...,v_n$ is vrij.)
+\subsubsection*{$\Leftarrow$}
+Als $det(A) \neq 0$ dan zal $A$ niet gereduceerd kunnen worden naar een matrix met een nulrij. Dit houdt in dat de kolommen van $A$ lineair onafhankelijk zijn. Omdat het aantal vectoren in de gevormde deelverzameling gelijk is aan $n$, zal deze deelverzameling een basis zijn voor $R^n$.
+\end{proof}
+
 \section{oef 7}
+Zij $U$ en $W$ deelruimten van de vectorruimte $V$
+\subsection*{Te bewijzen}
+$dim(U) + dim(W) = dim(U+W)$ $\Leftrightarrow$ $V = U \oplus W$.
+\subsection*{Bewijs}
+\begin{proof}
+Rechtstreeks bewijs.
+\subsubsection*{$\Rightarrow$}
+$dim(U) + dim(W) = dim(U+W)= dim(U+W) + dim(U\cap W)$
+\[
+dim(U\cap W) = 0
+\]
+$U \cap W$ is een deelruimte van $V$ en $dim(U\cap W) = 0$ dus $U \cap W = \{\vec{0}\}$.
+$U+W = U\oplus W$ (p 99). $U$ en $W$ zijn deelruimten van $V$ dus $U\oplus W$ is een deelruimte van $V$(p 99). Omdat $U$ en $W$ deelruimten zijn van $W$, geldt $dim(U \oplus W) = dim(V)$ (p115). Omdat $dim(U \oplus W) = dim(V)$ en $U \oplus W$ is een deelruimte van $V$ geldt dat $U \oplus V = V$.
+\subsubsection*{$\Leftarrow$}
+\end{proof}
+
 \section{oef 8}
+Propositie 3.14 zegt dat elke doorsnede van twee deelruimten een deelruimte is. Neem nu drie deelruimten van $V$. Neem de doorsnede van de eerste twee, en daarvan de doorsnede met de derde. Nu weten we dat voor elke $3$ deelruimten, de doorsnede ervan een deelruimte is. Dit kunnen we itereren voor elke $k \in \mathbb{N}$. Oneindig veel deelruimten geldt dit ook.
+
 \section{oef 9}
+Als $D$ één element bevat, is de beschreven verzameling een deelruimte met dimensie $1$. Als $D$ $k+1$ elementen bevat, is het laatste element ofwel een lineaire combinatie van de$k$ andere elementen, ofwel is het er geen. Als het wel een lineaire combinatie van de andere $k$ elementen is, dan is de beschreven verzameling dezelfde als die voor de $k$ andere elementen. Als het geen lineaire combinatie is, dan is het een deelruimte met één dimensie meer dan die voor de $k$ andere elementen.
+
 \section{oef 10}
+Ja, maar in onze cursus spreken we niet over oneindige sommen van vectoren, omdat dit concept nog niet gedefinieerd is.
+
 \section{oef 11}
+Als $\{w_1,...,w_n\}$ is vrij dan $\sum_{i=1}^n\lambda_iw_i = 0 \Leftrightarrow \forall i \lambda_i = 0$.
+\[
+w = \sum_{j = 1}^n \lambda_j\beta_j \rightarrow co_{\beta}(w) = (\lambda_1,...,\lambda_n)
+\]
+Dit is zo logisch dat ik geen bewijs kan bedenken.
+
 \section{oef 12}
 \section{oef 13}
 \section{oef 14}

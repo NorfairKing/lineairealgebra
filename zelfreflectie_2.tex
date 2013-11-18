@@ -3,10 +3,207 @@
 
 \part{Zelfreflectie 2}
 \section{oef 1}
+\[
+C_{11} = 
+\begin{vmatrix}
+5 & 6 \\
+8 & 9
+\end{vmatrix}
+=-3
+\]
+\[
+C_{22}= 
+\begin{vmatrix}
+1 & 3 \\
+7 & 9
+\end{vmatrix}
+=
+18
+\]
+\[
+C_{12} =
+\begin{vmatrix}
+4 & 6 \\
+7 & 9
+\end{vmatrix}
+=-6
+\]
+\[
+M_{11} = 
+\begin{pmatrix}
+5 & 6 \\
+8 & 9
+\end{pmatrix}
+\]
+\[
+M_{22}= 
+\begin{pmatrix}
+1 & 3 \\
+7 & 9
+\end{pmatrix}
+\]
+\[
+M_{12} =
+\begin{pmatrix}
+4 & 6 \\
+7 & 9
+\end{pmatrix}
+\]
 \section{oef 2}
+\subsection*{Te bewijzen}
+$A$ is inverteerbaar $\Rightarrow$ $f(A^{-1}) = f(A)^{-1}$
+\subsection*{Bewijs}
+"$A$ is inverteerbaar" betekent het volgende.
+\[
+\exists B: A\cdot B = I_n = B\cdot A
+\]
+Noteer $B = A^{-1}$ 
+\begin{proof}
+Rechtstreeks bewijs.\\
+Noteer de inverse van $A$ als $B$.
+\[
+f(B) = f(A)^{-1}
+\]
+\[
+f(B)\cdot f(A) = f(A)^{-1}f(A)
+\]
+Definitie determinant afbeelding
+\[
+f(B\cdot A) = 1
+\]
+$A$ is inverteerbaar met $B$ als inverse.
+\[
+f(I_n) = 1
+\]
+\[
+1 = 1
+\]
+\[
+True
+\]
+\end{proof}
+
 \section{oef 3}
+\subsection*{Te bewijzen}
+\[
+\begin{vmatrix}
+1 & x_1 & x_1^2 & \hdots & x_1^{n-1}\\
+1 & x_2 & x_2^2 & \hdots & x_2^{n-1}\\
+\vdots &\vdots &\vdots & \ddots & \vdots \\
+1 & x_n & x_n^2 & \hdots & x_n^{n-1}\\
+\end{vmatrix}
+=
+\prod_{i>j}(x_i-x_j)
+\]
+\subsection*{Bewijs}
+\begin{proof}
+Bewijs door inductie.\\
+\subsubsection*{stap 1: (basis)}
+De beweging geldt voor $n=2$.
+\[
+\begin{vmatrix}
+1 & x_1\\
+1 & x_2
+\end{vmatrix}
+=
+(x_2-x_1) = \prod_{i>j}(x_i-x_j)
+\]
+\subsubsection*{stap 2: (inductiestap)}
+Stel dat de bewering geldt voor een bepaalde $k$. We bewijzen nu dat de bewering geldt voor $k+1$.
+De determinant van $V_{k+1}$ ziet er dan als volgt uit
+\[
+det(V_{k+1}) =
+\begin{vmatrix}
+1 & x_1 & x_1^2 & \hdots & x_1^{k}\\
+1 & x_2 & x_2^2 & \hdots & x_2^{k}\\
+\vdots &\vdots &\vdots & \ddots & \vdots \\
+1 & x_{k+1} & x_{k+1}^2 & \hdots & x_{k+1}^{k}\\
+\end{vmatrix}
+\]
+We trekken nu van elke rij behalve de eerste de eerste af. De waarde van de determinant verandert niet, en we krijgen de volgende uitdrukking.
+\[
+det(V_{k+1}) =
+\begin{vmatrix}
+1 & x_1 & x_1^2 & \hdots & x_1^{k}\\
+0 & x_2-x_1 & x_2^2-x_1^2 & \hdots & x_2^{k}-x_1^{k}\\
+\vdots &\vdots &\vdots & \ddots & \vdots \\
+0 & x_{k+1}-x_1 & x_{k+1}^2-x_1^2  & \hdots & x_{k+1}^{k}-x_1^{k}\\
+\end{vmatrix}
+\]
+Nu trekken we(in volgorde, van achter naar voor) $x_1$ keer kolom $n-1$ van kolom $n$ af voor elke $n > 1$. We krijgen dan de volgende uitdrukking, na enig gefoefel.
+\[
+det(V_{k+1}) =
+\begin{vmatrix}
+1 & 0 & 0 & \hdots & 0\\
+0 & x_2-x_1 & (x_2-x_1)x_2 & \hdots & (x_2-x_1)x_2^{k-1}\\
+\vdots &\vdots &\vdots & \ddots & \vdots \\
+0 & x_{k+1}-x_1 & (x_{k+1}-x_1)x_{k+1}^2  & \hdots & (x_{k+1}-x_1)x_{k+1}^{k-1}\\
+\end{vmatrix}
+\]
+In elke rij $j \neq 1$ kunnen we $x_j-x_1$ afzonderen.
+\[
+det(V_{k+1}) =
+\prod_{k=2}^n(x_k-x_1)
+\begin{vmatrix}
+1 & 0 & 0 & \hdots & 0\\
+0 & 1 & x_2 & \hdots & x_2^{k-1}\\
+\vdots &\vdots &\vdots & \ddots & \vdots \\
+0 & 1 & x_{k+1}^2  & \hdots & x_{k+1}^{k-1}\\
+\end{vmatrix}
+\]
+De determinant die na het product nog overblijf is een determinant van vandermonde $V_k$.
+\[
+det(V_{k+1}) =
+\prod_{k=2}^n(x_k-x_1)
+\prod_{i>j,j>2}(x_i-x_j)
+= \prod_{i>j}(x_i-x_j)
+\]
+\end{proof}
+
 \section{oef 4}
+Als $a=0$ kunnen we de beschreven determinant ofwel omvormen, tot een matrix waarbij de nieuwe $a \neq 0$ ofwel zal de determinant nul worden omdat er dan een hele kolom/rij nullen in de matrix staat. 
+
 \section{oef 5}
+\[
+det\left(
+\begin{matrix}
+a_{11} & a_{12}\\
+a_{21} & a_{22}
+\end{matrix}
+\right)
+\]
+\[
+det\left(
+\begin{matrix}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{matrix}
+\right)
+\]
+Bewijs elke eigenschap die nodig is voor de regel van sarrus, gebruik de regel van sarrus. Deze oefening is helemaal niet nuttig.
+
 \section{oef 6}
+Ja, we weten dat $A$ inverteerbaar is, want $A$ komt uit het stelsel van Cramer. Zie nu p 72 gevolg 2.22.
+\[
+X = \frac{1}{det(A)}adj(A)\cdot B = A^{-1}\cdot B
+\]
+\[
+A\cdot X = B
+\]
+
 \section{oef 7}
+\subsection{2.3.2}
+$f(E_1) = 1$.\\
+$f(I) = 1$. Als we de elemetaire operatie uitvoeren op $I$ krijgen we $E\cdot I$. Dus $f(I) = f(E\cdot I) = f(E) f(I) = f(E)=1$.\\
+$f(E_2)=-1$.\\
+$E_2$ verkrijgen we door in $I$ twee rijen om te wisselen. $f(I) = 1$ dus $f(E_2)=-1$ want als we twee rijen verwisselen verandert de determinant van teken (definitie determinant afbeelding).
+$f(E_3) = \lambda$\\
+$E_3$ verkrijgen we door in $I$ een rij $r$ te vervangen door $\lambda r$. Als we stelling 2.3.1 $\lambda-1$ keer toepassen krijgen we $f(E_3) = \lambda f(I) = \lambda$.
+\subsection{2.3.3}
+Dit is een bijzonder lang bewijs voor wat het is. Zie 
+\begin{center}
+\url{http://www.proofwiki.org/wiki/Determinant_of_Matrix_Product}
+\end{center}
+
 \end{document}
