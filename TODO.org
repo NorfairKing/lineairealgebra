@@ -157,8 +157,8 @@
    - [ ] 2.14 - egonny 
    - [X] 2.16 - warreee
 
-* TODO Hoofdstuk 3
-  DEADLINE: <2013-11-05 Die>
+* DELEGATED Hoofdstuk 3
+  CLOSED: [2013-11-18 Mon 15:08] DEADLINE: <2013-11-05 Die>
 ** TODO Oefeningen
 *** TODO Voorbereiding
     - [ ] p92 5. Bewijs: noiseloop
@@ -265,6 +265,17 @@
 * TODO Hoofdstuk 4
   DEADLINE: <2013-11-26 Die>
 ** TODO Oefeningen
+*** TODO Voorbereiding
+*** TODO In Oefenzitting
+    - [ ] 1 
+      - [ ] c warreee
+      - [ ] e fokdiekul
+    - [ ] 4 egonny
+    - [ ] 6 NorfairKing
+    - [ ] 7 noiseloop
+    - [ ] 9 warreee
+    - [ ] 10 fokdiekul
+*** TODO Extra
 ** TODO Opdrachten   
 
 * TODO Hoofdstuk 5

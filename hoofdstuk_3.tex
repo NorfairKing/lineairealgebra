@@ -2,6 +2,50 @@
 \begin{document}
 
 \part{Hoofdstuk 3}
+
+\section{Bewijzen uit boek}
+\subsection{Stelling 3.49}
+\subsubsection*{Te Bewijzen}
+Als de vectorruimte V eindigdimensionaal is, dan geldt voor willekeurige deelruimten $U$ en $W$ van $V$ het volgende.
+\[
+dim(U+W) + dim(U\cap W) = dim(U) + dim(W)
+\]
+\subsubsection*{Bewijs}
+We willen een verband vinden tussen de dimensies van al deze verzamelingen ($(U+W)$, $U\cap W$, $U$ en $W$). Om dit te doen beginnen we met een basis van de kleinste verzameling ($U \cap W$). Daarna breiden we deze basis uit tot een basis van $U$, tot een basis van $W$ en tot een basis van $(U + W)$. De dimensie van een vectorruimte is gelijk aan het aantal elementen in de basis ervan.\footnote{Definitie 3.35 p 106}\\\\
+Zij $dim(U) = r$, $dim(W)=s$ en $dim(U\cap W) = t$.
+\begin{proof}
+Ingewikkeld bewijs.\\
+$U$ en $W$ zijn beide een deelruimte van $W$, dus $(U \cap W)$ is ook een deelruimte van $V$ \footnote{Propositie 3.14 p 96}. Omdat $(U \cap W)$ een deelruimte is van $V$, zal $t \le r$ en $t \le s$. We nemen een basis van $(U\cap W)$ en noemen deze $\beta = \{v_1,...,v_n\}$.Om $\beta$ uit te breiden tot een basis $\beta_U$ van $U$ moet we $r-t$ vectoren toe voegen. Om $\beta$ uit te breiden tot een basis $\beta_W$ van $W$ moeten we $s-t$ vectoren toe.\\
+We willen bewijzen dat de basis $\beta_U \cup \beta_W = \{v_1,...,v_t,u_{t+1},...,u_{r},w_{t+1},...,w_{s}\}$ een basis is van $U+W$.
+Een basis van een vectorruimte is vrij en voortbrengend. We bewijzen deze eigenschappen appart.\\
+\textbf{Vrij}\\
+Neem een willekeurige lineaire combinatie van de basisvectoren van $(U+W)$.
+\[
+0 = \sum_{i=1}^tx_iv_i + \sum_{j=t+1}^ry_ju_j + \sum_{k=t+1}^sz_kw_k
+\]
+Om te bewijzen dat de $\beta_U \cup \beta_W$ vrij is, moeten we bewijzen dat alle $v_i,y_j,z_k$ nul zijn.\\
+De vector $\sum_{k=t+1}^sz_kw_k \in W$ zit in $W$ omdat alle $w_k \in W$.
+TODO\\\\
+\textbf{Voortbrengend}\\
+Om te bewijzen dat een basis voortbrengend is voor een vectorruimte nemen we een willekeurig element uit te vectorruimte en tonen we aan dat het een lineaire combinatie is van de basis.
+Neem een willekeurig element $x \in (U + W)$. We tonen de volgende bewering aan.
+\[
+\exists x_i,y_j,z_k \in \mathbb{R}: x = \sum_{i=1}^tx_iv_i + \sum_{j=t+1}^ry_ju_j + \sum_{k=t+1}^sz_kw_k
+\]
+We weten ook dat $\exists u\in U, w\in W: x = u+w$. De volgende bewering geldt dus zeker.\footnote{Definitie 3.19 p 98}
+\[
+\exists x_a,x_b,y_j,z_k \in \mathbb{R}  u+w = \sum_{a=1}^tx_av_a + \sum_{j=t+1}^ry_ju_j + \sum_{b=1}^tx_bv_b + \sum_{k=t+1}^sz_kw_k
+\]
+Kiezen we nu de $x_a,x_b$ zodat de volgende bewering geldt.
+\[
+\sum_{i=1}^tx_iv_i = \sum_{a=1}^tx_av_a + \sum_{b=1}^tx_bv_b 
+\]
+Nu is aangetoond dat $\beta_U \cup \beta_W$ voortbrengend is.
+\\\\ 
+We weten nu dat $\beta_U \cup \beta_W$ een basis is van $U+W$. De basis van $\beta_U \cup \beta_W$ bevat precies $(r-t)+(s-t)+t$ basisvectoren.
+
+\end{proof}
+
 \section{Oefeningen 3.6}
 
 \subsection{oef 1}
