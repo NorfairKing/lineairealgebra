@@ -75,7 +75,6 @@ We weten nu dat $\beta_U \cup \beta_W$ een basis is van $U+W$. De basis van $\be
 \[
 dim(U+W) r+s-t = dim(U) + dim(W) + dim(U \cap W)
 \]
-
 \end{proof}
 
 \section{Oefeningen 3.6}
@@ -423,6 +422,28 @@ Dit tonen we aan per inductie:\\
 \[
 (v_1 + v_2)_n \overset{v_1 + v_2 \in V}{=} (v_1 + v_2)_{n-1} + (v_1 + v_2)_{n-2} \overset{inductiehypothese}{=} (v_3)_{n-1} + (v_3)_{n-2} = (v_3)_n
 \]
+\subsubsection*{c)}
+Een basis is vrij en voortbrengend. $\beta = \{v_1,v_2\}$ is vrij (zie a).
+Nu valt nog te bewijzen: "$\beta$ is voortbrengend voor $V$."
+\begin{proof}
+Neem een willekeurige vector $v \in V$. We tonen aan dat $v$ te schrijven valt als een lineaire combinatie van $v_1$ en $v_2$.
+\[
+v=(x_1,x_2,x_3,...)
+\]
+Waarbij geldt $\forall n \ge 1, n \in \mathbb{N}: x_{n+2}=x_{n+1}+x_n$
+\[
+v = \lambda_1v_1 + \lambda_2v_2
+\]
+\[
+v = (\lambda_1,\lambda_2,\lambda_1+\lambda_2,\lambda_1+2\lambda_2,...)
+\]
+Elk element in $v$ voldoet dus aan de volgende recursieve formule.
+\[
+v_{n+2} = v_{n+1}+v_n=\lambda_1v_{1_{n+1}}+\lambda_2v_{2_{n+1}} + \lambda_1v_{1_{n}}+\lambda_2v_{2_{n}};
+\]
+Dit is juist volgens de definitie van vectorsom en scalaire vermenigvuldiging.
+\end{proof}
+
 \subsubsection*{d)}
 $v_3 = (1,1)$
 

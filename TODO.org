@@ -1,4 +1,4 @@
-#+SEQ_TODO: TODO(t) | DELEGATED(l)  OPTIONAL(o) DONE(d)
+#+SEQ_TODO: TODO(t) | DELEGATED(l) DONE(d)
 # ^ De vorige lijn is voor emacs, afblijven :p
 
 * DONE Hoofdstuk 1
@@ -193,16 +193,16 @@
    - [ ] 11 huistaak
    - [ ] 14 noiseloop 
    - [ ] 15 huistaak
-   - [ ] 17 
+   - [X] 17 
      - [X] b warreee
    - [ ] 21 egonny
    - [ ] 22
      - [ ] b noiseloop
    - [ ] 25 fokdiekul
-   - [ ] 27
+   - [-] 27
      - [X] a warreee
      - [X] b egonny
-     - [ ] c NorfairKing
+     - [X] c NorfairKing
      - [X] d egonny
      - [ ] e noiseloop
      - [ ] f warreee
