@@ -15,7 +15,7 @@ We willen een verband vinden tussen de dimensies van al deze verzamelingen ($(U+
 Zij $dim(U) = r$, $dim(W)=s$ en $dim(U\cap W) = t$.
 \begin{proof}
 Ingewikkeld bewijs.\\
-$U$ en $W$ zijn beide een deelruimte van $W$, dus $(U \cap W)$ is ook een deelruimte van $V$ \footnote{Propositie 3.14 p 96}. Omdat $(U \cap W)$ een deelruimte is van $V$, zal $t \le r$ en $t \le s$. We nemen een basis van $(U\cap W)$ en noemen deze $\beta = \{v_1,...,v_n\}$.Om $\beta$ uit te breiden tot een basis $\beta_U$ van $U$ moet we $r-t$ vectoren toe voegen. Om $\beta$ uit te breiden tot een basis $\beta_W$ van $W$ moeten we $s-t$ vectoren toe.\\
+$U$ en $W$ zijn beide een deelruimte van $W$, dus $(U \cap W)$ is ook een deelruimte van $V$ \footnote{Propositie 3.14 p 96}. Omdat $(U \cap W)$ een deelruimte is van $V$, zal $t \le r$ en $t \le s$. We nemen een basis van $(U\cap W)$ en noemen deze $\beta = \{v_1,...,v_t\}$.Om $\beta$ uit te breiden tot een basis $\beta_U$ van $U$ moet we $r-t$ vectoren toe voegen. Om $\beta$ uit te breiden tot een basis $\beta_W$ van $W$ moeten we $s-t$ vectoren toe.\\
 We willen bewijzen dat de basis $\beta_U \cup \beta_W = \{v_1,...,v_t,u_{t+1},...,u_{r},w_{t+1},...,w_{s}\}$ een basis is van $U+W$.
 Een basis van een vectorruimte is vrij en voortbrengend. We bewijzen deze eigenschappen appart.\\
 \textbf{Vrij}\\
@@ -54,7 +54,7 @@ In de eerste vergelijking weten we nu al dat alle $z_k,y_j$ nul zijn. Nu blijft 
 0 = \sum_{i=1}^tx_iv_i + 0 + 0
 \]
 Het rechterlid van deze vergelijking is een lineaire combinatie van de basisvectoren van $U\cap W$. Van deze vectoren weten we dat ze lineair onafhankelijk zijn, dus alle $x_i$ moeten nul zijn.
-Nu hebben we bewezen dat $\beta_U\cup \beta_W$ een basis is van $U+W$
+Nu hebben we bewezen dat $\beta_U\cup \beta_W$ een basis is van $U+W$\\
 \textbf{Voortbrengend}\\
 Om te bewijzen dat een basis voortbrengend is voor een vectorruimte nemen we een willekeurig element uit te vectorruimte en tonen we aan dat het een lineaire combinatie is van de basis.
 Neem een willekeurig element $x \in (U + W)$. We tonen de volgende bewering aan.
