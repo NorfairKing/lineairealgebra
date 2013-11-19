@@ -64,11 +64,30 @@ Als $D$ één element bevat, is de beschreven verzameling een deelruimte met dim
 Ja, maar in onze cursus spreken we niet over oneindige sommen van vectoren, omdat dit concept nog niet gedefinieerd is.
 
 \section{oef 11}
-Als $\{w_1,...,w_n\}$ is vrij dan $\sum_{i=1}^n\lambda_iw_i = 0 \Leftrightarrow \forall i \lambda_i = 0$.
+\subsection*{Te Bewijzen}
+$\{v_1,...,v_n\}$ is vrij $\Leftrightarrow \{co_{\beta}(v_1),...,co_{\beta}(v_n)\}$ is vrij.
+\subsection*{Bewijs}
+\begin{proof}
+Rechtstreeks bewijs.\\
+Als $\{w_1,...,w_n\}$ is vrij dan geldt de volgende bewering.
+\[\sum_{i=1}^n\lambda_iw_i = 0 \Leftrightarrow \forall i \lambda_i = 0\]
 \[
-w = \sum_{j = 1}^n \lambda_j\beta_j \rightarrow co_{\beta}(w) = (\lambda_1,...,\lambda_n)
+\sum_{i=1}^n \lambda_1\sum_{j=1}^m\gamma_j\beta_j = 0 \Leftrightarrow \forall i:\lambda_i=0
 \]
-Dit is zo logisch dat ik geen bewijs kan bedenken.
+Nu proberen we aan te tonen dat de volgende bewering geldt.
+\[
+\sum_{i=1}^n \lambda_i co_\beta\left(\sum_{j=1}^m\gamma_j\beta_j\right) = 0 \Leftrightarrow \forall i:\lambda_i=0
+\]
+Neem opnieuw de tweede vergelijking, en neem aan beide kanten de coordinaatafbeelding. Dit kan omdat aan beide kanten elementen uit $V$ staan ($0$ is de nulvector, niet de scalar $0$).
+\[
+co_{\beta}\left(\sum_{i=1}^n \lambda_1\sum_{j=1}^m\gamma_j\beta_j\right) = co_{\beta}(0) \Leftrightarrow \forall i:\lambda_i=0
+\]
+De co\"ordinaatafbeelding van de nulvector is opnieuw de nulvector (in een andere vectorruimte welliswaar). Bovendien weten we dat de co\"ordinaatafbeelding een lineaire afbeelding is, dus gaan de som en de scalaire vermenigvuldiging erdoor.
+\[
+\sum_{i=1}^n \lambda_1 co_{\beta}\left(\sum_{j=1}^m\gamma_j\beta_j\right) = 0 \Leftrightarrow \forall i:\lambda_i=0
+\]
+\end{proof}
+
 
 \section{oef 12}
 \section{oef 13}
