@@ -273,8 +273,10 @@
     - [ ] 4 egonny
     - [ ] 6 NorfairKing
     - [ ] 7 noiseloop
+    - [ ] 8 MajorMonodon
     - [ ] 9 warreee
     - [ ] 10 fokdiekul
+    - [ ] 12a jdewaen
 *** TODO Extra
 ** TODO Opdrachten   
 

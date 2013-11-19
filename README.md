@@ -8,5 +8,7 @@ Deelnemers:
 - fokdiekul
 - NorfairKing
 - egonny 
+- MajorMonodon
+- jdewaen
 
 De deadlines staan in TODO.org
