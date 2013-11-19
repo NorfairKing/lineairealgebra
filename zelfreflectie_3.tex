@@ -88,9 +88,51 @@ De co\"ordinaatafbeelding van de nulvector is opnieuw de nulvector (in een ander
 \]
 \end{proof}
 
-
 \section{oef 12}
+Zij $A \in \mathbb{R}^{m\times n}$ en $B \in \mathbb{R}^m$.
+\subsection*{Te Bewijzen}
+\[
+V = \{ X \in \mathbb{R}^n | AX = B\}
+\]
+Is een deelruimte van $\mathbb{R}^n$ als en slechts als $B=0$.
+\subsection*{Bewijs}
+\begin{proof}
+Rechtstreeks bewijs\\
+Als $B=0$ dan is $X$ een lineaire combinatie van de rijen van $A$. De verzameling van alle mogelijke $X$en is dus een deelruimte van $\mathbb{R}^n$.
+\end{proof}
+
 \section{oef 13}
+Een basis is vrij en voortbrengend.
+\[
+D = \{1,X,X^2,...,X^n,...\}
+\]
+\subsubsection*{Vrij}
+\begin{proof}
+Rechtstreeks bewijs.\\
+Intu"itief is dit makkelijk te zien omdat zuivere veeltermen niet van graad kunnen veranderen door lineaire combinaties te nemen van zuivere veeltermen. Formeler houdt dit het volgende in.
+\[
+\forall n\in \mathbb{N},\lambda \in \mathbb{R}: \sum_{i=1}^n\lambda_iX^i = a
+\] 
+Waarbij $a$ \textbf{nooit} een hogere graad kan hebben die groter is dan $n$. Bovendien ka $a$ nooit een $n$ als graad hebben waarvoor er een niet-triviale term in het linker lid staat.
+Dat betekent het volgende, waaruit volgt dat de elementen uit $D$ vrij zijn.
+\[
+\sum_{i=1}^n\lambda_id^i = 0 \Leftrightarrow \forall \lambda_i \in \mathbb{R}: \lambda_i =0
+\]
+Dit is waar omdat er in $\sum_{i=1}^n\lambda_id^i$ geen enkele (niet-triviale) term staat met dezelfde graad als $0$.
+\end{proof}
+
+\subsubsection*{Voortbrengend}
+\begin{proof}
+Bewijs uit het ongerijmde.\\
+Stel dat $D$ niet voortbrengend is voor $\mathbb{R}[X]$, dan betekent dat het volgende.
+\[
+\exists v \in \mathbb{R}[X]: \not\exists \lambda_i\in \mathbb{R},d_i \in D: v = \sum_{i=1}^n\lambda_id_i
+\]
+Informeel gezegd staat hier dat er geen lineaire combinatie van $D$ bestaat die $v$ vormt.
+Dit kan enkel waar zijn als $v$ een term heeft met een graad waarvan er geen in $D$ zit. Dit kan niet, omdat er voor elke $n$ een zuivere term van graad $n$ in $D$ zit.
+
+\end{proof}
+
 \section{oef 14}
 \section{oef 15}
 \section{oef 17}
