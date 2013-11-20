@@ -270,6 +270,10 @@
   DEADLINE: <2013-11-26 Die>
 ** TODO Oefeningen
 *** TODO Voorbereiding
+    - [ ] 8 MajorMonodon
+    - [ ] 9 warreee
+    - [ ] 10 fokdiekul
+    - [ ] 12a jdewaen
 *** TODO In Oefenzitting
     - [ ] 1 
       - [ ] c warreee
@@ -277,13 +281,28 @@
     - [ ] 4 egonny
     - [ ] 6 NorfairKing
     - [ ] 7 noiseloop
-    - [ ] 8 MajorMonodon
-    - [ ] 9 warreee
-    - [ ] 10 fokdiekul
-    - [ ] 12a jdewaen
 *** TODO Extra
 ** TODO Opdrachten   
-
+    - [ ] 4.5  p136 NorfairKing
+    - [ ] 4.9  p140
+        - [ ] 1  egonny
+        - [ ] 2a egonny
+        - [ ] 2b MajorMonodon
+        - [ ] 2c MajorMonodon
+    - [ ] 4.19 p147 jdewaen
+    - [ ] 4.25 p154 noiseloop
+    - [ ] 4.37 p160 warreee
+** TODO Bewijzen
+    - [ ] Lemma      4.2  p130
+    - [ ] Gevolg     4.3  p130
+    - [ ] Propositie 4.10 p141
+    - [ ] Stelling   4.13 p142
+    - [ ] Stelling   4.16 p145
+    - [ ] Propositie 4.27 p155
+    - [ ] Stelling   4.29 p156
+    - [ ] Stelling   4.31 p157
+    - [ ] Gevolg     4.35 p159
+    - [ ] Stelling   4.43 p164
 * TODO Hoofdstuk 5
   DEADLINE: <2013-12-10 Die>
 ** TODO Oefeningen
