@@ -152,15 +152,17 @@
     - [ ] 28 egonny      
               
     DEADLINE: <2013-10-20 Son>
-** TODO Opdrachten 
-   DEADLINE: <2013-10-20 Son>
+** DELEGATED Opdrachten 
+   CLOSED: [2013-11-19 Tue 23:28] DEADLINE: <2013-10-20 Son>
    - [ ] 2.14 - egonny 
    - [X] 2.16 - warreee
 
 * DELEGATED Hoofdstuk 3
   CLOSED: [2013-11-18 Mon 15:08] DEADLINE: <2013-11-05 Die>
-** TODO Oefeningen
-*** TODO Voorbereiding
+** DELEGATED Oefeningen
+   CLOSED: [2013-11-19 Tue 23:28]
+*** DELEGATED Voorbereiding
+    CLOSED: [2013-11-19 Tue 23:28]
     - [ ] p92 5. Bewijs: noiseloop
       Veeltermen van graad precies n vormen geen vectorruimte.
     - [X] p93 Bewijs Lemma 3.7 warreee
@@ -181,7 +183,8 @@
     - [-] 19
       - [X] b egonny
     - [X] 26 egonny
-*** TODO In Oefenzitting
+*** DELEGATED In Oefenzitting
+    CLOSED: [2013-11-19 Tue 23:27]
    - [X] 1 NorfairKing
      - [X] b NorfairKing
    - [X] 3 egonny
@@ -217,7 +220,8 @@
        - [X] 4 egonny 
      - [ ] 2 noiseloop
      - [ ] 4 fokdiekul
-*** TODO Extra
+*** DELEGATED Extra
+    CLOSED: [2013-11-19 Tue 23:27]
    - [ ] 1 noiseloop  
      - [ ] a warreee    
      - [ ] c fokdiekul  
