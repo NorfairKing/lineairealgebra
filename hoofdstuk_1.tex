@@ -22,6 +22,44 @@ R_j \longmapsto R_j - \lambda_jR_1
 Nu we onder de besproken $1$ allemaal nullen hebben kunnen we de beschreven procedure toepassen op de deelmatrix rechts onder de $1$. De procedure stopt wanneer er enkel nog nullen overblijven of als de matrix op geraakt.\\\\
 Vervolgens kunnen we van rechtsonder naar linksboven werken zoals hierboven beschreven.
 \end{proof}
+\subsection{Stelling 1.11 p 23}
+Zij $A$ een matrix van de volgende vorm die overeen komt met een stelsel.
+\[
+A =
+\left(
+\begin{array}{c c c c c c c c c c  c | c}
+1 & \bullet & \bullet & \bullet & \cdots & & & & & & \bullet & c_1\\
+0 & 1 & \bullet & \bullet & \cdots & & & & & & \bullet & c_2\\
+0 & 0 & 1 & \bullet & \cdots & & & & & & \bullet & c_3\\
+0 & 0 & 0 & 0 & 1 & \bullet & \cdots & & & & \bullet & \vdots\\
+0 & 0 & 0 & 0 & 0 & 0 & \cdots & 1 & \bullet & \cdots  & \bullet & c_r\\
+0 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & \cdots & \bullet & c_{r+1}\\
+0 & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & 0 & c_{r+2}\\
+\vdots & \ddots& \ddots& \ddots& \ddots& \ddots& \ddots& \ddots& \ddots & \ddots & \vdots & \vdots\\
+0 & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & 0 & c_{m}\\
+\end{array}
+\right)
+\]
+\subsubsection*{Te bewijzen}
+\begin{enumerate}
+\item Dit stelsel heeft geen oplossingen $\Leftrightarrow \exists i: c_i \neq 0$.
+\item Dit stelsel heeft precies één oplossing $\Leftrightarrow (\forall i \in \{r+1,...,m\}: c_i=0) \wedge r=n$. 
+\item oneindig veel oplossingen $\Leftrightarrow (\forall i \in \{r+1,...,m\}: c_i=0) \wedge r\neq n$.
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+\begin{enumerate}
+\item Stel dat er een $i$ bestaat zodat $c_i \neq 0$, dan komt rij $i$ van de matrix overeen met de volgende vergelijking.
+\[
+0 = c_i \text{ met } c_i \neq 0
+\]
+Dit is uiteraard onwaar en bijgevolg heeft het stelsel dus geen oplossingen.
+\item
+Dit geval houdt in dat rij $r$ overeen komt met een vergelijking met $1$ onbekende en $1$ variabele. Deze vergelijking heeft precies \'e\'en oplossing. Wanneer we in het stelsel nu de oplossing van die ene vergelijking invullen vinden we telkens op de vorige rij een vergelijking met $1$ onbekende die oplosbaar is. Zo kunnen we recursief doorgaan om de oplossing te vinden.
+\item
+Als $r < n$, dan bestaat er een $i$ zodat rij $i$ overeen komt met een vergelijking $0=0$. Deze verglijking is niet slechts triviaal waar maar dit betekent ook dat de $i$-de variabele vrij te kiezen is in de oplossing. Het stelsel heeft dus oneindig veel oplossingen.
+\end{enumerate}
+\end{proof}
 \subsection{Eigenschap 1.16 p 28}
 
 \section{Oefeningen 1.7.1}
