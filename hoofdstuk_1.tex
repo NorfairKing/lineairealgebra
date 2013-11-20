@@ -59,9 +59,34 @@ Dit geval houdt in dat rij $r$ overeen komt met een vergelijking met $1$ onbeken
 \item
 Als $r < n$, dan bestaat er een $i$ zodat rij $i$ overeen komt met een vergelijking $0=0$. Deze verglijking is niet slechts triviaal waar maar dit betekent ook dat de $i$-de variabele vrij te kiezen is in de oplossing. Het stelsel heeft dus oneindig veel oplossingen.
 \end{enumerate}
-\end{proof}
 \subsection{Eigenschap 1.16 p 28}
-
+Zij $A,B\in \mathbb{m\times n}$ en $\lambda \in \mathbb{R}$
+Noem het element op de $i$de rij, op de $j$de kolom van matrix $X$ $X_{ij}$.
+\subsubsection*{Te bewijzen}
+\begin{enumerate}
+\item $(A^T)^T = A$
+\item $(A+B)^T = A^T + B^T$
+\item $(\lambda A)^T=\lambda A^T$
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{enumerate}
+\item Voor elke matrix $A$ het volgende. $\forall i\in \{1,...,m\} ,j \in \{1,...,n\}:$
+\[
+A^T_{ij} = A_{ji}
+\]
+\[
+(A^T)^T = A_{ij}
+\]
+\item Voor elke matrix $A$ en $B$ geldt het volgende. $\forall i\in \{1,...,m\} ,j \in \{1,...,n\}:$
+\[
+((A+B)^T)_{ij} = A_{ji}+B_{ji}(A^T)_{ij} + (B^T)_{ij}
+\]
+\item Voor elke matrix $A$ geldt het volgende. $\forall i\in \{1,...,m\} ,j \in \{1,...,n\}:$
+\[
+((\lambda A)^T)_{ij} = (\lambda A)_{ji} = \lambda A_{ji}
+\]
+\end{enumerate}
+\end{proof}
 \section{Oefeningen 1.7.1}
 \subsection{oef 1}
 \subsubsection*{Echelonvorm}

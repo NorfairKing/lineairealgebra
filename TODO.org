@@ -6,8 +6,10 @@
 ** TODO Bewijzen
 *** DONE propositie 1.8 p 21
     CLOSED: [2013-11-20 Wed 20:44]
-    CLOCK: [2013-11-20 Wed 20:28]--[2013-11-20 Wed 20:44] =>  0:16
-*** TODO eigenschap 1.16 p 28
+*** DONE stelling 1.11 p 23
+    CLOSED: [2013-11-20 Wed 21:10]
+*** DONE eigenschap 1.16 p 28
+    CLOSED: [2013-11-20 Wed 21:21]
 *** TODO eigenschap 1.19 p 29
 *** TODO stelling 1.26 p 33
 *** TODO stelling 1.30 p 35
