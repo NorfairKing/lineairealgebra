@@ -2,6 +2,28 @@
 \begin{document}
 
 \part{Hoofdstuk 1}
+
+\section{Bewijzen uit het boek}
+\subsection{Propositie 1.8 p 21}
+\subsubsection*{Te Bewijzen}
+Elke matrix is rij-equivalent met een matrix in echelonvorm en met een matrix die rij-gereduceerd is.
+\subsubsection*{Bewijs}
+\begin{proof}
+Zie p 20 voor een herhaling van wat echelonvorm en rij-gereduceerd precies betekent.\\
+Zij $A$ een willekeurige $m\times n$ matrix. Kies een rij van deze matrix waarvoor het leidende element het meest naar links staat van alle rijen uit $A$. Dit is rij $i$. We voeren nu de operatie $R_1 \leftrightarrow R_2$ uit. De rij met waarvan het leidend element het meest naar links staat is nu de eerste rij. Vervolgens voeren we een andere elementaire rijoperatie uit op rij $1$, namelijk $R1\longmapsto \lambda R_1$ waarbij 
+\[
+\lambda = \frac{1}{\text{leidende element van } R_1}
+\]
+De matrix ziet er dan als volgt uit. Er staan al dan niet een aantal nulkolommen op de eerste plaatsen. Er staat een $1$ op de eerste rij op de eerste niet-nul kolom.
+De elementen onder de besproken $1$ zullen we $0$ maken door deze elementaire rij-operatie uit te voeren waarbij $\lambda_j$ het element in de kolom van de besproken $1$ is op rij $j$.
+\[
+R_j \longmapsto R_j - \lambda_jR_1
+\]
+Nu we onder de besproken $1$ allemaal nullen hebben kunnen we de beschreven procedure toepassen op de deelmatrix rechts onder de $1$. De procedure stopt wanneer er enkel nog nullen overblijven of als de matrix op geraakt.\\\\
+Vervolgens kunnen we van rechtsonder naar linksboven werken zoals hierboven beschreven.
+\end{proof}
+\subsection{Eigenschap 1.16 p 28}
+
 \section{Oefeningen 1.7.1}
 \subsection{oef 1}
 \subsubsection*{Echelonvorm}
