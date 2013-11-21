@@ -127,15 +127,29 @@ Zij $A,B,C \in R^{m\times n}$ en $\lambda, \mu \in \mathbb{R}$.
 
 \subsection{Stelling 1.26 p 33}
 Zij $AX=B$ een stelsel van eerstegraads vergelijkingen in matrixvorm.
-\subsection{Te Bewijzen}
+\subsubsection*{Te Bewijzen}
 Een stelsel van eerstegraadsvergelijkingen heeft ofwel geen oplossingen, ofwel juist \'e\'en oplossing, ofwel oneindig veel oplossingen.
-\subsection{Bewijs}
+\subsubsection*{Bewijs}
 \begin{proof}
 Bewijs uit het ongerijmde.\\
 Als het stelsel niet oplosbaar is, zijn er geen oplossingen. Als het stelsel oplosbaar is, is er minstens \'e\'en oplossing. We tonen aan dat zodra er twee oplossingen zijn, er ook oneindig veel zijn.\\
 Stel dat er twee oplossingen zijn van het stelsel, $X_1$ en $X_2$. Het is nu makkelijk te zien dat $X^(\lambda) = X_1 + \lambda(X_2-X_1)$ ook een oplossing is van het stelsel. Omdat we $\lambda$ vrij kunnen kiezen zijn dus er oneindig veel oplossingen van het stelsel.
 \end{proof}
 
+\subsection{Eigenschap 1.29 p 34}
+
+\subsection{Stelling 1.30 p 34}
+\subsubsection*{Te Bewijzen}
+Als een vierkante matrix $A$ een links inverse $B$ en een rechtse $C$ heeft dan geldt $B=C$.
+\subsubsection*{Bewijs}
+\begin{proof}
+$B$ en $C$ moeten dezelfde afmetingen hebben als $A$, anders zijn de vermenigvuldigingen niet gedefini\"eerd.
+\[B = B\mathbb{I}\]
+\[B = B (AC)\]
+\[B = (BA)C\]
+\[B = \mathbb{I}C\]
+\[B = C\]
+\end{proof}
 \section{Oefeningen 1.7.1}
 \subsection{oef 1}
 \subsubsection*{Echelonvorm}
