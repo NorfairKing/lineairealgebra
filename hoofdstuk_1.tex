@@ -125,6 +125,43 @@ Zij $A,B,C \in R^{m\times n}$ en $\lambda, \mu \in \mathbb{R}$.
 \end{enumerate}
 \end{proof}
 
+\subsection{Eigenschappen p 32 bovenaan}
+Zij $A,B,C \in \mathbb{R}^{m\times n}$ en $\lambda \in \mathbb{R}$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item \[ A\cdot (B+C) = A\cdot B + A \cdot C\]
+\item \[ (A+B) \cdot C = A\cdot C + B \cdot C \]
+\item \[ (A\cdot B)^T  = B^T \cdot A^T \]
+\item \[ \lambda(A\cdot B) = (\lambda A)\cdot B = A \cdot (\lambda B)\]
+\item \[ A \cdot \mathbb{I}_{n} = A \]
+\item \[ \mathbb{I}_{n} \cdot B = B \]
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+\begin{enumerate}
+\item 
+\[ (A\cdot (B+C))_{ij} = \sum_{i=1}^nA_{ij}(B+C)_{jk}\]
+\[ = \sum_{i=1}^n(A)_{jk}(B_{ij}+C_{jk}) = \sum_{i=1}^n A_{ij}B_{jk}+A_{ij}C_{jk}) = \sum_{i=1}^nA_{ij}B_{jk} + \sum_{i=1}^nA_{ij}C_{jk} = \]
+\[ (A\cdot B)_{ij} + (A \cdot C)_{ij} = (A\cdot B + A \cdot C)_{ij}\]
+
+\item 
+\[ ((A+B) \cdot C)_{ij} = \sum_{i=1}^n(B+C)_{jk}A_{ij}\]
+\[ = \sum_{i=1}^n(B_{jk}+C_{jk})A_{ij} = \sum_{i=1}^n A_{ij}B_{jk}+A_{ij}C_{jk} = \sum_{i=1}^nA_{ij}B_{jk} + \sum_{i=1}^nA_{ij}C_{jk} = \]
+\[ (A\cdot C)_{ij} + (B \cdot C)_{ij} = (A\cdot C + B \cdot C)_{ij} \]
+\item 
+\[ ((A\cdot B)^T)_{ij}  = (A\cdot B)_{ji}\]
+\[ = \sum_{i=1}^nA_{kj}B_{ji} = \sum_{i=1}^nB_{ji}A_{kj} = \sum_{i=1}^nB^T_{ij}A^T_{jk} = (B^T \cdot A^T)_{ij} \]
+\item 
+\[ (\lambda(A\cdot B))_{ij} = \lambda(A\cdot B)_{ij} = \lambda\sum_{i=1}^nA_{ij}B_{jk}\]
+\[ = \sum_{i=1}^n(\lambda A_{ij})B_{jk} = ((\lambda A)\cdot B)_{ij} \]
+\[ = \sum_{i=1}^nA_{ij}(\lambda B_{jk}) = (A \cdot (\lambda B))_{ij}\]
+\item 
+\[ (A \cdot \mathbb{I}_{n})_{ij} = \sum_{i=1}^nA_{ij}\mathbb{I}_{jk} = (A)_{ij} \]
+\item 
+\[ (\mathbb{I}_{n} \cdot B)_{ij} =  \sum_{i=1}^n\mathbb{I}_{ij}B_{jk} =  (B)_{ij} \]
+\end{enumerate}
+\end{proof}
+
 \subsection{Stelling 1.26 p 33}
 Zij $AX=B$ een stelsel van eerstegraads vergelijkingen in matrixvorm.
 \subsubsection*{Te Bewijzen}
