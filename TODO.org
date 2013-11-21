@@ -10,7 +10,8 @@
     CLOSED: [2013-11-20 Wed 21:10]
 *** DONE eigenschap 1.16 p 28
     CLOSED: [2013-11-20 Wed 21:21]
-*** TODO eigenschap 1.19 p 29
+*** DONE eigenschap 1.19 p 29
+    CLOSED: [2013-11-21 Thu 16:04]
 *** TODO stelling 1.26 p 33
 *** TODO stelling 1.30 p 35
 *** TODO stelling 1.32 p 35

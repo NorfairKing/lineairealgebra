@@ -87,6 +87,45 @@ A^T_{ij} = A_{ji}
 \]
 \end{enumerate}
 \end{proof}
+
+\subsection{Eigenschap 1.19 p 29}
+Zij $A,B,C \in R^{m\times n}$ en $\lambda, \mu \in \mathbb{R}$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item \[ (A+B)+C=A+(B+C) \]
+\item \[ A+O = A = O+A \]
+\item \[ A + (-A) = O \]
+\item \[ A+B = B+A \]
+\item \[ \lambda(A+B) = \lambda A+ \lambda B \]
+\item \[ (\lambda+\mu)A = \lambda A+\mu A \]
+\item \[ \lambda(\mu A) = (\lambda\mu)A\]
+\item \[ 1A =A \]
+\end{enumerate}
+\subsubsection*{Bewijzen}
+\begin{proof}
+\begin{enumerate}
+\item 
+\[
+((A+B)+C)_{ij} = (A_{ij} + B_{ij}) + C_{ij} = A_{ij} + (B_{ij} + C_{ij}) = (A+(B+C))_{ij}
+\]
+\item
+\[ (A+O)_{ij} = A_{ij} + 0 = A_{ij} = 0 + A_{ij} = (O+A)_{ij} \]
+\item
+\[ (A + (-A))_{ij} = A_{ij} + (-A)_{ij} = 0 = O_{ij} \]
+\item
+\[ (A+B)_{ij} = A_{ij} + B_{ij} = B_{ij} + A_{ij} = (B+A)_{ij} \]
+\item
+\[ (\lambda(A+B))_{ij} = \lambda(A+B)_{ij} = \lambda (A_{ij} + B_{ij}) = \lambda A_{ij}+ \lambda B_{ij}  = \lambda A+ \lambda B \]
+\item
+\[ ((\lambda+\mu)A)_{ij} = (\lambda+\mu)A_{ij} = \lambda A_{ij}+\mu A_{ij} = \lambda A+\mu A \]
+\item
+\[ (\lambda(\mu A))_{ij} = \lambda(\mu A)_{ij} =\lambda\mu A_{ij} = (\lambda\mu)A_{ij}\]
+\item
+\[ (1A)_{ij}= 1A_{ij} =A_{ij} \]
+
+\end{enumerate}
+\end{proof}
+
 \section{Oefeningen 1.7.1}
 \subsection{oef 1}
 \subsubsection*{Echelonvorm}
