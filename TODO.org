@@ -12,11 +12,13 @@
     CLOSED: [2013-11-20 Wed 21:21]
 *** DONE eigenschap 1.19 p 29
     CLOSED: [2013-11-21 Thu 16:04]
+*** TODO eigenschap p 32 bovenaan
 *** DONE stelling 1.26 p 33
     CLOSED: [2013-11-21 Thu 21:06]
 *** DONE stelling 1.30 p 35
     CLOSED: [2013-11-21 Thu 21:30]
-*** TODO stelling 1.32 p 35
+*** DONE stelling 1.32 p 35
+    CLOSED: [2013-11-21 Thu 21:44]
 *** TODO stelling 1.36 p 38
 *** TODO gevolg 1.37 p 39
 *** TODO opdracht 1.39 p 40
