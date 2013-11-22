@@ -295,7 +295,7 @@
   DEADLINE: <2013-11-26 Die>
 ** TODO Oefeningen
 *** TODO Voorbereiding
-    - [ ] 8 MajorMonodon
+    - [X] 8 MajorMonodon
     - [ ] 9 warreee
     - [ ] 10 fokdiekul
     - [ ] 12a jdewaen
