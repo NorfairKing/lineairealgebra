@@ -1,0 +1,336 @@
+#+SEQ_TODO: TODO(t) | DELEGATED(l) DONE(d)
+# ^ De vorige lijn is voor emacs, afblijven :p
+
+* DONE Hoofdstuk 1
+  CLOSED: [2013-10-27 Son 14:04] DEADLINE: <2013-10-08 Die>
+** TODO Bewijzen
+*** DONE propositie 1.8 p 21
+    CLOSED: [2013-11-20 Wed 20:44]
+*** DONE stelling 1.11 p 23
+    CLOSED: [2013-11-20 Wed 21:10]
+*** DONE eigenschap 1.16 p 28
+    CLOSED: [2013-11-20 Wed 21:21]
+*** DONE eigenschap 1.19 p 29
+    CLOSED: [2013-11-21 Thu 16:04]
+*** DONE eigenschap p 32 bovenaan
+    CLOSED: [2013-11-21 Thu 22:20]
+*** DONE stelling 1.26 p 33
+    CLOSED: [2013-11-21 Thu 21:06]
+*** DONE stelling 1.30 p 35
+    CLOSED: [2013-11-21 Thu 21:30]
+*** DONE stelling 1.32 p 35
+    CLOSED: [2013-11-21 Thu 21:44]
+*** DONE stelling 1.36 p 38
+    CLOSED: [2013-11-22 Fri 13:46]
+*** TODO opdracht 1.39 p 40
+*** TODO stelling 1.42 p 41
+*** TODO stelling 1.45 p 43
+** DONE Oefeningen
+   CLOSED: [2013-10-27 Son 14:03]
+*** DONE 1.7.1
+    CLOSED: [2013-10-27 Son 14:03] DEADLINE: <2013-10-06 Son>
+    1. [X] warreee
+    2. [X] fokdiekul
+    3. [X] NorfairKing
+    4. [X] warreee
+    5. [X] fokdiekul
+    6. [X] NorfairKing
+    7. [X] warreee
+    8. [X] fokdiekul
+    9. [X] NorfairKing
+    10. [X] warree
+    11. [X] fokdiekul
+    12. [X] NorfairKing
+    13. [X] warreee
+    14. [X] fokdiekul
+    15. [X] NorfairKing
+    16. [X] warreee
+    17. [X] fokdiekul
+*** DONE 1.7.2
+    CLOSED: [2013-10-27 Son 14:03] DEADLINE: <2013-10-13 Son>
+    1. [X] noiseloop
+    2. [X] fokdiekul
+    3. [X] warreee 
+    4. [X] NorfairKing
+    5. [X] Matzy93
+    6. [X] egonny
+    7. [X] noiseloop
+        - [X] a
+        - [X] b
+        - [X] c
+    8. [X] warreee 
+    9. [X] NorfairKing
+    10. [X] fokdiekul
+    11. [X] egonny
+    12. [X] egonny 
+    13. [X] noiseloop
+    14. [X] warreee
+    15. [X] fokdiekul
+    16. [X] NorfairKing
+    17. [X] Matzy93
+    18. [X] egonny
+    19. [X] noiseloop
+    20. [X] warreee
+    21. [X] fokdiekul
+    22. [X] NorfairKing
+    23. [X] Matzy93
+** DONE Opdrachten
+   CLOSED: [2013-10-27 Son 14:03] DEADLINE: <2013-10-13 Son>
+   - [X] 1.2  egonny
+   - [X] 1.23 warreee
+   - [X] 1.25 in oefenzitting
+   - [oefz morgen] 1.33 noiseloop
+** DONE Extra bewijzen
+   CLOSED: [2013-10-27 Son 14:03] DEADLINE: <2013-10-01 Die>
+   - [X] 1.10 warreee
+   - [X] 1.44 NorfairKing
+
+* DELEGATED Hoofdstuk 2
+  CLOSED: [2013-10-08 Die 22:23] DEADLINE: <2013-11-05 Die>
+** DELEGATED Oefeningen
+   CLOSED: [2013-10-22 Die 13:24]
+*** DELEGATED Voorbereiding
+    CLOSED: [2013-10-22 Die 13:24] DEADLINE: <2013-10-13 Son>
+    - [-] 1 - egonny
+      - [X] a - noiseloop
+      - [X] f - warreee
+      - [X] h - fokdiekul
+      - [X] j - NorfairKing
+    - [X] 3 - egonny
+    - [X] 4 - noiseloop
+      - [X] a - warreee
+    - [X] 9 - fokdiekul
+    - [-] 27 noiseloop
+      - [X] b warreee   
+      - [X] g noiseloop   
+      - [X] j warreee     
+      - [X] n NorfairKing 
+*** DELEGATED In Oefenzitting
+    CLOSED: [2013-10-22 Die 13:24] DEADLINE: <2013-10-20 Son>
+    - [X] 14 NorfairKing (a,b)
+    - [X] 24 egonny
+    - [-] 27 noiseloop
+      - [X] a warreee
+      - [ ] f fokdiekul 
+      - [X] h NorfairKing 
+      - [X] i egonny      
+      - [ ] k noiseloop   
+      - [X] l warreee        
+    - [ ] EXTRA fokdiekul (opgave staat in bestand)
+*** TODO Extra
+    - [-] 1 fokdiekul   
+      - [X] b NorfairKing 
+      - [X] c egonny      
+      - [X] d noiseloop   
+      - [ ] e warreee     
+      - [X] g fokdiekul   
+      - [X] i NorfairKing 
+    - [X] 2 egonny      
+    - [ ] 4 noiseloop   
+      - [ ] b warreee     
+      - [X] c fokdiekul   
+    - [X] 5 NorfairKing 
+    - [-] 6 egonny      
+      - [X] a noiseloop   
+      - [ ] b warreee     
+      - [X] c fokdiekul   
+    - [X] 7 NorfairKing 
+    - [X] 8 egonny      
+    - [?] 10 noiseloop   
+    - [-] 11 warreee     
+      - [X] a fokdiekul   
+      - [X] b NorfairKing 
+      - [X] c egonny      
+    - [X] 12 noiseloop   
+    - [ ] 13 warreee     
+    - [X] 15 fokdiekul   
+    - [-] 16 NorfairKing 
+      - [ ] a egonny      
+      - [X] b noiseloop   
+      - [ ] c warreee     
+      - [X] d fokdiekul   
+    - [X] 17 NorfairKing 
+    - [ ] 18 egonny      
+    - [ ] 19 noiseloop   
+      - [ ] a warreee     
+      - [X] b fokdiekul   
+    - [-] 20  NorfairKing 
+      - [ ] a egonny      
+      - [X] b noiseloop   
+      - [ ] c warreee     
+    - [X] 21 fokdiekul   
+    - [ ] 22 NorfairKing 
+      - [ ] a egonny      
+      - [ ] b noiseloop   
+      - [ ] c warreee     
+    - [X] 23 fokdiekul   
+    - [X] 25 NorfairKing 
+    - [ ] 26 egonny      
+    - [-] 27 noiseloop   
+      - [X] c fokdiekul   
+      - [X] d NorfairKing 
+      - [ ] e egonny      
+      - [?] m fokdiekul   
+    - [ ] 28 egonny      
+              
+    DEADLINE: <2013-10-20 Son>
+** DELEGATED Opdrachten 
+   CLOSED: [2013-11-19 Tue 23:28] DEADLINE: <2013-10-20 Son>
+   - [ ] 2.14 - egonny 
+   - [X] 2.16 - warreee
+
+* DELEGATED Hoofdstuk 3
+  CLOSED: [2013-11-18 Mon 15:08] DEADLINE: <2013-11-05 Die>
+** DELEGATED Oefeningen
+   CLOSED: [2013-11-19 Tue 23:28]
+*** DELEGATED Voorbereiding
+    CLOSED: [2013-11-19 Tue 23:28]
+    - [ ] p92 5. Bewijs: noiseloop
+      Veeltermen van graad precies n vormen geen vectorruimte.
+    - [X] p93 Bewijs Lemma 3.7 warreee
+    - [X] p93 Bewijs Lemma 3.8 puntje 3 fokdiekul
+    - [X] Opdracht 3.21 warreee
+    - [?] Opdracht 3.24 fokdiekul
+    - [-] 2 
+      - [X] b egonny
+      - [ ] d noiseloop
+      - [X] e fokdiekul
+      - [X] f NorfairKing
+      - [X] j NorfairKing
+      - [X] l egonny
+    - [ ] 5 noiseloop
+    - [X] 7 warreee
+    - [X] 12 warreee
+    - [X] 13 warreee
+    - [-] 19
+      - [X] b egonny
+    - [X] 26 egonny
+*** DELEGATED In Oefenzitting
+    CLOSED: [2013-11-19 Tue 23:27]
+   - [X] 1 NorfairKing
+     - [X] b NorfairKing
+   - [X] 3 egonny
+   - [ ] 4 fokdiekul
+   - [X] 6 NorfairKing
+   - [X] 8 egonny
+   - [X] 9 warreee
+   - [ ] 10 noiseloop
+   - [ ] 11 huistaak
+   - [ ] 14 noiseloop 
+   - [ ] 15 huistaak
+   - [X] 17 
+     - [X] b warreee
+   - [ ] 21 egonny
+   - [ ] 22
+     - [ ] b noiseloop
+   - [ ] 25 fokdiekul
+   - [-] 27
+     - [X] a warreee
+     - [X] b egonny
+     - [X] c NorfairKing
+     - [X] d egonny
+     - [ ] e noiseloop
+     - [ ] f warreee
+   - [ ] 29 warreee
+   - [ ] 30 fokdiekul
+   - [ ] 32 NorfairKing
+   - extra, in oefenzitting
+     - [-] 1
+       - [X] 1 warreee
+       - [ ] 2 fokdiekul
+       - [X] 3 NorfairKing
+       - [X] 4 egonny 
+     - [ ] 2 noiseloop
+     - [ ] 4 fokdiekul
+*** DELEGATED Extra
+    CLOSED: [2013-11-19 Tue 23:27]
+   - [ ] 1 noiseloop  
+     - [ ] a warreee    
+     - [ ] c fokdiekul  
+     - [ ] d egonny     
+   - [ ] 2 NorfairKing
+     - [ ] a noiseloop  
+     - [ ] c warreee    
+     - [ ] g fokdiekul  
+     - [ ] h egonny     
+     - [ ] i NorfairKing
+     - [ ] k noiseloop  
+     - [ ] m warreee    
+   - [ ] 16 fokdiekul  
+   - [ ] 17 egonny     
+     - [ ] a NorfairKing
+     - [ ] c noiseloop  
+   - [ ] 18 warreee    
+   - [ ] 19 fokdiekul  
+     - [ ] a egonny     
+     - [ ] c NorfairKing
+   - [ ] 22 noiseloop  
+     - [ ] a warreee    
+     - [ ] b fokdiekul  
+     - [ ] c egonny     
+   - [ ] 23 NorfairKing
+   - [ ] 24 noiseloop  
+   - [ ] 26 warreee    
+   - [ ] 28 fokdiekul  
+     - [ ] a egonny     
+     - [ ] b NorfairKing
+   - [ ] 31 noiseloop
+** TODO Opdrachten 
+   - [X] 3.9  p94   warreee
+   - [ ] 3.17 p97   warreee    
+   - [ ] 3.18 p98   fokdiekul  
+   - [ ] 3.21 p99   NorfairKing
+   - [ ] 3.23 p100  egonny     
+   - [ ] 3.24 p100  noiseloop  
+   - [ ] 3.29 p103  warreee    
+   - [ ] 3.48 p113  fokdiekul  
+   - [ ] 3.51 p115  NorfairKing
+   - [ ] 3.55 p 116 egonny     
+   - [ ] 3.59 p 118 noiseloop
+   - [ ] 3.64 p 123 warreee
+* TODO Hoofdstuk 4
+  DEADLINE: <2013-11-26 Die>
+** TODO Oefeningen
+*** TODO Voorbereiding
+    - [ ] 8 MajorMonodon
+    - [ ] 9 warreee
+    - [ ] 10 fokdiekul
+    - [ ] 12a jdewaen
+*** TODO In Oefenzitting
+    - [ ] 1 
+      - [ ] c warreee
+      - [ ] e fokdiekul
+    - [ ] 4 egonny
+    - [ ] 6 NorfairKing
+    - [ ] 7 noiseloop
+*** TODO Extra
+** TODO Opdrachten   
+    - [ ] 4.5  p136 NorfairKing
+    - [ ] 4.9  p140
+        - [ ] 1  egonny
+        - [ ] 2a egonny
+        - [ ] 2b MajorMonodon
+        - [ ] 2c MajorMonodon
+    - [ ] 4.19 p147 jdewaen
+    - [ ] 4.25 p154 noiseloop
+    - [ ] 4.37 p160 warreee
+** TODO Bewijzen
+    - [ ] Lemma      4.2  p130
+    - [ ] Gevolg     4.3  p130
+    - [ ] Propositie 4.10 p141
+    - [ ] Stelling   4.13 p142
+    - [ ] Stelling   4.16 p145
+    - [ ] Propositie 4.27 p155
+    - [ ] Stelling   4.29 p156
+    - [ ] Stelling   4.31 p157
+    - [ ] Gevolg     4.35 p159
+    - [ ] Stelling   4.43 p164
+* TODO Hoofdstuk 5
+  DEADLINE: <2013-12-10 Die>
+** TODO Oefeningen
+** TODO Opdrachten
+
+* TODO Hoofdstuk 6
+  DEADLINE: <2013-12-17 Die>
+** TODO Oefeningen
+** TODO Opdrachten
