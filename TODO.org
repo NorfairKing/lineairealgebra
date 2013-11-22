@@ -22,8 +22,10 @@
     CLOSED: [2013-11-21 Thu 21:44]
 *** DONE stelling 1.36 p 38
     CLOSED: [2013-11-22 Fri 13:46]
-*** TODO gevolg 1.37 p 39
-*** TODO opdracht 1.39 p 40
+*** DONE opdracht 1.39 p 40
+    CLOSED: [2013-11-22 Fri 14:00]
+*** DONE Lemma 1.41 p 40
+    CLOSED: [2013-11-22 Fri 14:19]
 *** TODO stelling 1.42 p 41
 *** TODO stelling 1.45 p 43
 ** DONE Oefeningen

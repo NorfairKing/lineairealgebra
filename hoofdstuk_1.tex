@@ -269,6 +269,29 @@ B\cdot A = \mathbb{I}_n
 \]
 $B$ is dus ook de linker inverse van $A$.
 \end{proof}
+\subsection{Lemma 1.41 p 40}
+Zij $A,B \in \mathbb{R}^{n\times n}$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item $A,B$ benedendriehoeks $\Rightarrow A\cdot B$ benedendriehoeks.
+\item $A,B$ bovendriehoeks $\Rightarrow A\cdot B$ bovendriehoeks.
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+\[
+(A\cdot B)_{ij} = \sum_{b=1}^nA_{ik}B_{kj} 
+\]
+\begin{enumerate}
+\item We weten dat de  $\sum_{b=1}^nA_{ik}B_{kj} = 0$ als $i>j$ want $A_{ik} = 0$ als $i>k$ en $B_{kj}=0$ als $k>j$.
+\item We weten dat de  $\sum_{b=1}^nA_{ik}B_{kj} = 0$ als $j>i$ want $A_{ik} = 0$ als $k>i$ en $B_{kj}=0$ als $j>k$.
+\end{enumerate}
+\end{proof}
+
+\subsection{Stelling 1.42 p 41}
+Zij $A$ een $m\times n$ matrix die in echelonvorm gebracht kan worden door elementaire rijoperaties zonder rij omwisselingen te gebruiken.
+\subsubsection*{Te Bewijzen}
+Er bestaat een $m\times m$ benedendriehoeksmatrix $L$ en een $m\times n$ bovendriehoeksmatrix $U$ zodat $A = L\cdot U$.
+\subsubsection*{Bewijs}
 
 \section{Oefeningen 1.7.1}
 \subsection{oef 1}
