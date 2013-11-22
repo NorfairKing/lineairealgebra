@@ -20,7 +20,8 @@
     CLOSED: [2013-11-21 Thu 21:30]
 *** DONE stelling 1.32 p 35
     CLOSED: [2013-11-21 Thu 21:44]
-*** TODO stelling 1.36 p 38
+*** DONE stelling 1.36 p 38
+    CLOSED: [2013-11-22 Fri 13:46]
 *** TODO gevolg 1.37 p 39
 *** TODO opdracht 1.39 p 40
 *** TODO stelling 1.42 p 41

@@ -205,12 +205,75 @@ $A$ en $B$ zijn inverteerbare matrices van dezelfde afmetingen. $AB$ is ook inve
 \[\mathbb{I} = ABA^{-1}B^{-1} = B^{-1}A^{-1}BA\]
 \end{proof}
 
+\subsection{Stelling 1.36 p 38}
+Zij $A$ een $n\times n$ matrix.
+\subsubsection*{Te Bewijzen}
+De volgende beweringen zijn equivalent.
+\begin{enumerate}
+\item De matrix $A$ heeft een links inverse
+\item Het stelsel $AX = 0$ heet enkel de evidente oplossing $X=0$
+\item De matrix $A$ is rij-equivalent met de eenheidsmatrix $\mathbb{I}_n$.
+\item De matrix $A$ is een product van elementaire matrices.
+\item De matrix $A$ is inverteerbaar.
+\item De matrix $A$ heeft een rechts inverse
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+\textbf{$1 \rightarrow 2$ }\\
+Stel dat $B$ de linker inverse is van $A$.
+\[
+AX = 0 
+\]
+\[
+\Rightarrow X = (B\cdot A)\cdot X = B \cdot (A\cdot X) = B\cdot 0=0
+\]
+De enige oplossing is dus de nuloplossing.\\\\
+\textbf{$2 \rightarrow 3$ }\\
+$A\cdot X = 0$ heeft enkel de nuloplossing. Alle variabelen van het stelsel zijn gebonden variabelen. De matrix is dus rij-equivalent met de eenheidsmatrix.\\\\
+\textbf{$3 \rightarrow 4$ }\\
+We bewijzen dat elementaire matrices bestaan zodat $A$ gelijk is aan het product van die elementaire matrices.
+\[
+E_{k}\cdot E_{k-1}\cdot ... \cdot E_{2}\cdot E_{1}\cdot A = \mathbb{I}_{n}
+\]
+Elke elementaire matrix is inverteerbaar en de inverse is telkens weer een elementaire matrix.
+\[
+A = E_{1}^{-1}\cdot E_{2}^{-1}\cdot ...\cdot  E_{k}^{-1}
+\]
+$A$ is dus een product van elementaire matrices.
+\\\\
+\textbf{$4 \rightarrow 5$ }\\
+We weten dat $A$ een product is van elementaire matrices.
+\[
+A = E_1\cdot E_2 \cdot ... \cdot E_k
+\]
+De elementaire matrices zijn inverteerbaar. De inverse van $A$ bestaat en valt als volgt te construeren.
+\[
+A^{-1} = (E_1\cdot E_2 \cdot ... \cdot E_k)^{-1} = (E_k^{-1}\cdot ...\cdot E_2^{-1}\cdot E_1^{-1})
+\]
+\textbf{$5 \rightarrow 6$ }\\
+Als $A$ inverteerbaar is, dan is de inverse van $A$ ook de rechter inverse van $A$.\\\\
+\textbf{$6 \rightarrow 1$ }\\
+Stel $B$ is de rechter inverse van $A$.
+\[
+A\cdot B = \mathbb{I}_n
+\]
+$A$ is dan de linker inverse van $B$. dus alle bovenstaande eigenschappen gelden voor $B$. $B$ is inverteerbaar dus $A = B^{-1}$.
+\[
+B\cdot A\cdot B = B
+\]
+\[
+B\cdot A \cdot B \cdot B^{-1} = B \cdot B^{-1}
+\]
+\[
+B\cdot A = \mathbb{I}_n
+\]
+$B$ is dus ook de linker inverse van $A$.
+\end{proof}
 
 \section{Oefeningen 1.7.1}
 \subsection{oef 1}
 \subsubsection*{Echelonvorm}
 \subsubsection*{a)}
-
 $$\begin{pmatrix}
 3 & -6 & 9\\
 -2 & 7 & -2\\
