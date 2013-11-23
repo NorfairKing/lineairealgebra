@@ -310,13 +310,13 @@
 ** TODO Opdrachten   
     - [ ] 4.5  p136 NorfairKing
     - [ ] 4.9  p140
-        - [ ] 1  egonny
-        - [ ] 2a egonny
+        - [X] 1  warreee
+        - [ ] 2a warreee
         - [X] 2b MajorMonodon
         - [X] 2c MajorMonodon
     - [ ] 4.19 p147 jdewaen
     - [ ] 4.25 p154 noiseloop
-    - [ ] 4.37 p160 warreee
+    - [ ] 4.37 p160 egonny
 ** TODO Bewijzen
     - [ ] Lemma      4.2  p130
     - [ ] Gevolg     4.3  p130
