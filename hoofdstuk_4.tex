@@ -2,6 +2,21 @@
 \begin{document}
 
 \part{Hoofdstuk 4}
+\section{Bewijzen uit het boek}
+\subsection{Lemma 4.3}
+\subsubsection*{Te bewijzen}
+Een afbeelding $L:V\rightarrow W$ tussen re\"ele vectorruimten is een lineaire afbeelding a.s.a.
+$$L(\lambda_1v_1+\lambda_2v_2) = \lambda_1L(v_1)+\lambda_2L(V_2)\ \text{voor alle $\lambda_1,\lambda_2 \in \mathbb{R}$ en voor alle $v_1,v_2 \in V$}.$$
+\subsubsection*{Bewijs}
+We moeten dus aantonen dat:
+\begin{enumerate}
+\item $L(v_1+v_2) = L(v_1) + L(v_2) \ \forall v_1,v_2 \in V$
+\item $L(\lambda v) = \lambda L(v) \ \forall v \in V \ \text{en} \ \forall \lambda \in \mathbb{R}$
+\end{enumerate}
+$$\Leftrightarrow$$
+$$L(\lambda_1v_1+\lambda_2v_2) = \lambda_1L(v_1)+\lambda_2L(V_2)\ \text{voor alle $\lambda_1,\lambda_2 \in \mathbb{R}$ en voor alle $v_1,v_2 \in V$}.$$
+
+
 \section{Oefeningen 4.8}
 
 \subsection{Oefening 8}
@@ -356,7 +371,41 @@ De rechterkant van deze laatste is dus de basisveranderingsmatrix van basis $\al
 \section{Opdrachten}
 
 \subsection{4.9}
+\subsubsection*{1)}
+We bepalen eerst de co\"ordinaten van $(2,0,5)$ ten opzichte van de eerste basis. Aangezien het over een transformatie gaat is $\beta$ zowel de eerste als de tweede basis. 
+Na het opstellen van een stelsel en rijreductie vinden we dat de co\"ordinaten $\left(\frac{12}{5},\frac{3}{5},\frac{-2}{5}\right)$ zijn.
 
+Voeren we nu de vermenigvuldiging van de matrix van $L$ met de bekomen co\"ordinaten vinden we:\\
+$$
+\begin{pmatrix}
+1&0&5\\
+0&-2&2\\
+1&-2&7
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+\frac{12}{\strut5}\\ \frac{3}{5}\\ \frac{\strut -2}{5}
+\end{pmatrix}
+=
+\begin{pmatrix}
+\strut \frac{2}{5}\\ -2\\ \strut \frac{-8}{5}
+\end{pmatrix}
+$$
+Dit is dan ook het antwoord op de vraag.
+\subsubsection*{2a)}
+We gaan na of de verzameling lineair onafhankelijk is door de determinant te berekenen:
+$$
+\begin{vmatrix}
+2 & 0 & -2\\
+0&3&3\\
+3&-2&-4
+\end{vmatrix}
+= 6
+$$
+Aangezien de determinant niet 0 is deze verzameling niet lineair afhankelijk en dus vrij.
+\\
+\\
+We bekijken nu of de verzameling voortbrengend is.
 \subsubsection*{2b)}
 
 Beschouwen we de eerste basis in functie van de tweede bekomen we:\\
