@@ -353,4 +353,130 @@ Deze laatste is dus onze basisveranderingsmatrix van $\beta$ naar $\alpha$ (Ik b
 
 De rechterkant van deze laatste is dus de basisveranderingsmatrix van basis $\alpha$ naar $\beta$.
 
+\section{Opdrachten}
+
+\subsection{4.9}
+
+\subsubsection*{2b)}
+
+Beschouwen we de eerste basis in functie van de tweede bekomen we:\\
+
+$D(X^2+3) = \bigl(
+\begin{smallmatrix}
+1&-3\\ 1&3
+\end{smallmatrix}
+\bigr) = \bigl(
+\begin{smallmatrix}
+1&0\\ 0&0
+\end{smallmatrix}
+\bigr) -3* \bigl(
+\begin{smallmatrix}
+0&1\\ 0&0
+\end{smallmatrix}
+\bigr) + \bigl(
+\begin{smallmatrix}
+0&0\\ 1&0
+\end{smallmatrix}
+\bigr) +3* \bigl(
+\begin{smallmatrix}
+0&0\\ 0&1
+\end{smallmatrix}
+\bigr)$\\
+
+$D(-2X^2+3X-4) = \bigl(
+\begin{smallmatrix}
+1&7\\ -5&-1
+\end{smallmatrix}
+\bigr) = \bigl(
+\begin{smallmatrix}
+1&0\\ 0&0
+\end{smallmatrix}
+\bigr) + 7* \bigl(
+\begin{smallmatrix}
+0&1\\ 0&0
+\end{smallmatrix}
+\bigr) - 5* \bigl(
+\begin{smallmatrix}
+0&0\\ 1&0
+\end{smallmatrix}
+\bigr) - \bigl(
+\begin{smallmatrix}
+0&0\\ 0&1
+\end{smallmatrix}
+\bigr)$\\
+
+$D(3X-2) = \bigl(
+\begin{smallmatrix}
+3&5\\ -3&1
+\end{smallmatrix}
+\bigr) = 3* \bigl(
+\begin{smallmatrix}
+1&0\\ 0&0
+\end{smallmatrix}
+\bigr) + 5* \bigl(
+\begin{smallmatrix}
+0&1\\ 0&0
+\end{smallmatrix}
+\bigr) - 3* \bigl(
+\begin{smallmatrix}
+0&0\\ 1&0
+\end{smallmatrix}
+\bigr) + \bigl(
+\begin{smallmatrix}
+0&0\\ 0&1
+\end{smallmatrix}
+\bigr)$\\
+
+Nemen we dus de bekomen co\"effici\"enten met de tweede basis, vormen we de matrix van $L$ op de twee basissen als volgt:\\
+
+\[
+L^{\beta_1}_{\beta_2} =
+\left[
+\begin{array}{c c c}
+1 & 1 & 3\\
+-3 & 7 & 5\\
+1 & -5 & -3\\
+3 & -1 & 1
+\end{array}
+\right]
+\]
+
+\subsubsection*{2c)}
+
+Door direct te berekenen bekomen we\\
+
+$ L(-X^2+6X-3) = \bigl(
+\begin{smallmatrix}
+-1+6&6+3\\ -1-6&6-3
+\end{smallmatrix}\bigr) = \bigl(
+\begin{smallmatrix}
+5&9\\ -7&3
+\end{smallmatrix}\bigr)$\\
+
+Om ditzelfde met de matrix van $L$ te berekenen bepalen we eerst de co\"ordinaten van $-X^2+6X-3$ ten opzichte van de eerste basis.
+Na het opstellen van een stelsel en rijreductie vinden we dat de co\"ordinaten $(1,1,1)$ zijn.
+
+Voeren we nu de vermenigvuldiging van de matrix van $L$ met de bekomen co\"ordinaten vinden we:\\
+
+$\begin{pmatrix}
+1 & 1 & 3\\
+-3 & 7 & 5\\
+1 & -5 & -3\\
+3 & -1 & 1
+\end{pmatrix} * \begin{pmatrix}
+1\\
+1\\
+1
+\end{pmatrix} = \begin{pmatrix}
+5\\
+9\\
+-7\\
+3
+\end{pmatrix}$\\
+
+Deze resulterende co\"rdinaten gebruiken we voor de tweede basis, waardoor we $\bigl(
+\begin{smallmatrix}
+5&9\\ -7&3
+\end{smallmatrix}\bigr)$ bekomen, hetzelfde resultaat als de directe berekening.
+
 \end{document}

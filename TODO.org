@@ -312,8 +312,8 @@
     - [ ] 4.9  p140
         - [ ] 1  egonny
         - [ ] 2a egonny
-        - [ ] 2b MajorMonodon
-        - [ ] 2c MajorMonodon
+        - [X] 2b MajorMonodon
+        - [X] 2c MajorMonodon
     - [ ] 4.19 p147 jdewaen
     - [ ] 4.25 p154 noiseloop
     - [ ] 4.37 p160 warreee
