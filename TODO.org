@@ -296,7 +296,7 @@
 ** TODO Oefeningen
 *** TODO Voorbereiding
     - [X] 8 MajorMonodon
-    - [ ] 9 warreee
+    - [X] 9 warreee
     - [ ] 10 fokdiekul
     - [ ] 12a jdewaen
 *** TODO In Oefenzitting
