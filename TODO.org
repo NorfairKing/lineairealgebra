@@ -296,13 +296,13 @@
 ** TODO Oefeningen
 *** TODO Voorbereiding
     - [X] 8 MajorMonodon
-    - [X] 9 warreee
+    - [X] 9 MajorMonodon
     - [ ] 10 fokdiekul
     - [ ] 12a jdewaen
 *** TODO In Oefenzitting
     - [ ] 1 
-      - [ ] c warreee
-      - [ ] e fokdiekul
+      - [X] c warreee
+      - [/] e warreee
     - [ ] 4 egonny
     - [ ] 6 NorfairKing
     - [ ] 7 noiseloop
@@ -311,7 +311,7 @@
     - [ ] 4.5  p136 NorfairKing
     - [ ] 4.9  p140
         - [X] 1  warreee
-        - [ ] 2a warreee
+        - [/] 2a warreee
         - [X] 2b MajorMonodon
         - [X] 2c MajorMonodon
     - [ ] 4.19 p147 jdewaen
