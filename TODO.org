@@ -117,7 +117,7 @@
       - [ ] f fokdiekul 
       - [X] h NorfairKing 
       - [X] i egonny      
-      - [ ] k noiseloop   
+      - [ ] k MajorMonodon  
       - [X] l warreee        
     - [ ] EXTRA fokdiekul (opgave staat in bestand)
 *** TODO Extra
@@ -139,7 +139,7 @@
       - [X] c fokdiekul   
     - [X] 7 NorfairKing 
     - [X] 8 egonny      
-    - [?] 10 noiseloop   
+    - [?] 10 noiseloop (Moet nagekeken worden? [ ])
     - [-] 11 warreee     
       - [X] a fokdiekul   
       - [X] b NorfairKing 
@@ -164,7 +164,7 @@
     - [X] 21 fokdiekul   
     - [ ] 22 NorfairKing 
       - [ ] a egonny      
-      - [ ] b noiseloop   
+      - [ ] b jdewaen   
       - [ ] c warreee     
     - [X] 23 fokdiekul   
     - [X] 25 NorfairKing 
@@ -188,7 +188,7 @@
    CLOSED: [2013-11-19 Tue 23:28]
 *** DELEGATED Voorbereiding
     CLOSED: [2013-11-19 Tue 23:28]
-    - [ ] p92 5. Bewijs: noiseloop
+    - [ ] p92 5. Bewijs: fokdiekul
       Veeltermen van graad precies n vormen geen vectorruimte.
     - [X] p93 Bewijs Lemma 3.7 warreee
     - [X] p93 Bewijs Lemma 3.8 puntje 3 fokdiekul
@@ -196,12 +196,12 @@
     - [?] Opdracht 3.24 fokdiekul
     - [-] 2 
       - [X] b egonny
-      - [ ] d noiseloop
+      - [ ] d egonny
       - [X] e fokdiekul
       - [X] f NorfairKing
       - [X] j NorfairKing
       - [X] l egonny
-    - [ ] 5 noiseloop
+    - [ ] 5 NorfairKing
     - [X] 7 warreee
     - [X] 12 warreee
     - [X] 13 warreee
@@ -217,22 +217,22 @@
    - [X] 6 NorfairKing
    - [X] 8 egonny
    - [X] 9 warreee
-   - [ ] 10 noiseloop
+   - [ ] 10 warreee
    - [ ] 11 huistaak
-   - [ ] 14 noiseloop 
+   - [ ] 14 MajorMonodon 
    - [ ] 15 huistaak
    - [X] 17 
      - [X] b warreee
    - [ ] 21 egonny
    - [ ] 22
-     - [ ] b noiseloop
+     - [ ] b jdewaen
    - [X] 25 fokdiekul
    - [-] 27
      - [X] a warreee
      - [X] b egonny
      - [X] c NorfairKing
      - [X] d egonny
-     - [ ] e noiseloop
+     - [ ] e fokdiekul
      - [ ] f warreee
    - [ ] 29 warreee
    - [X] 30 fokdiekul
@@ -243,7 +243,7 @@
        - [X] 2 fokdiekul
        - [X] 3 NorfairKing
        - [X] 4 egonny 
-     - [ ] 2 noiseloop
+     - [ ] 2 egonny
      - [X] 4 fokdiekul
 *** DELEGATED Extra
     CLOSED: [2013-11-19 Tue 23:27]
@@ -252,17 +252,17 @@
      - [X] c fokdiekul  
      - [ ] d egonny     
    - [-] 2 
-     - [ ] a noiseloop  
+     - [ ] a NorfairKing
      - [ ] c warreee    
      - [X] g fokdiekul  
      - [ ] h egonny     
      - [X] i NorfairKing
-     - [ ] k noiseloop  
+     - [ ] k warreee  
      - [ ] m warreee    
    - [X] 16 fokdiekul  
    - [-] 17 
      - [X] a NorfairKing
-     - [ ] c noiseloop  
+     - [ ] c egonny  
    - [ ] 18 warreee    
    - [ ] 19 
      - [ ] a egonny     
@@ -271,24 +271,24 @@
      - [ ] a warreee    
      - [ ] c egonny     
    - [ ] 23 NorfairKing
-   - [ ] 24 noiseloop  
+   - [ ] 24 fokdiekul  
    - [ ] 26 warreee    
    - [ ] 28 
      - [ ] a egonny     
      - [ ] b NorfairKing
-   - [ ] 31 noiseloop
+   - [ ] 31 MajorMonodon
 ** TODO Opdrachten 
    - [X] 3.9  p94   warreee
    - [ ] 3.17 p97   warreee    
    - [X] 3.18 p98   fokdiekul  
    - [ ] 3.21 p99   NorfairKing
    - [ ] 3.23 p100  egonny     
-   - [ ] 3.24 p100  noiseloop  
+   - [ ] 3.24 p100  jdewaen  
    - [ ] 3.29 p103  warreee    
    - [?] 3.48 p113  fokdiekul  
    - [ ] 3.51 p115  NorfairKing
    - [ ] 3.55 p 116 egonny     
-   - [ ] 3.59 p 118 noiseloop
+   - [ ] 3.59 p 118 NorfairKing
    - [ ] 3.64 p 123 warreee
 * TODO Hoofdstuk 4
   DEADLINE: <2013-11-26 Die>
@@ -303,8 +303,12 @@
       - [X] c warreee
       - [?] e warreee
     - [ ] 4 egonny
+    - [ ] 5 egonny
     - [ ] 6 NorfairKing
-    - [ ] 7 noiseloop
+    - [ ] 7 jdewaen
+    - [ ] 11 MajorMonodon
+    - [ ] 17 warreee
+    - [ ] 20 NorfairKing
 *** TODO Extra
 **** TODO Algemene uitleg voor matrixvoorstelling van lineaire afbeelding.
 ** TODO Opdrachten   
@@ -315,7 +319,7 @@
         - [X] 2b MajorMonodon
         - [X] 2c MajorMonodon
     - [ ] 4.19 p147 jdewaen
-    - [ ] 4.25 p154 noiseloop
+    - [ ] 4.25 p154 fokdiekul
     - [ ] 4.37 p160 egonny
 ** TODO Bewijzen
     - [ ] Lemma      4.2  p130
