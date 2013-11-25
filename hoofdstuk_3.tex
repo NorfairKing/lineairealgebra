@@ -91,6 +91,16 @@ en niet
 (\lambda_1 + \lambda_2)v = \lambda_1v+\lambda_2v
 \]
 
+\subsubsection*{c)}
+optelling is niet commutatief.
+\[
+(x_1,y_1) + (x_2,y_2) = (x_1+2x_2,y_1+2y_2)
+\]
+\[ \neq \]
+\[
+(x_2,y_2) + (x_1,y_1) = (x_2+2x_1,y_2+2y_1)
+\]
+
 \subsection{oef 2}
 \subsubsection*{b)}
 $W_2$ is geen deelruimte van $\mathbb{R}^{3}$.\\
@@ -117,6 +127,21 @@ Concreet:
 \[
 x = I_3
 \]
+
+\subsubsection*{g)}
+$W_7$ is een deelruimte van $\mathbb{R}^{3x3}$.\\
+\begin{proof} 
+
+1) $W_7$ bevat het nulelement. De nulmatrix is immers ook een symmetrische matrix. \\
+2) $ Symm(A1) + Symm(A2) = A3 $
+	and $A3 = \mathbb{R}^{3x3}$ \\
+3) $ \lambda \cdot Symm(A) = A2 $
+	and $ A2 = \mathbb{R}^{3x3}$
+
+Er is voldaan aan de drie eigenschappen.
+
+\end{proof}
+
 
 \subsubsection*{i)}
 $W_9$ is geen deelruimte van $R^{3\times 3}$. De optelling is namelijk niet intern.
@@ -205,6 +230,19 @@ Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1}
      &= a_1, a_2, ..., a_n\\
      &= r
 \end{align*}
+
+\subsection*{oef 4}
+Welke oef uit de definitie van een vectorruimte zijn voldaan? \\
+1. De optelling is inwendig en overal bepaald, ja \\
+2. De optelling is associatief,	ja \\
+3. Er is een neutr element, ja \\
+4. Elk element heeft een tegeng element, ja \\
+5. De opt is comm, nee \\
+
+1. Distr-1, \\
+2. Distr-2, ja \\
+3. gemeng asso, ja\\
+4. nee
 
 \subsection*{oef 6}
 \subsubsection*{Gegeven}
@@ -363,6 +401,18 @@ Het co\"ordinatenstel $(2,-3,1)$ komt dan weer overeen met:
 $$
 2\cdot (1+X) -3 \cdot (1+X^2)+ 1\cdot (X+X^2)= -1 +3X-2X^2
 $$
+
+\subsection*{Oefening 16}
+
+Standaard basis : $\beta1 = {e1 =(1,0,0,0), e2 =(0,1,0,0), e3 = (0,0,1,0), e4 = (0,0,0,1) }$
+
+tweede basis : $\beta2 = {f1 = (1,1,1,1), f2 =(0,1,1,1), f3 = (0,0,1,1), f4= (0,0,0,1) }$
+
+volgens $\beta1  V = a1e1 + a2e2 + a3e3 + a4e4$
+volgens $\beta2 V = \lambda1 \cdot f1 + \lambda2 \cdot f2 + \lambda3 \cdot f3 + \lambda4 \cdot f4 $ 
+
+$=> (\lambda1, \lambda2, \lambda3, \lambda4) $
+
 \subsection{oef 17}
 \subsubsection*{a)}
 $W_1$ vormt een vlak. We zoeken twee lineair onafhankelijke vectoren in dat vlak, die zijn dan een basis.
@@ -452,6 +502,24 @@ We kiezen hieruit twee onafhankelijke vectoren ($2=5-3$).
 \right\rbrace
 \]
 
+\subsection*{oef 25}
+Toon aan:
+$ U \bigoplus W = \mathbb{R}^{n x n}$
+
+\begin{proof}
+Wat zijn de voorwaarden die moeten voldoen?
+1) $ U + W = \mathbb{R}^{n x n}$
+2) $ U \cap W = {0}$
+
+nakijken 1) :
+Het is duidelijk dat de doorsnede van U en W enkel de nulmatrix is.
+
+nakijken 2) : 
+De som van 2 vierkante matrices met grootte n is opniew een vierkante matrix met afmeting n. $U + W = \mathbb{R}^{n x n}$
+
+QED
+
+\end{proof}
 
 \subsection*{oef 26}
 We kiezen $U = vct\{(0,1,0), (0,0,1)\}$.\\ Hierdoor is $(\mathbb{R}, \mathbb{R}^3, +) = U + W$ en $U \cap W = \{0\}$.\\
@@ -509,6 +577,30 @@ Dit is juist volgens de definitie van vectorsom en scalaire vermenigvuldiging.
 $v_3 = (1,1)$
 
 \subsection{oef 30}
+
+\begin{proof}
+
+Eerst de optelling.
+De optelling is inwendig en overal bepaald zoals uit $R_{0}^{+} x R_{0}^{+} \rightarrow R_{0}^{+} $ 
+De optelling is associatief.
+$ (x + y) + z = x + (y+z) $
+$ xy + z = x + yz$
+$ xyz = xyz $
+
+Er is een neutraal element.
+$x \cdot 1 = x $
+
+GEEN Tegengesteld element.
+Het is niet mogenlijk om een uniek tegengesteld element te vinden voor elk element dat gelijk is aan 0.
+
+Commutatief!
+$xy = yx$
+
+Alle eigenschappen voor de optelling zijn niet voldaan, dus het is geen geldige definitie.
+
+Bij $ \bigotimes $ geldt distr1 ook al niet.
+
+\end{proof}
 
 \subsection{oef 32}
 We berekenen alle $a$ waarvoor de vier gegeven basisvectoren lineair afhankelijk zijn.
