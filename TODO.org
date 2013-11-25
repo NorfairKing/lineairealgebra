@@ -297,7 +297,7 @@
 *** TODO Voorbereiding
     - [X] 8 MajorMonodon
     - [X] 9 MajorMonodon
-    - [ ] 10 fokdiekul
+    - [X] 10 fokdiekul
     - [ ] 12a jdewaen
 *** TODO In Oefenzitting
     - [ ] 1 
