@@ -260,8 +260,8 @@
      - [ ] k noiseloop  
      - [ ] m warreee    
    - [ ] 16 fokdiekul  
-   - [ ] 17 
-     - [ ] a NorfairKing
+   - [-] 17 
+     - [X] a NorfairKing
      - [ ] c noiseloop  
    - [ ] 18 warreee    
    - [ ] 19 
