@@ -42,6 +42,28 @@ $$
 $$
 \text{Beeld van L:} \ \{(x ,y ,z)|x,y,z \in \mathbb{R} \}
 $$
+
+
+\subsection{Oefening 5}
+\subsubsection*{a)}
+Zij $L:V \rightarrow W$ een lineaire afbeelding en zij $dim V = n$ en $dim W = m$.\\
+\textbf{Te Bewijzen}
+\[
+n > m \Rightarrow L \text{ is niet injectief}
+\]
+\textbf{Bewijs}
+\begin{proof}
+Bewijs uit het ongerijmde.\\
+Stel $n>m$ en $L$ is injectief.
+\[
+dim(V) = dim(ker(L)) + dim(Im(L))
+\]
+Als $L$ injectief is dan $ker(L)=\{0\}$.\footnote{Zie stelling 4.29 p 156} en $Im(L) \subset W$ dus $dim(Im(L))\le dim(W)$. We weten nu het volgende en dit is een contradictie met $n>m$.
+\[
+dim(V) \le dim(W)
+\]
+\end{proof}
+
 \subsection{Oefening 8}
 Om de matrices van de basisverandering te berekenen stellen we voor beide bases een matrix op waarbij ze beide uitgeschreven worden ten opzichte van eenzelfde basis, bijvoorbeeld, de standaardbasis, dezen naast elkaar plaatsen en rijreduceren tot de linkse matrix de eenheidsmatrix is. De eerste oefening is relatief triviaal, zoals we zullen zien.
 \subsubsection*{a)}
