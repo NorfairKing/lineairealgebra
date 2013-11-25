@@ -213,7 +213,7 @@
    - [X] 1 NorfairKing
      - [X] b NorfairKing
    - [X] 3 egonny
-   - [ ] 4 fokdiekul
+   - [X] 4 fokdiekul
    - [X] 6 NorfairKing
    - [X] 8 egonny
    - [X] 9 warreee
@@ -226,7 +226,7 @@
    - [ ] 21 egonny
    - [ ] 22
      - [ ] b noiseloop
-   - [ ] 25 fokdiekul
+   - [X] 25 fokdiekul
    - [-] 27
      - [X] a warreee
      - [X] b egonny
@@ -235,31 +235,31 @@
      - [ ] e noiseloop
      - [ ] f warreee
    - [ ] 29 warreee
-   - [ ] 30 fokdiekul
+   - [X] 30 fokdiekul
    - [?] 32 NorfairKing
    - extra, in oefenzitting
      - [-] 1
        - [X] 1 warreee
-       - [ ] 2 fokdiekul
+       - [X] 2 fokdiekul
        - [X] 3 NorfairKing
        - [X] 4 egonny 
      - [ ] 2 noiseloop
-     - [ ] 4 fokdiekul
+     - [X] 4 fokdiekul
 *** DELEGATED Extra
     CLOSED: [2013-11-19 Tue 23:27]
    - [ ] 1 
      - [ ] a warreee    
-     - [ ] c fokdiekul  
+     - [X] c fokdiekul  
      - [ ] d egonny     
    - [-] 2 
      - [ ] a noiseloop  
      - [ ] c warreee    
-     - [ ] g fokdiekul  
+     - [X] g fokdiekul  
      - [ ] h egonny     
      - [X] i NorfairKing
      - [ ] k noiseloop  
      - [ ] m warreee    
-   - [ ] 16 fokdiekul  
+   - [X] 16 fokdiekul  
    - [-] 17 
      - [X] a NorfairKing
      - [ ] c noiseloop  
@@ -269,7 +269,6 @@
      - [ ] c NorfairKing
    - [ ] 22 
      - [ ] a warreee    
-     - [ ] b fokdiekul  
      - [ ] c egonny     
    - [ ] 23 NorfairKing
    - [ ] 24 noiseloop  
@@ -281,12 +280,12 @@
 ** TODO Opdrachten 
    - [X] 3.9  p94   warreee
    - [ ] 3.17 p97   warreee    
-   - [ ] 3.18 p98   fokdiekul  
+   - [X] 3.18 p98   fokdiekul  
    - [ ] 3.21 p99   NorfairKing
    - [ ] 3.23 p100  egonny     
    - [ ] 3.24 p100  noiseloop  
    - [ ] 3.29 p103  warreee    
-   - [ ] 3.48 p113  fokdiekul  
+   - [?] 3.48 p113  fokdiekul  
    - [ ] 3.51 p115  NorfairKing
    - [ ] 3.55 p 116 egonny     
    - [ ] 3.59 p 118 noiseloop
