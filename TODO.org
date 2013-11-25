@@ -307,6 +307,7 @@
     - [ ] 6 NorfairKing
     - [ ] 7 noiseloop
 *** TODO Extra
+**** TODO Algemene uitleg voor matrixvoorstelling van lineaire afbeelding.
 ** TODO Opdrachten   
     - [ ] 4.5  p136 NorfairKing
     - [ ] 4.9  p140
