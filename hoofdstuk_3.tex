@@ -409,10 +409,49 @@ Na Gauss-eliminatie krijgen we de rij-gereduceeerde vorm
   0 & 0 & 0
 \end{pmatrix}
 \]
-Hierdoor krijgen we de oplossingsverzameling $\{0\}$.\\
+Hierdoor krijgen we de oplossingsverzameling $\{(0,0,0)\}$.\\
 De basis van de \underline{nulruimte} is dus $\emptyset$.\\
 De rijen $r_1, r_2, r_3$ zijn niet-nulrijen, de basis van de \underline{rijruimte} is dus $vct\{(1,1,1), (1,1,-1), (1,-1,1)\}$.\\
 De kolommen $c_1, c_2, c_3$ zijn onafhankelijk en voortbrengend, de basis van de \underline{kolomruimte} is dus $vct\{(1,1,1,1), (1,1,-1,-1), (1,-1,1,-1)\}$.
+
+\subsubsection*{c)}
+\[
+\begin{pmatrix}
+0 & 1 & -1 &  -2 & 1 \\
+1 & 1 & -1 & 3   & 1 \\
+2 & 1 & -1 & 8   & 3 \\
+0 & 0 & -2 & 2   & 1 \\
+3 & 5 & -5 & 5   & 10\\
+\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}
+1 & 0 & 0 & 5 & 0 \\
+0 & 1 & 0 & -3& 0 \\
+0 & 0 & 1 & -1& 0 \\
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 \\
+\end{pmatrix}
+\]
+De eerste drie rijen van deze gereduceerde matrix vormen een basis voor de rijruimte.
+De eerste drie kolommen van de gereduceerde matrix vormen een basis voor de kolomruimte. 
+De oplossing van het homogeen stelsel van de gereduceerde matrix vormt de nullruimte van de matrix.
+De oplossingsverzameling is de volgende.
+\[
+\{(-5\lambda_1,3\lambda_1,\lambda_1,\lambda_1,\lambda_2)|\lambda_1,\lambda_2\in \mathbb{R}\}
+\]
+We kiezen hieruit twee onafhankelijke vectoren ($2=5-3$).
+\[
+\left\lbrace
+\begin{pmatrix}
+-5\\3\\1\\1\\0\\
+\end{pmatrix}
+,
+\begin{pmatrix}
+0\\0\\0\\0\\1\\
+\end{pmatrix}
+\right\rbrace
+\]
+
 
 \subsection*{oef 26}
 We kiezen $U = vct\{(0,1,0), (0,0,1)\}$.\\ Hierdoor is $(\mathbb{R}, \mathbb{R}^3, +) = U + W$ en $U \cap W = \{0\}$.\\
