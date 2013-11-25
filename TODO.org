@@ -236,7 +236,7 @@
      - [ ] f warreee
    - [ ] 29 warreee
    - [ ] 30 fokdiekul
-   - [ ] 32 NorfairKing
+   - [?] 32 NorfairKing
    - extra, in oefenzitting
      - [-] 1
        - [X] 1 warreee
@@ -247,34 +247,34 @@
      - [ ] 4 fokdiekul
 *** DELEGATED Extra
     CLOSED: [2013-11-19 Tue 23:27]
-   - [ ] 1 noiseloop  
+   - [ ] 1 
      - [ ] a warreee    
      - [ ] c fokdiekul  
      - [ ] d egonny     
-   - [ ] 2 NorfairKing
+   - [-] 2 
      - [ ] a noiseloop  
      - [ ] c warreee    
      - [ ] g fokdiekul  
      - [ ] h egonny     
-     - [ ] i NorfairKing
+     - [X] i NorfairKing
      - [ ] k noiseloop  
      - [ ] m warreee    
    - [ ] 16 fokdiekul  
-   - [ ] 17 egonny     
+   - [ ] 17 
      - [ ] a NorfairKing
      - [ ] c noiseloop  
    - [ ] 18 warreee    
-   - [ ] 19 fokdiekul  
+   - [ ] 19 
      - [ ] a egonny     
      - [ ] c NorfairKing
-   - [ ] 22 noiseloop  
+   - [ ] 22 
      - [ ] a warreee    
      - [ ] b fokdiekul  
      - [ ] c egonny     
    - [ ] 23 NorfairKing
    - [ ] 24 noiseloop  
    - [ ] 26 warreee    
-   - [ ] 28 fokdiekul  
+   - [ ] 28 
      - [ ] a egonny     
      - [ ] b NorfairKing
    - [ ] 31 noiseloop
