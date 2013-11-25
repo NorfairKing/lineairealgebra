@@ -45,8 +45,8 @@ $$
 
 
 \subsection{Oefening 5}
-\subsubsection*{a)}
 Zij $L:V \rightarrow W$ een lineaire afbeelding en zij $dim V = n$ en $dim W = m$.\\
+\subsubsection*{a)}
 \textbf{Te Bewijzen}
 \[
 n > m \Rightarrow L \text{ is niet injectief}
@@ -62,6 +62,29 @@ Als $L$ injectief is dan $ker(L)=\{0\}$.\footnote{Zie stelling 4.29 p 156} en $I
 \[
 dim(V) \le dim(W)
 \]
+\end{proof}
+\subsubsection*{b)}
+\textbf{Te Bewijzen}
+\[
+n < m \Rightarrow L \text{ is niet surjectief}
+\]
+\textbf{Bewijs}
+\begin{proof}
+Bewijs uit het ongerijmde.\\
+Stel $n<m$ en $L$ is surjectief.
+\[
+\forall w\in W:\exists v\in V: L(v)=w
+\]
+Hieruit volgt dat $Im(V)=W$ dus ook dat $dim(Im(V))=dim(W)$.
+We kijken nu opnieuw naar stelling 4.31 p 157.
+\[
+dim(V) = dim(ker(L)) + dim(Im(L))
+\]
+Als we dit invullen krijgen we het volgende.
+\[
+dim(V) = dim(ker(L)) + dim(W)
+\]
+Hieruit volgt dat $dim(V) \ge dim(W)$ want $dim(ker(L)) \ge 0$. Dit is in contradictie met $n<m$.
 \end{proof}
 
 \subsection{Oefening 8}
