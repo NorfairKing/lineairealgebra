@@ -275,7 +275,7 @@
    - [ ] 26 warreee    
    - [ ] 28 
      - [ ] a egonny     
-     - [ ] b NorfairKing
+     - [?] b NorfairKing
    - [ ] 31 MajorMonodon
 ** TODO Opdrachten 
    - [X] 3.9  p94   warreee
