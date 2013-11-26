@@ -335,9 +335,36 @@
     - [ ] Stelling   4.43 p164
 * TODO Hoofdstuk 5
   DEADLINE: <2013-12-10 Die>
+** TODO Bewijzen
+*** TODO Stelling 5.2 p 117
+*** TODO Voorbeeld 5.4 
+**** TODO (1) vind zelf de tweede eigenvector
+**** TODO (5) Bepaal zelf de eigenwaarden
+**** TODO (5) Bewijs dat elke eigevector van S ook van de vorm cv_\mu is
+*** TODO Stelling 5.7 p 181
+*** TODO Stelling 5.8 p 182
+*** TODO Stelling 5.16 p 189
+*** TODO Stelling 5.18 p 190
+*** TODO Gevolg 5.20 p 191
+*** TODO Lemma 5.22 p 192
+*** TODO Stelling 5.23 p 192
+*** TODO Propositie 5.25 p 194
+*** TODO Stelling 5.28 p 203
+*** TODO Stelling 5.31 p 205
+*** TODO Propositie 5.32 p 205
+*** TODO Eigenschap 5.33 p 205
+*** TODO Propositie 5.38 p 209
+*** TODO Gevolg 5.39 p 209
+*** TODO Propositie 5.40 p 209
+*** TODO Propositie 5.41 p 210
+*** TODO Stelling 5.43 p 212
+*** TODO Gevolg 5.44 p 214
+*** TODO Stelling 5.49 p 216
 ** TODO Oefeningen
 ** TODO Opdrachten
-
+   - [ ] 5.10 p 185
+   - [ ] 5.34 p 206
+   - [ ] 5.42 p 211
 * TODO Hoofdstuk 6
   DEADLINE: <2013-12-17 Die>
 ** TODO Oefeningen
