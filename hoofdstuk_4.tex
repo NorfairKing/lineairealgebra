@@ -649,7 +649,23 @@ $$
 Aangezien de determinant niet 0 is deze verzameling niet lineair afhankelijk en dus vrij.
 \\
 \\
-We bekijken nu of de verzameling voortbrengend is.
+Aangezien we weten dat de dimensie van $\mathbb{R}_{<2}$ gelijk is aan 3. En we hier 3 vrije vectoren hebben, kunnen we via Eig. 3.40 besluiten dat het een basis is.
+\\
+\\
+Willen we nu toch voortbrengend bewijzen. Dan moeten we nagaan of er willekeurige $k,l,m$ bestaan zodat we voor een willekeurige vector $aX^2+bX+c$ met de gegeven basis $(v_1,v_2,v_3)$ een combinatie vinden:
+$$
+aX^2+bX+c = kv_1+lv_2+mv_3
+$$
+$$
+\left\lbrace
+\begin{array}{r c}
+k-2m &= a\\
+3l+m &= b\\
+3k-2l+3m &= c
+\end{array}
+\right.
+$$
+Als we dit oplossen en we krijgen een oplossing dan wil dit zeggen dat er voor elke willekeurige vector zo'n combinatie bestaat, en dit wil zeggen dat het voortbrengend is.
 \subsubsection*{2b)}
 
 Beschouwen we de eerste basis in functie van de tweede bekomen we:\\
