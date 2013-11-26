@@ -247,12 +247,12 @@
      - [X] 4 fokdiekul
 *** DELEGATED Extra
     CLOSED: [2013-11-19 Tue 23:27]
-   - [ ] 1 
+   - [-] 1 
      - [ ] a warreee    
      - [X] c fokdiekul  
      - [ ] d egonny     
    - [-] 2 
-     - [ ] a NorfairKing
+     - [X] a NorfairKing
      - [ ] c warreee    
      - [X] g fokdiekul  
      - [ ] h egonny     
