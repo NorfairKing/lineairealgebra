@@ -270,7 +270,7 @@
    - [ ] 22 
      - [ ] a warreee    
      - [ ] c egonny     
-   - [ ] 23 NorfairKing
+   - [X] 23 NorfairKing
    - [ ] 24 fokdiekul  
    - [ ] 26 warreee    
    - [ ] 28 

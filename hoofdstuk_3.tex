@@ -508,7 +508,22 @@ We kiezen hieruit twee onafhankelijke vectoren ($2=5-3$).
 \right\rbrace
 \]
 
-\subsection*{oef 25}
+\subsection{oef 23}
+Ik ga ervan uit dat we een bewijs moeten geven van deze stelling. Het staat er namelijk nergens bij.\\
+Zij $V$ een vectorruimte met $\beta$ een basis ervan. Zij $\beta_1,...,\beta_k$ de disjuncte unie ervan. Noteer $U_i=vct(\beta_i)$.
+\subsubsection*{Te Bewijzen}
+\[
+V = U_1 \oplus U_2 \oplus ... \oplus U_k
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+We weten dat voor elke $\beta_i,\beta_j$ de vectoren lineair onafhankelijk zijn, want samen vormen ze een basis. We weten dus al dat $\forall U_i,U_j: U_i \cap U_j = \{0\}$.\\
+Nu hoeven we enkel nog te bewijzen dat $\sum_i U_i=V$. Voor elke $u_i \in U_i$ geldt dat $u_i = \sum_k\lambda_k\beta_{ik}$, in woorden: "elke $u_i$ is een lineaire combinatie van de basisvectoren van $U_i$. $\sum_i U_i$ bevat alle mogelijke lineaire combinaties van alle mogelijke $u_i$. Deze combinaties kunnen geschreven worden als lineaire combinaties van de vectoren in $\beta$. Nu hebben we dus bewezen dat $\sum_i U_i=V$ en $\forall U_i,U_j: U_i \cap U_j = \{0\}$. Hieruit volgt dat $\bigoplus_iU_i=V$.
+\end{proof}
+
+
+
+\subsection{oef 25}
 Toon aan:
 $ U \bigoplus W = \mathbb{R}^{n x n}$
 
