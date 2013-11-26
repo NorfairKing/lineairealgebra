@@ -294,6 +294,26 @@ Er bestaat een $m\times m$ benedendriehoeksmatrix $L$ en een $m\times n$ bovendr
 \subsubsection*{Bewijs}
 TODO
 
+\subsection{Stelling 1.45 p 43}
+Zij $A$ een inverteerbare $n\times n$ matrix die via rijoperaties tot in trapvorm kan gebracht worden zonder rijen te verwisselen.
+\subsubsection*{Te Bewijzen}
+Er bestaat een unieke benedendriehoeksmatrix $L$ met enkel $1$ op de diagonaal en een unieke bovendriehoeksmatrix $U$ zodat $A=LU$.
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs uit het ongerijmde.\\
+Stel dat $L$ e, $U$ niet uniek zijn. Dan bestaan er $L_1 \neq L_2,U_1 \neq U_2$ zodat de volgende formule geldt.
+\[
+A = L_1U_1=L_2U_2
+\]
+$L_1$ en $L_2$ zijn hier benedendriehoeksmatrices met enkel $1$ op de diagonaal. $U_1$ en $U_2$ zijn hier bovendriehoeksmatrices.
+\[
+L_2^{-1}L_1 = U_2U_1^{-1}
+\]
+De matrix in het linkerlid is een benedendriehoeksmatrix met enkel $1$ op de diagonaal en de matrix in het rechterlid is een bovendriehoeksmatrix\footnote{Zie Lemma 1.41 p 40}.
+Een bovendriehoeksmatrix kan enkel gelijk zijn aan een benedendriehoeksmatrix met enkel $1$ op de hoofddiagonaal als ze beide gelijk zijn aan de eenheidsmatrix.
+\end{proof}
+
+
 \section{Oefeningen 1.7.1}
 \subsection{oef 1}
 \subsubsection*{Echelonvorm}
