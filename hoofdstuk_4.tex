@@ -13,12 +13,33 @@ We moeten dus aantonen dat:
 \item $L(v_1+v_2) = L(v_1) + L(v_2) \ \forall v_1,v_2 \in V$
 \item $L(\lambda v) = \lambda L(v) \ \forall v \in V \ \text{en} \ \forall \lambda \in \mathbb{R}$
 \end{enumerate}
-$$\Leftrightarrow$$
-$$L(\lambda_1v_1+\lambda_2v_2) = \lambda_1L(v_1)+\lambda_2L(V_2)\ \text{voor alle $\lambda_1,\lambda_2 \in \mathbb{R}$ en voor alle $v_1,v_2 \in V$}.$$
+\begin{align*}L(\lambda_1v_1+\lambda_2v_2) = \lambda_1L(v_1)+\lambda_2L(V_2)\ \text{voor alle $\lambda_1,\lambda_2 \in \mathbb{R}$ en voor alle $v_1,v_2 \in V$}. \tag{3.}
+\end{align*}
+
 \subsubsection*{$\Rightarrow$}
 Kies $\lambda_1,\lambda_2 \in \mathbb{R}$ en $v_1,v_2 \in V$ willekeurig.
 \begin{align*}
-L(\lambda_1 v_1 + \lambda_2 v_2) = L(\lambda_1) \tag{test}
+L(\lambda_1 v_1 + \lambda_2 v_2) = L(\lambda_1 v_1) + L(\lambda_2 v_2)\tag{wegens 1.}\\
+=\lambda_1 L(v_1)+ \lambda_2 L(v_2) \tag{wegens 2.}
+\end{align*}
+
+\subsubsection*{$\Leftarrow$ voor 1.}
+Kies $v_1,v_2 \in V$ willekeurig.
+
+\begin{align*}
+L(v_1 + v_2) = L(1.v_1+1.v_2) \tag{co\"effici\"ent 1 in V}\\
+=1L(v_1)+1L(v_2) \tag{wegens 3.}\\
+=L(v_1)+L(v_2) \tag{co\"effici\"ent 1 in W}
+\end{align*}
+
+\subsubsection*{$\Leftarrow$ voor 2.}
+Neem $v\in V, \lambda \in \mathbb{R}$ willekeurig.
+\begin{align*}
+L(\lambda v)=L(\lambda v + 0) \tag{neutraal element in V}\\
+=L(\lambda v + 0v)\tag{Lemma 3.8}\\
+=\lambda L(v) + 0 L(v) \tag{wegens 3.}\\
+=\lambda L(v) + 0 \tag{Lemma 3.8 in W}\\
+=\lambda L(v) \tag{neutraal element in W}
 \end{align*}
 \section{Oefeningen 4.8}
 \subsection{Oefening 1}
@@ -45,51 +66,6 @@ $$
 $$
 \text{Beeld van L:} \ \{(x ,y ,z)|x,y,z \in \mathbb{R} \}
 $$
-
-
-\subsection{Oefening 5}
-Zij $L:V \rightarrow W$ een lineaire afbeelding en zij $dim V = n$ en $dim W = m$.\\
-\subsubsection*{a)}
-\textbf{Te Bewijzen}
-\[
-n > m \Rightarrow L \text{ is niet injectief}
-\]
-\textbf{Bewijs}
-\begin{proof}
-Bewijs uit het ongerijmde.\\
-Stel $n>m$ en $L$ is injectief.
-\[
-dim(V) = dim(ker(L)) + dim(Im(L))
-\]
-Als $L$ injectief is dan $ker(L)=\{0\}$.\footnote{Zie stelling 4.29 p 156} en $Im(L) \subset W$ dus $dim(Im(L))\le dim(W)$. We weten nu het volgende en dit is een contradictie met $n>m$.
-\[
-dim(V) \le dim(W)
-\]
-\end{proof}
-\subsubsection*{b)}
-\textbf{Te Bewijzen}
-\[
-n < m \Rightarrow L \text{ is niet surjectief}
-\]
-\textbf{Bewijs}
-\begin{proof}
-Bewijs uit het ongerijmde.\\
-Stel $n<m$ en $L$ is surjectief.
-\[
-\forall w\in W:\exists v\in V: L(v)=w
-\]
-Hieruit volgt dat $Im(V)=W$ dus ook dat $dim(Im(V))=dim(W)$.
-We kijken nu opnieuw naar stelling 4.31 p 157.
-\[
-dim(V) = dim(ker(L)) + dim(Im(L))
-\]
-Als we dit invullen krijgen we het volgende.
-\[
-dim(V) = dim(ker(L)) + dim(W)
-\]
-Hieruit volgt dat $dim(V) \ge dim(W)$ want $dim(ker(L)) \ge 0$. Dit is in contradictie met $n<m$.
-\end{proof}
-
 \subsection{Oefening 8}
 Om de matrices van de basisverandering te berekenen stellen we voor beide bases een matrix op waarbij ze beide uitgeschreven worden ten opzichte van eenzelfde basis, bijvoorbeeld, de standaardbasis, dezen naast elkaar plaatsen en rijreduceren tot de linkse matrix de eenheidsmatrix is. De eerste oefening is relatief triviaal, zoals we zullen zien.
 \subsubsection*{a)}
@@ -473,125 +449,6 @@ T^{\beta}_{\beta} =
 \end{array}
 \right]
 \]
-
-\subsection{Oefening 10}
-
-\[
-T^{\alpha}_{\alpha} =
-\left[
-\begin{array}{c c c c}
-0 & 0 & 0 & 0\\
-1 & 1 & 1 & 0\\
-0 & 0 & 2 & 0\\
-0 & 0 & 0 & 3
-\end{array}
-\right]
-\]\\
-
-\textbf{VERBETERING}
-\[
-\left\lbrace
-\begin{array}{r l}
-T(X) &= X-4\\
-T(1+X) &= X-3\\
-T(X+X^2) &= X^2-7X-3\\
-T(X^3) &= X^3-12X^2+6X\\
-\end{array}
-\right.
-\]
-
-\[
-T^{\alpha}_{\alpha} =
-\left[
-\begin{array}{c c c c}
-5 & 4 & 0-4 & 18\\
--4 & -3 & -3 & 0\\
-0 & 0 & 1 & -12\\
-0 & 0 & 0 & 1
-\end{array}
-\right]
-\]\\
-
-\subsection{Oefening 11}
-\subsubsection*{a)}
-We berekenen hoe we de vectoren in $\alpha$ schrijven als lineaire combinatie van de vectoren in $\beta$.
-\[
-\left\lbrace
-\begin{array}{c c c c}
-(1,0,0) &= 1\cdot (1,0,0) &+ 0\cdot (1,1,0) &+ 0\cdot (1,1,1)\\
-(0,1,0) &= -1\cdot(1,0,0) &+ 1\cdot (1,1,0) &+ 0\cdot (1,1,1)\\
-(0,0,1) &= 0\cdot(1,0,0) &-1\cdot (1,1,0) &+ 1\cdot (1,1,1)
-\end{array}
-\right.
-\]
-Hieruit volgt het volgende.
-\[
-Id_\alpha^\beta = 
-\begin{pmatrix}
-1 & -1 & 0\\
-0 & 1 & -1\\
-0 & 0 & 1\\
-\end{pmatrix}
-\]
-Omgekeerd gaat het analoog.
-\[
-\left\lbrace
-\begin{array}{c c c c}
-(1,0,0) &= 1\cdot (1,0,0) &+ 0\cdot (0,1,0) &+ 0\cdot (0,0,1)\\
-(1,1,0) &= 1\cdot (1,0,0) &+ 1\cdot (0,1,0) &+ 0\cdot (0,0,1)\\
-(1,1,1) &= 1\cdot (1,0,0) &+ 1\cdot (0,1,0) &+ 1\cdot (0,0,1)
-\end{array}
-\right.
-\]
-\[
-Id_\beta^\alpha = 
-\begin{pmatrix}
-1 & 1 & 1\\
-0 & 1 & 1\\
-0 & 0 & 1\\
-\end{pmatrix}
-\]
-\subsubsection*{b)}
-\[
-\left\lbrace
-\begin{array}{c l c c c}
-T((1,0,0)) &= (1,0,1) &= 1\cdot (1,0,0) &+ 0\cdot (0,1,0) &+ 1\cdot (0,0,1) \\
-T((0,1,0)) &= (2,-1,0)&= 2\cdot (1,0,0) &- 1\cdot (0,1,0) &+ 0\cdot (0,0,1)\\
-T((0,0,1)) &= (1,0,4) &= 1\cdot (1,0,0) &+ 0\cdot (0,1,0) &+ 4\cdot (0,0,1)\\ 
-\end{array}
-\right.
-\]
-\[
-Id_\alpha^\alpha = 
-\begin{pmatrix}
-1 & 2 & 1\\
-0 & -1 & 0\\
-1 & 0 & 4\\
-\end{pmatrix}
-\]
-
-\subsubsection*{c)}
-\[
-\left\lbrace
-\begin{array}{c l c c c}
-T((1,0,0)) &= (1,0,1) &= 1\cdot (1,0,0) &- 1\cdot (1,1,0) &+ 1\cdot (1,1,1)\\
-T((1,1,0)) &= (3,-1,1)&= 4\cdot (1,0,0) &- 2\cdot (1,1,0) &+ 1\cdot (1,1,1)\\
-T((1,1,1)) &= (4,-1,5)&= 5\cdot (1,0,0) &- 6\cdot (1,1,0) &+ 5\cdot (1,1,1)\\
-\end{array}
-\right.
-\]
-\[
-Id_\beta^\beta = 
-\begin{pmatrix}
-1 & 4 & 5\\
--1 & -2 & -6\\
-1 & 1 & 5\\
-\end{pmatrix}
-\]
-
-\subsection{Oefening 17}
-
-
 \section{Opdrachten}
 
 \subsection{4.9}
