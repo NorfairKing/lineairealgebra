@@ -3,7 +3,7 @@
 
 \part{Hoofdstuk 4}
 \section{Bewijzen uit het boek}
-\subsection{Lemma 4.3}
+\subsection{Lemma 4.2}
 \subsubsection*{Te bewijzen}
 Een afbeelding $L:V\rightarrow W$ tussen re\"ele vectorruimten is een lineaire afbeelding a.s.a.
 $$L(\lambda_1v_1+\lambda_2v_2) = \lambda_1L(v_1)+\lambda_2L(V_2)\ \text{voor alle $\lambda_1,\lambda_2 \in \mathbb{R}$ en voor alle $v_1,v_2 \in V$}.$$
@@ -614,7 +614,63 @@ Id_\beta^\beta =
 
 \section{Opdrachten}
 
-\subsection{4.9}
+\subsection{4.5 p 136}
+\subsubsection*{a)}
+\[
+\mathbb{C} = (\mathbb{R},\mathbb{C},+)
+\]
+\textbf{Te Bewijzen}\\
+\[
+\forall v_1,v_2 \in \mathbb{C}: L(v_1+v_2) = L(v_1)+L(v_2) 
+\]
+\[
+\forall v\in V, \lambda \in \mathbb{R}: L(\lambda v) = \lambda L(v)
+\]
+\textbf{Bewijs}\\
+\begin{proof}
+Rechtstreeks bewijs\\
+Neem twee willekeurige vectoren $v_1 = x_1+y_1i$ en $v_2=x_2+y_2i$.
+\[
+L(v_1+v_2)=L( (x_1+y_1i) + (x_2+y_2i)) = L((x_1+x_2) + i(y_1+y_2))
+\]
+\[
+= (x_1+x_2)-i(y_1+y_2) = (x_1-y_1i) + (x_2-y_2i)
+\]
+\[
+= L(x_1+y_1i) + L(x_2+y_2i) = L(v_1)+L(v_2)
+\]
+Tot zover deel $1$ van het bewijs.\\
+Neem nu een willekeurige vector $v=x+yi$ en een willekeurige scalar $\lambda$.
+\[
+L(\lambda v) = L(\lambda (x+yi)) = L(\lambda x + \lambda yi) = \lambda x - \lambda yi
+\]
+\[
+\lambda (x-yi) = \lambda L(x+yi) = \lambda L(v)
+\]
+Nu hebben we bewezen dat $T$ een lineaire afbeelding is over $(\mathbb{R},\mathbb{C},+)$.
+\end{proof}
+
+\subsubsection*{b)}
+\[
+\mathbb{C} = (\mathbb{C},\mathbb{C},+)
+\]
+$T$ is geen lineaire afbeelding over $(\mathbb{C},\mathbb{C},+)$ want $T$ voldoet niet aan de definitie van een lineaire afbeelding\footnote{Zie definitie 4.1 p 130}. \\
+De volgende formule geldt namelijk niet.
+\[\forall v\in V, \lambda \in \mathbb{R}: L(\lambda v) = \lambda L(v)\]
+\textbf{Tegenvoorbeeld}\\
+Kies $\lambda = i \in \mathbb{C}$ en $v = 2+5i\in \mathbb{C}$.
+Het linkerlid is dan gelijk aan de volgende expressie.
+\[
+L(i(2+5i)) = L(2i-5) = -5 -2i
+\]
+Terwijl het rechterlid gelijk is aan de volgende expressie.
+\[
+iL(2+5i) = i(2-5i) = 2i+5
+\]
+Deze expressies zijn niet gelijk.
+
+
+\subsection{4.9 p 140}
 \subsubsection*{1)}
 We bepalen eerst de co\"ordinaten van $(2,0,5)$ ten opzichte van de eerste basis. Aangezien het over een transformatie gaat is $\beta$ zowel de eerste als de tweede basis. 
 Na het opstellen van een stelsel en rijreductie vinden we dat de co\"ordinaten $\left(\frac{12}{5},\frac{3}{5},\frac{-2}{5}\right)$ zijn.

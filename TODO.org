@@ -313,12 +313,12 @@
 *** TODO Extra
 **** TODO Algemene uitleg voor matrixvoorstelling van lineaire afbeelding.
 ** TODO Opdrachten   
-    - [ ] 4.5  p136 NorfairKing
-    - [ ] 4.9  p140
-        - [X] 1  warreee
-        - [?] 2a warreee
-        - [X] 2b MajorMonodon
-        - [X] 2c MajorMonodon
+    - [X] 4.5  p136 NorfairKing
+    - [X] 4.9  p140
+      - [X] 1  warreee
+      - [?] 2a warreee
+      - [X] 2b MajorMonodon
+      - [X] 2c MajorMonodon
     - [ ] 4.19 p147 jdewaen
     - [ ] 4.25 p154 fokdiekul
     - [ ] 4.37 p160 egonny
