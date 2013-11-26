@@ -264,9 +264,9 @@
      - [X] a NorfairKing
      - [ ] c egonny  
    - [ ] 18 warreee    
-   - [ ] 19 
+   - [-] 19 
      - [ ] a egonny     
-     - [ ] c NorfairKing
+     - [X] c NorfairKing
    - [ ] 22 
      - [ ] a warreee    
      - [ ] c egonny     
