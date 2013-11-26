@@ -91,14 +91,30 @@ en niet
 (\lambda_1 + \lambda_2)v = \lambda_1v+\lambda_2v
 \]
 
+\subsubsection*{c)}
+optelling is niet commutatief.
+\[
+(x_1,y_1) + (x_2,y_2) = (x_1+2x_2,y_1+2y_2)
+\]
+\[ \neq \]
+\[
+(x_2,y_2) + (x_1,y_1) = (x_2+2x_1,y_2+2y_1)
+\]
+
 \subsection{oef 2}
+\subsubsection*{a)}
+Deze verzameling vormt de unie van de drie vlakken rond de assen. Dit is geen deelruimte want de optelling is niet intern.\\
+\underline{Tegenvoorbeeld:}\\
+\[
+(1,0,0) + (0,1,1) = (1,1,1) \not \in W_1
+\]
 \subsubsection*{b)}
 $W_2$ is geen deelruimte van $\mathbb{R}^{3}$.\\
 \underline{Tegenvoorbeeld:}\\
 $x = (3, 4, 5) \in W_2$ en $y = (2, 2, \sqrt{8}) \in W_2$ maar $x + y = (5, 6, 5 + \sqrt{8}) \not \in W_2$
 
 \subsubsection*{e) }
-waar
+waar\\
 *) $0 \in W_5$ \\
 *) $A,B \in W_5 \longmapsto A+B \in W_5$ \\
 $ \sum\limits_{i=1,j=1}^a (A+B)_{ij} = \sum\limits_{i=1,j=1}^a A_{ij} + \sum\limits_{i=1,j=1}^a B_{ij} = 0+0 = 0 $ \\
@@ -117,6 +133,28 @@ Concreet:
 \[
 x = I_3
 \]
+
+\subsubsection*{g)}
+$W_7$ is een deelruimte van $\mathbb{R}^{3x3}$.\\
+\begin{proof} 
+
+1) $W_7$ bevat het nulelement. De nulmatrix is immers ook een symmetrische matrix. \\
+2) $ Symm(A1) + Symm(A2) = A3 $
+	and $A3 = \mathbb{R}^{3x3}$ \\
+3) $ \lambda \cdot Symm(A) = A2 $
+	and $ A2 = \mathbb{R}^{3x3}$
+
+Er is voldaan aan de drie eigenschappen.
+
+\end{proof}
+
+
+\subsubsection*{i)}
+$W_9$ is geen deelruimte van $R^{3\times 3}$. De optelling is namelijk niet intern.
+\[
+(0,1,0) + (1,0,0) = (1,1,0) \not \in W_9
+\]
+
 \subsubsection*{j)}
 $W_{10}$ is geen deelruimte van $R\rightarrow R$ want het neutraal element van $R\rightarrow R$  zit niet in $W_{10}$.
 \subsubsection*{l)}
@@ -199,7 +237,32 @@ Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1}
      &= r
 \end{align*}
 
-\subsection*{oef 6}
+\subsection*{oef 4}
+Welke oef uit de definitie van een vectorruimte zijn voldaan? \\
+1. De optelling is inwendig en overal bepaald, ja \\
+2. De optelling is associatief,	ja \\
+3. Er is een neutr element, ja \\
+4. Elk element heeft een tegeng element, ja \\
+5. De opt is comm, nee \\
+
+1. Distr-1, \\
+2. Distr-2, ja \\
+3. gemeng asso, ja\\
+4. nee
+
+\subsection{oef 5}
+Ja, $W$ is een deelruimte van $R[X]_{\le n}$ als $n\ge 1$.
+\subsubsection*{Te bewijzen}
+\[
+\forall w_1,w_2 \in W,\forall \lambda_1,\lambda_1 \in \mathbb{R}: \lambda_1w_1+\lambda_2w_2 \in W
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+Voor elke $w_1,w_2 \in W, \lambda_1,\lambda_1 \in \mathbb{R}$ geldt dat $ \lambda_1w_1+\lambda_2w_2 \in W$ want $w_1$ en $w_2$ zijn ofwel nul ofwel hebben ze graad $n$. Elke lineaire combinatie zal dus ofwel nul zijn ofwel graad $n$ hebben.
+\end{proof}
+
+
+\subsection{oef 6}
 \subsubsection*{Gegeven}
 $U$ en $W$ zijn deelruimten van een vectorruimte $(\mathbb{R},V,+)$.
 \subsubsection*{Te Bewijzen}
@@ -356,7 +419,33 @@ Het co\"ordinatenstel $(2,-3,1)$ komt dan weer overeen met:
 $$
 2\cdot (1+X) -3 \cdot (1+X^2)+ 1\cdot (X+X^2)= -1 +3X-2X^2
 $$
-\subsection*{oef 17}
+
+\subsection*{Oefening 16}
+
+Standaard basis : $\beta1 = {e1 =(1,0,0,0), e2 =(0,1,0,0), e3 = (0,0,1,0), e4 = (0,0,0,1) }$
+
+tweede basis : $\beta2 = {f1 = (1,1,1,1), f2 =(0,1,1,1), f3 = (0,0,1,1), f4= (0,0,0,1) }$
+
+volgens $\beta1  V = a1e1 + a2e2 + a3e3 + a4e4$
+volgens $\beta2 V = \lambda1 \cdot f1 + \lambda2 \cdot f2 + \lambda3 \cdot f3 + \lambda4 \cdot f4 $ 
+
+$=> (\lambda1, \lambda2, \lambda3, \lambda4) $
+
+\subsection{oef 17}
+\subsubsection*{a)}
+$W_1$ vormt een vlak. We zoeken twee lineair onafhankelijke vectoren in dat vlak, die zijn dan een basis.
+\[
+\left\lbrace
+\begin{pmatrix}
+1\\-2\\1\\
+\end{pmatrix}
+,
+\begin{pmatrix}
+2\\-2\\0
+\end{pmatrix}
+\right\rbrace
+\]
+
 \subsubsection*{b)}
 Voor de basis te kennen lossen we eerst volgend stelsel op want hieraan moet voldaan zijn:
 $$
@@ -388,10 +477,82 @@ Na Gauss-eliminatie krijgen we de rij-gereduceeerde vorm
   0 & 0 & 0
 \end{pmatrix}
 \]
-Hierdoor krijgen we de oplossingsverzameling $\{0\}$.\\
+Hierdoor krijgen we de oplossingsverzameling $\{(0,0,0)\}$.\\
 De basis van de \underline{nulruimte} is dus $\emptyset$.\\
 De rijen $r_1, r_2, r_3$ zijn niet-nulrijen, de basis van de \underline{rijruimte} is dus $vct\{(1,1,1), (1,1,-1), (1,-1,1)\}$.\\
 De kolommen $c_1, c_2, c_3$ zijn onafhankelijk en voortbrengend, de basis van de \underline{kolomruimte} is dus $vct\{(1,1,1,1), (1,1,-1,-1), (1,-1,1,-1)\}$.
+
+\subsubsection*{c)}
+\[
+\begin{pmatrix}
+0 & 1 & -1 &  -2 & 1 \\
+1 & 1 & -1 & 3   & 1 \\
+2 & 1 & -1 & 8   & 3 \\
+0 & 0 & -2 & 2   & 1 \\
+3 & 5 & -5 & 5   & 10\\
+\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}
+1 & 0 & 0 & 5 & 0 \\
+0 & 1 & 0 & -3& 0 \\
+0 & 0 & 1 & -1& 0 \\
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 \\
+\end{pmatrix}
+\]
+De eerste drie rijen van deze gereduceerde matrix vormen een basis voor de rijruimte.
+De eerste drie kolommen van de gereduceerde matrix vormen een basis voor de kolomruimte. 
+De oplossing van het homogeen stelsel van de gereduceerde matrix vormt de nullruimte van de matrix.
+De oplossingsverzameling is de volgende.
+\[
+\{(-5\lambda_1,3\lambda_1,\lambda_1,\lambda_1,\lambda_2)|\lambda_1,\lambda_2\in \mathbb{R}\}
+\]
+We kiezen hieruit twee onafhankelijke vectoren ($2=5-3$).
+\[
+\left\lbrace
+\begin{pmatrix}
+-5\\3\\1\\1\\0\\
+\end{pmatrix}
+,
+\begin{pmatrix}
+0\\0\\0\\0\\1\\
+\end{pmatrix}
+\right\rbrace
+\]
+
+\subsection{oef 23}
+Ik ga ervan uit dat we een bewijs moeten geven van deze stelling. Het staat er namelijk nergens bij.\\
+Zij $V$ een vectorruimte met $\beta$ een basis ervan. Zij $\beta_1,...,\beta_k$ de disjuncte unie ervan. Noteer $U_i=vct(\beta_i)$.
+\subsubsection*{Te Bewijzen}
+\[
+V = U_1 \oplus U_2 \oplus ... \oplus U_k
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+We weten dat voor elke $\beta_i,\beta_j$ de vectoren lineair onafhankelijk zijn, want samen vormen ze een basis. We weten dus al dat $\forall U_i,U_j: U_i \cap U_j = \{0\}$.\\
+Nu hoeven we enkel nog te bewijzen dat $\sum_i U_i=V$. Voor elke $u_i \in U_i$ geldt dat $u_i = \sum_k\lambda_k\beta_{ik}$, in woorden: "elke $u_i$ is een lineaire combinatie van de basisvectoren van $U_i$. $\sum_i U_i$ bevat alle mogelijke lineaire combinaties van alle mogelijke $u_i$. Deze combinaties kunnen geschreven worden als lineaire combinaties van de vectoren in $\beta$. Nu hebben we dus bewezen dat $\sum_i U_i=V$ en $\forall U_i,U_j: U_i \cap U_j = \{0\}$. Hieruit volgt dat $\bigoplus_iU_i=V$.
+\end{proof}
+
+
+
+\subsection{oef 25}
+Toon aan:
+$ U \bigoplus W = \mathbb{R}^{n x n}$
+
+\begin{proof}
+Wat zijn de voorwaarden die moeten voldoen?
+1) $ U + W = \mathbb{R}^{n x n}$
+2) $ U \cap W = {0}$
+
+nakijken 1) :
+Het is duidelijk dat de doorsnede van U en W enkel de nulmatrix is.
+
+nakijken 2) : 
+De som van 2 vierkante matrices met grootte n is opniew een vierkante matrix met afmeting n. $U + W = \mathbb{R}^{n x n}$
+
+QED
+
+\end{proof}
 
 \subsection*{oef 26}
 We kiezen $U = vct\{(0,1,0), (0,0,1)\}$.\\ Hierdoor is $(\mathbb{R}, \mathbb{R}^3, +) = U + W$ en $U \cap W = \{0\}$.\\
@@ -448,7 +609,42 @@ Dit is juist volgens de definitie van vectorsom en scalaire vermenigvuldiging.
 \subsubsection*{d)}
 $v_3 = (1,1)$
 
+\subsection{oef 28}
+\subsubsection*{b)}
+Zij $V = \{(1,0,...),(0,1,0,...),(0,0,1,0,...),...)\}$.\\
+\textbf{Te Bewijzen}\\
+$V$ is geen basis van $\mathbb{R}^\mathbb{N}$.\\
+\textbf{Bewijs}
+\begin{proof}
+In 28 a hebben we bewezen dat $V$ een vrij deel is van $\mathbb{R}^\mathbb{N}$. Om te bewijzen dat $V$ geen basis is van $\mathbb{R}^\mathbb{N}$ moeten we dus aantonen dat $V$ niet voortbrengend is voor $\mathbb{R}^\mathbb{N}$.
+TODO <wat betekent $\mathbb{R}^\mathbb{N}$?>
+\end{proof}
+
 \subsection{oef 30}
+
+\begin{proof}
+
+Eerst de optelling.
+De optelling is inwendig en overal bepaald zoals uit $R_{0}^{+} x R_{0}^{+} \rightarrow R_{0}^{+} $ 
+De optelling is associatief.
+$ (x + y) + z = x + (y+z) $
+$ xy + z = x + yz$
+$ xyz = xyz $
+
+Er is een neutraal element.
+$x \cdot 1 = x $
+
+GEEN Tegengesteld element.
+Het is niet mogenlijk om een uniek tegengesteld element te vinden voor elk element dat gelijk is aan 0.
+
+Commutatief!
+$xy = yx$
+
+Alle eigenschappen voor de optelling zijn niet voldaan, dus het is geen geldige definitie.
+
+Bij $ \bigotimes $ geldt distr1 ook al niet.
+
+\end{proof}
 
 \subsection{oef 32}
 We berekenen alle $a$ waarvoor de vier gegeven basisvectoren lineair afhankelijk zijn.
@@ -474,11 +670,104 @@ a = -1\\
 Nu weten we dus dat als $a$ \textit{niet} \'e\'en van die waarden aanneemt, de doorsnede van $U$ en $W$, $\{\vec{0}\}$ zal zijn. Een basis van $\{\vec{0}\}$ is de lege verzameling en de dimensie ervan is $0$.
 Tenslotte bepalen we nog voor de speciale gevallen van $a$ de dimensie en een basis.
 \subsubsection*{$a = 2$}
-TODO
+\[
+\left\lbrace
+\begin{pmatrix}
+6\\2\\0\\-2
+\end{pmatrix}
+,
+\begin{pmatrix}
+3\\1\\0\\-1
+\end{pmatrix}
+\right\rbrace
+\left\lbrace
+\begin{pmatrix}
+3\\5\\3\\-5
+\end{pmatrix}
+,
+\begin{pmatrix}
+0\\12\\0\\0
+\end{pmatrix}
+\right\rbrace
+\]
+Als $a=2$ dan zien we dat de twee vectoren die $U$ opspannen lineair afhankelijk zijn. $U_2$ is dus \'e\'endimensionaal. Als we de eerste vector verwijderen zijn de overblijvende vectoren lineair afhankelijk. De dimensie van de somruimte is dus $3$. Bij gevolg is de dimensie van de doorsnede $0$ en de basis ervoor $\emptyset$.
 \subsubsection*{$a=-10$}
-TODO
+\[
+\left\lbrace
+\begin{pmatrix}
+5\\2\\0\\-2
+\end{pmatrix}
+,
+\begin{pmatrix}
+3\\-11\\0\\-1
+\end{pmatrix}
+\right\rbrace
+\left\lbrace
+\begin{pmatrix}
+3\\5\\-5\\-5
+\end{pmatrix}
+,
+\begin{pmatrix}
+0\\0\\0\\0
+\end{pmatrix}
+\right\rbrace
+\]
+Hier is de dimensie van $W_a$ $1$. De als we de laatste vector verwijderen blijven er weer drie lineair onafhankelijke vectoren over. De dimensie vande doorsnede is weer $0$ en de basis daarvoor weer $\emptyset$.
 \subsubsection*{$a=-1$}
-TODO
+\[
+\left\lbrace
+\begin{pmatrix}
+3\\2\\0\\-2
+\end{pmatrix}
+,
+\begin{pmatrix}
+3\\-2\\0\\-1
+\end{pmatrix}
+\right\rbrace
+\left\lbrace
+\begin{pmatrix}
+3\\5\\0\\-5
+\end{pmatrix}
+,
+\begin{pmatrix}
+0\\9\\0\\0
+\end{pmatrix}
+\right\rbrace
+\]
+We weten dat voor elke vector $u = \begin{pmatrix}
+u_1\\u_2\\u_3\\u_4
+\end{pmatrix} \in V\cap W$ geldt:
+\[\exists \lambda_1,\lambda_2 :u = 
+\lambda_1
+\begin{pmatrix}
+3\\2\\0\\-2
+\end{pmatrix} + 
+\lambda_2
+\begin{pmatrix}
+3\\-2\\0\\-1
+\end{pmatrix}
+\wedge
+\exists \lambda_3,\lambda_4 :u = 
+\lambda_3
+\begin{pmatrix}
+3\\5\\0\\-5
+\end{pmatrix} + 
+\lambda_4
+\begin{pmatrix}
+0\\9\\0\\0
+\end{pmatrix}
+\]
+\[
+\left\lbrace
+\begin{array}{r l l}
+u_1 &= 3\lambda_1+3\lambda_2 &= 3\lambda_3\\
+u_2 &= 2\lambda_1-2\lambda_2 &= 5\lambda_3+9\lambda_4\\
+u_3 &= 0\\
+u_4 &= -2\lambda_1 -1\lambda_2 &= -5\lambda_3
+\end{array}
+\right.
+\]
+?? TODO <wat nu?!>
 
 \section{Oefenzitting 5}
 \subsection{oef 1}
@@ -607,5 +896,20 @@ $$U_1 = \{(x,0,0)\} $$
 $$U_2 =  \{ (0,y,0)\} $$
 $$U_3 = \{ (x,y,0)\} $$
 2) ???
+
+\subsection{3.51}
+$U+W$ is de deelruimte van $R[X]_{\le4}$ waarbij $a_3 = a_4$.
+\[U+W = \{a_0 + a_1 X + a_2 X^2 +a_3 X^3 + a_4 X^4 | a_3 = a_4\}\]
+Een basis van $U$ is simpelweg $\beta_U = \{1,X,X^2\}$. Een basis van $W$ is $\beta_W = \{X+X^2,X^3+X^4\}$. Een basis voor $U\cap W$ is $\beta_{U\cap W} = \{X+X^2\}$. Tenslotte is $\beta_{U+W} = \{1,X,X^2,X^3+X^4\}$ een basis van $U+W$. We verifi\"eren nu de dimensie stelling\footnote{Zie stelling 3.49 p 114.}.
+\[
+dim(U+W) + dim(U\cap W) = dimU+dimW
+\]
+\[
+4 + 1 = 3+2
+\]
+Dit ziet er juist uit.
+
+\subsection{3.59}
+
 
 \end{document}
