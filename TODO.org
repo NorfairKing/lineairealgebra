@@ -94,16 +94,16 @@
    CLOSED: [2013-10-22 Die 13:24]
 *** DELEGATED Voorbereiding
     CLOSED: [2013-10-22 Die 13:24] DEADLINE: <2013-10-13 Son>
-    - [-] 1 - egonny
+    - [-] 1
       - [X] a - noiseloop
       - [X] f - warreee
       - [X] h - fokdiekul
       - [X] j - NorfairKing
     - [X] 3 - egonny
-    - [X] 4 - noiseloop
+    - [X] 4
       - [X] a - warreee
     - [X] 9 - fokdiekul
-    - [-] 27 noiseloop
+    - [-] 27 
       - [X] b warreee   
       - [X] g noiseloop   
       - [X] j warreee     
@@ -112,7 +112,7 @@
     CLOSED: [2013-10-22 Die 13:24] DEADLINE: <2013-10-20 Son>
     - [X] 14 NorfairKing (a,b)
     - [X] 24 egonny
-    - [-] 27 noiseloop
+    - [-] 27 
       - [X] a warreee
       - [ ] f fokdiekul 
       - [X] h NorfairKing 
@@ -120,8 +120,9 @@
       - [ ] k MajorMonodon  
       - [X] l warreee        
     - [ ] EXTRA fokdiekul (opgave staat in bestand)
-*** TODO Extra
-    - [-] 1 fokdiekul   
+*** DELEGATED Extra
+    CLOSED: [2013-11-26 Tue 06:34]
+    - [-] 1 
       - [X] b NorfairKing 
       - [X] c egonny      
       - [X] d noiseloop   
@@ -129,47 +130,47 @@
       - [X] g fokdiekul   
       - [X] i NorfairKing 
     - [X] 2 egonny      
-    - [ ] 4 noiseloop   
+    - [ ] 4 
       - [ ] b warreee     
       - [X] c fokdiekul   
     - [X] 5 NorfairKing 
-    - [-] 6 egonny      
+    - [-] 6 
       - [X] a noiseloop   
       - [ ] b warreee     
       - [X] c fokdiekul   
     - [X] 7 NorfairKing 
     - [X] 8 egonny      
     - [?] 10 noiseloop (Moet nagekeken worden? [ ])
-    - [-] 11 warreee     
+    - [-] 11 
       - [X] a fokdiekul   
       - [X] b NorfairKing 
       - [X] c egonny      
     - [X] 12 noiseloop   
     - [ ] 13 warreee     
     - [X] 15 fokdiekul   
-    - [-] 16 NorfairKing 
+    - [-] 16
       - [ ] a egonny      
       - [X] b noiseloop   
       - [ ] c warreee     
       - [X] d fokdiekul   
     - [X] 17 NorfairKing 
     - [ ] 18 egonny      
-    - [ ] 19 noiseloop   
+    - [ ] 19 
       - [ ] a warreee     
       - [X] b fokdiekul   
-    - [-] 20  NorfairKing 
+    - [-] 20 
       - [ ] a egonny      
       - [X] b noiseloop   
       - [ ] c warreee     
     - [X] 21 fokdiekul   
-    - [ ] 22 NorfairKing 
+    - [ ] 22 
       - [ ] a egonny      
       - [ ] b jdewaen   
       - [ ] c warreee     
     - [X] 23 fokdiekul   
     - [X] 25 NorfairKing 
     - [ ] 26 egonny      
-    - [-] 27 noiseloop   
+    - [-] 27 
       - [X] c fokdiekul   
       - [X] d NorfairKing 
       - [ ] e egonny      
@@ -201,11 +202,11 @@
       - [X] f NorfairKing
       - [X] j NorfairKing
       - [X] l egonny
-    - [ ] 5 NorfairKing
+    - [X] 5 NorfairKing
     - [X] 7 warreee
     - [X] 12 warreee
     - [X] 13 warreee
-    - [-] 19
+    - [X] 19
       - [X] b egonny
     - [X] 26 egonny
 *** DELEGATED In Oefenzitting
@@ -288,7 +289,7 @@
    - [?] 3.48 p113  fokdiekul  
    - [X] 3.51 p115  NorfairKing
    - [ ] 3.55 p 116 egonny     
-   - [ ] 3.59 p 118 NorfairKing
+   - [?] 3.59 p 118 NorfairKing
    - [ ] 3.64 p 123 warreee
 * TODO Hoofdstuk 4
   DEADLINE: <2013-11-26 Die>
