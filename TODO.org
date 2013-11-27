@@ -3,7 +3,8 @@
 
 * DONE Hoofdstuk 1
   CLOSED: [2013-10-27 Son 14:04] DEADLINE: <2013-10-08 Die>
-** TODO Bewijzen
+** DONE Bewijzen
+   CLOSED: [2013-11-27 Wed 07:49]
 *** DONE propositie 1.8 p 21
     CLOSED: [2013-11-20 Wed 20:44]
 *** DONE stelling 1.11 p 23
@@ -26,8 +27,10 @@
     CLOSED: [2013-11-22 Fri 14:00]
 *** DONE Lemma 1.41 p 40
     CLOSED: [2013-11-22 Fri 14:19]
-*** TODO stelling 1.42 p 41
-*** TODO stelling 1.45 p 43
+*** DONE stelling 1.42 p 41
+    CLOSED: [2013-11-27 Wed 07:49]
+*** DONE stelling 1.45 p 43
+    CLOSED: [2013-11-27 Wed 07:49]
 ** DONE Oefeningen
    CLOSED: [2013-10-27 Son 14:03]
 *** DONE 1.7.1

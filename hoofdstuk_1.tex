@@ -292,7 +292,17 @@ Zij $A$ een $m\times n$ matrix die in echelonvorm gebracht kan worden door eleme
 \subsubsection*{Te Bewijzen}
 Er bestaat een $m\times m$ benedendriehoeksmatrix $L$ en een $m\times n$ bovendriehoeksmatrix $U$ zodat $A = L\cdot U$.
 \subsubsection*{Bewijs}
-TODO
+Om de matrix $A$ in echelonvorm te brengen moeten we deze links vermenigvuldigen met elementaire matrices die benedendriehoeksmatrices zijn als er geen rij omwisselingen nodig zijn. Noem deze elementaire matrices $E_1,...,E_k$.
+\[
+E_k\cdot ... \cdot E_1 \cdot A = U
+\]
+De resulterende matrix $U$ is in echelonvorm, dus een bovendriehoeksmatrix. We weten dat elementaire matrices inverteerbaar zijn\footnote{Zie Stelling 1.35 p 37} dus de volgende stelling geldt.
+\[
+A = E_1^{-1}\cdot ...\cdot E_k^{-1} \cdot U = L\cdot U
+\]
+We weten ook dat de inverse van de originele elementaire matrices benedendriehoeks matrices zijn, dus $L = E_1^{-1}\cdot ...\cdot E_k^{-1}$ is ook benedendriehoeks\footnote{Zie Lemma 1.41 p 40}.
+$L\cdot U$ heet de $LU$-decompositie.
+
 
 \subsection{Stelling 1.45 p 43}
 Zij $A$ een inverteerbare $n\times n$ matrix die via rijoperaties tot in trapvorm kan gebracht worden zonder rijen te verwisselen.
