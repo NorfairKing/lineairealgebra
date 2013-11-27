@@ -135,7 +135,7 @@
       - [ ] f fokdiekul 
       - [X] h NorfairKing 
       - [X] i egonny      
-      - [ ] k MajorMonodon  
+      - [X] k MajorMonodon  
       - [X] l warreee        
     - [ ] EXTRA fokdiekul (opgave staat in bestand)
 *** DELEGATED Extra
@@ -238,7 +238,7 @@
    - [X] 9 warreee
    - [ ] 10 warreee
    - [ ] 11 huistaak
-   - [ ] 14 MajorMonodon 
+   - [X] 14 MajorMonodon 
    - [ ] 15 huistaak
    - [X] 17 
      - [X] b warreee
