@@ -94,7 +94,8 @@
 * DELEGATED Hoofdstuk 2
   CLOSED: [2013-10-08 Die 22:23] DEADLINE: <2013-11-05 Die>
 ** TODO Bewijzen
-*** TODO Stelling 2.2 p 57
+*** DONE Stelling 2.2 p 57
+    CLOSED: [2013-11-27 Wed 09:32]
 *** TODO Stelling 2.3 p 58
 *** TODO Stelling 2.4 p 59
 *** TODO Gevolg 2.5 p 60

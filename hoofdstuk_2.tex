@@ -1,6 +1,112 @@
 \documentclass[lineaire_algebra_oplossingen.tex]{subfiles}
 \begin{document}
 
+\section{Bewijzen uit het boek}
+\subsection{Stelling 2.2 p 57}
+Zij $f : \mathbb{R}^{n\times n} \rightarrow \mathbb{R}:A\mapsto f(A)$ een afbeeldingen die aan definitie 2.1 op pagina 57 voldoet.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item $f$ is lineair in de $i$de rij voor elke $i\in \{1,2,...,n\}$
+\[
+f\left(
+\begin{pmatrix}
+R_1 \\ \vdots \\ \lambda R_i + \mu R_i' \\ \vdots \\R_n
+\end{pmatrix}
+\right)
+=
+\lambda
+f\left(
+\begin{pmatrix}
+R_1 \\ \vdots \\ R_i\\\vdots \\R_n
+\end{pmatrix}
+\right)
++
+\mu 
+f
+\left(
+\begin{pmatrix}
+R_1 \\ \vdots \\ R_i' \\\vdots \\R_n
+\end{pmatrix}
+\right)
+\] 
+\item Als er in $A$ een nulrij is, of als er twee gelijke rijen zijn, dan geldt $f(A)=0$.
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+\begin{enumerate}
+\item We verwisselen rij $1$ met rij $i$ om de volgende uitdrukking te bekomen.
+\[
+f\left(
+\begin{pmatrix}
+R_1 \\ \vdots \\ \lambda R_i + \mu R_i' \\ \vdots \\R_n
+\end{pmatrix}
+\right)
+=
+-
+f\left(
+\begin{pmatrix}
+\lambda R_i + \mu R_i' \\ \vdots \\ R_1 \\ \vdots \\R_n
+\end{pmatrix}
+\right)
+\] 
+We weten dat lineariteit geldt voor de eerste rij\footnote{Zie D-3 in Definitie 2.1 p 57}.
+\[
+-
+f\left(
+\begin{pmatrix}
+\lambda R_i + \mu R_i' \\ \vdots \\ R_1 \\ \vdots \\R_n
+\end{pmatrix}
+\right)
+=
+-
+\lambda
+f\left(
+\begin{pmatrix}
+R_i \\ \vdots \\ R_1\\\vdots \\R_n
+\end{pmatrix}
+\right)
+-
+\mu 
+f
+\left(
+\begin{pmatrix}
+R_i' \\ \vdots \\ R_1 \\\vdots \\R_n
+\end{pmatrix}
+\right)
+\] 
+We verwisselen in de matrixen in beide termen opnieuw rij $1$ met rij $i$.
+\[
+\lambda
+f\left(
+\begin{pmatrix}
+R_1 \\ \vdots \\ R_i\\\vdots \\R_n
+\end{pmatrix}
+\right)
++
+\mu 
+f
+\left(
+\begin{pmatrix}
+R_1 \\ \vdots \\ R_i' \\\vdots \\R_n
+\end{pmatrix}
+\right)
+\] 
+\item
+Gevalsonderscheid\\
+Geval 1: $A$ heeft twee gelijke rijen.\\
+Stel $R_i = R_j$ zijn gelijke rijen. We kunnen nu $R_i$ en $R_j$ omwisselen om $A'$ te bekomen. Nu zal $f(A)$ het tegengestelde zijn van $f(A')$ maar $A$ en $A'$ zijn gelijk omdat de verwisselde rijen gelijk zijn.
+\[
+f(A) = - f(A) \Leftrightarrow f(A)=0
+\]
+Geval 2: $A$ heeft een nulrij.\\
+Stel dat $R_i$ een nulrij is in $A$. Vervang nu $R_i$ door $R_i'  = \lambda R_i$ (met $\lambda \neq 0$) om $A'$ te bekomen. $A$ is gelijk aan $A'$ want $\forall \lambda \in \mathbb{R}: \lambda*0=0$. Bovendien geldt door lineariteit van de $i$ de rij (zie hierboven) het volgende.
+\[
+f(A) = \lambda f(A')
+\]
+Dit kan enkel als $f(A) = 0$.
+\end{enumerate}
+\end{proof}
+
 \part{Hoofdstuk 2}
 \section{2.4}
 \subsection{oef 1}
