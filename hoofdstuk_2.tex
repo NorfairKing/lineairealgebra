@@ -107,6 +107,85 @@ Dit kan enkel als $f(A) = 0$.
 \end{enumerate}
 \end{proof}
 
+\subsection{Stelling 2.3 p 58}
+Zij $f : \mathbb{R}^{n\times n} \rightarrow \mathbb{R}:A\mapsto f(A)$ een afbeeldingen die aan definitie 2.1 (determinant afbeelding) op pagina 57 voldoet.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item Als men op de matrix $A$ een elementaire rijoperatie uitvoert van het type $R_i\rightarrow R_i + \lambda R_j$ met $j\neq i$, dan verandert $f(A)$ niet.
+\item Als $E$ een elementaire matrix is, dan is 
+\[
+\left\lbrace
+\begin{array}{c l l}
+f(E_1) &= 1 & \text{ als } E_1 \text{ correspondeert met } R_i \rightarrow R_i + \lambda R_j\\
+f(E_2) &= -1 & \text{ als } E_2 \text{ correspondeert met } R_i \leftrightarrow R_j\\
+f(E_3) &= \lambda & \text{ als } E_2 \text{ correspondeert met } R_i \rightarrow \lambda R_i\\
+\end{array}
+\right.
+\]
+\item Als $E$ een elementaire matrix is, geldt steeds dat $f(E\cdot A) = f(E)\cdot f(A)$.
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+\begin{enumerate}
+\item We weten dat de afbeelding $f$ lineair is in de $i$-de rij\footnote{Zie Stelling 2.2 p 57 D-4} dus het volgende geldt.
+\[
+f
+\left(
+\begin{pmatrix}
+R_1\\ \vdots\\R_i+\lambda R_j\\\vdots\\R_j\\\vdots\\R_n
+\end{pmatrix}
+\right)
+=
+f
+\left(
+\begin{pmatrix}
+R_1\\ \vdots\\R_i\\\vdots\\R_j\\\vdots\\R_n
+\end{pmatrix}
+\right)
++
+\lambda
+f
+\left(
+\begin{pmatrix}
+R_1\\ \vdots\\R_j\\\vdots\\R_j\\\vdots\\R_n
+\end{pmatrix}
+\right)
+=
+f(A)
+\]
+De laatste gelijkheid geldt omdat de matrix in de tweede term van het middelste lid twee gelijke rijen heeft, namelijk $R_i$ en $R_j$\footnote{Zie Stelling 2.2 p 57 D-5}.
+
+\item
+Kijk even terug naar pagina 36 om te zien hoe elementaire matrices er uitzien. Onthoud bovendien dat $f(\mathbb{I}_n)=1$ \footnote{Zie definitie 2.1 p 57 D-1}.
+\begin{enumerate}
+\item $E_1$ bekomen we door op $\mathbb{I}_n$ de elementaire rijoperatie uit te voeren van het type $R_i\rightarrow R_i + \lambda R_j$. In Het eerste deel van dit bewijs dat deze rijoperatie niets aan de waarde van $f$ verandert dus $f(E_1) = f(\mathbb{I}) = 1$.
+\item $E_2$ bekomen we door in $\mathbb{I}_n$ twee rijen van plaats te veranderen. Wanneer we twee rijen van plaats veranderen keert het teken van $f$ om dus $f(E_2) = -f(\mathbb{I}_n) = -1$.\footnote{Zie Definitie 2.1 p 57 D-2}\\\\
+\item 1$E_3$ bekomen we door in $\mathbb{I}_n$ rij $R_i$ te vervangen door $R_i' = \lambda R_i$. Uit de lineariteit van $f$ volgt dat $f(E_3) = \lambda f(\mathbb{I}_n) = \lambda$\footnote{Zie Stelling 2.2 p 57 D-4}.
+\end{enumerate}
+
+\item
+We moeten een gevalsonderscheid maken.
+\begin{enumerate}
+\item $E$ correspondeert met  $R_i \rightarrow R_i + \lambda R_j$.\\
+$A' = E\cdot A$ is de matrix waarin $E$ uitgevoerd is op $A$. In het eerste deel van dit bewijs hebben we aangetoond dat de waarde van $f$ gelijk blijft als we $E$ uitvoeren op $A$. Bovendien weten we dat $f(E)=1$ uit deel twee van dit bewijs.
+\[
+f(E\cdot A) = f(A') = f(A) = f(E)\cdot f(A)
+\]
+\item $E$ correspondeert met  $R_i \leftrightarrow R_j$.\\
+$A' = E\cdot A$ is de matrix waarin twee rijen verwisselt zijn zoals beschreven door $E$. Als we twee rijen verwisselen in een matrix keert het teken van $f$ om\footnote{Zie definitie 2.1 p 57 D-2}.
+\[
+f(E\cdot A) = f(A') = -f(A) = f(E)\cdot f(A)
+\]
+De bovenstaande bewering geldt want $f(E) = -1$ zoals bewezen in deel twee van dit bewijs.
+\item $E$ correspondeert met  $R_i \rightarrow \lambda R_i$.
+$A' = E\cdot A$ is de matrix waarin rij $R_i$ vervangen is door $R_i' = \lambda R_i$. Door lineariteit in de $i$-de rij geldt dan de volgende bewering\footnote{Zie Stelling 2.2 p 57 D-2}.
+\[
+f(A') = \lambda f(A)
+\]
+\end{enumerate}
+\end{enumerate}
+\end{proof}
+
 \part{Hoofdstuk 2}
 \section{2.4}
 \subsection{oef 1}
