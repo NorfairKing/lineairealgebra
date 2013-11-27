@@ -1,6 +1,8 @@
 \documentclass[lineaire_algebra_oplossingen.tex]{subfiles}
 \begin{document}
 
+
+\part{Hoofdstuk 2}
 \section{Bewijzen uit het boek}
 \subsection{Stelling 2.2 p 57}
 Zij $f : \mathbb{R}^{n\times n} \rightarrow \mathbb{R}:A\mapsto f(A)$ een afbeeldingen die aan definitie 2.1 op pagina 57 voldoet.
@@ -177,8 +179,8 @@ $A' = E\cdot A$ is de matrix waarin twee rijen verwisselt zijn zoals beschreven 
 f(E\cdot A) = f(A') = -f(A) = f(E)\cdot f(A)
 \]
 De bovenstaande bewering geldt want $f(E) = -1$ zoals bewezen in deel twee van dit bewijs.
-\item $E$ correspondeert met  $R_i \rightarrow \lambda R_i$.
-$A' = E\cdot A$ is de matrix waarin rij $R_i$ vervangen is door $R_i' = \lambda R_i$. Door lineariteit in de $i$-de rij geldt dan de volgende bewering\footnote{Zie Stelling 2.2 p 57 D-2}.
+\item $E$ correspondeert met $R_i \rightarrow \lambda R_i$.
+$A' = E\cdot A$ is de matrix waarin rij $R_i$ vervangen is door $R_i' = \lambda R_i$. Door lineariteit in de $i$-de rij geldt dan de volgende bewering\footnote{Zie Stelling 2.2 p 57 D-4}.
 \[
 f(A') = \lambda f(A)
 \]
@@ -186,7 +188,61 @@ f(A') = \lambda f(A)
 \end{enumerate}
 \end{proof}
 
-\part{Hoofdstuk 2}
+\subsection{Stelling 2.4 p 59}
+Zij $f : \mathbb{R}^{n\times n} \rightarrow \mathbb{R}:A\mapsto f(A)$ een afbeeldingen die aan definitie 2.1 (determinant afbeelding) op pagina 57 voldoet.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item Als $A$ een driehoeksmatrix is, dan is $f(A)$ gelijk aan het product van de diagonaalelementen in $A$.
+\[
+f(A) = \prod_{i=1}^n (A)_{ii}
+\]
+\item $A$ is inverteerbaar $\Leftrightarrow f(A) \neq 0$.
+\item $\forall A,B \in \mathbb{R}^{n\times n}: f(A\cdot B) = f(A)\cdot f(B)$
+\item $f(A^T) = f(A)$.
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{enumerate}
+\item Als $A$ een driehoeksmatrix is, is $A$ rij-equivalent (uitsluitend via rijoperaties van het type $R_i \rightarrow R_i + \lambda R_j$) met $A'$ zijnde de diagonaalmatrix met precies dezelfde elementen op de diagonaal als $A$.
+\[
+f(A) = f(A') = \prod_{i=1}^n (A)_{ii}
+\]
+De bovenstaande bewering volgt uit de lineariteit van de determinant afbeelding en uit de definitie waarin staat dat $f(\mathbb{I}_n)=1$\footnote{Zie Stelling 2.2 p 57 D-4} \footnote{Zie definitie 2.1 p 57 D-2}. $A'$ is namelijk gelijk aan de eenheidsmatrix waar herhaaldelijk de elementaire rijoperatie van type $R_i \rightarrow \lambda R_i$ op is uitgevoerd.
+\item Elke inverteerbare matrix valt te bekomen door op de eenheidsmatrix $\mathbb{I}_n$ elementaire rijoperaties uit te voeren zonder ooit een rij te vervangen door een nulrij. Dit houdt in dat elke inverteerbare matrix $A$ geschreven kan worden als volgt.
+\[
+A = E_1\cdot ... \cdot E_k
+\]
+Nemen we nu van beide leden de determinant dan krijgen we de volgende uitdrukking.
+\[
+f(A) = f(E_1\cdot ... \cdot E_k) = f(E_1)\cdot ... \cdot f(E_k) \neq 0
+\]
+De tweede gelijkheid omdat $\forall A\in \mathbb{R}^{n\times n}: f(E\cdot A) = f(E)\cdot f(A)$\footnote{Zie stelling 2.3 p 58}. De derde gelijkheid geldt omdat geen enkele elementaire matrix een determinant heeft die nul is.\\\\
+$A$ is altijd rij-equivalent aan een matrix $U$ in trapvorm\footnote{Zie Propositie 1.8 p 21}. Dit betekent dat er een aantal elementaire matrices $E_1',...,E_k'$ bestaan zodat de volgende bewering geldt.
+\[
+E_k'\cdot ...\cdot E_1' \cdot A = U
+\]
+Als $A$ niet inverteerbaar is zal $U$ dat ook niet zijn. Dit zou betekenen dat er op de diagonaal van $U$ een nul staat en volgens deel \'e\'en van dit bewijs is $f(A)$ dan gelijk aan nul.
+\item
+Als $A$ niet inverteerbaar is, dan is ook $A\cdot B$ niet inverteerbaar. Dan geldt de bewering want volgend deel twee van dit bewijs is $f(A)$ dan gelijk aan nul en $f(A)\cdot f(B) = 0\cdot f(B) = 0$ geldt.\\
+Als $A$ wel inverteerbaar is is $A$ het product van elementaire matrices\footnote{Zie stelling 1.36 p 38}.
+\[
+A = E_1\cdot ...\cdot E_k
+\]
+Bijgevolg geldt de volgende bewering.
+\[
+f(A\cdot B) = f(E_1\cdot ...\cdot E_k \cdot B) = f(E_1\cdot ...\cdot E_k) \cdot f(B)) = f(A)\cdot f(B)
+\]
+De tweede gelijkheid volgt uit het feit dat $\forall A\in \mathbb{R}^{n\times n}: f(E\cdot A) = f(E)\cdot f(A)$ geldt\footnote{Zie stelling 2.3 p 58}.
+\item 
+Als $A$ inverteerbaar is dan is $A^T$ ook inverteerbaar en omgekeerd\footnote{Zie Opdracht 1.33 p 35}. Als $A$ niet inverteerbaar is geldt $f(A) = f(A^T)=0$. Als $A$ wel inverteerbaar is, is $A$ een product van elementaire matrices\footnote{Zie stelling 1.36 p 38}.
+\[
+A = E_1\cdot ...\cdot E_k \Leftrightarrow A^T =  E_k^T\cdot ...\cdot E_1^T
+\]
+Bovenstaande bewering geldt vanwege een eigenschap van de getransponeerde matrix van het product van matrices\footnote{Zie Eigenschap 1.22 p 32 (bovenaan)}. $f(E^T)=f(E)$ want $E$ is ofwel symmetrisch (dan is $E^T$ gelijk aan $E$) ofwel is $f(E)$ gelijk aan  $1$. De volgende bewering geldt dan dus ook.
+\[
+f(A) = f(E_1\cdot ...\cdot E_k) = f(E_1)\cdot ...\cdot f(E_k) = f(E_1^T)\cdot ...\cdot f(E_k^T) = f(E_k^T\cdot ...\cdot E_1^T) = f(A^T)
+\]
+\end{enumerate}
+
 \section{2.4}
 \subsection{oef 1}
 \subsubsection*{a}

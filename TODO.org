@@ -96,8 +96,10 @@
 ** TODO Bewijzen
 *** DONE Stelling 2.2 p 57
     CLOSED: [2013-11-27 Wed 09:32]
-*** TODO Stelling 2.3 p 58
-*** TODO Stelling 2.4 p 59
+*** DONE Stelling 2.3 p 58
+    CLOSED: [2013-11-27 Wed 10:11]
+*** DONE Stelling 2.4 p 59
+    CLOSED: [2013-11-27 Wed 10:53]
 *** TODO Gevolg 2.5 p 60
 *** TODO Stelling 2.7 p 61
 *** TODO Stelling 2.10 p 62
