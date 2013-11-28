@@ -784,10 +784,16 @@ Niet waar, tegenvoorbeeld:
 -1 & 2 & 2\\
 3 & 2 & 1
 \end{vmatrix}
-A_{11} : C_{11} = (-1)^(1+1) \cdot (2 - 4) = -2
-A_{12} : C_{12} = (-1)^(1+2) \cdot (-1 -6) = 7
-A_{13} : C_{13} = -8
-A_{33} : C_{33} = 2
+\]
+\[
+\left\lbrace
+\begin{array}{c c c}
+A_{11}: &C_{11} &= (-1)^(1+1) \cdot (2 - 4) = -2\\
+A_{12}: &C_{12} &= (-1)^(1+2) \cdot (-1 -6) = 7\\
+A_{13}: &C_{13} &= -8\\
+A_{33}: &C_{33} &= 2\\
+\end{array}
+\right.
 \]
 \subsection{oef 13}
 $$
@@ -880,6 +886,8 @@ C_{11} & C_{21} & C_{31}\\
 C_{21} & C_{22} & C_{32}\\
 C_{13} & C_{23} & C_{33}
 \end{vmatrix}
+\]
+\[
 = 
 \begin{vmatrix}
 1 & -8 & -5\\
@@ -921,14 +929,22 @@ De uitleg staat tss "(())"
 
 \subsection{oef 20}
 \subsubsection*{b)}
-\[
+
 WAAR.
-adj(A) = CofactorenMatrix(A)^T (Def.)
-dan is : (adj(A))^T = (CM(A)^T)^T
-wat gewoon CM(A) oplevert.
-vervolgens is : adj(A^T) = CM(A^T)^T
-wat opnieuw CM(A) oplevert.
+\[
+adj(A) = CofactorenMatrix(A)^T
 \]
+dan is : 
+\[
+(adj(A))^T = (CM(A)^T)^T
+\]
+wat gewoon $CM(A)$ oplevert.
+vervolgens is : 
+\[
+adj(A^T) = CM(A^T)^T
+\]
+wat opnieuw $CM(A)$ oplevert.
+
 
 \subsubsection*{oef 21}
 \[A^{-1} = adj(A)/det(A)\]
