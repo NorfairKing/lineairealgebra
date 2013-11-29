@@ -306,6 +306,34 @@ Stel dat de bewering geldt voor een bepaalde $m \in \mathbb{N}$ dan bewijzen we 
 Nu is $\sigma$ een samenstelling van $m+1$ transposities. $\sigma$ kan ookgezien worden als de samenstelling van een permutatie in $\mathbb{S}_n$ en een transpositie want elke permutatie in $\mathbb{S}_n$ is een samenstelling van transposities.\footnote{Zie Stelling 2.7 p 61}. Noem deze permutatie $\sigma'$. We weten dat $sgn(\sigma') = (-1)^m$ volgens de basis stap. We weten ook dat $sgn(\tau \circ \sigma') = -(-1)^m$ waarin $\tau$ de $m+1$de transpositie is \footnote{Zie Stelling 2.10 p 62}.
 \end{proof}
 
+\subsection{Stelling 2.18 p 69}
+Zij $A \in \mathbb{R}^{n\times n}$
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item
+\[
+det(A) = \sum_{j=1}^n(-1)^{i+j}a_{ij}det(M_{ij})
+\]
+\item
+\[
+det(A) = \sum_{i=1}^n(-1)^{i+j}a_{ij}det(M_{ij})
+\]
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+\[
+det(A) = \sum_{\sigma \in \mathbb{S}_n} a_{1\sigma(1)}a_{2\sigma(2)}...a_{n\sigma(n)}
+\]
+\[
+C_{ij} = (-1)^{i+j}det_{M_{ij}} = \sum_{\sigma \in \mathbb{S}_n,\sigma(i)=j}sgn(\sigma)a_{2\sigma(2)}...a_{n\sigma(n)}
+\]
+\begin{enumerate}
+\item
+
+\item
+
+\end{enumerate}
+\end{proof}
 
 \section{2.4}
 \subsection{oef 1}
