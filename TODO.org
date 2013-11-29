@@ -108,7 +108,8 @@
 *** DONE Stelling 2.12 p 63
     CLOSED: [2013-11-29 Fri 11:56]
 *** TODO Stelling 2.18 p 69
-*** TODO Stelling 2.21 p 71
+*** DONE Stelling 2.21 p 71
+    CLOSED: [2013-11-29 Fri 12:45]
 *** TODO Gevolg 2.22 p 72
 *** TODO Stelling 2.25 p 74
 ** DELEGATED Oefeningen

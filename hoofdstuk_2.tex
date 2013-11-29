@@ -335,6 +335,73 @@ C_{ij} = (-1)^{i+j}det_{M_{ij}} = \sum_{\sigma \in \mathbb{S}_n,\sigma(i)=j}sgn(
 \end{enumerate}
 \end{proof}
 
+\subsection{Stelling 2.21 p 71}
+Zij $A \in \mathbb{R}^{n\times n}$.
+\subsubsection*{Te Bewijzen}
+\[
+A\cdot Adj(A) = adj(A) \cdot A = det(A)\cdot\mathbb{I}_n
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+We zullen het matrixproduct $A\cdot Adj(A)$ en $adj(A) \cdot A$ berekenen.\\\\
+\emph{Elementen op de hoofddiagonaal van het product}\\
+Het element op de $i$-de rij en de $i$-de kolom van het product ziet er als volgt uit.
+\[
+(A\cdot Adj(A))_{ii} =
+\begin{pmatrix}
+a_{i1} & a_{i2}&\cdots&a_{in}\\
+\end{pmatrix}
+\begin{pmatrix}
+C_{i1}\\C_{i2}\\\vdots\\C_{in}
+\end{pmatrix}
+=
+\sum_{k=1}^na_{ik}C_{ik} = det(A)
+\]
+Deze uitdrukking geeft de ontwikkeling van $det(A)$ naar rij $i$ weer.
+Analoog geldt voor $adj(A) \cdot A$ iets gelijkaardig.
+\[
+(adj(A) \cdot A)_{ii} =
+\begin{pmatrix}
+C_{i1}&C_{i2}&\cdots&C_{in}\\
+\end{pmatrix}
+\begin{pmatrix}
+a_{i1}\\a_{i2}\\\cdots\\a_{in}\\
+\end{pmatrix}
+=
+\sum_{k=1}^na_{ik}C_{ik} = det(A)
+\]
+\emph{Elementen niet op de hoofddiagonaal van het product}\\
+Voor de elementen niet op de hoofddiagonaal rest er ons nu nog te bewijzen dat die nul zijn.\\
+We berekenen het element van het product op positie $i\neq j$.
+\[
+(A\cdot Adj(A))_{ij} =
+\begin{pmatrix}
+a_{i1} & a_{i2}&\cdots&a_{in}\\
+\end{pmatrix}
+\begin{pmatrix}
+C_{j1}\\C_{j2}\\\vdots\\C_{jn}
+\end{pmatrix}
+=
+\sum_{k=1}^na_{ik}C_{jk}
+=0
+\]
+Deze laatste uitdrukking vormt de ontwikkeling van rij $j$ van de determinant van een matrix $A'$ waarbij $A'$ een matrix is waarbij $R_i = R_j = \begin{pmatrix}a_{i1} & a_{i2}&\cdots&a_{in}\\\end{pmatrix}$. Deze determinant is evident nul omdat er in $A$ twee gelijke rijen voorkomen\footnote{Zie Stelling 2.2 p 57 D-5}.\\
+Opnieuw is de uitdrukking voor $adj(A) \cdot A$ analoog.
+\[
+(A\cdot Adj(A))_{ij} =
+\begin{pmatrix}
+C_{j1}&C_{j2}&\cdots&C_{jn}\\
+\end{pmatrix}
+\begin{pmatrix}
+a_{i1}\\a_{i2}\\\vdots\\a_{in}\\
+\end{pmatrix}
+=
+\sum_{k=1}^na_{ik}C_{jk}
+=0
+\]
+\end{proof}
+
+
 \section{2.4}
 \subsection{oef 1}
 \subsubsection*{a}
