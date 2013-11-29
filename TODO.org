@@ -105,7 +105,8 @@
 *** TODO Stelling 2.7 p 61
 *** DONE Stelling 2.10 p 62
     CLOSED: [2013-11-29 Fri 11:37]
-*** TODO Stelling 2.12 p 63
+*** DONE Stelling 2.12 p 63
+    CLOSED: [2013-11-29 Fri 11:56]
 *** TODO Stelling 2.18 p 69
 *** TODO Stelling 2.21 p 71
 *** TODO Gevolg 2.22 p 72
