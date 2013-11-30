@@ -6,7 +6,7 @@
 \subsection{Lemma 4.2}
 \subsubsection*{Te bewijzen}
 Een afbeelding $L:V\rightarrow W$ tussen re\"ele vectorruimten is een lineaire afbeelding a.s.a.
-$$L(\lambda_1v_1+\lambda_2v_2) = \lambda_1L(v_1)+\lambda_2L(V_2)\ \text{voor alle $\lambda_1,\lambda_2 \in \mathbb{R}$ en voor alle $v_1,v_2 \in V$}.$$
+$$L(\lambda_1v_1+\lambda_2v_2) = \lambda_1L(v_1)+\lambda_2L(V_2)\ \text{ voor alle } \lambda_1,\lambda_2 \in \mathbb{R} \text{ en voor alle } v_1,v_2 \text{ in V.}$$
 \subsubsection*{Bewijs}
 We moeten dus aantonen dat:
 \begin{enumerate}
@@ -111,9 +111,9 @@ Hieruit volgt dat $dim(V) \ge dim(W)$ want $dim(ker(L)) \ge 0$. Dit is in contra
 \end{proof}
 
 \subsection{Oefening 8}
-Om de matrices van de basisverandering te berekenen stellen we voor beide bases een matrix op waarbij ze beide uitgeschreven worden ten opzichte van eenzelfde basis, bijvoorbeeld, de standaardbasis, dezen naast elkaar plaatsen en rijreduceren tot de linkse matrix de eenheidsmatrix is. De eerste oefening is relatief triviaal, zoals we zullen zien.
+Om de matrices van de basisverandering te berekenen stellen we voor beide bases een matrix op waarbij ze beide uitgeschreven worden ten opzichte van eenzelfde basis, bijvoorbeeld, de standaardbasis, en als kolommen gebruikt worden in bijhorende matrix. Deze matrices plaatsen we naast elkaar en rijreduceren we tot de linkse matrix de eenheidsmatrix is. De eerste oefening is relatief triviaal, zoals we zullen zien.
 \subsubsection*{a)}
-We schrijven beide uit in functie van standaardbasis \{(0,1), (1,0)\}, waarbij we na ze aan elkaar te zetten komen tot
+We schrijven beide uit in functie van standaardbasis \{(0,1), (1,0)\}, zetten de bekomen co\"ordinaten in een matrix als kolommen (wat hier niet overdreven duidelijk is, maar in $b$ en $c$ hopelijk wel, waarna we beide matrices aan elkaar te zetten en komen tot
 
 \[
 \left[
@@ -133,7 +133,7 @@ De linkerkant is reeds de eenheidsmatrix dus geldt dat de matrix
 \end{array}
 \right]
 \]
-de matrix voor de basisverandering van $\beta$ naar $\alpha$. Voor de andere matrix, van $\alpha$ naar $\beta$ rijreduceren we dezelfde matrix, maar met de linker en rechterhelft omgewisseld, wat dus neerkomt op de inverse zoeken van zijn andere basisveranderingmatrix. We vinden
+de matrix voor de basisverandering van $\alpha$ naar $\beta$. We zeggen altijd dat het de basisverandering van onze basis van de rechtse matrix is naar die van de linkse matrix. Voor de andere matrix, van $\beta$ naar $\alpha$ rijreduceren we dezelfde matrix, maar met de linker en rechterhelft omgewisseld, wat dus neerkomt op de inverse zoeken van zijn andere basisveranderingmatrix. We vinden
 
 \[
 \left[
@@ -214,126 +214,54 @@ $\bigl(
 \[
 \left[
 \begin{array}{ c c c c | c c c c }
-1 & 0 & 0 & 0 & 1 & 1 & -1 & 2\\
-0 & 0 & 1 & 0 & 3 & 1 & -1 & 2\\
-0 & 0 & 0 & 1 & 1 & -1 & 2 & -3\\
-0 & 1 & 0 & 0 & 2 & 1 & -1 & 0
+1 & 0 & 0 & 0 & 1 & 3 & 1 & 2\\
+0 & 0 & 0 & 1 & 1 & 1 & -1 & 1\\
+0 & 1 & 0 & 0 & -1 & -1 & 2 & -1\\
+0 & 0 & 1 & 0 & 2 & 2 & -3 & 0
 \end{array}
 \right]
 \]
 
-dewelke we door achtereenvolgens $R3 \leftrightarrow R4$ en $R2 \leftrightarrow R3$ toe te passen omzetten tot
+dewelke we door achtereenvolgens $R2 \leftrightarrow R4$ en $R2 \leftrightarrow R3$ toe te passen omzetten tot
 
 \[
 \left[
 \begin{array}{ c c c c | c c c c }
-1 & 0 & 0 & 0 & 1 & 1 & -1 & 2\\
-0 & 1 & 0 & 0 & 2 & 1 & -1 & 0\\
-0 & 0 & 1 & 0 & 3 & 1 & -1 & 2\\
-0 & 0 & 0 & 1 & 1 & -1 & 2 & -3
+1 & 0 & 0 & 0 & 1 & 3 & 1 & 2\\
+0 & 1 & 0 & 0 & -1 & -1 & 2 & -1\\
+0 & 0 & 1 & 0 & 2 & 2 & -3 & 0\\
+0 & 0 & 0 & 1 & 1 & 1 & -1 & 1
 \end{array}
 \right]
 \]
 
-De rechtse kant is dus de basisveranderingsmatrix van $\beta$ naar $\alpha$. Rekenen we nu de andere kant uit hebben we
+De rechtse kant is dus de basisveranderingsmatrix van $\alpha$ naar $\beta$. Rekenen we nu de andere kant uit hebben we
 
 \[
 \left[
 \begin{array}{ c c c c | c c c c }
-1 & 1 & -1 & 2 & 1 & 0 & 0 & 0\\
-2 & 1 & -1 & 0 & 0 & 1 & 0 & 0\\
-3 & 1 & -1 & 2 & 0 & 0 & 1 & 0\\
-1 & -1 & 2 & -3 & 0 & 0 & 0 & 1
+1 & 3 & 1 & 2 & 1 & 0 & 0 & 0\\
+-1 & -1 & 2 & -1 & 0 & 1 & 0 & 0\\
+2 & 2 & -3 & 0 & 0 & 0 & 1 & 0\\
+1 & 1 & -1 & 1 & 0 & 0 & 0 & 1
 \end{array}
 \right]
 \]
 
-\[R2 \mapsto R2 - 2*R1 \]
-\[R3 \mapsto R3 - 3*R1 \]
-\[R4 \mapsto R4 - R1 \]
+dewelke we door rijreductie terugbrengen tot
 
 \[
 \left[
 \begin{array}{ c c c c | c c c c }
-1 & 1 & -1 & 2 & 1 & 0 & 0 & 0\\
-0 & -1 & 1 & -4 & -2 & 1 & 0 & 0\\
-0 & -2 & 2 & -4 & -3 & 0 & 1 & 0\\
-0 & -2 & 3 & -5 & -1 & 0 & 0 & 1
+1 & 0 & 0 & 0 & \frac{-1}{2} & \frac{-3}{4} & \frac{1}{4} & \frac{1}{4}\\
+0 & 1 & 0 & 0 & \frac{1}{2} & \frac{1}{4} & \frac{1}{4} & \frac{-3}{4}\\
+0 & 0 & 1 & 0 & 0 & \frac{-1}{3} & 0 & \frac{-1}{3}\\
+0 & 0 & 0 & 1 & 0 & \frac{1}{6} & \frac{-1}{2} & \frac{7}{6}
 \end{array}
 \right]
 \]
 
-\[R3 \mapsto R3 - 2*R2 \]
-\[R4 \mapsto R4 - 2*R2 \]
-
-\[
-\left[
-\begin{array}{ c c c c | c c c c }
-1 & 1 & -1 & 2 & 1 & 0 & 0 & 0\\
-0 & -1 & 1 & -4 & -2 & 1 & 0 & 0\\
-0 & 0 & 0 & 4 & 1 & -2 & 1 & 0\\
-0 & 0 & 1 & 3 & 3 & -2 & 0 & 1
-\end{array}
-\right]
-\]
-
-\[R3 \mapsto \frac{R3}{4} \]
-\[R4 \leftrightarrow R3 \]
-
-\[
-\left[
-\begin{array}{ c c c c | c c c c }
-1 & 1 & -1 & 2 & 1 & 0 & 0 & 0\\
-0 & -1 & 1 & -4 & -2 & 1 & 0 & 0\\
-0 & 0 & 1 & 3 & 3 & -2 & 0 & 1\\
-0 & 0 & 0 & 1 & \frac{1}{4} & \frac{-1}{2} & \frac{1}{4} & 0
-\end{array}
-\right]
-\]
-
-\[R1 \mapsto R1 - 2*R4 \]
-\[R2 \mapsto R2 + 4*R4 \]
-\[R3 \mapsto R3 - 3*R4 \]
-
-\[
-\left[
-\begin{array}{ c c c c | c c c c }
-1 & 1 & -1 & 0 & \frac{1}{2} & 1 & \frac{-1}{2} & 0\\
-0 & -1 & 1 & 0 & -1 & -1 & 1 & 0\\
-0 & 0 & 1 & 0 & \frac{9}{4} & \frac{-1}{2} & \frac{-3}{4} & 1\\
-0 & 0 & 0 & 1 & \frac{1}{4} & \frac{-1}{2} & \frac{1}{4} & 0
-\end{array}
-\right]
-\]
-
-\[R1 \mapsto R1 + R3 \]
-\[R2 \mapsto -R2 + R3 \]
-
-\[
-\left[
-\begin{array}{ c c c c | c c c c }
-1 & 1 & 0 & 0 & \frac{11}{4} & \frac{1}{2} & \frac{-5}{4} & 1\\
-0 & 1 & 0 & 0 & \frac{13}{4} & \frac{1}{2} & \frac{-7}{4} & 1\\
-0 & 0 & 1 & 0 & \frac{9}{4} & \frac{-1}{2} & \frac{-3}{4} & 1\\
-0 & 0 & 0 & 1 & \frac{1}{4} & \frac{-1}{2} & \frac{1}{4} & 0
-\end{array}
-\right]
-\]
-
-\[R1 \mapsto R1 - R2 \]
-
-\[
-\left[
-\begin{array}{ c c c c | c c c c }
-1 & 0 & 0 & 0 & \frac{-1}{2} & 0 & \frac{1}{2} & 0\\
-0 & 1 & 0 & 0 & \frac{13}{4} & \frac{1}{2} & \frac{-7}{4} & 1\\
-0 & 0 & 1 & 0 & \frac{9}{4} & \frac{-1}{2} & \frac{-3}{4} & 1\\
-0 & 0 & 0 & 1 & \frac{1}{4} & \frac{-1}{2} & \frac{1}{4} & 0
-\end{array}
-\right]
-\]
-
-De rechterkant van deze laatste is dus de basisveranderingsmatrix van basis $\alpha$ naar $\beta$.
+De rechterkant van deze laatste is dus de basisveranderingsmatrix van basis $\beta$ naar $\alpha$.
 
 \subsubsection*{c)}
 We nemen als standaardbasis \{1, X, X$^2$\}, waardoor we als beginmatrix voor ons rekenwerk als makkelijkste deze krijgen:
@@ -341,9 +269,9 @@ We nemen als standaardbasis \{1, X, X$^2$\}, waardoor we als beginmatrix voor on
 \[
 \left[
 \begin{array}{ c c c | c c c }
-0 & 0 & 1 & 3 & 2 & 1\\
-0 & 1 & 0 & 4 & 0 & -1\\
-1 & 0 & 0 & 2 & 1 & 0
+0 & 0 & 1 & 3 & 4 & 2\\
+0 & 1 & 0 & 2 & 0 & 1\\
+1 & 0 & 0 & 1 & -1 & 0
 \end{array}
 \right]
 \]
@@ -353,111 +281,39 @@ We nemen als standaardbasis \{1, X, X$^2$\}, waardoor we als beginmatrix voor on
 \[
 \left[
 \begin{array}{ c c c | c c c }
-1 & 0 & 0 & 2 & 1 & 0\\
-0 & 1 & 0 & 4 & 0 & -1\\
-0 & 0 & 1 & 3 & 2 & 1
+1 & 0 & 0 & 1 & -1 & 0\\
+0 & 1 & 0 & 2 & 0 & 1\\
+0 & 0 & 1 & 3 & 4 & 2
 \end{array}
 \right]
 \]
 
-Deze laatste is dus onze basisveranderingsmatrix van $\beta$ naar $\alpha$ (Ik ben nog steeds niet zeker van de "richting" van de basisveranderingsmatrix?). Rekenen we de andere richting uit, bekomen we
+Deze laatste is dus onze basisveranderingsmatrix van $\alpha$ naar $\beta$. Rekenen we de andere richting uit, bekomen we
 
 \[
 \left[
 \begin{array}{ c c c | c c c }
-2 & 1 & 0 & 1 & 0 & 0\\
-4 & 0 & -1 & 0 & 1 & 0\\
-3 & 2 & 1 & 0 & 0 & 1
+1 & -1 & 0 & 1 & 0 & 0\\
+2 & 0 & 1 & 0 & 1 & 0\\
+3 & 4 & 2 & 0 & 0 & 1
 \end{array}
 \right]
 \]
 
-\[R2 \mapsto R2 - 2*R1 \]
-\[R3 \mapsto 2*R3 - 3*R1 \]
+Wat we door rijreductie omvormen tot
 
 \[
 \left[
 \begin{array}{ c c c | c c c }
-2 & 1 & 0 & 1 & 0 & 0\\
-0 & -2 & -1 & -2 & 1 & 0\\
-0 & 1 & 2 & -3 & 0 & 2
+1 & 0 & 0 & \frac{4}{3} & \frac{-2}{3} & \frac{1}{3}\\
+0 & 1 & 0 & \frac{1}{3} & \frac{-2}{3} & \frac{1}{3}\\
+0 & 0 & 1 & \frac{-8}{3} & \frac{7}{3} & \frac{-2}{3}
 \end{array}
 \right]
 \]
 
-\[R2 \leftrightarrow R3 \]
+De rechterkant van deze laatste is dus de basisveranderingsmatrix van basis $\beta$ naar $\alpha$.
 
-\[
-\left[
-\begin{array}{ c c c | c c c }
-2 & 1 & 0 & 1 & 0 & 0\\
-0 & 1 & 2 & -3 & 0 & 2\\
-0 & -2 & -1 & -2 & 1 & 0
-\end{array}
-\right]
-\]
-
-\[R3 \mapsto R3 + 2*R2 \]
-
-\[
-\left[
-\begin{array}{ c c c | c c c }
-2 & 1 & 0 & 1 & 0 & 0\\
-0 & 1 & 2 & -3 & 0 & 2\\
-0 & 0 & 3 & -8 & 1 & 4
-\end{array}
-\right]
-\]
-
-\[R3 \mapsto \frac{R3}{3} \]
-
-\[
-\left[
-\begin{array}{ c c c | c c c }
-2 & 1 & 0 & 1 & 0 & 0\\
-0 & 1 & 2 & -3 & 0 & 2\\
-0 & 0 & 1 & \frac{-8}{3} & \frac{1}{3} & \frac{4}{3}
-\end{array}
-\right]
-\]
-
-\[R2 \mapsto R2 - 2*R3 \]
-
-\[
-\left[
-\begin{array}{ c c c | c c c }
-2 & 1 & 0 & 1 & 0 & 0\\
-0 & 1 & 0 & \frac{7}{3} & \frac{-2}{3} & \frac{-2}{3}\\
-0 & 0 & 1 & \frac{-8}{3} & \frac{1}{3} & \frac{4}{3}
-\end{array}
-\right]
-\]
-
-\[R1 \mapsto R1 - R2 \]
-
-\[
-\left[
-\begin{array}{ c c c | c c c }
-2 & 0 & 0 & \frac{-4}{3} & \frac{2}{3} & \frac{2}{3}\\
-0 & 1 & 0 & \frac{7}{3} & \frac{-2}{3} & \frac{-2}{3}\\
-0 & 0 & 1 & \frac{-8}{3} & \frac{1}{3} & \frac{4}{3}
-\end{array}
-\right]
-\]
-
-\[R1 \mapsto \frac{R1}{2}\]
-
-\[
-\left[
-\begin{array}{ c c c | c c c }
-1 & 0 & 0 & \frac{-2}{3} & \frac{1}{3} & \frac{1}{3}\\
-0 & 1 & 0 & \frac{7}{3} & \frac{-2}{3} & \frac{-2}{3}\\
-0 & 0 & 1 & \frac{-8}{3} & \frac{1}{3} & \frac{4}{3}
-\end{array}
-\right]
-\]
-
-De rechterkant van deze laatste is dus de basisveranderingsmatrix van basis $\alpha$ naar $\beta$.
 \subsection{Oefening 9}
 
 Berekenen we voor de elementen van de basis hun lineaire afbeelding als volgt:\\
