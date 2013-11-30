@@ -35,6 +35,82 @@ v = w
 We gebruiken telkens eigenschappen van een commutatieve groep: de optelling\footnote{Zie Definitie 3.2 p 88}.
 \end{proof}
 
+\subsection{Lemma 3.8 p 93}
+Zij $(\mathbb{R},V,+)$ een vectorruimte, $v\in V$ en $\lambda \in \mathbb{R}$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item
+\[
+0v = \vec{0} = \lambda\vec{0}
+\]
+\item
+\[
+(-1)v = -v 1(-v)
+\]
+\item
+\[
+(-\lambda)v = -(\lambda v ) = \lambda(-v)
+\]
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door gefoefel.\\
+De volgende redeneringen zullen initieel zeer artificieel aanvoelen maar als je deze kan reproduceren zal je veel makkelijk vanzelfsprekende dingen kunnen bewijzen.
+\begin{enumerate}
+\item 
+\[
+0v = (0+0)v = 0v + 0v
+\]
+De eerste gelijkheid geldt omwille van de eigenschap van het neutraal element van de optelling in $\mathbb{R}$. De tweede geldt omwille van distributiviteit-2\footnote{Zie Definitie 3.3 p 89}.
+\[
+0v = 0v+0v \Rightarrow 0v = \vec{0}
+\]
+De bovenstaande beweging volgt uit Lemma 3.7 op pagina 93.\\\\
+Het tweede deel van dit bewijs is analoog.
+\[
+\lambda\vec{0} = \lambda(\vec{0}+\vec{0}) = \lambda\vec{0} + \lambda\vec{0} \Rightarrow \lambda\vec{0} = \vec{0}
+\]
+De eerste gelijkheid geldt opnieuw omwille van de eigenschap van het neurtraal element.\footnote{Zie Definitie 3.2 p 88} De tweede geldt omwille van distributiviteit-1\footnote{Zie Definitie 3.3 p 89}. De implicatie volgt opnieuw uit Lemma 3.7 op pagina 93.
+
+\item
+De eerste gelijkheid vergt enig gefoefel om te bewijzen.
+We beginnen met iets triviaal.
+\[0 = 0\]
+Zie het eerste deel van dit bewijs.
+\[0v = 0\]
+Tegengesteld element in $\mathbb{R}$.
+\[(-1+1)v = 0\]
+Distributiviteit-2\footnote{Zie Definitie 3.3 p 89}.
+\[(-1)v + v = -v + v\]
+$v+x=w+x \Rightarrow v=w$\footnote{Zie Lemma 3.7 p 93}.
+\[ (-1)v = -v\]
+De tweede vergelijking daarentegen is een axioma van de vectorruimte: Co\"efficie\"ent 1\footnote{Zie Definitie 3.3 p 89}.
+
+\item Dit is meer een bewijs dat wiskundigen van gefoefel houden!\\
+Opnieuw beginnen we met iets triviaal.
+\[0=0\]
+Zie het eerste deel van dit bewijs.
+\[0v = 0\]
+Tegengesteld element in $\mathbb{R}$.
+\[(-\lambda+\lambda)v = 0\]
+Distributiviteit-2\footnote{Zie Definitie 3.3 p 89}.
+\[(-\lambda)v + \lambda v = -(\lambda v) + \lambda v\]
+$v+x=w+x \Rightarrow v=w$\footnote{Zie Lemma 3.7 p 93}.
+\[(-\lambda)v = -(\lambda v)\]
+Het tweede deel is echt niet beter.\\
+Triviaal:
+\[\vec{0} = \vec{0}\]
+Zie het eerste deel van dit bewijs.
+\[\vec{0} = \lambda \vec{0}\]
+Tegengesteld element in de commutatieve groep $(V,+)$\footnote{Zie Definitie 3.2 p 88}.
+\[\vec{0} = \lambda (-v+v)\]
+Distributiviteit-1\footnote{Zie Definitie 3.3 p 89}.
+\[-(\lambda v) + \lambda v = \lambda(-v)+\lambda v\]
+$v+x=w+x \Rightarrow v=w$\footnote{Zie Lemma 3.7 p 93}.
+\[-(\lambda v) = \lambda(-v)\]
+\end{enumerate}
+\end{proof}
+
 \subsection{Stelling 3.49}
 \subsubsection*{Te Bewijzen}
 Als de vectorruimte V eindigdimensionaal is, dan geldt voor willekeurige deelruimten $U$ en $W$ van $V$ het volgende.

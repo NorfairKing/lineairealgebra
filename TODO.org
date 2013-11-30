@@ -212,7 +212,8 @@
 ** TODO Bewijzen
 *** DONE Lemma 3.7 p 93
     CLOSED: [2013-11-30 Sat 12:44]
-*** TODO Lemma 3.8 p 93
+*** DONE Lemma 3.8 p 93
+    CLOSED: [2013-11-30 Sat 13:37]
 *** TODO Stelling 3.11 p 94
 *** TODO Propositie 3.14 p 96
 *** TODO Propositie 3.22 p 99
