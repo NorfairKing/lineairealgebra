@@ -380,7 +380,7 @@
     - [ ] 4.25 p154 fokdiekul
     - [ ] 4.37 p160 egonny
 ** TODO Bewijzen
-    - [ ] Lemma      4.2  p130
+    - [X] Lemma      4.2  p130 warreee
     - [ ] Gevolg     4.3  p130
     - [ ] Propositie 4.10 p141
     - [ ] Stelling   4.13 p142
