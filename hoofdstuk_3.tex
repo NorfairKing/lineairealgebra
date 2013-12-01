@@ -231,6 +231,66 @@ We bewijzen nu dat als de bewerking geldt voor een bepaalde $k$, de bewering dan
 Stel dat $U_1,U_2,...,U_k,U_{k+1}$ deelruimten zijn van $V$. $\bigoplus_{i=1}^k U_i$ is een deelruimte van $V$ vanwege de inductiehypothese. $(\bigoplus_{i=1}^k U_i) \cap U_{k+1}$ is nu een deelruimte vanwege de basis stap.
 \end{proof}
 
+\subsection{Propositie 3.22 p 99}
+Zij $(\mathbb{R},V,+)$. Zij $U_i$ deelruimten van $V$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item
+\[
+W = U_1 \oplus U_2
+\]
+\[\Leftrightarrow\]
+\begin{enumerate}
+\item
+\[
+W = U_1 + U_2
+\]
+\item
+\[
+U_1\cap U_2 = \{0\}
+\]
+\end{enumerate}
+\item
+\[
+W = \bigoplus_{i}^kU_i
+\]
+\[\Leftrightarrow\]
+\begin{enumerate}
+\item
+\[
+W = \sum_i^k U_i
+\]
+\item
+\[
+\forall i \in \{1,2,...,k\}: U_i \cap (U_1+...+U_{i-1}+U_{i+1}+...+U_k)=\{0\}
+\]
+\end{enumerate}
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+\begin{enumerate}7
+\item
+\emph{$\Rightarrow$}\\
+Stel dat $W = U_1 \oplus U_2$. Er bestaan dan voor elke $w\in W$ twee vectoren $u_1\in U_1$ en $u_2 \in U_2$. Dit betekent dat $W = U_1+U_2$. We bewijzen nu dat $U_1\cap U_2 = \{0\}$. Stel dat $v \neq 0 \in U_1\cap U_2$, dan kunnen we $v$ schrijven als $v+\vec{0}=\vec{0}+v$. Dit zou betekenen dat $W$ geen directe som meer is. $\vec{0}$ moet dus wel het enige element zijn in $U_1\cap U_2$.\\\\
+\emph{$\Leftarrow$}\\
+Stel dat $U_1\cap U_2 = \{\vec{0}\}$, dan tonen we nu aan dat $W = U_1+U_2$ een directe som is. Noem $w$ een vector in $W$. $w$ kan dan geschreven worden als volgt.
+\[
+w = u_1+u_2=u_1'+u_2'
+\]
+In deze uitdrukking zijn $u_1,u_1'$ vectoren in $U_1$ en $u_2,u_2'$ vectoren in $U_2$. Hieruit volgt dat $u_1-u_1'=u_2-u_2 \in U_1\cap U_2 = \{\vec{0}\}$. Dit klopt omdat $u_1-u_1' \in U_1$ en $u_2-u_2' \in U_2$ en $u_1-u_1'=u_2-u_2$. Bijgevolg geldt $u_1 = u_1'$ en $u_2=u_2'$. Dit houdt in dat elke $w \in W$ slechts op $1$ manier geschreven kan worden als de som van $u_1\in U_1$ en $u_2\in U_2$.
+\item
+Bewijs door inductie.\\
+\emph{Stap 1: (basis)}\\
+De bewering geldt voor $k=2$. Dit is bewezen in het eerste deel van dit bewijs.\\\\
+\emph{Stap 2: (inductie stap)}\\
+We gaan ervan uit dat de bewering geldt voor een bepaalde $k$, en bewijzen dat dat de bewering ook geldt voor $k+1$.
+\[
+W = (\bigoplus_i^k U_i) \oplus U_{k+1}
+\]
+Het eerste deel geldt omwille van de inductiehypothese, het tweede deel geldt omwille van de basis stap. <TODO meer uitleg hier>
+\end{enumerate}
+\end{proof}11
+
 \section{Oefeningen 3.6}
 
 \subsection{oef 1}
