@@ -272,7 +272,15 @@ f(A^{-1}) = \frac{1}{f(A)}
 Elke permutatie $S_n$ is een samenstelling van transposities.
 \subsubsection*{Bewijs}
 \begin{proof}
-TODO hoe bewijzen we dit?
+Bewijs in woorden.\\
+Beschouwen we de permutatie $S_n$, dan is dit een afbeelding die een originele verzameling $\{x_1,x_2,\dotsc,x_n\}$ afbeeldt op een verzameling $\{y_1,y_2,\dotsc,y_n\}$, waarbij elke $x_i$ uit de eerste verzameling precies overeenkomt met een $y_j$ uit de tweede verzameling met $i,j \in {1,2,\dotsc,n}$.\\
+Het maximum aantal elementen waarvoor niet geldt $x_k = y_k$ met $k \in {1,2,\dotsc,n}$ is $n$, omdat er maximum $n$ elementen niet op dezelfde plaats staan in de afbeelding als in de originele verzameling.\\
+Indien nu geldt dat $x_i = y_i$ voor elke $i,j \in {1,2,\dotsc,n}$, dan is onze verzameling gepermuteerd door nul of meer transposities (indien toegevoegd in de volgende gevallen).\\
+Indien geldt dat er maar een paar $x_i, x_j$ bestaat met $i,j \in {1,2,\dotsc,n}$ waarvoor geldt $x_i = y_j$ en $x_j = y_i$ dan kunnen we door transpositie van deze twee elementen onze permutatie bekomen. Onze permutatie wordt dus opgebouwd uit een of meer (indien toegevoegd door volgend geval) permutaties.\\
+Indien geldt dat er geldt dat er $k$ elementen niet op hun plaats staan met $2 < k \leq n$ (deze bovengrens bestaat, zoals eerder aangetoond), dan bestaat er een koppel $x_i, x_j$ waarvoor geldt $x_i \neq y_i$ en $x_j \neq y_j$ maar $x_i = y_j$. We kunnen dan $x_i$ en $x_j$ transponeren, waardoor $x_i = x'_j$ wel op zijn plaats staat, $x'_j=y_j$. Er zijn dus nog maximum $k-1$ elementen die niet op hun plaats staan. We kunnen dit proces blijven herhalen door transpositie, tot we in het vorige geval uitkomen indien er nog maar twee elementen niet op hun plaats staan. Dit proces is zeker eindig aangezien $n$ de bovengrens van het beginaantal elementen niet op hun plaats is, en dit aantal bij elke stap met minstens een vermindert.\\
+Zo bekomen we dus door nul of meer keer te transponeren vanuit de verzameling $\{x_1,x_2,\dotsc,x_n\}$ de verzameling $\{x'_1,x'_2,\dotsc,x'_n\}$, die gelijk is aan $\{y_1,y_2,\dotsc,y_n\}$. We hebben de permutatie dus gevormd uit een samenstelling van transposities. Dit is mogelijk met elke transpositie $S_n$ met $n \in \mathbb{N}$.
+
+
 \end{proof}
 
 \subsection{Stelling 2.10 p 62}
