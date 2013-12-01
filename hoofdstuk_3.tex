@@ -185,6 +185,36 @@ dim(U+W) r+s-t = dim(U) + dim(W) + dim(U \cap W)
 \]
 \end{proof}
 
+\subsection{Stelling 3.11 p 94}
+Zij $(\mathbb{R},V,+)$ een vectorruimte. $U \neq \emptyset$
+\subsubsection*{Te Bewijzen}
+\begin{center}
+$U$ is een deelruimte van $V$
+\end{center}
+\[
+\Leftrightarrow
+\] 
+\begin{enumerate}
+\item $\forall x,y\in U: x+y\in U$.
+\item $\forall x\in U, r\in \mathbb{R}: rx \in U$
+\end{enumerate}
+\[
+\Leftrightarrow
+\]
+\[
+\forall x,y\in U, r,s\in \mathbb{R}: rx+sy\in U
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+We bewijzen eerst de equivalentie van de eerste bewering met de tweede.\\
+\emph{$\Rightarrow$}\\
+Als $U$ een deelruimte is van $V$ dan is $U$ een vectorruimte\footnote{Zie Definitie 3.10 p 94}. Dan is $U$ niet leeg. Bovendien zijn $rx$ en $sy$ elementen van $U$ en $rx+sy$ dus ook.\\\\
+\emph{$\Leftarrow$}\\
+$U$ is niet leeg, dus $U$ bevat minstens \'e\'en element, noem het $u$. Uit de tweede voorwaarde geldt dan ook dat $-u \in U$. Uit de eerste voorwaarde geldt dan dat $u-u = \vec{0} \in U$. Voor elk element uit $U$ zit het tegengestelde ervan dus ook in $U$. Elke axioma uit definitie 3.2 en 3.3 zijn nu automatisch voldaan voor de elementen in $U$ omdat ze voldaan zijn in $V$.
+\end{proof}
+
+
+
 \section{Oefeningen 3.6}
 
 \subsection{oef 1}
