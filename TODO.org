@@ -343,10 +343,18 @@
   DEADLINE: <2013-11-26 Die>
 ** TODO Oefeningen
 *** TODO Voorbereiding
+    - [ ] 1
+      - [ ] g jdewaen
+      - [ ] j jdewaen
     - [X] 8 MajorMonodon
     - [X] 9 MajorMonodon
     - [X] 10 fokdiekul
     - [ ] 12a jdewaen
+    - [ ] 14 MajorMonodon
+    - [ ] 24
+      - [ ] a egonny
+      - [ ] b NorfairKing
+    - [ ] 26 fokdiekul
 *** TODO In Oefenzitting
     - [ ] 1 
       - [X] c warreee
@@ -355,7 +363,7 @@
     - [ ] 5 egonny
     - [ ] 6 NorfairKing
     - [ ] 7 jdewaen
-    - [ ] 11 MajorMonodon
+    - [X] 11 MajorMonodon
     - [ ] 17 warreee
     - [ ] 20 NorfairKing
 *** TODO Extra
