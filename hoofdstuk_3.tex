@@ -213,7 +213,23 @@ Als $U$ een deelruimte is van $V$ dan is $U$ een vectorruimte\footnote{Zie Defin
 $U$ is niet leeg, dus $U$ bevat minstens \'e\'en element, noem het $u$. Uit de tweede voorwaarde geldt dan ook dat $-u \in U$. Uit de eerste voorwaarde geldt dan dat $u-u = \vec{0} \in U$. Voor elk element uit $U$ zit het tegengestelde ervan dus ook in $U$. Elke axioma uit definitie 3.2 en 3.3 zijn nu automatisch voldaan voor de elementen in $U$ omdat ze voldaan zijn in $V$.
 \end{proof}
 
-
+\subsection{Propositie 3.14 p 96}
+\subsubsection*{Te Bewijzen}
+De doorsnede van een aantal deelruimten van een vectorruimte $(\mathbb{R},V,+)$ is opnieuw een deelruimte van $V$
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door inductie.\\
+\emph{Stap 1: (basis)}\\
+We bewijzen dat de bewering geldt voor precies twee deelruimten.
+Noem $U$ en $W$ twee deelruimten van $V$. We weten nu dat stelling 3.11 op pagina 94 geldt voor $U$ en voor $W$. Om te bewijzen dat $U\cap W$ een deelruimte is van $V$ bewijzen we dat diezelfde stelling geldt voor $U\cap W$.
+\[
+\forall x,y\in U\cap W, r,s\in \mathbb{R}: rx+sy\in U\cap W
+\]
+<TODO meerverduidelijking.>
+\emph{Stap 2: (inductie stap)}\\
+We bewijzen nu dat als de bewerking geldt voor een bepaalde $k$, de bewering dan ook geldt voor $k+1$.
+Stel dat $U_1,U_2,...,U_k,U_{k+1}$ deelruimten zijn van $V$. $\bigoplus_{i=1}^k U_i$ is een deelruimte van $V$ vanwege de inductiehypothese. $(\bigoplus_{i=1}^k U_i) \cap U_{k+1}$ is nu een deelruimte vanwege de basis stap.
+\end{proof}
 
 \section{Oefeningen 3.6}
 
