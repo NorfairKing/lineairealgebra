@@ -289,7 +289,34 @@ W = (\bigoplus_i^k U_i) \oplus U_{k+1}
 \]
 Het eerste deel geldt omwille van de inductiehypothese, het tweede deel geldt omwille van de basis stap. <TODO meer uitleg hier>
 \end{enumerate}
-\end{proof}11
+\end{proof}
+
+\subsection{Propositie 3.26 p 101}
+Gegeven een verzameling lineair onafhankelijke vectoren $D= \{v_1,v_2,...,v_n\}$.
+\subsubsection*{Te Bewijzen}
+\[
+\sum_{i=1}^n\lambda_iv_i=0 \Leftrightarrow \lambda_1 = \lambda_2 = ... = \lambda_n = 0
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+\emph{$\Rightarrow$}\\
+Bewijs uit het ongerijmde:\\
+De volgende bewering zou equivalent moeten zijn met een contradictie.
+\[
+\sum_{i=1}^n\lambda_iv_i=0 \wedge \exists \lambda_i \neq 0
+\]
+Nu is het makkelijk te zien dat voor minstens \'e\'en $v$ geldt dat $v$ geschreven kan worden als een lineaire combinatie van de andere.
+\[
+v_k = -\frac{1}{y}\sum_{i\neq k}\lambda_iv_i
+\]
+De bovenstaande bewering houdt dan in dat de verzameling lineair afhankelijk is en dat is in contradictie met het gegeven.
+\\\\
+\emph{$\Leftarrow$}\\
+Dit is evident waar\footnote{Zie Lemma 3.8 p 93 puntje 1.}.
+\[
+\sum_{i=1}^n0v_i=0
+\]
+\end{proof}
 
 \section{Oefeningen 3.6}
 

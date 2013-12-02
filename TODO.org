@@ -218,7 +218,7 @@
 *** DONE Stelling 3.11 p 94
     CLOSED: [2013-12-01 Sun 09:28]
 *** ISSUE Propositie 3.14 p 96
-*** TODO Propositie 3.22 p 99
+*** ISSUE Propositie 3.22 p 99
 *** TODO Propositie 3.26 p 101
 *** TODO Stelling 3.32 p 104
 *** TODO Gevolg 3.33 p 105
