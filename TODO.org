@@ -359,7 +359,7 @@
       - [ ] b NorfairKing
     - [ ] 26 fokdiekul
 *** TODO In Oefenzitting
-    - [ ] 1 
+    - [X] 1 
       - [X] c warreee
       - [?] e warreee
     - [ ] 4 egonny
@@ -369,6 +369,7 @@
     - [X] 11 MajorMonodon
     - [ ] 17 warreee
     - [ ] 20 NorfairKing
+    - [ ] 26 
 *** TODO Extra
 **** TODO Algemene uitleg voor matrixvoorstelling van lineaire afbeelding.
 ** TODO Opdrachten   
