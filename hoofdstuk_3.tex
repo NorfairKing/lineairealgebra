@@ -332,7 +332,7 @@ Als $V$ vrij is, dan is elke deelverzameling van $V$ met minder dan $m$ vectoren
 Ingewikkeld bewijs.\\
 \begin{enumerate}
 \item
-Neem een willekeurige deelverzameling $B = \{y_1,...,Y_n\}$ van $V$ met $n > m$.\\
+Neem een willekeurige deelverzameling $B = \{y_1,...,Y_n\}$ van $V$ met $m > n$.\\
 Doordat $A$ voortbrengend is voor $V$ kan elke vector van $B$ geschreven worden als een lineaire combinatie van de vectoren van $A$. Bijgevolg bestaan er co\"efficienten $a_{ij}\in \mathbb{R}$ zodat het volgende stelsel geldt.
 \[
 \left\lbrace
@@ -344,7 +344,7 @@ y_n = a_{1n}x_1 + \cdots + a_{mn}x_m\\
 \end{array}
 \right.
 \]
-We onderzoeken nu of de vectoren van $B$ al dan niet lineair afhankelijk zijn. Voor zekere co\"effici\"enten $c_i\in \mathbb{R}$ geldt het volgende.
+We onderzoeken nu of de vectoren van $B$ al dan niet lineair afhankelijk zijn. Voor zekere co\"effici\"enten $c_i\in \mathbb{R}$ geldt het volgende met $y_i$ niet allemaal nul als $B$ niet vrij is.
 \[
 c_1y_1 + c_2y_2 + ... + c_ny_n = 0
 \]
@@ -356,7 +356,31 @@ c_1(a_{11}x_1 + \cdots + a_{m1}x_m) + c_2(a_{12}x_1 + \cdots + a_{m2}x_m) + ... 
 \Leftrightarrow
 (a_{11}c_1+a_{12}x_2+...+a_{1n}c_n)x_1 + ... + (a_{m1}c_1+a_{m2}x_2+...+a_{mn}c_n)x_m
 \]
-\item 
+Dit geldt zeker als het volgende stelsel geldt.
+\[
+\left\{
+\begin{array}{c c}
+a_{11}c_1+a_{12}x_2+...+a_{1n}c_n = 0\\
+a_{21}c_1+a_{22}x_2+...+a_{2n}c_n = 0\\
+\vdots\\
+a_{m1}c_1+a_{m2}x_2+...+a_{mn}c_n = 0\\
+\end{array}
+\right.
+\]
+Dit is een homogeen stelsel met $m$ vergelijkingen in $n$ onbekenden. Bovendien hebben we gesteld dat $m<n$. Dit houdt in dat er minstens één vrije variabele zal zijn en het stelsel dus minstens één oplossing heeft verschillend van $\vec{0}$\footnote{Zie stelling 1.36 p 38}.
+De elementen in $B$ zijn dus lineair afhankelijk.
+\item
+Neem opnieuw een willekeurige deelverzameling $B = \{y_1,...,y_n\}$ van $V$ maar deze keer met $n < m$. We zullen dit bewijzen uit het ongerijmde door ervan uit te gaan dat er een $B$ bestaat die wel voortbrengend is, en dan tot een contradictie te komen.
+Omdat $B$ voortbrengend is geldt dat elk element uit $A$ geschreven kan worden als een lineaire combinatie van de elementen in $B$.
+\[
+\forall x \in A: \exists b_i \in \mathbb{R}: x = \sum_ib_iy_i
+\]
+Omdat $A$ vrij is geldt voor elke set $a_i$.
+\[
+\sum_ia_ix_i = 0 \Rightarrow \forall i: a_i = 0
+\]
+<TODO EN VERDER?>
+
 \end{enumerate}
 \end{proof}
 
