@@ -2,6 +2,18 @@
 \begin{document}
 
 \part{Hoofdstuk 4}
+\section{Hulpvolle definities}
+<TODO AFMAKEN>
+Inj
+\[
+L(v) = L(w) \Rightarrow v = w
+\]
+surj
+\[
+\forall w \in W: \exists v \in V: w=L(v)
+\]
+bij = inj + surj
+
 \section{Bewijzen uit het boek}
 \subsection{Lemma 4.2}
 \subsubsection*{Te bewijzen}
@@ -66,6 +78,23 @@ $$
 $$
 \text{Beeld van L:} \ \{(x ,y ,z)|x,y,z \in \mathbb{R} \}
 $$
+
+\subsubsection*{j)}
+<TODO Aan Jorik: nakijken!>
+\[
+ker(ev_a) = \{ f \in \mathbb{R}^{\mathbb{R}} | f(a) = 0\}
+\]
+\[
+Im(ev_a) = \mathbb{R}
+\]
+Hiervoor moeten we bewijzen dat $\mathbb{R} \subset Im(ev_a)$.
+\begin{proof}
+Om te bewijzen dat $ev_a$ lineair is nemen we twee vectoren $f_1,f_2 \in \mathbb{R}^{\mathbb{R}}$ en twee scalars $\lambda_1, \lambda_2 \in \mathbb{R}$.
+\[
+ev_a(\lambda_1f_1 + \lambda_2f_2) = (\lambda_1f_1 + \lambda_2f_2)(a) = \lambda_1f_1(a) + \lambda_2f_2(a) = \lambda_1ev_a(f_2) + \lambda_2ev_a(f_1)
+\]
+<TODO verwijs naar lemmaatje>
+\end{proof}
 
 \subsection{Oefening 5}
 Zij $L:V \rightarrow W$ een lineaire afbeelding en zij $dim V = n$ en $dim W = m$.\\
