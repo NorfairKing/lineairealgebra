@@ -384,7 +384,7 @@ Omdat $A$ vrij is geldt voor elke set $a_i$.
 \end{enumerate}
 \end{proof}
 
-\subsection{Gevolg 3.33}
+\subsection{Gevolg 3.33 p 105}
 Zij $A$ een deelverzameling van de vectorruimte $(\mathbb{R},V,+)$ met $m$ elementen.
 \subsubsection*{Te Bewijzen}
 Als $A$ voortbrengend is, dan bevat elke vrij deelverzameling van $V$ hoogstens $m$ elementen.
@@ -393,8 +393,8 @@ Als $A$ voortbrengend is, dan bevat elke vrij deelverzameling van $V$ hoogstens 
 We weten dat elke deelverzameling $B$ van $V$ met meer dan $m$ elementen niet meer vrij is. $B$ heeft dus hoogstends $m$ elementen.
 \end{proof}
 
-\subsection{Gevolg 3.34}
-Zij $(R,V,+)$ een vectorruimte met een basis van $n$ vectoren.
+\subsection{Gevolg 3.34 p 105}
+Zij $(\mathbb{R},V,+)$ een vectorruimte met een basis van $n$ vectoren.
 \subsubsection*{Te Bewijzen}
 Elke andere basis van $V$ heeft ook $n$ vectoren.
 \subsubsection*{Bewijs}
@@ -403,6 +403,26 @@ Een basis is vrij en voortbrengend.
 Volgens het lemma van Steinitz\footnote{Zie Stelling 3.32 p 104} is elke andere deelverzameling van $V$ met meer dan $n$ vectoren niet meer vrij en elke andere deelverzameling van $V$ met minder dan $n$ vectoren niet meer voortbrengend. Elke basis van $V$ heeft dus $n$ vectoren.
 \end{proof}
 
+\subsection{Stelling 3.37 p 107}
+Zij $(\mathbb{R},V,+)$ een vectorruimte met dimensie $n$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item Elke vrije verzameling van $V$ kan uitgebreid worden tot een basis van $V$.
+\item Elke eindige voortbrengende verzameling van $V$ kan uitgedund worden tot een basis van $V$.
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+\begin{enumerate}
+\item
+We kiezen een willekeurige vrije deelverzameling $D$ van $V$ met $k$ elementen. Nu geldt $k\le n$\footnote{Zie Gevolg 3.33 p 105}. Ofwel is $D$ voortbrengend, en dan moet $D$ niet uitgebreid worden. Ofwel bestaat er een vector $v\in V$ die niet in $D$ zit die geen lineaire combinatie is van vectoren uit $D$ want $D$ is niet voortbrengend. $D \cup \{v\}$ is vrij want $v$ is geen lineaire combinatie van vectoren in $D$. Dit proces kunnen we herhalen tot de resulterende deelverzameling een basis is.
+\item
+We kiezen een willekeurige voortbrengende deelverzameling $S$ van $D$. Te bewijzen is nu dat er een deelverzameling van $S$ bestaat die een basis is van $V$. We schappen eerst alle nulvectoren uit $S$. $S$ is dan nog steeds voortbrengend. We overlopen nu in volgorde de vectoren in $S$. We schappen elke vector die lineair afhankelijk is van de vorige vectoren. De overblijvende verzameling $B$ is een basis van $V$.\\
+\emph{$B$ is voortbrengend:}\\
+Elke vector in $S$ is een lineaire combinatie van $B$ en $S$ is voortbrengend. Bijgevolg is $B$ ook voortbrengend.\\
+\emph{$B$ is vrij:}\\
+Elke vector in $B$ is lineair onafhankelijk van zijn 'voorgangers'. Er bestaat dus geen niet-triviale lineaire combinatie van de elementen in $B$.
+\end{enumerate}
+\end{proof}
 
 
 \section{Oefeningen 3.6}
