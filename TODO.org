@@ -230,7 +230,8 @@
     CLOSED: [2013-12-03 Tue 12:34]
 *** DONE Eigenschap 3.40p 108
     CLOSED: [2013-12-03 Tue 12:58]
-*** TODO Stelling 3.41 p 109
+*** DONE Stelling 3.41 p 109
+    CLOSED: [2013-12-03 Tue 13:17]
 *** TODO Stelling 3.42 p 109
 *** TODO Stelling 3.43 p 110
 *** TODO Stelling 3.45 p 111

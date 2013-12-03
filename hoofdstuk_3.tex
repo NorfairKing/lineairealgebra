@@ -433,7 +433,7 @@ Zij $V$ een $n$-dimensionale vectorruimte.
 \end{enumerate}
 \subsubsection*{Bewijs}
 \begin{proof}
-We weten dat elke basis van $V$ $n$ vectoren bevat.
+We weten dat elke basis van $V$ $n$ vectoren bevat.\footnote{Zie Gevolg 3.34 p 105}
 \begin{enumerate}
 \item
 Stel $D$ is de verzameling van $n$ lineair onafhankelijke vectoren. $D$ kan uitgebreid worden tot een basis van $V$ door geen enkele vector toe te voegen. $D$ is dus een basis van $V$.
@@ -442,6 +442,26 @@ Stel $E$ is de verzameling van $n$ voortbrengende vectoren. $D$ kan uitgedund wo
 \end{enumerate}
 \end{proof}
 
+\subsection{Stelling 3.41 p 109}
+Zij $(\mathbb{R},V,+)$ een $n$-dimensionale vectorruimte. Zij $B$ een verzameling van $n$ vectoren uit $V$.
+\subsubsection*{Te Bewijzen}
+\begin{center}
+$B$ is een basis van $V$\\$\Leftrightarrow$\\
+$B$ is een vrij deel van $V$\\$\Leftrightarrow$\\
+$B$ is een voortbrengend deel van $V$.
+\end{center}
+\subsubsection*{Bewijs}
+\begin{proof}
+We bewijzen niet elke implicatie, maar enkel de voorwaartse implicaties, en de implicatie van de laatste bewering naar de eerste.
+\begin{itemize}
+\item $B$ is een basis van $V \Rightarrow B$ is een vrij deel van $V$.\\
+Dit volgt rechtstreeks uit de definitie van een basis\footnote{Zie Definitie 3.31 p 104}.
+\item $B$ is een vrij deel van $V \Rightarrow B$ is een voortbrengend deel van $V$\\
+$B$ kan uitgebreid worden tot een basis van $V$ door toevoeging van geen enkele vector\footnote{Zie Stelling 3.37 p 107}. $B$ is bijgevolg een basis van $V$, en dus voortbrengend volgens de definitie van een basis.
+\item $B$ is een voortbrengend deel van $V \Rightarrow B$ is een basis van $V$.\\
+$B$ kan uitgedund worden tot een basis van $V$ door het verwijderen van geen enkele vector. $B$ is bijgevolg een basis van $V$.
+\end{itemize}
+\end{proof}
 
 \section{Oefeningen 3.6}
 \subsection{oef 1}
