@@ -505,6 +505,32 @@ Omdat $U$ gelijk is aan $V$ heeft $U$ dezelfde basis als $V$. In twee dezelfde v
 \end{enumerate}
 \end{proof}
 
+\subsection{Stelling 3.45 p 111}
+Zij $(\mathbb{R},V,+)$ een vectorruimte en zij $\beta = \{v_1,v_2,...,v_n\}$ een basis van $V$.
+\subsubsection*{Te Bewijzen}
+Elke vector kan op een unieke wijze als een lineaire combinatie van de basisvectoren uitgedrukt worden. Er bestaat dus een bijectieve afbeelding $co_{\beta}$ die $v$ afbeeldt op het stel co\"effici\"enten dat correspondeert met $v$ ten opzichte van de basis $\beta$.
+\[
+co_{\beta}: V \rightarrow \mathbb{R}^n
+ : \mapsto co_{\beta}(v)\]
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs uit het ongerijmde.\\
+Elke vector $v\in V$ kan geschreven worden als een lineaire combinatie van de basisvectoren.
+\[
+v = a_1v_1 + a_2v_2 + ... + a_nv_n
+\]
+Stel nu dat er nog zo een lineaire combinatie bestaat, zodat $(a_1,a_2,...,a_n)$ geen uniek stel co\"effici\"enten is, dan kan $v$ ook nog op een andere manier geschreven worden. Noem dit ander stel co\"effici\"enten $(b_1,b_2,...,b_n)$.
+\[
+v = a_1v_1 + a_2v_2 + ... + a_nv_n = b_1v_1 + b_2v_2 + ... + b_nv_n
+\]
+Hieruit volgt het volgende.
+\[ 
+(a_1-b_1)v_1 + (a_2-b_2)v_2 + ... + (a_n-b_n)v_n= 0
+\]
+Dit is een lineaire combinatie van de basisvectoren van $V$. Omdat de basis vrij is moeten alle co\"efficienten $(a_i-b_i)$ nul zijn. Dit is in contradictie met de aanname dat het stel co\"effici\"enten niet uniek is. Het stel co\"effici\"enten is dus wel uniek.
+\end{proof}
+
+
 \section{Oefeningen 3.6}
 \subsection{oef 1}
 \subsubsection*{b)}
