@@ -446,21 +446,39 @@ Stel $E$ is de verzameling van $n$ voortbrengende vectoren. $D$ kan uitgedund wo
 Zij $(\mathbb{R},V,+)$ een $n$-dimensionale vectorruimte. Zij $B$ een verzameling van $n$ vectoren uit $V$.
 \subsubsection*{Te Bewijzen}
 \begin{center}
-$B$ is een basis van $V$\\$\Leftrightarrow$\\
-$B$ is een vrij deel van $V$\\$\Leftrightarrow$\\
+$B$ is een basis van $V$.\\$\Leftrightarrow$\\
+$B$ is een vrij deel van $V$.\\$\Leftrightarrow$\\
 $B$ is een voortbrengend deel van $V$.
 \end{center}
 \subsubsection*{Bewijs}
 \begin{proof}
 We bewijzen niet elke implicatie, maar enkel de voorwaartse implicaties, en de implicatie van de laatste bewering naar de eerste.
 \begin{itemize}
-\item $B$ is een basis van $V \Rightarrow B$ is een vrij deel van $V$.\\
+\item \emph{$B$ is een basis van $V \Rightarrow B$ is een vrij deel van $V$.}\\
 Dit volgt rechtstreeks uit de definitie van een basis\footnote{Zie Definitie 3.31 p 104}.
-\item $B$ is een vrij deel van $V \Rightarrow B$ is een voortbrengend deel van $V$\\
+\item \emph{$B$ is een vrij deel van $V \Rightarrow B$ is een voortbrengend deel van $V$}\\
 $B$ kan uitgebreid worden tot een basis van $V$ door toevoeging van geen enkele vector\footnote{Zie Stelling 3.37 p 107}. $B$ is bijgevolg een basis van $V$, en dus voortbrengend volgens de definitie van een basis.
-\item $B$ is een voortbrengend deel van $V \Rightarrow B$ is een basis van $V$.\\
+\item \emph{$B$ is een voortbrengend deel van $V \Rightarrow B$ is een basis van $V$.}\\
 $B$ kan uitgedund worden tot een basis van $V$ door het verwijderen van geen enkele vector. $B$ is bijgevolg een basis van $V$.
 \end{itemize}
+\end{proof}
+
+\subsection{Stelling 3.42 p 109}
+Zij $(\mathbb{R},V,+)$ een vectorruimte en $\beta \subset V$.
+\subsubsection*{Te Bewijzen}
+\begin{center}
+$\beta$ is een basis van $V$.\\$\Leftrightarrow$\\
+$\beta$ is maximaal vrij.\\$\Leftrightarrow$\\
+$\beta$ is minimaal voortbrengend.
+\end{center}
+\subsubsection*{Bewijs}
+We bewijzen niet elke implicatie, maar enkel de voorwaartse implicaties, en de implicatie van de laatste bewering naar de eerste.
+\begin{proof}
+\item \emph{$\beta$ is een basis van $V \Rightarrow \beta$ is maximaal vrij.}\\
+$\beta$ is voortbrengend voor $V$ dus elke deelverzameling van $V$ met meer dan $n$ vectoren is niet meer vrij. Dit betekent precies dat $\beta$ maximaal vrij is.
+\item \emph{$\beta$ is maximaal vrij. $\Rightarrow \beta$ is minimaal voortbrengend.}\\
+Omdat elke vrije verzameling kan uitgebreid worden tot een (voortbrengende) basis van $V$, kan dit ook voor $\beta$\footnote{Zie Stelling 3.37 p 107}. Als we echter $\beta$ nog uitbreiden zal $\beta$ niet meer vrij zijn, want $\beta$ is maximaal vrij. Bijgevolg is $\beta$ zelf al een basis voor $V$. Volgens het lemma van Steinitz\footnote{Zie Stelling 3.32 p 104} is elke verzameling kleiner dan $\beta$ niet meer voortbrengend. $\beta$ is dus minimaal voortbrengend.
+\item \emph{$\beta$ is minimaal voortbrengend. $\Rightarrow \beta$ is een basis van $V$.}\\ $\beta$ is een voortbrengende verzameling van $V$, en kan dus uitgedund worden tot een basis van $V$. Omdat $\beta$ minimaal voortbrengend is, zou de verwijdering van slechts $1$ er al voor zorgen dat $\beta$ niet meer voortbrengend zou zijn. $\beta$ is bijgevolg al een basis van $V$.
 \end{proof}
 
 \section{Oefeningen 3.6}

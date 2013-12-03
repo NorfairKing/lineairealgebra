@@ -232,7 +232,8 @@
     CLOSED: [2013-12-03 Tue 12:58]
 *** DONE Stelling 3.41 p 109
     CLOSED: [2013-12-03 Tue 13:17]
-*** TODO Stelling 3.42 p 109
+*** DONE Stelling 3.42 p 109
+    CLOSED: [2013-12-03 Tue 13:48]
 *** TODO Stelling 3.43 p 110
 *** TODO Stelling 3.45 p 111
 *** DONE Stelling 3.49 p 114
