@@ -234,12 +234,16 @@
     CLOSED: [2013-12-03 Tue 13:17]
 *** DONE Stelling 3.42 p 109
     CLOSED: [2013-12-03 Tue 13:48]
-*** TODO Stelling 3.43 p 110
-*** TODO Stelling 3.45 p 111
+*** DONE Stelling 3.43 p 110
+    CLOSED: [2013-12-03 Tue 16:22]
+*** DONE Stelling 3.45 p 111
+    CLOSED: [2013-12-03 Tue 16:22]
 *** DONE Stelling 3.49 p 114
     CLOSED: [2013-11-30 Sat 12:40]
-*** TODO Stelling 3.52 p 115
-*** TODO Stelling 3.56 p 116
+*** DONE Stelling 3.52 p 115
+    CLOSED: [2013-12-03 Tue 16:22]
+*** DONE Stelling 3.56 p 116
+    CLOSED: [2013-12-03 Tue 16:22]
 *** TODO Stelling 3.60 p 119
 *** TODO Stelling 3.61 p 120
 ** DELEGATED Oefeningen

@@ -561,6 +561,25 @@ dimV = \sum_{i=1}^kdimU_i
 \]
 \end{proof}
 
+\subsection{Stelling 3.56 p 116}
+Zij $(\mathbb{R},V,+)$ een eindigdimensionale vectorruimte met basis.
+\subsubsection*{Te bewijzen}
+Elke deelruimte van $V$ heeft een complementaire deelruimte.
+\subsubsection*{Bewijs}
+\begin{proof}
+Zij $U$ een deelruimte van $V$ met basis $\beta_U = \{u_1,u_2,...,u_n)$. $U$ kan uitgebreid worden tot een basis van $V$ met vectoren $w_1,w_2,...,w_k$. Deze vectoren $w_i$ spannen dan $W$ op zodat de volgende bewering geldt.
+\[
+U \oplus W = V
+\]
+\begin{itemize}
+\item $V = U + W$\\
+Alle vectoren uit $V$ moeten geschreven kunnen worden als de som van een vector uit $U$ en een vector uit $W$. Alle vectoren in $U$ respectievelijk $W$ kunnen geschreven worden als de lineaire combinatie van de basisvectoren van $U$, respectievelijk $W$. Hieruit volgt dat alle vectoren uit $V$ geschreven kunnen worden als de sum van lineaire combinaties van basissen van deelruimten. Deze som is precies de lineaire combinatie die we gebruiken om de vector te vormen door een lineaire combinatie van de basisvectoren in $V$.
+
+\item $U\cap W = \{\vec{0}\}$\\
+De vectoren uit de basis van $U$ zijn lineair onafhankelijk van de vectoren uit de basis van $W$. In de doorsnede van deze deelruimten zit dus enkel de nulvector.
+\end{itemize}
+\end{proof}
+
 
 \section{Oefeningen 3.6}
 \subsection{oef 1}
