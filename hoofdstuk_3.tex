@@ -1,8 +1,8 @@
 \documentclass[lineaire_algebra_oplossingen.tex]{subfiles}
 \begin{document}
 
+\newpage
 \part{Hoofdstuk 3}
-
 \section{Bewijzen uit het boek}
 \subsection{Lemma 3.7 p 93}
 Zij $(\mathbb{R},V,+)$ een vectorruimte en $v,w,x\in V$
@@ -479,6 +479,30 @@ $\beta$ is voortbrengend voor $V$ dus elke deelverzameling van $V$ met meer dan 
 \item \emph{$\beta$ is maximaal vrij. $\Rightarrow \beta$ is minimaal voortbrengend.}\\
 Omdat elke vrije verzameling kan uitgebreid worden tot een (voortbrengende) basis van $V$, kan dit ook voor $\beta$\footnote{Zie Stelling 3.37 p 107}. Als we echter $\beta$ nog uitbreiden zal $\beta$ niet meer vrij zijn, want $\beta$ is maximaal vrij. Bijgevolg is $\beta$ zelf al een basis voor $V$. Volgens het lemma van Steinitz\footnote{Zie Stelling 3.32 p 104} is elke verzameling kleiner dan $\beta$ niet meer voortbrengend. $\beta$ is dus minimaal voortbrengend.
 \item \emph{$\beta$ is minimaal voortbrengend. $\Rightarrow \beta$ is een basis van $V$.}\\ $\beta$ is een voortbrengende verzameling van $V$, en kan dus uitgedund worden tot een basis van $V$. Omdat $\beta$ minimaal voortbrengend is, zou de verwijdering van slechts $1$ er al voor zorgen dat $\beta$ niet meer voortbrengend zou zijn. $\beta$ is bijgevolg al een basis van $V$.
+\end{proof}
+
+\subsection{Stelling 3.43 p 110}
+Zij $(\mathbb{R},V,+)$ een eindig dimensionale vectorruimte en $U$ een deelruimte van $V$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item $U$ is eindig voortgebracht en $dimU \le dimV$
+\item $dimU=dimV \Leftrightarrow U = V$
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+Dit bewijs wordt graag gevraagd en staat niet volledig in het boek.
+\begin{enumerate}
+\item
+Als $U=\{\vec{0}\}$ geldt, dan wordt $U$ eindig voortgebracht door de basis: $\emptyset$\footnote{Niet $\{\vec{0}\}$! want $\vec{0}$ is lineair afhankelijk van zichzelf.}. $dimU = 0$ bijgevolg geldt zeker dat $dimU\le dimV$ want dimensies zijn nooit negatief.\\
+Als $U \neq \{\vec{0}\}$, dan kiezen we een vector $u_1 \in U$. We kunnen nu telkens \'e\'en lineair onafhankelijke vector $u_i$ toevoegen tot we een maximaal vrij deel $\beta$ van $U$ bekomen. Dit maximaal vrij deel is een basis van $U$ en bevat bijgevolg $dimU$ vectoren. $\beta$ brengt $U$ voort en het aantal vectoren in $\beta$ is eindig omdat de vectoren uit $\beta$ ook lineair onafhankelijk moeten zijn in $V$. $U$ wordt dus minimaal voortgebracht door $\beta$ en $dimU \le dimV$.
+\item
+\begin{itemize}
+\item $\Rightarrow$\\
+In het vorige deel van dit bewijs hebben we bewezen dat $U$ eindig voortgebracht wordt door een basis $\beta$ met $dimU$ elementen. Wanneer we nu weten dat $dimU=dimW$, dan volgt daaruit dat de basis $\beta$ van $U$ dus ook een basis is van $W$ omdat $U$ een deelruimte is van $V$. Omdat $U$ en $V$ dezelfde basis hebben, geldt $U = V$.
+\item $\Leftarrow$\\
+Omdat $U$ gelijk is aan $V$ heeft $U$ dezelfde basis als $V$. In twee dezelfde verzamelingen zitten evenveel elementen, dus $dimU=dimV$.
+\end{itemize}
+\end{enumerate}
 \end{proof}
 
 \section{Oefeningen 3.6}
