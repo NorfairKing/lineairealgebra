@@ -353,6 +353,19 @@
    - [ ] 3.64 p 123 warreee
 * TODO Hoofdstuk 4
   DEADLINE: <2013-11-26 Die>
+** TODO Bewijzen
+*** DONE Lemma      4.2  p 130
+    CLOSED: [2013-12-04 Wed 13:47]
+*** DONE Gevolg     4.3  p 130
+    CLOSED: [2013-12-04 Wed 15:01]
+*** TODO Propositie 4.10 p 141
+*** TODO Stelling   4.13 p 142
+*** TODO Stelling   4.16 p 145
+*** TODO Propositie 4.27 p 155
+*** TODO Stelling   4.29 p 156
+*** TODO Stelling   4.31 p 157
+*** TODO Gevolg     4.35 p 159
+*** TODO Stelling   4.43 p 164
 ** TODO Oefeningen
 *** TODO Voorbereiding
     - [ ] 1
@@ -391,17 +404,6 @@
     - [ ] 4.19 p147 jdewaen
     - [ ] 4.25 p154 fokdiekul
     - [ ] 4.37 p160 egonny
-** TODO Bewijzen
-    - [X] Lemma      4.2  p130 warreee
-    - [ ] Gevolg     4.3  p130
-    - [ ] Propositie 4.10 p141
-    - [ ] Stelling   4.13 p142
-    - [ ] Stelling   4.16 p145
-    - [ ] Propositie 4.27 p155
-    - [ ] Stelling   4.29 p156
-    - [ ] Stelling   4.31 p157
-    - [ ] Gevolg     4.35 p159
-    - [ ] Stelling   4.43 p164
 * TODO Hoofdstuk 5
   DEADLINE: <2013-12-10 Die>
 ** TODO Bewijzen

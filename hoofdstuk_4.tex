@@ -4,7 +4,7 @@
 \newpage
 \part{Hoofdstuk 4}
 \section{Bewijzen uit het boek}
-\subsection{Lemma 4.2}
+\subsection{Lemma 4.2 p 130}
 \subsubsection*{Te bewijzen}
 Een afbeelding $L:V\rightarrow W$ tussen re\"ele vectorruimten is een lineaire afbeelding a.s.a.
 $$L(\lambda_1v_1+\lambda_2v_2) = \lambda_1L(v_1)+\lambda_2L(V_2)\ \text{ voor alle } \lambda_1,\lambda_2 \in \mathbb{R} \text{ en voor alle } v_1,v_2 \text{ in V.}$$
@@ -42,6 +42,103 @@ L(\lambda v)=L(\lambda v + 0) \tag{neutraal element in V}\\
 =\lambda L(v) + 0 \tag{Lemma 3.8 in W}\\
 =\lambda L(v) \tag{neutraal element in W}
 \end{align*}
+
+\subsection{Gevolg 4.3 p 130}
+Zij $L:V\rightarrow W$ een lineaire afbeelding.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item
+\[\forall v \in V: L(\vec{0})=\vec{0}\]
+\item
+\[\forall v \in V: L(-v)=-L(v)\]
+\item
+\[\forall v_i\in V, \lambda_i \in \mathbb{R}: L\left(\sum_{i=1}^n\lambda_iv_i\right) = \sum_{i=1}^n\lambda_iL(v_i)\]
+\item
+Een lineaire afbeelding ligt volledig vast door de beelden van een basis.
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+Direct bewijs.
+\begin{enumerate}
+\item
+Uit lineariteit van een lineaire afbeelding\footnote{Zie Definitie 4.1 p 130} (duh) volgt het volgende.
+\[
+L(\vec{0}) = L(\vec{0} + \vec{0}) = L(\vec{0}) + L(\vec{0})
+\]
+Detail: het volgende geldt enkel omdat $L(\vec{0})$ een element is uit een vectorruimte\footnote{Zie Lemma 3.7 p 93}.
+\[
+L(\vec{0}) = L(\vec{0}) + L(\vec{0}) \Rightarrow L(\vec{0}) = \vec{0}
+\]
+\item
+We beginnen met iets triviaal.
+\[\vec{0}=\vec{0}\]
+Zie vorig deel van dit bewijs.
+\[L(\vec{0}) = \vec{0}\]
+Tegengesteld element in een vectorruimte\footnote{Zie Definitie 3.2 p 88 puntje 3}
+\[L(v + (-v)) = \vec{0}\]
+Uit lineariteit van een lineaire afbeelding\footnote{Zie Definitie 4.1 p 130} (duh) volgt het volgende.
+\[L(v) + L(-v) = \vec{0}\]
+Deze overgang lijk triviaal maar het werkt omdat $L(v)$ een element van een vectorruimte is.
+\[L(-v) = - L(v)\]
+\item
+Dit volgt eenvoudig uit de definitie van lineaire afbeelding\footnote{Zie Definitie 4.1 p 130}. Kies willekeurige $v_i$ en $\lambda_i$.
+\[L\left(\sum_{i=1}^n\lambda_iv_i\right) =  \sum_{i=1}^nL(\lambda_iv_i)= \sum_{i=1}^n\lambda_iL(v_i)\]
+\item
+Elke vector $v\in V$ kan geschreven worden als lineaire combinatie van de basisvectoren van $\beta = \{e_1,e_2,...,e_n\}$. Als we nu de basis van $V$ afbeelden krijgen we $L(\beta) = \{L(e_1),L(e_2),...,L(e_n)\}$ We bewijzen nu dat elke vector in $W$ geschreven kan worden als lineaire combinatie van $L(\beta)$.
+\[
+\forall v \in V:\exists\lambda_i \in \mathbb{R}: v= \sum\lambda_iv_i
+\]
+\[
+\forall v \in V:\exists\lambda_i \in \mathbb{R}: L(v)= L(\sum\lambda_iv_i)
+\]
+\[
+\forall v \in V:\exists\lambda_i \in \mathbb{R}: L(v)= \sum\lambda_iL(v_i)
+\]
+\end{enumerate}
+\end{proof}
+
+\subsection{Propositie}
+Zij $(\mathbb{R},v,+)$ en $(\mathbb{R},W,+)$ vectorruimten. Zij $f$ en $g$ lineaire afbeeldingen $V\rightarrow W$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item De volgende afbeelding is lineair.
+\[f+g: V \rightarrow W: v\mapsto(f+g)(v)=f(v)+g(v)\]
+\item De volgende afbeelding is eveneens lineair.
+\[\lambda f: V\rightarrow W: v\mapsto (\lambda f)(v) = \lambda f(v)\]
+\item De verzameling van alle lineaire afbeeldingen van $V$ naar $W$ is een lineaire afbeelding.
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+Direct bewijs.
+\begin{enumerate}
+\item
+We veri\"eren de lineariteit van deze afbeelding.
+\[
+(f+g)(\lambda_1v_1+\lambda_2v_2) = f(\lambda_1v_1+\lambda_2v_2) + g(\lambda_1v_1+\lambda_2v_2)
+\]
+Nu geldt door de lineariteit van $f$ en $g$ het volgende.
+\[
+= \lambda_1f(v_1)+\lambda_2f(v_2) + \lambda_1g(v_1)+\lambda_2g(v_2) = \lambda_1(f(v_1)+g(v_1)) + \lambda_2(f(v_1)+g(v_1))
+\]
+Dit is precies wat nodig is voor lineariteit.
+\[
+\lambda_1(f+g)(v_1)+\lambda_2(f+g)(v_2)
+\]
+\item
+We veri\"eren de lineariteit van deze afbeelding.
+\[
+(\lambda f)(\lambda_1v_1+\lambda_2v_2) = \lambda f(\lambda_1v_1+\lambda_2v_2)
+\]
+De volgende gelijkheid geldt door de lineariteit van $f$. 
+\[
+=  f(\lambda_1\lambda v_1+\lambda_2\lambda v_2) = \lambda_1\lambda f(v_1)+\lambda_2\lambda f(v_2) = 
+\lambda_1(\lambda f)(v_1)+\lambda_2(\lambda f)(v_2)
+\]
+\item
+TODO ga alle axioma's na.
+\end{enumerate}
+\end{proof}
+
 
 \section{Oefeningen 4.8}
 \subsection{Oefening 1}
