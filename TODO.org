@@ -358,6 +358,7 @@
     CLOSED: [2013-12-04 Wed 13:47]
 *** DONE Gevolg     4.3  p 130
     CLOSED: [2013-12-04 Wed 15:01]
+*** TODO Voorbeeld  4.4  p 131
 *** TODO Propositie 4.10 p 141
 *** TODO Stelling   4.13 p 142
 *** TODO Stelling   4.16 p 145
