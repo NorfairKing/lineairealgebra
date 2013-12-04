@@ -378,7 +378,7 @@
     - [X] 11 MajorMonodon
     - [ ] 17 warreee
     - [ ] 20 NorfairKing
-    - [ ] 26 
+    - [ ] 23 warreee
 *** TODO Extra
 **** TODO Algemene uitleg voor matrixvoorstelling van lineaire afbeelding.
 ** TODO Opdrachten   
@@ -404,6 +404,16 @@
     - [ ] Stelling   4.43 p164
 * TODO Hoofdstuk 5
   DEADLINE: <2013-12-10 Die>
+** TODO Oefeningen
+*** TODO Voorbereiding
+    - [ ] 3 NorfairKing
+    - [ ] 4
+        - [ ] c jdewaen
+*** TODO In Oefenzitting
+    - [ ] 1 egonny
+    - [ ] 4
+        - [ ] a fokdiekul
+    - [ ] 10 MajorMonodon
 ** TODO Bewijzen
 *** TODO Stelling 5.2 p 117
 *** TODO Voorbeeld 5.4 
