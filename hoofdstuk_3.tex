@@ -618,9 +618,54 @@ $dimN(U)$ is gelijk aan het aantal vrije variabelen van het stelsel $U\cdot X = 
 \end{proof}
 
 \subsection{Stelling 3.61 p 120}
+Zij $A \in \mathbb{m \times n}$ en $B \in \mathbb{n \times o}$ zodat $A\times B$ bepaald is.
 \subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item
+\[
+N(B) \subset N(AB)
+\]
+\item
+\[
+C(AB) \subset C(A)
+\]
+\item
+\[ 
+R(AB)\subset R(B)
+\]
+\end{enumerate}
 \subsubsection*{Bewijs}
-
+\begin{proof}
+\begin{enumerate}
+\item
+Stel dat $X\in N(B)$, dan geldt dat $BX=0$. We tonen nu aan dat ook $(AB)X=0$ geldt.
+\[(AB)X=0\]
+\[A(BX)=0\]
+\[A0=0\]
+\[0=0\]
+\item
+$C(AB)$ is de verzameling van alle lineaire combinaties van kolommen van $AB$. De kolommen van $AB$ zijn van de vorm $Ab_i$ met $b_i$ kolommen van $B$. $Ab_i$ is een lineaire combinatie van de kolommen van $A$. Voor elke vector $v \in C(AB)$ geldt dus $v\in C(A)$. Met andere woorden geldt het volgende.
+\[C(AB) \subset C(A)\]
+\item
+Door middel van enig gefoefel kunnen we dit gemakkelijk bewijzen.
+De rijruimte van een matrix is gelijk aan de kolomruimte van de getransponeerde matrix.
+\[
+R(AB) = C((AB)^T)
+\]
+Nu passen we een eigenschap van getransponeerde matrices toe\footnote{Zie Eigenschappen p 32}
+\[
+(AB)^T = B^TA^T
+\]
+Door het vorige deel van dit bewijs weten we nu het volgende over kolomruimtes.
+\[
+C(B^TA^T) \subset C(B^T)
+\]
+Nu vormen we dit opnieuw om naar een kolomruimte om het bewijs te vervolledigen.
+\[
+C(B^T) = R(B)
+\]
+\end{enumerate}
+\end{proof}
 
 \section{Oefeningen 3.6}
 \subsection{oef 1}
