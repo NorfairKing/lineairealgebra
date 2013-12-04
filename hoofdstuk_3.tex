@@ -580,6 +580,47 @@ De vectoren uit de basis van $U$ zijn lineair onafhankelijk van de vectoren uit 
 \end{itemize}
 \end{proof}
 
+\subsection{Stelling 3.60 p 119}
+Zij $A \in \mathbb{R}^{m\times n}$ en zijn $U$ de rijgereduceerde matrixvorm van $A$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item 
+\[
+N(A) = N(U)
+\]
+\item
+\[
+R(A) = R(U)
+\]
+\item
+\[
+dimN(A) + dimR(A) = n
+\]
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs in woorden.
+\begin{enumerate}
+\item We weten uit hoofdstuk 1 dat de oplossingsverzameling van het stelsel $A\cdot X = \vec{0}$ gelijk is aan die van $U\cdot X = \vec{0}$. Dit betekent precies het volgende.
+\[
+N(A) = N(U)
+\]
+TODO VERWIJZEN NAAR EEN BEWIJS
+\item De matrix $U$ ontstaat uit $A$ door elementaire rijoperaties. Elementaire rijoperaties veranderen de rijruimte van een matrix niet. 
+\[
+R(A) = R(U)
+\]
+TODO BEWIJS DIT
+\item
+$dimR(U)$ is precies gelijk aan het aantal niet-nulrijen in $U$.
+$dimN(U)$ is gelijk aan het aantal vrije variabelen van het stelsel $U\cdot X = \vec{0}$. Het aantal niet-vrije variabelen (niet-nulrijen) plus het aantal vrije variabelen is gelijk aan het totaal aantal variabelen.
+\end{enumerate}
+\end{proof}
+
+\subsection{Stelling 3.61 p 120}
+\subsubsection*{Te Bewijzen}
+\subsubsection*{Bewijs}
+
 
 \section{Oefeningen 3.6}
 \subsection{oef 1}

@@ -238,8 +238,6 @@
     CLOSED: [2013-12-03 Tue 16:22]
 *** DONE Stelling 3.45 p 111
     CLOSED: [2013-12-03 Tue 16:22]
-*** DONE Stelling 3.49 p 114
-    CLOSED: [2013-11-30 Sat 12:40]
 *** DONE Stelling 3.52 p 115
     CLOSED: [2013-12-03 Tue 16:22]
 *** DONE Stelling 3.56 p 116
