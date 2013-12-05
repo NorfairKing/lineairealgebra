@@ -139,6 +139,15 @@ TODO TEGENVOORBEELD
 \item De projecties die co\"ordinaatvectoren afbeelden op individuele co\"ordinaten zijn lineaire vormen.
 TODO BEWIJS
 \item De spoorafbeelding is een lineaire afbeelding.
+TODO BEWIJS
+\item Is de overgang zoals beschreven op pagina 134 een lineaire afbeelding.
+TODO BEWIJS
+\item Elke matrix bepaalt een lineaire afbeelding.
+TODO BEWIJS.
+\item Bewijs dat dit een lineaire afbeelding is.
+TODO BEWIJS
+\item Bewijs dat $\Delta$ een lineare afbeelding is.
+TODO BEWIJS
 \end{enumerate}
 \subsection{Propositie 4.10 p 141}
 Zij $(\mathbb{R},v,+)$ en $(\mathbb{R},W,+)$ vectorruimten. Zij $f$ en $g$ lineaire afbeeldingen $V\rightarrow W$.
@@ -182,6 +191,38 @@ TODO ga alle axioma's na.
 \end{enumerate}
 \end{proof}
 
+\subsection{Stelling 4.12 p 142}
+Zij $(\mathbb{R},V,+)$ en  $(\mathbb{R},W,+)$ eindigdimensionale vecotrruimten van dimensie respectievelijk $n$ en $m$.
+\subsubsection*{Te Bewijzen}
+Na basiskeuze in $V$ en $W$ is de vectorruimte van de lineaire afbeeldingen van $V$ naar $W$, namelijk $Hom_{\mathbb{R}}(V,W)$, in bijectief verband met de vectorruimte van de matrices $\mathbb{R}^{m\times n}$.
+\subsubsection*{Bewijs}
+\begin{proof}
+TODO BEWIJS: HOE
+\end{proof}
+
+\subsection{Stelling 4.13 p 142}
+Zij $K:U\rightarrow V$ en $L:V\rightarrow W$ lineaire afbeeldingen.
+\subsubsection*{Te Bewijzen}
+De samenstelling van twee lineaire afbeeldingen is opnieuw een lineaire afbeelding.
+\[
+\forall u_1,u_2\in U \lambda_1,\lambda_2\in\mathbb{R}: (L\circ K)(\lambda_1u_1 + \lambda_2u_2) = \lambda_1(L\circ K)u_1 + \lambda_2(L\circ K)u_2
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+Kies willekeurige $u_1,u_2\in U$ en $\lambda_1,\lambda_2\in\mathbb{R}$
+\[
+(L\circ K)(\lambda_1u_1 + \lambda_2u_2) = L(K(\lambda_1u_1 + \lambda_2u_2))
+\]
+Bovenstaande gelijkheid geldt volgens de definitie van samengestelde afbeeldingen. Zie \ref{samenstelling_van_afbeeldingen}. De volgende gelijkheden gelden door de lineariteit van $L$ en $K$
+\[
+= L(\lambda_1K(u_1) + \lambda_2K(u_2)) = \lambda_1L(K(u_1)) + \lambda_2L(K(u_2))
+\]
+Opnieuw volgens de definitie van samengestelde afbeeldingen geldt de volgende vergelijking.
+\[
+= \lambda_1(L\circ K)u_1 + \lambda_2(L\circ K)u_2
+\]
+Dit betekent precies dat de samenstelling van lineaire afbeeldingen lineair is.
+\end{proof}
 
 \section{Oefeningen 4.8}
 \subsection{Oefening 1}
