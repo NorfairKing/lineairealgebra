@@ -159,7 +159,7 @@ u_{2x}\\0\\
 \item De spiegeling t.o.v. een as is lineair.
 \begin{proof}
 \[
-p_x \left(\lambda_1
+s_x \left(\lambda_1
 \begin{pmatrix}
 u_{1x}\\u_{1y}
 \end{pmatrix} 
@@ -168,7 +168,7 @@ u_{1x}\\u_{1y}
 u_{2x}\\u_{2y}
 \end{pmatrix} \right)
  = 
-p_x \left(
+s_x \left(
 \begin{pmatrix}
 \lambda_1u_{1x}\\\lambda_1u_{1y}
 \end{pmatrix} 
@@ -177,7 +177,7 @@ p_x \left(
 \lambda_2u_{2x}\\\lambda_2u_{2y}
 \end{pmatrix} \right)
 =
-p_x \left(
+s_x \left(
 \begin{pmatrix}
 \lambda_1u_{1x}+\lambda_2u_{2x}\\\lambda_1u_{1y}+\lambda_2u_{2y}\\
 \end{pmatrix} \right)
@@ -208,14 +208,14 @@ u_{2x}\\-u_{2y}\\
 \]
 \[
 =
-\lambda_1p_x(u_1) + \lambda_2p_x(u_2)
+\lambda_1s_x(u_1) + \lambda_2s_x(u_2)
 \]
 \end{proof}
 (De spiegeling t.o.v. een rechte die niet door de oorsprong gaat is niet lineair.)
 \item De puntspiegeling t.o.v. de oorsprong is lineair.
 \begin{proof}
 \[
-p_x \left(\lambda_1
+s_O \left(\lambda_1
 \begin{pmatrix}
 u_{1x}\\u_{1y}
 \end{pmatrix} 
@@ -224,7 +224,7 @@ u_{1x}\\u_{1y}
 u_{2x}\\u_{2y}
 \end{pmatrix} \right)
  = 
-p_x \left(
+s_O \left(
 \begin{pmatrix}
 \lambda_1u_{1x}\\\lambda_1u_{1y}
 \end{pmatrix} 
@@ -233,7 +233,7 @@ p_x \left(
 \lambda_2u_{2x}\\\lambda_2u_{2y}
 \end{pmatrix} \right)
 =
-p_x \left(
+s_O \left(
 \begin{pmatrix}
 \lambda_1u_{1x}+\lambda_2u_{2x}\\\lambda_1u_{1y}+\lambda_2u_{2y}\\
 \end{pmatrix} \right)
@@ -264,12 +264,65 @@ p_x \left(
 \]
 \[
 =
-\lambda_1p_x(u_1) + \lambda_2p_x(u_2)
+\lambda_1s_O(u_1) + \lambda_2s_O(u_2)
 \]
 \end{proof}
 (De puntspiegeling t.o.v. een ander punt is niet lineair.)
 \item De homothetie met factor $\lambda$ en centrum de oorsprong is lineair.
-TODO bewijs.
+\begin{proof}
+\[
+h_\lambda \left(\lambda_1
+\begin{pmatrix}
+u_{1x}\\u_{1y}
+\end{pmatrix} 
++ \lambda_2
+\begin{pmatrix}
+u_{2x}\\u_{2y}
+\end{pmatrix} \right)
+ = 
+h_\lambda \left(
+\begin{pmatrix}
+\lambda_1u_{1x}\\\lambda_1u_{1y}
+\end{pmatrix} 
++ 
+\begin{pmatrix}
+\lambda_2u_{2x}\\\lambda_2u_{2y}
+\end{pmatrix} \right)
+=
+h_\lambda \left(
+\begin{pmatrix}
+\lambda_1u_{1x}+\lambda_2u_{2x}\\\lambda_1u_{1y}+\lambda_2u_{2y}\\
+\end{pmatrix} \right)
+\]
+\[
+= 
+\begin{pmatrix}
+\lambda\lambda_1u_{1x}+\lambda\lambda_2u_{2x}\\\lambda\lambda_1u_{1y}+\lambda\lambda_2u_{2y})\\
+\end{pmatrix} 
+=
+\begin{pmatrix}
+\lambda\lambda_1u_{1x}\\\lambda\lambda_2u_{2x}\\
+\end{pmatrix}
++
+\begin{pmatrix}
+\lambda\lambda_2u_{2x}\\\lambda\lambda_2u_{2y}\\
+\end{pmatrix}
+=
+\lambda_1
+\begin{pmatrix}
+\lambda u_{1x}\\\lambda u_{2x}\\
+\end{pmatrix}
++
+\lambda_2
+\begin{pmatrix}
+\lambda u_{2x}\\\lambda u_{2y}\\
+\end{pmatrix}
+\]
+\[
+=
+\lambda_1p_x(u_1) + \lambda_2p_x(u_2)
+\]
+\end{proof}
 (een homothetie waarbij het centrum niet de oorsprong is is geen lineaire afbeelding.)
 \end{enumerate}
 \item Translaties volgens een vector verschillend van de nulvector zijn \textbf{geen} lineaire afbeeldingen.
