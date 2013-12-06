@@ -565,7 +565,7 @@ ker(L) = \{\vec{0}\}
 Bewijs van een equivalentie in twee delen.
 \begin{itemize}
 \item $\Rightarrow$\\
-Neem een willekeurige $v\in ker(L)$. Voor $v$ geldt dat $L(v) = \vec{0}$ omwille van de definitie van de kern van een lineaire afbeelding\footnote{Zie Definitie 4.26}. Omdat $L$ een lineaire afbeelding is geldt dat $L(\vec{0}) = \vec{0}$.
+Neem een willekeurige $v\in ker(L)$. Voor $v$ geldt dat $L(v) = \vec{0}$ omwille van de definitie van de kern van een lineaire afbeelding\footnote{Zie Definitie 4.26 p 155}. Omdat $L$ een lineaire afbeelding is geldt dat $L(\vec{0}) = \vec{0}$.
 \[
 L(v) = \vec{0} = L(\vec{0})
 \]
@@ -590,6 +590,42 @@ v_1=v_2
 \]
 Dit houdt in dat $L$ injectief is.
 \end{itemize}
+\end{proof}
+
+\subsection{Stelling 4.31 p 157}
+Zij $(\mathbb{R},V,+)$ en $(\mathbb{R},W,+)$ vectorruimten zijn waarvan $V$ eindig dimensionaal is. Zij $L:V\rightarrow W$ een lineaire afbeelding.
+\subsubsection*{Te Bewijzen}
+\[
+dimV = dim(Ker(L)) + dim(Im(L))
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs van dimensies.\\
+We kiezen een basis van $Ker(L)$ en breiden deze uit tot een basis van $V$. Dit kan omdat $V$ eindig dimensionaal is en omdat $Ker(L)$ een deelruimte is van $V$\footnote{Zie Propositie 4.27 p 156}. Kies $\beta = \{v_1,v_2,...,v_r\}$ als basis van $Ker(L)$. We breiden $\beta$ nu uit tot $\beta'= \{v_1,v_2,...,v_r,v_{r+1},...,v_{n}\}$ door $n-r$ vectoren toe te voegen. 
+We zullen nu bewijzen dat de uitbreiding $\{v_{r+1},...,v_{n}\}$ een basis is van $Im(L)$. We weten het volgende over het beeld van $L$.
+\[
+Im(L) = vct\{L(v_1),L(v_2),...,L(v_r),L(v_{r+1}),...,L(v_{n})\}
+\]
+Omdat $v_1,v_2,...,v_r$ in $Ker(L)$ zitten weten we het volgende.
+\[
+Im(L) = vct \{L(v_{r+1}),...,L(v_{n})\}
+\]
+We beweren nu dat de verzameling $\{L(v_{r+1}),...,L(v_{n})\}$ inderdaad vrij is.
+\[
+\vec{0}=\sum_{i=r+1}^nx_iL(v_i)=L\left(\sum_{i=r+1}^nx_iv_i\right)
+\]
+Bovenstaande bewering houdt precies in dat $\sum_{i=r+1}^nx_iv_i\in Ker(L)$ geldt. Omdat $\sum_{i=r+1}^nx_iv_i$ is dus een lineaire combinatie van $\{v_1,v_2,...,v_r\}$ en bijgevolg bestaan er $\lambda_i$ zodat het volgende geldt.
+\[
+\sum_{i=r+1}^nx_iv_i = \sum_{i=1}^r\lambda_iv_i
+\]
+\[
+\sum_{i=r+1}^nx_iv_i + \sum_{i=1}^r(-\lambda_i)v_i = \vec{0}
+\]
+Omdat $\{v_1,v_2,...,v_r,v_{r+1},...,v_{n}\}$ een basis is van $V$ geldt dat alle $x_i$ en $\lambda_i$ gelijk zijn aan nul. $\{L(v_{r+1}),...,L(v_{n})\}$ is dus een basis van $Im(L)$
+De basis van $Im(L)$ en $(Ker(L))$ bevatten respectievelijk $n-r$ en $r$ vectoren. Bijgevolg geldt het volgende en is de stelling bewezen.
+\[
+dimV = n = r + (n-r) = dim(Ker(L)) + dim(Im(L))
+\]
 \end{proof}
 
 \section{Oefeningen 4.8}
