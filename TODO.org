@@ -356,7 +356,7 @@
 ** TODO Bewijzen
 *** DONE Lemma      4.2  p 130
     CLOSED: [2013-12-04 Wed 13:47]
-*** DONE Gevolg     4.3  p 130
+5*** DONE Gevolg     4.3  p 130
     CLOSED: [2013-12-04 Wed 15:01]
 *** TODO Voorbeeld  4.4  p 131
 *** TODO Propositie 4.10 p 141
@@ -365,7 +365,8 @@
     CLOSED: [2013-12-05 Thu 17:33]
 *** DONE Stelling   4.16 p 145
     CLOSED: [2013-12-05 Thu 17:48]
-*** TODO Propositie 4.27 p 155
+*** DONE Propositie 4.27 p 155
+    CLOSED: [2013-12-06 Fri 17:58]
 *** TODO Stelling   4.29 p 156
 *** TODO Stelling   4.31 p 157
 *** TODO Gevolg     4.35 p 159

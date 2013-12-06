@@ -510,6 +510,49 @@ K(\lambda_1u_1 + \lambda_2u_2) = \lambda_1K(u_1) + \lambda_2K(u_2)
 \]
 \end{proof}
 
+\subsection{Propositie 4.27 p 155}
+Zij $L: V\rightarrow W$ een lineaire afbeelding.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item De kern van $L$ is een deelruimte van $V$.
+\[
+\forall l_1l_2\in ker(L), \lambda_1,\lambda_2\in \mathbb{R}: \lambda_1l_1+\lambda_2l_2 \in ker(L)
+\]
+\item Het beeld van $L$ is een deelruimte van $W$.
+\[
+\forall l_1l_2\in Im(L), \lambda_1,\lambda_2\in \mathbb{R}: \lambda_1l_1+\lambda_2l_2 \in Im(L)
+\]
+\item $Im(L)$ is de vectorruimte voortgebracht door de beelden van een basis van $V$.
+\[
+Im(L) = vct\{L(e)|e\in \beta\}
+\]
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+Rechtstreeks bewijs.
+\begin{enumerate}
+\item Kies twee elementen $v,w \in ker(L)$. We weten nu dat $L(v)=L(w)=0$ geldt volgens de definitie van de kern van een lineaire afbeelding. Kies nu twee willekeurige $\lambda_1,\lambda_2 \in \mathbb{R}$.
+\[
+ L(0) = \lambda_1L(v)+\lambda_2L(w) = L(\lambda_1v+\lambda_2w) = \vec{0}
+ \Rightarrow  (\lambda_1v+\lambda_2w) \in ker(L)
+\]
+Volgens de lineariteit van $L$ geldt de tweede gelijkheid\footnote{Zie Lemma 4.2 p 130}.
+\item Kies twee elementen $w_1,w_2 \in Im(L)$ en twee willekeurige $\lambda_1,\lambda_2 \in \mathbb{R}$.
+\[
+\lambda_1w_1+\lambda_2w_2 = \lambda_1L(v_1) + \lambda_2L(v_1) = L(\lambda_1v_1+\lambda_2v_2) \in Im(L)
+\]
+De eerste gelijkheid geldt omwille van de definitie van $Im(L)$ en de tweede omwille van de lineariteit van $L$\footnote{Zie Lemma 4.2 p 130}.
+\item Zij $\beta = \{e_1,e_2,...,e_n\}$ een basis van $V$, dan is elke vector $v\in V$ te schrijven als een lineaire combinatie van de vectoren in $\beta$\footnote{Zie Stelling 3.41 p 109}. We beschouwen nu het beeld van een willekeurige $v$.
+\[
+L(v) = L(\lambda_1e_1+\lambda_2e_2 + ... + \lambda_ne_n) = \lambda_1L(e_1)+\lambda_2L(e_2) + ... + \lambda_nL(e_n)
+\] 
+De tweede gelijkheid geldt volgens de lineariteit van $L$\footnote{Zie Lemma 4.2 p 130}.
+\end{enumerate}
+\end{proof}
+
+
+
+
 \section{Oefeningen 4.8}
 \subsection{Oefening 1}
 \subsubsection*{a)}
