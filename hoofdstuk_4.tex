@@ -150,12 +150,67 @@ u_{1x}\\0\\
 \begin{pmatrix}
 u_{2x}\\0\\
 \end{pmatrix}
+\]
+\[
 =
 \lambda_1p_x(u_1) + \lambda_2p_x(u_2)
 \]
 \end{proof}
 \item De spiegeling t.o.v. een as is lineair.
-TODO bewijs.
+\begin{proof}
+\[
+p_x \left(\lambda_1
+\begin{pmatrix}
+u_{1x}\\u_{1y}
+\end{pmatrix} 
++ \lambda_2
+\begin{pmatrix}
+u_{2x}\\u_{2y}
+\end{pmatrix} \right)
+ = 
+p_x \left(
+\begin{pmatrix}
+\lambda_1u_{1x}\\\lambda_1u_{1y}
+\end{pmatrix} 
++ 
+\begin{pmatrix}
+\lambda_2u_{2x}\\\lambda_2u_{2y}
+\end{pmatrix} \right)
+=
+p_x \left(
+\begin{pmatrix}
+\lambda_1u_{1x}+\lambda_2u_{2x}\\\lambda_1u_{1y}+\lambda_2u_{2y}\\
+\end{pmatrix} \right)
+\]
+\[
+= 
+\begin{pmatrix}
+\lambda_1u_{1x}+\lambda_2u_{2x}\\-(\lambda_1u_{1y}+\lambda_2u_{2y})\\
+\end{pmatrix} 
+=
+\begin{pmatrix}
+\lambda_1u_{1x}\\-\lambda_2u_{2x}\\
+\end{pmatrix}
++
+\begin{pmatrix}
+\lambda_2u_{2x}\\-\lambda_2u_{2y}\\
+\end{pmatrix}
+=
+\lambda_1
+\begin{pmatrix}
+u_{1x}\\-u_{2x}\\
+\end{pmatrix}
++
+\lambda_2
+\begin{pmatrix}
+u_{2x}\\-u_{2y}\\
+\end{pmatrix}
+\]
+\[
+=
+\lambda_1p_x(u_1) + \lambda_2p_x(u_2)
+\]
+\end{proof}
 (De puntspiegeling t.o.v. een rechte die niet door de oorsprong gaat is niet lineair.)
 \item De puntspiegeling t.o.v. de oorsprong is lineair.
 TODO bewijs.
