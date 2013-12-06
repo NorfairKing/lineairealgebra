@@ -363,7 +363,8 @@
 *** ISSUE Stelling   4.12 p 142
 *** DONE Stelling   4.13 p 142
     CLOSED: [2013-12-05 Thu 17:33]
-*** TODO Stelling   4.16 p 145
+*** DONE Stelling   4.16 p 145
+    CLOSED: [2013-12-05 Thu 17:48]
 *** TODO Propositie 4.27 p 155
 *** TODO Stelling   4.29 p 156
 *** TODO Stelling   4.31 p 157
