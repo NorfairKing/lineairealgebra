@@ -369,12 +369,21 @@ De optelling en de scalaire vermenigvuldiging gaan door de bepaalde integraal.
 \int_a^b(\lambda_1v_1+\lambda_2v_2) = \lambda_1\int_a^b(v_1)+\lambda_2\int_a^b(v_2))
 \]
 \end{proof}
-\item De volgende afbeelding is lineaire afbeeldingen.
-\[\mathbb{R}^2 \rightarrow \mathbb{R}: (x,y) \mapsto ax+by\]
-TODO BEWIJS
+\item De volgende afbeelding is een lineaire afbeelding.
+\[f: \mathbb{R}^2 \rightarrow \mathbb{R}: (x,y) \mapsto ax+by\]
+\begin{proof}
+\[
+f(\lambda_1v_1+\lambda_2v_2) = (a\lambda_1v_{1x}+b\lambda_1(v_{1y})+(a\lambda_2v_{2x}+b\lambda_2v_{2y})
+\]
+\[
+= \lambda_1(av_{1x}+bv_{1y})+\lambda_2(av_{2x}+bv_{2y}) = \lambda_1f(v_1)+\lambda_2f(v_2))
+\]
+\end{proof}
 \item De volgende afbeelding is niet lineair
-\[\mathbb{R}^2 \rightarrow \mathbb{R}: (x,y) \mapsto ax+by\]
-TODO TEGENVOORBEELD
+\[g: \mathbb{R}^2 \rightarrow \mathbb{R}: (x,y) \mapsto ax+by+c\]
+\begin{proof}
+De nulvector $\vec{0}$ wordt niet op zichzelf afgebeeld maar op $c$.
+\end{proof}
 \item De projecties die co\"ordinaatvectoren afbeelden op individuele co\"ordinaten zijn lineaire vormen.
 TODO BEWIJS
 \item De spoorafbeelding is een lineaire afbeelding.
