@@ -550,8 +550,47 @@ De tweede gelijkheid geldt volgens de lineariteit van $L$\footnote{Zie Lemma 4.2
 \end{enumerate}
 \end{proof}
 
-
-
+\subsection{Stelling 4.29 p 156}
+Zij $L:V\rightarrow W$ een lineaire afbeelding.
+\subsubsection*{Te Bewijzen}
+\begin{center}
+$L$ is injectief.
+\end{center}
+\[\Leftrightarrow\]
+\[
+ker(L) = \{\vec{0}\}
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs van een equivalentie in twee delen.
+\begin{itemize}
+\item $\Rightarrow$\\
+Neem een willekeurige $v\in ker(L)$. Voor $v$ geldt dat $L(v) = \vec{0}$ omwille van de definitie van de kern van een lineaire afbeelding\footnote{Zie Definitie 4.26}. Omdat $L$ een lineaire afbeelding is geldt dat $L(\vec{0}) = \vec{0}$.
+\[
+L(v) = \vec{0} = L(\vec{0})
+\]
+Vanwege de injectiviteit\ref{injectief} van $L$ geldt nu dat $v=\vec{0}$ voor elke $v \in ker(L)$. Dit betekent dat in $ker(L)$ enkel de nulvector zit.
+\item $\Leftarrow$\\
+Kies twee vectoren $v_1,v_2 \in V$ zodat $L(v_1)=L(v_2)$. We moeten nu aantonen dat dit impliceert dat $v_1$ en $v_2$ gelijk zijn.
+\[
+L(v_1)=L(v_2)
+\]
+\[
+L(v_1)-L(v_2) = \vec{0}
+\]
+\[
+L(v_1-v_2) = \vec{0}
+\]
+Bovenstaande bewering houdt in dat $v_1-v_2 \in ker(L)$. Omdat $ker(L) = \{\vec{0}\}$ geldt het volgende.
+\[
+v_1-v_2 = \vec{0}
+\]
+\[
+v_1=v_2
+\]
+Dit houdt in dat $L$ injectief is.
+\end{itemize}
+\end{proof}
 
 \section{Oefeningen 4.8}
 \subsection{Oefening 1}

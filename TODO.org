@@ -367,7 +367,8 @@
     CLOSED: [2013-12-05 Thu 17:48]
 *** DONE Propositie 4.27 p 155
     CLOSED: [2013-12-06 Fri 17:58]
-*** TODO Stelling   4.29 p 156
+*** DONE Stelling   4.29 p 156
+    CLOSED: [2013-12-06 Fri 18:14]
 *** TODO Stelling   4.31 p 157
 *** TODO Gevolg     4.35 p 159
 *** TODO Stelling   4.43 p 164
