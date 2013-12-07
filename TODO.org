@@ -374,7 +374,9 @@
 *** ISSUE Stelling   4.43 p 159
 *** DONE Gevolg     4.35 p 159
     CLOSED: [2013-12-07 Sat 12:33]
-*** TODO Stelling   4.43 p 164
+*** ISSUE Gevolg     4.39 p 160
+*** DONE Stelling   4.40 p 161 
+    CLOSED: [2013-12-07 Sat 13:37]
 ** TODO Oefeningen
 *** TODO Voorbereiding
     - [ ] 1

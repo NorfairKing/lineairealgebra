@@ -663,7 +663,7 @@ $L$ is injectief $\Leftrightarrow L$ is surjectief $\Leftrightarrow L$ is biject
 \end{center}
 \subsubsection*{Bewijs}
 \begin{proof}
-Bewijs door implicaties.
+Bewijs door circulaire implicaties.
 \begin{itemize}
 \item $L$ is injectief $\Rightarrow L$ is surjectief.\\
 Omdat $L$ injectief is, zal de kern van $L$ enkel de nulvector bevatten\footnote{Zie Stelling 4.29 p 156}.
@@ -677,6 +677,73 @@ Omdat $L$ surjectief is geldt $Im(L)=V$. Uit de dimensiestelling volgt dan dat $
 Dit volgt meteen uit de definitie van bijectiviteit (Zie \ref{bijectief}).
 \end{itemize}
 \end{proof}
+
+\subsection{Gevolg 4.39 p 160}
+Zij $A \in \mathbb{R}^{m\times n}$.
+\subsubsection*{Te Bewijzen}
+\begin{center}
+$A\cdot X = b$ is oplosbaar voor elke $b\in \mathbb{R}^m$
+\end{center}
+\[\Leftrightarrow\]
+\[C(A) = \mathbb{R}^m\]
+\[\Leftrightarrow\]
+\begin{center}
+De rang van $A$ is $m$
+\end{center}
+\[\Leftrightarrow\]
+\begin{center}
+De rijen van $A$ zijn lineair onafhankelijk.
+\end{center}
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door circulaire implicaties.
+\begin{itemize}
+\item
+$A\cdot X = b$ is oplosbaar voor elke $b\in \mathbb{R}^m \Rightarrow C(A) = \mathbb{R}^m$.\\
+Als elke $b\in \mathbb{R}^m$ gevormd kan worden door lineaire combinatie van de kolommen van $A$ houdt dit precies in dat de kolomruimte van $A$ heel $\mathbb{R}^m$ is.
+\item
+$C(A) = \mathbb{R}^m \Rightarrow $ De rang van $A$ is $m$.\\
+We weten dat de kolomrang gelijk is aan de rijrang en de rang van $A$. De kolomrang is gelijk aan de dimensie van de kolomruimte. Deze is duidelijk $m$. De rang van $A$ dus ook.
+
+\item
+ De rang van $A$ is $m \Rightarrow$ De rijen van $A$ zijn lineair onafhankelijk.\\
+Het aantal lineair onafhankelijk rijen van $A$ is precies gelijk aan de rang van $A$. Er zijn dus nul lineaire afhankelijke rijen in $A$. De rijen van $A$ zijn bijgevolg lineair onafhankelijk.
+
+\item
+De rijen van $A$ zijn lineair onafhankelijk. $\Rightarrow A\cdot X = b$ is oplosbaar voor elke $b\in \mathbb{R}^m$.
+
+Als de rijen van $A$ lineair onafhankelijk zijn komen er geen nulrijen tevoorschijn na rijreductie onafhankelijk van $b$.
+\end{itemize}
+\end{proof}
+
+\subsection{Stelling 4.40 p 161}
+\subsubsection*{Te Bewijzen}
+\subsubsection*{Bewijs}
+\begin{proof}
+
+\end{proof}
+
+\subsection{Stelling 4.41 p 161}
+\subsubsection*{Te Bewijzen}
+\subsubsection*{Bewijs}
+\begin{proof}
+
+\end{proof}
+
+\subsection{Stelling 4.42 p 161}
+\subsubsection*{Te Bewijzen}
+\subsubsection*{Bewijs}
+\begin{proof}
+
+\end{proof}
+
+\subsection{Stelling 4.42 p 164}
+\subsubsection*{Te Bewijzen}
+\subsubsection*{Bewijs}
+\begin{proof}
+
+\end{proof}
+
 
 \section{Oefeningen 4.8}
 \subsection{Oefening 1}
