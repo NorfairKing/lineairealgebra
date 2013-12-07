@@ -655,6 +655,28 @@ Hierin is $r$ de rang van de lineaire afbeelding $L$.
 TODO, hoe?
 \end{proof}
 
+\subsection{Gevolg 4.35 p 159}
+Zij $L: V\rightarrow V : v\mapsto L(v)$ een lineaire transformatie is van de eindig dimensionale vectorruimte $(\mathbb{R},V,+)$.
+\subsubsection*{Te Bewijzen}
+\begin{center}
+$L$ is injectief $\Leftrightarrow L$ is surjectief $\Leftrightarrow L$ is bijectief
+\end{center}
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door implicaties.
+\begin{itemize}
+\item $L$ is injectief $\Rightarrow L$ is surjectief.\\
+Omdat $L$ injectief is, zal de kern van $L$ enkel de nulvector bevatten\footnote{Zie Stelling 4.29 p 156}.
+\[Ker(L) = \{\vec{0}\}\]
+$dim(Ker(L))$ is dus gelijk aan $0$. Uit de dimensiestelling volgt dan dat $dim(Im(L)) = dim(V)$ geldt. Omdat $Im(L)$ een deelruimte is van $V$\footnote{Zie Propositie 4.27 p 155} geldt dat $Im(L) = V$. Dit houdt in dat $L$ surjectief is.
+
+\item $L$ is surjectief $\Rightarrow L$ is bijectief.\\
+Omdat $L$ surjectief is geldt $Im(L)=V$. Uit de dimensiestelling volgt dan dat $dim(Ker(L)) = 0$\footnote{Zie Propositie 4.27 p 155}. Bijgevolg geldt $Ker(L) = \{\vec{0}\}$. Dit houdt precies in dat $V$ injectief is\footnote{Zie Stelling 4.29 p 156}. Omdat $L$ injectief en surjectief is geldt dat $L$ bijectief is(Zie \ref{bijectief}).
+
+\item $L$ is bijectief $\Rightarrow L$ is injectief.\\
+Dit volgt meteen uit de definitie van bijectiviteit (Zie \ref{bijectief}).
+\end{itemize}
+\end{proof}
 
 \section{Oefeningen 4.8}
 \subsection{Oefening 1}
