@@ -371,6 +371,7 @@
     CLOSED: [2013-12-06 Fri 18:14]
 *** DONE Stelling   4.31 p 157
     CLOSED: [2013-12-06 Fri 18:44]
+*** ISSUE Stelling   4.43 p 159
 *** TODO Gevolg     4.35 p 159
 *** TODO Stelling   4.43 p 164
 ** TODO Oefeningen
