@@ -679,6 +679,13 @@ Dit volgt meteen uit de definitie van bijectiviteit (Zie \ref{bijectief}).
 \end{proof}
 
 \subsection{Gevolg 4.39 p 160}
+\subsubsection*{Te Bewijzen}
+\subsubsection*{Bewijs}
+\begin{proof}
+
+\end{proof}
+
+\subsection{Stelling 4.40 p 161}
 Zij $A \in \mathbb{R}^{m\times n}$.
 \subsubsection*{Te Bewijzen}
 \begin{center}
@@ -716,28 +723,85 @@ Als de rijen van $A$ lineair onafhankelijk zijn komen er geen nulrijen tevoorsch
 \end{itemize}
 \end{proof}
 
-\subsection{Stelling 4.40 p 161}
-\subsubsection*{Te Bewijzen}
-\subsubsection*{Bewijs}
-\begin{proof}
-
-\end{proof}
-
 \subsection{Stelling 4.41 p 161}
+Zij $A \in \mathbb{R}^{m\times n}$
 \subsubsection*{Te Bewijzen}
+\begin{center}
+Voor elke $b \in \mathbb{R}^m$ heeft het stelsel $A\cdot X = b$ hoogstens \'e\'en oplossing.
+\end{center}
+\[\Leftrightarrow\]
+\[N(A) = \{\vec{0}\}\]
+\[\Leftrightarrow\]
+\begin{center}
+De rang van $A$ is gelijk aan $m$.
+\end{center}
+\[\Leftrightarrow\]
+\begin{center}
+De kolommen van $A$ zijn lineair onafhankelijk.
+\end{center}
 \subsubsection*{Bewijs}
 \begin{proof}
-
+Bewijs door circulaire implicaties.
+\begin{itemize}
+\item
+Voor elke $b \in \mathbb{R}^m$ heeft het stelsel $A\cdot X = b$ hoogstens \'e\'en oplossing.
+ $\Rightarrow N(A) = \{\vec{0}\}$\\
+$A\cdot X = b$ heeft dus ook hoogstens \'e\'en oplossing voor $b = \vec{0}$. Die \'ene oplossing moet de nulvector zijn omdat  p $N(A)$ een deelruimte is\footnote{Propositie 4.27 p 155} en de kleinste deelruimte enkel de nulvector bevat.
+\item
+$N(A) = \{\vec{0}\} \Rightarrow $ De rang van $A$ is gelijk aan $n$.\\
+TODO
+\item
+De rang van $A$ is gelijk aan $m$. $\Rightarrow$ De kolommen van $A$ zijn lineair onafhankelijk.\\
+TODO
+\item
+De kolommen van $A$ zijn lineair onafhankelijk. $\Rightarrow$ Voor elke $b \in \mathbb{R}^m$ heeft het stelsel $A\cdot X = b$ hoogstens \'e\'en oplossing.
+TODO
+\end{itemize}
 \end{proof}
 
 \subsection{Stelling 4.42 p 161}
+Zij $A\in \mathbb{R}^{n \times n}$ een vierkante matrix.
 \subsubsection*{Te Bewijzen}
+\begin{center}
+A is inverteerbaar.
+\end{center}
+\[\Leftrightarrow\]
+\[det(A) \neq 0\]
+\[\Leftrightarrow\]
+\begin{center}
+De rang van $A$ is gelijk aan $n$.
+\end{center}
+\[\Leftrightarrow\]
+\begin{center}
+De rijen van $A$ zijn lineair onafhankelijk.
+\end{center}
+\[\Leftrightarrow\]
+\begin{center}
+De kolommen van $A$ zijn lineair onafhankelijk.
+\end{center}
 \subsubsection*{Bewijs}
 \begin{proof}
-
+Bewijs door circulaire implicaties.
+\begin{itemize}
+\item
+A is inverteerbaar. $\Rightarrow det(A) \neq 0$\\
+Dit is een stelling die al bewezen is\footnote{Zie Stelling 2.4 p 59}.
+\item
+$det(A) \neq 0 \Rightarrow $ De rang van $A$ is gelijk aan $n$.\\
+TODO
+\item
+De rang van $A$ is gelijk aan $n$. $\Rightarrow $ De rijen van $A$ zijn lineair onafhankelijk.\\
+TODO
+\item
+De rijen van $A$ zijn lineair onafhankelijk. $\Rightarrow$ De kolommen van $A$ zijn lineair onafhankelijk.\\
+Als de rijen van $A$ lineair onafhankelijk zijn dan geldt $det(A) \neq 0$ en omdat $det(A) = det(A^T)$ zijn de kolommen dus ook onafhankelijk.
+\item
+De kolommen van $A$ zijn lineair onafhankelijk. $\Rightarrow$ A is inverteerbaar.\\
+TODO
+\end{itemize}
 \end{proof}
 
-\subsection{Stelling 4.42 p 164}
+\subsection{Stelling 4.43 p 164}
 \subsubsection*{Te Bewijzen}
 \subsubsection*{Bewijs}
 \begin{proof}
