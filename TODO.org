@@ -395,7 +395,7 @@
 *** TODO In Oefenzitting
     - [X] 1 
       - [X] c warreee
-      - [?] e warreee
+      - [X] e warreee
     - [ ] 4 egonny
     - [ ] 5 egonny
     - [ ] 6 NorfairKing
