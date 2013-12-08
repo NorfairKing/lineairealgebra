@@ -802,10 +802,37 @@ TODO
 \end{proof}
 
 \subsection{Stelling 4.43 p 164}
+Zij $L:V\rightarrow W$ een lineaire afbeelding van $(\mathbb{R},V,+)$ naar $(\mathbb{R},W,+)$ die het probleem $L(x) = w_0$ bepaalt.
 \subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item Dit lineair probleem heeft een oplossing als en slechts als $w_0 \in Im(L)$.
+
+\item
+Als het probleem oplosbaar is en $x_p$ een oplossing is dan wordt de oplossingsverzameling de volgende.
+\[
+X = \{x_p + x_h | x_h \in Ker(L)\}
+\]
+\end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
+\begin{enumerate}
+\item Stel dat het probleem oplosbaar zou zijn met $w_0$ een oplossing maar dat $w_0 \not\in Im(L)$.
 
+Omdat $w_0$ een oplossing is bestaat er een $x$ zodat $L(x) = w_0$ geldt. Omdat $w_0$ niet in $Im(L)$ zit bestaat er geen $x$ zodat $L(x) = w_0$. Dit is contradictorisch.
+\item
+We bewijzen eerst dat de verzameling $X$ een deelverzameling is van de oplossingsverzameling. Daarna bewijzen we dat de oplossingsverzameling een deelverzameling is van $X$.\\\\
+Zij $x_p$ een particuliere oplossing van het lineair probleem, dan is elke vector van de vorm $x_p+x_h$ met $x_h\in Ker(L)$ ook een oplossing.
+\[
+L(x_p+x_h)=L(x_p)+L(x_h)=w_0+\vec{0} = w_0
+\]
+De eerste gelijkheid geldt omwille van de lineariteit van $L$\footnote{Zie Definitie 4.1 p 130}. De derde gelijkheid geldt omwille van het neutraal element van een vectorruimte\footnote{Zie Definitie 3.2 p 88}.\\\\
+Zij $x$ een willekeurige oplossing van het lineaire probleem ($L(x)=w_0)$), dan kunnen we $x$ schrijven als volgt.
+\[
+x = x_p + (x-x_p)
+\]
+Hierboven is $x_p$ een particuliere oplossing van het lineair probleem. Omdat $L(x-x_p) = L(x) - L(x_p) = w_0-w_0=\vec{0}$ geldt, zit $(x-x_p)$ in de kern van $L$.
+\end{enumerate}
 \end{proof}
 
 
