@@ -1040,6 +1040,50 @@ dim(V) = dim(ker(L)) + dim(W)
 Hieruit volgt dat $dim(V) \ge dim(W)$ want $dim(ker(L)) \ge 0$. Dit is in contradictie met $n<m$.
 \end{proof}
 
+\subsection{Oefening 7}
+\subsubsection*{a)}
+Omdat $L_1$ lineair is wordt $L_1$ beschreven door een matrix $A$.
+\[
+A = 
+\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+\text{ zodat }
+A
+\cdot
+\begin{pmatrix}1\\2\end{pmatrix}
+=\begin{pmatrix}0\\-1\end{pmatrix}
+\text{ en }
+A
+\cdot
+\begin{pmatrix}-1\\-1\end{pmatrix}
+=\begin{pmatrix}2\\1\end{pmatrix}
+\]
+Dit komt overeen met een groter stelsel $B$ waarvan we de oplossingen zoeken.
+\[
+\left(
+\begin{array}{c c c c | c}
+1 & 2 & 0 & 0 & 0\\
+0 & 0 & 1 & 2 & -1\\
+-1 & -1 & 0 & 0 & 2\\
+0 & 0 & -1 & -1 & 1\\
+\end{array}
+\right)
+\]
+Dit stelsel heeft de volgende oplossingsverzameling.
+\[
+\left\lbrace
+\begin{pmatrix}
+-4\\2\\-1\\0
+\end{pmatrix}
+\right\rbrace
+\]
+We kunnen de lineaire afbeelding $L_1$ dus als volgt beschrijven.
+\[
+L_1:\mathbb{R}^2\rightarrow\mathbb{R}^2: (x,y)\mapsto (-4x+2y,-x)
+\]
+
 \subsection{Oefening 8}
 Om de matrices van de basisverandering te berekenen stellen we voor beide bases een matrix op waarbij ze beide uitgeschreven worden ten opzichte van eenzelfde basis, bijvoorbeeld, de standaardbasis, en als kolommen gebruikt worden in bijhorende matrix. Deze matrices plaatsen we naast elkaar en rijreduceren we tot de linkse matrix de eenheidsmatrix is. De eerste oefening is relatief triviaal, zoals we zullen zien.
 \subsubsection*{a)}
