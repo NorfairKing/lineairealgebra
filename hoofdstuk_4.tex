@@ -961,6 +961,42 @@ TODO stelsel oplossen.
 (K\circ L): \mathbb{R}^2\rightarrow\mathbb{R}^2 (x,y)\mapsto (2y,x+y)
 \]
 
+\subsection{Oefening 4}
+Zij $(\mathbb{R},V,+)$ een $n$-dimensionale vectorruimte en zij $\alpha = \{a_1,a_2,...,a_n\}$ een basis van $V$.
+\subsubsection*{Te Bewijzen}
+\[co_\alpha:V\rightarrow \mathbb{R} \text{ is lineair.}\]
+\[
+\forall v_1,v_2 \in V, \lambda_1,\lambda_2\in \mathbb{R}: co_\alpha(\lambda_1v_1+\lambda_2v_2)=\lambda_1co_\alpha(v_1)+\lambda_2co_\alpha(v_2)
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+Direct bewijs.\\
+Zij $v = \sum_{i=1}^n\lambda_ia_i \in V$ een vector geschreven als de lineaire combinatie van de basisvectoren, dan is $(\lambda_1,\lambda_2,...,\lambda_n)$ het beeld ervan door $co_\alpha$.
+Kies nu willekeurig $v_1,v_2 \in V$ en $\lambda_1,\lambda_2\in \mathbb{R}$.
+\[
+co_\alpha(\lambda_1v_1+\lambda_2v_2)= co_\alpha(\lambda_1\sum_{i=1}\lambda_{1i}a_{1i} + \lambda_2\sum_{i=1}\lambda_{2i}a_{i}) = co_\alpha(\sum_{i=1}\lambda_1\lambda_{1i}a_{i} + \sum_{i=1}\lambda_2\lambda_{2i}a_{i})
+\]
+\[
+= co_\alpha(\sum_{i=1}((\lambda_1\lambda_{1i}+\lambda_2\lambda_{2i})a_{i}) = ((\lambda_1\lambda_{11}+\lambda_2\lambda_{21}),(\lambda_1\lambda_{12}+\lambda_2\lambda_{22}),...,(\lambda_1\lambda_{1n}+\lambda_2\lambda_{2n}))
+\]
+\[
+((\lambda_1\lambda_{11}),(\lambda_1\lambda_{12}),...,(\lambda_1\lambda_{1n}))+((\lambda_2\lambda_{21}),(\lambda_2\lambda_{22}),...,(\lambda_2\lambda_{2n}))
+\]
+\[
+\lambda_1(\lambda_{11},\lambda_{12},...,\lambda_{1n})+ \lambda_2(\lambda_{21},\lambda_{22},...,\lambda_{2n}) = \lambda_1co_\alpha(v_1)+\lambda_2co_\alpha(v_2)
+\]
+\end{proof}
+We kunnen $(co_\alpha)_\alpha^\epsilon$ nu generisch opschrijven.
+\[
+v(co_\alpha)_\alpha^\epsilon = 
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+a_{n1} & a_{n2} & \cdots & a_{nn}\\
+\end{pmatrix}
+\]
+
 \subsection{Oefening 5}
 Zij $L:V \rightarrow W$ een lineaire afbeelding en zij $dim V = n$ en $dim W = m$.\\
 \subsubsection*{a)}
