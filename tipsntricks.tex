@@ -26,6 +26,69 @@ Stel dat $D = \{v_1,v_2,...,v_k\}$ de voortbrengende verzameling is die we wille
 \item De resulterende deelverzameling van $D$ is een basis van $V$.
 \end{enumerate}
 
+\subsection{Matrix van basisverandering opstellen}
+Zij $\alpha = \{a_1,a_2,...,a_n\}$ en $\beta = \{b_1,b_2,...,b_n\}$ twee basissen van de $n$-dimensionale vectorruimte $(\mathbb{R},V,+)$. Willen we nu de matrix van basisverandering $Id_\alpha^\beta$ opstellen, dan voeren we volgend algoritme uit.
+\subsubsection*{Generiek}
+We stellen beide basissen voor volgens dezelfde basis. Vaak is de standaardbasis het makkelijkst. %TODO schrijf een voorbeeld waarvoor dit niet zo is.
+De co\"ordinaten van de vectoren $(a_1,a_2,...,a_n)$ en $(b_1,b_2,...,b_n)$ standaardbasissen $\alpha$ en $\beta$ zetten we in de volgende matrix in de kolommen.
+\[
+\left(
+\begin{array}{c c c c | c c c c}
+x_{11} & x_{12} & \cdots & x_{1n} & y_{11} & y_{12} & \cdots & y_{1n}\\
+x_{21} & x_{22} & \cdots & x_{2n} & y_{21} & y_{22} & \cdots & y_{2n}\\
+\vdots & \vdots & \ddots & \vdots & \vdots & \vdots & \ddots & \vdots\\
+x_{n1} & x_{n2} & \cdots & x_{nn} & y_{n1} & y_{n2} & \cdots & y_{nn}\\
+\end{array}
+\right)
+\]
+We rijreduceren nu deze matrix om aan de rechterkant de gezochte matrix te vinden.
+\[
+\left(
+\begin{array}{c c c c | c c c c}
+1 & 0 & \cdots & 0 & z_{11} & z_{12} & \cdots & z_{1n}\\
+0 & 1 & \cdots & 0 & z_{21} & z_{22} & \cdots & z_{2n}\\
+\vdots & \vdots & \ddots & \vdots & \vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & 1 & z_{n1} & z_{n2} & \cdots & z_{nn}\\
+\end{array}
+\right)
+\]
+De gezochte matrix $Id_\alpha^\beta$ is dus de volgende.
+\[
+Id_\alpha^\beta
+=
+\begin{pmatrix}
+z_{11} & z_{12} & \cdots & z_{1n}\\
+z_{21} & z_{22} & \cdots & z_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+z_{n1} & z_{n2} & \cdots & z_{nn}\\
+\end{pmatrix}
+\]
+
+
+\subsubsection*{Voorbeeld}
+Zij $\alpha = \{3+2X+X^2,4-X^2,2+X\}$ en $\beta = \{2X^2-1,X+3,-X^2+X\}$.
+We schrijven de coordinaten van deze vectoren volgens de standaardbasis in de colommen van de volgende matrix.
+\[
+\left(
+\begin{array}{c c c | c c c}
+3 & 4 & 2 & -1 & 3 & 0\\
+2 & 0 & 1 & 0 & 1 & 1\\
+1 & -1 & 0 & 2 & 0 & 1\\
+\end{array}
+\right)
+\]
+Wanneer we dit rijreduceren verkrijgen we rechts de matrix van basisverandering $Id_\alpha^\beta$
+\[
+Id_\alpha^\beta =
+\left(
+\begin{array}{c c c | c c c}
+1 & 0 & 0 & \frac{7}{3} & \frac{1}{3} & \frac{2}{3}\\
+0 & 1 & 0 & \frac{1}{3} & \frac{1}{3} & -\frac{1}{3}\\
+0 & 0 & 1 & -\frac{14}{3} & \frac{1}{3} & -\frac{1}{3}\\
+\end{array}
+\right)
+\]
+
 \section{Handige definities}
 \subsection{Samenstelling van afbeeldingen}
 \label{samenstelling_van_afbeeldingen}
