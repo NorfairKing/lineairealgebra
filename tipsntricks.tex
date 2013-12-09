@@ -64,7 +64,6 @@ z_{n1} & z_{n2} & \cdots & z_{nn}\\
 \end{pmatrix}
 \]
 
-
 \subsubsection*{Voorbeeld}
 Zij $\alpha = \{3+2X+X^2,4-X^2,2+X\}$ en $\beta = \{2X^2-1,X+3,-X^2+X\}$.
 We schrijven de coordinaten van deze vectoren volgens de standaardbasis in de colommen van de volgende matrix.
@@ -87,6 +86,35 @@ Id_\alpha^\beta =
 0 & 0 & 1 & -\frac{14}{3} & \frac{1}{3} & -\frac{1}{3}\\
 \end{array}
 \right)
+\]
+
+
+\subsection{Matrixvoorstelling van lineaire afbeelding ten opzichte van de standaardbasissen}
+Zij $L:V\rightarrow W$ een lineaire afbeelding van de $n$-dimensionale vectorruimte $(\mathbb{R},V,+)$ naar de $m$-dimensionale vectorruimte $(\mathbb{R},W,+)$. Willen we nu de matrixvoorstelling van $L$ ten opzichte van de standaard basissen $\epsilon_V$ en $\epsilon_W$.
+
+\subsubsection*{Generiek}
+Als het functievoorschrift van $L$ gegeven is dan zijn de co\"ordinaten van een generische vector $v\in V$ en $w\in W$ makkelijk af te lezen.
+De co\"ordinaten van $w$ ten opzichte van de standaardbasis van $V$ zijn een lineaire combinatie van de basisvectoren van $V$. ($w = \lambda_1v_1+\lambda_2v_1+...+\lambda_nv_n$) deze lineaire combinatie zetten we in de rijen van de volgende matrix.
+\[
+\begin{pmatrix}
+\lambda_{11} & \lambda_{12} & \cdots & \lambda_{1n} \\
+\lambda_{21} & \lambda_{22} & \cdots & \lambda_{2n} \\
+\vdots & \vdots & \ddots & \vdots\\
+\lambda_{m1} & \lambda_{m2} & \cdots & \lambda_{mn} \\
+\end{pmatrix}
+\]
+Deze matrix is precies de matrix die we zochten.
+
+\subsubsection*{Voorbeeld}
+Zij $L:R[X]_{\le 4}\rightarrow \mathbb{R}^3: a+bX+cX^2+dX^3+eX^4\mapsto (a+b,c+d+e,-a+3b+c-4e)$.
+We zien dat de co\"ordinaten van $(a+b,c+d+e,-a+3b+c-4e)$ ten opzichte van de standaardbasis van $\mathbb{R}^3$ precies in de vector staan en een lineaire combinatie zijn van $a$, $b$, $c$, $d$ en $e$.
+Schrijven we deze lineaire combinaties als rijen in de volgende matrix, dan is dit de matrixvoorstelling van $L$ ten opzichte van de standaard basissen.
+\[
+\begin{pmatrix}
+1 & 1 & 0 & 0 & 0\\
+0 & 0 & 1 & 1 & 1\
+-1 & 3 & 1 & 0 & -4\\
+\end{pmatrix}
 \]
 
 \section{Handige definities}
