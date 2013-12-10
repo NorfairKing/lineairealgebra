@@ -3,7 +3,85 @@
 
 \newpage
 \part{Tips}
-%\section{Extra uitleg}
+\section{Bewijzen In het algemeen}
+Omdat informatici doorgaans geen bewijzen en redeneren hebben gevolgd is hier een overzicht van de meest voorkomende bewijstechnieken.
+
+\subsection{Algemene Tips}
+\subsubsection{Zinnen}
+Elke bewijs is voor de mensen die het lezen en uzelf. Alles in wiskunde is per definitie al waar. Bewijzen dienen dus enkel om uzelf en anderen te \emph{overtuigen} dat het waar is. Een bewijs moet daarom duidelijk leesbaar en begrijpbaar zijn. Afhankelijk voor wie we iets bewijzen, gaan we meer of minder in detail. 
+
+De proffen hebben graag een gedetailleerd bewijs, omdat ze na moeten gaan of \emph{jij} het kent. Ze moeten niet nagaan of de stelling waar is. Houd dit in gedachten wanneer u bewijzen schrijft.
+
+Tenslotte is het een goed idee om een goede kennis te ontwikkelen van de Nederlandse connectieven zoals 'hieruit volgt', 'daarom', 'dus', 'want', enz.... Deze maken bewijzen namelijk gemakkelijk duidelijker.
+\subsubsection{Gegevens}
+Een bewijs heeft meestal de vorm beschreven in figuur \ref{algemeen_bewijs}. Merk op dat dit zeer sterk lijkt op het sjabloon van een oefening in de fysica, maar dan zonder het 'gegevens' deel. Dit wordt meestal weggelaten in bewijzen omdat in de wiskunde absoluut waar is. Als er iets gebruikt wordt moet er echter wel verwezen worden naar een uitleg waarom het waar is.
+\begin{figure}[H]
+\begin{itemize}
+\item Naamgeving
+\item Te Bewijzen
+\item Bewijs
+\end{itemize}
+\caption{Algemene structuur van een bewijs}
+\label{algemeen_bewijs}
+\end{figure}
+In het naamgeving deel benoemen we de wiskundige elementen die van toepassing zijn, zodat we erover kunnen praten en zodat we niet alle eigenschappen ervan meer moeten herhalen.\\
+Bvb: Zij $L$ een surjectieve afbeelding. (We moeten nu de eigenschappen van surjectiviteit niet meer herhalen zolang we ernaar verwijzen als we ze gebruiken.)
+
+\subsection{Direct Bewijs}
+Als een stelling van de vorm $P \Rightarrow Q$ is, kunnen we deze soms met een direct bewijs bewijzen. We voegen de hypothese $P$ toe aan de gegevens en proberen daaruit $Q$ te concluderen. 
+
+\subsubsection{Gevalsonderscheid}
+Soms is het moeilijk om een direct bewijs op te stellen zonder een gevalonderscheid te maken. We kunnen het bewijs dan als het ware opsplitsen voor elk geval. Doorgaans doen we dit zo weinig mogelijk omdat het voor onnodig extra werk kan zorgen.
+
+\subsubsection{Achterwaarts Bewijzen}
+Soms is de hypothese simpeler dan het gevolg, dan kan het makkelijker zijn om het bewijs achterwaarts te construeren. We moeten dan wel goed opletten dat we ofwel equivalenties gebruiken, ofwel omgekeerde implicaties.
+
+\subsection{Bewijs uit het Ongerijmde}
+Omdat een bewering ofwel waar is, ofwel niet waar is, maar daar niets tussen zit kunnen we een bewering ook als volgt bewijzen. We gaan ervan uit dat de te bewijzen stelling niet waar is, en proberen een contradictie (een bewering van de vorm $P\wedge\neg P$) te bekomen.
+
+\subsection{Contrapositie}
+Een implicatie $P\Rightarrow Q$ is equivalent aan $\neq Q\Rightarrow \neq P$. Als we dus dit tweede kunnen bewijzen is het eerste ook bewezen.
+
+\subsection{Bewijs met volledige inductie}
+Een bewering van de vorm $\forall p \in P: Q(p)$ kunnen we soms bewijzen via volledige inductie. Dit gebeurt in twee stappen.
+\begin{enumerate}
+\item Basis stap\\
+We bewijzen dat de bewering $Q(p_i)$ geldt, waarin $p_i$ het kleinste element uit $P$ is.
+\item Inductie stap\\
+We gaan er nu van uit dat $Q(p_k)$ geldt voor een bepaalde $p$ (inductie hypothese). Vervolgens bewijzen we dat daaruit volgt dat de bewering geldt voor $p_{k+1}$.
+\end{enumerate}
+
+\subsection{Overzicht}
+Dit is enkel een overzicht van de mogelijkheden. Niet elke optie is altijd mogelijk. Meestal zijn bewijzen niet eenvoudig te categoriseren en zijn ze bijgevolg een samenstelling van meerdere constructies.
+\begin{itemize}
+\item En: $P\wedge Q$
+\begin{itemize}
+\item Direct Bewijs - Bewijs dat zowel $P$ als $Q$ altijd gelden.
+\item Bewijs uit het ongerijmde - Bewijs via gevalsonderscheid dat er een contradictie optreedt wanneer \'e\'en van de beweringen niet geldt.
+\end{itemize}
+\item Of: $P\vee Q$
+\begin{itemize}
+\item Direct Bewijs - Bewijs dat \'e\'en van de bewering altijd waar is.
+\item Gevalonderscheid - Bewijs voor elk geval dat \'e\'en van de beweringen geldt.
+\item Bewijs uit het ongerijmde - Ga ervan uit dat zowel $P$ als $Q$ niet waar zijn en kom tot een contradictie.
+\end{itemize}
+\item Implicatie: $P\Rightarrow Q$
+\begin{itemize}
+\item Direct Bewijs - Ga uit van $P$ en ga via implicaties naar $Q$/
+\item Gevalonderscheid in $P$
+\item Bewijs uit het ongerijmde - Ga ervan uit dat $P$ geldt maar $Q$ niet en kom tot een contradictie.
+\item Contrapositie - Bewijs $\neq Q\Rightarrow \neq P$
+\end{itemize}
+\item Er bestaat...: $\exists p : Q(p)$
+\begin{itemize}
+\item Construeer $p$ voor elke mogelijke $Q(p)$.
+\end{itemize}
+\item Voor alle...: $\forall p: Q(p)$
+\begin{itemize}
+\item Bewijs uit het ongerijmde - Ga ervan uit dat er een $p$ bestaat waarvoor $Q$ niet geldt en kom tot een contradictie.
+\item Bewijs door volledige inductie.
+\end{itemize}
+\end{itemize}
 
 
 \section{Handige algoritmes}
