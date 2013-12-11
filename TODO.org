@@ -1,4 +1,4 @@
-#+SEQ_TODO: TODO(t) ISSUE(i) | DELEGATED(l) DONE(d)
+[B#+SEQ_TODO: TODO(t) ISSUE(i) | DELEGATED(l) DONE(d)
 # ^ De vorige lijn is voor emacs, afblijven :p
 
 * DONE Hoofdstuk 1
@@ -377,7 +377,8 @@
 *** ISSUE Gevolg     4.39 p 160
 *** DONE Stelling   4.40 p 161 
     CLOSED: [2013-12-07 Sat 13:37]
-*** TODO Stelling   4.43 p 164
+*** DONE Stelling   4.43 p 164
+    CLOSED: [2013-12-11 Wed 11:32]
 ** TODO Oefeningen
 *** TODO Voorbereiding
     - [ ] 1
@@ -405,7 +406,8 @@
     - [ ] 20 NorfairKing
     - [ ] 23 warreee
 *** TODO Extra
-**** TODO Algemene uitleg voor matrixvoorstelling van lineaire afbeelding.
+**** DONE Algemene uitleg voor matrixvoorstelling van lineaire afbeelding.
+     CLOSED: [2013-12-11 Wed 11:32]
 ** TODO Opdrachten   
     - [X] 4.5  p136 NorfairKing
     - [X] 4.9  p140
