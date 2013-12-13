@@ -323,14 +323,48 @@ Dit is gemakkelijk te zien als we matrixvoorstelling van $L$ ten opzichte van de
 0 & 0 & \cdots & 0 & 0 & \cdots & 0 & \cdots & \lambda_n\\
 \end{pmatrix}
 \]
-Zoals we zien komt $\lambda_i$ precies $m(\lambda_i)$ keer voor en komen er met $\lambda_i$ precoes $d(\lambda_i)$ eigenvectoren voor.
+Zoals we zien komt $\lambda_i$ precies $m(\lambda_i)$ keer voor en komen er met $\lambda_i$ precies $d(\lambda_i)$ eigenvectoren voor.
+
 \item $\Leftarrow$\\
+Voor elke eigenwaarde geldt $d(\lambda_i) = m(\lambda_i) = m_i$.
+Omdat de karakteristieke veelterm volledig als product kan ontbonden worden in eerstegraadsfactoren en de karakteristieke veelterm van graag $n$ is (omdat de afmetingen van $L_A$ $n\times
+n$ zijn) geldt de volgende bewering.
+\[
+\sum_{i=1}^km_i = n
+\]
+We kiezen nu voor elke eigenruimte $E_{\lambda_i}$ een basis $\beta_{E_{\lambda_i}} = \{v_{i,1},v_{i,2},...,v_{i,m_i}\}$. Zetten we nu al deze vectoren samen dan krijgen we de volgende verzameling.
+\[
+\beta = 
+\{
+v_{1,1},v_{1,2},...,v_{1,m_i},v_{2,1},v_{2,2},...,v_{2,m_i},v_{k,1},v_{k,2},...,v_{k,m_i}
+\}
+\]
+Omdat $\sum_{i=1}^km_i = n$ geldt bevat deze verzameling $\beta$ precies $n$ elementen.
+Als we nu kunnen bewijzen dat $\beta$ een basis vormt voor $V$ dan heeft $V$ dus een basis bestaande uit eigenvectoren en is $L$ bijgevolg diagonaliseerbaar. We zullen aantonen dat $\beta$ een vrij deel is van $V$, daaruit volgt dat $\beta$ een basis vormt voor $V$ \footnote{Zie Stelling 3.41 p 109}.\\\\
+Stel nu dat er een lineaire combinatie van de vectoren in $\beta$ de nulvector oplevert.
+\[
+\sum_{i=1}^n\mu_{i,j}\beta_i = \vec{0}
+\]
+Omdat $\beta_i$ basissen zijn van de eigenruimten $E_{\lambda_i}$ geldt dat de volgende uitdrukking ook een vector is uit de eigenruimte $E_{\lambda_i}$ die bij eigenwaarde $i$ geldt. Dit betekent \emph{niet} per se dat $u_i$ eigenvectoren zijn, het kunnen namelijk ook nulvectoren zijn. Dit gaan we nu gebruiken.
+\[
+\sum_{j=1}^{m_i} \mu_{i,j}v_{i,j} = u_i
+\]
+De lineaire combinatie kan dus ook geschreven worden als volgt.
+\[
+\sum_{i=1}^ku_i = \vec{0}
+\]
+Alle $u_i$ in deze uitdrukking horen bij \emph{verschillende} eigenwaarden. Dit betekent dat de $u_i$ lineair onafhankelijk zijn \footnote{Zie stelling 5.18 p 190}. $u_i$ kunnen enkel lineair onafhankelijk zijn als alle $u_i$ nulvectoren zijn.
+%Hier zit iets raar, lineair onafhankelijke nulvectoren? TODO
+\[
+u_1 = u_2 = ... = u_k
+\]
+Nu geldt voor elke $i$ dus het volgende.
+\[
+\sum_{j=1}^{m_i} \mu_{i,j}v_{i,j} = \vec{0}
+\]
+Omdat de $v_{i,j}$ basisvectoren van de eigenruimten $E_{\lambda_i}$ geldt dat alle $\mu_{i,j}$ nul moeten zijn.
 \end{itemize}
 \end{proof}
-
-
-
-
 
 
 
