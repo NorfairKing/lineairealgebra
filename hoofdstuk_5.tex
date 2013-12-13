@@ -182,6 +182,47 @@ Bovenstaande gelijkheden gelden omwille van een eigenschap van het spoor van een
 \end{enumerate}
 \end{proof}
 
+\subsection{Stelling 5.16 p 189}
+Zij $L:V\rightarrow V$ een lineaire transformatie van de eindig dimensionale vectorruimte $(\mathbb{R},V,+)$ met spectrum $Spec(L) = \{\lambda_1,\lambda_2,...,\lambda_n\}$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item $m(\lambda_i) \ge 1$\\
+\item $d(\lambda_i) \ge 1$\\
+\item $d(\lambda_i) \le m(\lambda_i)$\\w
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door gefoefel.
+Voor elke eigenwaarde $\lambda_i$ geldt het volgende.
+\begin{enumerate}
+\item Elke eigenwaarde heeft minstens een algebra\"ische multipliciteit van $1$. Anders zou het geen eigenwaarde zijn.
+
+\item De eigenruimte van $\lambda_i$ is een vectorruimte van minstens dimensie $1$ omdat er voor elke eigenwaarde minstens $1$ eigenvector is, en dit niet de nulvector mag zijn.
+
+\item
+We weten dat de eigenruimte $E_{\lambda_i}$ van $\lambda_i$ dimensie $d(\lambda) = d$ heeft. Er bestaat dus een basis $\beta = v_1,v_2,...,v_d$ voor $E_\lambda$ met $d$ elementen. Omdat $\beta$ een vrij deel is van $E_\lambda$ en $V$ en omdat $E_\lambda$ een deelruimte is van V\footnote{Zie Definitie 5.14 p 188} geldt dat $\beta$ uitgebreid kan worden tot een basis van $V$\footnote{Zie Stelling 3.37 p 107}. Ten opzichte die uitgebreide basis $\beta'$ van $V$ ziet de matrix van $L$ er als volgt uit\footnote{Zie Stelling 5.7 p 181}. (Dit is het punt van eigenvectoren). ($L_{\beta'}^{\beta'}\cdot v_i$ moet $\lambda v_i$ zijn.)
+\[
+L_{\beta'}^{\beta'} = 
+\begin{pmatrix}
+\lambda & 0 & \cdots & 0 & \bullet & \cdots & \bullet\\
+0 & \lambda & \cdots & 0 & \bullet & \cdots & \bullet\\
+\vdots & \vdots & \ddots & \vdots & \vdots & &  \vdots\\
+0 & 0 & \cdots & \lambda & \bullet & \cdots & \bullet\\
+\vdots & \vdots & & \vdots & \vdots & \ddots & \vdots\\
+0 & 0 &\cdots & 0 & \bullet & \cdots & \bullet\\
+\end{pmatrix}
+\]
+We weten dat de karakteristieke veelterm onafhankelijk is van de gekozen basis\footnote{Zie Gevolg 5.9 p 182}. We beschouwen nu de karakteristieke veelterm van bovenstaande matrix.
+De karakteristieke veelterm van deze matrix is dan van de volgende vorm. 
+\[
+\phi_L(X) = (X-\lambda)^dp(X)
+\]
+$m(\lambda)$ is minstens $d$ want $(X-\lambda)^d$ zorgt al voor multipliciteit $d$, maar in $p(X)$ kan $\lambda$ ook nog voorkomen. In symbolen:
+\[
+m(\lambda) \ge d = d(\lambda)
+\]
+\end{enumerate}
+\end{proof}
 
 
 
