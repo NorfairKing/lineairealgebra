@@ -224,7 +224,44 @@ m(\lambda) \ge d = d(\lambda)
 \end{enumerate}
 \end{proof}
 
-
+\subsection{Stelling 5.18 p 190}
+Zij $L:V\rightarrow V$ een lineaire transformatie van een eindigdimensionale vectorruimte $(\mathbb{R},V,+)$ en zij $\lambda_1,\lambda_2,...,\lambda_n$ verschillende eigenwaarden van $L$ met bijhorende eigenvectoren $v_1,v_2,...,v_n$.
+\subsubsection*{Te Bewijzen}
+$v_1,v_2,...,v_n$ zijn lineair onafhankelijke vectoren.
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door inductie op $n$.\\\\
+\emph{Stap 1: (basis stap)}\\
+De bewering geldt voor $n=1$ want $\{v_i\}$ is lineair onafhankelijk. Dit is waar omdat $v_i$ geen nulvector is\footnote{Zie Definitie 5.3 p 178}.\\\\
+\emph{Stap 2: (inductie stap)}\\
+Stel dat de bewering geldt voor een bepaalde $n=k$ (inductiehypothese). We bewijzen nu dat daaruit volgt dat de bewering geldt voor $n=k+1$.
+We beschouwen $k+1$ eigenwaarden met bijhorende eigenvectoren. Uit de inductiehypothese volgt dat elke deelverzameling van $k$ elementen van die eigenvectoren vrij is.
+We bewijzen uit het ongerijmde dat wanneer we de $k+1$-ste eigenvector toevoegen aan die deelverzameling, de verzameling nog steeds vrij is.
+We nemen dus aan dat $v_{k+1}$ lineaire afhankelijk is van $v_1,v_2,...,v_k$ en proberen tot een contradictie te komen.
+\[
+\exists \mu_i\in\mathbb{R} : v_{k+1} = \sum_{i=1}^k\mu_iv_i
+\]
+Nemen we nu van beide kanten de afbeelding $L$ dan bekomen we de volgende vergelijking.
+\[
+L( v_{k+1}) = L\left(\sum_{i=1}^k\mu_iv_i\right)
+\]
+L is lineair\footnote{Zie Lemma 4.2 p 130} en $v_i$ zijn eigenvectoren met eigenwaarden $\lambda_i$ (gegeven).
+\[
+L(v_{k+1}) = \sum_{i=1}^k\mu_iL(v_i) = \sum_{i=1}^k\mu_i\lambda_iv_i
+\]
+Bovendien is $v_{k+1}$ ook een eigenvector van $L$.
+\[
+L(v_{k+1}) = \lambda_{k+1}v_{k+1} = \lambda_{k+1}\left(\sum_{i=1}^k\mu_iv_i\right) = \sum_{i=1}^k\lambda_{k+1}\mu_iv_i
+\]
+Voegen we deze twee nu samen dan krijgen we het volgende.
+\[
+\sum_{i=1}^k\mu_i\lambda_iv_i = \sum_{i=1}^k\lambda_{k+1}\mu_iv_i
+\]
+\[
+\sum_{i=1}^k \mu_i(\lambda_i-\lambda_{k+1})v_i = 0
+\]
+Omdat we weten dat alle $\lambda_i$ onderling verschillend zijn (gegeven) en dat alle $v_i$ lineair onafhankelijk zijn houdt dit in dat alle $\mu_i$ nul moeten zijn. Dit zou betekenen dat alle $v_i$ lineair onafhankelijk zijn en dat is in contradictie met de aanname van lineair afhankelijkheid.
+\end{proof}
 
 
 \section{Oefeningen 5.9}
