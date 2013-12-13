@@ -388,7 +388,7 @@
     - [X] 9 MajorMonodon
     - [X] 10 fokdiekul
     - [ ] 12a jdewaen
-    - [ ] 14 MajorMonodon
+    - [X] 14 MajorMonodon
     - [ ] 24
       - [ ] a egonny
       - [ ] b NorfairKing
