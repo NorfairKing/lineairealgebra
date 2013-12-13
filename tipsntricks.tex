@@ -1,8 +1,7 @@
 \documentclass[lineaire_algebra_oplossingen.tex]{subfiles}
 \begin{document}
 
-\newpage
-\part{Tips}
+\chapter{Tips}
 \section{Bewijzen In het algemeen}
 Omdat informatici doorgaans geen bewijzen en redeneren hebben gevolgd is hier een overzicht van de meest voorkomende bewijstechnieken.
 
@@ -84,8 +83,8 @@ Dit is enkel een overzicht van de mogelijkheden. Niet elke optie is altijd mogel
 \end{itemize}
 
 
-\section{Handige algoritmes}
-\subsection{Een vrije deelverzameling uitbreiden tot een basis}
+\chapter{Handige algoritmes}
+\section{Een vrije deelverzameling uitbreiden tot een basis}
 Stel dat $D = \{v_1,v_2,...,v_k\}$ de vrije verzameling is die we willen uitbreiden tot een basis van een vectorruimte $(\mathbb{R},V,+)$ van dimensie $n$ ($k\le n$).
 \begin{enumerate}
 \item Kijk na of $D$ voortbrengend is.
@@ -96,7 +95,7 @@ Stel dat $D = \{v_1,v_2,...,v_k\}$ de vrije verzameling is die we willen uitbrei
 \item Zoek een vector $v_{k+1}$ die lineair onafhankelijk is van de vectoren in $D$ en voeg deze toe aan $D$.
 \item Ga terug naar stap $1$.
 \end{enumerate}
-\subsection{Een voortbrengende deelverzameling uitdunnen tot een basis}
+\section{Een voortbrengende deelverzameling uitdunnen tot een basis}
 Stel dat $D = \{v_1,v_2,...,v_k\}$ de voortbrengende verzameling is die we willen uitdunnen tot een basis van een vectorruimte $(\mathbb{R},V,+)$ van dimensie $n$ ($k\ge n$).
 \begin{enumerate}
 \item Verwijder alle nulvectoren uit $D$.
@@ -104,9 +103,9 @@ Stel dat $D = \{v_1,v_2,...,v_k\}$ de voortbrengende verzameling is die we wille
 \item De resulterende deelverzameling van $D$ is een basis van $V$.
 \end{enumerate}
 
-\subsection{Matrix van basisverandering opstellen}
+\section{Matrix van basisverandering opstellen}
 Zij $\alpha = \{a_1,a_2,...,a_n\}$ en $\beta = \{b_1,b_2,...,b_n\}$ twee basissen van de $n$-dimensionale vectorruimte $(\mathbb{R},V,+)$. Willen we nu de matrix van basisverandering $Id_\alpha^\beta$ opstellen, dan voeren we volgend algoritme uit.
-\subsubsection*{Generiek}
+\subsection*{Generiek}
 We stellen beide basissen voor volgens dezelfde basis. Vaak is de standaardbasis het makkelijkst. %TODO schrijf een voorbeeld waarvoor dit niet zo is.
 De co\"ordinaten van de vectoren $(a_1,a_2,...,a_n)$ en $(b_1,b_2,...,b_n)$ standaardbasissen $\alpha$ en $\beta$ zetten we in de volgende matrix in de kolommen.
 \[
@@ -142,7 +141,7 @@ z_{n1} & z_{n2} & \cdots & z_{nn}\\
 \end{pmatrix}
 \]
 
-\subsubsection*{Voorbeeld}
+\subsection*{Voorbeeld}
 Zij $\alpha = \{3+2X+X^2,4-X^2,2+X\}$ en $\beta = \{2X^2-1,X+3,-X^2+X\}$.
 We schrijven de coordinaten van deze vectoren volgens de standaardbasis in de colommen van de volgende matrix.
 \[
@@ -167,10 +166,10 @@ Id_\alpha^\beta =
 \]
 
 
-\subsection{Matrixvoorstelling van lineaire afbeelding ten opzichte van de standaardbasissen}
+\section{Matrixvoorstelling van lineaire afbeelding ten opzichte van de standaardbasissen}
 Zij $L:V\rightarrow W$ een lineaire afbeelding van de $n$-dimensionale vectorruimte $(\mathbb{R},V,+)$ naar de $m$-dimensionale vectorruimte $(\mathbb{R},W,+)$. Willen we nu de matrixvoorstelling van $L$ ten opzichte van de standaard basissen $\epsilon_V$ en $\epsilon_W$.
 
-\subsubsection*{Generiek}
+\subsection*{Generiek}
 Als het functievoorschrift van $L$ gegeven is dan zijn de co\"ordinaten van een generische vector $v\in V$ en $w\in W$ makkelijk af te lezen.
 De co\"ordinaten van $w$ ten opzichte van de standaardbasis van $V$ zijn een lineaire combinatie van de basisvectoren van $V$. ($w = \lambda_1v_1+\lambda_2v_1+...+\lambda_nv_n$) deze lineaire combinatie zetten we in de rijen van de volgende matrix.
 \[
@@ -183,7 +182,7 @@ De co\"ordinaten van $w$ ten opzichte van de standaardbasis van $V$ zijn een lin
 \]
 Deze matrix is precies de matrix die we zochten.
 
-\subsubsection*{Voorbeeld}
+\subsection*{Voorbeeld}
 Zij $L:R[X]_{\le 4}\rightarrow \mathbb{R}^3: a+bX+cX^2+dX^3+eX^4\mapsto (a+b,c+d+e,-a+3b+c-4e)$.
 We zien dat de co\"ordinaten van $(a+b,c+d+e,-a+3b+c-4e)$ ten opzichte van de standaardbasis van $\mathbb{R}^3$ precies in de vector staan en een lineaire combinatie zijn van $a$, $b$, $c$, $d$ en $e$.
 Schrijven we deze lineaire combinaties als rijen in de volgende matrix, dan is dit de matrixvoorstelling van $L$ ten opzichte van de standaard basissen.
@@ -195,30 +194,30 @@ Schrijven we deze lineaire combinaties als rijen in de volgende matrix, dan is d
 \end{pmatrix}
 \]
 
-\subsection{Matrix van een lineaire afbeelding ten opzichte van gegeven basissen}
+\section{Matrix van een lineaire afbeelding ten opzichte van gegeven basissen}
 \label{matrix_van_lineaire_afbeeldingen_tov_gegeven_basissen}
 TODO
 
-\section{Handige definities}
-\subsection{Samenstelling van afbeeldingen}
+\chapter{Handige definities}
+\section{Samenstelling van afbeeldingen}
 \label{samenstelling_van_afbeeldingen}
 Zij $f: U \rightarrow V$ en $g: V\rightarrow W$ twee afbeeldingen.
 \[
 \forall x\in U: (f \circ g)(x) = f(g(x))
 \]
-\subsection{Injectief}
+\section{Injectief}
 \label{injectief}
 Een afbeelding $L: V \rightarrow W$ is injectief.
 \[
 L(v) = L(w) \Rightarrow v = w
 \]
-\subsection{Surjectief}
+\section{Surjectief}
 \label{surjectief}
 Een afbeelding $L: V \rightarrow W$ is surjectief.
 \[
 \forall w \in W \exists v \in V: w=L(v)
 \]
-\subsection{Bijectief}
+\section{Bijectief}
 \label{bijectief}
 Een afbeelding $L: V \rightarrow W$ is bijectief als en slechts als deze afbeelding injectief en surjectief is.
 
