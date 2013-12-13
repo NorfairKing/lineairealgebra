@@ -892,6 +892,16 @@ $$
 Niet isomorf want $L_4$ is niet bijectief.
 \end{center}
 
+\subsubsection*{h)}
+
+Deze is niet lineair:
+Nemen we $n=2$, dan beschouwen we het tegenvoorbeeld:
+\[L_8(2) = 2^2 = 4\]
+\[L_8(4*2) = 8^2 = 64\]
+\[4*L_8(2) = 16\]
+\[L_8(4*2) \neq 4*L_8(2)\]
+Volgens Propositie 4.10.1 is dit geen lineaire afbeelding.\\
+
 \subsubsection*{j)}
 <TODO Aan Jorik: nakijken!>
 \[
@@ -1440,7 +1450,6 @@ Id_\beta^\beta =
 \]
 
 \subsection{Oefening 14}
-TODO AAN FREDERIK: ZEKER NAKIJKEN!!
 \subsubsection*{a)}
 De oplossing bekomen we door de volgende matrix te rijreduceren en de oplossing aan de rechterkant af te lezen. Merk op dat de linkerkant van deze matrix precies de matrix van basisverandering van $\epsilon_{1}$ naar $\alpha$ is.
 \[
@@ -1480,7 +1489,7 @@ L_\alpha^{\epsilon_{1}}
 \end{array}
 \right)
 \]
-Voor de volledigheid berekenen we ook de matrices van basisverandering van $\epsilon_{2}$ naar $\beta$ en omgekeerd.
+Voor de volledigheid berekenen we ook de matrices van basisverandering van $\epsilon_{2}$ naar $\beta$ en omgekeerd, we hebben deze verder nog nodig.
 \[
 \left(
 \begin{array}{c c | c c}
@@ -1558,6 +1567,7 @@ De gevraagde matrix $L_\alpha^\beta$ is nu de volgende.
 \[
 L_\alpha^\beta = Id_{\epsilon_2}^\beta\cdot L_{\epsilon_1}^{\epsilon_2}\cdot Id_{\alpha}^{\epsilon_1}
 \]
+We verklaren deze formule door hem eens te analyseren. De matrix van de lineaire afbeelding van basis $\alpha$ naar $\beta$ is te herschrijven als, de basisverandering van $\alpha$ naar $\epsilon_1$, gevolgd door de (matrix van de) lineaire afbeelding van $\epsilon_1$ naar $\epsilon_2$, en tenslotte de basisverandering van $\epsilon_2$ naar $\beta$. We hebben als het ware het probleem opgesplitst in tussenstappen die we reeds berekend hebben. Zo bekomen we: 
 \[
 L = 
 \begin{pmatrix}
