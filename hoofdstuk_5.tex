@@ -62,6 +62,86 @@ Als we nu $\lambda = 1$ kiezen krijgen we als eigenvector bij voorbeeld $(-1,1)$
 \subsubsection*{5)}
 Voor elke eigenvector $v$ van $D$ geldt dat de afgeleide van $v$ een veelvoud is van $v$. Elke constante functie is een eigenvector en $0$ is de eigenwaarde voor die functies.
 
+\subsection{Over Definitie 5.6 p 181}
+Dit houdt in dat er voor $A$ een inverteerbare matrix $P$ bestaat zodat. $A = P^{-1}\cdot B\cdot P$ waarbij $B$ een diagonaalmatrix is.
+
+\subsection{Stelling 5.7 p 181}
+Zij $A \in \mathbb{R}^{n\times n}$ een vierkante matrix.
+\subsubsection*{Te Bewijzen}
+\begin{center}
+$A$ is diagonaliseerbaar.
+\end{center}
+\[\Leftrightarrow\]
+\begin{center}
+$A$ heeft een basis die volledig bestaat uit eigenvectoren van $A$.
+\end{center}
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs van een equivalentie.
+\begin{itemize}
+\item $\Rightarrow$
+Omdat $A$ diagonaliseerbaar is bestaat er een inverteerbare matrix $P$ zodat $A = P \cdot \Lambda\cdot P^{-1}$ geldt met $B$ een diagonaalmatrix. $\Lambda$ ziet er dus als volgt uit.
+\[
+\Lambda =
+\begin{pmatrix}
+\lambda_1 & 0 & \cdots & 0\\
+0 & \lambda_2 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & \lambda_n
+\end{pmatrix}
+\]
+Nu geldt $A \cdot P = P \cdot \Lambda$ omwille van de definitie van inverteerbaarheid\footnote{Zie Definitie 1.27 p 34}.
+We beschouwen $P$ nu als een rij van kolommen $P=(p_1 p_2 \cdots p_n)$
+$A\cdot P$ ziet er dus als volgt uit.
+\[
+A\cdot P = A(p_1 p_2 \cdots p_n) = (Ap_1 Ap_2 \cdots Ap_n)
+\]
+Bovendien geldt de volgende bewering omdat $A \cdot P = P \cdot \Lambda$ geldt.
+\[
+A(p_1 p_2 \cdots p_n) = (Ap_1 Ap_2 \cdots Ap_n) = (p_1 p_2 \cdots p_n)\Lambda = (\lambda_1p_1 \lambda_2p_2 \cdots \lambda_np_n)
+\]
+Elk van de kolommen in $(\lambda_1p_1 \lambda_2p_2 \cdots \lambda_np_n)$ voldoet dus aan de volgende vergelijking omdat $\Lambda$ een diagonaalmatrix is.
+\[
+Ap_i = \lambda_ip_i
+\]
+Elke kolom van $P$ is bijgevolg een eigenvector van $A$ de eigenwaarden die horen bij deze eigenvectoren staan dan in de overeenkomstige kolommen op de diagonaal van $\Lambda$.
+Nu moeten we nog bewijzen dat de kolommen van $P$ een basis vormen voor $\mathbb{R}^n$
+Omdat $P$ precies $n$ kolommen bevat moeten we enkel bewijzen dat de kolommen van $P$ lineair onafhankelijk of dat ze voortbrengend zijn\footnote{Zie Stelling 3.41 p 109}. Omdat $P$ inverteerbaar is geldt dat de determinant van $P$ niet nul is\footnote{Zie Stelling 2.4 p 59}. Bijgevolg zijn de kolommen van $P$ lineair onafhankelijk\footnote{Stelling 2.2 p 57 en Zie Stelling 2.3 p 58} omdat $P$ rijreduceerbaar is tot een matrix zonder nulrijen.
+
+\item $\Leftarrow$
+$\mathbb{R}^n$ heeft een basis volledig bestaand uit eigenvectoren van $A$. Noem deze basis $\beta = \{\beta_1,\beta_2,...,\beta_n\}$. De vectoren uit deze basis voldoen dus aan de volgende bewering.
+\[
+A\cdot \beta_i = \lambda_i\beta_i
+\]
+$A$ beschouwen we als de matrix van een lineaire afbeelding ten opzichte van de standaard basis.
+De matrix van basisverandering van de basis van de eigenvectoren naar de standaardbasis noemen we $P$. Dit is precies de matrix waarin de eigenvectoren van $A$ in kolommen staan.
+$P^{-1}$ is nu de matrix van basisverandering van de standaardmatrix naar de basis van eigenvectoren. $P$ is zeker inverteerbaar omdat de kolommen lineair onafhankelijk zijn. We weten nu dat $A = PBP^{-1}$ geldt. Vermenigvuldig nu $P$ rechts aan beide kanten.
+\[
+AP = PB
+\]
+Beschouw $P = (\beta_1 \beta_2 \cdots \beta _n)$ als een rij van kolommen $\beta_i$. Beschouw $B = (b_1 b_2 \cdots b_n)$ als een kolom van rijen $b_i$.
+\[
+AP = (A\beta_1 A\beta_2 \cdots A\beta_n) = (\lambda_1\beta_1 \lambda_2\beta_2 \cdots \lambda_n\beta_n) = PB
+\]
+De tweede gelijkheid geldt omdat $\beta_i$ eigenvectoren zijn.
+De derde gelijkheid kan enkel gelden als $B$ een diagonaalmatrix is.
+
+\end{itemize}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
 
 \section{Oefeningen 5.9}
+
+
 \end{document}
