@@ -265,6 +265,7 @@ Omdat we weten dat alle $\lambda_i$ onderling verschillend zijn (gegeven) en dat
 
 \subsection{Gevolg 5.20 p 191}
 Zij $L$ een lineaire transformatie van de $n$-dimensionale vectorruimte $(\mathbb{R},V,+)$.
+
 \subsubsection*{Te Bewijzen}
 \begin{center}
 $L$ heeft een enkelvoudig spectrum $\Rightarrow$ $L$ is diagonaliseerbaar.
@@ -276,7 +277,16 @@ Neem voor elke eigenwaarde van $L$ de bijhorende eigenvector. Elk van die eigenv
 \end{proof}
 
 
+\subsection{Lemma 5.22 p 192}
+Zij $L$ een diagonaliseerbare lineaire transformatie van de eindig dimensionale vectorruimte $(\mathbb{R},V,+)$.
 
+\subsubsection*{Te Bewijzen}
+De karakteristieke veelterm van $L$ is volledig te ontbinden als product van eerstegraadsfactoren.
+
+\subsubsection*{Bewijs}
+\begin{proof}
+Omdat $L$ diagonaliseerbaar is bestaat er een inverteerbare $P$ zodat $B$ een diagonaalmatrix is in $L = P^{-1}BP$ \footnote{Zie het bewijs van Stelling 5.7 p 181}. Omdat de karakteristieke veelter onafhankelijk is van de basis is deze voor $L_A$ en $L_B$ gelijk \footnote{Zie Gevolg 5.9 p 182}. De karakteristieke veelterm van $L_B$ is dus $\prod_{i=1}^n(X-\lambda_i)$ met $\lambda_i$ de waarden op de diagonaal van $B$ (dit zijn de eigenwaarden van $L$). 
+\end{proof}
 
 
 
