@@ -302,7 +302,30 @@ $L$ is diagonaliseerbaar.
 
 \subsubsection*{Bewijs}
 \begin{proof}
-
+Bewijs van een equivalentie.
+\begin{itemize}
+\item $\Rightarrow$\\
+We weten dat er een basis $\beta$ van $V$ bestaat die volledig uit eigenvectoren van $L$ bestaat omdat $L$ diagonaliseerbaar is\footnote{Zie Definitie 5.6 p 181}. Rangschik de vectoren in $\beta$ nu volgens eigenwaarde. Per eigenwaarde zijn er dus $m(\lambda)$ vectoren. De vectoren die bij dezelfde eigenwaarde horen vormen een basis voor de eigenruimte van die eigenwaarde. Per eigenwaarde zijn er dus $d(\lambda)$ vectoren. Voor elke eigenwaarden geldt dus de volgende bewering.
+\[
+d(\lambda_i) = m(\lambda_i)
+\]
+Dit is gemakkelijk te zien als we matrixvoorstelling van $L$ ten opzichte van de eigenbasis opstellen.
+\[
+\begin{pmatrix}
+\lambda_1 & 0 & \cdots & 0 & 0 & \cdots & 0 & \cdots & 0\\
+0 & \lambda_1 & \cdots & 0 & 0 & \cdots & 0 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots & \vdots & \ddots&\vdots & \ddots & \vdots\\
+0 & 0 & \cdots & \lambda_1& 0 & \cdots   &0 & \cdots & 0\\
+0 & 0 & \cdots & 0 & \lambda_2 & \cdots  &0 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots & \vdots & \ddots & \vdots & \ddots&\vdots\\
+0 & 0 & \cdots & 0 & 0 & \cdots & \lambda_2 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots & \vdots & \ddots & \vdots & \ddots&\vdots\\
+0 & 0 & \cdots & 0 & 0 & \cdots & 0 & \cdots & \lambda_n\\
+\end{pmatrix}
+\]
+Zoals we zien komt $\lambda_i$ precies $m(\lambda_i)$ keer voor en komen er met $\lambda_i$ precoes $d(\lambda_i)$ eigenvectoren voor.
+\item $\Leftarrow$\\
+\end{itemize}
 \end{proof}
 
 
