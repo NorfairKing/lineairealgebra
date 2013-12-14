@@ -429,10 +429,16 @@ M\cdot X \text{ is een kansvector.}
 \]
 \subsubsection*{Bewijs}
 \begin{proof}
-
+In een stochastische matrix en in een kansvector zijn alle elementen positief. Elk element van $M\cdot X$ is dus ook positief. Nu rest er ons nog te bewijzen dat de som van de elementen in $M \cdot X$ gelijk is aan $1$.
 \end{proof}
-
-
+\[
+\sum_{i=1}^n(M\cdot X)_i = \sum_{i=1}^n\sum_{j=1}^nm_{ij}x_j= \sum_{j=1}^nx_j(\sum_{i=1}^nm_{ij})
+\]
+Let in bovenstaande vergelijking goed op de sommatie tekens. Voor de tweede gelijkheid wisselen we eerst de sommatietekens om. Dit mag omwille van de commutatitviteit van de optelling in $\mathbb{R}$. Daarna zonderen we de sommen van kolommen af. We weten dat die precies elke keer $1$ zijn omdat $M$ een stochastische matrix is.
+\[
+\sum_{j=1}^nx_j(\sum_{i=1}^nm_{ij}) = \sum_{j=1}^nx_j = 1
+\]
+De laatste gelijkheid geldt omdat $X$ een kansvector is, en de som van de elementen van $X$ bijgevolg precies $1$ is.
 
 
 
