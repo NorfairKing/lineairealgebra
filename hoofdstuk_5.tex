@@ -440,6 +440,29 @@ Let in bovenstaande vergelijking goed op de sommatie tekens. Voor de tweede geli
 \]
 De laatste gelijkheid geldt omdat $X$ een kansvector is, en de som van de elementen van $X$ bijgevolg precies $1$ is.
 
+\subsection{Gevolg 5.39 p 209}
+Zij alle $X_0$ een kansvector en $M$ een stochastische matrix.
+\subsubsection*{Te Bewijzen}
+Een markov keten bestaat uit een rij kansvectoren. Alle $X_i$ zijn dus kansvectoren.
+\[
+X0, X_1 = M\cdot X_0, X_2 = M^2\cdot X_0,...,X_n = M^n\cdot X_0
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door inductie op $n$.\\\\
+\emph{Stap 1: (Basis stap)}\\
+De bewering geldt voor $n=1$ \footnote{Zie Propositie 5.38 p 209}.\\\\
+\emph{Stap 2: (Inductie stap}\\
+Stel dat de bewering geldt voor een bepaalde $n=k$, dan bewijzen we nu dat daaruit volgt dat de bewering geldt voor $n=k+1$.
+We moeten nu bewijzen dat de volgende vector een kansvector is.
+\[
+M^{k+1}\cdot X_0 = M^{k}\cdot M\cdot X_0
+\]
+Volgens de basisstap geldt dat $M\cdot X_0$ een kansvector is. Volgens de inductiehypothese geldt dat $M^{k}\cdot (M\cdot X_0)$ een kansvector is. Bijgevolg is $M^{k+1}\cdot X_0$ een kansvector.
+\end{proof}
+
+
+
 
 
 \section{Oefeningen 5.9}
