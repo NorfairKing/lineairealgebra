@@ -367,10 +367,229 @@ Omdat de $v_{i,j}$ basisvectoren van de eigenruimten $E_{\lambda_i}$ geldt dat a
 \end{proof}
 
 
+\subsection{Propositie 5.25 p 194}
+Zij $L$ een lineaire transformatie van de eindig dimensionale vectorruimte $(\mathbb{R},V,+)$ waarvan de karakteristieke veelterm volledig te ontbinden valt als product van eerstegraadsfactoren.
+
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item De determinant van $L$ is gelijk aan het product van de eigenwaarden van $L$.
+\item Het spoor van $L$ is gelijk aan de som van de eigenwaarden van $L$.
+\end{enumerate}
+
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door gefoefel.
+\begin{enumerate}
+\item
+Zij $Spec(L) = \{\lambda_1,\lambda_2,...,\lambda_k\}$ het spectrum van $L$. Zij $m_i = m(\lambda)$ de algebra\"ische multipliciteit van eigenwaarde $i$. De karakteristieke veelterm van $L$ ziet er nu als volgt uit.
+\[
+\phi_L(X) = \prod_{i=1}^k(X-\lambda_i)^{m_i}
+\]
+Wanneer we dit product uitwerken ziet het er als volgt uit.% WAAROM
+\[
+X^n + (-1)(m_1\lambda_1 + m_2\lambda_2 + ... + m_3\lambda_3)X^{n-1} + (-1)^2(m_1\lambda_1 + m_2\lambda_2 + ... + m_3\lambda_3)^2X^{n-2} + ... + (-1)^n\prod_{i=1}^k\lambda_i^{m_i}
+\]
+Per defintie is de karakteristieke veelterm ook gelijk aan het volgende. In deze formule is $A$ de matrix van $L$ ten opzichte van eender welke basis van $V$.
+\[
+\phi_L(X) = det(X\mathbb{I}_n-A))
+\]
+%Hier gebeurt iets fishy, wtf?? Het is de eerste term van de bovenstaande uitdrukking, maar wut?
+\[
+(-s)^n\prod_{i=1}^k\lambda_i^{m_i} = \prod_{i=1}^k(-\lambda_i)^{m_i} = \phi_L(0) = det(-A) = (-1)^ndet(A) = (-1)^ndet(L) %Waar komt die laatste stap ineens vandaan??
+\]
+$det(L)$ is dus precies gelijk aan het product van alle eigenwaarden van $L$ waarbij elke eigenwaarde $\lambda_i$ $m_i$ keer geteld wordt.
+
+\item
+We beschouwen $\phi_L$ opnieuw op beide manieren.
+\[
+\phi_L = \prod_{i=1}^k(X-\lambda_i)^{m_i} \text{ en }\phi_L = det(X\mathbb{I}_n - A)
+\]
+In beide schrijfwijzen beschouwen we enkel de term bij co\"effici\"ent $X^{n-1}$. %waarom niet bij X^n??
+\[
+-\sum_{i=1}^km_i\lambda_i = -\sum_{k=1}^n(A)_{ii} = -Tr(A) = -Tr(L)
+\]
+Het spoor van $L$ is dus gelijk aan de som van alle eigenwaarden $\lambda_i$ waarin elke eigenwaarde $m_i$ keer geteld wordt.
+\end{enumerate}
+\end{proof}
+
+\subsection{Stelling 5.28 p 203}
+We zullen hiervoor geen bewijs geven. Dit moet je ook niet kunnen, maar zorg wel dat je goed begrijpt wat deze stelling inhoudt.
+%Eventueel nog meer uitleg?
+
+\subsection{Stelling 5.31 p 205}
+Dit bewijzen we op dezelfde manier als Stelling 5.23 p 192
+\subsection{Propositie 5.32 p 205}
+Dit bewijzen we op dezelfde manier als Stelling 5.25 p 194
+
+\subsection{Propositie 5.38 p 209}
+Zij $X = (x_1 x_2 \cdots x_n)^T \in \mathbb{R}^n$ een kansvector en zijn $M$ een stochastische $n\times n$ matrix.
+\subsubsection*{Te Bewijzen}
+\[
+M\cdot X \text{ is een kansvector.}
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+In een stochastische matrix en in een kansvector zijn alle elementen positief. Elk element van $M\cdot X$ is dus ook positief. Nu rest er ons nog te bewijzen dat de som van de elementen in $M \cdot X$ gelijk is aan $1$.
+\end{proof}
+\[
+\sum_{i=1}^n(M\cdot X)_i = \sum_{i=1}^n\sum_{j=1}^nm_{ij}x_j= \sum_{j=1}^nx_j(\sum_{i=1}^nm_{ij})
+\]
+Let in bovenstaande vergelijking goed op de sommatie tekens. Voor de tweede gelijkheid wisselen we eerst de sommatietekens om. Dit mag omwille van de commutatitviteit van de optelling in $\mathbb{R}$. Daarna zonderen we de sommen van kolommen af. We weten dat die precies elke keer $1$ zijn omdat $M$ een stochastische matrix is.
+\[
+\sum_{j=1}^nx_j(\sum_{i=1}^nm_{ij}) = \sum_{j=1}^nx_j = 1
+\]
+De laatste gelijkheid geldt omdat $X$ een kansvector is, en de som van de elementen van $X$ bijgevolg precies $1$ is.
+
+\subsection{Gevolg 5.39 p 209}
+Zij alle $X_0$ een kansvector en $M$ een stochastische matrix.
+\subsubsection*{Te Bewijzen}
+Een markov keten bestaat uit een rij kansvectoren. Alle $X_i$ zijn dus kansvectoren.
+\[
+X0, X_1 = M\cdot X_0, X_2 = M^2\cdot X_0,...,X_n = M^n\cdot X_0
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door inductie op $n$.\\\\
+\emph{Stap 1: (Basis stap)}\\
+De bewering geldt voor $n=1$ \footnote{Zie Propositie 5.38 p 209}.\\\\
+\emph{Stap 2: (Inductie stap}\\
+Stel dat de bewering geldt voor een bepaalde $n=k$, dan bewijzen we nu dat daaruit volgt dat de bewering geldt voor $n=k+1$.
+We moeten nu bewijzen dat de volgende vector een kansvector is.
+\[
+M^{k+1}\cdot X_0 = M^{k}\cdot M\cdot X_0
+\]
+Volgens de basisstap geldt dat $M\cdot X_0$ een kansvector is. Volgens de inductiehypothese geldt dat $M^{k}\cdot (M\cdot X_0)$ een kansvector is. Bijgevolg is $M^{k+1}\cdot X_0$ een kansvector.
+\end{proof}
+
+\subsection{Propositite 5.40 p 209}
+Zij $M\in \mathbb{R}^{n\times n}$ een stochastische matrix.
+\subsubsection*{Te Bewijzen}
+Het getal $1$ is een eigenwaarde van $M$
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door gefoefel.\\
+Beschouw het stelsel $M\cdot X = \lambda X$ met $\lambda = 1$. De volgende bewering is hieraan equivalent.
+\[
+(M-\mathbb{I}_n)\cdot X = \vec{0}
+\]
+Omdat $M$ een stochastische matrix is geldt dat de som van de elementen van elke kolom gelijk is aan $1$. Daaruit volgt dat de som van de elementen van elke kolom in $M-\mathbb{I}_n$ gelijk is aan $0$. Als we de rijen van $M$ optellen krijgen we een nulrij. Dit houdt in dat de rijen van $M-\mathbb{I}_n$ lineair afhankelijk zijn \footnote{Zie Stelling 2.2 p 57 D-5 en Steling 2.3 p 58 1.} en dat de volgende bewering geldt.
+\[
+det(M - \mathbb{I}_n) = det(M - \lambda\mathbb{I}_n) = 0
+\]
+Dit betekent precies dat $1$ een eigenwaarde is van $M$.
+(De eigenruimte $E_1$ bestaat uit de vaste punten van de overgang (vandaar de naam vaste vector). M.a.w. de $X$ waarvoor geldt dat $M\cdot X = X$).
+\end{proof}
+
+
+\subsection{Propositie 5.41 p 210}
+Zij $M\in \mathbb{R}^{n\times n}$ een stochastische matrix waarvan alle elementen verschillend zijn van nul.
+\subsubsection*{Te Bewijzen}
+De eigenruimte $E_1$ bestaat, heeft dimensie $1$ en bevat precies $1$ kansvector.
+
+\subsubsection*{Bewijs}
+\begin{proof}
+\begin{itemize}
+\item De eigenruimte $E_1$ bestaat \footnote{Zie Propositie 5.40 p 209}. 
+\item De eigenruimte $E_1$ heeft dimensie $1$ want we kunnen elke vaste vector van $M$ nemen en door lineaire combinatie ervan elke andere vaste vector van $M$ vormen. Zij $X$ een vaste vector en $\lambda \in \mathbb{R}$ een scalar, dan geldt voor elke $\lambda$ dat $\lambda X$ ook een vaste vector is.
+\[
+M\cdot X = X\\ \Leftrightarrow M\cdot \lambda X = \lambda X 
+\]
+(Dit is makkelijk in te zien als we $M$ als een lineaire afbeelding beschouwen.)
+\item Stel dat er meer dan \'e\'en vaste vector van $M$ bestaat die ook een kansvector is, noem ze $X$ en $Y$.
+Dan geldt dat er een $\lambda 1$ bestaat zodat $\lambda X = Y$ want we kunnen $X$ als de basis voor $E_1$ nemen. De som van de elementen van $Y$ is dus $\lambda$ keer die van $X$. Dit zou betekenen dat $\lambda$ $1$ is omdat $\lambda X = Y$ en de som van de elementen van $Y$ $1$. Dit is in contradictie met de aanname dat $X$ verschillend is van $Y$.
+\end{itemize}
+\end{proof}
 
 
 
 \section{Oefeningen 5.9}
+\subsection{Oefening 3}
+\subsubsection*{Eigenwaarden}
+Om de eigenwaarden van $A$ te vinden zoeken we de nulpunten van de characteristieke veelterm van $A$.
+\[
+\phi_A = det(A-\lambda\mathbb{I}_n) =
+\begin{vmatrix}
+1-\lambda & 1 & 1 & 1\\
+1 & 1-\lambda & 1 & 1\\
+1 & 1 & 1-\lambda & 1\\
+1 & 1 & 1 & 1-\lambda\\
+\end{vmatrix}
+\]
+We kunnen deze determinant domweg uitrekenen. Dit vraagt vrij veel rekenwerk en is heel saai. We kunnen het ook iets intelligenter aanpakken door eerst de eerste en de laatste en daarna de middelste twee rijen te verwisselen. De determinant verandert dan niet. Daarna rijreduceren we de matrix zonder rijen te verwisselen. Dan verandert de determinant ook niet. Nu kunnen we in elke rij $\lambda$ afzonderen. Zo bekomen we een veel simpelere determinant.
+\[
+=
+\begin{vmatrix}
+1 & 1 & 1 & 1-\lambda\\
+1 & 1 & 1-\lambda & 1\\
+1 & 1-\lambda & 1 & 1\\
+1-\lambda & 1 & 1 & 1\\
+\end{vmatrix}
+=
+\begin{vmatrix}
+1 & 1 & 1 & 1-\lambda\\
+0 & 0 & -\lambda & \lambda\\
+0 & -\lambda & 0 & \lambda\\
+0 & \lambda & \lambda & -\lambda^2\\
+\end{vmatrix}
+=
+\begin{vmatrix}
+0 & -\lambda & \lambda\\
+-\lambda & 0 & \lambda\\
+\lambda & \lambda & -\lambda^2\\
+\end{vmatrix}
+\]
+\[
+= \lambda^3\cdot
+\begin{vmatrix}
+0 & -1 & 1\\
+-1 & 0 & 1\\
+1 & 1 & -\lambda\\
+\end{vmatrix}
+=
+\lambda^3
+\left(
+\begin{vmatrix}
+-1 & 1\\
+1 & -\lambda\\
+\end{vmatrix}
++
+\begin{vmatrix}
+-1 & 1\\
+0 & 1\\
+\end{vmatrix}
+\right)
+=
+\lambda^4
+\]
+$A$ heeft dus de eigenwaarde $0$ met multipliciteit $m(\lambda) = 4$.
+
+
+\subsubsection*{Eigenvector(en)}
+De eigenruimte $E_0$ is de nulruimte van $A = A-\lambda\mathbb{I}_n$. We hoeven dus enkel $A-\mathbb{I}_n$ te rijreduceren om een oplossing te zien staan.
+\[
+\begin{pmatrix}
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1\\
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 1 & 1 & 1\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0\\
+\end{pmatrix}
+\]
+\[
+E_0 = 
+\left\lbrace
+\begin{pmatrix}
+-\lambda-\mu-\nu\\\lambda\\\mu\\\nu
+\end{pmatrix}
+| \lambda,\mu,\nu\in\mathbb{R}
+\right\rbrace
+\]
 
 \subsection{Oefening 10}
 
@@ -450,7 +669,6 @@ Voor $-2$ en $7$ vinden we op een gelijkaardige manier de eigenruimten, en bekom
 \[=vct\{4*v_1+v_2+2*v_3\}\]
 
 TODO: afwerken (Frederik)
-
 
 
 
