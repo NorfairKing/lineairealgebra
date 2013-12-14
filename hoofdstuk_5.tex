@@ -461,7 +461,24 @@ M^{k+1}\cdot X_0 = M^{k}\cdot M\cdot X_0
 Volgens de basisstap geldt dat $M\cdot X_0$ een kansvector is. Volgens de inductiehypothese geldt dat $M^{k}\cdot (M\cdot X_0)$ een kansvector is. Bijgevolg is $M^{k+1}\cdot X_0$ een kansvector.
 \end{proof}
 
-
+\subsection{Propositite 5.40 p 209}
+Zij $M\in \mathbb{R}^{n\times n}$ een stochastische matrix.
+\subsubsection*{Te Bewijzen}
+Het getal $1$ is een eigenwaarde van $M$
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door gefoefel.\\
+Beschouw het stelsel $M\cdot X = \lambda X$ met $\lambda = 1$. De volgende bewering is hieraan equivalent.
+\[
+(M-\mathbb{I}_n)\cdot X = \vec{0}
+\]
+Omdat $M$ een stochastische matrix is geldt dat de som van de elementen van elke kolom gelijk is aan $1$. Daaruit volgt dat de som van de elementen van elke kolom in $M-\mathbb{I}_n$ gelijk is aan $0$. Als we de rijen van $M$ optellen krijgen we een nulrij. Dit houdt in dat de rijen van $M-\mathbb{I}_n$ lineair afhankelijk zijn \footnote{Zie Stelling 2.2 p 57 D-5 en Steling 2.3 p 58 1.} en dat de volgende bewering geldt.
+\[
+det(M - \mathbb{I}_n) = det(M - \lambda\mathbb{I}_n) = 0
+\]
+Dit betekent precies dat $1$ een eigenwaarde is van $M$.
+(De eigenruimte $E_1$ bestaat uit de vaste punten van de overgang. M.a.w. de $X$ waarvoor geldt dat $M\cdot X = X$).
+\end{proof}
 
 
 
