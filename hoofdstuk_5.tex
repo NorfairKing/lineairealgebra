@@ -503,6 +503,91 @@ Dan geldt dat er een $\lambda 1$ bestaat zodat $\lambda X = Y$ want we kunnen $X
 
 
 \section{Oefeningen 5.9}
+\subsection{Oefening 3}
+\subsubsection*{Eigenwaarden}
+Om de eigenwaarden van $A$ te vinden zoeken we de nulpunten van de characteristieke veelterm van $A$.
+\[
+\phi_A = det(A-\lambda\mathbb{I}_n) =
+\begin{vmatrix}
+1-\lambda & 1 & 1 & 1\\
+1 & 1-\lambda & 1 & 1\\
+1 & 1 & 1-\lambda & 1\\
+1 & 1 & 1 & 1-\lambda\\
+\end{vmatrix}
+\]
+We kunnen deze determinant domweg uitrekenen. Dit vraagt vrij veel rekenwerk en is heel saai. We kunnen het ook iets intelligenter aanpakken door eerst de eerste en de laatste en daarna de middelste twee rijen te verwisselen. De determinant verandert dan niet. Daarna rijreduceren we de matrix zonder rijen te verwisselen. Dan verandert de determinant ook niet. Nu kunnen we in elke rij $\lambda$ afzonderen. Zo bekomen we een veel simpelere determinant.
+\[
+=
+\begin{vmatrix}
+1 & 1 & 1 & 1-\lambda\\
+1 & 1 & 1-\lambda & 1\\
+1 & 1-\lambda & 1 & 1\\
+1-\lambda & 1 & 1 & 1\\
+\end{vmatrix}
+=
+\begin{vmatrix}
+1 & 1 & 1 & 1-\lambda\\
+0 & 0 & -\lambda & \lambda\\
+0 & -\lambda & 0 & \lambda\\
+0 & \lambda & \lambda & -\lambda^2\\
+\end{vmatrix}
+=
+\begin{vmatrix}
+0 & -\lambda & \lambda\\
+-\lambda & 0 & \lambda\\
+\lambda & \lambda & -\lambda^2\\
+\end{vmatrix}
+\]
+\[
+= \lambda^3\cdot
+\begin{vmatrix}
+0 & -1 & 1\\
+-1 & 0 & 1\\
+1 & 1 & -\lambda\\
+\end{vmatrix}
+=
+\lambda^3
+\left(
+\begin{vmatrix}
+-1 & 1\\
+1 & -\lambda\\
+\end{vmatrix}
++
+\begin{vmatrix}
+-1 & 1\\
+0 & 1\\
+\end{vmatrix}
+\right)
+=
+\lambda^4
+\]
+$A$ heeft dus de eigenwaarde $0$ met multipliciteit $m(\lambda) = 4$.
 
+\subsubsection*{Eigenvector(en)}
+De eigenruimte $E_0$ is de nulruimte van $A = A-\lambda\mathbb{I}_n$. We hoeven dus enkel $A-\mathbb{I}_n$ te rijreduceren om een oplossing te zien staan.
+\[
+\begin{pmatrix}
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1\\
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 1 & 1 & 1\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0\\
+\end{pmatrix}
+\]
+\[
+E_0 = 
+\left\lbrace
+\begin{pmatrix}
+-\lambda-\mu-\nu\\\lambda\\\mu\\\nu
+\end{pmatrix}
+| \lambda,\mu,\nu\in\mathbb{R}
+\right\rbrace
+\]
 
 \end{document}

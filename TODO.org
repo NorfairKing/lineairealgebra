@@ -445,9 +445,9 @@
   DEADLINE: <2013-12-10 Die>
 ** TODO Oefeningen
 *** TODO Voorbereiding
-    - [ ] 3 NorfairKing
+    - [X] 3 NorfairKing
     - [ ] 4
-        - [ ] c jdewaen
+      - [ ] c jdewaen
 *** TODO In Oefenzitting
     - [ ] 1 egonny
     - [ ] 4
