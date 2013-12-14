@@ -1594,6 +1594,123 @@ L =
 \end{pmatrix}
 \]
 
+\subsection{Oefening 16}
+Bij deze oefening gebruiken we hetzelfde idee als de laatste subvraag van oefening 14. We willen een lineaire afbeelding van een gegeven (niet-standaard) basis naar een andere (niet-standaard) basis bepalen in de vorm van een matrix.\\
+Beschouwen we gegeven bases $\alpha$ en $\beta$ kunnen we ook bijhorende standaardbases kiezen als respectievelijk:
+\[ \epsilon_\alpha = \{(1,0,0,0),(0,1,0,0),(0,0,1,0),(0,0,0,1)\}\]
+\[ \epsilon_\beta = \{\bigl(\begin{smallmatrix} 1&0\\ 0&0 \end{smallmatrix} \bigr),\bigl(\begin{smallmatrix} 0&1\\ 0&0 \end{smallmatrix} \bigr),\bigl(\begin{smallmatrix} 0&0\\ 1&0 \end{smallmatrix} \bigr),\bigl(\begin{smallmatrix} 0&0\\ 0&1 \end{smallmatrix} \bigr)\}\]
+We kunnen nu de gezochte afbeelding $L^\beta_\alpha$, de afbeelding $L$ van basis $\alpha$ naar $\beta$, zo defini\"eren:
+
+\[
+L^\beta_\alpha = Id^\beta_{\epsilon_\beta}\cdot L^{\epsilon_\beta}_{\epsilon_\alpha}\cdot Id^{\epsilon_\alpha}_{\alpha}
+\]
+
+We zoeken de drie componenten van deze matrixvermenigvuldiging. $Id^\beta_{\epsilon_\beta}$, de basisverandering van $\epsilon_\beta$ naar $\beta$, vinden we door beide bases in een matrix te plaatsen, kolomgewijs, geschreven volgens de standaardbasis, zoals eerder reeds uitgevoerd. We bekomen
+\[
+\left(
+\begin{array}{c c c c | c c c c}
+0 & 0 & 1 & -1 & 1 & 0 & 0 & 0 \\ 
+0 & 1 & -1 & 1 & 0 & 1 & 0 & 0 \\ 
+1 & -1 & 1 & 0 & 0 & 0 & 1 & 0 \\ 
+-1 & 1 & 0 & 0 & 0 & 0 & 0 & 1 \\ 
+\end{array}
+\right)
+\]
+Waarbij de het linkse deel de basis $\beta$ ten opzichte van de standaardbasis is. Dus:
+\[Id^\beta_{\epsilon_\beta} = \left(
+\begin{array}{c c c c}
+0 & 0 & 1 & -1 \\ 
+0 & 1 & -1 & 1 \\ 
+1 & -1 & 1 & 0 \\ 
+-1 & 1 & 0 & 0 \\ 
+\end{array}
+\right)
+\]
+Vervolgens berekenen we $L^{\epsilon_\beta}_{\epsilon_\alpha}$, de afbeelding, gevormd met de standaardbases. We bepalen de beelden van elk element van de eerste basis, en schrijven dit als co\"ordinaten voor de tweede basis, waarna we deze co\"ordinaten als kolommen van een matrix gebruiken. Dit is de afbeeldingsmatrix. Dus:
+\[L(1,0,0,0)=\bigl(\begin{smallmatrix} 1&1\\ 0&0 \end{smallmatrix} \bigr) = 1*\bigl(\begin{smallmatrix} 1&0\\ 0&0 \end{smallmatrix} \bigr) + 1*\bigl(\begin{smallmatrix} 0&1\\ 0&0 \end{smallmatrix} \bigr)\]
+\[L(0,1,0,0)=\bigl(\begin{smallmatrix}0&0\\ 1&1 \end{smallmatrix} \bigr) = 1*\bigl(\begin{smallmatrix} 0&0\\ 1&0 \end{smallmatrix} \bigr) + 1*\bigl(\begin{smallmatrix} 0&0\\ 0&1 \end{smallmatrix} \bigr)\]
+\[L(0,0,1,0)=\bigl(\begin{smallmatrix} 1&0\\ 0&1 \end{smallmatrix} \bigr) = 1*\bigl(\begin{smallmatrix} 1&0\\ 0&0 \end{smallmatrix} \bigr) + 1*\bigl(\begin{smallmatrix} 0&0\\ 0&1 \end{smallmatrix} \bigr)\]
+\[L(0,0,0,1)=\bigl(\begin{smallmatrix} 0&1\\ -1&0 \end{smallmatrix} \bigr) = 1*\bigl(\begin{smallmatrix} 0&1\\ 0&0 \end{smallmatrix} \bigr) + (-1)*\bigl(\begin{smallmatrix} 0&0\\ 1&0 \end{smallmatrix} \bigr)\]
+Waaruit we de matrix bekomen:
+\[L^{\epsilon_\beta}_{\epsilon_\alpha} = 
+\left(\begin{array}{c c c c}
+1 & 0 & 1 & 0 \\ 
+1 & 0 & 0 & 1 \\ 
+0 & 1 & 0 & -1 \\ 
+0 & 1 & 1 & 0 \\ 
+\end{array}
+\right)
+\]
+Rest ons nu nog $Id^{\epsilon_\alpha}_{\alpha}$ te bepalen, dewelke we vinden door elementen van beide bases te schrijven als co\"ordinaten volgens de standaardbasis, en als kolommen voor een matrix te gebruiken. Vervolgens rijreduceren we de kant die de originele basis van de basisverandering voorstelt en geeft de andere kant ons de matrix voor basisverandering. We bekomen:
+\[
+\left(
+\begin{array}{c c c c | c c c c}
+1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 \\ 
+1 & 1 & 1 & 0 & 0 & 1 & 0 & 0 \\ 
+1 & 1 & 0 & 0 & 0 & 0 & 1 & 0 \\ 
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\ 
+\end{array}
+\right)
+\]
+\[
+\rightarrow
+\left(
+\begin{array}{c c c c | c c c c}
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\ 
+0 & 1 & 0 & 0 & 0 & 0 & 1 & -1 \\ 
+0 & 0 & 1 & 0 & 0 & 1 & -1 & 0 \\ 
+0 & 0 & 0 & 1 & 1 & -1 & 0 & 0 \\
+\end{array}
+\right)
+\]
+We beslissen dus dat
+\[Id^{\epsilon_\alpha}_{\alpha} = \left(
+\begin{array}{c c c c}
+0 & 0 & 0 & 1 \\ 
+0 & 0 & 1 & -1 \\ 
+0 & 1 & -1 & 0 \\ 
+1 & -1 & 0 & 0 \\
+\end{array}
+\right)
+\]
+
+Nu, terug naar onze originele formule, we bekomen door invulling:
+\[
+L^\beta_\alpha = Id^\beta_{\epsilon_\beta}\cdot L^{\epsilon_\beta}_{\epsilon_\alpha}\cdot Id^{\epsilon_\alpha}_{\alpha}
+\]
+\[L^\beta_\alpha = \left(
+\begin{array}{c c c c}
+0 & 0 & 1 & -1 \\ 
+0 & 1 & -1 & 1 \\ 
+1 & -1 & 1 & 0 \\ 
+-1 & 1 & 0 & 0 \\ 
+\end{array}
+\right) \cdot \left(\begin{array}{c c c c}
+1 & 0 & 1 & 0 \\ 
+1 & 0 & 0 & 1 \\ 
+0 & 1 & 0 & -1 \\ 
+0 & 1 & 1 & 0 \\ 
+\end{array}
+\right) \cdot \left(
+\begin{array}{c c c c}
+0 & 0 & 0 & 1 \\ 
+0 & 0 & 1 & -1 \\ 
+0 & 1 & -1 & 0 \\ 
+1 & -1 & 0 & 0 \\
+\end{array}
+\right)
+\]
+\[L^\beta_\alpha = \left(
+\begin{array}{c c c c}
+-1 & 0 & 1 & 0 \\ 
+2 & -1 & -1 & 1 \\ 
+-2 & 3 & 0 & -1 \\ 
+1 & -2 & 1 & 0 \\
+\end{array}
+\right)
+\]
+
+
 \subsection{Oefening 17}
 AAN WARD: nog nakijken, gewoon opgeschreven wat er in de oz gezegd werd.
 
