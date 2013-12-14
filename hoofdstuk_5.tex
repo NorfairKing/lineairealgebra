@@ -477,7 +477,27 @@ Omdat $M$ een stochastische matrix is geldt dat de som van de elementen van elke
 det(M - \mathbb{I}_n) = det(M - \lambda\mathbb{I}_n) = 0
 \]
 Dit betekent precies dat $1$ een eigenwaarde is van $M$.
-(De eigenruimte $E_1$ bestaat uit de vaste punten van de overgang. M.a.w. de $X$ waarvoor geldt dat $M\cdot X = X$).
+(De eigenruimte $E_1$ bestaat uit de vaste punten van de overgang (vandaar de naam vaste vector). M.a.w. de $X$ waarvoor geldt dat $M\cdot X = X$).
+\end{proof}
+
+
+\subsection{Propositie 5.41 p 210}
+Zij $M\in \mathbb{R}^{n\times n}$ een stochastische matrix waarvan alle elementen verschillend zijn van nul.
+\subsubsection*{Te Bewijzen}
+De eigenruimte $E_1$ bestaat, heeft dimensie $1$ en bevat precies $1$ kansvector.
+
+\subsubsection*{Bewijs}
+\begin{proof}
+\begin{itemize}
+\item De eigenruimte $E_1$ bestaat \footnote{Zie Propositie 5.40 p 209}. 
+\item De eigenruimte $E_1$ heeft dimensie $1$ want we kunnen elke vaste vector van $M$ nemen en door lineaire combinatie ervan elke andere vaste vector van $M$ vormen. Zij $X$ een vaste vector en $\lambda \in \mathbb{R}$ een scalar, dan geldt voor elke $\lambda$ dat $\lambda X$ ook een vaste vector is.
+\[
+M\cdot X = X\\ \Leftrightarrow M\cdot \lambda X = \lambda X 
+\]
+(Dit is makkelijk in te zien als we $M$ als een lineaire afbeelding beschouwen.)
+\item Stel dat er meer dan \'e\'en vaste vector van $M$ bestaat die ook een kansvector is, noem ze $X$ en $Y$.
+Dan geldt dat er een $\lambda 1$ bestaat zodat $\lambda X = Y$ want we kunnen $X$ als de basis voor $E_1$ nemen. De som van de elementen van $Y$ is dus $\lambda$ keer die van $X$. Dit zou betekenen dat $\lambda$ $1$ is omdat $\lambda X = Y$ en de som van de elementen van $Y$ $1$. Dit is in contradictie met de aanname dat $X$ verschillend is van $Y$.
+\end{itemize}
 \end{proof}
 
 
