@@ -563,7 +563,6 @@ We kunnen deze determinant domweg uitrekenen. Dit vraagt vrij veel rekenwerk en 
 \]
 $A$ heeft dus de eigenwaarde $0$ met multipliciteit $m(\lambda) = 4$.
 
-
 \subsubsection*{Eigenvector(en)}
 De eigenruimte $E_0$ is de nulruimte van $A = A-\lambda\mathbb{I}_n$. We hoeven dus enkel $A-\mathbb{I}_n$ te rijreduceren om een oplossing te zien staan.
 \[
@@ -591,85 +590,118 @@ E_0 =
 \right\rbrace
 \]
 
-\subsection{Oefening 10}
 
-\subsubsection*{a}
-De gegeven formules voor $T^\alpha_\alpha$ vallen te herschrijven in een matrix als:
+\subsection{Oefening 9}
+We stellen allereerst de matrix van $L$ op ten opzichte van de standaardbasis. De lineaire combinatie die we zien in het voorschrift zetten we in de rijen van een $3\times 3$ matric.
 \[
-T^\alpha_\alpha = \left(
-\begin{array}{c c c}
-5 & 2 & 3 \\ 
-2 & -1 & 0 \\ 
-3 & 0 & 1 \\
-\end{array}
-\right)
+L_\epsilon = 
+\begin{pmatrix}
+0 & 1 & 1\\
+1 & 1 & 0\\
+1 & 0 & 1
+\end{pmatrix}
 \]
-Hieruit kunnen we de karakteristieke veelterm halen met de formule $det(\lambda * I_3 - T^\alpha_\alpha)$, waarbij $I_n$ de eenheidsmatrix uit $\mathbb{R}^{n\times n}$ is.
+Uit de theorie weten we dat dit iets met de eigenwaarden en eigenvectoren te maken heeft. Sterker nog, dit is precies waarvoor eigenwaarden en eigenvectoren dienen. We zoeken de matrix van eigenvectoren $P$ zodat $AP = PB$, dan is $B$ een diagonaalmatrix \footnote{Zie het bewijs van Steling 5.7}.
+Nu moeten we dus eerst een basis van eigenvectoren van $\mathbb{R}^n$ zoeken.
+We lossen de karakteristieke vergelijking van $L$ op.
+\[
+\phi_L = 
+\begin{vmatrix}
+-\lambda & 1 & 1\\
+1 & 1-\lambda & 0\\
+1 & 0 & 1-\lambda
+\end{vmatrix}
+= 0
+\]
+\[
+(1-\lambda)((-\lambda(1-\lambda)-1) +\lambda-1) = 0 \Leftrightarrow (1-\lambda)(\lambda^2-2)-=0
+\]
+De eigenwaarden van $L$ zijn dus $\{-1,1,2\}$. $L$ heeft een enkelvoudig spectrum dus $L$ is diagonaliseerbaar.
+We zoeken nu de bijhorende eigenruimten.
 
-\[det(\lambda * I_3 - T^\alpha_\alpha)=\]
-\[det\left(
-\begin{array}{c c c}
-\lambda-5 & -2 & -3 \\ 
--2 & \lambda+1 & 0 \\ 
--3 & 0 & \lambda-1 \\
-\end{array}
-\right)=\]
-\[-3*det\left(
-\begin{array}{c c}
--2 & -3 \\ 
-\lambda+1 & 0 \\
-\end{array}
-\right) + (\lambda-1)*det\left(
-\begin{array}{c c}
-\lambda-5 & -2 \\
--2 & \lambda+1 \\ 
-\end{array}
-\right)=\]
-\[\lambda^3 - 5*\lambda^2 - 14*\lambda=\]
-\[\lambda*(\lambda-7)*(\lambda+2)\]
+\emph{$E_{-1}$}\\
+\[
+\begin{pmatrix}
+1 & 1 & 1\\
+1 & 2 & 0\\
+1 & 0 & 2
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & 2\\
+0 & 1 & -1\\
+0 & 0 & 0
+\end{pmatrix}
+\]
+\[
+\Rightarrow E_{-1} = 
+\left\{ 
+\lambda
+\begin{pmatrix}
+-2\\1\\1\\
+\end{pmatrix}
+| \lambda \in \mathbb{R}
+\right\}
+\]
 
-De nulpunten van deze vergelijking zijn de eigenwaarden van $T$. Deze zijn dus 0, -2 en 7.
+\emph{$E_1$}\\
+\[
+\begin{pmatrix}
+-1 & 1 & 1\\
+1 & 0 & 0\\
+1 & 0 & 0
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 1\\
+0 & 0 & 0
+\end{pmatrix}
+\]
+\[
+\Rightarrow E_1 = 
+\left\{ 
+\lambda
+\begin{pmatrix}
+0\\-1\\1\\
+\end{pmatrix}
+| \lambda \in \mathbb{R}
+\right\}
+\]
 
-\subsubsection*{b}
-
-Om de eigenruimten te berekenen per eigenwaarde gaan we een eigenwaarde invullen in de matrix waar we de determinant van berekend hebben om onze eigenwaarden te bekomen. We maken hier vervolgens een homogeen stelsel van en bepalen het vectorvoorschrift voor de oplossingen van het stelsel. Dit voorschrift bepaalt de eigenruimte.\\
-
-Voor eigenwaarde 0 bekomen we:
-\[\left(
-\begin{array}{c c c | c}
-\lambda-5 & -2 & -3 & 0\\ 
--2 & \lambda+1 & 0 & 0\\ 
--3 & 0 & \lambda-1 & 0\\
-\end{array}
-\right)\]
-\[\mapsto\left(
-\begin{array}{c c c | c}
--5 & -2 & -3 & 0 \\ 
--2 & 1 & 0 & 0\\ 
--3 & 0 & -1 & 0\\
-\end{array}
-\right)\]
-waar we na wat rijreduceren komen tot
-\[\mapsto\left(
-\begin{array}{c c c | c}
-1 & 4 & 3 & 0 \\ 
-0 & 3 & 2 & 0\\ 
-0 & 0 & 0 & 0\\
-\end{array}
-\right)\]
-De oplossingsverzameling van dit stelsel kunnen we schrijven als $\{(-\lambda,-2*\lambda,3*\lambda)|\lambda\in\mathbb{R}\}$, hetgeen een voorschrift is voor de co\"ordinaten van de eigenruimte met de gegeven basis $\alpha$. We bekomen dus:
-\[E_0 = \{(-\lambda*v_1-2*\lambda*v_2+3*\lambda*v_3)|\lambda\in\mathbb{R}\}\]
-\[=vct\{-v_1-2*v_2+3*v_3\}\]
-Dit is de eigenruimte bij eigenwaarde 0.
-
-Voor $-2$ en $7$ vinden we op een gelijkaardige manier de eigenruimten, en bekomen we:
-\[E_{-2} = \{(-\lambda*v_1+2*\lambda*v_2+\lambda*v_3)|\lambda\in\mathbb{R}\}\]
-\[=vct\{-v_1+2*v_2+v_3\}\]
-\[E_{7} = \{(4*\lambda*v_1+\lambda*v_2+2*\lambda*v_3)|\lambda\in\mathbb{R}\}\]
-\[=vct\{4*v_1+v_2+2*v_3\}\]
-
-TODO: afwerken (Frederik)
-
-
+\emph{$E_2$}\\
+\[
+\begin{vmatrix}
+-2 & 1 & 1\\
+1 & -1& 0\\
+1 & 0 & -1
+\end{vmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & -1\\
+0 & 1 & -1\\
+0 & 0 & 0
+\end{pmatrix}
+\]
+\[
+\Rightarrow E_2 = 
+\left\{ 
+\lambda
+\begin{pmatrix}
+1\\1\\1\\
+\end{pmatrix}
+| \lambda \in \mathbb{R}
+\right\}
+\]
+Kiezen we nu drie eigenvectoren, elk uit een andere eigenruimte, dan en gebruiken we deze als basis $\beta$ voor $(\mathbb{R},\mathbb{R}[X]_{\le 2},+)$ dan is de matrix van $L$ ten opzichte van deze basis een diagonaalmatrix.
+(Deze diagonaalmatrix is de matrix waarbij de eigenwaarden op de diagonaal staan)
+\[
+L_\beta = 
+\begin{pmatrix}
+-1 & 0 & 0\\
+ 0 & 1 & 0\\
+ 0 & 0 & 2
+\end{pmatrix}
+\]
 
 \end{document}
