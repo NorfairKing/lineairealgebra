@@ -704,4 +704,166 @@ L_\beta =
 \end{pmatrix}
 \]
 
+\subsection{Oefening 16}
+Met een rekenmachine vinden we dat het antwoord de volgende matrix is.
+\[
+A^{10}=
+\begin{pmatrix}
+1 & 0\\
+-1023 & 1024\\
+\end{pmatrix}
+\]
+Op het examen mag je echter geen rekenmachine gebruiken.
+Het domweg manueel doen is natuurlijk niet wat je moet doen.
+
+Stel dat $A$ diagonaliseerbaar is. Dan geldt dat er een inverteerbare $P$ bestaat zodat $B$ een diagonaalmatrix is en het volgende geldt.
+\[
+P^{-1}AP = B \Rightarrow A = PBP^{-1}
+\]
+$P$ is hier een matrix waarin een eigenbasis van $A$ in de kolommen staat. $B$ is de diagonaalmatrix waarbij de eigenwaarden van $A$ op de diagonaal staan.
+We zoeken de tiende macht van $A$.
+\[
+A^{10} = (PBP^{-1})^{10} = PBP^{-1}PBP^{-1}...PBP^{-1} = PB\mathbb{I}_2B\mathbb{I}_2...\mathbb{I}_2BP^{-1} = PB^{10}P^{-1}
+\]
+Dit zou het wel heel makkelijk maken want een macht van een diagonaalmatrix is makkelijker te berekenen dan een macht van een willekeurige matrix \footnote{Zie de formule p 176 bovenaan.}.
+We zoeken eerst de eigenwaarden van $A$.
+\[
+\phi_A =
+\begin{vmatrix}
+1-\lambda & 0\\
+-1 & 2-\lambda
+\end{vmatrix}
+= 0
+\Rightarrow (1-\lambda)(2-\lambda)=0
+\]
+De eigenwaarden van $A$ zijn dus $\{1,2\}$. Mits het spectrum van $A$ enkelvoudig is is $A$ diagonaliseerbaar.
+We zoeken nu de eigenruimten van $A$.\\
+
+\emph{$E_1$}\\
+\[
+\begin{pmatrix}
+0 & 0\\
+-1 & 1
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & -1\\
+0 & 0
+\end{pmatrix}
+\]
+\[
+\Rightarrow 
+E_1 = 
+\left\{
+\lambda
+\begin{pmatrix}
+1\\1
+\end{pmatrix}
+| \lambda \in \mathbb{R}
+\right\}
+\]
+
+\emph{$E_2$}\\
+\[
+\begin{pmatrix}
+-1 & 0\\
+-1 & 0
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0\\
+0 & 0
+\end{pmatrix}
+\]
+\[
+\Rightarrow
+E_2 =
+\left\{
+\lambda
+\begin{pmatrix}
+0\\1
+\end{pmatrix}
+| \lambda \in \mathbb{R}
+\right\}
+\]
+We bekomen nu $P$ en $B$.
+\[
+P = 
+\begin{pmatrix}
+1 & 0\\
+1 & 1
+\end{pmatrix}
+\text{ en }
+B = 
+\begin{pmatrix}
+1 & 0\\
+0 & 2
+\end{pmatrix}
+\]
+Om $P^{-1}$ te berekenen rijreduceren we de volgende matrix.
+\[
+\begin{pmatrix}
+1 & 0 & 1 & 0\\
+1 & 1 & 0 & 1
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & 1 & 0\\
+0 & 1 & -1 & 1
+\end{pmatrix}
+\text{ dus }
+P^{-1} = 
+\begin{pmatrix}
+1 & 0\\
+-1 & 1
+\end{pmatrix}
+\]
+Nu kunnen we eenvoudig $A^{10}$ berekenen.
+\[
+A^{10}=
+P
+\cdot
+\begin{pmatrix}
+1 & 0\\
+0 & 2
+\end{pmatrix}^{10}
+\cdot 
+P^{-1}
+=
+P
+\cdot
+\begin{pmatrix}
+1^{10} & 0\\
+0 & 2^{10}
+\end{pmatrix}
+\cdot 
+P^{-1}
+=
+\begin{pmatrix}
+1 & 0\\
+1 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+1 & 0\\
+0 & 1024
+\end{pmatrix}
+\cdot 
+\begin{pmatrix}
+1 & 0\\
+-1 & 1
+\end{pmatrix}
+\]
+Als we dit uitrekenen zien we dat de rekenmachine gelijk had.
+\[
+A^{10}=
+\begin{pmatrix}
+1 & 0\\
+-1023 & 1024\\
+\end{pmatrix}
+\]
+
+
+
+
 \end{document}
