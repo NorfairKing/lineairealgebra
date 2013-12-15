@@ -389,9 +389,9 @@
     - [X] 10 fokdiekul
     - [ ] 12a jdewaen
     - [X] 14 MajorMonodon
-    - [ ] 24
-      - [ ] a egonny
-      - [ ] b NorfairKing
+    - [X] 24
+      - [X] a egonny
+      - [X] b NorfairKing
     - [ ] 26 fokdiekul
 *** TODO In Oefenzitting
     - [X] 1 

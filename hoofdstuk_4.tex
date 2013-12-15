@@ -1795,7 +1795,11 @@ Zoek een $w_1,w_2,w_3$ die voldoen.
 
 \subsection{Oefening 24}
 \subsubsection*{a)}
-TODO geen idee
+We beschouwen een de lineaire afbeelding $L:V\rightarrow W$. We zoeken nu een deelruimte van de bronverzameling $V$ zodat deze verzameling $U$ de volgende eigenschappen heeft:\\
+$ker(L)\cap U = \{0\}$, wat betekent dat het enige element dat $U$ en de kern van $L$ gemeenschappelijk hebben het element $0$ is. Dat betekent dus dat we alleen het nulelement nodig hebben uit $V$, en geen andere elementen van de kern van $L$, omdat onze doorsnede dan niet meer zou kloppen.\\
+$Im(L) = \{L(u)| u\in U\}$, wat betekent dat het beeld van de originele afbeelding $L$ gelijk moet zijn aan het beeld van de afbeelding $L$ op $U$ in plaats van $V$.\\
+We merken dus op dat het enige dat we moeten elimineren uit $V$ om $U$ te bekomen, alle elementen van de kern zijn, die niet het nulelement zijn.\\
+We kunnen dit (dixit de assistente) doen door uit te gaan van het bewijs van de dimensiestelling, op pagina 157, waarbij we enkel de eerste paar regels beschouwen, en daarin het toevoegen van de basis van de kern, $\{v_{r+1},\cdots,v_n\}$ elimineren. We bekomen zo de gevraagde deelruimte, want we hebben alle overtollige elementen van de kern ge\"elimineerd.
 \subsubsection*{b)}
 Te Bewijzen:
 Er bestaat een surjectieve lineaire afbeelding $L:V\rightarrow W \Leftrightarrow dimW\le dimV$
@@ -1803,9 +1807,21 @@ Er bestaat een surjectieve lineaire afbeelding $L:V\rightarrow W \Leftrightarrow
 Bewijs van een equivalentie.
 \begin{itemize}
 \item $\Rightarrow$\\
-We bewijzen dat $dimW$ zeker niet groter is dan $dimV$. Omdat er een surjectieve lineaire afbeelding bestaat van $W$ naar $V$, wordt elke $w\in W$ bereikt. Er bestaat dus ook voor elke $w\in W$ een $v \in V$ zodat $L(v)=w$. $dimW$ is dus zeker niet groter dan $dimV$.
+We bewijzen dat $dimW$ zeker niet groter is dan $dimV$. Omdat er een surjectieve lineaire afbeelding bestaat van $W$ naar $V$, wordt elke $w\in W$ bereikt. Het beeld van $L$ kunnen we dus defini\"eren als $Im(L)=W$. Indien we dit invullen in de dimensiestelling bekomen we:
+\[dim_{\mathbb{R}} V = dim_{\mathbb{R}} (kerL) + dim_{\mathbb{R}} (ImL)\]
+\[\Rightarrow dim_{\mathbb{R}} V = dim_{\mathbb{R}} (kerL) + dim_{\mathbb{R}} W\]
+\[\Rightarrow dim_{\mathbb{R}} V - dim_{\mathbb{R}} W= dim_{\mathbb{R}} (kerL)\]
+Aangezien de dimensie per definitie een (niet-strikt) positief getal is, kan deze gelijkheid alleen gelden als $dim W \leq dim V$, anders wordt de dimensie van de kern negatief.
 \item $\Leftarrow$\\
-TODO WTF?
+Nemen we $\{v_1,v_2,\cdots,v_n\}$ een basis van $V$ en $\{w_1,w_2,\cdots,w_m\}$ een basis van $W$ met $n=dim V$ en $m=dim W$ en $n \geq m$.\\
+We defini\"eren nu de lineaire afbeelding $L:V \rightarrow W$ als:
+\[ L(v_i) = \left\{
+  \begin{array}{l l}
+    w_i & \quad \text{als $i \leq m$}\\
+    0 & \quad \text{als $i > m$}\\
+  \end{array} \right.
+\]
+Deze afbeelding is surjectief omdat alle elementen van de basis van $W$ bereikt kunnen worden en via lineaire combinatie alle elementen van $W$ zelf. Zo hebben we dus een surjectieve afbeelding gedefini\"eerd die bestaat als $dim W \leq dim V$.
 
 \end{itemize}
 \end{proof}
