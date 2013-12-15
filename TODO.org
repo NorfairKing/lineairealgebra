@@ -1,4 +1,4 @@
-[B#+SEQ_TODO: TODO(t) ISSUE(i) | DELEGATED(l) DONE(d)
+#+SEQ_TODO: TODO(t) ISSUE(i) | DELEGATED(l) DONE(d)
 # ^ De vorige lijn is voor emacs, afblijven :p
 
 * DONE Hoofdstuk 1
@@ -351,9 +351,9 @@
    - [ ] 3.55 p 116 egonny     
    - [X] 3.59 p 118 NorfairKing
    - [ ] 3.64 p 123 warreee
-* TODO Hoofdstuk 4
-  DEADLINE: <2013-11-26 Die>
-** TODO Bewijzen
+* DELEGATED Hoofdstuk 4
+  CLOSED: [2013-12-15 Sun 11:13] DEADLINE: <2013-11-26 Die>
+** ISSUE Bewijzen
 *** DONE Lemma      4.2  p 130
     CLOSED: [2013-12-04 Wed 13:47]
 5*** DONE Gevolg     4.3  p 130
@@ -379,8 +379,10 @@
     CLOSED: [2013-12-07 Sat 13:37]
 *** DONE Stelling   4.43 p 164
     CLOSED: [2013-12-11 Wed 11:32]
-** TODO Oefeningen
-*** TODO Voorbereiding
+** DELEGATED Oefeningen
+   CLOSED: [2013-12-15 Sun 11:12]
+*** DELEGATED Voorbereiding
+    CLOSED: [2013-12-15 Sun 11:12]
     - [ ] 1
       - [ ] g jdewaen
       - [ ] j jdewaen
@@ -393,7 +395,8 @@
       - [X] a egonny
       - [X] b NorfairKing
     - [ ] 26 fokdiekul
-*** TODO In Oefenzitting
+*** DELEGATED In Oefenzitting
+    CLOSED: [2013-12-15 Sun 11:13]
     - [X] 1 
       - [X] c warreee
       - [X] e warreee
@@ -405,7 +408,8 @@
     - [ ] 17 warreee
     - [ ] 20 NorfairKing
     - [ ] 23 warreee
-*** TODO Extra
+*** DELEGATED Extra
+    CLOSED: [2013-12-15 Sun 11:13]
     - [ ] 1
       - [ ] a fokdiekul
       - [ ] b fokdiekul
@@ -431,7 +435,8 @@
     - [ ] 25 MajorMonodon
 **** DONE Algemene uitleg voor matrixvoorstelling van lineaire afbeelding.
      CLOSED: [2013-12-11 Wed 11:32]
-** TODO Opdrachten   
+** DELEGATED Opdrachten   
+   CLOSED: [2013-12-15 Sun 11:13]
     - [X] 4.5  p136 NorfairKing
     - [X] 4.9  p140
       - [X] 1  warreee
@@ -451,45 +456,96 @@
 *** TODO In Oefenzitting
     - [ ] 1 egonny
     - [ ] 4
-        - [ ] a fokdiekul
+      - [ ] a fokdiekul
     - [ ] 8 warreee
-    - [ ] 9 NorfairKing
+    - [X] 9 NorfairKing
     - [ ] 10 MajorMonodon
     - [ ] 11 fokdiekul
     - [ ] 17 MajorMonodon
     - [ ] 18 jdewaen
 ** TODO Bewijzen
-*** TODO Stelling 5.2 p 117
-*** TODO Voorbeeld 5.4 
+*** DONE Stelling 5.2 p 117
+    CLOSED: [2013-12-15 Sun 08:55]
+*** DONE Voorbeeld 5.4 
+    CLOSED: [2013-12-15 Sun 08:55]
 **** TODO (1) vind zelf de tweede eigenvector
 **** TODO (5) Bepaal zelf de eigenwaarden
 **** TODO (5) Bewijs dat elke eigevector van S ook van de vorm cv_\mu is
-*** TODO Stelling 5.7 p 181
-*** TODO Stelling 5.8 p 182
-*** TODO Stelling 5.16 p 189
-*** TODO Stelling 5.18 p 190
-*** TODO Gevolg 5.20 p 191
-*** TODO Lemma 5.22 p 192
-*** TODO Stelling 5.23 p 192
-*** TODO Propositie 5.25 p 194
-*** TODO Stelling 5.28 p 203
-*** TODO Stelling 5.31 p 205
-*** TODO Propositie 5.32 p 205
-*** TODO Eigenschap 5.33 p 205
-*** TODO Propositie 5.38 p 209
-*** TODO Gevolg 5.39 p 209
-*** TODO Propositie 5.40 p 209
-*** TODO Propositie 5.41 p 210
-*** TODO Stelling 5.43 p 212
-*** TODO Gevolg 5.44 p 214
-*** TODO Stelling 5.49 p 216
-** TODO Oefeningen
+*** DONE Stelling 5.7 p 181
+    CLOSED: [2013-12-15 Sun 08:55]
+*** DONE Stelling 5.8 p 182
+    CLOSED: [2013-12-15 Sun 08:55]
+*** DONE Stelling 5.16 p 189
+    CLOSED: [2013-12-15 Sun 08:55]
+*** DONE Stelling 5.18 p 190
+    CLOSED: [2013-12-15 Sun 08:55]
+*** DONE Gevolg 5.20 p 191
+    CLOSED: [2013-12-15 Sun 08:55]
+*** DONE Lemma 5.22 p 192
+    CLOSED: [2013-12-15 Sun 08:55]
+*** DONE Stelling 5.23 p 192
+    CLOSED: [2013-12-15 Sun 08:55]
+*** DONE Propositie 5.25 p 194
+    CLOSED: [2013-12-15 Sun 08:55]
+*** DONE Stelling 5.28 p 203
+    CLOSED: [2013-12-15 Sun 08:55]
+*** DONE Stelling 5.31 p 205
+    CLOSED: [2013-12-15 Sun 08:55]
+*** DONE Propositie 5.32 p 205
+    CLOSED: [2013-12-15 Sun 08:55]
+*** DONE Eigenschap 5.33 p 205
+    CLOSED: [2013-12-15 Sun 08:56]
+*** DONE Propositie 5.38 p 209
+    CLOSED: [2013-12-15 Sun 08:56]
+*** DONE Gevolg 5.39 p 209
+    CLOSED: [2013-12-15 Sun 08:56]
+*** DONE Propositie 5.40 p 209
+    CLOSED: [2013-12-15 Sun 08:56]
+*** DONE Propositie 5.41 p 210
+    CLOSED: [2013-12-15 Sun 08:56]
 ** TODO Opdrachten
     - [ ] 5.10 p 185
     - [ ] 5.34 p 206
     - [ ] 5.42 p 211
 * TODO Hoofdstuk 6
   DEADLINE: <2013-12-17 Die>
+** TODO Bewijzen
+*** TODO Voorbeeld 6.6 p 224
+*** TODO Voorbeeld 6.7 p 226
+*** TODO Stelling 6.11 p 228
+*** TODO Opmerking 6.12 p 228
+*** TODO Stelling 6.14 p 229
+*** TODO Definitie 6.16 p 231 (het eerste deel is een stelling, the sneaky bastard)
+*** TODO Stelling 6.19 p 232
+*** TODO Opmerking 6.20 beide puntjes
+*** TODO Stelling 6.23 p 234
+*** TODO Stelling 6.26 p 236
+*** TODO Stelling 6.27 p 238
+*** TODO Voorbeeld 6.28 p 238
+*** TODO Definitie 6.30 controleren of U^top echt een vectorruimte is
+*** TODO Stelling 6.31 p 240
+*** TODO Voorbeeld 6.32 p 241
+*** TODO Definitie 6.3 p 241 Aantonen dat deze afbeelding lineair is
+*** TODO Stelling 6.34 p 242
+*** TODO Lemma 6.36 p 243
+*** TODO Lemma 6.38 p 244
+*** TODO Lemma 6.40 p 245
+*** TODO Stelling 6.42 p 246
+*** TODO Stelling 6.43 p 246
+*** TODO Stelling 6.46 p 249
+*** TODO Stelling 6.48 p 249
+*** TODO Stelling 6.48 p 249
+*** TODO Lemma 6.49 p 249
+*** TODO Stelling 6.50 p 250
+*** TODO Stelling 6.52 p 251
+*** TODO Stelling 6.56 p 252
+*** TODO Propositie 6.58 p 253
+*** TODO Propositie 6.59 p 254
+*** TODO Stelling 6.60 p 254
+*** TODO Propositite 6.62 p 255
+*** TODO Opmerking 6.63 p 255
+*** TODO Stelling 6.64 p 255
+*** TODO Stelling 6.68 p 259
 ** TODO Oefeningen
 *** TODO Voorbereiding
     - [ ] 2
@@ -502,3 +558,4 @@
     - [ ] 14
       - [ ] a NorfairKing
 ** TODO Opdrachten
+   - [ ] 6.8 p 227
