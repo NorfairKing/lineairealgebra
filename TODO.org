@@ -351,9 +351,9 @@
    - [ ] 3.55 p 116 egonny     
    - [X] 3.59 p 118 NorfairKing
    - [ ] 3.64 p 123 warreee
-* TODO Hoofdstuk 4
-  DEADLINE: <2013-11-26 Die>
-** TODO Bewijzen
+* DELEGATED Hoofdstuk 4
+  CLOSED: [2013-12-15 Sun 11:13] DEADLINE: <2013-11-26 Die>
+** ISSUE Bewijzen
 *** DONE Lemma      4.2  p 130
     CLOSED: [2013-12-04 Wed 13:47]
 5*** DONE Gevolg     4.3  p 130
@@ -379,8 +379,10 @@
     CLOSED: [2013-12-07 Sat 13:37]
 *** DONE Stelling   4.43 p 164
     CLOSED: [2013-12-11 Wed 11:32]
-** TODO Oefeningen
-*** TODO Voorbereiding
+** DELEGATED Oefeningen
+   CLOSED: [2013-12-15 Sun 11:12]
+*** DELEGATED Voorbereiding
+    CLOSED: [2013-12-15 Sun 11:12]
     - [ ] 1
       - [ ] g jdewaen
       - [ ] j jdewaen
@@ -393,7 +395,8 @@
       - [ ] a egonny
       - [ ] b NorfairKing
     - [ ] 26 fokdiekul
-*** TODO In Oefenzitting
+*** DELEGATED In Oefenzitting
+    CLOSED: [2013-12-15 Sun 11:13]
     - [X] 1 
       - [X] c warreee
       - [X] e warreee
@@ -405,7 +408,8 @@
     - [ ] 17 warreee
     - [ ] 20 NorfairKing
     - [ ] 23 warreee
-*** TODO Extra
+*** DELEGATED Extra
+    CLOSED: [2013-12-15 Sun 11:13]
     - [ ] 1
       - [ ] a fokdiekul
       - [ ] b fokdiekul
@@ -431,7 +435,8 @@
     - [ ] 25 MajorMonodon
 **** DONE Algemene uitleg voor matrixvoorstelling van lineaire afbeelding.
      CLOSED: [2013-12-11 Wed 11:32]
-** TODO Opdrachten   
+** DELEGATED Opdrachten   
+   CLOSED: [2013-12-15 Sun 11:13]
     - [X] 4.5  p136 NorfairKing
     - [X] 4.9  p140
       - [X] 1  warreee
@@ -504,6 +509,43 @@
     - [ ] 5.42 p 211
 * TODO Hoofdstuk 6
   DEADLINE: <2013-12-17 Die>
+** TODO Bewijzen
+*** TODO Voorbeeld 6.6 p 224
+*** TODO Voorbeeld 6.7 p 226
+*** TODO Stelling 6.11 p 228
+*** TODO Opmerking 6.12 p 228
+*** TODO Stelling 6.14 p 229
+*** TODO Definitie 6.16 p 231 (het eerste deel is een stelling, the sneaky bastard)
+*** TODO Stelling 6.19 p 232
+*** TODO Opmerking 6.20 beide puntjes
+*** TODO Stelling 6.23 p 234
+*** TODO Stelling 6.26 p 236
+*** TODO Stelling 6.27 p 238
+*** TODO Voorbeeld 6.28 p 238
+*** TODO Definitie 6.30 controleren of U^top echt een vectorruimte is
+*** TODO Stelling 6.31 p 240
+*** TODO Voorbeeld 6.32 p 241
+*** TODO Definitie 6.3 p 241 Aantonen dat deze afbeelding lineair is
+*** TODO Stelling 6.34 p 242
+*** TODO Lemma 6.36 p 243
+*** TODO Lemma 6.38 p 244
+*** TODO Lemma 6.40 p 245
+*** TODO Stelling 6.42 p 246
+*** TODO Stelling 6.43 p 246
+*** TODO Stelling 6.46 p 249
+*** TODO Stelling 6.48 p 249
+*** TODO Stelling 6.48 p 249
+*** TODO Lemma 6.49 p 249
+*** TODO Stelling 6.50 p 250
+*** TODO Stelling 6.52 p 251
+*** TODO Stelling 6.56 p 252
+*** TODO Propositie 6.58 p 253
+*** TODO Propositie 6.59 p 254
+*** TODO Stelling 6.60 p 254
+*** TODO Propositite 6.62 p 255
+*** TODO Opmerking 6.63 p 255
+*** TODO Stelling 6.64 p 255
+*** TODO Stelling 6.68 p 259
 ** TODO Oefeningen
 *** TODO Voorbereiding
     - [ ] 2
@@ -516,3 +558,4 @@
     - [ ] 14
       - [ ] a NorfairKing
 ** TODO Opdrachten
+   - [ ] 6.8 p 227
