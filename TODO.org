@@ -516,9 +516,10 @@
     CLOSED: [2013-12-16 Mon 04:49]
 *** DONE Stelling 6.11 p 228
     CLOSED: [2013-12-16 Mon 04:49]
-*** TODO Opmerking 6.12 p 228
-*** TODO Stelling 6.14 p 229
-*** TODO Definitie 6.16 p 231 (het eerste deel is een stelling, the sneaky bastard)
+*** DONE Stelling 6.14 p 229
+    CLOSED: [2013-12-16 Mon 05:57]
+*** DONE Definitie 6.16 p 231 (het eerste deel is een stelling, the sneaky bastard)
+    CLOSED: [2013-12-16 Mon 06:08]
 *** TODO Stelling 6.19 p 232
 *** TODO Opmerking 6.20 beide puntjes
 *** TODO Stelling 6.23 p 234
