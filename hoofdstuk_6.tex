@@ -111,6 +111,59 @@ Dit kan enkel waar zijn als hetgeen onder de wortel ook nul is. Dit is zo omdat 
 \end{enumerate}
 \end{proof}
 
+\subsection{Stelling 6.14 p 229}
+Zij $(\mathbb{R},V,+,\langle\cdot,\cdot\rangle)$ een inproductruimte.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item 
+\[
+\forall v,w \in V: \vert\langle v,w\rangle\vert \le \Vert v\Vert\cdot \Vert w\Vert
+\]
+\item
+\[
+\forall v,w \in V: (\exists \lambda\in\mathbb{R} v = \lambda w) \Rightarrow \vert\langle v,w\rangle\vert = \Vert v\Vert\cdot \Vert w\Vert
+\]
+\end{enumerate}
+
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door gevalsonderscheid.\\
+Als $v$ en $w$ nulvectoren zijn gelden beide beweringen.
+\[
+\vert\langle \vec{0},\vec{0}\rangle\vert =0= \Vert \vec{0}\Vert\cdot \Vert \vec{0}\Vert
+\]
+We bewijzen de beweringen nu nog voor de andere gevallen.
+
+\begin{enumerate}
+\item
+We weten dat voor willekeurige $v,w\in V$ geldt dat $\langle v + \lambda w,v+\lambda w\rangle \ge 0$. We werken dit uit.
+\[
+\langle v + \lambda w,v+\lambda w\rangle = \langle v,v+\lambda w \rangle + \lambda \langle w,v+\lambda w\rangle = \langle v,v \rangle + \lambda \langle v,w \rangle + \lambda \langle w,v\rangle + \lambda^2\langle w,w\rangle
+\]
+\[
+\langle v,v \rangle + 2\lambda \langle v,w \rangle + \lambda^2\langle w,w\rangle \ge 0
+\]
+Het linker lid van deze ongelijkheid is een tweedegraads veelterm waarvan we weten dat ze altijd positief is. Bijgevolg is de discriminant ervan negatief.
+\[
+4\langle v,w\rangle^2-4\langle v,v\rangle\langle w,w\rangle \le 0
+\]
+\[
+\langle v,w\rangle^2-\langle v,v\rangle\langle w,w\rangle \le 0
+\]
+\[
+\langle v,w\rangle^2 \le \langle v,v\rangle\langle w,w\rangle 
+\]
+Voor diegenen die dit gefoefel vinden, u heeft gelijk.
+
+\item
+Als $w$ en $v$ lineair afhankelijk zijn dan bestaat er dus een $\lambda\in\mathbb{R}$ zodat $v=\lambda w$.
+\[
+|\langle \lambda w, w \rangle| = |\lambda  \langle w, w \rangle| = |\lambda\sqrt{\langle w, w \rangle^2}| = |\sqrt{\lambda^2\langle w, w \rangle^2}| = |\sqrt{\langle \lambda w, \lambda w \rangle \cdot \langle w, w \rangle }| \]
+\[
+= |\sqrt{\langle \lambda w, \lambda w \rangle} \sqrt{\langle w, w \rangle }| = |\sqrt{\langle v, v \rangle} \sqrt{\langle w, w \rangle }| = \Vert v\Vert\cdot \Vert w\Vert
+\]
+\end{enumerate}
+\end{proof}
 
 
 
