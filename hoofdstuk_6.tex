@@ -291,6 +291,75 @@ Omdat $\beta$ een orthonormale basis is is $i$-de component van de basisvector p
 \]
 \end{proof}
 
+\subsection{Stelling 6.27 p 238}
+Zij $(\mathbb{R}, V,+, \langle \cdot,\cdot \rangle)$ een euclidische ruimte en zij $\beta = \{v_1,v_2,...,v_n\}$ een willekeurige basis van $V$.
+
+\subsubsection*{Te Bewijzen}
+$\beta$ kan omgevormd worden tot een orthonormale basis $\gamma = \{u_1,u_2,...,u_n\}$.
+
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door constructie.\\
+We zullen eenvoudigweg het algoritme beschrijven en de correctheid ervan bewijzen.\\\\
+We normeren de eerste vector $v_1$ door ze te delen door zijn norm.
+\[
+u_1 = \frac{1}{\Vert v_1\Vert}v_1
+\]
+We construeren nu $v_2'$ zodat ze loodrecht staat op $u_1$.
+\[
+v_2' = v_2 - \langle v_2,v_1\rangle u_1
+\]
+$v_2'$ is zeker niet nul omdat $u_1$ ofwel niet op dezelfde rechte ligt als $v_2$, ofwel is $v_2' = \vec{0}$. $v_2'$ staat nu wel degelijk loodrecht op $u_1$.
+\[
+\langle v_2',u_1\rangle = \langle v_2 - \langle v_2,v_1\rangle u_1,u_1\rangle = \langle v_2,u_1\rangle - \langle\langle v_2,v_1\rangle u_1,u_1\rangle
+\]
+\[
+= \langle v_2,u_1\rangle - \langle v_2,v_1\rangle \langle u_1,u_1\rangle = \langle v_2,u_1\rangle - \langle v_2,v_1\rangle \Vert u_1\Vert = \langle v_2,u_1\rangle - \langle v_2,v_1\rangle = 0
+\]
+Merk op dat $u_1$ echt genormeerd moet zijn, opdat dit zou werken. Tenslotte normeren we $v_2'$ nog om $u_2$ te bekomen.
+\[
+u_2 = \frac{1}{\Vert v_2'\Vert}v_2' = \frac{1}{\Vert v_2 - \langle v_2,v_1\rangle u_1\Vert}(v_2 - \langle v_2,v_1\rangle u_1)
+\]
+Dit proces kunnen we verder zetten. We beschrijven nu de stappen die je moet ondernemen in iteratie $k+1$.
+We construeren $v_{k+1}'$ als volgt.
+\[
+v_{k+1}' = v_{k+1} - \langle v_{k+1},u_1 \rangle u_1 - \langle v_{k+1},u_2 \rangle u_2 - ... - \langle v_{k+1},u_k \rangle u_k
+= v_{k+1} - \sum_{i=1}^k \langle v_{k+1},u_i \rangle
+\]
+Beschouw de sommatie in deze formule als \'e\'en vector. Nu is de redenering om te besluiten dat $v_{k+1}'$ dezelfde als die bij $v_2'$.
+$v_{k+1}'$ is staat inderdaad loodrecht op alle vectoren $v_i$ met $i\le k$.
+
+\[
+\langle v_{k+1}',u_i\rangle  = \left\langle v_{k+1} - \sum_{j=1}^k \langle v_{k+1},u_j \rangle u_j,u_i\right\rangle
+=
+\langle v_{k+1},u_i\rangle -
+\left\langle \sum_{j=1}^k \langle v_{k+1},u_j \rangle u_j,u_i\right\rangle
+\]
+\[
+=
+\langle v_{k+1},u_i\rangle -
+\sum_{j=1}^k
+\left\langle  \langle v_{k+1},u_j \rangle u_j,u_i\right\rangle
+=
+\langle v_{k+1},u_i\rangle -
+\sum_{j=1}^k
+\langle v_{k+1},u_j \rangle
+\left\langle u_j,u_i\right\rangle
+\]
+In de laatste som is elke term behalve de term waarbij $i=j$ geldt nul.
+\[
+\langle v_{k+1},u_i\rangle -
+\langle v_{k+1},u_i\rangle
+=0
+\]
+We kunnen nu $v_{k+1}'$ ook normeren door te delen door de norm.
+\[
+u_{k+1} = \frac{1}{\Vert v_{k+1}'\Vert}v_{k+1}'
+\]
+Omdat $V$ eindig dimensionaal is zal dit algoritme zeker stoppen. Het resultaat is $\{u_1,u_2,...,u_n\}$, een orthonormale basis.
+
+
+\end{proof}
 
 
 
