@@ -235,6 +235,30 @@ We passen nu twee keer de ongelijkheid van Cauchy-Schwartz toe (op de eerste en 
 
 \end{proof}
 
+\subsection{Stelling 6.23 p 234}
+Zij $(\mathbb{R},V,+,\langle\cdot,\cdot\rangle)$ een inproductruimte en zij $\alpha = \{v_1,v_2,...,v_k\}$ een deelverzameling van $k$ vectoren uit $\alpha$ zodat geen enkele $v_i$ de nulvector is en zodat voor twee verschillende $v_i,v_j (i\neq j)$ orthogonaal zijn ($\langle v_i,v_j \rangle = 0$). 
+\subsubsection*{Te Bewijzen}
+$\alpha$ is vrij.
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs uit het ongerijmde.\\
+Stel dat de vectoren uit $\alpha$ lineaire afhankelijk zijn dan bestaan er $\lambda_i \in \mathbb{R}$ zodat de volgende gelijkheid opgaat.
+\[
+\sum_{i=1}^k \lambda_iv_i = \vec{0}
+\]
+Nu komt er gefoefel. Voor elke $i, j$ met $i\neq j$. (Noem $\mu_i =-\lambda_i $.)
+De eerste gelijkheid geldt uit lineariteit van het inproduct \footnote{Zie opmerking 6.2 p 222 (ii)}.
+\[
+0 = \langle v_i, v_j \rangle = \langle v_i, \lambda_jv_j \rangle = \langle v_i, -\sum_{l=1, l\neq j}^k \lambda_lv_l \rangle = \sum_{l= 1}^k\langle v_i, \mu_lv_l\rangle = 0 + ... + 0 + \langle v_i,\mu_i v_i\rangle + 0 + ... + 0
+\]
+\[
+= \mu_i \langle v_i,v_i\rangle = \mu_i \Vert v_i\Vert^2
+\]
+We weten dat $\Vert v_i\Vert^2$ strikt positief is aangezien $v_i \neq \vec{0}$. Hieruit volgt dat elke $\mu_i = -\lambda_i = 0$. Dit betekent dat $\alpha$ vrij is, en dat is in contradictie met de aanname.
+
+
+\end{proof}
+
 
 
 \section{Oefeningen 6.8}
