@@ -357,13 +357,55 @@ We kunnen nu $v_{k+1}'$ ook normeren door te delen door de norm.
 u_{k+1} = \frac{1}{\Vert v_{k+1}'\Vert}v_{k+1}'
 \]
 Omdat $V$ eindig dimensionaal is zal dit algoritme zeker stoppen. Het resultaat is $\{u_1,u_2,...,u_n\}$, een orthonormale basis.
-
-
 \end{proof}
 
+\subsection{Definitie 6.30 p 240}
+Zij $(\mathbb{R}, V,+, \langle \cdot,\cdot \rangle)$ een euclidische ruimte en zij $U$ een deelruimte van $V$.
+\subsubsection*{Te Bewijzen}
+\[
+U^T \text{ is een deelruimte van } V
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs volgens Stelling 3.11 p 94.
+\begin{itemize}
+\item $\vec{0} \in U^T$\\
+Dit is niet intu\"itief, maar de nulvector staat loodrecht op elke vector.
+\[
+\forall u \in U: \langle u, \vec{0} \rangle
+\]
+\end{itemize}
 
-
-
+\item De lineaire combinatie in $U^T$ is intern.
+\[
+\forall v_1,v_2\in U^T, \lambda_1,\lambda_2 \in \mathbb{R} : \lambda_1v_1 + \lambda_2v_2 \in U^T
+\]
+Voor elke vector $u'$ in $U^T$ geldt het volgende, dus ook voor willekeurige $v_1,v_2\in U^T$.
+\[
+\forall u\in U^T: \langle u',u\rangle = 0
+\]
+Nu moeten we aantonen dat dit ook voor de lineaire combinatie geldt. Kies $u$, een willekeurige vector in $U$.
+\[
+\langle v_1,u\rangle = 0 \text{ en } \langle v_2,u\rangle = 0
+\]
+\[
+\Rightarrow
+\lambda_1\langle v_1,u\rangle = 0 \text{ en } \lambda_2\langle v_2,u\rangle = 0
+\]
+\[
+\Rightarrow
+\lambda_1\langle v_1,u\rangle + \lambda_2\langle v_2,u\rangle = 0
+\]
+\[
+\Rightarrow
+\langle \lambda_1v_1,u\rangle + \langle \lambda_2v_2,u\rangle = 0
+\]
+\[
+\Rightarrow
+\langle \lambda_1v_1 + \lambda_2v_2,u\rangle = 0
+\]
+De laatste twee implicaties gelden volgens de lineariteit van het inproduct \footnote{Zie Definitie 6.1 en opmerking 6.2 p 222}.
+\end{proof}
 
 
 
