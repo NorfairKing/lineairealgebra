@@ -3,7 +3,7 @@
 
 \chapter{Hoofdstuk 6}
 
-\section{Bewijzen uit het boek}
+\section{Bewijzen uit de cursus}
 
 \subsection{Opmerking 6.2 p 222}
 Zij $(\mathbb{R},V,+)$ een reële vectorruimte.
@@ -255,9 +255,46 @@ De eerste gelijkheid geldt uit lineariteit van het inproduct \footnote{Zie opmer
 = \mu_i \langle v_i,v_i\rangle = \mu_i \Vert v_i\Vert^2
 \]
 We weten dat $\Vert v_i\Vert^2$ strikt positief is aangezien $v_i \neq \vec{0}$. Hieruit volgt dat elke $\mu_i = -\lambda_i = 0$. Dit betekent dat $\alpha$ vrij is, en dat is in contradictie met de aanname.
-
-
 \end{proof}
+
+\subsection{Stelling 6.26 p 236}
+Zij $(\mathbb{R}, V,+, \langle \cdot,\cdot \rangle)$ een euclidische ruimte en zij $\beta = \{v_1,v_2,...,v_n\}$ een \emph{orthonormale} basis van $V$. Zij $x,y\in \mathbb{R}^n$ twee willekeurige coördinaatvectoren ten opzichte van $\beta$. $x$ en $y$ zien er uit als volgt.
+\[
+x = (x_1,x_2,...,x_n) \text { en } y = (y_1,y_2,...,y_n)
+\]
+\subsubsection*{Te Bewijzen}
+\[
+\langle x,y\rangle = \sum_{i=1}^nx_iy_i
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+\[
+\langle x,y\rangle = \left\langle \sum_{i=1}^nx_iv_i,\sum_{j=1}^ny_jv_j \right\rangle
+\]
+Het inproduct is lineaire in zowel de eerste als de tweede component\footnote{Zie Definitie 6.1 p 222 en opmerking 6.2 p 222.}.
+\[
+= \sum_{i=1}^nx_i \left\langle v_i,\sum_{j=1}^ny_jv_j \right\rangle
+\]
+\[
+= \sum_{i=1}^nx_i \sum_{j=1}^n y_j \left\langle v_i,v_j \right\rangle
+\]
+We weten dat voor elke $i$ en $j$ zodat $i\neq j$ geldt dat $\langle v_j, v_i \rangle = 0$. Bovendien, als $i=j$ dan geldt $\langle v_j, v_i \rangle = \langle v_i, v_i \rangle = \Vert v\Vert^2$.
+Omdat $\beta$ een orthonormale basis is is $i$-de component van de basisvector precies gelijk aan de norm van die vector en ook gelijk aan $1$. 
+\[
+= \sum_{i=1}^nx_i  (y_10+...+y_{i-1}0+y_i\Vert v_i\Vert^2+y_{i+1}0+...+y_n)
+\]
+\[
+= \sum_{i=1}^n x_i y_i \Vert v_i\Vert^2
+\]
+\[
+= \sum_{i=1}^nx_i y_j
+\]
+\end{proof}
+
+
+
+
+
 
 
 
