@@ -520,7 +520,8 @@
     CLOSED: [2013-12-16 Mon 05:57]
 *** DONE Definitie 6.16 p 231 (het eerste deel is een stelling, the sneaky bastard)
     CLOSED: [2013-12-16 Mon 06:08]
-*** TODO Stelling 6.19 p 232
+*** DONE Stelling 6.19 p 232
+    CLOSED: [2013-12-16 Mon 06:36]
 *** TODO Opmerking 6.20 beide puntjes
 *** TODO Stelling 6.23 p 234
 *** TODO Stelling 6.26 p 236

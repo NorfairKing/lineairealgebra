@@ -184,8 +184,32 @@ Hieruit volgt het volgende, zorg dat je dit begrijpt.
 -1 \le \frac{\langle v,w\rangle}{\Vert v\Vert\cdot \Vert w\Vert} \le 1
 \]
 We weten dat voor elk getal tussen $-1$ en $1$ er een hoek bestaat zodat de cosinus ervan dat getal is.
-
 \end{proof}
+
+\subsection{Stelling 6.19 p 232}
+Zij $(\mathbb{R},V,+,\langle\cdot,\cdot\rangle)$ een inproductruimte met bijhorende norm $||\cdot ||$.
+\subsubsection*{Te Bewijzen}
+\[
+\forall v,w \in V: \Vert v+w \Vert \le \Vert v\Vert + \Vert w\Vert
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+We weten dat $\Vert v+w \Vert$ en $\Vert v\Vert + \Vert w\Vert$ positief zijn. Bijgevolg is het voldoende te bewijzen dat $\Vert v+w \Vert^2 \le (\Vert v\Vert + \Vert w\Vert)^2$ geld.
+\[
+ \Vert v+w \Vert^2 = \sqrt{\langle v+w,v+w\rangle}^2 = \langle v+w,v+w\rangle
+\]
+Let op, dit geldt enkel omdat $\Vert v+w \Vert$ positief is.
+\[
+= \langle v,v\rangle + \langle v,w\rangle + \langle w,v \rangle + \langle w,w \rangle =  \langle v,v\rangle + 2\langle v,w\rangle + \langle w,w \rangle
+\]
+Passen we nu drie keer de ongelijkheid van Cauchy-Schwartz toe dan verkrijgen we het volgende.
+\[
+\le \Vert v\Vert^2 + 2\Vert v\Vert \Vert w\Vert + \Vert w\Vert^2 = (\Vert v\Vert + \Vert w\Vert)^2
+\]
+\end{proof}
+
+
+
 
 
 
