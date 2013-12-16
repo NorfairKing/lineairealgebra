@@ -66,8 +66,50 @@ Dit is positief als want het is een kwadraat, namelijk van $\int_a^bv(x)dx$
 \end{itemize}
 \end{proof}
 
+\subsection{Stelling 6.11 p 228}
+Zij $(\mathbb{R},V,+,\langle\cdot,\cdot\rangle)$ een inproductruimte met bijhorende norm.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item 
+\[
+\forall \lambda\in\mathbb{R}, v\in V: \Vert\lambda v\Vert = \vert\lambda\vert\cdot \Vert v\Vert
+\]
 
+\item
+\[
+\forall v\in V: \Vert v\Vert\ge 0
+\]
 
+\item
+\[
+\forall v\in V: \Vert v\Vert\ge 0 \Leftrightarrow v=\vec{0}
+\]
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+Direct bewijs.\\
+Kies een willekeurige $v \in V$ en een $\lambda \in \mathbb{R}$
+\begin{enumerate}
+\item
+\[
+\Vert\lambda v\Vert = \sqrt{\langle \lambda v,\lambda v\rangle} = 
+\sqrt{\lambda^2 \langle v,v\rangle}= \lambda\sqrt{\langle v,v\rangle} = \vert\lambda\vert\cdot \Vert v\Vert
+\]
+
+\item
+\[
+\Vert v\Vert= \sqrt{\langle v,v\rangle} \ge 0
+\]
+Een wortel is steeds positief en een inproduct is positief dus de wortel kan steeds getrokken worden \footnote{Zie Definitie 6.1 p 222}0.
+
+\item
+\item $\Rightarrow$\\
+\[
+\Vert v\Vert = 0 \Leftrightarrow \sqrt{\langle v,v\rangle}=0
+\]
+Dit kan enkel waar zijn als hetgeen onder de wortel ook nul is. Dit is zo omdat het inproduct definiet is \footnote{Zie Definitie 6.1 p 222}. 
+\end{enumerate}
+\end{proof}
 
 
 
