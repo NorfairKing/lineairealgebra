@@ -117,9 +117,9 @@
     CLOSED: [2013-11-30 Sat 12:05]
 ** DELEGATED Oefeningen
    CLOSED: [2013-10-22 Die 13:24]
-*** DELEGATED Voorbereiding
+*** DONE Voorbereiding
     CLOSED: [2013-10-22 Die 13:24] DEADLINE: <2013-10-13 Son>
-    - [-] 1
+    - [X] 1
       - [X] a - noiseloop
       - [X] f - warreee
       - [X] h - fokdiekul
@@ -128,7 +128,7 @@
     - [X] 4
       - [X] a - warreee
     - [X] 9 - fokdiekul
-    - [-] 27 
+    - [X] 27 
       - [X] b warreee   
       - [X] g noiseloop   
       - [X] j warreee     
@@ -299,7 +299,7 @@
    - [X] 30 fokdiekul
    - [?] 32 NorfairKing
    - extra, in oefenzitting
-     - [-] 1
+     - [X] 1
        - [X] 1 warreee
        - [X] 2 fokdiekul
        - [X] 3 NorfairKing
@@ -510,7 +510,8 @@
 * TODO Hoofdstuk 6
   DEADLINE: <2013-12-17 Die>
 ** TODO Bewijzen
-*** TODO Voorbeeld 6.6 p 224
+*** DONE Voorbeeld 6.6 p 224
+    CLOSED: [2013-12-16 Mon 04:13]
 *** TODO Voorbeeld 6.7 p 226
 *** TODO Stelling 6.11 p 228
 *** TODO Opmerking 6.12 p 228

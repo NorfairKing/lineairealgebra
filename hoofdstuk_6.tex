@@ -25,6 +25,55 @@ Door symmetrie geldt dat deze twee leden ook gelijk zijn aan de volgende.
 \]
 \end{proof}
 
+\subsection{Voorbeeld 6.6 p 224}
+Definieer $\langle f,g\rangle$ als volgt.
+\[
+\langle f,g\rangle = \int_a^bf(x)\cdot g(x)dx
+\]
+Beschouw de vectorruimte $(\mathbb{R},C[a,b],+)$.
+\subsubsection*{Te Bewijzen}
+$\langle f,g\rangle$ is een inproduct.
+\subsubsection*{Bewijs}
+\begin{proof}
+\begin{itemize}
+\item $\langle f,g\rangle$ is lineair in de eerste component.
+\[
+\forall v_1,v_2,w\in V, \forall \lambda_1,\lambda_2 \in \mathbb{R}:
+\langle \lambda_1v_1+\lambda_2v_2,w\rangle = \int_a^b\lambda_1 v_1(x)\cdot \lambda_2 v_2(x)dx
+\]
+\[
+= \lambda_1\int_a^b v_1(x)\cdot \lambda_2\int_a^b v_2(x)dx = \lambda_1\langle v_1,w\rangle + \lambda_2\langle v_2,w\rangle
+\]
+
+\item $\langle f,g\rangle$ is symmetrisch.
+\[
+\forall v,w\in V: \langle v,w\rangle = \int_a^bv(x)\cdot w(x)dx= \int_a^bw(x)\cdot v(x)dx = \langle w,v\rangle
+\]
+
+\item $\langle f,g\rangle$ is positief.
+\[
+\forall v\in V: \langle v,v\rangle = \int_a^bv(x)\cdot v(x)dx \ge 0
+\]
+Dit is positief als want het is een kwadraat, namelijk van $\int_a^bv(x)dx$
+
+\item $\langle f,g\rangle$ is definiet.
+\[
+\forall v\in V: \langle v,0\rangle = \vec{0}
+\]
+\[
+\Leftrightarrow \int_a^bv(x)\vec{0}(x) dx = 0
+\]
+\end{itemize}
+\end{proof}
+
+
+
+
+
+
+
+
+
 \section{Oefeningen 6.8}
 
 
