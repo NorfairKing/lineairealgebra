@@ -522,7 +522,8 @@
     CLOSED: [2013-12-16 Mon 06:08]
 *** DONE Stelling 6.19 p 232
     CLOSED: [2013-12-16 Mon 06:36]
-*** TODO Opmerking 6.20 beide puntjes
+*** DONE Opmerking 6.20 tweede puntje
+    CLOSED: [2013-12-16 Mon 06:55]
 *** TODO Stelling 6.23 p 234
 *** TODO Stelling 6.26 p 236
 *** TODO Stelling 6.27 p 238

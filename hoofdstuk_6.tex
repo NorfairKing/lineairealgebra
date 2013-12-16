@@ -194,7 +194,7 @@ Zij $(\mathbb{R},V,+,\langle\cdot,\cdot\rangle)$ een inproductruimte met bijhore
 \]
 \subsubsection*{Bewijs}
 \begin{proof}
-We weten dat $\Vert v+w \Vert$ en $\Vert v\Vert + \Vert w\Vert$ positief zijn. Bijgevolg is het voldoende te bewijzen dat $\Vert v+w \Vert^2 \le (\Vert v\Vert + \Vert w\Vert)^2$ geld.
+We weten dat $\Vert v+w \Vert$ en $\Vert v\Vert + \Vert w\Vert$ positief zijn. Bijgevolg is het voldoende te bewijzen dat $\Vert v+w \Vert^2 \le (\Vert v\Vert + \Vert w\Vert)^2$ geldt.
 \[
  \Vert v+w \Vert^2 = \sqrt{\langle v+w,v+w\rangle}^2 = \langle v+w,v+w\rangle
 \]
@@ -208,8 +208,32 @@ Passen we nu drie keer de ongelijkheid van Cauchy-Schwartz toe dan verkrijgen we
 \]
 \end{proof}
 
+\subsection{Opmerking 6.20 p 232}
+Zij $(\mathbb{C},V,+,\langle\cdot,\cdot\rangle)$ een hermetische ruimte.
+\subsubsection*{Te Bewijzen}
+\[
+\forall v,w \in V: \Vert v+w \Vert \le \Vert v\Vert + \Vert w\Vert
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+Merk allereerst op dat het wel degelijk zin heeft om dit te bewijzen. Hoewel het hermetisch product beelden heeft in $\mathbb{C}$ heeft de norm nog steeds enkel beelden in $\mathbb{R}$.
+We weten dat $\Vert v+w \Vert$ en $\Vert v\Vert + \Vert w\Vert$ positief zijn. Bijgevolg is het voldoende te bewijzen dat $\Vert v+w \Vert^2 \le (\Vert v\Vert + \Vert w\Vert)^2$ geldt.
+\[
+ \Vert v+w \Vert^2 = \sqrt{\langle v+w,v+w\rangle}^2 = \langle v+w,v+w\rangle = \langle v+w,v+w\rangle
+\]
+De lineairiteit in de tweede component geldt vanuit de definitie \footnote{Zie Definitie 6.3 p 223}. Over de eerste component weten we dat de toegevoegde lineariteit geldt \footnote{Zie Opmerking 6.4 p 223}. (In dit geval is de toegevoegde lineariteit voldoende omdat $\lambda = 1 \in \mathbb{R}$.)
+\[
+= \langle v+w,v\rangle + \langle v+w,w\rangle = \langle v,v\rangle + \langle v,w\rangle + \langle w,v \rangle + \langle w,w \rangle = \langle v,v\rangle + \langle v,w\rangle + \overline{\langle v,w \rangle} + \langle w,w \rangle
+\]
+We passen nu twee keer de ongelijkheid van Cauchy-Schwartz toe (op de eerste en de laatste term). Verder weten we ook nog dat de volgende gelijkheid geldt. We kunnen dezelfde ongelijkheid dus ook gebruiken voor de middelste termen.
+\[
+\langle v,w\rangle + \overline{\langle v,w \rangle} \le \vert\langle v,w\rangle\vert
+\]
+\[
+\langle v,v\rangle + \langle v,w\rangle + \overline{\langle v,w \rangle} + \langle w,w \rangle \le \Vert v\Vert^2 + 2\Vert v\Vert \Vert w\Vert + \Vert w\Vert^2 = (\Vert v\Vert + \Vert w\Vert)^2
+\]
 
-
+\end{proof}
 
 
 
