@@ -363,13 +363,13 @@ Omdat $V$ eindig dimensionaal is zal dit algoritme zeker stoppen. Het resultaat 
 Zij $(\mathbb{R}, V,+, \langle \cdot,\cdot \rangle)$ een euclidische ruimte en zij $U$ een deelruimte van $V$.
 \subsubsection*{Te Bewijzen}
 \[
-U^T \text{ is een deelruimte van } V
+U^\bot \text{ is een deelruimte van } V
 \]
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs volgens Stelling 3.11 p 94.
 \begin{itemize}
-\item $\vec{0} \in U^T$\\
+\item $\vec{0} \in U^\bot$\\
 Dit is niet intu\"itief, maar de nulvector staat loodrecht op elke vector.
 \[
 \forall u \in U: \langle u, \vec{0} \rangle
@@ -378,11 +378,11 @@ Dit is niet intu\"itief, maar de nulvector staat loodrecht op elke vector.
 
 \item De lineaire combinatie in $U^T$ is intern.
 \[
-\forall v_1,v_2\in U^T, \lambda_1,\lambda_2 \in \mathbb{R} : \lambda_1v_1 + \lambda_2v_2 \in U^T
+\forall v_1,v_2\in U^\bot, \lambda_1,\lambda_2 \in \mathbb{R} : \lambda_1v_1 + \lambda_2v_2 \in U^T
 \]
-Voor elke vector $u'$ in $U^T$ geldt het volgende, dus ook voor willekeurige $v_1,v_2\in U^T$.
+Voor elke vector $u'$ in $U^\bot$ geldt het volgende, dus ook voor willekeurige $v_1,v_2\in U^T$.
 \[
-\forall u\in U^T: \langle u',u\rangle = 0
+\forall u\in U^\bot: \langle u',u\rangle = 0
 \]
 Nu moeten we aantonen dat dit ook voor de lineaire combinatie geldt. Kies $u$, een willekeurige vector in $U$.
 \[
@@ -406,6 +406,59 @@ Nu moeten we aantonen dat dit ook voor de lineaire combinatie geldt. Kies $u$, e
 \]
 De laatste twee implicaties gelden volgens de lineariteit van het inproduct \footnote{Zie Definitie 6.1 en opmerking 6.2 p 222}.
 \end{proof}
+
+\subsection{Stelling 6.31 p 240}
+Zij $(\mathbb{R}, V,+, \langle \cdot,\cdot \rangle)$ een euclidische ruimte en zij $U$ een deelruimte van $V$.
+
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item De som van $U$ en $U^T$ is een directe som.
+\[U + U^\bot = U \oplus U^\bot\]
+\item
+\[U\oplus U^\bot = V\]
+\item
+\[dimU + dimU^\bot = dim V\]
+\item
+\[(U^\bot)^\bot = U\]
+\end{enumerate}
+
+\subsubsection*{Bewijs}
+\begin{proof}
+Direct bewijs.
+\begin{enumerate}
+\item
+We moeten hier bewijzen dat de doorsnede van $U$ en $U^\bot$ enkel de nulvector is.
+
+Kies een willekeurige vector $v$ in $U$ die ook in $U^\bot$ zit. Omdat $v$ in $U^\bot$ zit staat hij loodrecht op elke vector in $U$, dus op zichzelf.
+\[
+\langle v,v \rangle = 0
+\]
+Omdat het inproduct definiet is geldt $v=\vec{0}$ \footnote{Zie Definitie 6.1 p 222}.
+
+\item
+Omdat we het vorige al bewezen hebben moeten we enkel nog bewijzen dat elke vector $v\in V$ geschreven kan worden als de som van een vector $u \in U$ en een vector $u'\in U^\bot$.\\
+Neem een basis van $U$ en orthonormaliseer deze tot een basis $\beta_U = \{u_1,u_2,...,u_k\}$
+Kies een willekeurige vector $v\in V$. $v$ moet geschreven kunnen worden als een lineaire combinatie van de basis $\beta_U$ van $u$ en een vector $u' \in U^\bot$.
+\[
+v = u + u' = \sum_{i=1}^k\langle v,u_i\rangle u_i + u'
+\]
+Nu moeten we nog bewijzen dat $u'$ orthogonaal is met alle basisvectoren $u_i$ van $U$. Voor elke $i$ moet dus het volgende gelden.
+\[
+\langle v',u_i \rangle = \langle v,u_i\rangle - \langle v,u_i\rangle\langle u_i,u_i\rangle = 0
+\]
+Omdat $u_i$ genormeerde vectoren zijn geldt bovenstaande gelijkheid.\\
+Dit houdt precies in dat $v$ geschreven kan worden op precies \'e\'en manier als een som van een vector in $U$ en een vector in $U'$.
+
+\item
+Omdat $U \oplus U' = V$ geldt $dimU+dimU^\bot = dimV$ ook \footnote{Zie Stelling 3.52 p 115}.
+
+\item
+Uit de definitie van het orthogonaal complement volgt dat $U \subset (U^\bot)^\bot$ geldt \footnote{Zie Definitite 6.30 p 240}. $U$ en $(U^\bot)^\bot$ hebben dezelfde dimensie, en zijn daarom gelijk. 
+
+
+\end{enumerate}
+\end{proof}
+
 
 
 
