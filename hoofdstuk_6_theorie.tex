@@ -510,4 +510,37 @@ Onderstaande ongelijkheid geldt omdat het inproduct positief is \footnote{Zie De
 \]
 \end{proof}
 
+\subsection{Lemma 3.36 p 243}
+Zij $(\mathbb{R},\mathbb{R}^n,+,\langle \cdot , \cdot \rangle)$ de standaard euclidische ruimte en $L_A : \mathbb{R}^n \rightarrow \mathbb{R}^n: X \mapsto A \cdot X$ een lineaire transformatie met een symmetrische matrix $A$.
+\subsubsection*{Te Bewijzen}
+$A$ heeft uitsluitend re\"ele eigenwaarden.
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door gefoefel.\\
+We vertrekken algemener van de standaard unitaire ruimte $(\mathbb{C},\mathbb{C}^n,+,\langle \cdot , \cdot \rangle)$ met standaard hermetisch product $\langle X,Y\rangle = \overline{X}^T \cdot Y$. De lineaire transformatie met matrix $A$ kan ook opgevat worden als een lineaire transformatie $\mathbb{C}^n,\mathbb{C}^n$. Omwille van de hoofdstelling van de algebra houdt dit in dat $\phi_A$ volledig kan ontbonden worden als product van eerstegraadsfactoren in $\mathbb{C}$ \footnote{Zie Stelling 5.28 p 203}.
+We zullen nu bewijzen dat elk nulpunt van $\phi_A$ in $\mathbb{C}$ ook in $\mathbb{R}$ zit.
+We beginnen met $\lambda \langle X , X \rangle$ en proberen aan te tonen dat dit gelijk is aan $\overline{\lambda} \langle X , X \rangle$. Dit is gefoefel maar het werkt. 
+\[
+\lambda \langle X , X \rangle = \langle X , \lambda X \rangle
+\]
+Bovenstaande vergelijking geldt omwille van de lineariteit van het hermetisch product \footnote{Zie Definitie 6.3 p 223}.
+Onderstaande gelijkheid geldt omdat $\lambda$ een eigenwaarde is van $A$.
+\[
+= \langle X , A \cdot X \rangle = \overline{X}^T \cdot A \cdot X
+\]
+$A = \overline{A}^T$ is gelijk aan zijn complement omdat $A \in \mathbb{R}^{n\times n}$ re\"eel en symmetrisch is. Voor de tweede gelijkheid foefelen we wat met getransponeerde matrices \footnote{Zie Eigenschap 1.22 p 32 bovenaan (c)}
+\[
+= \overline{X}^T \cdot \overline{A}^T \cdot X = (\overline{A \cdot X})^T \cdot X
+\]
+Opnieuw gebruiken we de definitie van het hermetisch product en het feit dat $\lambda$ een eigenwaarde is van $A$.
+\[
+= \langle  A \cdot X ,X \rangle =  \langle \lambda X , X \rangle = \overline{\lambda} \langle X , X \rangle
+\]
+Omdat $\lambda$ gelijk is aan zijn complement zit $\lambda$ in $\mathbb{R}$.
+
+\end{proof}
+
+
+
+
 \end{document}

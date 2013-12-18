@@ -540,7 +540,8 @@
 *** TODO Definitie 6.33 p 241 Aantonen dat deze afbeelding lineair is
 *** DONE Stelling 6.34 p 242
     CLOSED: [2013-12-18 Wed 12:51]
-*** TODO Lemma 6.36 p 243
+*** DONE Lemma 6.36 p 243
+    CLOSED: [2013-12-18 Wed 13:34]
 *** TODO Lemma 6.38 p 244
 *** TODO Lemma 6.40 p 245
 *** TODO Stelling 6.42 p 246
