@@ -1,0 +1,661 @@
+\documentclass[lineaire_algebra_oplossingen.tex]{subfiles}
+\begin{document}
+
+\chapter{Hoofdstuk 3}
+\section{Bewijzen uit de cursus}
+\subsection{Lemma 3.7 p 93}
+Zij $(\mathbb{R},V,+)$ een vectorruimte en $v,w,x\in V$
+\subsubsection*{Te Bewijzen}
+\[
+v+x = w+x \Rightarrow v=w
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+Rechtstreeks bewijs.\\
+\[
+v+x = w+x
+\]
+Tel bij beide leden het tegengestelde element van $x$ op.
+\[
+(v+x)+x' = (w+x)+x'
+\]
+Associativiteit.
+\[
+v + (x+x') = w+(x+x')
+\]
+Tegengesteld element.
+\[
+v + 0 = w+0
+\]
+Neutraal element
+\[
+v = w
+\]
+We gebruiken telkens eigenschappen van een commutatieve groep: de optelling\footnote{Zie Definitie 3.2 p 88}.
+\end{proof}
+
+\subsection{Lemma 3.8 p 93}
+Zij $(\mathbb{R},V,+)$ een vectorruimte, $v\in V$ en $\lambda \in \mathbb{R}$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item
+\[
+0v = \vec{0} = \lambda\vec{0}
+\]
+\item
+\[
+(-1)v = -v 1(-v)
+\]
+\item
+\[
+(-\lambda)v = -(\lambda v ) = \lambda(-v)
+\]
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door gefoefel.\\
+De volgende redeneringen zullen initieel zeer artificieel aanvoelen maar als je deze kan reproduceren zal je veel makkelijk vanzelfsprekende dingen kunnen bewijzen.
+\begin{enumerate}
+\item 
+\[
+0v = (0+0)v = 0v + 0v
+\]
+De eerste gelijkheid geldt omwille van de eigenschap van het neutraal element van de optelling in $\mathbb{R}$. De tweede geldt omwille van distributiviteit-2\footnote{Zie Definitie 3.3 p 89}.
+\[
+0v = 0v+0v \Rightarrow 0v = \vec{0}
+\]
+De bovenstaande beweging volgt uit Lemma 3.7 op pagina 93.\\\\
+Het tweede deel van dit bewijs is analoog.
+\[
+\lambda\vec{0} = \lambda(\vec{0}+\vec{0}) = \lambda\vec{0} + \lambda\vec{0} \Rightarrow \lambda\vec{0} = \vec{0}
+\]
+De eerste gelijkheid geldt opnieuw omwille van de eigenschap van het neurtraal element.\footnote{Zie Definitie 3.2 p 88} De tweede geldt omwille van distributiviteit-1\footnote{Zie Definitie 3.3 p 89}. De implicatie volgt opnieuw uit Lemma 3.7 op pagina 93.
+
+\item
+De eerste gelijkheid vergt enig gefoefel om te bewijzen.
+We beginnen met iets triviaal.
+\[0 = 0\]
+Zie het eerste deel van dit bewijs.
+\[0v = 0\]
+Tegengesteld element in $\mathbb{R}$.
+\[(-1+1)v = 0\]
+Distributiviteit-2\footnote{Zie Definitie 3.3 p 89}.
+\[(-1)v + v = -v + v\]
+$v+x=w+x \Rightarrow v=w$\footnote{Zie Lemma 3.7 p 93}.
+\[ (-1)v = -v\]
+De tweede vergelijking daarentegen is een axioma van de vectorruimte: Co\"efficie\"ent 1\footnote{Zie Definitie 3.3 p 89}.
+
+\item Dit is meer een bewijs dat wiskundigen van gefoefel houden!\\
+Opnieuw beginnen we met iets triviaal.
+\[0=0\]
+Zie het eerste deel van dit bewijs.
+\[0v = 0\]
+Tegengesteld element in $\mathbb{R}$.
+\[(-\lambda+\lambda)v = 0\]
+Distributiviteit-2\footnote{Zie Definitie 3.3 p 89}.
+\[(-\lambda)v + \lambda v = -(\lambda v) + \lambda v\]
+$v+x=w+x \Rightarrow v=w$\footnote{Zie Lemma 3.7 p 93}.
+\[(-\lambda)v = -(\lambda v)\]
+Het tweede deel is echt niet beter.\\
+Triviaal:
+\[\vec{0} = \vec{0}\]
+Zie het eerste deel van dit bewijs.
+\[\vec{0} = \lambda \vec{0}\]
+Tegengesteld element in de commutatieve groep $(V,+)$\footnote{Zie Definitie 3.2 p 88}.
+\[\vec{0} = \lambda (-v+v)\]
+Distributiviteit-1\footnote{Zie Definitie 3.3 p 89}.
+\[-(\lambda v) + \lambda v = \lambda(-v)+\lambda v\]
+$v+x=w+x \Rightarrow v=w$\footnote{Zie Lemma 3.7 p 93}.
+\[-(\lambda v) = \lambda(-v)\]
+\end{enumerate}
+\end{proof}
+
+\subsection{Stelling 3.11 p 94}
+Zij $(\mathbb{R},V,+)$ een vectorruimte. $U \neq \emptyset$
+\subsubsection*{Te Bewijzen}
+\begin{center}
+$U$ is een deelruimte van $V$
+\end{center}
+\[
+\Leftrightarrow
+\] 
+\begin{enumerate}
+\item $\forall x,y\in U: x+y\in U$.
+\item $\forall x\in U, r\in \mathbb{R}: rx \in U$
+\end{enumerate}
+\[
+\Leftrightarrow
+\]
+\[
+\forall x,y\in U, r,s\in \mathbb{R}: rx+sy\in U
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+We bewijzen eerst de equivalentie van de eerste bewering met de tweede.\\
+\emph{$\Rightarrow$}\\
+Als $U$ een deelruimte is van $V$ dan is $U$ een vectorruimte\footnote{Zie Definitie 3.10 p 94}. Dan is $U$ niet leeg. Bovendien zijn $rx$ en $sy$ elementen van $U$ en $rx+sy$ dus ook.\\\\
+\emph{$\Leftarrow$}\\
+$U$ is niet leeg, dus $U$ bevat minstens \'e\'en element, noem het $u$. Uit de tweede voorwaarde geldt dan ook dat $-u \in U$. Uit de eerste voorwaarde geldt dan dat $u-u = \vec{0} \in U$. Voor elk element uit $U$ zit het tegengestelde ervan dus ook in $U$. Elke axioma uit definitie 3.2 en 3.3 zijn nu automatisch voldaan voor de elementen in $U$ omdat ze voldaan zijn in $V$.
+\end{proof}
+
+\subsection{Propositie 3.14 p 96}
+\subsubsection*{Te Bewijzen}
+De doorsnede van een aantal deelruimten van een vectorruimte $(\mathbb{R},V,+)$ is opnieuw een deelruimte van $V$
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs door inductie.\\
+\emph{Stap 1: (basis)}\\
+We bewijzen dat de bewering geldt voor precies twee deelruimten.
+Noem $U$ en $W$ twee deelruimten van $V$. We weten nu dat stelling 3.11 op pagina 94 geldt voor $U$ en voor $W$. Om te bewijzen dat $U\cap W$ een deelruimte is van $V$ bewijzen we dat diezelfde stelling geldt voor $U\cap W$.
+\[
+\forall x,y\in U\cap W, r,s\in \mathbb{R}: rx+sy\in U\cap W
+\]
+<TODO meerverduidelijking.>
+\emph{Stap 2: (inductie stap)}\\
+We bewijzen nu dat als de bewerking geldt voor een bepaalde $k$, de bewering dan ook geldt voor $k+1$.
+Stel dat $U_1,U_2,...,U_k,U_{k+1}$ deelruimten zijn van $V$. $\bigoplus_{i=1}^k U_i$ is een deelruimte van $V$ vanwege de inductiehypothese. $(\bigoplus_{i=1}^k U_i) \cap U_{k+1}$ is nu een deelruimte vanwege de basis stap.
+\end{proof}
+
+\subsection{Propositie 3.22 p 99}
+Zij $(\mathbb{R},V,+)$. Zij $U_i$ deelruimten van $V$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item
+\[
+W = U_1 \oplus U_2
+\]
+\[\Leftrightarrow\]
+\begin{enumerate}
+\item
+\[
+W = U_1 + U_2
+\]
+\item
+\[
+U_1\cap U_2 = \{0\}
+\]
+\end{enumerate}
+\item
+\[
+W = \bigoplus_{i}^kU_i
+\]
+\[\Leftrightarrow\]
+\begin{enumerate}
+\item
+\[
+W = \sum_i^k U_i
+\]
+\item
+\[
+\forall i \in \{1,2,...,k\}: U_i \cap (U_1+...+U_{i-1}+U_{i+1}+...+U_k)=\{0\}
+\]
+\end{enumerate}
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+\begin{enumerate}7
+\item
+\emph{$\Rightarrow$}\\
+Stel dat $W = U_1 \oplus U_2$. Er bestaan dan voor elke $w\in W$ twee vectoren $u_1\in U_1$ en $u_2 \in U_2$. Dit betekent dat $W = U_1+U_2$. We bewijzen nu dat $U_1\cap U_2 = \{0\}$. Stel dat $v \neq 0 \in U_1\cap U_2$, dan kunnen we $v$ schrijven als $v+\vec{0}=\vec{0}+v$. Dit zou betekenen dat $W$ geen directe som meer is. $\vec{0}$ moet dus wel het enige element zijn in $U_1\cap U_2$.\\\\
+\emph{$\Leftarrow$}\\
+Stel dat $U_1\cap U_2 = \{\vec{0}\}$, dan tonen we nu aan dat $W = U_1+U_2$ een directe som is. Noem $w$ een vector in $W$. $w$ kan dan geschreven worden als volgt.
+\[
+w = u_1+u_2=u_1'+u_2'
+\]
+In deze uitdrukking zijn $u_1,u_1'$ vectoren in $U_1$ en $u_2,u_2'$ vectoren in $U_2$. Hieruit volgt dat $u_1-u_1'=u_2-u_2 \in U_1\cap U_2 = \{\vec{0}\}$. Dit klopt omdat $u_1-u_1' \in U_1$ en $u_2-u_2' \in U_2$ en $u_1-u_1'=u_2-u_2$. Bijgevolg geldt $u_1 = u_1'$ en $u_2=u_2'$. Dit houdt in dat elke $w \in W$ slechts op $1$ manier geschreven kan worden als de som van $u_1\in U_1$ en $u_2\in U_2$.
+\item
+Bewijs door inductie.\\
+\emph{Stap 1: (basis)}\\
+De bewering geldt voor $k=2$. Dit is bewezen in het eerste deel van dit bewijs.\\\\
+\emph{Stap 2: (inductie stap)}\\
+We gaan ervan uit dat de bewering geldt voor een bepaalde $k$, en bewijzen dat dat de bewering ook geldt voor $k+1$.
+\[
+W = (\bigoplus_i^k U_i) \oplus U_{k+1}
+\]
+Het eerste deel geldt omwille van de inductiehypothese, het tweede deel geldt omwille van de basis stap. <TODO meer uitleg hier>
+\end{enumerate}
+\end{proof}
+
+\subsection{Propositie 3.26 p 101}
+Gegeven een verzameling lineair onafhankelijke vectoren $D= \{v_1,v_2,...,v_n\}$.
+\subsubsection*{Te Bewijzen}
+\[
+\sum_{i=1}^n\lambda_iv_i=0 \Leftrightarrow \lambda_1 = \lambda_2 = ... = \lambda_n = 0
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+\emph{$\Rightarrow$}\\
+Bewijs uit het ongerijmde:\\
+De volgende bewering zou equivalent moeten zijn met een contradictie.
+\[
+\sum_{i=1}^n\lambda_iv_i=0 \wedge \exists \lambda_i \neq 0
+\]
+Nu is het makkelijk te zien dat voor minstens \'e\'en $v$ geldt dat $v$ geschreven kan worden als een lineaire combinatie van de andere.
+\[
+v_k = -\frac{1}{y}\sum_{i\neq k}\lambda_iv_i
+\]
+De bovenstaande bewering houdt dan in dat de verzameling lineair afhankelijk is en dat is in contradictie met het gegeven.
+\\\\
+\emph{$\Leftarrow$}\\
+Dit is evident waar\footnote{Zie Lemma 3.8 p 93 puntje 1.}.
+\[
+\sum_{i=1}^n0v_i=0
+\]
+\end{proof}
+
+\subsection{Stelling 3.32 p 104}
+Zij $(\mathbb{R},V,+)$ een vectorruimte en $A = \{x_1,x_2,...,x_m\}$ een deelverzameling van $m$ vectoren uit $V$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item
+Als $A$ voortbrengend is voor $V$, dan is elke deelverzameling van $V$ met meer dan $m$ elementen lineair afhankelijk.
+\item
+Als $V$ vrij is, dan is elke deelverzameling van $V$ met minder dan $m$ vectoren niet voortbrengend voor $V$.
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+Dit is een relatief complex bewijs. Er zijn enkele mogelijke manieren om dit te bewijzen, de makkelijkste methode is het steunen op de theorie over stelsels en homogeniteit. Ook Definitie 3.15 op pagina 97 en Definitie 3.25 op pagina 101 zijn cruciale kennis voor dit bewijs of leveren toch een beter inzicht.\\
+\begin{enumerate}
+\item
+Neem een willekeurige deelverzameling $B = \{y_1,...,y_n\}$ van $V$ met $m > n$.\\
+Doordat $A$ voortbrengend is voor $V$ kan elke vector $y_i$ uit $B$ geschreven worden als een lineaire combinatie van de vectoren van $A$. Bijgevolg bestaan er co\"efficienten $a_{ij}\in \mathbb{R}$ zodat het volgende stelsel geldt.
+\[
+\left\lbrace
+\begin{array}{c c}
+y_1 = a_{11}x_1 + \cdots + a_{m1}x_m\\
+y_2 = a_{12}x_1 + \cdots + a_{m2}x_m\\
+\vdots\\
+y_n = a_{1n}x_1 + \cdots + a_{mn}x_m\\
+\end{array}
+\right.
+\]
+We onderzoeken nu of de vectoren van $B$ al dan niet lineair afhankelijk zijn. Voor zekere co\"effici\"enten $c_i\in \mathbb{R}$ geldt het volgende met $y_i$ niet allemaal nul als $B$ niet vrij is.
+\[
+c_1y_1 + c_2y_2 + ... + c_ny_n = 0
+\]
+\[
+\Leftrightarrow
+c_1(a_{11}x_1 + \cdots + a_{m1}x_m) + c_2(a_{12}x_1 + \cdots + a_{m2}x_m) + ... + c_n(a_{1n}x_1 + \cdots + a_{mn}x_m) = 0
+\]
+\[
+\Leftrightarrow
+(a_{11}c_1+a_{12}x_2+...+a_{1n}c_n)x_1 + ... + (a_{m1}c_1+a_{m2}x_2+...+a_{mn}c_n)x_m = 0
+\]
+Dit geldt zeker als het volgende stelsel geldt.
+\[
+\left\{
+\begin{array}{c c}
+a_{11}c_1+a_{12}c_2+...+a_{1n}c_n = 0\\
+a_{21}c_1+a_{22}c_2+...+a_{2n}c_n = 0\\
+\vdots\\
+a_{m1}c_1+a_{m2}c_2+...+a_{mn}c_n = 0\\
+\end{array}
+\right.
+\]
+Dit is een homogeen stelsel met $m$ vergelijkingen in $n$ onbekenden. Bovendien hebben we gesteld dat $m<n$. Dit houdt in dat er minstens \'e\'en vrije variabele zal zijn en het stelsel dus minstens \'e\'en oplossing heeft verschillend van $\vec{0}$\footnote{Zie stelling 1.36 p 38}.
+Er geldt dus zonder twijfel een lineaire afhankelijkheid in $B$.
+\item
+$A$ is vrij, wat betekent, $A$ bevat $m$ lineair onafhankelijke vectoren. Nemen we nu een deelverzameling $B$ van $V$ met $n<m$ lineair onafhankelijke vectoren, kan deze verzameling $B$ onmogelijk de elementen van $A$ voortbrengen.\\
+Dit valt op dezelfde manier te bewijzen als punt 1, namelijk, we kunnen alle vectoren in $A$ schrijven als een lineaire combinatie van elementen uit $B$. We bekomen weer een stelsel dat na rijreductie minstens \'e\'en vrije variabele heeft (we hebben $m$ vergelijkingen en $n$ parameters met $m>n$). $A$ moet dus lineair afhankelijk zijn opdat $B$ voortbrengend kan zijn voor $A$.\\ Aangezien dit dus niet geldt, is een verzameling met minder dan $m$ vectoren niet voortbrengend voor $A$ zelf, en aangezien alle elementen van $A$ in $V$ zitten, ook niet voor (een deel van) $V$ zelf.\\
+Een deelverzameling met minder elementen dan een vrije deelverzameling van een vectorruimte $V$ is niet voortbrengend voor $V$.
+\end{enumerate}
+\end{proof}
+
+\subsection{Gevolg 3.33 p 105}
+Zij $A$ een deelverzameling van de vectorruimte $(\mathbb{R},V,+)$ met $m$ elementen.
+\subsubsection*{Te Bewijzen}
+Als $A$ voortbrengend is, dan bevat elke vrij deelverzameling van $V$ hoogstens $m$ elementen.
+\subsubsection*{Bewijs}
+\begin{proof}
+We weten dat elke deelverzameling $B$ van $V$ met meer dan $m$ elementen niet meer vrij is. $B$ heeft dus hoogstends $m$ elementen.
+\end{proof}
+
+\subsection{Gevolg 3.34 p 105}
+Zij $(\mathbb{R},V,+)$ een vectorruimte met een basis van $n$ vectoren.
+\subsubsection*{Te Bewijzen}
+Elke andere basis van $V$ heeft ook $n$ vectoren.
+\subsubsection*{Bewijs}
+\begin{proof}
+Een basis is vrij en voortbrengend.
+Volgens het lemma van Steinitz\footnote{Zie Stelling 3.32 p 104} is elke andere deelverzameling van $V$ met meer dan $n$ vectoren niet meer vrij en elke andere deelverzameling van $V$ met minder dan $n$ vectoren niet meer voortbrengend. Elke basis van $V$ heeft dus $n$ vectoren.
+\end{proof}
+
+\subsection{Stelling 3.37 p 107}
+Zij $(\mathbb{R},V,+)$ een vectorruimte met dimensie $n$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item Elke vrije verzameling van $V$ kan uitgebreid worden tot een basis van $V$.
+\item Elke eindige voortbrengende verzameling van $V$ kan uitgedund worden tot een basis van $V$.
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+\begin{enumerate}
+\item
+We kiezen een willekeurige vrije deelverzameling $D$ van $V$ met $k$ elementen. Nu geldt $k\le n$\footnote{Zie Gevolg 3.33 p 105}. Ofwel is $D$ voortbrengend, en dan moet $D$ niet uitgebreid worden. Ofwel bestaat er een vector $v\in V$ die niet in $D$ zit die geen lineaire combinatie is van vectoren uit $D$ want $D$ is niet voortbrengend. $D \cup \{v\}$ is vrij want $v$ is geen lineaire combinatie van vectoren in $D$. Dit proces kunnen we herhalen tot de resulterende deelverzameling een basis is.
+\item
+We kiezen een willekeurige voortbrengende deelverzameling $S$ van $D$. Te bewijzen is nu dat er een deelverzameling van $S$ bestaat die een basis is van $V$. We schappen eerst alle nulvectoren uit $S$. $S$ is dan nog steeds voortbrengend. We overlopen nu in volgorde de vectoren in $S$. We schappen elke vector die lineair afhankelijk is van de vorige vectoren. De overblijvende verzameling $B$ is een basis van $V$.\\
+\emph{$B$ is voortbrengend:}\\
+Elke vector in $S$ is een lineaire combinatie van $B$ en $S$ is voortbrengend. Bijgevolg is $B$ ook voortbrengend.\\
+\emph{$B$ is vrij:}\\
+Elke vector in $B$ is lineair onafhankelijk van zijn 'voorgangers'. Er bestaat dus geen niet-triviale lineaire combinatie van de elementen in $B$.
+\end{enumerate}
+\end{proof}
+
+\subsection{Eigenschap 3.40 p 108}
+Zij $V$ een $n$-dimensionale vectorruimte.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item $n$ lineair onafhankelijke vectoren in $V$ vormen een basis van $V$.
+\item $n$ voortbrengende vectoren in $V$ vormen een basis van $V$.
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+We weten dat elke basis van $V$ $n$ vectoren bevat.\footnote{Zie Gevolg 3.34 p 105}
+\begin{enumerate}
+\item
+Stel $D$ is de verzameling van $n$ lineair onafhankelijke vectoren. $D$ kan uitgebreid worden tot een basis van $V$ door geen enkele vector toe te voegen. $D$ is dus een basis van $V$.
+\item
+Stel $E$ is de verzameling van $n$ voortbrengende vectoren. $D$ kan uitgedund worden tot een basis door geen enkele vector te verwijderen. $D$ is dus een basis van $V$.
+\end{enumerate}
+\end{proof}
+
+\subsection{Stelling 3.41 p 109}
+Zij $(\mathbb{R},V,+)$ een $n$-dimensionale vectorruimte. Zij $B$ een verzameling van $n$ vectoren uit $V$.
+\subsubsection*{Te Bewijzen}
+\begin{center}
+$B$ is een basis van $V$.\\$\Leftrightarrow$\\
+$B$ is een vrij deel van $V$.\\$\Leftrightarrow$\\
+$B$ is een voortbrengend deel van $V$.
+\end{center}
+\subsubsection*{Bewijs}
+\begin{proof}
+We bewijzen niet elke implicatie, maar enkel de voorwaartse implicaties, en de implicatie van de laatste bewering naar de eerste.
+\begin{itemize}
+\item \emph{$B$ is een basis van $V \Rightarrow B$ is een vrij deel van $V$.}\\
+Dit volgt rechtstreeks uit de definitie van een basis\footnote{Zie Definitie 3.31 p 104}.
+\item \emph{$B$ is een vrij deel van $V \Rightarrow B$ is een voortbrengend deel van $V$}\\
+$B$ kan uitgebreid worden tot een basis van $V$ door toevoeging van geen enkele vector\footnote{Zie Stelling 3.37 p 107}. $B$ is bijgevolg een basis van $V$, en dus voortbrengend volgens de definitie van een basis.
+\item \emph{$B$ is een voortbrengend deel van $V \Rightarrow B$ is een basis van $V$.}\\
+$B$ kan uitgedund worden tot een basis van $V$ door het verwijderen van geen enkele vector. $B$ is bijgevolg een basis van $V$.
+\end{itemize}
+\end{proof}
+
+\subsection{Stelling 3.42 p 109}
+Zij $(\mathbb{R},V,+)$ een vectorruimte en $\beta \subset V$.
+\subsubsection*{Te Bewijzen}
+\begin{center}
+$\beta$ is een basis van $V$.\\$\Leftrightarrow$\\
+$\beta$ is maximaal vrij.\\$\Leftrightarrow$\\
+$\beta$ is minimaal voortbrengend.
+\end{center}
+\subsubsection*{Bewijs}
+We bewijzen niet elke implicatie, maar enkel de voorwaartse implicaties, en de implicatie van de laatste bewering naar de eerste.
+\begin{proof}
+\item \emph{$\beta$ is een basis van $V \Rightarrow \beta$ is maximaal vrij.}\\
+$\beta$ is voortbrengend voor $V$ dus elke deelverzameling van $V$ met meer dan $n$ vectoren is niet meer vrij. Dit betekent precies dat $\beta$ maximaal vrij is.
+\item \emph{$\beta$ is maximaal vrij. $\Rightarrow \beta$ is minimaal voortbrengend.}\\
+Omdat elke vrije verzameling kan uitgebreid worden tot een (voortbrengende) basis van $V$, kan dit ook voor $\beta$\footnote{Zie Stelling 3.37 p 107}. Als we echter $\beta$ nog uitbreiden zal $\beta$ niet meer vrij zijn, want $\beta$ is maximaal vrij. Bijgevolg is $\beta$ zelf al een basis voor $V$. Volgens het lemma van Steinitz\footnote{Zie Stelling 3.32 p 104} is elke verzameling kleiner dan $\beta$ niet meer voortbrengend. $\beta$ is dus minimaal voortbrengend.
+\item \emph{$\beta$ is minimaal voortbrengend. $\Rightarrow \beta$ is een basis van $V$.}\\ $\beta$ is een voortbrengende verzameling van $V$, en kan dus uitgedund worden tot een basis van $V$. Omdat $\beta$ minimaal voortbrengend is, zou de verwijdering van slechts $1$ er al voor zorgen dat $\beta$ niet meer voortbrengend zou zijn. $\beta$ is bijgevolg al een basis van $V$.
+\end{proof}
+
+\subsection{Stelling 3.43 p 110}
+Zij $(\mathbb{R},V,+)$ een eindig dimensionale vectorruimte en $U$ een deelruimte van $V$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item $U$ is eindig voortgebracht en $dimU \le dimV$
+\item $dimU=dimV \Leftrightarrow U = V$
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+Dit bewijs wordt graag gevraagd en staat niet volledig in het boek.
+\begin{enumerate}
+\item
+Als $U=\{\vec{0}\}$ geldt, dan wordt $U$ eindig voortgebracht door de basis: $\emptyset$\footnote{Niet $\{\vec{0}\}$! want $\vec{0}$ is lineair afhankelijk van zichzelf.}. $dimU = 0$ bijgevolg geldt zeker dat $dimU\le dimV$ want dimensies zijn nooit negatief.\\
+Als $U \neq \{\vec{0}\}$, dan kiezen we een vector $u_1 \in U$. We kunnen nu telkens \'e\'en lineair onafhankelijke vector $u_i$ toevoegen tot we een maximaal vrij deel $\beta$ van $U$ bekomen. Dit maximaal vrij deel is een basis van $U$ en bevat bijgevolg $dimU$ vectoren. $\beta$ brengt $U$ voort en het aantal vectoren in $\beta$ is eindig omdat de vectoren uit $\beta$ ook lineair onafhankelijk moeten zijn in $V$. $U$ wordt dus minimaal voortgebracht door $\beta$ en $dimU \le dimV$.
+\item
+\begin{itemize}
+\item $\Rightarrow$\\
+In het vorige deel van dit bewijs hebben we bewezen dat $U$ eindig voortgebracht wordt door een basis $\beta$ met $dimU$ elementen. Wanneer we nu weten dat $dimU=dimW$, dan volgt daaruit dat de basis $\beta$ van $U$ dus ook een basis is van $W$ omdat $U$ een deelruimte is van $V$. Omdat $U$ en $V$ dezelfde basis hebben, geldt $U = V$.
+\item $\Leftarrow$\\
+Omdat $U$ gelijk is aan $V$ heeft $U$ dezelfde basis als $V$. In twee dezelfde verzamelingen zitten evenveel elementen, dus $dimU=dimV$.
+\end{itemize}
+\end{enumerate}
+\end{proof}
+
+\subsection{Stelling 3.45 p 111}
+Zij $(\mathbb{R},V,+)$ een vectorruimte en zij $\beta = \{v_1,v_2,...,v_n\}$ een basis van $V$.
+\subsubsection*{Te Bewijzen}
+Elke vector kan op een unieke wijze als een lineaire combinatie van de basisvectoren uitgedrukt worden. Er bestaat dus een bijectieve afbeelding $co_{\beta}$ die $v$ afbeeldt op het stel co\"effici\"enten dat correspondeert met $v$ ten opzichte van de basis $\beta$.
+\[
+co_{\beta}: V \rightarrow \mathbb{R}^n
+ : \mapsto co_{\beta}(v)\]
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs uit het ongerijmde.\\
+Elke vector $v\in V$ kan geschreven worden als een lineaire combinatie van de basisvectoren.
+\[
+v = a_1v_1 + a_2v_2 + ... + a_nv_n
+\]
+Stel nu dat er nog zo een lineaire combinatie bestaat, zodat $(a_1,a_2,...,a_n)$ geen uniek stel co\"effici\"enten is, dan kan $v$ ook nog op een andere manier geschreven worden. Noem dit ander stel co\"effici\"enten $(b_1,b_2,...,b_n)$.
+\[
+v = a_1v_1 + a_2v_2 + ... + a_nv_n = b_1v_1 + b_2v_2 + ... + b_nv_n
+\]
+Hieruit volgt het volgende.
+\[ 
+(a_1-b_1)v_1 + (a_2-b_2)v_2 + ... + (a_n-b_n)v_n= 0
+\]
+Dit is een lineaire combinatie van de basisvectoren van $V$. Omdat de basis vrij is moeten alle co\"efficienten $(a_i-b_i)$ nul zijn. Dit is in contradictie met de aanname dat het stel co\"effici\"enten niet uniek is. Het stel co\"effici\"enten is dus wel uniek.
+\end{proof}
+
+\subsection{Stelling 3.49 p 114}
+\subsubsection*{Te Bewijzen}
+Als de vectorruimte V eindigdimensionaal is, dan geldt voor willekeurige deelruimten $U$ en $W$ van $V$ het volgende.
+\[
+dim(U+W) + dim(U\cap W) = dim(U) + dim(W)
+\]
+\subsubsection*{Bewijs}
+We willen een verband vinden tussen de dimensies van al deze verzamelingen ($(U+W)$, $U\cap W$, $U$ en $W$). Om dit te doen beginnen we met een basis van de kleinste verzameling ($U \cap W$). Daarna breiden we deze basis uit tot een basis van $U$, tot een basis van $W$ en tot een basis van $(U + W)$. De dimensie van een vectorruimte is gelijk aan het aantal elementen in de basis ervan.\footnote{Definitie 3.35 p 106}\\\\
+Zij $dim(U) = r$, $dim(W)=s$ en $dim(U\cap W) = t$.
+\begin{proof}
+Ingewikkeld bewijs.\\
+$U$ en $W$ zijn beide een deelruimte van $V$, dus $(U \cap W)$ is ook een deelruimte van $V$ \footnote{Propositie 3.14 p 96}. Omdat $(U \cap W)$ een deelruimte is van $V$, zal $t \le r$ en $t \le s$. We nemen een basis van $(U\cap W)$ en noemen deze $\beta = \{v_1,...,v_n\}$.Om $\beta$ uit te breiden tot een basis $\beta_U$ van $U$ moet we $r-t$ vectoren toe voegen. Om $\beta$ uit te breiden tot een basis $\beta_W$ van $W$ moeten we $s-t$ vectoren toe.\\
+De basisvectoren van $U$ zijn dus $\{v_i,...,v_t,u_{t+1},...,u_r\}$. Bovendien zijn de basisvectoren van $W$, $\{v_i,...,v_t,w_{t+1},...,w_k\}$.
+We willen bewijzen dat de basis $\beta_U \cup \beta_W = \{v_1,...,v_t,u_{t+1},...,u_{r},w_{t+1},...,w_{s}\}$ een basis is van $U+W$.
+Een basis van een vectorruimte is vrij en voortbrengend. We bewijzen deze eigenschappen appart.\\
+\textbf{Vrij}\\
+Neem een willekeurige lineaire combinatie van de basisvectoren van $(U+W)$.
+\[
+0 = \sum_{i=1}^tx_iv_i + \sum_{j=t+1}^ry_ju_j + \sum_{k=t+1}^sz_kw_k
+\]
+Om te bewijzen dat de $\beta_U \cup \beta_W$ vrij is, moeten we bewijzen dat alle $v_i,y_j,z_k$ nul zijn.\\
+De vector $\sum_{k=t+1}^sz_kw_k \in W$ zit in $W$ omdat alle $w_k \in W$. Bovendien kan deze vector geschreven worden als volgt.
+\[
+\sum_{k=t+1}^sz_kw_k = -\sum_{i=1}^tx_iv_i - \sum_{j=t+1}^ry_ju_j
+\]
+Deze vector zit bijgevolg in $U$ en dus ook in $U\cap W$ want ze valt te schrijven als een lineaire combinatie van de basisvectoren van $U$ ($\beta_U$).
+Omdat $\sum_{k=t+1}^sz_kw_k \in (U\cap W)$ is de volgende bewering waar.
+\[
+\exists \lambda_i \in \mathbb{R} \sum_{k=t+1}^sz_kw_k = \sum_{i=1}^t\lambda_iv_i
+\]
+\[
+\exists \lambda_i \in \mathbb{R} \sum_{k=t+1}^sz_kw_k - \sum_{i=1}^t\lambda_iv_i = 0 
+\]
+Het linkerlid van de bovenstaande vergelijking is een lineaire combinatie van de basisvectoren van $W$. Van deze basisvectoren weten we dat ze lineair onafhankelijk zijn, dus moeten alle $z_k, \lambda_i$ nul zijn. We weten nu dus al dat alle $z_k$ in de originele vergelijking nul zijn.\\
+Dezelfde redenering kunnen we toepassen op de vector $\sum_{j=t+1}^ry_ju_j \in U$. Deze vector kan geschreven worden als volgt.
+\[
+\sum_{j=t+1}^ry_ju_j= -\sum_{i=1}^tx_iv_i - \sum_{k=t+1}^sz_kw_k
+\]
+Deze vector zit dus in $W$ en bijgevolg ook in $(U\cap W)$ want ze valt te schrijven als een lineaire combinatie van de basisvectoren $W$ ($\beta_W$). Omdat $\sum_{j=t+1}^ry_ju_j \in (U\cap W)$ is de volgende bewering waar.
+\[
+\exists \lambda_i \in \mathbb{R} \sum_{j=t+1}^ry_ju_j = \sum_{i=1}^t\lambda_iv_i
+\]
+\[
+\exists \lambda_i \in \mathbb{R} \sum_{j=t+1}^ry_ju_j - \sum_{i=1}^t\lambda_iv_i = 0 
+\]
+Het linkerlid van de bovenstaande vergelijking is een lineaire combinatie van de basisvectoren van $W$. We weten dat deze lineair onafhankelijk zijn, dus moeten alle $y_j,  \lambda_i$ ook nul zijn.\\
+In de eerste vergelijking weten we nu al dat alle $z_k,y_j$ nul zijn. Nu blijft er dus nog het volgende over.
+\[
+0 = \sum_{i=1}^tx_iv_i + 0 + 0
+\]
+Het rechterlid van deze vergelijking is een lineaire combinatie van de basisvectoren van $U\cap W$. Van deze vectoren weten we dat ze lineair onafhankelijk zijn, dus alle $x_i$ moeten nul zijn.
+Nu hebben we bewezen dat $\beta_U\cup \beta_W$ een basis is van $U+W$\\\\
+\textbf{Voortbrengend}\\
+Om te bewijzen dat een basis voortbrengend is voor een vectorruimte nemen we een willekeurig element uit te vectorruimte en tonen we aan dat het een lineaire combinatie is van de basis.
+Neem een willekeurig element $x \in (U + W)$. We tonen de volgende bewering aan.
+\[
+\exists x_i,y_j,z_k \in \mathbb{R}: x = \sum_{i=1}^tx_iv_i + \sum_{j=t+1}^ry_ju_j + \sum_{k=t+1}^sz_kw_k
+\]
+We weten ook dat $\exists u\in U, w\in W: x = u+w$. De volgende bewering geldt dus zeker.\footnote{Definitie 3.19 p 98}
+\[
+\exists x_a,x_b,y_j,z_k \in \mathbb{R}  u+w = \sum_{a=1}^tx_av_a + \sum_{j=t+1}^ry_ju_j + \sum_{b=1}^tx_bv_b + \sum_{k=t+1}^sz_kw_k
+\]
+Kiezen we nu de $x_a,x_b$ zodat de volgende bewering geldt.
+\[
+\sum_{i=1}^tx_iv_i = \sum_{a=1}^tx_av_a + \sum_{b=1}^tx_bv_b 
+\]
+Nu is aangetoond dat $\beta_U \cup \beta_W$ voortbrengend is.
+\\\\ 
+We weten nu dat $\beta_U \cup \beta_W$ een basis is van $U+W$. De basis van $\beta_U \cup \beta_W$ bevat precies $(r-t)+(s-t)+t = r+s-t$ basisvectoren. Als we nu terug kijken naar de benaming van de dimensies van $U$, $W$ en $U\cap W$ zien we het volgende.
+\[
+dim(U+W) r+s-t = dim(U) + dim(W) + dim(U \cap W)
+\]
+\end{proof}
+
+\subsection{Stelling 3.52 p 115}
+Zij $(\mathbb{R},V,+)$ een eindig dimensionale vectorruimte. Zij $U_1,...,U_k$ deelruimten van $V$ zodat $V=\bigoplus_{i=1}^kU_i$. Zij $\beta_i$ de basissen van deze deelruimten.
+\subsubsection*{Te Bewijzen}
+$\bigcup_{i=1}^k\beta_i$ is een basis van $V$ en de volgende bewering geldt dus ook.
+\[
+dimV = \sum_{i=1}^kdimU_i
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+We moeten bewijzen dat $\bigcup_{i=1}^k\beta_i$ vrij en voortbrengend is.
+\begin{itemize}
+\item \emph{Vrij}\\
+We moeten bewijzen dat als een lineaire combinatie van de basisvectoren $\beta_i$ gelijk is aan nul, de co\"effici\"enten van deze combinatie dan nul zijn. Zij $\beta_i = {v_1^{(i)},v_2^{(i)},...,v_{m_i}^{(i)}}$, dan ziet deze combinatie er als volgt uit.
+\[
+\vec{0} = \sum_{i=1}^k\sum_{j=1}^{m_i}\lambda_j^{(i)}v_j^{(i)}
+\]
+Omdat $V$ de directe soms is van $U_1,...,U_k$ is de nulvector $\vec{0}$ slechts op \'e\'en manier te schrijven als de som van elementen in $U_1,...,U_k$. De nulvector is altijd te schrijven als $\vec{0} = \vec{0} + \vec{0} + ... + \vec{0}$ waarbij elke $\vec{0}$ komt uit een andere $U_i$. Dit betekent het volgende.
+\[
+\forall i: \sum_{j=1}^{m_i}\lambda_j^{(i)}v_j^{(i)} = 0
+\]
+Dit zijn lineaire combinaties van de basisvectoren dus alle $\lambda_j^{(i)}$ zijn nul.
+\item \emph{Voortbrengend}\\
+Per definitie kan elke vector in de somruimte van deelruimten geschreven worden als som van een vector uit elke deelruimte\footnote{Zie Definitie 3.19 p 98}.
+Elk van de vectoren uit de deelruimte kan geschreven worden als een lineaire combinatie van de basisvectoren ervan. Elke vector in de somruimte $V$ van de deelruimten $U_1,...,U_k$ kan dus geschreven worden als de som van lineaire combinatie van de basisvectoren van elke deelruimte. Deze som is ook een lineaire combinatie van de unie van de basissen van de deelruimten. De unie van de basissen is dus voortbrengend voor $V$.
+\end{itemize}
+Omdat de doorsnede van elke twee $U_i$ gelijk is aan $\{\vec{0}\}$ is de doorsnede van elke twee $\beta_i$ leeg. Bijgevolg geldt dat $\#(\bigcup_{i=1}^k\beta_i) = \sum_{i=1}^k\#(\beta_i)$. Hieruit volgt direct het te bewijzen.
+\[
+dimV = \sum_{i=1}^kdimU_i
+\]
+\end{proof}
+
+\subsection{Stelling 3.56 p 116}
+Zij $(\mathbb{R},V,+)$ een eindigdimensionale vectorruimte met basis.
+\subsubsection*{Te bewijzen}
+Elke deelruimte van $V$ heeft een complementaire deelruimte.
+\subsubsection*{Bewijs}
+\begin{proof}
+Zij $U$ een deelruimte van $V$ met basis $\beta_U = \{u_1,u_2,...,u_n)$. $U$ kan uitgebreid worden tot een basis van $V$ met vectoren $w_1,w_2,...,w_k$. Deze vectoren $w_i$ spannen dan $W$ op zodat de volgende bewering geldt.
+\[
+U \oplus W = V
+\]
+\begin{itemize}
+\item $V = U + W$\\
+Alle vectoren uit $V$ moeten geschreven kunnen worden als de som van een vector uit $U$ en een vector uit $W$. Alle vectoren in $U$ respectievelijk $W$ kunnen geschreven worden als de lineaire combinatie van de basisvectoren van $U$, respectievelijk $W$. Hieruit volgt dat alle vectoren uit $V$ geschreven kunnen worden als de sum van lineaire combinaties van basissen van deelruimten. Deze som is precies de lineaire combinatie die we gebruiken om de vector te vormen door een lineaire combinatie van de basisvectoren in $V$.
+
+\item $U\cap W = \{\vec{0}\}$\\
+De vectoren uit de basis van $U$ zijn lineair onafhankelijk van de vectoren uit de basis van $W$. In de doorsnede van deze deelruimten zit dus enkel de nulvector.
+\end{itemize}
+\end{proof}
+
+\subsection{Stelling 3.60 p 119}
+Zij $A \in \mathbb{R}^{m\times n}$ en zijn $U$ de rijgereduceerde matrixvorm van $A$.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item 
+\[
+N(A) = N(U)
+\]
+\item
+\[
+R(A) = R(U)
+\]
+\item
+\[
+dimN(A) + dimR(A) = n
+\]
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs in woorden.
+\begin{enumerate}
+\item We weten uit hoofdstuk 1 dat de oplossingsverzameling van het stelsel $A\cdot X = \vec{0}$ gelijk is aan die van $U\cdot X = \vec{0}$. Dit betekent precies het volgende.
+\[
+N(A) = N(U)
+\]
+TODO VERWIJZEN NAAR EEN BEWIJS
+\item De matrix $U$ ontstaat uit $A$ door elementaire rijoperaties. Elementaire rijoperaties veranderen de rijruimte van een matrix niet. 
+\[
+R(A) = R(U)
+\]
+TODO BEWIJS DIT
+\item
+$dimR(U)$ is precies gelijk aan het aantal niet-nulrijen in $U$.
+$dimN(U)$ is gelijk aan het aantal vrije variabelen van het stelsel $U\cdot X = \vec{0}$. Het aantal niet-vrije variabelen (niet-nulrijen) plus het aantal vrije variabelen is gelijk aan het totaal aantal variabelen.
+\end{enumerate}
+\end{proof}
+
+\subsection{Stelling 3.61 p 120}
+Zij $A \in \mathbb{m \times n}$ en $B \in \mathbb{n \times o}$ zodat $A\times B$ bepaald is.
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item
+\[
+N(B) \subset N(AB)
+\]
+\item
+\[
+C(AB) \subset C(A)
+\]
+\item
+\[ 
+R(AB)\subset R(B)
+\]
+\end{enumerate}
+\subsubsection*{Bewijs}
+\begin{proof}
+\begin{enumerate}
+\item
+Stel dat $X\in N(B)$, dan geldt dat $BX=0$. We tonen nu aan dat ook $(AB)X=0$ geldt.
+\[(AB)X=0\]
+\[A(BX)=0\]
+\[A0=0\]
+\[0=0\]
+\item
+$C(AB)$ is de verzameling van alle lineaire combinaties van kolommen van $AB$. De kolommen van $AB$ zijn van de vorm $Ab_i$ met $b_i$ kolommen van $B$. $Ab_i$ is een lineaire combinatie van de kolommen van $A$. Voor elke vector $v \in C(AB)$ geldt dus $v\in C(A)$. Met andere woorden geldt het volgende.
+\[C(AB) \subset C(A)\]
+\item
+Door middel van enig gefoefel kunnen we dit gemakkelijk bewijzen.
+De rijruimte van een matrix is gelijk aan de kolomruimte van de getransponeerde matrix.
+\[
+R(AB) = C((AB)^T)
+\]
+Nu passen we een eigenschap van getransponeerde matrices toe\footnote{Zie Eigenschappen p 32}
+\[
+(AB)^T = B^TA^T
+\]
+Door het vorige deel van dit bewijs weten we nu het volgende over kolomruimtes.
+\[
+C(B^TA^T) \subset C(B^T)
+\]
+Nu vormen we dit opnieuw om naar een kolomruimte om het bewijs te vervolledigen.
+\[
+C(B^T) = R(B)
+\]
+\end{enumerate}
+\end{proof}
+
+\end{document}

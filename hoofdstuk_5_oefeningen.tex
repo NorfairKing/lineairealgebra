@@ -1,0 +1,369 @@
+\documentclass[lineaire_algebra_oplossingen.tex]{subfiles}
+\begin{document}
+
+\chapter{Oefeningen Hoofdstuk 5}
+
+\section{Oefeningen 5.9}
+\subsection{Oefening 3}
+\subsubsection*{Eigenwaarden}
+Om de eigenwaarden van $A$ te vinden zoeken we de nulpunten van de characteristieke veelterm van $A$.
+\[
+\phi_A = det(A-\lambda\mathbb{I}_n) =
+\begin{vmatrix}
+1-\lambda & 1 & 1 & 1\\
+1 & 1-\lambda & 1 & 1\\
+1 & 1 & 1-\lambda & 1\\
+1 & 1 & 1 & 1-\lambda\\
+\end{vmatrix}
+\]
+We kunnen deze determinant domweg uitrekenen. Dit vraagt vrij veel rekenwerk en is heel saai. We kunnen het ook iets intelligenter aanpakken door eerst de eerste en de laatste en daarna de middelste twee rijen te verwisselen. De determinant verandert dan niet. Daarna rijreduceren we de matrix zonder rijen te verwisselen. Dan verandert de determinant ook niet. Nu kunnen we in elke rij $\lambda$ afzonderen. Zo bekomen we een veel simpelere determinant.
+\[
+=
+\begin{vmatrix}
+1 & 1 & 1 & 1-\lambda\\
+1 & 1 & 1-\lambda & 1\\
+1 & 1-\lambda & 1 & 1\\
+1-\lambda & 1 & 1 & 1\\
+\end{vmatrix}
+=
+\begin{vmatrix}
+1 & 1 & 1 & 1-\lambda\\
+0 & 0 & -\lambda & \lambda\\
+0 & -\lambda & 0 & \lambda\\
+0 & \lambda & \lambda & -\lambda^2\\
+\end{vmatrix}
+=
+\begin{vmatrix}
+0 & -\lambda & \lambda\\
+-\lambda & 0 & \lambda\\
+\lambda & \lambda & -\lambda^2\\
+\end{vmatrix}
+\]
+\[
+= \lambda^3\cdot
+\begin{vmatrix}
+0 & -1 & 1\\
+-1 & 0 & 1\\
+1 & 1 & -\lambda\\
+\end{vmatrix}
+=
+\lambda^3
+\left(
+\begin{vmatrix}
+-1 & 1\\
+1 & -\lambda\\
+\end{vmatrix}
++
+\begin{vmatrix}
+-1 & 1\\
+0 & 1\\
+\end{vmatrix}
+\right)
+=
+\lambda^4
+\]
+$A$ heeft dus de eigenwaarde $0$ met multipliciteit $m(\lambda) = 4$.
+
+\subsubsection*{Eigenvector(en)}
+De eigenruimte $E_0$ is de nulruimte van $A = A-\lambda\mathbb{I}_n$. We hoeven dus enkel $A-\mathbb{I}_n$ te rijreduceren om een oplossing te zien staan.
+\[
+\begin{pmatrix}
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1\\
+1 & 1 & 1 & 1\\
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 1 & 1 & 1\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0\\
+\end{pmatrix}
+\]
+\[
+E_0 = 
+\left\lbrace
+\begin{pmatrix}
+-\lambda-\mu-\nu\\\lambda\\\mu\\\nu
+\end{pmatrix}
+| \lambda,\mu,\nu\in\mathbb{R}
+\right\rbrace
+\]
+
+
+\subsection{Oefening 9}
+We stellen allereerst de matrix van $L$ op ten opzichte van de standaardbasis. De lineaire combinatie die we zien in het voorschrift zetten we in de rijen van een $3\times 3$ matric.
+\[
+L_\epsilon = 
+\begin{pmatrix}
+0 & 1 & 1\\
+1 & 1 & 0\\
+1 & 0 & 1
+\end{pmatrix}
+\]
+Uit de theorie weten we dat dit iets met de eigenwaarden en eigenvectoren te maken heeft. Sterker nog, dit is precies waarvoor eigenwaarden en eigenvectoren dienen. We zoeken de matrix van eigenvectoren $P$ zodat $AP = PB$, dan is $B$ een diagonaalmatrix \footnote{Zie het bewijs van Steling 5.7}.
+Nu moeten we dus eerst een basis van eigenvectoren van $\mathbb{R}^n$ zoeken.
+We lossen de karakteristieke vergelijking van $L$ op.
+\[
+\phi_L = 
+\begin{vmatrix}
+-\lambda & 1 & 1\\
+1 & 1-\lambda & 0\\
+1 & 0 & 1-\lambda
+\end{vmatrix}
+= 0
+\]
+\[
+(1-\lambda)((-\lambda(1-\lambda)-1) +\lambda-1) = 0 \Leftrightarrow (1-\lambda)(\lambda^2-2)-=0
+\]
+De eigenwaarden van $L$ zijn dus $\{-1,1,2\}$. $L$ heeft een enkelvoudig spectrum dus $L$ is diagonaliseerbaar.
+We zoeken nu de bijhorende eigenruimten.
+
+\emph{$E_{-1}$}\\
+\[
+\begin{pmatrix}
+1 & 1 & 1\\
+1 & 2 & 0\\
+1 & 0 & 2
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & 2\\
+0 & 1 & -1\\
+0 & 0 & 0
+\end{pmatrix}
+\]
+\[
+\Rightarrow E_{-1} = 
+\left\{ 
+\lambda
+\begin{pmatrix}
+-2\\1\\1\\
+\end{pmatrix}
+| \lambda \in \mathbb{R}
+\right\}
+\]
+
+\emph{$E_1$}\\
+\[
+\begin{pmatrix}
+-1 & 1 & 1\\
+1 & 0 & 0\\
+1 & 0 & 0
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 1\\
+0 & 0 & 0
+\end{pmatrix}
+\]
+\[
+\Rightarrow E_1 = 
+\left\{ 
+\lambda
+\begin{pmatrix}
+0\\-1\\1\\
+\end{pmatrix}
+| \lambda \in \mathbb{R}
+\right\}
+\]
+
+\emph{$E_2$}\\
+\[
+\begin{vmatrix}
+-2 & 1 & 1\\
+1 & -1& 0\\
+1 & 0 & -1
+\end{vmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & -1\\
+0 & 1 & -1\\
+0 & 0 & 0
+\end{pmatrix}
+\]
+\[
+\Rightarrow E_2 = 
+\left\{ 
+\lambda
+\begin{pmatrix}
+1\\1\\1\\
+\end{pmatrix}
+| \lambda \in \mathbb{R}
+\right\}
+\]
+Kiezen we nu drie eigenvectoren, elk uit een andere eigenruimte, dan en gebruiken we deze als basis $\beta$ voor $(\mathbb{R},\mathbb{R}[X]_{\le 2},+)$ dan is de matrix van $L$ ten opzichte van deze basis een diagonaalmatrix.
+(Deze diagonaalmatrix is de matrix waarbij de eigenwaarden op de diagonaal staan)
+\[
+L_\beta = 
+\begin{pmatrix}
+-1 & 0 & 0\\
+ 0 & 1 & 0\\
+ 0 & 0 & 2
+\end{pmatrix}
+\]
+
+\subsection{Oefening 16}
+Met een rekenmachine vinden we dat het antwoord de volgende matrix is.
+\[
+A^{10}=
+\begin{pmatrix}
+1 & 0\\
+-1023 & 1024\\
+\end{pmatrix}
+\]
+Op het examen mag je echter geen rekenmachine gebruiken.
+Het domweg manueel doen is natuurlijk niet wat je moet doen.
+
+Stel dat $A$ diagonaliseerbaar is. Dan geldt dat er een inverteerbare $P$ bestaat zodat $B$ een diagonaalmatrix is en het volgende geldt.
+\[
+P^{-1}AP = B \Rightarrow A = PBP^{-1}
+\]
+$P$ is hier een matrix waarin een eigenbasis van $A$ in de kolommen staat. $B$ is de diagonaalmatrix waarbij de eigenwaarden van $A$ op de diagonaal staan.
+We zoeken de tiende macht van $A$.
+\[
+A^{10} = (PBP^{-1})^{10} = PBP^{-1}PBP^{-1}...PBP^{-1} = PB\mathbb{I}_2B\mathbb{I}_2...\mathbb{I}_2BP^{-1} = PB^{10}P^{-1}
+\]
+Dit zou het wel heel makkelijk maken want een macht van een diagonaalmatrix is makkelijker te berekenen dan een macht van een willekeurige matrix \footnote{Zie de formule p 176 bovenaan.}.
+We zoeken eerst de eigenwaarden van $A$.
+\[
+\phi_A =
+\begin{vmatrix}
+1-\lambda & 0\\
+-1 & 2-\lambda
+\end{vmatrix}
+= 0
+\Rightarrow (1-\lambda)(2-\lambda)=0
+\]
+De eigenwaarden van $A$ zijn dus $\{1,2\}$. Mits het spectrum van $A$ enkelvoudig is is $A$ diagonaliseerbaar.
+We zoeken nu de eigenruimten van $A$.\\
+
+\emph{$E_1$}\\
+\[
+\begin{pmatrix}
+0 & 0\\
+-1 & 1
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & -1\\
+0 & 0
+\end{pmatrix}
+\]
+\[
+\Rightarrow 
+E_1 = 
+\left\{
+\lambda
+\begin{pmatrix}
+1\\1
+\end{pmatrix}
+| \lambda \in \mathbb{R}
+\right\}
+\]
+
+\emph{$E_2$}\\
+\[
+\begin{pmatrix}
+-1 & 0\\
+-1 & 0
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0\\
+0 & 0
+\end{pmatrix}
+\]
+\[
+\Rightarrow
+E_2 =
+\left\{
+\lambda
+\begin{pmatrix}
+0\\1
+\end{pmatrix}
+| \lambda \in \mathbb{R}
+\right\}
+\]
+We bekomen nu $P$ en $B$.
+\[
+P = 
+\begin{pmatrix}
+1 & 0\\
+1 & 1
+\end{pmatrix}
+\text{ en }
+B = 
+\begin{pmatrix}
+1 & 0\\
+0 & 2
+\end{pmatrix}
+\]
+Om $P^{-1}$ te berekenen rijreduceren we de volgende matrix.
+\[
+\begin{pmatrix}
+1 & 0 & 1 & 0\\
+1 & 1 & 0 & 1
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & 1 & 0\\
+0 & 1 & -1 & 1
+\end{pmatrix}
+\text{ dus }
+P^{-1} = 
+\begin{pmatrix}
+1 & 0\\
+-1 & 1
+\end{pmatrix}
+\]
+Nu kunnen we eenvoudig $A^{10}$ berekenen.
+\[
+A^{10}=
+P
+\cdot
+\begin{pmatrix}
+1 & 0\\
+0 & 2
+\end{pmatrix}^{10}
+\cdot 
+P^{-1}
+=
+P
+\cdot
+\begin{pmatrix}
+1^{10} & 0\\
+0 & 2^{10}
+\end{pmatrix}
+\cdot 
+P^{-1}
+=
+\begin{pmatrix}
+1 & 0\\
+1 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+1 & 0\\
+0 & 1024
+\end{pmatrix}
+\cdot 
+\begin{pmatrix}
+1 & 0\\
+-1 & 1
+\end{pmatrix}
+\]
+Als we dit uitrekenen zien we dat de rekenmachine gelijk had.
+\[
+A^{10}=
+\begin{pmatrix}
+1 & 0\\
+-1023 & 1024\\
+\end{pmatrix}
+\]
+
+
+
+\end{document}
