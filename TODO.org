@@ -459,7 +459,7 @@
       - [ ] a fokdiekul
     - [ ] 8 warreee
     - [X] 9 NorfairKing
-    - [ ] 10 MajorMonodon
+    - [X] 10 MajorMonodon
     - [ ] 11 fokdiekul
     - [ ] 17 MajorMonodon
     - [ ] 18 jdewaen

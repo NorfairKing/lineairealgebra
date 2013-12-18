@@ -205,6 +205,117 @@ L_\beta =
 \end{pmatrix}
 \]
 
+
+\subsection{Oefening 10}
+
+\subsubsection*{a}
+De gegeven formules voor $T^\alpha_\alpha$ vallen te herschrijven in een matrix als:
+\[
+T^\alpha_\alpha = \left(
+\begin{array}{c c c}
+5 & 2 & 3 \\
+2 & -1 & 0 \\
+3 & 0 & 1 \\
+\end{array}
+\right)
+\]
+Hieruit kunnen we de karakteristieke veelterm halen met de formule $det(\lambda * I_3 - T^\alpha_\alpha)$, waarbij $I_n$ de eenheidsmatrix uit $\mathbb{R}^{n\times n}$ is.
+
+\[det(\lambda * I_3 - T^\alpha_\alpha)=\]
+\[det\left(
+\begin{array}{c c c}
+\lambda-5 & -2 & -3 \\
+-2 & \lambda+1 & 0 \\
+-3 & 0 & \lambda-1 \\
+\end{array}
+\right)=\]
+\[-3*det\left(
+\begin{array}{c c}
+-2 & -3 \\
+\lambda+1 & 0 \\
+\end{array}
+\right) + (\lambda-1)*det\left(
+\begin{array}{c c}
+\lambda-5 & -2 \\
+-2 & \lambda+1 \\
+\end{array}
+\right)=\]
+\[\lambda^3 - 5*\lambda^2 - 14*\lambda=\]
+\[\lambda*(\lambda-7)*(\lambda+2)\]
+
+De nulpunten van deze vergelijking zijn de eigenwaarden van $T$. Deze zijn dus 0, -2 en 7.
+
+\subsubsection*{b}
+
+Om de eigenruimten te berekenen per eigenwaarde gaan we een eigenwaarde invullen in de matrix waar we de determinant van berekend hebben om onze eigenwaarden te bekomen. We maken hier vervolgens een homogeen stelsel van en bepalen het vectorvoorschrift voor de oplossingen van het stelsel. Dit voorschrift bepaalt de eigenruimte.\\
+
+Voor eigenwaarde 0 bekomen we:
+\[\left(
+\begin{array}{c c c | c}
+\lambda-5 & -2 & -3 & 0\\
+-2 & \lambda+1 & 0 & 0\\
+-3 & 0 & \lambda-1 & 0\\
+\end{array}
+\right)\]
+\[\mapsto\left(
+\begin{array}{c c c | c}
+-5 & -2 & -3 & 0 \\
+-2 & 1 & 0 & 0\\
+-3 & 0 & -1 & 0\\
+\end{array}
+\right)\]
+waar we na wat rijreduceren komen tot
+\[\mapsto\left(
+\begin{array}{c c c | c}
+1 & 4 & 3 & 0 \\
+0 & 3 & 2 & 0\\
+0 & 0 & 0 & 0\\
+\end{array}
+\right)\]
+De oplossingsverzameling van dit stelsel kunnen we schrijven als $\{(-\lambda,-2*\lambda,3*\lambda)|\lambda\in\mathbb{R}\}$, hetgeen een voorschrift is voor de co\"ordinaten van de eigenruimte met de gegeven basis $\alpha$. We bekomen dus:
+\[E_0 = \{(-\lambda*v_1-2*\lambda*v_2+3*\lambda*v_3)|\lambda\in\mathbb{R}\}\]
+\[=vct\{-v_1-2*v_2+3*v_3\}\]
+Dit is de eigenruimte bij eigenwaarde 0.
+
+Voor $-2$ en $7$ vinden we op een gelijkaardige manier de eigenruimten, en bekomen we:
+\[E_{-2} = \{(-\lambda*v_1+2*\lambda*v_2+\lambda*v_3)|\lambda\in\mathbb{R}\}\]
+\[=vct\{-v_1+2*v_2+v_3\}\]
+\[E_{7} = \{(4*\lambda*v_1+\lambda*v_2+2*\lambda*v_3)|\lambda\in\mathbb{R}\}\]
+\[=vct\{4*v_1+v_2+2*v_3\}\]
+
+\subsubsection*{c}
+
+Aangezien we een enkelvoudig spectrum hebben door de drie verschillende eigenwaarden kunnen we een basis kiezen van de gevonden eigenvectoren. Stellen we hiermee een basisveranderingsmatrix op met de vectoren als kolommen, dan krijgen we een diagonaalmatrix voor de afbeelding met de eigenwaarden op de diagonaal, in de volgorde waarin de eigenvectoren als kolommen gebruikt zijn.
+
+\subsubsection*{d}
+
+De matrix van de afbeelding wordt dus (we nemen hier de volgorde 0,-2 en 7 voor de eigenwaarden):
+
+\[
+T^\beta_\beta = \left(
+\begin{array}{c c c}
+0 & 0 & 0 \\
+0 & -2 & 0 \\
+0 & 0 & 7 \\
+\end{array}
+\right)
+\]
+
+\subsubsection*{e}
+
+Voor de matrix van basisverandering gebruiken we dus de gevonden eigenruimten in volgorde van de eigenwaarden hierboven. We bekomen dus:
+
+\[
+Id^\alpha_\beta = \left(
+\begin{array}{c c c}
+-1 & -1 & 4 \\
+-2 & 2 & 1 \\
+3 & 1 & 2 \\
+\end{array}
+\right)
+\]
+
+
 \subsection{Oefening 16}
 Met een rekenmachine vinden we dat het antwoord de volgende matrix is.
 \[
