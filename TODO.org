@@ -461,7 +461,7 @@
     - [X] 9 NorfairKing
     - [X] 10 MajorMonodon
     - [ ] 11 fokdiekul
-    - [ ] 17 MajorMonodon
+    - [X] 17 MajorMonodon
     - [ ] 18 jdewaen
 ** TODO Bewijzen
 *** DONE Stelling 5.2 p 117
