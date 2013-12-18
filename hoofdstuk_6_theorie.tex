@@ -517,18 +517,18 @@ $A$ heeft uitsluitend re\"ele eigenwaarden.
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs door gefoefel.\\
-We vertrekken algemener van de standaard unitaire ruimte $(\mathbb{C},\mathbb{C}^n,+,\langle \cdot , \cdot \rangle)$ met standaard hermetisch product $\langle X,Y\rangle = \overline{X}^T \cdot Y$. De lineaire transformatie met matrix $A$ kan ook opgevat worden als een lineaire transformatie $\mathbb{C}^n,\mathbb{C}^n$. Omwille van de hoofdstelling van de algebra houdt dit in dat $\phi_A$ volledig kan ontbonden worden als product van eerstegraadsfactoren in $\mathbb{C}$ \footnote{Zie Stelling 5.28 p 203}.
+We vertrekken algemener van de standaard unitaire ruimte $(\mathbb{C},\mathbb{C}^n,+,\langle \cdot , \cdot \rangle)$ met standaard hermetisch product $\langle X,Y\rangle = \overline{X}^T \cdot Y$. De lineaire transformatie met matrix $A$ kan ook opgevat worden als een lineaire transformatie $\mathbb{C}^n,\mathbb{C}^n$. Omwille van de hoofdstelling van de algebra houdt dit in dat $\phi_A$ volledig kan ontbonden worden als product van eerstegraadsfactoren in $\mathbb{C}$ \footnote{Zie Stelling 5.28 p 203.}.
 We zullen nu bewijzen dat elk nulpunt van $\phi_A$ in $\mathbb{C}$ ook in $\mathbb{R}$ zit.
 We beginnen met $\lambda \langle X , X \rangle$ en proberen aan te tonen dat dit gelijk is aan $\overline{\lambda} \langle X , X \rangle$. Dit is gefoefel maar het werkt. 
 \[
 \lambda \langle X , X \rangle = \langle X , \lambda X \rangle
 \]
-Bovenstaande vergelijking geldt omwille van de lineariteit van het hermetisch product \footnote{Zie Definitie 6.3 p 223}.
+Bovenstaande vergelijking geldt omwille van de lineariteit van het hermetisch product \footnote{Zie Definitie 6.3 p 223.}.
 Onderstaande gelijkheid geldt omdat $\lambda$ een eigenwaarde is van $A$.
 \[
 = \langle X , A \cdot X \rangle = \overline{X}^T \cdot A \cdot X
 \]
-$A = \overline{A}^T$ is gelijk aan zijn complement omdat $A \in \mathbb{R}^{n\times n}$ re\"eel en symmetrisch is. Voor de tweede gelijkheid foefelen we wat met getransponeerde matrices \footnote{Zie Eigenschap 1.22 p 32 bovenaan (c)}
+$A = \overline{A}^T$ is gelijk aan zijn complement omdat $A \in \mathbb{R}^{n\times n}$ re\"eel en symmetrisch is. Voor de tweede gelijkheid foefelen we wat met getransponeerde matrices \footnote{Zie Eigenschap 1.22 p 32 bovenaan (c).}
 \[
 = \overline{X}^T \cdot \overline{A}^T \cdot X = (\overline{A \cdot X})^T \cdot X
 \]
@@ -537,10 +537,29 @@ Opnieuw gebruiken we de definitie van het hermetisch product en het feit dat $\l
 = \langle  A \cdot X ,X \rangle =  \langle \lambda X , X \rangle = \overline{\lambda} \langle X , X \rangle
 \]
 Omdat $\lambda$ gelijk is aan zijn complement zit $\lambda$ in $\mathbb{R}$.
-
 \end{proof}
 
-
+\subsection{Lemma 6.38 p 244}
+Zij $(\mathbb{R},\mathbb{R}^n,+,\langle \cdot , \cdot \rangle)$ de standaard euclidische ruimte en $L_A : \mathbb{R}^n \rightarrow \mathbb{R}^n: X \mapsto A \cdot X$ een lineaire transformatie met een symmetrische matrix $A$.
+\subsubsection*{Te Bewijzen}
+Eigenvectoren bij verschillende eigenwaarden van $A$ zijn orthogonaal.
+\subsubsection*{Bewijs}
+\begin{proof}
+Direct bewijs door gefoefel.\\
+De eigenwaarden van $A$ zijn zeker re\"eel \footnote{Zie Lemma 6.36 p 243.}. Kies nu twee eigenwaarden $\lambda_1 \neq \lambda_2$. 
+\[
+\lambda_2 \langle X_1 , X_2 \rangle = \langle X_1, \lambda_2X_2 \rangle=\langle X_1, A\cdot X_2 \rangle
+\]
+We gebruiken de lineariteit van het inproduct\footnote{Zie Definitie 6.1 p 222} en het feit dat $\lambda_2$ een eigenwaarde is van $A$ met eigenvector $X_2$. Vervolgens gebruiken we de definitie van het standaard inproduct \footnote{Zie Voorbeeld 6.6 p 224.} en een eigenschap van getransponeerde matrices \footnote{Zie Eigenschap 1.22 p 32 bovenaan (c).}.
+\[
+X_1^T \cdot A\cdot X_2 = (A \cdot X_1)^T \cdot X_2
+\]
+Nu zetten we dit weer binnen het inproduct en gebruiken we het feit dat $\lambda_1$ een eigenwaarde is van $A$ met eigenvector $X_1$.
+\[
+\langle A \cdot X_1 , X_2 \rangle = \langle \lambda_1 \cdot X_1 , X_2 \rangle = \lambda_1 \langle X_1 , X_2 \rangle 
+\]
+Dit betekent dat $(\lambda 2-\lambda_1)\langle X_1 , X_2 \rangle =0$. Omdat $\lambda_1$ en $\lambda_2$ verschillend zijn moet $\langle X_1 , X_2 \rangle$ nul zijn. Dit betekent precies dat $X_1$ en $X_2$ loodrecht staan $X_1 \bot X_2$.
+\end{proof}
 
 
 \end{document}
