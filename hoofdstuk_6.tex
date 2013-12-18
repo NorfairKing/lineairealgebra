@@ -477,6 +477,44 @@ De eerste twee gelijkheden gelden omwille van de lineariteit van het inproduct \
 De laatste gelijkheid geldt omdat $e_1,e_2,e_3$ orthonormaal zijn.
 \end{proof}
 
+\subsection{Stelling 6.34 p 242}
+Zij $U$ een eindig dimensionale deelruimte van de euclidische ruimte $(\mathbb{R}, V,+, \langle \cdot,\cdot \rangle)$.
+\subsubsection*{Te Bewijzen}
+Voor elke $v\in V$ geldt dat $pr_U(v)$ de vector in $U$ op minimale afstand van $v$ is.
+
+\subsubsection*{Bewijs}
+\begin{proof}
+We moeten bewijzen dat voor elke andere $u\in U$ geldt dat de afstand van $v$ tot $u$ groter is dan of gelijk is aan de afstand van $v$ tot $pr_U(v)$. Omdat afstanden altijd positief zijn mogen we het ook bewijzen met kwadraten.
+\[
+\Vert v- u \Vert^2 = \langle (v-u) , (v-u)\rangle = \langle (v-pr_U(v)+pr_U(v)-u) , (v-pr_U(v)+pr_U(v)-u)\rangle
+\]
+\[
+= \langle (v-pr_U(v), (v-pr_U(v)+pr_U(v)-u)\rangle + \langle (pr_U(v)-u) , (v-pr_U(v)+pr_U(v)-u)\rangle
+\]
+\[
+= \langle (v-pr_U(v), (v-pr_U(v))\rangle + \langle (v-pr_U(v), (pr_U(v)-u)\rangle\]\[ +\langle (pr_U(v)-u) , (v-pr_U(v))\rangle + \langle (pr_U(v)-u) , (pr_U(v)-u)\rangle
+\]
+\[
+= \langle (v-pr_U(v), (v-pr_U(v))\rangle + +2\langle (pr_U(v)-u) , (v-pr_U(v))\rangle + \langle (pr_U(v)-u) , (pr_U(v)-u)\rangle
+\]
+De middelste term in bovenstaande vergelijking geldt omdat $pr_U-u$ een vector uit $U$ is en omdat $v-pr_U(v)$ een vector uit $U^\bot$ is.
+\[
+ = \langle (v-pr_U(v), (v-pr_U(v))\rangle + \langle (pr_U(v)-u) , (pr_U(v)-u)\rangle
+\]
+\[
+= \Vert v-pr_U(v) \Vert^2 + \langle (pr_U(v)-u) , (pr_U(v)-u)\rangle
+\]
+Onderstaande ongelijkheid geldt omdat het inproduct positief is \footnote{Zie Definitie 6.1 p 222}.
+\[
+\ge \Vert v-pr_U(v) \Vert^2
+\]
+
+\end{proof}
+
+
+
+
+
 \section{Oefeningen 6.8}
 
 
