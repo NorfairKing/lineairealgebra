@@ -542,8 +542,10 @@
     CLOSED: [2013-12-18 Wed 12:51]
 *** DONE Lemma 6.36 p 243
     CLOSED: [2013-12-18 Wed 13:34]
-*** TODO Lemma 6.38 p 244
-*** TODO Lemma 6.40 p 245
+*** DONE Lemma 6.38 p 244
+    CLOSED: [2013-12-18 Wed 20:03]
+*** DONE Lemma 6.40 p 245
+    CLOSED: [2013-12-18 Wed 20:03]
 *** TODO Stelling 6.42 p 246
 *** TODO Stelling 6.43 p 246
 *** TODO Stelling 6.46 p 249

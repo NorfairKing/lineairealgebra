@@ -561,5 +561,31 @@ Nu zetten we dit weer binnen het inproduct en gebruiken we het feit dat $\lambda
 Dit betekent dat $(\lambda 2-\lambda_1)\langle X_1 , X_2 \rangle =0$. Omdat $\lambda_1$ en $\lambda_2$ verschillend zijn moet $\langle X_1 , X_2 \rangle$ nul zijn. Dit betekent precies dat $X_1$ en $X_2$ loodrecht staan $X_1 \bot X_2$.
 \end{proof}
 
+\subsection{Lemma 6.40 p 245}
+Zij $(\mathbb{R},\mathbb{R}^n,+,\langle \cdot , \cdot \rangle)$ de standaard euclidische ruimte en $L_A : \mathbb{R}^n \rightarrow \mathbb{R}^n: X \mapsto A \cdot X$ een lineaire transformatie met een symmetrische matrix $A$.
+\subsubsection*{Te Bewijzen}
+Voor elke eigenwaarde van $A$ is de meetkundige multipliciteit $d(\lambda)$ gelijk aan de algebra\"ische multipliciteit $m(\lambda)$.
+\[
+\forall\lambda: d(\lambda) = m(\lambda)
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+Zij $\lambda$ een willekeurige eigenwaarde van $A$. De bijhorende eigenruimte $E_\lambda$ heeft dimensie $d(\lambda)$. We willen aantonen dat $d(\lambda)$ gelijk is aan $m(\lambda)$.\\
+We weten dat $\mathbb{R}^n = E_\lambda \oplus E_\lambda^\bot$ geldt \footnote{Zie Stelling 6.31 p 240}. We kunnen dus een basis van $E_\lambda$ kiezen (van eigenvectoren van $A$ bij $\lambda$) en deze uitbreiden tot een basis van $\mathbb{R}^n$ met een basis van $E_\lambda^\bot$.
+Kies een vector $Y\in E_\lambda^\bot$. $A\cdot Y$ behoort dan ook tot $E_\lambda^\bot$ want voor elke $X \in E_\lambda$
+\[
+\langle X, A\cdot Y\rangle \overset{A \text{ is symmetrisch}}{=} \langle A\cdot X, Y \rangle = \lambda \langle X,Y \rangle = 0
+\]
+We kunnen nu $L_A$ beperken tot $E_\lambda^\bot$. Deze beperking heeft dan $B$ als matrixvoorstelling. De matrixvoorstelling van $L_A$ ten opzichte van $\beta$ is dan een matrix van de volgende vorm.
+\[
+\begin{pmatrix}
+\lambda\mathbb{I}_{d(\lambda} & 0\\
+0 & B
+\end{pmatrix}
+\]
+$B$ kan nu niet meer de eigenwaarde $\lambda$ hebben. Dit houdt ook in dat $d(\lambda) = m(\lambda)$.
+
+\end{proof}
+
 
 \end{document}
