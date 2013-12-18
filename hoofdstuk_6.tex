@@ -454,13 +454,28 @@ Omdat $U \oplus U' = V$ geldt $dimU+dimU^\bot = dimV$ ook \footnote{Zie Stelling
 
 \item
 Uit de definitie van het orthogonaal complement volgt dat $U \subset (U^\bot)^\bot$ geldt \footnote{Zie Definitite 6.30 p 240}. $U$ en $(U^\bot)^\bot$ hebben dezelfde dimensie, en zijn daarom gelijk. 
-
-
 \end{enumerate}
 \end{proof}
 
-
-
+\subsection{Voorbeeld 6.32 p 241}
+\subsubsection*{Te bewijzen}
+In $\mathbb{R}^3$ is het orthogonaal complement van de $x-as$ het volledige $yz$-vlak.
+\subsubsection*{Bewijs}
+\begin{proof}
+Zij $\{e_1,e_2,e_3\}$ de standaardbasis van $\mathbb{R}^3$. Elke vector op de $x$-as is een veelvoud van $e_1$ en elke vector op het $xy$-vlak kan geschreven worden als een lineaire combinatie van $e_2$ en $e_3$.
+\[
+\lambda_1e_1 \in x \text{ en }\lambda_2e_2 + \lambda_3e_3 = v\in yz
+\]
+We bewijzen nu dat elke vector op het $yz$ vlak loodrecht staat op elke vector op de $x$ as.
+Inderdaad, kies willekeurige $\lambda_1,\lambda_2,\lambda_3 \in \mathbb{R}$.
+\[
+\langle \lambda_1e_1 , \lambda_2e_2 + \lambda_3e_3 \rangle = \langle \lambda_1e_1 , \lambda_2e_2
+\rangle + \langle \lambda_1e_1 , \lambda_3e_3 \rangle = \lambda_1\lambda_2\langle e_1 , e_2
+\rangle + \lambda_1\lambda_3\langle e_1 , e_3 \rangle = 0
+\]
+De eerste twee gelijkheden gelden omwille van de lineariteit van het inproduct \footnote{Zie Definitie 6.1 p 222}.
+De laatste gelijkheid geldt omdat $e_1,e_2,e_3$ orthonormaal zijn.
+\end{proof}
 
 \section{Oefeningen 6.8}
 

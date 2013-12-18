@@ -1,4 +1,4 @@
-[B#+SEQ_TODO: TODO(t) ISSUE(i) | DELEGATED(l) DONE(d)
+#+SEQ_TODO: TODO(t) ISSUE(i) | DELEGATED(l) DONE(d)
 # ^ De vorige lijn is voor emacs, afblijven :p
 
 * DONE Hoofdstuk 1
@@ -533,8 +533,10 @@
 *** TODO Voorbeeld 6.28 p 238
 *** DONE Definitie 6.30 controleren of U^top echt een vectorruimte is
     CLOSED: [2013-12-16 Mon 20:33]
-*** TODO Stelling 6.31 p 240
-*** TODO Voorbeeld 6.32 p 241
+*** DONE Stelling 6.31 p 240
+    CLOSED: [2013-12-18 Wed 11:52]
+*** DONE Voorbeeld 6.32 p 241
+    CLOSED: [2013-12-18 Wed 12:18]
 *** TODO Definitie 6.3 p 241 Aantonen dat deze afbeelding lineair is
 *** TODO Stelling 6.34 p 242
 *** TODO Lemma 6.36 p 243
@@ -569,3 +571,4 @@
       - [ ] a NorfairKing
 ** TODO Opdrachten
    - [ ] 6.8 p 227
+     
