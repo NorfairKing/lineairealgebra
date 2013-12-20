@@ -550,8 +550,8 @@
 *** TODO Stelling 6.43 p 246
 *** TODO Stelling 6.46 p 249
 *** TODO Stelling 6.48 p 249
-*** TODO Stelling 6.48 p 249
-*** TODO Lemma 6.49 p 249
+*** DONE Lemma 6.49 p 249
+    CLOSED: [2013-12-20 Fri 11:13]
 *** TODO Stelling 6.50 p 250
 *** TODO Stelling 6.52 p 251
 *** TODO Stelling 6.56 p 252

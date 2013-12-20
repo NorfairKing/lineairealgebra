@@ -657,18 +657,49 @@ TODO
 \end{itemize}
 \end{proof}
 
-\subsection{Stelling 6.48 p 246-9}
+\subsection{Stelling 6.48 p 246}
+Zij $A\in \mathbb{R}^{n\times n}$ een symmetrische matrix.
 \subsubsection*{Te Bewijzen}
+Er bestaat een orthogonale matrix $P\in \mathbb{R}^{n\times n}$ zodat $P^{-1}AP = P^TAP$ een diagonaalmatrix is.
 \subsubsection*{Bewijs}
 \begin{proof}
 
 \end{proof}
 
 \subsection{Stelling 6.49 p 249}
+Zij $A\in \mathbb{R}^{n\times n}$ een orthogonale matrix.
 \subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item De determinant van $A$ is $1$ of $-1$.
+\item Elke (re\"eele eigenwaarde van $A$ is $1$ of $-1$.
+\end{enumerate}
 \subsubsection*{Bewijs}
 \begin{proof}
+Direct bewijs.
+\begin{enumerate}
+\item
+\[
+A^{-1} = A^T
+\]
+\[
+det(A^{-1}) = det(A^T)
+\]
+\[
+\frac{1}{det(A)} = det(A)
+\]
+\[
+1 = det(A)^2
+\]
+Dit kan alleen kloppen als de derminant van $A$ $1$ of $-1$ is.
+\item
+Let op: gefoefel! Dit is geen  moeilijk bewijs als u weet hoe eraan te beginnen. Een manier om erop te komen is door in te zien dat we moeten bewijzen dat $\lambda^2$ gelijk moet zijn aan $1$.\\
+Zij $\lambda$ een eigenwaarde van $A$ met eigenvector $v$.
+\[
+\lambda^2\langle v,v\rangle = \langle \lambda v,\lambda v\rangle = \langle A v,A v\rangle = v^TA^T A v = v^TA^{-1} A v = v^Tv = \langle v, v \rangle
+\]
+Dit houdt precies in dat $\lambda^2 = 1$ geldt. $\lambda$ moet dus $1$ of $-1$ zijn. Omdat deze bewering geldt voor een willekeurige eigenwaarde $\lambda$ van $A$ geldt ze voor elke eigenwaarde van $A$.
 
+\end{enumerate}
 \end{proof}
 
 \subsection{Stelling 6.50 p 250}
