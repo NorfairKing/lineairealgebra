@@ -19,3 +19,4 @@ Autheur: Tom Sydney Kerckhove
 ** Algemene voorwaarden
    Zoals beschreven in de licentie mag de broncode van het boek verspreid worden, maar *er mag onder geen enkele voorwaarde een gecompileerde versie verspreid worden.*
    Als aan deze voorwaarde niet wordt voldaan zal de broncode opnieuw prive gemaakt worden.
+   

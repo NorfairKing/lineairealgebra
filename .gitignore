@@ -1,6 +1,7 @@
 *.pdf
 *.swo
 *.swp
+*~
 
 *.aux
 *.glo
