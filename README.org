@@ -19,5 +19,11 @@ Auteur: Tom Sydney Kerckhove
 ** Algemene voorwaarden
    Zoals beschreven in de licentie mag de broncode van het boek verspreid worden, maar *er mag onder geen enkele voorwaarde een gecompileerde versie verspreid worden.*
    Dit boek heeft ook tot doel studenten latex te laten gebruiken. Bovendien bent u zeker dat u steeds de laatste versie hebt als u de broncode zelf compileert.
+** Veelgestelde Vragen
+*** Wat mag ik nu wel en niet hiermee?
+Je mag de broncode downloaden en compileren voor jezelf, en gebruiken bij het studeren. Je mag ook zelf oplossingen insturen door te forken, aanpassingen te maken, en een pull-request te sturen. Je mag ook de broncode verspreiden, maar het is interessanter mensen hiernaartoe te wijzen, zodat men de laatste nieuwe broncode krijgt.
+Je mag geen gecompileerde pdf delen met iemand.
+*** Waarom die laatste voorwaarde?
+Dit lijkt misschien een vreemde voorwaarde, maar bekijk het zo: We hebben hier best veel tijd in gestoken, en je krijgt dit zomaar van ons. We willen onze kan zo groot mogelijk maken dat er mensen een handje toesteken, en dat gaat het makkelijkst door naar deze repo te verwijzen, omdat er dan makkelijker een stuk toegevoegd kan worden.
    
    
