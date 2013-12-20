@@ -564,6 +564,10 @@
 *** TODO Stelling 6.64 p 255
 *** TODO Stelling 6.68 p 259
 ** TODO Oefeningen
+*** TODO Werkzitting
+    - [ ] 5 warreee
+    - [ ] 8c MajorMonodon
+    - [ ] 15 jdewaen
 *** TODO Voorbereiding
     - [ ] 2
       - [ ] p1 warreee
