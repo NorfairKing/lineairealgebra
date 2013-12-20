@@ -609,7 +609,7 @@ We noemen $A$ dan orthogonaal diagonaliseerbaar.
 
 
 \subsection{Stelling 6.46 p 249}
-Zij $(\mathbb{R},\mathbb{R}^n,+,\langle \cdot , \cdot \rangle)$ een euclidische ruimte en $A\in \mathbb{R}^{n\times n}$ een vierkante matrix.
+Zij $(\mathbb{R},V,+,\langle \cdot , \cdot \rangle)$ een euclidische ruimte en $A\in \mathbb{R}^{n\times n}$ een vierkante matrix.
 \subsubsection*{Te Bewijzen}
 \begin{center}
 De kolommen van $A$ vormen een orthonormale basis van $\mathbb{R}^n$
@@ -703,10 +703,74 @@ Dit houdt precies in dat $\lambda^2 = 1$ geldt. $\lambda$ moet dus $1$ of $-1$ z
 \end{proof}
 
 \subsection{Stelling 6.50 p 250}
+Zij $(\mathbb{R},\mathbb{R}^n,+,\langle \cdot , \cdot \rangle)$ de standaard euclidische ruimte   en $L_A : \mathbb{R}^n \rightarrow \mathbb{R}^n: X \mapsto A \cdot X$ een lineaire transformatie met een orthogonale matrix $A$. Zij $u_1,...,u_n$ een orthonormale basis voor $\mathbb{R}^n$.
+
 \subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item $\forall X \in \mathbb{R}^n: \Vert A \cdot X \Vert = \Vert X \Vert$
+
+\item $\forall X,Y \in \mathbb{R}^n: d(A\cdot X,A\cdot Y) = d(X,Y)$
+
+\item $L_A$ is een isomorfisme.
+
+\item $L_A(u_1),...;L_A(u_n)$ is een orthonormale basis voor $\mathbb{R}^n$.
+
+\end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
+Direct bewijs.\\
+Het bewijs in de cursus is wel juist, maar als u nog steeds niet overtuigd bent is hier een gedetailleerder bewijs.
+\begin{enumerate}
+\item
+\[
+\Vert A \cdot X \Vert = \langle A\cdot X, A\cdot X\rangle = X^TA^TAX =  X^TA^{-1}AX =\langle X,X\rangle = \Vert X\Vert
+\]
 
+\item
+We spreken over de standaard euclidische ruimte, dus kunnen we definitie van het standaard euclidisch product gebruiken \footnote{Zie Voorbeeld 6.6 p 224.}.
+\[
+\Vert A\cdot X - A\cdot Y \Vert = \sqrt{\langle  A\cdot X - A\cdot Y ,  A\cdot X - A\cdot Y \rangle} = \sqrt{(A\cdot X - A\cdot Y)^T\cdot(A\cdot X - A\cdot Y)}
+\]
+\[
+= \sqrt{((A\cdot X)^T - (A\cdot Y)^T)\cdot(A\cdot X - A\cdot Y)} = \sqrt{(X^T\cdot A - Y^T\cdot A^T)\cdot(A\cdot X - A\cdot Y)}
+\]
+\[
+= \sqrt{((A\cdot X)^T - (A\cdot Y)^T)\cdot(A\cdot X - A\cdot Y)}
+\]
+\[ 
+= \sqrt{(X^T\cdot A^T - Y^T\cdot A^T)\cdot(A\cdot X) - (X^T\cdot A^T - Y^T\cdot A^T)\cdot (A\cdot Y)}
+\]
+\[ 
+= \sqrt{(X^T\cdot A^T)\cdot(A\cdot X) - (Y^T\cdot A^T)\cdot(A\cdot X) - (X^T\cdot A^T)\cdot (A\cdot Y) + (Y^T\cdot A^T)\cdot (A\cdot Y)}
+\]
+\[ 
+= \sqrt{(X^T\cdot A^{-1})\cdot(A\cdot X) - (Y^T\cdot A^{-1})\cdot(A\cdot X) - (X^T\cdot A^{-1})\cdot (A\cdot Y) + (Y^T\cdot A^{-1})\cdot (A\cdot Y)}
+\]
+\[ 
+= \sqrt{(X^T\cdot X) - (Y^T\cdot X) - (X^T\cdot Y) + (Y^T\cdot Y)}
+\]
+\[ 
+= \sqrt{(X^T- Y^T)\cdot X - (X^T - Y^T) \cdot Y}
+= \sqrt{(X^T- Y^T)\cdot (X - Y)}
+\]
+\[ 
+= \sqrt{(X- Y)^T\cdot (X - Y)}
+= \sqrt{\langle X-Y , X-Y \rangle}
+= \Vert X-Y\Vert
+\]
+
+\item
+Om een isomorfisme te zijn moet $L_A$ bijectief en lineair zijn \footnote{Zie Definitie 4.15 p 145.}. $L_A$ is lineair (gegeven). We weten dat $L_A$ injectief is als (en slechts als) $ker(L_A) = \{\vec{0}\}$ geldt \footnote{Zie Stelling 4.29 p 156.}. $ker(L_A) = \{\vec{0}\}$ omdat $0$ geen eigenwaarde is van $L_A$ \footnote{Zie Stelling 6.49 p 249.} dus $E_0 = ker(L - 0\mathbb{I}_n) = \{\vec{0}\}$ \footnote{Zie Opmerking 5.15 p 188.}. Omdat $L_A$ injectief is, is $L_A$ ook surjectief en dus bijectief \footnote{Zie Gevolg 4.35 p 159.}.
+
+\item
+Uit het eerste deel van dit bewijs volgt dat $L_A$ de lengte van vectoren behoudt. We bewijzen nog dat $L_A$ niet enkel de orthogonaliteit maar zelfs het inproduct behoudt.
+\[
+\langle A\cdot X, A\cdot Y \rangle = X^T A^T A Y = X^T A^{-1} A Y = X^T Y = \langle X, Y \rangle
+\]
+(Merk op dat dit enkel geldt omdat $A$ orthogonaal is.)
+Omdat $L_A$ de lengte en orthogonaliteit behoudt (en het beeld van een basis opnieuw een basis vormt \footnote{Zie Gevolg 4.3 p 130.}) is het beeld van een orthonormale basis nog steeds een orthonormale basis.
+\end{enumerate}
 \end{proof}
 
 \subsection{Stelling 6.52 p 251}
