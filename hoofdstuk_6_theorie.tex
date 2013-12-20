@@ -1,7 +1,7 @@
 \documentclass[lineaire_algebra_oplossingen.tex]{subfiles}
 \begin{document}
 
-\chapter{Hoofdstuk 6}
+\chapter{Theorie Hoofdstuk 6}
 
 \section{Bewijzen uit de cursus}
 
@@ -790,10 +790,64 @@ Er bestaan een unitaire matrix $P \in \mathbb{C}^{n\times n}$ zodat $P^{-1}AP = 
 \end{proof}
 
 \subsection{Stelling 6.58 p 253}
+Zij $L$ een lineaire transformatie van een inproductruimte $(\mathbb{R},V,+,\langle \cdot,\cdot \rangle)$.
 \subsubsection*{Te Bewijzen}
+\[
+\text{ L is orthogonaal } \Leftrightarrow \forall v \in V: \Vert L(v) \Vert = \Vert v\Vert
+\]
 \subsubsection*{Bewijs}
 \begin{proof}
+Bewijs van een equivalentie.\\
+\begin{itemize}
+\item $\Rightarrow$
+Omdat $L$ orthogonaal is geldt voor elke $v,w \in V$ het volgende.
+\[
+\langle L(v), L(w) \rangle = \langle v,w\rangle
+\]
+Kies nu een willekeurige $v \in V$ om het te bewijzen voor elke $v\in V$.
+\[
+\Vert L(v) \Vert = \sqrt{\langle L(v), L(v) \rangle} = \sqrt{\langle v, v \rangle} = \Vert v\Vert
+\]
 
+\item $\Leftarrow$
+We gebruiken eenderzijds de lineariteit van $L$ en anderzijds de gegeven eigenschap dat $L$ de norm van elke vector $v \in V$ bewaart. Kies willekeurige $v,w \in V$ om het te bewijzen voor elk paar vectoren in $V$.
+\begin{enumerate}
+\item
+\[
+\Vert L(v+w) \Vert^2 = \Vert L(v)+L(w) \Vert^2 = \langle L(v)+L(w),L(v)+L(w) \rangle
+\]
+\[
+= \langle L(v),L(v)+L(w) \rangle + \langle L(w),L(v)+L(w) \rangle
+\]
+\[
+= \langle L(v),L(v) \rangle + \langle L(v),L(w) \rangle + \langle L(w),L(v) \rangle +\langle L(w),L(w) \rangle
+\]
+\[
+= \Vert L(v)\Vert^2 + 2\langle L(v),L(w) \rangle +\Vert L(w)\Vert^2
+\]
+\[
+= \Vert v\Vert^2 + 2\langle L(v),L(w) \rangle +\Vert w\Vert^2
+\]
+Al deze gelijkheden gelden simpelweg omwille van de definitie van het inproduct en de norm.\footnote{Zie Definitie 6.1 p 222.} \footnote{Zie Definitie 6.9 p 227.}. De laatste gelijkheid geldt omdat $L$ de norm van elke vector in $V$ bewaart.
+\item
+\[
+\Vert L(v+w) \Vert^2 = \Vert v+w \Vert^2
+\]
+\[
+= \langle v+w,v+w\rangle = \langle v,v+w\rangle + \langle w,v+w\rangle = \langle v,v\rangle + \langle v,w\rangle + \langle w,v\rangle + \langle w,w\rangle
+\]
+\[
+= \Vert v\Vert^2 + 2\langle v,w \rangle +\Vert w\Vert^2
+\]
+\end{enumerate}
+Voegen we deze redeneringen nu samen dan krijgen we de volgende gelijkheid.
+\[
+\Vert v\Vert^2 + 2\langle L(v),L(w) \rangle +\Vert w\Vert^2 = \Vert v\Vert^2 + 2\langle v,w \rangle +\Vert w\Vert^2
+\]
+\[
+\langle L(v),L(w) \rangle =\langle v,w \rangle
+\]
+\end{itemize}
 \end{proof}
 
 \subsection{Propositie 6.59 p 254}
