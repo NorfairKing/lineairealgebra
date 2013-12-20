@@ -1,5 +1,5 @@
 * Lineaire Algebra
-Autheur: Tom Sydney Kerckhove
+Auteur: Tom Sydney Kerckhove
 
 ** Dankwoord
 *** Medewerkers
