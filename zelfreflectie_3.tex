@@ -2,29 +2,29 @@
 \begin{document}
 
 \section{Zelfreflectie 3}
-\subsection{oef 1}
+\subsection{Oefening 1}
 \subsubsection*{a)}
 vrij, lineair onafhankelijk
 \subsubsection*{b)}
 niet vrij, lineair afhankelijk
 
-\subsection{oef 2}
+\subsection{Oefening 2}
 De tweede bewering. Deze oefening beschrijft precies wat er mis is met de cursus.
 
-\subsection{oef 3}
+\subsection{Oefening 3}
 Ja. Het triviaal voorbeeld is natuurlijk $\{\vec{0}\}$. Als dit niet voldoende is, bestaan er ook nog binaire ringen. Dit zijn ook vectorruimten, als we de bewerkingen goed defini\"eren.
 
-\subsection{oef 4}
+\subsection{Oefening 4}
 De deelruimten van de gepunte ruimte zijn ruimtes, vlakken of rechten door de oorsprong, en de deelruimte met enkel de oorsprong. Twee lineair onafhankelijke vectoren spannen een vlak op. één vector spant een rechte op. Dire lineair onafhankelijke vectoren spannen opnieuw de ruimte op. 
 
-\subsection{oef 5}
+\subsection{Oefening 5}
 Een basis is voortbrengend en vrij (definitie). Noem $\beta = \{v_1,v_2,...,v_n\}$ de basis van $V$.
 \begin{proof}
 $\beta$ is maximaal vrij want elke vector in $V$ in is een lineaire combinatie van de vectoren in $\beta$. Als één van die vectoren aan $\beta$ toegevoegd zou worden, zou $\beta$ dus niet meer vrij zijn. Dit is precies de definitie van maximaal vrij.\\
 Stel dat $\beta$ niet minimaal voortbrengend zou zijn zou $\beta$ uitgedunt kunnen worden tot $\beta'$ door er $b$ uit te halen zodat $\beta'$ nog steeds voortbrengend is. Als dit waar is dan zou $b$ een lineaire combinatie zijn van de vectoren uit $\beta'$. Dit is in contradictie met het feit dat $V$ vrij is. $\beta$ is dus minimaal voortbrengend.
 \end{proof}
 
-\subsection{oef 6}
+\subsection{Oefening 6}
 \subsubsection*{Te bewijzen}
 Zij $v_1,v_2,...,v_n \in R^n$ $n$. Zij $A$ de matrix met in de kolommen de vectoren $v_1,v_2,...,v_n \in R^n$.
 $v_1,v_2,...,v_n \in R^n$ vormen een basis van $R^n \Leftrightarrow det(A) \neq 0$.
@@ -37,7 +37,7 @@ $v_1,v_2,...,v_n$ is een basis van $R^n$ dus $v_1,v_2,...,v_n$ is vrij en voortb
 Als $det(A) \neq 0$ dan zal $A$ niet gereduceerd kunnen worden naar een matrix met een nulrij. Dit houdt in dat de kolommen van $A$ lineair onafhankelijk zijn. Omdat het aantal vectoren in de gevormde deelverzameling gelijk is aan $n$, zal deze deelverzameling een basis zijn voor $R^n$.
 \end{proof}
 
-\subsection{oef 7}
+\subsection{Oefening 7}
 Zij $U$ en $W$ deelruimten van de vectorruimte $V$
 \subsubsection*{Te bewijzen}
 $dim(U) + dim(W) = dim(U+W)$ $\Leftrightarrow$ $V = U \oplus W$.
@@ -55,16 +55,18 @@ $U+W = U\oplus W$ (p 99). $U$ en $W$ zijn deelruimten van $V$ dus $U\oplus W$ is
 TODO
 \end{proof}
 
-\subsection{oef 8}
+\subsection{Oefening 8}
 Propositie 3.14 zegt dat elke doorsnede van twee deelruimten een deelruimte is. Neem nu drie deelruimten van $V$. Neem de doorsnede van de eerste twee, en daarvan de doorsnede met de derde. Nu weten we dat voor elke $3$ deelruimten, de doorsnede ervan een deelruimte is. Dit kunnen we itereren voor elke $k \in \mathbb{N}$. Oneindig veel deelruimten geldt dit ook.
 
-\subsection{oef 9}
+\subsection{Oefening 9}
 Als $D$ één element bevat, is de beschreven verzameling een deelruimte met dimensie $1$. Als $D$ $k+1$ elementen bevat, is het laatste element ofwel een lineaire combinatie van de$k$ andere elementen, ofwel is het er geen. Als het wel een lineaire combinatie van de andere $k$ elementen is, dan is de beschreven verzameling dezelfde als die voor de $k$ andere elementen. Als het geen lineaire combinatie is, dan is het een deelruimte met één dimensie meer dan die voor de $k$ andere elementen.
 
-\subsection{oef 10}
+\subsection{Oefening 10}
 Ja, maar in onze cursus spreken we niet over oneindige sommen van vectoren, omdat dit concept nog niet gedefinieerd is.
 
-\subsection{oef 11}
+%TODO
+
+\subsection{Oefening 11}
 \subsubsection*{Te Bewijzen}
 $\{v_1,...,v_n\}$ is vrij $\Leftrightarrow \{co_{\beta}(v_1),...,co_{\beta}(v_n)\}$ is vrij.
 \subsubsection*{Bewijs}
@@ -89,7 +91,7 @@ De co\"ordinaatafbeelding van de nulvector is opnieuw de nulvector (in een ander
 \]
 \end{proof}
 
-\subsection{oef 12}
+\subsection{Oefening 12}
 Zij $A \in \mathbb{R}^{m\times n}$ en $B \in \mathbb{R}^m$.
 \subsubsection*{Te Bewijzen}
 \[
@@ -102,7 +104,7 @@ Rechtstreeks bewijs\\
 Als $B=0$ dan is $X$ een lineaire combinatie van de rijen van $A$. De verzameling van alle mogelijke $X$en is dus een deelruimte van $\mathbb{R}^n$.
 \end{proof}
 
-\subsection{oef 13}
+\subsection{Oefening 13}
 Een basis is vrij en voortbrengend.
 \[
 D = \{1,X,X^2,...,X^n,...\}
@@ -132,7 +134,7 @@ Informeel gezegd staat hier dat er geen lineaire combinatie van $D$ bestaat die 
 Dit kan enkel waar zijn als $v$ een term heeft met een graad waarvan er geen in $D$ zit. Dit kan niet, omdat er voor elke $n$ een zuivere term van graad $n$ in $D$ zit.
 \end{proof}
 
-\subsection{oef 14}
+\subsection{Oefening 14}
 Zij $V$ een vectorruimte en $\beta \in V$ een eindige deelverzameling van $V$.
 \subsubsection*{Te bewijzen}
 As elke vector uit $V$ op een unieke manier geschreven kan worden als een lineaire combinatie van vectoren in $\beta$, dan is $\beta$ een basis van $V$.
@@ -149,7 +151,7 @@ TODO\\
 TODO
 \end{proof}
 
-\subsection{oef 15}
+\subsection{Oefening 15}
 In de informatietheorie bestaat er zoiets als een binaire ring.
 \[
 V = \{0,1\}
@@ -161,4 +163,5 @@ Dee optelling en de scalaire vermenigvuldiging zijn als volgt gedefinieerd.
 \[
 (\cdot) = (\wedge)
 \]
+
 \end{document}
