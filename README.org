@@ -1,0 +1,21 @@
+* Lineaire Algebra
+Autheur: Tom Sydney Kerckhove
+
+** Dankwoord
+*** Medewerkers
+**** Ward Shodts
+     Bedankt voor het idee, de fijne samenwerking en de oplossingen.
+**** Frederik Goovaerts
+     Bedankt voor de hulp in verband met de licentie en de oplossingen.
+**** Andere medewerkers
+     Bedankt voor de hulp met de oplossingen.
+     - Thomas Dierckx 
+     - Nicholas Haesen
+     - Egon Okerman
+     - Jorik De Waen
+*** De Student
+    Dank bij voorbaat om de algemene voorwaarden en de licentie na te leven.
+
+** Algemene voorwaarden
+   Zoals beschreven in de licentie mag de broncode van het boek verspreid worden, maar *er mag onder geen enkele voorwaarde een gecompileerde versie verspreid worden.*
+   Als aan deze voorwaarde niet wordt voldaan zal de broncode opnieuw prive gemaakt worden.
