@@ -19,45 +19,7 @@
 *** TODO Extra oefening hoofdstuk 2
 *** TODO Opdracht 2.14 p 65
 
-* DELEGATED Hoofdstuk 3
-  CLOSED: [2013-11-18 Mon 15:08] DEADLINE: <2013-11-05 Die>
-** ISSUE Bewijzen
-*** DONE Lemma 3.7 p 93
-    CLOSED: [2013-11-30 Sat 12:44]
-*** DONE Lemma 3.8 p 93
-    CLOSED: [2013-11-30 Sat 13:37]
-*** DONE Stelling 3.11 p 94
-    CLOSED: [2013-12-01 Sun 09:28]
-*** ISSUE Propositie 3.14 p 96
-*** ISSUE Propositie 3.22 p 99
-*** DONE Propositie 3.26 p 101
-    CLOSED: [2013-12-02 Mon 09:56]
-*** ISSUE Stelling 3.32 p 104
-*** DONE Gevolg 3.33 p 105
-    CLOSED: [2013-12-03 Tue 11:39]
-*** DONE Gevolg 3.34 p 105
-    CLOSED: [2013-12-03 Tue 11:51]
-*** DONE Stelling 3.37 p 107
-    CLOSED: [2013-12-03 Tue 12:34]
-*** DONE Eigenschap 3.40p 108
-    CLOSED: [2013-12-03 Tue 12:58]
-*** DONE Stelling 3.41 p 109
-    CLOSED: [2013-12-03 Tue 13:17]
-*** DONE Stelling 3.42 p 109
-    CLOSED: [2013-12-03 Tue 13:48]
-*** DONE Stelling 3.43 p 110
-    CLOSED: [2013-12-03 Tue 16:22]
-*** DONE Stelling 3.45 p 111
-    CLOSED: [2013-12-03 Tue 16:22]
-*** DONE Stelling 3.52 p 115
-    CLOSED: [2013-12-03 Tue 16:22]
-*** DONE Stelling 3.56 p 116
-    CLOSED: [2013-12-03 Tue 16:22]
-*** ISSUE Stelling 3.60 p 119
-*** DONE Stelling 3.61 p 120
-    CLOSED: [2013-12-04 Wed 13:40]
-** DELEGATED Oefeningen
-   CLOSED: [2013-11-19 Tue 23:28]
+
 *** DELEGATED Voorbereiding
     CLOSED: [2013-11-19 Tue 23:28]
     - [ ] p92 5. Bewijs: fokdiekul
@@ -125,7 +87,7 @@
      - [ ] d egonny     
    - [-] 2 
      - [X] a NorfairKing
-     - [ ] c warreee    
+     - [X] c warreee    
      - [X] g fokdiekul  
      - [ ] h egonny     
      - [X] i NorfairKing
