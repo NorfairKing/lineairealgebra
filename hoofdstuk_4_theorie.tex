@@ -444,7 +444,8 @@ Zie de eigenschappen van de matrixvermenigvuldiging in hoofdstuk 1 om te zien wa
 \item Bewijs dat dit een lineaire afbeelding is. In het vorige deel van deze voorbeelden hebben we bewezen dat elke matrix een lineaire afbeelding bepaald. Beschouw de rijvectorn $I$, $V$ en $W$ als rijen van een matrix $A$ dan is $A$ de matrix die de beschreven lineaire afbeelding bepaalt.
 
 \item Bewijs dat $\Delta$ een lineare afbeelding is.
-TODO BEWIJS
+%TODO BEWIJS
+
 \end{enumerate}
 \subsection{Propositie 4.10 p 141}
 Zij $(\mathbb{R},v,+)$ en $(\mathbb{R},W,+)$ vectorruimten. Zij $f$ en $g$ lineaire afbeeldingen $V\rightarrow W$.
@@ -452,9 +453,12 @@ Zij $(\mathbb{R},v,+)$ en $(\mathbb{R},W,+)$ vectorruimten. Zij $f$ en $g$ linea
 \begin{enumerate}
 \item De volgende afbeelding is lineair.
 \[f+g: V \rightarrow W: v\mapsto(f+g)(v)=f(v)+g(v)\]
+
 \item De volgende afbeelding is eveneens lineair.
 \[\lambda f: V\rightarrow W: v\mapsto (\lambda f)(v) = \lambda f(v)\]
+
 \item De verzameling van alle lineaire afbeeldingen van $V$ naar $W$ is een lineaire afbeelding.
+
 \end{enumerate}
 \subsubsection*{Bewijs}
 \begin{proof}
@@ -473,6 +477,7 @@ Dit is precies wat nodig is voor lineariteit.
 \[
 \lambda_1(f+g)(v_1)+\lambda_2(f+g)(v_2)
 \]
+
 \item
 We veri\"eren de lineariteit van deze afbeelding.
 \[
@@ -483,8 +488,10 @@ De volgende gelijkheid geldt door de lineariteit van $f$.
 =  f(\lambda_1\lambda v_1+\lambda_2\lambda v_2) = \lambda_1\lambda f(v_1)+\lambda_2\lambda f(v_2) = 
 \lambda_1(\lambda f)(v_1)+\lambda_2(\lambda f)(v_2)
 \]
+
 \item
-TODO ga alle axioma's na.
+De verzameling van alle lineaire afbeelding is een deelverzameling van alle afbeeldingen (wat een vectorruimte is.). De verzameling van alle lineaire afbeeldingen bevat de nulafbeelding (nulvector) en is intern \footnote{Zie Stelling 4.13 p 142}.
+
 \end{enumerate}
 \end{proof}
 

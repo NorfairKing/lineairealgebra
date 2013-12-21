@@ -45,11 +45,9 @@
 *** TODO Opdracht 3.55 p 116
 *** TODO Opdracht 3.64 p 123
 
+*** TODO Voorbeeld 4.4  p 131
 * DELEGATED Hoofdstuk 4
   CLOSED: [2013-12-15 Sun 11:13] DEADLINE: <2013-11-26 Die>
-** ISSUE Bewijzen
-*** TODO Voorbeeld  4.4  p 131
-*** TODO Propositie 4.10 p 141
 ** DELEGATED Oefeningen
    CLOSED: [2013-12-15 Sun 11:12]
 *** DELEGATED Voorbereiding
