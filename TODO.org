@@ -48,31 +48,8 @@
 * DELEGATED Hoofdstuk 4
   CLOSED: [2013-12-15 Sun 11:13] DEADLINE: <2013-11-26 Die>
 ** ISSUE Bewijzen
-*** DONE Lemma      4.2  p 130
-    CLOSED: [2013-12-04 Wed 13:47]
-5*** DONE Gevolg     4.3  p 130
-    CLOSED: [2013-12-04 Wed 15:01]
 *** TODO Voorbeeld  4.4  p 131
 *** TODO Propositie 4.10 p 141
-*** ISSUE Stelling   4.12 p 142
-*** DONE Stelling   4.13 p 142
-    CLOSED: [2013-12-05 Thu 17:33]
-*** DONE Stelling   4.16 p 145
-    CLOSED: [2013-12-05 Thu 17:48]
-*** DONE Propositie 4.27 p 155
-    CLOSED: [2013-12-06 Fri 17:58]
-*** DONE Stelling   4.29 p 156
-    CLOSED: [2013-12-06 Fri 18:14]
-*** DONE Stelling   4.31 p 157
-    CLOSED: [2013-12-06 Fri 18:44]
-*** ISSUE Stelling   4.43 p 159
-*** DONE Gevolg     4.35 p 159
-    CLOSED: [2013-12-07 Sat 12:33]
-*** ISSUE Gevolg     4.39 p 160
-*** DONE Stelling   4.40 p 161 
-    CLOSED: [2013-12-07 Sat 13:37]
-*** DONE Stelling   4.43 p 164
-    CLOSED: [2013-12-11 Wed 11:32]
 ** DELEGATED Oefeningen
    CLOSED: [2013-12-15 Sun 11:12]
 *** DELEGATED Voorbereiding
