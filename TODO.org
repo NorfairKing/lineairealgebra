@@ -18,69 +18,20 @@
 *** TODO Oefening 2.28 p 83
 *** TODO Extra oefening hoofdstuk 2
 *** TODO Opdracht 2.14 p 65
-
-*** DELEGATED Voorbereiding
-    CLOSED: [2013-11-19 Tue 23:28]
-      Veeltermen van graad precies n vormen geen vectorruimte.
-    - [X] p93 Bewijs Lemma 3.7 warreee
-    - [X] p93 Bewijs Lemma 3.8 puntje 3 fokdiekul
-    - [X] Opdracht 3.21 warreee
-    - [?] Opdracht 3.24 fokdiekul
-    - [X] 2 
-      - [X] b egonny
-      - [X] d egonny
-      - [X] e fokdiekul
-      - [X] f NorfairKing
-      - [X] j NorfairKing
-      - [X] l egonny
-    - [X] 5 NorfairKing
-    - [X] 7 warreee
-    - [X] 12 warreee
-    - [X] 13 warreee
-    - [X] 19
-      - [X] b egonny
-    - [X] 26 egonny
-*** DELEGATED In Oefenzitting
-    CLOSED: [2013-11-19 Tue 23:27]
-   - [X] 1 NorfairKing
-     - [X] b NorfairKing
-   - [X] 3 egonny
-   - [X] 4 fokdiekul
-   - [X] 6 NorfairKing
-   - [X] 8 egonny
-   - [X] 9 warreee
-   - [ ] 10 warreee
-   - [ ] 11 huistaak
-   - [X] 14 MajorMonodon 
-   - [ ] 15 huistaak
-   - [X] 17 
-     - [X] b warreee
-   - [ ] 21 egonny
-   - [ ] 22
-     - [ ] b jdewaen
-   - [X] 25 fokdiekul
-   - [-] 27
-     - [X] a warreee
-     - [X] b egonny
-     - [X] c NorfairKing
-     - [X] d egonny
-     - [ ] e fokdiekul
-     - [ ] f warreee
-   - [ ] 29 warreee
-   - [X] 30 fokdiekul
-   - [?] 32 NorfairKing
-   - extra, in oefenzitting
-     - [X] 1
-       - [X] 1 warreee
-       - [X] 2 fokdiekul
-       - [X] 3 NorfairKing
-       - [X] 4 egonny 
-     - [ ] 2 egonny
-     - [X] 4 fokdiekul
+*** TODO Oefening 3.10 p 125
+*** TODO Oefening 3.11 p 125
+*** TODO Oefening 3.15 p 125
+*** TODO Oefening 3.21 p 126
+*** TODO Oefening 3.22 p 126
+*** TODO Oefening 3.27.e p 127
+*** TODO Oefening 3.27.f p 127
+*** TODO Oefening 3.29 p 128
+*** TODO Oefening 3.32 p 128
+*** TODO Opdracht 3.24 p 100
 *** DELEGATED Extra
     CLOSED: [2013-11-19 Tue 23:27]
    - [-] 1 
-     - [ ] a warreee    
+     - [X] a warreee    
      - [X] c fokdiekul  
      - [ ] d egonny     
    - [-] 2 
@@ -99,9 +50,6 @@
    - [-] 19 
      - [ ] a egonny     
      - [X] c NorfairKing
-   - [ ] 22 
-     - [ ] a warreee    
-     - [ ] c egonny     
    - [X] 23 NorfairKing
    - [ ] 24 fokdiekul  
    - [ ] 26 warreee    
