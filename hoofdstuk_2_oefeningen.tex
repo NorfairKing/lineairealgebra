@@ -470,6 +470,86 @@ Stel dat het klopt voor $F_{n-1}$\\
 Te Bewijzen: het klopt voor $F_{n}$\\
 Dit kunnen we doen door de uitleg die eerder gegeven werd.
 
+\subsection{Oefening 10}
+\[
+d_n =
+\begin{vmatrix}
+2 & 1 & 0 & 0 & \cdots & 0 & 0 \\
+1 & 2 & 1 & 0 & \cdots & 0 & 0 \\
+0 & 1 & 2 & 1 & \cdots & 0 & 0 \\
+0 & 0 & 1 & 2 & \cdots & 0 & 0 \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots\\
+0 & 0 & 0 & 0 & \cdots & 2 & 1 \\
+0 & 0 & 0 & 0 & \cdots & 1 & 2 \\
+\end{vmatrix}
+=
+2 \cdot d_{n-1} - d_{n-2}
+\]
+Ontwikkel naar de eerste rij/kolom.
+We berekenen nu nog de eerste paar $d_i$ manueel.
+\[
+d_1
+=
+\begin{vmatrix}
+2
+\end{vmatrix} = 2
+\]
+\[
+d_2
+=
+\begin{vmatrix}
+2 & 1\\
+1 & 2
+\end{vmatrix} = 3
+\]
+\[
+d_3
+=
+\begin{vmatrix}
+2 & 1 & 0\\
+1 & 2 & 1\\
+0 & 1 & 2
+\end{vmatrix}
+= 2 
+\begin{vmatrix}
+2 & 1\\
+1 & 2
+\end{vmatrix}
+-
+\begin{vmatrix}
+2
+\end{vmatrix}
+=
+6 - 2 = 4
+\]
+\[
+d_4 = 2 d_3 - d_2 = 8 - 3 = 5
+\]
+\[
+d_5 = 2 d_4 - d_3 = 10-4 = 6
+\]
+\[
+d_6 = 2 d_5 - d_4 = 10-4 = 7
+\]
+Het ziet er naar uit dat er een eenvoudige manier is om $d_n$ te formuleren.
+\[
+d_n = n+1
+\]
+\begin{proof}
+Bewijs door inductie op $n$.\\
+We hebben al berekend dat $d_1 = 2$ en $d_2 =3$ gelden. De bewering geldt dus voor $n=1$ en $n=2$.
+\subsubsection*{Stap 1 (basis stap)}
+De bewering gelt voor $n=2$ (gegeven) en $n=3$.
+\[
+d_3 = 2*d_2 - d_1 = 6 - 2 = 4 = 3+1
+\]
+\subsubsection*{Stap 2 (inductie stap)}
+Stel dat de bewering geldt voor een bepaalde $n=k$ en $n=k-1$, dan bewijzen we nu dat ze zal gelden voor $n=k+1$.
+\[
+d_{k+1} = 2* d_{k} - d_{k-1} = 2*(k+1) - ((k-1)+1) = 2k+2-k = k+2
+\]
+\end{proof}
+
 \subsection{Oefening 11}
 \subsubsection*{a)}
 Waar: We kunnen de determinant van de matrix bepalen door er een bovendriehoeksmatrix van te maken en dan de elementen op de diagonaal te vermenigvuldigen. Dit kunnen we doen door zowel van A als D een bovendriehoeksmatrix te maken. Als we dit doen worden enkel de elementen van respectievelijk A en D aangepast (alle nullen blijven) dus de determinant is gelijk aan de det(A). det(B)

@@ -1,82 +1,23 @@
 #+SEQ_TODO: TODO(t) ISSUE(i) | DELEGATED(l) DONE(d)
 
 *** TODO Opdracht 1.33 p 35
-** DELEGATED Oefeningen
-   CLOSED: [2013-10-22 Die 13:24]
-*** DELEGATED In Oefenzitting
-    CLOSED: [2013-10-22 Die 13:24] DEADLINE: <2013-10-20 Son>
-    - [X] 14 NorfairKing (a,b)
-    - [X] 24 egonny
-    - [-] 27 
-      - [X] a warreee
-      - [ ] f fokdiekul 
-      - [X] h NorfairKing 
-      - [X] i egonny      
-      - [X] k MajorMonodon  
-      - [X] l warreee        
-    - [ ] EXTRA fokdiekul (opgave staat in bestand)
-*** DELEGATED Extra
-    CLOSED: [2013-11-26 Tue 06:34]
-    - [-] 1 
-      - [X] b NorfairKing 
-      - [X] c egonny      
-      - [X] d noiseloop   
-      - [ ] e warreee     
-      - [X] g fokdiekul   
-      - [X] i NorfairKing 
-    - [X] 2 egonny      
-    - [ ] 4 
-      - [ ] b warreee     
-      - [X] c fokdiekul   
-    - [X] 5 NorfairKing 
-    - [-] 6 
-      - [X] a noiseloop   
-      - [ ] b warreee     
-      - [X] c fokdiekul   
-    - [X] 7 NorfairKing 
-    - [X] 8 egonny      
-    - [?] 10 noiseloop (Moet nagekeken worden? [ ])
-    - [-] 11 
-      - [X] a fokdiekul   
-      - [X] b NorfairKing 
-      - [X] c egonny      
-    - [X] 12 noiseloop   
-    - [ ] 13 warreee     
-    - [X] 15 fokdiekul   
-    - [-] 16
-      - [ ] a egonny      
-      - [X] b noiseloop   
-      - [ ] c warreee     
-      - [X] d fokdiekul   
-    - [X] 17 NorfairKing 
-    - [ ] 18 egonny      
-    - [ ] 19 
-      - [ ] a warreee     
-      - [X] b fokdiekul   
-    - [-] 20 
-      - [ ] a egonny      
-      - [X] b noiseloop   
-      - [ ] c warreee     
-    - [X] 21 fokdiekul   
-    - [ ] 22 
-      - [ ] a egonny      
-      - [ ] b jdewaen   
-      - [ ] c warreee     
-    - [X] 23 fokdiekul   
-    - [X] 25 NorfairKing 
-    - [ ] 26 egonny      
-    - [-] 27 
-      - [X] c fokdiekul   
-      - [X] d NorfairKing 
-      - [ ] e egonny      
-      - [?] m fokdiekul   
-    - [ ] 28 egonny      
-              
-    DEADLINE: <2013-10-20 Son>
-** DELEGATED Opdrachten 
-   CLOSED: [2013-11-19 Tue 23:28] DEADLINE: <2013-10-20 Son>
-   - [ ] 2.14 - egonny 
-   - [X] 2.16 - warreee
+*** TODO Oefening 2.10 p 80
+*** TODO Oefening 2.13 p 80
+*** TODO Oefening 2.16.a p 81
+*** TODO Oefening 2.16.c p 81
+*** TODO Oefening 2.18 p 81
+*** TODO Oefening 2.19.a p 81
+*** TODO Oefening 2.20.a p 81
+*** TODO Oefening 2.20.c p 81
+*** TODO Oefening 2.22.a p 81
+*** TODO Oefening 2.22.b p 81
+*** TODO Oefening 2.22.c p 81
+*** TODO Oefening 2.26 p 81
+*** TODO Oefening 2.27.f p 83
+*** TODO Oefening 2.27.m p 83
+*** TODO Oefening 2.28 p 83
+*** TODO Extra oefening hoofdstuk 2
+*** TODO Opdracht 2.14 p 65
 
 * DELEGATED Hoofdstuk 3
   CLOSED: [2013-11-18 Mon 15:08] DEADLINE: <2013-11-05 Die>
