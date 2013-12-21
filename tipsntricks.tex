@@ -138,6 +138,83 @@ A = L\cdot U
 Zie 1.6.3 pagina 43 voor een goed voorbeeld.
 %TODO nog een voorbeeld verzinnen
 
+\section{De determinant van een grote matrix berekenen}
+\subsection*{Generiek}
+Stel dat $A \in \mathbb{n\times n}$ de matrix is waarvan we de determinant willen berekenen en $A$ groter is dan $3\times 3$.
+\[
+A = 
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+a_{n1} & a_{n2} & \cdots & a_{nn}\\
+\end{pmatrix}
+\]
+We zullen $det(A)$ berekenen door \'e\'en van of een combinatie van twee methoden.
+\begin{enumerate}
+\item De eerste methode is het ontwikkelen van $A$ naar rijen en/of kolommen tot de nog te berekenen matrices klein genoeg zijn. Een goede tip voor het ontwikkelen is om te ontwikkelen naar de rij/kolom die het meeste nullen bevat.
+
+\item Som kunnen we $A$ rij reduceren naar een makkelijker te ontwikkelen matrix.
+In deze methode moeten we goed opletten dat we de juiste co\"effici\"enten niet voor de determinant vergeten te zetten indien nodig.\\\\
+\end{enumerate}
+De ideale werkwijze is een combinatie van de twee methoden.
+Idealiter reduceren we de matrix tot een driehoeksmatrix zodat de determinant het product van de elementen op de hoofddiagonaal is.
+
+\subsection*{Voorbeeld}
+We zoeken de volgende determinant.
+\[
+det(A) =
+\begin{vmatrix}
+5 & 0 & 0 & 0 & 0\\
+1 & 4 & 3 & 2 & 0\\
+2 & 0 & 1 & 2 & 3\\
+0 & 0 & 4 & 5 & 6\\
+0 & 0 & 7 & 8 & 9
+\end{vmatrix}
+\]
+We zullen niet zomaar ontwikkelen maar het net iets intelligenter aanpakken.\\
+Op de eerste rij zien we dat er slechts \'e\'en niet nul element staat. Ontwikkelen naar deze rij zal dus makkelijk zijn.
+\[
+=
+5
+\cdot
+\begin{vmatrix}
+4 & 3 & 2 & 0\\
+0 & 1 & 2 & 3\\
+0 & 4 & 5 & 6\\
+0 & 7 & 8 & 9
+\end{vmatrix}
+\]
+Nu zien we in de eerste kolom opnieuw maar \'e\'en element staan dat niet nul is. We ontwikkelen naar deze kolom.
+\[
+=
+5
+\cdot
+4
+\cdot
+\begin{vmatrix}
+1 & 2 & 3\\
+4 & 5 & 6\\
+7 & 8 & 9
+\end{vmatrix}
+\]
+De matrix waarvan we determinant nog niet kennen zullen we nu rij reduceren.
+\[
+=
+5
+\cdot
+4
+\cdot
+\begin{vmatrix}
+1 & 2 & 3\\
+0 & -3 & -6\\
+0 & -6 & -12
+\end{vmatrix}
+\]
+We zien nu al dat de derde kolom een veelvoud is van de tweede kolom.
+De gezochtte determinant is dus $det(A) = 0$.\\\\
+Merk op dat deze werkwijze veel sneller is dan domweg ontwikkelen naar willekeurige rijen/kolommen.
+
 \section{Een vrije deelverzameling uitbreiden tot een basis}
 Stel dat $D = \{v_1,v_2,...,v_k\}$ de vrije verzameling is die we willen uitbreiden tot een basis van een vectorruimte $(\mathbb{R},V,+)$ van dimensie $n$ ($k\le n$).
 \begin{enumerate}
@@ -218,7 +295,6 @@ Id_\alpha^\beta =
 \end{array}
 \right)
 \]
-
 
 \section{Matrixvoorstelling van lineaire afbeelding ten opzichte van de standaardbasissen}
 Zij $L:V\rightarrow W$ een lineaire afbeelding van de $n$-dimensionale vectorruimte $(\mathbb{R},V,+)$ naar de $m$-dimensionale vectorruimte $(\mathbb{R},W,+)$. Willen we nu de matrixvoorstelling van $L$ ten opzichte van de standaard basissen $\epsilon_V$ en $\epsilon_W$.
