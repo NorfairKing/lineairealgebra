@@ -41,7 +41,6 @@
 *** TODO Oefening 3.2.h p 123
 *** TODO Oefening 3.2.k p 123
 *** TODO Oefening 3.2.m p 123
-*** TODO Opdracht 3.17 p 97
 *** TODO Opdracht 3.23 p 100
 *** TODO Opdracht 3.24 p 100
 *** TODO Opdracht 3.29 p 103

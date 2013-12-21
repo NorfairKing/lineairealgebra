@@ -1128,7 +1128,23 @@ vct\{f_1,f_2,f_3\} = \mathbb{R}[X]_{n\le 2}
 \end{enumerate}
 
 \subsection{Opdracht 3.18 p 98}
+Zij $(\mathbb{R},V,+)$ een vectorruimte. Zij $D$ een  van $V$ en $U_i$ deelruimten van $V$ die $D$ omvatten.
 
+\subsubsection*{Te Bewijzen}
+\[
+vct(D) = \bigcap_{i}U_i
+\]
+\subsubsection*{Bewijs}
+\begin{proof}
+Direct bewijs.\\
+Elke deelruimte $U_i$ moet minstens elke lineaire combinatie van de vectoren in $D$ bevatten.
+De kleinste deelruimte $U_i$ die $D$ omvat is precies $vct(D)$. Hiervoor geldt dan $U_i = vct(D)$.
+Voor elke $U_i$ geldt dus het volgende.
+\[
+U_i \subseteq vct(D)
+\]
+Dit houdt precies in dat $vct(D) = \cap_iU_i$ geldt.
+\end{proof}
 
 \subsection{Opdracht 3.21 p 99}
 Om aan te tonen dat $U_1 + U_2$ deelruimten zijn van $V$ dan moeten we de drie eigenschappen van een deelruimte aantonen:
