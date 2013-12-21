@@ -19,10 +19,8 @@
 *** TODO Extra oefening hoofdstuk 2
 *** TODO Opdracht 2.14 p 65
 
-
 *** DELEGATED Voorbereiding
     CLOSED: [2013-11-19 Tue 23:28]
-    - [ ] p92 5. Bewijs: fokdiekul
       Veeltermen van graad precies n vormen geen vectorruimte.
     - [X] p93 Bewijs Lemma 3.7 warreee
     - [X] p93 Bewijs Lemma 3.8 puntje 3 fokdiekul
