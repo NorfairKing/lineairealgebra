@@ -911,10 +911,24 @@ Dit houdt precies in dat $L$ orthogonaal is.
 \end{proof}
 
 \subsection{Propositie 6.62 p 255}
+Zij $L$ een symmetrische lineaire transformativ van een inproductruimte $(\mathbb{R},V,+,\langle \cdot,\cdot \rangle)$.
 \subsubsection*{Te Bewijzen}
+Eigenvectoren bij verschillende eigenwaarden van $L$ zijn orthogonaal.
 \subsubsection*{Bewijs}
 \begin{proof}
-
+Bewijs door gefoefel.\\
+Zij $v$ en $w$ eigenvectoren die respectievelijk bij verschillende eigenwaarden $\lambda$ en $\mu$ horen van $L$.
+\[
+\lambda \langle v,w \rangle = \langle \lambda v,w \rangle = \langle L(v),w \rangle = \langle v,L(w) \rangle = \langle v,\mu w \rangle = \mu \langle v,w \rangle
+\]
+Samengevat staat hierboven het volgende.
+\[
+\lambda \langle v,w \rangle =\mu \langle v,w \rangle
+\]
+\[
+\lambda = \mu \vee \langle v,w \rangle = 0
+\]
+We hebben aangenomen dat $\lambda$ en $\mu$ verschillende eigenwaarden zijn dus moeten $v$ en $w$ orthogonaal zijn.
 \end{proof}
 
 \subsection{Stelling 6.64 p 255}
