@@ -417,7 +417,7 @@ Kies willekeurige $\lambda_1, \lambda_2 \in \mathbb{R}$ en $v_1,v_2 \in \mathbb{
 \[
 S(\lambda_1v_1+\lambda_2v_2)
 = S(\lambda_1v_1)+S(\lambda_2v_2)
-= \lambda_1 S v_1+\lambda_2Sv_2)
+= \lambda_1 S (v_1)+\lambda_2S(v_2)
 \]
 Dit geldt door de lineairiteit van de linkse vermenigvuldiging met een matrix van de juiste afmetingen \footnote{Zie Eigenschap 1.19 p 29.} \footnote{Zie Eigenschappen 1.22 p 31}.
 \end{proof}
@@ -425,8 +425,22 @@ Dit geldt door de lineairiteit van de linkse vermenigvuldiging met een matrix va
 Zij $X$ de vector die voorstelt hoeveel klanten er van elk merk zijn.
 $A\cdot X$ is dan diezelfde vector na \'e\'en jaar. $A^n\cdot X$ is de verwachtte vector na $n$ jaar.
 
-\item Elke matrix bepaalt een lineaire afbeelding.
-TODO BEWIJS.
+\item 
+\emph{Te Bewijzen}\\
+Elke matrix $A \in \mathbb{R}^{m\times n}$ bepaalt een lineaire afbeelding.
+\emph{Bewijs}\\
+\begin{proof}
+Dit is een vrij belangrijk maar eenvoudig bewijs.\\
+Kies willekeurige $\lambda_1, \lambda_2 \in \mathbb{R}$ en $v_1,v_2 \in \mathbb{R}^3$:
+\[
+L(\lambda_1v_1+\lambda_2v_2) = A(\lambda_1v_1+\lambda_2v_2) = A(\lambda_1v_1)+A(\lambda_2v_2)
+\]
+\[
+ = \lambda_1A(v_1)+\lambda_2A(v_2) =\lambda_1 L(v_1)+\lambda_2L(v_2)
+\]
+Zie de eigenschappen van de matrixvermenigvuldiging in hoofdstuk 1 om te zien waarom dit geldt.
+\end{proof}
+
 \item Bewijs dat dit een lineaire afbeelding is.
 TODO BEWIJS
 \item Bewijs dat $\Delta$ een lineare afbeelding is.
