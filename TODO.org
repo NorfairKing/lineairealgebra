@@ -28,9 +28,9 @@
     - [X] p93 Bewijs Lemma 3.8 puntje 3 fokdiekul
     - [X] Opdracht 3.21 warreee
     - [?] Opdracht 3.24 fokdiekul
-    - [-] 2 
+    - [X] 2 
       - [X] b egonny
-      - [ ] d egonny
+      - [X] d egonny
       - [X] e fokdiekul
       - [X] f NorfairKing
       - [X] j NorfairKing
