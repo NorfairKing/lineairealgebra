@@ -906,8 +906,8 @@ Omdat $A$ orthogonaal is geldt de volgende gelijkheid.
  = X_v^{T}\cdot A^{-1} \cdot A \cdot X_{w} = X_v^T \cdot X_w  = \langle v,w \rangle
 \]
 Dit houdt precies in dat $L$ orthogonaal is.
-
 \end{itemize}
+%TODO waar is hier gebruikt dat de gegeven basis orthonormaal is?
 \end{proof}
 
 \subsection{Propositie 6.62 p 255}
@@ -932,10 +932,49 @@ We hebben aangenomen dat $\lambda$ en $\mu$ verschillende eigenwaarden zijn dus 
 \end{proof}
 
 \subsection{Stelling 6.64 p 255}
+Zij $(\mathbb{R},V,+,\langle \cdot,\cdot \rangle)$ een $n$-dimensionale inproductruimte en $L$ een lineaire transformatie van $V$ met matrix $A$ ten opzichte van een orthonormale basis $\beta$ van $V$.
+
 \subsubsection*{Te Bewijzen}
+\begin{center}
+$L$ is symmetrisch $\Leftrightarrow$ $A$ is symmetrisch.
+\end{center}
+
 \subsubsection*{Bewijs}
 \begin{proof}
+Bewijs van een equivalentie.\\
+\begin{itemize}
+\item $\Rightarrow$\\
+We gebruiken de definitie van symmetrie van een lineaire transformatie \footnote{Zie Definitie 6.61 p 255.}.
+Kies willekeurige $v,w \in V$. Zij $X_v$ de co\"ordinaatvector van $v$ ten opzichte van $\beta$.
+\[
+\langle L(v),w \rangle = \langle v,L(w)\rangle
+\]
+\[
+X_{L(v)}^T \cdot X_w = X_v^T \cdot X_{L(w)}
+\]
+\[
+(A \cdot X_v)^T \cdot X_w = X_v^T \cdot A X_w
+\]
+\[
+ X_v^T \cdot A^T \cdot X_w = X_v^T \cdot A X_w
+\]
+Dit kan enkel kloppen als $A^T = A$ geldt en dat houdt precies in dat $A$ symmetrisch is.
 
+\item $\Leftarrow$\\
+Als $A$ symmetrisch is geldt $A = A^T$. Kies willekeurige $v,w \in V$. Zij $X_v$ de co\"ordinaatvector van $v$ ten opzichte van $\beta$.
+\[
+\langle L(v),w \rangle = X_{L(v)}^T \cdot X_w = (A \cdot X_v)^T \cdot X_w =  X_v^T \cdot A^T \cdot X_w 
+\]
+We gebruiken nu dat $A$ symmetrisch is.
+\[
+=  X_v^T \cdot A \cdot X_w = X_v^T \cdot A X_w = X_v^T \cdot X_{L(w)} = \langle v,L(w)\rangle
+\]
+Samengevat staat hierboven het volgende.
+\[
+\langle L(v),w \rangle = \langle v,L(w)\rangle
+\]
+Dit houdt precies in dat $L$ symmetrisch is.
+\end{itemize}
 \end{proof}
 
 \subsection{Stelling 6.68 p 259}
