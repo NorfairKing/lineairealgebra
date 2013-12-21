@@ -84,6 +84,45 @@ Dit is enkel een overzicht van de mogelijkheden. Niet elke optie is altijd mogel
 
 
 \chapter{Handige algoritmes}
+\section{Een stelsel met parameter(s) oplossen}
+\subsection*{Generiek}
+Stel dat we de oplossingen van het volgende stelsel moeten vinden voor elke mogelijk $a \in \mathbb{R}$.
+\[
+\left\{
+\begin{array}{c c c c c c c c c}
+c_{11}x_1 &+& c_{12}x_2 &+& \cdots &-& c_{1n} &=& 0\\
+c_{21}x_1 &+& c_{22}x_2 &+& \cdots &-& c_{2n} &=& 0\\
+\vdots && \vdots && \ddots && \vdots && \vdots\\
+c_{m1}x_1 &+& c_{m2}x_2 &+& \cdots &-& c_{mn} &=& 0\\
+\end{array}
+\right.
+\]
+De idee is om de matrix op te stellen die overeenkomt met dit stelsel en deze te reduceren tot we de oplossingen kunnen aflezen.
+(Dit hoeft geen volledige rijreductie te zijn. Een echelonvorm is vaak ook al handig.)
+Hierbij zullen we vaak een gevalonderscheid moeten maken voor de parameters.
+We proberen echt zo lang mogelijk geen gevalonderscheid te maken.
+\[
+\begin{pmatrix}
+c_{11} &c_{12} & \cdots & c_{1n}\\
+c_{21} & c_{22} & \cdots & c_{2n}\\
+\vdots & \vdots & \ddots & \vdots \\
+c_{m1} & c_{m2} & \cdots & c_{mn}\\
+\end{pmatrix}
+\rightarrow
+\left(
+\begin{array}{c c c c | c}
+1 & 0 & \cdots & 0 & o_1\\
+0 & 1 & \cdots & 0 & o_2\\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & 1 & o_n\\
+\end{array}
+\right)
+\]
+
+\subsection*{Voorbeeld}
+Zie pagina $1.12$ voor een goed voorbeeld.
+%TODO nog een voorbeeld verzinnen.
+
 \section{Een vrije deelverzameling uitbreiden tot een basis}
 Stel dat $D = \{v_1,v_2,...,v_k\}$ de vrije verzameling is die we willen uitbreiden tot een basis van een vectorruimte $(\mathbb{R},V,+)$ van dimensie $n$ ($k\le n$).
 \begin{enumerate}

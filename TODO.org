@@ -132,46 +132,6 @@
     - [ ] 11 fokdiekul
     - [X] 17 MajorMonodon
     - [ ] 18 jdewaen
-** TODO Bewijzen
-*** DONE Stelling 5.2 p 117
-    CLOSED: [2013-12-15 Sun 08:55]
-*** DONE Voorbeeld 5.4 
-    CLOSED: [2013-12-15 Sun 08:55]
-**** TODO (1) vind zelf de tweede eigenvector
-**** TODO (5) Bepaal zelf de eigenwaarden
-**** TODO (5) Bewijs dat elke eigevector van S ook van de vorm cv_\mu is
-*** DONE Stelling 5.7 p 181
-    CLOSED: [2013-12-15 Sun 08:55]
-*** DONE Stelling 5.8 p 182
-    CLOSED: [2013-12-15 Sun 08:55]
-*** DONE Stelling 5.16 p 189
-    CLOSED: [2013-12-15 Sun 08:55]
-*** DONE Stelling 5.18 p 190
-    CLOSED: [2013-12-15 Sun 08:55]
-*** DONE Gevolg 5.20 p 191
-    CLOSED: [2013-12-15 Sun 08:55]
-*** DONE Lemma 5.22 p 192
-    CLOSED: [2013-12-15 Sun 08:55]
-*** DONE Stelling 5.23 p 192
-    CLOSED: [2013-12-15 Sun 08:55]
-*** DONE Propositie 5.25 p 194
-    CLOSED: [2013-12-15 Sun 08:55]
-*** DONE Stelling 5.28 p 203
-    CLOSED: [2013-12-15 Sun 08:55]
-*** DONE Stelling 5.31 p 205
-    CLOSED: [2013-12-15 Sun 08:55]
-*** DONE Propositie 5.32 p 205
-    CLOSED: [2013-12-15 Sun 08:55]
-*** DONE Eigenschap 5.33 p 205
-    CLOSED: [2013-12-15 Sun 08:56]
-*** DONE Propositie 5.38 p 209
-    CLOSED: [2013-12-15 Sun 08:56]
-*** DONE Gevolg 5.39 p 209
-    CLOSED: [2013-12-15 Sun 08:56]
-*** DONE Propositie 5.40 p 209
-    CLOSED: [2013-12-15 Sun 08:56]
-*** DONE Propositie 5.41 p 210
-    CLOSED: [2013-12-15 Sun 08:56]
 ** TODO Opdrachten
     - [ ] 5.10 p 185
     - [ ] 5.34 p 206
@@ -179,50 +139,12 @@
 * TODO Hoofdstuk 6
   DEADLINE: <2013-12-17 Die>
 ** TODO Bewijzen
-*** DONE Voorbeeld 6.6 p 224
-    CLOSED: [2013-12-16 Mon 04:13]
-*** DONE Voorbeeld 6.7 p 226
-    CLOSED: [2013-12-16 Mon 04:49]
-*** DONE Stelling 6.11 p 228
-    CLOSED: [2013-12-16 Mon 04:49]
-*** DONE Stelling 6.14 p 229
-    CLOSED: [2013-12-16 Mon 05:57]
-*** DONE Definitie 6.16 p 231 (het eerste deel is een stelling, the sneaky bastard)
-    CLOSED: [2013-12-16 Mon 06:08]
-*** DONE Stelling 6.19 p 232
-    CLOSED: [2013-12-16 Mon 06:36]
-*** DONE Opmerking 6.20 tweede puntje
-    CLOSED: [2013-12-16 Mon 06:55]
-*** DONE Stelling 6.23 p 234
-    CLOSED: [2013-12-16 Mon 07:29]
-*** DONE Stelling 6.26 p 236
-    CLOSED: [2013-12-16 Mon 20:05]
-*** DONE Stelling 6.27 p 238
-    CLOSED: [2013-12-16 Mon 20:05]
 *** TODO Voorbeeld 6.28 p 238
-*** DONE Definitie 6.30 controleren of U^top echt een vectorruimte is
-    CLOSED: [2013-12-16 Mon 20:33]
-*** DONE Stelling 6.31 p 240
-    CLOSED: [2013-12-18 Wed 11:52]
-*** DONE Voorbeeld 6.32 p 241
-    CLOSED: [2013-12-18 Wed 12:18]
 *** TODO Definitie 6.33 p 241 Aantonen dat deze afbeelding lineair is
-*** DONE Stelling 6.34 p 242
-    CLOSED: [2013-12-18 Wed 12:51]
-*** DONE Lemma 6.36 p 243
-    CLOSED: [2013-12-18 Wed 13:34]
-*** DONE Lemma 6.38 p 244
-    CLOSED: [2013-12-18 Wed 20:03]
-*** DONE Lemma 6.40 p 245
-    CLOSED: [2013-12-18 Wed 20:03]
 *** TODO Stelling 6.42 p 246
 *** TODO Stelling 6.43 p 246
 *** TODO Stelling 6.46 p 249
 *** TODO Stelling 6.48 p 249
-*** DONE Lemma 6.49 p 249
-    CLOSED: [2013-12-20 Fri 11:13]
-*** DONE Stelling 6.50 p 250
-    CLOSED: [2013-12-20 Fri 12:16]
 *** TODO Stelling 6.52 p 251
 *** TODO Stelling 6.56 p 252
 *** TODO Propositie 6.58 p 253
