@@ -324,9 +324,168 @@ Schrijven we deze lineaire combinaties als rijen in de volgende matrix, dan is d
 \end{pmatrix}
 \]
 
+
 \section{Matrix van een lineaire afbeelding ten opzichte van gegeven basissen}
 \label{matrix_van_lineaire_afbeeldingen_tov_gegeven_basissen}
-TODO
+
+\subsection*{Generiek}
+\subsubsection*{Opgave}
+Zij $L$ een lineaire afbeelding van $V$ naar $W$.
+Zij $\alpha$ een basis van $V$ en $\beta$ een basis van $W$.
+Zij $\epsilon_1$ de standaarbasis van $V$ en $\epsilon_2$ de standaardbasis van $W$.
+Bereken de matrix van $L$ ten opzichte van $\alpha$ en $\beta$.
+\subsubsection*{Oplossing}
+\begin{enumerate}
+\item
+Bereken de matrix $L_{\epsilon_1}^{\epsilon_2}$ ten opzichte van de standaardbasissen door de lineaire combinaties af te lezen uit het voorschrift en deze in de rijen van een matrix te zetten.
+Dit is een $dimV \times dimW$ matrix.
+
+\item
+Bereken de matrices van basisverandering van $\alpha$ naar $\epsilon_1$ en van $\beta$ naar $\epsilon_2$. Bereken ook de inversen ervan indien nodig.
+
+\item
+\end{enumerate}
+
+
+\subsection*{Voorbeeld}
+\subsubsection*{Opgave}
+Zij $L$ een lineaire afbeelding van $\mathbb{R}^{2\times 2}$ naar $\mathbb{R}[X]_{\le 2}$.
+\[
+L:
+\begin{pmatrix}
+a & b\\
+c & d\\
+\end{pmatrix}
+\mapsto
+(a+3b) + (5d+2c)X + (3d-8b)X^2
+\]
+Zij $\alpha$ een basis van $\mathbb{R}^{2\times 2}$ en $\beta$ een basis van $\mathbb{R}[X]_{\le 2}$.
+\[
+\alpha = 
+\left\{ 
+\begin{pmatrix}
+1 & 2\\
+-1 & 2\\
+\end{pmatrix}
+,
+\begin{pmatrix}
+-1 & 0\\
+0 & 0 
+\end{pmatrix}
+,
+\begin{pmatrix}
+1 & 0\\
+0 & 2\\
+\end{pmatrix}
+,
+\begin{pmatrix}
+0 & -5\\
+-4 & 1\\
+\end{pmatrix}
+\right\}
+\]
+\[
+\beta
+=
+\left\{
+(-2) , (X^2-1), (4X)
+\right\}
+\]
+Zij $\epsilon_1$ de standaarbasis van $\mathbb{R}^{2\times 2}$ en $\epsilon_2$ de standaardbasis van $\mathbb{R}[X]_{\le 2}$.
+Bereken de matrix van $L$ ten opzichte van $\alpha$ en $\beta$.
+
+\subsubsection*{Oplossing}
+We zullen eerst de matrix van $L$ berekenen ten opzichte van de standaardbasissen, daarna de matrix van basisverandering van $\epsilon_1$ naar $\alpha$ en de matrix van basisverandering van $\epsilon_2$ naar $\beta$. Ten slotte voegen we deze berekeningen samen om de matrix van $L$ te berekenen ten opzichte van $\alpha$ en $\beta$.
+
+\begin{enumerate}
+\item Matrixvoorstelling opzichte van de standaardbasissen\\
+We lezen de lineaire combinaties van de lineaire afbeelding af in het voorschrift en zetten ze in de rijen van een matrix.
+\[
+L_{\epsilon_1}^{\epsilon_2} = 
+\begin{pmatrix}
+1 & 3 & 0 & 0\\
+0 & 0 & 2 & 5\\
+0 & -8 &0 & 3\\
+\end{pmatrix}
+\]
+
+\item Matrices van basisverandering\\
+We zetten simpelweg de co\"ordinaten van $\alpha$ en $\beta$ ten opzichte van de standaardbasissen $\epsilon_1$ en $\epsilon_2$ in de kolommen van een matrix.
+\[
+Id_{\alpha}^{\epsilon_1} =
+\begin{pmatrix}
+1 & -1 & 1 & 0\\
+2 & 0 & 0 & -5\\
+-1 & 0 & 0 & -4\\
+2 & 0 & 2 & 1\\
+\end{pmatrix}
+\]
+\[
+Id_{\beta}^{\epsilon_2} =
+\begin{pmatrix}
+-2 & -1 & 0\\
+0 & 0 & 4\\
+0 & 1 & 0\\
+\end{pmatrix}
+\]
+Merk op dat $Id_{\epsilon_1}^{\alpha}$ en $Id_{\epsilon_2}^{\beta}$ inverteerbaar zijn, en deze inversen goed van pas zullen komen. Er geldt namelijk het volgende.
+\[
+Id_{\epsilon_1}^{\alpha}
+= (Id_{\alpha}^{\epsilon_1})^{-1}
+=
+\begin{pmatrix}
+0 & \frac{4}{13} & \frac{-5}{13} & 0\\
+-1 & \frac{1}{26} & \frac{1}{13} & \frac{1}{2}\\
+0 & \frac{-7}{26} & \frac{6}{13} & \frac{1}{2}\\
+0 & \frac{-1}{13} & \frac{-2}{13} &0
+\end{pmatrix}
+\]
+\[
+Id_{\epsilon_2}^{\beta}
+= (Id_{\beta}^{\epsilon_2})^{-1}
+= 
+\begin{pmatrix}
+\frac{-1}{2} & 0 & \frac{-1}{2}\\
+0 & 0 & 1\\
+0 & \frac{1}{4} & 0
+\end{pmatrix}
+\]
+
+\item
+We voegen nu de berekeningen samen om $L_{\alpha}^{\beta}$ te bekomen. (Let goed op de indices, ze kunnen als hulpmiddel dienen.)
+\[
+L_{\alpha}^{\beta}
+= Id_{\epsilon_2}^{\beta} \cdot L_{\epsilon_1}^{\epsilon_2} \cdot Id_{\alpha}^{\epsilon_1} 
+= (Id_{\beta}^{\epsilon_2})^{-1} \cdot L_{\epsilon_1}^{\epsilon_2} \cdot Id_{\alpha}^{\epsilon_1} 
+\]
+\[
+L_{\alpha}^{\beta} = 
+\begin{pmatrix}
+\frac{-1}{2} & 0 & \frac{-1}{2}\\
+0 & 0 & 1\\
+0 & \frac{1}{4} & 0
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+1 & 3 & 0 & 0\\
+0 & 0 & 2 & 5\\
+0 & -8 &0 & 3\\
+\end{pmatrix}
+\cdot 
+\begin{pmatrix}
+1 & -1 & 1 & 0\\
+2 & 0 & 0 & -5\\
+-1 & 0 & 0 & -4\\
+2 & 0 & 2 & 1\\
+\end{pmatrix}
+\]
+%TODO uitrekenen
+
+
+\end{enumerate}
+
+
+
 
 \chapter{Handige definities}
 \section{Samenstelling van afbeeldingen}
