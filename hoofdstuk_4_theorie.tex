@@ -467,8 +467,33 @@ Kies willekeurige $\mu_1,\mu_2 \in \mathbb{R}$ en $v_1,v_2 \in V$. Zij $\nu_1,..
 \]
 \end{proof}
 
+\subsection{Opmerking 4.7}
+Zij $(\mathbb{R},V,+)$ een vectorruimte.
+Zij $L_{\alpha}^{\beta} = A$ de matrix van basisverandering van een basis $\alpha$ van $V$ naar een basis $\beta$ van $V$.
+
+\subsubsection*{Te Bewijzen}
+$L_{\alpha}^{\beta}$ is uniek.
+
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs uit het ongerijmde.\\
+Stel dat er nog een matrix $A'$ bestaat die $L$ bepaalt ten opzichte van de gegeven basissen. $(A\neq A)$
+Kies een willekeurige co\"ordinaatvector $X$ van een vector $v\in V$ ten opzichte van $\alpha$. Beschouw $A$ en $A'$ als rijen van kolomvectoren $(a_1,...,a_n)$ en $(a_1',...,a_n')$.
+\[
+A \cdot X = L(X) = A'\cdot X
+\]
+\[
+\sum_{i=1}^na_iX = \sum_{i=1}^na_i'X
+\]
+\[
+A=A'
+\]
+Dit is in contradictie met de aanname dat $A$ en $A'$ verschillend zijn.
+\end{proof}
+
+
 \subsection{Propositie 4.10 p 141}
-Zij $(\mathbb{R},v,+)$ en $(\mathbb{R},W,+)$ vectorruimten. Zij $f$ en $g$ lineaire afbeeldingen $V\rightarrow W$.
+Zij $(\mathbb{R},V,+)$ en $(\mathbb{R},W,+)$ vectorruimten. Zij $f$ en $g$ lineaire afbeeldingen $V\rightarrow W$.
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item De volgende afbeelding is lineair.
