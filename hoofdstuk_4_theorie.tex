@@ -447,6 +447,26 @@ Zie de eigenschappen van de matrixvermenigvuldiging in hoofdstuk 1 om te zien wa
 %TODO BEWIJS
 
 \end{enumerate}
+
+\subsection{Voorbeeld 4.6}
+\subsubsection*{Te Bewijzen}
+De co\"ordinaatafbeelding ten opzichte van elke basis is niet enkel bijectief, maar ook lineair en dus een isomorfisme.
+\subsubsection*{Bewijs}
+\begin{proof}
+Zij $co_{\beta}$ de co\"ordinaatafbeelding van $V$ ten opzichte van een willekeurige basis $\beta = \{e_1,...,e_n\}$.
+Kies willekeurige $\mu_1,\mu_2 \in \mathbb{R}$ en $v_1,v_2 \in V$. Zij $\nu_1,...,\nu_n$ de coordinaten van $\mu_1v_1+\mu_2v_2$ ten opzichte van $\beta$.
+\[
+(\nu_1,...,\nu_n)
+= co_{\beta}(\mu_1v_1+\mu_2v_2)
+= (\mu_1\lambda_{11}+ \mu_2\lambda_{21},...,\mu_1\lambda_{12}+ \mu_2\lambda_{22})
+\]
+\[
+= \mu_1(\lambda_{11},...,\lambda_{12})
++ \mu_2(\lambda_{21},...,\lambda_{22})
+= \mu_1co_{\beta}(v_1)+\mu_2co_{\beta}(v_2)
+\]
+\end{proof}
+
 \subsection{Propositie 4.10 p 141}
 Zij $(\mathbb{R},v,+)$ en $(\mathbb{R},W,+)$ vectorruimten. Zij $f$ en $g$ lineaire afbeeldingen $V\rightarrow W$.
 \subsubsection*{Te Bewijzen}
