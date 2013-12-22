@@ -331,14 +331,17 @@ det(A) = \sum_{i=1}^n(-1)^{i+j}a_{ij}det(M_{ij})
 \[
 det(A) = \sum_{\sigma \in \mathbb{S}_n} a_{1\sigma(1)}a_{2\sigma(2)}...a_{n\sigma(n)}
 \]
-\[
-C_{ij} = (-1)^{i+j}det_{M_{ij}} = \sum_{\sigma \in \mathbb{S}_n,\sigma(i)=j}sgn(\sigma)a_{2\sigma(2)}...a_{n\sigma(n)}
-\]
 \begin{enumerate}
 \item
-
+\[
+= \sum_{i=1}^m a_{ij} (-1)^{i+j}C_{ij}
+= \sum_{i=1}^m a_{ij} det_{M_{ij}}
+\]
 \item
-
+\[
+= \sum_{j=1}^m a_{ij} (-1)^{i+j}C_{ij}
+= \sum_{j=1}^m a_{ij} det_{M_{ij}}
+\]
 \end{enumerate}
 \end{proof}
 
