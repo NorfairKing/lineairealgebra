@@ -6,4 +6,157 @@
 \section{Oefeningen 6.8}
 
 
+\subsection{Oefening 1}
+\subsubsection*{Te Bewijzen}
+\[
+(\mathbb{R},\mathbb{R}^{2\times 2},+,\langle \cdot,\cdot \rangle ) \text{ is een euclidische ruimte}
+\]
+Waarbij het inproduct als volgt gedefinieerd is.
+\[
+\langle A,B \rangle = Tr(A^T\cdot B)
+\]
+
+\subsubsection*{Bewijs}
+Dit is een heel langdradig bewijs, maar het is hier toch eens volledig uitgeschreven bij wijze van voorbeeld.
+\begin{proof}
+$(\mathbb{R},\mathbb{R}^{2\times 2},+,Tr)$ is een eindig dimensionale vectorruimte.
+We moeten dus enkel de eigenschappen van $\langle A,B \rangle = Tr(A^T,B)$ als inproduct nagaan.\\
+Kies willekeurige $V_1,V_2,V, W \in \mathbb{R}^{2\times 2}$ en $\lambda_1,\lambda_2 \in \mathbb{R}^{2\times 2}$.
+
+\begin{itemize}
+\item Lineariteit in de eerste component.\\
+\[
+\langle \lambda_1V_1 + \lambda_2V_2,W \rangle
+= Tr((\lambda_1V_1 + \lambda_2V_2)^T\cdot W)
+= Tr((\lambda_1V_1^T + \lambda_2V_2^T)\cdot W)
+\]
+Bovenstaande gelijkheden gelden omwille van de gegeven definitie en de lineariteit van het transponeren van een matrix \footnote{Zie Eigenschap 1.16 p 28.}.
+Volgende gelijkheid geldt omdat de spoorafbeelding een lineaire afbeelding is \footnote{Zie Voorbeeld 4.4 p 131 9.}.
+\[
+= Tr(\lambda_1V_1^T\cdot W + \lambda_2V_2^T\cdot W)
+= \lambda_1Tr(V_1^T\cdot W) + \lambda_2Tr(V_2^T\cdot W)
+= \lambda_1\langle V_1, W\rangle + \lambda_2\langle V_2, W\rangle
+\]
+Samengevat staat hierboven het volgende, wat precies betekent dat het gegeven inproduct lineair is in de eerste component.
+
+\item Symmetrie\\
+\[
+\langle V,W\rangle = Tr(V^T\cdot W) = Tr(V\cdot W^T) = \langle V,W\rangle
+\]
+
+\item Positief\\
+\[
+\langle V,V\rangle = Tr(V^T\cdot V)
+= \sum_{i=1}^n(V^T\cdot V)_{ii}
+= \sum_{i=1}^n\sum_{j=1}^nV^T_{ij}V_{ji} \ge 0
+\]
+
+\item Definiet\\
+\[
+\langle V,V\rangle
+= 0 \Leftrightarrow V=\vec{0}
+\]
+\begin{itemize}
+\item $\Rightarrow$\\
+\[
+\langle V,V\rangle
+= 0 \Rightarrow \sum_{i=1}^n\sum_{j=1}^nV^T_{ij}V_{ji} = 0 \Rightarrow V = \vec{0}
+\]
+
+\item $\Leftarrow$\\
+\[
+v = \vec{0} \Rightarrow \langle V,V\rangle = \langle \vec{0},\vec{0}\rangle
+= \sum_{i=1}^n\sum_{j=1}^n\vec{0}_{ij}\vec{0}_{ji} = 0
+\]
+
+\end{itemize}
+
+\end{itemize}
+\end{proof}
+\subsubsection*{Extra}
+\[
+\Vert A_1 \Vert 
+= 1
+\]
+\[
+\Vert A_2 \Vert 
+= \sqrt{5}
+\]
+\[
+\Vert A_3 \Vert
+= \sqrt{14}
+\]
+\[
+\Vert A_4 \Vert
+= 2
+\]
+\[
+\langle A_1,A_2 \rangle
+= 2
+\]
+%TODO Inproducten
+\[
+\langle A_1,A_3 \rangle
+=
+\]
+\[
+\langle A_1,A_4 \rangle
+=
+\]
+\[
+\langle A_2,A_3 \rangle
+=
+\]
+\[
+\langle A_2,A_4 \rangle
+=
+\]
+\[
+\langle A_3,A_4 \rangle
+=
+\]
+%TODO hoeken
+\[
+\widehat{A_1,A_2}
+= \arccos\frac{2}{1\cdot \sqrt{5}}
+= \arccos\frac{2\sqrt{5}}{5}
+\]
+\[
+\widehat{A_1,A_3}
+=
+\]
+\[
+\widehat{A_1,A_4}
+=
+\]
+\[
+\widehat{A_2,A_3}
+=
+\]
+\[
+\widehat{A_3,A_4}
+=
+\]
+%TODO afstanden
+\[
+\Vert A_2-A_1 \Vert
+=
+\]
+\[
+\Vert A_3-A_1 \Vert
+=
+\]
+\[
+\Vert A_4-A_1 \Vert
+=
+\]
+\[
+\Vert A_3-A_2 \Vert
+=
+\]
+\[
+\Vert A_4-A_3 \Vert
+=
+\]
+
 \end{document}
