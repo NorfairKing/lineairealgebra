@@ -737,7 +737,7 @@ Hierin is $r$ de rang van de lineaire afbeelding $L$.
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs in woorden.\\
-Omdat $L$ rang $r$ heeft, bestaan er net $r$ dimensies van beelden van $L$. Omdat elke dimensie onafhankelijk is kunnen we $L$ dus voorstellen door een identiteitsmatrix (met nullen errond) mits we de juiste basissen kiezen. De informatie die $L$ beschrijft, zit dan in de basissen, in plaats van in de matrix.
+Omdat $L$ rang $r$ heeft, bestaan er net $r$ dimensies van beelden van $L$. Omdat elke dimensie onafhankelijk is kunnen we $L$ dus voorstellen door een identiteitsmatrix (met nullen errond) mits we de juiste basissen kiezen. De informatie die $L$ beschrijft, zit dan in de basissen, in plaats van in de matrix.+
 \end{proof}
 
 
@@ -765,11 +765,24 @@ Dit volgt meteen uit de definitie van bijectiviteit (Zie \ref{bijectief}).
 \end{proof}
 
 \subsection{Gevolg 4.39 p 160}
+Zij $A \in \mathbb{R}^{m\times n}$ en $B \in \mathbb{R}^{n\times m}$.
+
 \subsubsection*{Te Bewijzen}
+De rang van $AB$ is kleiner of gelijk aan de het minimum van de rang van $A$ en de rang van $B$.
+
 \subsubsection*{Bewijs}
 \begin{proof}
-
+We weten het volgende over matrices en hun kolomruimten \footnote{Zie Stelling 6.61 p 120.}.
+\[
+C(AB) \subset C(A) \text{ en } R(AB) \subset R(B)
+\]
+Dit houdt ook in dat $dimC(AB) \le dimC(A)$ en $dimR(AB) \le dimR(B)$ gelden \footnote{Zie Stelling 4.43 p 110.}. Omdat de kolomrang en de rijrang van $AB$ gelijk zijn geldt nu ook de volgende bewering \footnote{Zie Opmerking 4.38 p 160.}.
+\[
+rang(AB) \le rang(A) \text{ en } rang(AB) \le rang(B)
+\]
+Dit houdt precies in wat er te bewijzen valt.
 \end{proof}
+
 
 \subsection{Stelling 4.40 p 161}
 Zij $A \in \mathbb{R}^{m\times n}$.
