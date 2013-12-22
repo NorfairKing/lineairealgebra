@@ -1,15 +1,34 @@
+% Het document is een boek op A4 papier in recto te printen.
 \documentclass[a4paper,10pt,oneside]{book}
+
+% Babel zorgt ervoor dat titels en dergelijke in de juiste taal te voorschijn komen
 \usepackage[dutch]{babel}
+
+% De ams packages zorgen voor alle wiskundige zaken.
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsthm}
+
+% Subfiles zorgt ervoor dat we het bestand kunnen onderverdelen en elk deel appart kunnen compileren.
 \usepackage{subfiles}
+
+% Enumerate zorgt voor mooiere enumerates
 \usepackage{enumerate}
+
+% Hyperref zorgt voor clickable stuff.
 \usepackage{hyperref} 
+
+% Float zorgt ervoor dat we figuren op de juiste plaats in de tekst kunnen zetten.
 \usepackage{float}
+
+% Url zorgt voor urls, duh...
 \usepackage{url}
+
+% Pdfpages zorgt ervoor dat we .pdf bestanden kunnen toevoegen.
 \usepackage[final]{pdfpages}
+
+
 
 \setlength{\textwidth}{6in} 
 \addtolength{\hoffset}{-0.5in}
