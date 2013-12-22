@@ -978,10 +978,53 @@ Dit houdt precies in dat $L$ symmetrisch is.
 \end{proof}
 
 \subsection{Stelling 6.68 p 259}
+Zij $A \in \mathbb{R}^{n\times n}$ en zij $m$ en $M$ respectievelijk de kleinste en de grootste eigenwaarde van $A$.
+Beschouw de volgende kwadratische vorm  waarbij we $x$ interpreteren als kolomvector.
+\[
+Q:\mathbb{R}^n \rightarrow \mathbb{R}:x \mapsto Q(x) = x^TAx
+\]
+
 \subsubsection*{Te Bewijzen}
+\[
+m = min\{ Q(x)\ |\ x \in \mathbb{R}^n, \Vert x\Vert = \}
+\]
+\[
+M = max\{ Q(x)\ |\ x \in \mathbb{R}^n, \Vert x\Vert = 1\}
+\]
+De $x_m$ waarvoor $Q(x_m)=m$ en $Q(x_M)=M$ zijn eigenvectoren. 
+
 \subsubsection*{Bewijs}
 \begin{proof}
+Door de spectraalstelling voor symmetrische matrices weten we dat $A$ re\"ele eigenwaarden heeft.
+Er bestaat dus een orthonormale basis $\beta$ van eigenvectoren voor $A$.
+Er bestaat bijgevolg een orthogonale matrix $P$ zodat de volgende gelijkheden gelden.
+\[
+P^T\cdot A\cdot P = P^{-1}\cdot A\cdot P = \Lambda
+\]
+Hierboven is $\Lambda$ de diagonaalmatrix met de eigenwaarden $\lambda_1,\lambda_2,...,\lambda_n$ van $A$ op de hoofddiagonaal.
+Bovendien is $P$ de matrix waarin de orthonormale eigenvectoren in kolommen staan.
+We willen nu $X$ schrijven volgens $\beta$. Hier volgt de volgende uitdrukking uit.
+\[
+X = P\cdot Y
+\]
+Beschouw nu wat deze nieuwe informatie doet met de eerste drukking.
+\[
+X^T\cdot A \cdot X = Y^T\cdot P^{-1}\cdot A\cdot P\cdot Y  = Y^T\cdot \Lambda \cdot Y
+\]
+De originele quadratische vorm wordt nu de volgende.
+\[
+Q:\mathbb{R}^n \rightarrow \mathbb{R}: Y \mapsto Y^T\cdot \Lambda Y = \sum_{i=1}^n\lambda_iy_i^2
+\]
+Stel nu dat de eigenwaarden (en bijhorende eigenvectoren) gerangschikt staan in $\Lambda$ (respectievelijk $P$) zodat de volgende bewering geldt. 
+Het is altijd mogelijk om de eigenwaarden zo gerangschikt te krijgen met hetzelfde resultaat.
+\[
+m=\lambda_1,\lambda_2,...,\lambda_n=M
+\]
+Nu geldt voor elke $v\in \mathbb{R}^n$ dat $\Vert v\Vert = 1 \Leftrightarrow \sum_{i=1}^ny_i^2 = 1$ omdat $\beta$ orthonormaal is.
+Op de eenheidssfeer bereikt $Q$ als minimumwaarde $\lambda_1=m$ en als maximumwaarde $\lambda_n=M$. $x_m$ is dan $p_1$ en $x_M$ is dan $p_n$. Let wel op dat die $x_m$ en $x_M$ nog volgens de originele basis geschreven moeten worden.
+
 
 \end{proof}
+
 
 \end{document}

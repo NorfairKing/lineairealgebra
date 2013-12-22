@@ -154,7 +154,6 @@
 *** TODO Propositite 6.62 p 255
 *** TODO Opmerking 6.63 p 255
 *** TODO Stelling 6.64 p 255
-*** TODO Stelling 6.68 p 259
 ** TODO Oefeningen
 *** TODO Werkzitting
     - [ ] 5 warreee
