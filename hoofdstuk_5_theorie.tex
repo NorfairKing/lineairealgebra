@@ -381,21 +381,25 @@ Zij $L$ een lineaire transformatie van de eindig dimensionale vectorruimte $(\ma
 Bewijs door gefoefel.
 \begin{enumerate}
 \item
-Zij $Spec(L) = \{\lambda_1,\lambda_2,...,\lambda_k\}$ het spectrum van $L$. Zij $m_i = m(\lambda)$ de algebra\"ische multipliciteit van eigenwaarde $i$. De karakteristieke veelterm van $L$ ziet er nu als volgt uit.
+Zij $Spec(L) = \{\lambda_1,\lambda_2,...,\lambda_k\}$ het spectrum van $L$.
+Zij $m_i = m(\lambda)$ de algebra\"ische multipliciteit van eigenwaarde $i$.
+De karakteristieke veelterm van $L$ ziet er nu als volgt uit.
 \[
 \phi_L(X) = \prod_{i=1}^k(X-\lambda_i)^{m_i}
 \]
-Wanneer we dit product uitwerken ziet het er als volgt uit.% WAAROM
+Wanneer we dit product uitwerken ziet het er als volgt uit.
+%TODO meer uitleg.
 \[
 X^n + (-1)(m_1\lambda_1 + m_2\lambda_2 + ... + m_3\lambda_3)X^{n-1} + (-1)^2(m_1\lambda_1 + m_2\lambda_2 + ... + m_3\lambda_3)^2X^{n-2} + ... + (-1)^n\prod_{i=1}^k\lambda_i^{m_i}
 \]
-Per defintie is de karakteristieke veelterm ook gelijk aan het volgende. In deze formule is $A$ de matrix van $L$ ten opzichte van eender welke basis van $V$.
+Per defintie is de karakteristieke veelterm ook gelijk aan het volgende.
+In deze formule is $A$ de matrix van $L$ ten opzichte van eender welke basis van $V$.
 \[
 \phi_L(X) = det(X\mathbb{I}_n-A))
 \]
-%Hier gebeurt iets fishy, wtf?? Het is de eerste term van de bovenstaande uitdrukking, maar wut?
+%TODO Hier gebeurt iets fishy, wtf?? Het is de eerste term van de bovenstaande uitdrukking, maar wut?
 \[
-(-s)^n\prod_{i=1}^k\lambda_i^{m_i} = \prod_{i=1}^k(-\lambda_i)^{m_i} = \phi_L(0) = det(-A) = (-1)^ndet(A) = (-1)^ndet(L) %Waar komt die laatste stap ineens vandaan??
+(-1)^n\prod_{i=1}^k\lambda_i^{m_i} = \prod_{i=1}^k(-\lambda_i)^{m_i} = \phi_L(0) = det(-A) = (-1)^ndet(A) = (-1)^ndet(L) %Waar komt die laatste stap ineens vandaan??
 \]
 $det(L)$ is dus precies gelijk aan het product van alle eigenwaarden van $L$ waarbij elke eigenwaarde $\lambda_i$ $m_i$ keer geteld wordt.
 
@@ -404,7 +408,8 @@ We beschouwen $\phi_L$ opnieuw op beide manieren.
 \[
 \phi_L = \prod_{i=1}^k(X-\lambda_i)^{m_i} \text{ en }\phi_L = det(X\mathbb{I}_n - A)
 \]
-In beide schrijfwijzen beschouwen we enkel de term bij co\"effici\"ent $X^{n-1}$. %waarom niet bij X^n??
+In beide schrijfwijzen beschouwen we enkel de term bij co\"effici\"ent $X^{n-1}$.
+Deze moeten gelijk zijn.
 \[
 -\sum_{i=1}^km_i\lambda_i = -\sum_{k=1}^n(A)_{ii} = -Tr(A) = -Tr(L)
 \]
