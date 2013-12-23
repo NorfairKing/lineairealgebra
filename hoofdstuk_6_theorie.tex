@@ -790,10 +790,27 @@ Er bestaan een unitaire matrix $P \in \mathbb{C}^{n\times n}$ zodat $P^{-1}AP = 
 \end{proof}
 
 \subsection{Stelling 6.56 p 252}
+Zij $A \in \mathbb{R}^{m\times n}$ en $P \in \mathbb{R}^{m\times m}$ een orthogonale matrix.
+
 \subsubsection*{Te Bewijzen}
+Voor de Frobeniusnorm geldt het volgende \footnote{Zie Voorbeeld 6.10 p 227 (4).}.
+\[
+\Vert A\Vert_F = \Vert P\cdot A\Vert_F
+\]
+
 \subsubsection*{Bewijs}
 \begin{proof}
-
+\[
+\Vert A\Vert_F^2 = \sum_{i=1}^m\sum_{k=1}^na_{ik}^2
+\]
+Of als we $A$ noteren als een rij van kolommen $(a_1 a_2 \cdots a_n)$ dan is bovenstaande formule de volgende. (Hierbij is $\Vert a_{k}\Vert$ de standaard euclidische norm.)
+\[
+\Vert A\Vert_F^2 = \sum_{k=1}^n\Vert a_{k}\Vert^2
+\]
+\[
+ = \sum_{k=1}^n\Vert P\cdot a_{k}\Vert^2
+  = \sum_{k=1}^n\Vert P\cdot A\Vert^2_F
+\]
 \end{proof}
 
 \subsection{Stelling 6.58 p 253}
