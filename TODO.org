@@ -133,6 +133,20 @@
     - [ ] 11 fokdiekul
     - [X] 17 MajorMonodon
     - [ ] 18 jdewaen
+*** TODO Extra
+	- [ ] 2
+	- [ ] 4 b
+	- [ ] 5
+	- [ ] 6
+	- [ ] 7
+	- [ ] 12
+	- [ ] 13
+	- [ ] 14
+	- [ ] 15
+	- [ ] 16
+	- [ ] 19
+	- [ ] 20
+	- [ ] 21
 ** TODO Opdrachten
     - [ ] 5.10 p 185
     - [X] 5.34 p 206
@@ -150,10 +164,27 @@
       - [ ] p2 warreee
     - [ ] 3 fokdiekul
     - [ ] 7 egonny
-    - [ ] 8
-      - [ ] a MajorMonodon
-    - [ ] 14
-      - [ ] a NorfairKing
+    - [ ] 8 a MajorMonodon
+    - [ ] 14 a NorfairKing
+*** TODO
+	- [ ] 1
+	- [ ] 2 voor p3
+	- [ ] 4
+	- [ ] 6
+	- [ ] 8b
+	- [ ] 9
+	- [ ] 10
+	- [ ] 11
+	- [ ] 12
+	- [ ] 13
+	- [ ] 14
+	  - [ ] b
+	  - [ ] c
+	- [ ] 16
+	- [ ] 17
+	- [ ] 18
+	- [ ] 19
+	
 ** DONE Opdrachten
    CLOSED: [2013-12-23 Mon 15:14]
    - [X] 6.8 p 227
