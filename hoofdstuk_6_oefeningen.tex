@@ -159,6 +159,82 @@ v = \vec{0} \Rightarrow \langle V,V\rangle = \langle \vec{0},\vec{0}\rangle
 =
 \]
 
+\subsection{Oefening 8}
+\subsubsection*{c}
+We zoeken voor de deelruimte bepaald door $vct\{\bigl(\begin{smallmatrix}
+1 & 0 \\
+1 & 2
+\end{smallmatrix}\bigr),\bigl(\begin{smallmatrix}
+1 & 1 \\
+1 & 1
+\end{smallmatrix}\bigr),\bigl(\begin{smallmatrix}
+2 & 2 \\
+0 & 1
+\end{smallmatrix}\bigr)\}$  het orthogonaal complement. Dit betekent dat we een andere deelruimte van $\mathbb{R}^{2\times2}$ zoeken waarvoor elk element loodrecht staat op de elementen uit de originele vectorruimte.
+
+Deze wordt dus voortgebracht door een vector of alle vectoren $\bigl(\begin{smallmatrix}
+a & b \\
+c & d
+\end{smallmatrix}\bigr)$ die voldoen aan:
+\[ <\bigl(\begin{smallmatrix}
+a & b \\
+c & d
+\end{smallmatrix}\bigr),\bigl(\begin{smallmatrix}
+1 & 0 \\
+1 & 2
+\end{smallmatrix}\bigr)> = 0\]
+\[ <\bigl(\begin{smallmatrix}
+a & b \\
+c & d
+\end{smallmatrix}\bigr),\bigl(\begin{smallmatrix}
+1 & 1 \\
+1 & 1
+\end{smallmatrix}\bigr)> = 0\]
+\[ <\bigl(\begin{smallmatrix}
+a & b \\
+c & d
+\end{smallmatrix}\bigr),\bigl(\begin{smallmatrix}
+2 & 2 \\
+0 & 1
+\end{smallmatrix}\bigr)> = 0\]
+
+Wat betekent dat een element van onze nieuwe deelruimte loodrecht staat op alle elementen van de basis van de oude, en dus ook op al hun lineaire combinaties. Dit geldt door de definitie van het standaardinproduct in $\mathbb{R}^{2\times2}$ als en slechts als:
+\[\left\{
+\begin{array}{l}
+a+c+2*d=0\\
+a+b+c+d=0\\
+2*a+2*b+d=0
+\end{array} \right.\]
+We kunnen dit stelsel van gelijkheden omzetten in de matrix
+\[\left(
+\begin{array}{c c c c | c}
+1 & 0 & 1 & 2 & 0\\
+1 & 1 & 1 & 1 & 0\\
+2 & 2 & 0 & 1 & 0
+\end{array}
+\right)\]
+hetgeen we door rijreductie omzetten in
+\[\left(
+\begin{array}{c c c c | c}
+1 & 0 & 0 & \frac{3}{2} & 0\\
+0 & 1 & 0 & -1 & 0\\
+0 & 0 & 1 & \frac{1}{2} & 0
+\end{array}
+\right)\]
+
+Kiezen we $d$ als vrije variabele, dan moeten alle elementen van de nieuwe deelruimte voldoen aan het voorschrift $\bigl(\begin{smallmatrix}
+\frac{-3}{2}*\lambda & \lambda \\
+\frac{-1}{2}*\lambda & \lambda
+\end{smallmatrix}\bigr)$ met $\lambda \in \mathbb{R}$.
+
+We kunnen dus door een invulling van lambda stellen dat het orthogonaal complement de deelruimte is met als voorschrift:
+\[
+vct\{\bigl(\begin{smallmatrix}
+-3 & 2 \\
+-1 & 2
+\end{smallmatrix}\bigr)\}
+\]
+
 \section{Opdrachten}
 \subsection{Opdracht 6.8 p 227}
 Kies willekeurige elementen $x_1,x_2,x,y \in \mathbb{R}^{2}$ en $\lambda_1,\lambda_2,\lambda \in \mathbb{R}$.
