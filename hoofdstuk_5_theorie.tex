@@ -161,7 +161,7 @@ Direct bewijs.
 det(X\mathbb{I}_n - B) = det(X\mathbb{I}_n - P^{-1}AP) = det(XP^{-1}P - P^{-1}AP)
 \]
 Merk op dat $X$ een scalar is, geen vector.
-We weten dat $XP^{-1}P = XP^{-1}IP P^{-1}XIP$\footnote{Zie Eigenschap 1.22 p 32 d)}. We kunnen dus verder gaan via gelijkheden.
+We weten dat $XP^{-1}P = XP^{-1}\mathbb{I}_nP=P^{-1}X\mathbb{I}_nP$ geldt \footnote{Zie Eigenschap 1.22 p 32 d)}. We kunnen dus verder gaan via gelijkheden.
 \[
 = det(P^{-1} XI P - P^{-1}AP) = det(P^{-1}\cdot ( XI P - AP)) = det(P^{-1}\cdot ( XI- A) \cdot P))
 \]
@@ -176,9 +176,11 @@ We weten dat $det( P^{-1}) = \frac{1}{det(P)}$\footnote{Zie Gevolg 2.5 p 60} dus
 Dat laatste rechterlid is precies de karakteristieke vergelijking van $A$.
 
 \item
+Als $A$ gelijkvormig is met $B$ geldt de volgende gelijkheid.
 \[
 B = P^{-1}AP
 \]
+Nemen we nu de determinant van beide kanten dan bekomen we de volgende gelijkheid.
 \[
 det(B) = det(P^{-1}AP) = det(P^{-1})\cdot det(A)\cdot det(P)
 \]
@@ -193,29 +195,50 @@ B = P^{-1}AP
 \[
 Tr(B) = Tr(P^{-1}A P) = Tr(P^{-1}P A) = Tr(IA) = Tr(A)
 \]
-Bovenstaande gelijkheden gelden omwille van een eigenschap van het spoor van een product. Namelijk dat $Tr(AB) = Tr(BA)$ geldt\footnote{Zie opdracht 1.25 p 33}.
+Bovenstaande gelijkheden gelden omwille van een eigenschap van het spoor van een product, namelijk dat $Tr(AB) = Tr(BA)$ geldt\footnote{Zie opdracht 1.25 p 33}.
 \end{enumerate}
 \end{proof}
 
+\subsection{Gevolg 5.9 p 182}
+Zij $L$ een lineaire transformatie van $(\mathbb{R},V,+)$.
+
+\subsubsection*{Te Bewijzen}
+De karakteristieke veelterm, de determinant en het spoor van de matrix van $L$ zijn onafhankelijk van de gekozen basis.
+
+\subsubsection*{Bewijs}
+\begin{proof}
+We moeten enkel bewijzen dat elke matrixvoorstelling van $L$ gelijkvormig is met elke andere matrixvoorstelling van $L$. De rest volgt dan uit het bewijs van de vorige stelling \footnote{Zie Stelling 5.8 p 182.}. Dit is echter al gebeurd \footnote{Zie Gevolg 4.22 p 151.}.
+\end{proof}
+
+
+
 \subsection{Stelling 5.16 p 189}
 Zij $L:V\rightarrow V$ een lineaire transformatie van de eindig dimensionale vectorruimte $(\mathbb{R},V,+)$ met spectrum $Spec(L) = \{\lambda_1,\lambda_2,...,\lambda_n\}$.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item $m(\lambda_i) \ge 1$\\
 \item $d(\lambda_i) \ge 1$\\
 \item $d(\lambda_i) \le m(\lambda_i)$\\w
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs door gefoefel.
 Voor elke eigenwaarde $\lambda_i$ geldt het volgende.
 \begin{enumerate}
-\item Elke eigenwaarde heeft minstens een algebra\"ische multipliciteit van $1$. Anders zou het geen eigenwaarde zijn.
+\item Elke eigenwaarde heeft minstens een algebra\"ische multipliciteit van $1$.
+Anders zou het geen eigenwaarde zijn.
 
 \item De eigenruimte van $\lambda_i$ is een vectorruimte van minstens dimensie $1$ omdat er voor elke eigenwaarde minstens $1$ eigenvector is, en dit niet de nulvector mag zijn.
 
 \item
-We weten dat de eigenruimte $E_{\lambda_i}$ van $\lambda_i$ dimensie $d(\lambda) = d$ heeft. Er bestaat dus een basis $\beta = v_1,v_2,...,v_d$ voor $E_\lambda$ met $d$ elementen. Omdat $\beta$ een vrij deel is van $E_\lambda$ en $V$ en omdat $E_\lambda$ een deelruimte is van V\footnote{Zie Definitie 5.14 p 188} geldt dat $\beta$ uitgebreid kan worden tot een basis van $V$\footnote{Zie Stelling 3.37 p 107}. Ten opzichte die uitgebreide basis $\beta'$ van $V$ ziet de matrix van $L$ er als volgt uit\footnote{Zie Stelling 5.7 p 181}. (Dit is het punt van eigenvectoren). ($L_{\beta'}^{\beta'}\cdot v_i$ moet $\lambda v_i$ zijn.)
+We weten dat de eigenruimte $E_{\lambda_i}$ van $\lambda_i$ dimensie $d(\lambda) = d$ heeft.
+Er bestaat dus een basis $\beta = v_1,v_2,...,v_d$ voor $E_\lambda$ met $d$ elementen.
+Omdat $\beta$ een vrij deel is van $E_\lambda$ en $V$ en omdat $E_\lambda$ een deelruimte is van V\footnote{Zie Definitie 5.14 p 188} geldt dat $\beta$ uitgebreid kan worden tot een basis van $V$\footnote{Zie Stelling 3.37 p 107}.
+Ten opzichte die uitgebreide basis $\beta'$ van $V$ ziet de matrix van $L$ er als volgt uit\footnote{Zie Stelling 5.7 p 181}.
+(Dit is het punt van eigenvectoren).
+($L_{\beta'}^{\beta'}\cdot v_i$ moet $\lambda v_i$ zijn.)
 \[
 L_{\beta'}^{\beta'} = 
 \begin{pmatrix}
@@ -288,7 +311,11 @@ $L$ heeft een enkelvoudig spectrum $\Rightarrow$ $L$ is diagonaliseerbaar.
 
 \subsubsection*{Bewijs}
 \begin{proof}
-Neem voor elke eigenwaarde van $L$ de bijhorende eigenvector. Elk van die eigenvectoren zijn lineair onafhankelijk\footnote{Zie Stelling 5.18 190}. Omdat $L$ een enkelvoudig spectrum heeft zijn dit precies $n$ eigenvectoren. Deze vectoren zijn bijgevolg ook voortbrengend voor $V$ en een basis van $V$\footnote{Zie Stelling 3.41 p 109}. Nu voldoet $L$ aan de definitie van een diagonaliseerbare lineaire transformatie.
+Neem voor elke eigenwaarde van $L$ de bijhorende eigenvector
+Elk van die eigenvectoren zijn lineair onafhankelijk\footnote{Zie Stelling 5.18 190}.
+Omdat $L$ een enkelvoudig spectrum heeft zijn dit precies $n$ eigenvectoren.
+Deze vectoren zijn bijgevolg ook voortbrengend voor $V$ en een basis van $V$\footnote{Zie Stelling 3.41 p 109}.
+Nu voldoet $L$ aan de definitie van een diagonaliseerbare lineaire transformatie.
 \end{proof}
 
 
@@ -369,7 +396,7 @@ De lineaire combinatie kan dus ook geschreven worden als volgt.
 \[
 \sum_{i=1}^ku_i = \vec{0}
 \]
-Alle $u_i$ in deze uitdrukking horen bij \emph{verschillende} eigenwaarden. Dit betekent dat de $u_i$ lineair onafhankelijk zijn \footnote{Zie stelling 5.18 p 190}. $u_i$ kunnen enkel lineair onafhankelijk zijn als alle $u_i$ nulvectoren zijn.
+Alle $u_i$ in deze uitdrukking horen bij \emph{verschillende} eigenwaarden. Dit betekent dat de $u_i$ lineair onafhankelijk zijn \footnote{Zie stelling 5.18 p 190.}. $u_i$ kunnen enkel lineair onafhankelijk zijn als alle $u_i$ nulvectoren zijn.
 %Hier zit iets raar, lineair onafhankelijke nulvectoren? TODO
 \[
 u_1 = u_2 = ... = u_k
@@ -380,6 +407,50 @@ Nu geldt voor elke $i$ dus het volgende.
 \]
 Omdat de $v_{i,j}$ basisvectoren van de eigenruimten $E_{\lambda_i}$ geldt dat alle $\mu_{i,j}$ nul moeten zijn.
 \end{itemize}
+\end{proof}
+
+\subsection{Opmerking 5.24 p 193}
+Zij $L$ een diagonaliseerbare lineaire transformatie van $(\mathbb{R},V,+)$. 
+
+\subsubsection*{Te Bewijzen}
+\begin{enumerate}
+\item $V$ kan geschreven worden als volgt.
+\[
+V = \sum_{i=1}^kE_{\lambda_i} = \oplus E_{\lambda_{i}}
+\]
+
+\item
+De (disjunctie) unie van basissen van de $E_{\lambda_{i}}$ vormt een basis van $V$.
+
+\end{enumerate}
+
+\subsubsection*{Bewijs}
+\begin{proof}
+Omdat $L$ diagonaliseerbaar is heeft $V$ een basis $\beta=\{\beta_1,\beta_2,...,\beta_n\} $ die volledig uit basisvectoren van $L$ bestaat \footnote{Zie Definitie 5.6 p 181.}.
+Noem $\lambda_i$ de eigenwaarde die bij eigenvector $\beta_i$ hoort en $E_{\lambda_i}$ de eigenruimte die bij $\lambda_i$ hoort.
+
+\begin{enumerate}
+\item
+We groeperen de eigenvectoren in $\beta$ per eigenwaarde.
+Uit de vorige stelling weten we nu dat elk van deze groepjes een basis vormen voor de respectievelijke eigenruimten $E_{\lambda_i}$.
+Omdat $\beta$ een basis is van $V$ en elke groepje een basis is van $E_{\lambda_i}$ geldt nu dat elke vector $v\in V$ geschreven kan worden als een som van een vector in elke eigenruimte. 
+Nu rest er ons nog te bewijzen dat deze som uniek is.
+We moeten daarvoor enkel nog aantonen dat de doorsnede van de eigenruimten elke keer enkel de nulvector bevat \footnote{Zie Propositie 3.22 p 99.}.\\
+
+Stel dat \'e\'en van die doorsneden meer dan enkel de nulvector bevat, zeg, nog een vector $v$.
+Dan zou dit betekenen dat $v$ een eigenvector is die bij twee verschillende eigenwaarden hoort.
+Dit kan niet omdat eigenvectoren in verschillende eigenwaarden lineair onafhankelijk zijn voor diagonaliseerbare lineaire transformaties \footnote{Zie Stelling 5.18 p 190.}.\\\\
+
+$V$ is dus de directe som van alle eigenruimten van $L$.
+
+\item
+Noem $m_i$ de algebra\"ische multipliciteit van eigenwaarde $i$ van $L$.
+Omdat de karakteristieke veelterm van $L$ zich volledig ontbindt als product van eerstegraadsfactoren geldt de volgende gelijkheid waarbij $k$ het aantal eigenruimten van $L$ is.
+\[
+\sum_{i=1}^km_i = n
+\]
+Nemen we de unie van de basissen van de eigenruimten dan vormt deze unie opnieuw een basis van $V$. Voor meer uitleg zie het bewijs van Stelling 5.23 p 192.
+\end{enumerate}
 \end{proof}
 
 
