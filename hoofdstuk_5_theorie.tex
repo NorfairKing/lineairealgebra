@@ -23,14 +23,15 @@ Omdat $\lambda$ een eigenwaarde is van $A$ bestaat er een (eigen)vector $v$ zoda
 \[
 A\cdot v = \lambda v
 \]
-We weten dat $\lambda v =  \lambda \mathbb{I}_n \cdot v$ en dat de matrixvermenigvuldiging distributief is als ze bepaald is\footnote{Zie Eigenschappen 1.22 b}.
+We weten dat $\lambda v =  \lambda \mathbb{I}_n \cdot v$ geldt en dat de matrixvermenigvuldiging distributief is als ze bepaald is\footnote{Zie Eigenschappen 1.22 b}.
 \[
 A\cdot v - \lambda \mathbb{I}_n \cdot v = \vec{0} = (A-\lambda\mathbb{I}_n)\cdot v = \vec{0}
 \]
 Omdat $v$ per definitie geen nulvector is moet de determinant van $(A-\lambda\mathbb{I}_n)$ nul zijn opdat opdat $(A-\lambda\mathbb{I}_n)\cdot v = \vec{0}$ geldt.
+Dit is zo omdat $(A-\lambda\mathbb{I}_n)\cdot v = \vec{0}$ een homogeen stelsel is, en homogene stelsels enkel een niet-nuloplossing hebben als de determinant van de matrix ervan nul is.
 
 \item $\Leftarrow$\\
-Als $det(A-\lambda\mathbb{I}_n) = 0$ geldt voor $\lambda$ met $v$ als eigenvector, dan geldt zeker het volgende.
+Als $det(A-\lambda\mathbb{I}_n) = 0$ geldt voor $\lambda$ met $v$ als eigenvector, dan heeft het volgende stelsel een niet-nuloplossing. Dit is nodig omdat eigenvectoren per definitie geen nulvectoren zijn.
 \[
 (A-\lambda\mathbb{I}_n)\cdot v = \vec{0}
 \]
