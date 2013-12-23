@@ -135,7 +135,7 @@
     - [ ] 18 jdewaen
 ** TODO Opdrachten
     - [ ] 5.10 p 185
-    - [ ] 5.34 p 206
+    - [X] 5.34 p 206
     - [ ] 5.42 p 211
 * TODO Hoofdstuk 6
   DEADLINE: <2013-12-17 Die>
