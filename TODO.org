@@ -140,8 +140,6 @@
 * TODO Hoofdstuk 6
   DEADLINE: <2013-12-17 Die>
 ** TODO Bewijzen
-*** TODO Voorbeeld 6.28 p 238
-*** TODO Definitie 6.33 p 241 Aantonen dat deze afbeelding lineair is
 *** TODO Stelling 6.42 p 246
 *** TODO Stelling 6.43 p 246
 *** TODO Stelling 6.46 p 249
@@ -169,6 +167,7 @@
       - [ ] a MajorMonodon
     - [ ] 14
       - [ ] a NorfairKing
-** TODO Opdrachten
-   - [ ] 6.8 p 227
+** DONE Opdrachten
+   CLOSED: [2013-12-23 Mon 15:14]
+   - [X] 6.8 p 227
      
