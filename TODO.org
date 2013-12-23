@@ -140,9 +140,6 @@
 * TODO Hoofdstuk 6
   DEADLINE: <2013-12-17 Die>
 ** TODO Bewijzen
-*** TODO Stelling 6.42 p 246
-*** TODO Stelling 6.43 p 246
-*** TODO Stelling 6.46 p 249
 *** TODO Stelling 6.48 p 249
 *** TODO Stelling 6.52 p 251
 *** TODO Stelling 6.56 p 252
