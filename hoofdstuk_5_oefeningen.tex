@@ -527,7 +527,38 @@ De gelijkheid geldt dus niet.
 
 
 \subsection{Opdracht 5.42 p 211}
+Zij $L_n$ een Leslie-matrix.
+\[
+L_n =
+\begin{pmatrix}
+f_1 & f_2 & \cdots & \cdots & f_2\\
+o_1 & 0 & \cdots & \cdots & 0\\
+0 & o_2 & \cdots & \cdots & 0\\
+\vdots & \vdots & \ddots & & \vdots\\
+\vdots & \vdots & & & \vdots\\
+0 & 0 & \cdots & o_{n-1} & 0
+\end{pmatrix}
+\]
 
+\subsubsection*{Te Bewijzen}
+\[
+\phi_{L_{n}} =X^{n} -\sum_{i=1}^n \left(\prod_{j=1}^{i-1} o_{j} \right)f_1X^{n-i}
+\]
 
+\subsubsection*{Bewijs}
+\begin{proof}
+\[
+\begin{vmatrix}
+f_1-\lambda\mathbb{I}_n & f_2 & \cdots & \cdots & f_2\\
+o_1 & 0-\lambda\mathbb{I}_n & \cdots & \cdots & 0\\
+0 & o_2 & \cdots & \cdots & 0\\
+\vdots & \vdots & \ddots & & \vdots\\
+\vdots & \vdots & & & \vdots\\
+0 & 0 & \cdots & o_{n-1} & \lambda\mathbb{I}_n
+\end{vmatrix}
+= 0
+\]
+We bekomen de gezochtte veelterm door simpelweg de bovenstaande determinant recursief naar de onderste rij te ontwikkelen.
+\end{proof}
 
 \end{document}
