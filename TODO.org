@@ -166,7 +166,7 @@
     - [ ] 7 egonny
     - [ ] 8 a MajorMonodon
     - [ ] 14 a NorfairKing
-*** TODO
+*** TODO Extra
 	- [ ] 1
 	- [ ] 2 voor p3
 	- [ ] 4
