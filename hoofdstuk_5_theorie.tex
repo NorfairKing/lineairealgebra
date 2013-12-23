@@ -90,7 +90,7 @@ $A$ heeft een basis die volledig bestaat uit eigenvectoren van $A$.
 Bewijs van een equivalentie.
 \begin{itemize}
 \item $\Rightarrow$
-Omdat $A$ diagonaliseerbaar is bestaat er een inverteerbare matrix $P$ zodat $A = P \cdot \Lambda\cdot P^{-1}$ geldt met $B$ een diagonaalmatrix. $\Lambda$ ziet er dus als volgt uit.
+Omdat $A$ diagonaliseerbaar is bestaat er een inverteerbare matrix $P$ zodat $P^{-1}AP = \Lambda$ geldt met $\Lambda$ een diagonaalmatrix. $\Lambda$ ziet er dus als volgt uit.
 \[
 \Lambda =
 \begin{pmatrix}
@@ -114,9 +114,11 @@ Elk van de kolommen in $(\lambda_1p_1 \lambda_2p_2 \cdots \lambda_np_n)$ voldoet
 \[
 Ap_i = \lambda_ip_i
 \]
-Elke kolom van $P$ is bijgevolg een eigenvector van $A$ de eigenwaarden die horen bij deze eigenvectoren staan dan in de overeenkomstige kolommen op de diagonaal van $\Lambda$.
+\textbf{Elke kolom van $P$ is bijgevolg een eigenvector van $A$ de eigenwaarden die horen bij deze eigenvectoren staan dan in de overeenkomstige kolommen op de diagonaal van $\Lambda$.}
 Nu moeten we nog bewijzen dat de kolommen van $P$ een basis vormen voor $\mathbb{R}^n$
-Omdat $P$ precies $n$ kolommen bevat moeten we enkel bewijzen dat de kolommen van $P$ lineair onafhankelijk of dat ze voortbrengend zijn\footnote{Zie Stelling 3.41 p 109}. Omdat $P$ inverteerbaar is geldt dat de determinant van $P$ niet nul is\footnote{Zie Stelling 2.4 p 59}. Bijgevolg zijn de kolommen van $P$ lineair onafhankelijk\footnote{Stelling 2.2 p 57 en Zie Stelling 2.3 p 58} omdat $P$ rijreduceerbaar is tot een matrix zonder nulrijen.
+Omdat $P$ precies $n$ kolommen bevat moeten we enkel bewijzen dat de kolommen van $P$ lineair onafhankelijk of dat ze voortbrengend zijn\footnote{Zie Stelling 3.41 p 109}.
+Omdat $P$ inverteerbaar is geldt dat de determinant van $P$ niet nul is\footnote{Zie Stelling 2.4 p 59}.
+Bijgevolg zijn de kolommen van $P$ lineair onafhankelijk\footnote{Stelling 2.2 p 57 en Zie Stelling 2.3 p 58} omdat $P$ rijreduceerbaar is tot een matrix zonder nulrijen.
 
 \item $\Leftarrow$
 $\mathbb{R}^n$ heeft een basis volledig bestaand uit eigenvectoren van $A$. Noem deze basis $\beta = \{\beta_1,\beta_2,...,\beta_n\}$. De vectoren uit deze basis voldoen dus aan de volgende bewering.
@@ -124,8 +126,11 @@ $\mathbb{R}^n$ heeft een basis volledig bestaand uit eigenvectoren van $A$. Noem
 A\cdot \beta_i = \lambda_i\beta_i
 \]
 $A$ beschouwen we als de matrix van een lineaire afbeelding ten opzichte van de standaard basis.
-De matrix van basisverandering van de basis van de eigenvectoren naar de standaardbasis noemen we $P$. Dit is precies de matrix waarin de eigenvectoren van $A$ in kolommen staan.
-$P^{-1}$ is nu de matrix van basisverandering van de standaardmatrix naar de basis van eigenvectoren. $P$ is zeker inverteerbaar omdat de kolommen lineair onafhankelijk zijn. We weten nu dat $A = PBP^{-1}$ geldt\footnote{Zie pagina 150 voor meer uitleg.}. Vermenigvuldig nu $P$ rechts aan beide kanten.
+De matrix van basisverandering van de basis van de eigenvectoren naar de standaardbasis noemen we $P$.
+Dit is precies de matrix waarin de eigenvectoren van $A$ (de vectoren van $\beta$) in kolommen staan.
+$P^{-1}$ is nu de matrix van basisverandering van de standaardmatrix naar de basis van eigenvectoren.
+$P$ is zeker inverteerbaar omdat de kolommen lineair onafhankelijk zijn (ze vormen een basis).
+We weten nu dat $A = PBP^{-1}$ geldt\footnote{Zie pagina 150 voor meer uitleg.}. Vermenigvuldig nu $P$ rechts aan beide kanten.
 \[
 AP = PB
 \]
