@@ -159,4 +159,87 @@ v = \vec{0} \Rightarrow \langle V,V\rangle = \langle \vec{0},\vec{0}\rangle
 =
 \]
 
+\section{Opdrachten}
+\subsection{Opdracht 6.8 p 227}
+Kies willekeurige elementen $x_1,x_2,x,y \in \mathbb{R}^{2}$ en $\lambda_1,\lambda_2,\lambda \in \mathbb{R}$.
+\begin{enumerate}
+\item
+\begin{proof}
+\begin{enumerate}
+\item Lineair in de eerste component
+\[
+\langle \lambda_1x_1 + \lambda_2x_2,y \rangle_1
+\]
+\[
+= 3(\lambda_1x_1 + \lambda_2x_2)_1y_1 - 2(\lambda_1x_1 + \lambda_2x_2)_1y_2-2(\lambda_1x_1 + \lambda_2x_2)_2y_1+2(\lambda_1x_1 + \lambda_2x_2)_2y_2
+\]
+\[
+= \lambda_1(3x_{11}y_1-2x_{11}y_2-2x_{12}y_1+2x_{12}y_2) + \lambda_2(3x_{21}y_1-2x_{21}y_2-2x_{22}y_1+2x_{22}y_2)
+\]
+\[
+= \lambda_1\langle x_1,y \rangle_1
++  \lambda_2\langle x_2,y \rangle_1
+\]
+
+\item Symmetrisch
+\[
+\langle x , y \rangle_1
+=
+3x_{1}y_1-2x_{1}y_2-2x_{2}y_1+2x_{2}
+= \langle y , x \rangle_1
+\]
+
+\item Positief
+\[
+\langle x,x \rangle_1  = x_1^2\ge 0
+\]
+
+\item Definiet
+\[
+\langle x,x \rangle_1 = 0 \Leftrightarrow x= \vec{0}
+\]
+
+\begin{itemize}
+\item $\Rightarrow$
+\[
+\langle x,x \rangle_1 = 0 
+\]
+\[
+x_1^2=0
+\]
+\[
+\Rightarrow x= \vec{0}
+\]
+
+\item $\Leftarrow$
+\[
+x= \vec{0}
+\]
+\[
+x_1^2=0
+\]
+\[
+ \Rightarrow \langle x,x \rangle_1 = 0
+\]
+\end{itemize}
+\end{enumerate}
+\end{proof}
+
+\item
+Dit inproduct is niet positief. 
+Kies bevoorbeeld $x$ als volgt.
+\[
+x = 
+\begin{pmatrix}
+1\\1
+\end{pmatrix}
+\]
+\[
+\langle x,x \rangle_1 = -1 <0
+\]
+\end{enumerate}
+
+
+
+
 \end{document}
