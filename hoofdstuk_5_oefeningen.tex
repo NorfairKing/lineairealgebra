@@ -541,8 +541,29 @@ De eigenruimte van $N$ is dus minstens rang($P$)-dimensionaal.
 
 \subsection{Oefening 18}
 \subsubsection*{a)}
-\subsubsection*{b)}
+We weten dat de dimensies van $E_{\lambda_i}$ alledrie $1$ zijn.
+We kiezen $v_1$ als basis van $E_{\lambda_1}$ zo ook $v_2$ en $v_3$ respectievelijk als basissen van $E_{\lambda_2}$ en $E_{\lambda_3}$.
+Vervolgens kiezen we $\{v_1,v_2\}$ en $v_3$ respectievelijk als basissen van $E_{\mu_1}$ en $E_{\mu_2}$.
+Beschouw nu $v_1$ als volgt.
+\[
+A\cdot B\cdot v_1 = A\cdot\mu_1v_1 = \mu_1Av_1= \mu_1\lambda_1v_1
+\]
+Dit houdt in dat $\mu_1\lambda_1$ een eigenwaarde is van $A\cdot B$ met eigenvector $v_1$ en eigenruimte $E_{\mu_1\lambda_1} = vct(\{v_1\})$. Op dezelfde manier vinden we dat $mu_1*lambda_2$ en $mu_2*lambda_3$ eigenwaarden zijn van $A\cdot B$, met respectievelik eigenvector $v2$, $v3$ en eigenruimten $E_{\mu_1*\lambda_2} = vct(\{v_2\})$ en $E_{\mu_2*  \lambda_3} = vct(\{v_3\})$
 
+\subsubsection*{b)}
+\[
+B\cdot A\cdot v1
+= B\cdot \lambda_1\cdot v1
+= \lambda_1\cdot B\cdot v1
+= \lambda_1\cdot \mu_1\cdot v1
+= \mu_1\cdot \lambda_1\cdot v1
+= \mu_1\cdot A\cdot v1
+= A\cdot \mu_1\cdot v1
+= A\cdot B\cdot v1
+\]
+\[
+B\cdot A = A\cdot B
+\]
 
 
 \section{Opdrachten}
