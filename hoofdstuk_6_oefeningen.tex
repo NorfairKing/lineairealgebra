@@ -159,8 +159,49 @@ v = \vec{0} \Rightarrow \langle V,V\rangle = \langle \vec{0},\vec{0}\rangle
 =
 \]
 
+
+\subsection{Oefening 3}
+\[
+\beta = \{ (3,-3,0),(2,2,-1),(1,1,4) \}
+\]
+Eerst bepalen we of $\beta$ orthogonaal is.
+In de volgende gelijkheden zien we dat dit klopt.
+\[
+\langle (3,-3,0),(2,2,-1) \rangle = 6-6+0 = 0
+\]
+\[
+\langle (2,2,-1),(1,1,4) \rangle = 2+2-4 = 0
+\]
+\[
+\langle (3,-3,0),(1,1,4) \rangle = 3-3+0 = 0
+\]
+Vervolgens bepalen we of $\beta$ inderdaad een basis vormt voor $\mathbb{R}^3$.
+Omdat $\beta$ precies drie vectoren bevat moeten we enkel aantonen dat $\beta$ vrij is \footnote{Zie Stelling 3.41 p 109.}.
+\[
+\begin{vmatrix}
+3 & -3 & 0\\
+2 & 2 & -1\\
+1 & 1 & 4
+\end{vmatrix}
+=
+3 \cdot 
+\begin{vmatrix}
+2 & -1\\
+1 & 4
+\end{vmatrix}
++ 3 \cdot
+\begin{vmatrix}
+2 & -1\\
+1 & 4
+\end{vmatrix}
+=
+3(8+1)+3(8+1)
+=54 \neq 0
+\]
+Bovenstaande determinant toont aan dat $\beta$ vrij is.
+
 \subsection{Oefening 8}
-\subsubsection*{c}
+\subsubsection*{(c)}
 We zoeken voor de deelruimte bepaald door $vct\{\bigl(\begin{smallmatrix}
 1 & 0 \\
 1 & 2
