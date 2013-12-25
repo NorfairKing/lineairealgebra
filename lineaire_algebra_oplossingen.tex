@@ -1,34 +1,14 @@
-% Het document is een boek op A4 papier in recto te printen.
 \documentclass[a4paper,10pt,oneside]{book}
-
-% Babel zorgt ervoor dat titels en dergelijke in de juiste taal te voorschijn komen
 \usepackage[dutch]{babel}
-
-% De ams packages zorgen voor alle wiskundige zaken.
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsthm}
-
-% Subfiles zorgt ervoor dat we het bestand kunnen onderverdelen en elk deel appart kunnen compileren.
 \usepackage{subfiles}
-
-% Enumerate zorgt voor mooiere enumerates
 \usepackage{enumerate}
-
-% Hyperref zorgt voor clickable stuff.
-\usepackage{hyperref} 
-
-% Float zorgt ervoor dat we figuren op de juiste plaats in de tekst kunnen zetten.
 \usepackage{float}
-
-% Url zorgt voor urls, duh...
 \usepackage{url}
-
-% Pdfpages zorgt ervoor dat we .pdf bestanden kunnen toevoegen.
 \usepackage[final]{pdfpages}
-
-
 
 \setlength{\textwidth}{6in} 
 \addtolength{\hoffset}{-0.5in}
@@ -67,18 +47,12 @@
 {\huge \textsc{Tom Sydney Kerckhove}}\\\\\\
 {Met dank aan}\\\\
 {\Large \textsc{Ward Schodts}}\\\\
-{\large \textsc{Frederik Goovaerts}}\\
 {\large \textsc{Nicholas Haesen}}\\
 {\large \textsc{Thomas Dierckx}}\\
+{\large \textsc{Frederik Goovaerts}}\\
 {\large \textsc{Jorik De Waen}}\\
 {\large \textsc{Egon Okerman}}\\\\\\
-
-
-
-{\small Versie 0.0.3.8}
-
-
-
+{\small Versie 0.0.1}
 \vspace{0.5\textheight} % Whitespace
 }
 }
@@ -123,9 +97,6 @@
 \subfile{huistaak_2}
 
 \appendix
-\chapter{Errata van de curus}
-\subfile{errata}
-
 \chapter{Opgaven}
 \includepdf[pages=-]{opgaven/zelfreflectie_H1.pdf}
 \includepdf[pages=-]{opgaven/zelfreflectie_H2.pdf}
@@ -133,7 +104,5 @@
 \includepdf[pages=-]{opgaven/zelfreflectie_H4.pdf}
 \includepdf[pages=-]{opgaven/zelfreflectie_H5.pdf}
 \includepdf[pages=-]{opgaven/zelfreflectie_H6.pdf}
-
-
 
 \end{document}
