@@ -4,7 +4,56 @@
 \chapter{Theorie Hoofdstuk 1}
 
 \section{Bewijzen uit de cursus}
+
+\subsection{Definitie 1.5 p 20}
+\label{1.5}
+\begin{itemize}
+\item Trapvorm
+\[
+\begin{pmatrix}
+\bullet & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet\\
+\vdots & \ddots & \vdots & \ddots & \vdots & \ddots & \vdots & \cdots & \bullet\\
+\bullet & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet\\
+\bullet & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet\\
+0 & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet\\
+0 & \cdots & 0 & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet\\
+0 & \cdots & 0 & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet\\
+0 & \cdots & 0 & \cdots & 0 & \cdots & \bullet & \cdots & \bullet\\
+\end{pmatrix}
+\]
+
+\item Echelonvorm
+\[
+\begin{pmatrix}
+\bullet & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet\\
+\vdots & \ddots & \vdots & \ddots & \vdots & \ddots & \vdots & \cdots & \bullet\\
+\bullet & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet\\
+1 & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet\\
+0 & \cdots & 1 & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet\\
+0 & \cdots & 0 & \cdots & \bullet & \cdots & \bullet & \cdots & \bullet\\
+0 & \cdots & 0 & \cdots & 1 & \cdots & \bullet & \cdots & \bullet\\
+0 & \cdots & 0 & \cdots & 0 & \cdots & 1 & \cdots & \bullet\\
+\end{pmatrix}
+\]
+
+\item Rijgereduceerd
+\[
+\begin{pmatrix}
+0 & \cdots & 0 & \cdots & 0 & \cdots & 0 & \cdots & \bullet\\
+\vdots & \ddots & \vdots & \ddots & \vdots & \ddots & \vdots & \cdots & \bullet\\
+0 & \cdots & 0 & \cdots & 0 & \cdots & 0 & \cdots & \bullet\\
+1 & \cdots & 0 & \cdots & 0 & \cdots & 0 & \cdots & \bullet\\
+0 & \cdots & 1 & \cdots & 0 & \cdots & 0 & \cdots & \bullet\\
+0 & \cdots & 0 & \cdots & 0 & \cdots & 0 & \cdots & \bullet\\
+0 & \cdots & 0 & \cdots & 1 & \cdots & 0 & \cdots & \bullet\\
+0 & \cdots & 0 & \cdots & 0 & \cdots & 1 & \cdots & \bullet\\
+\end{pmatrix}
+\]
+
+\end{itemize}
+
 \subsection{Propositie 1.8 p 21}
+\label{1.8}
 \subsubsection*{Te Bewijzen}
 Elke matrix is rij-equivalent met een matrix in echelonvorm en met een matrix die rij-gereduceerd is.
 \subsubsection*{Bewijs}
