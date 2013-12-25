@@ -427,7 +427,40 @@ Dit kan enkel als beide sporen nul zijn.
 
 \subsubsection*{(b)}
 
-
+\section{Oefening 12}
+We kunnen $a$ in het voorschrift vervangen door $B$ waarbij $B$ de volgende matrix is.
+\[
+B=
+\begin{pmatrix}
+a & 0 & \cdots & 0\\
+0 & a & \cdots & 0\\
+\vdots & \vdots& \ddots & \vdots\\
+0 & 0 & \cdots & a
+\end{pmatrix}
+\]
+Nu ziet $T$ er als volgt uit ten opzichte van de standaardbasis. ($B$ is de matrix van $T$ ten opzichte van de standaardmatrix.)
+\[
+T: A \mapsto BA
+\]
+Zodat $B$ een orthogonale matrix zou zijn moeten volgende gelijkheden gelden.
+\[
+B^{-1}=
+\begin{pmatrix}
+\frac{1}{a} & 0 & \cdots & 0\\
+0 & \frac{1}{a} & \cdots & 0\\
+\vdots & \vdots& \ddots & \vdots\\
+0 & 0 & \cdots & \frac{1}{a}
+\end{pmatrix}
+=
+\begin{pmatrix}
+a & 0 & \cdots & 0\\
+0 & a & \cdots & 0\\
+\vdots & \vdots& \ddots & \vdots\\
+0 & 0 & \cdots & a
+\end{pmatrix}
+= B^T
+\]
+Wanneer we dit oplossen vinden we dat $a$ gelijk moet zijn aan $1$.
 
 \section{Opdrachten}
 \subsection{Opdracht 6.8 p 227}
