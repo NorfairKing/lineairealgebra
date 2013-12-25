@@ -5,7 +5,9 @@
 \section{Bewijzen uit de cursus}
 
 \subsection{Stelling 5.2 p 177}
+\label{5.2}
 Zij $A\in \mathbb{R}^{n\times n}$ een vierkante matrix.
+
 \subsubsection*{Te Bewijzen}
 \begin{center}
 Een getal $\lambda\in\mathbb{R}$ is een eigenwaarde van $A$.
@@ -14,6 +16,7 @@ Een getal $\lambda\in\mathbb{R}$ is een eigenwaarde van $A$.
 \begin{center}
 $\lambda$ is een nulpunt van de karakteristieke veelterm $det(X\mathbb{I}_n - A)$ van $A$
 \end{center}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs van een equivalentie.
@@ -38,7 +41,9 @@ Als $det(A-\lambda\mathbb{I}_n) = 0$ geldt voor $\lambda$ met $v$ als eigenvecto
 \end{itemize}
 \end{proof}
 
+
 \subsection{Voorbeeld 5.4 p 178}
+\label{5.4}
 \subsubsection*{1)}
 We zoeken nog een oplossing van de volgende vergelijking.
 \[
@@ -73,10 +78,13 @@ D_{\epsilon} =
 \]
 
 \subsection{Over Definitie 5.6 p 181}
+\label{5.6}
 Dit houdt in dat er voor $A$ een inverteerbare matrix $P$ bestaat zodat. $A = P^{-1}\cdot B\cdot P$ waarbij $B$ een diagonaalmatrix is.
 
 \subsection{Stelling 5.7 p 181}
+\label{5.7}
 Zij $A \in \mathbb{R}^{n\times n}$ een vierkante matrix.
+
 \subsubsection*{Te Bewijzen}
 \begin{center}
 $A$ is diagonaliseerbaar.
@@ -85,6 +93,7 @@ $A$ is diagonaliseerbaar.
 \begin{center}
 $A$ heeft een basis die volledig bestaat uit eigenvectoren van $A$.
 \end{center}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs van een equivalentie.
@@ -140,18 +149,21 @@ AP = (A\beta_1 A\beta_2 \cdots A\beta_n) = (\lambda_1\beta_1 \lambda_2\beta_2 \c
 \]
 De tweede gelijkheid geldt omdat $\beta_i$ eigenvectoren zijn.
 De derde gelijkheid kan enkel gelden als $B$ een diagonaalmatrix is. Sterker nog, $\lambda_i$, de eigenwaarden van $A$ staan precies op de diagonaal van $P$.
-
 \end{itemize}
 \end{proof}
 
+
 \subsection{Stelling 5.8 p 182}
+\label{5.8}
 Zij $A,B \in \mathbb{R}^{n\times n}$ vierkante matrices met $B = P^{-1}AP$ zodat $A$ en $B$ gelijkvormig zijn.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item $A$ en $B$ hebben dezelfde karakteristieke veelterm.
 \item $A$ en $B$ hebben dezelfde determinant.
 \item $A$ en $B$ hebben hetzelfde spoor.
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Direct bewijs.
@@ -199,7 +211,9 @@ Bovenstaande gelijkheden gelden omwille van een eigenschap van het spoor van een
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Gevolg 5.9 p 182}
+\label{5.9}
 Zij $L$ een lineaire transformatie van $(\mathbb{R},V,+)$.
 
 \subsubsection*{Te Bewijzen}
@@ -211,8 +225,8 @@ We moeten enkel bewijzen dat elke matrixvoorstelling van $L$ gelijkvormig is met
 \end{proof}
 
 
-
 \subsection{Stelling 5.16 p 189}
+\label{5.16}
 Zij $L:V\rightarrow V$ een lineaire transformatie van de eindig dimensionale vectorruimte $(\mathbb{R},V,+)$ met spectrum $Spec(L) = \{\lambda_1,\lambda_2,...,\lambda_n\}$.
 
 \subsubsection*{Te Bewijzen}
@@ -262,10 +276,14 @@ m(\lambda) \ge d = d(\lambda)
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Stelling 5.18 p 190}
+\label{5.18}
 Zij $L:V\rightarrow V$ een lineaire transformatie van een eindigdimensionale vectorruimte $(\mathbb{R},V,+)$ en zij $\lambda_1,\lambda_2,...,\lambda_n$ verschillende eigenwaarden van $L$ met bijhorende eigenvectoren $v_1,v_2,...,v_n$.
+
 \subsubsection*{Te Bewijzen}
 $v_1,v_2,...,v_n$ zijn lineair onafhankelijke vectoren.
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs door inductie op $n$.\\\\
@@ -301,7 +319,9 @@ Voegen we deze twee nu samen dan krijgen we het volgende.
 Omdat we weten dat alle $\lambda_i$ onderling verschillend zijn (gegeven) en dat alle $v_i$ lineair onafhankelijk zijn houdt dit in dat alle $\mu_i$ nul moeten zijn. Dit zou betekenen dat alle $v_i$ lineair onafhankelijk zijn en dat is in contradictie met de aanname van lineair afhankelijkheid.
 \end{proof}
 
+
 \subsection{Gevolg 5.20 p 191}
+\label{5.20}
 Zij $L$ een lineaire transformatie van de $n$-dimensionale vectorruimte $(\mathbb{R},V,+)$.
 
 \subsubsection*{Te Bewijzen}
@@ -320,6 +340,7 @@ Nu voldoet $L$ aan de definitie van een diagonaliseerbare lineaire transformatie
 
 
 \subsection{Lemma 5.22 p 192}
+\label{5.22}
 Zij $L$ een diagonaliseerbare lineaire transformatie van de eindig dimensionale vectorruimte $(\mathbb{R},V,+)$.
 
 \subsubsection*{Te Bewijzen}
@@ -332,6 +353,7 @@ Omdat $L$ diagonaliseerbaar is bestaat er een inverteerbare $P$ zodat $B$ een di
 
 
 \subsection{Stelling 5.23 p 192}
+\label{5.23}
 Zij $(\mathbb{R},V,+)$ een vectorruimte van dimensie $n$ en zij $L$ een lineaire transformatie van $V$ waarvan de karakteristieke veelterm $\phi_L$ volledig te ontbinden valt als product van eerstegraadsfactoren. Zij $Spec(L) = \{\lambda_1,\lambda_2,...,\lambda_n\}$ het spectrum van $L$.
 
 \subsubsection*{Te Bewijzen}
@@ -409,7 +431,9 @@ Omdat de $v_{i,j}$ basisvectoren van de eigenruimten $E_{\lambda_i}$ geldt dat a
 \end{itemize}
 \end{proof}
 
+
 \subsection{Opmerking 5.24 p 193}
+\label{5.24}
 Zij $L$ een diagonaliseerbare lineaire transformatie van $(\mathbb{R},V,+)$. 
 
 \subsubsection*{Te Bewijzen}
@@ -505,22 +529,31 @@ Het spoor van $L$ is dus gelijk aan de som van alle eigenwaarden $\lambda_i$ waa
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Stelling 5.28 p 203}
+\label{5.28}
 We zullen hiervoor geen bewijs geven. Dit moet je ook niet kunnen, maar zorg wel dat je goed begrijpt wat deze stelling inhoudt.
 %TODO Eventueel nog meer uitleg?
 
 \subsection{Stelling 5.31 p 205}
+\label{5.31}
 Dit bewijzen we op dezelfde manier als Stelling 5.23 p 192
+%TODO uitschrijven
 
 \subsection{Propositie 5.32 p 205}
+\label{5.32}
 Dit bewijzen we op dezelfde manier als Stelling 5.25 p 194
+%TODO uitshrijven
 
 \subsection{Propositie 5.38 p 209}
+\label{5.38}
 Zij $X = (x_1 x_2 \cdots x_n)^T \in \mathbb{R}^n$ een kansvector en zijn $M$ een stochastische $n\times n$ matrix.
+
 \subsubsection*{Te Bewijzen}
 \[
 M\cdot X \text{ is een kansvector.}
 \]
+
 \subsubsection*{Bewijs}
 \begin{proof}
 In een stochastische matrix en in een kansvector zijn alle elementen positief. Elk element van $M\cdot X$ is dus ook positief. Nu rest er ons nog te bewijzen dat de som van de elementen in $M \cdot X$ gelijk is aan $1$.
@@ -534,13 +567,17 @@ Let in bovenstaande vergelijking goed op de sommatie tekens. Voor de tweede geli
 \]
 De laatste gelijkheid geldt omdat $X$ een kansvector is, en de som van de elementen van $X$ bijgevolg precies $1$ is.
 
+
 \subsection{Gevolg 5.39 p 209}
+\label{5.39}
 Zij alle $X_0$ een kansvector en $M$ een stochastische matrix.
+
 \subsubsection*{Te Bewijzen}
 Een markov keten bestaat uit een rij kansvectoren. Alle $X_i$ zijn dus kansvectoren.
 \[
 X0, X_1 = M\cdot X_0, X_2 = M^2\cdot X_0,...,X_n = M^n\cdot X_0
 \]
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs door inductie op $n$.\\\\
@@ -555,10 +592,14 @@ M^{k+1}\cdot X_0 = M^{k}\cdot M\cdot X_0
 Volgens de basisstap geldt dat $M\cdot X_0$ een kansvector is. Volgens de inductiehypothese geldt dat $M^{k}\cdot (M\cdot X_0)$ een kansvector is. Bijgevolg is $M^{k+1}\cdot X_0$ een kansvector.
 \end{proof}
 
+
 \subsection{Propositite 5.40 p 209}
+\label{5.40}
 Zij $M\in \mathbb{R}^{n\times n}$ een stochastische matrix.
+
 \subsubsection*{Te Bewijzen}
 Het getal $1$ is een eigenwaarde van $M$
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs door gefoefel.\\
@@ -576,7 +617,9 @@ Dit betekent precies dat $1$ een eigenwaarde is van $M$.
 
 
 \subsection{Propositie 5.41 p 210}
+\label{5.41}
 Zij $M\in \mathbb{R}^{n\times n}$ een stochastische matrix waarvan alle elementen verschillend zijn van nul.
+
 \subsubsection*{Te Bewijzen}
 De eigenruimte $E_1$ bestaat, heeft dimensie $1$ en bevat precies $1$ kansvector.
 
@@ -593,5 +636,6 @@ M\cdot X = X\\ \Leftrightarrow M\cdot \lambda X = \lambda X
 Dan geldt dat er een $\lambda 1$ bestaat zodat $\lambda X = Y$ want we kunnen $X$ als de basis voor $E_1$ nemen. De som van de elementen van $Y$ is dus $\lambda$ keer die van $X$. Dit zou betekenen dat $\lambda$ $1$ is omdat $\lambda X = Y$ en de som van de elementen van $Y$ $1$. Dit is in contradictie met de aanname dat $X$ verschillend is van $Y$.
 \end{itemize}
 \end{proof}
+
 
 \end{document}
