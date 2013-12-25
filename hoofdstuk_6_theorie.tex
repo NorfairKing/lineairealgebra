@@ -610,7 +610,7 @@ Bijgevolg is de (disjuncte unie van de basissen van $E_{\lambda_i}$ een basis va
 \[
 \bigoplus_{i=1}^k \beta_i
 \]
-Omdat alle $\beta_i$ orthonormale basissen zijn en ze lineair onafhankelijk \footnote{Zie Stelling 5.18 p 190.} zijn vormt de disjunctie unie ervan ook een orthonormale basis.
+Omdat alle $\beta_i$ orthonormale basissen zijn en ze lineair onafhankelijk \footnote{Zie Stelling 5.18 p 190.} en orthogonaal \footnote{Zie Lemma 6.38 p 244.} zijn vormt de disjunctie unie ervan ook een orthonormale basis.
 \end{proof}
 
 
@@ -622,7 +622,17 @@ Zij $(\mathbb{C},\mathbb{C}^n,+,\langle \cdot,\cdot \rangle)$ de standaard unita
 Er bestaat een orthonormale basis voor $\mathbb{C}^n$ bestaande uit eigenvectoren van $A$.
 
 \subsubsection*{Bewijs}
-TODO
+\begin{proof}
+Zij $\lambda_1,\lambda_2,...,\lambda_n \in \mathbb{C}$ de eigenwaarden van $A$ met bijhorende eigenvectoren $v_1,v_2,...,v_n \in \mathbb{C}^n$ en eigenruimten $E_{\lambda_1},E_{\lambda_2},...,E_{\lambda_n}$.
+We kiezen nu voor elke eigenruimte $E_{\lambda_i}$ een basis en orthonormaliseren deze \footnote{Zie Stelling 6.27 p 238.} tot een orthonormale basis $\beta_i$.
+Omdat $L$ een lineaire transformatie is met een symmetrische matrix, is voor elke eigenwaarde de meetkundige multipliciteit gelijk aan de algebra\"ische \footnote{Zie Opmerking 6.41 p 246.}.
+Dit houdt in dat $L$ diagonaliseerbaar is \footnote{Zie Stelling 5.23 p 192.}.
+Bijgevolg is de (disjuncte unie van de basissen van $E_{\lambda_i}$ een basis van $V$.
+\[
+\bigoplus_{i=1}^k \beta_i
+\]
+Omdat alle $\beta_i$ orthonormale basissen zijn en ze lineair onafhankelijk \footnote{Zie Stelling 5.18 p 190.} en orthogonaal \footnote{Zie Opmerking 6.39 p 244.} zijn vormt de disjunctie unie ervan ook een orthonormale basis.
+\end{proof}
 
 
 \subsection{Stelling 6.46 p 249}
