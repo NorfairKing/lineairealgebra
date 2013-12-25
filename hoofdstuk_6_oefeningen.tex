@@ -425,9 +425,62 @@ Tr(C^TA) = Tr(CA^T) = Tr(CA)
 Dit kan enkel als beide sporen nul zijn.
 
 
-\subsubsection*{(b)}
 
-\section{Oefening 12}
+\subsection{Oefening 10}
+Zij $A \in \mathbb{R}^{2\times 2}$ een scheefsymmetrische matrix.
+\[
+\begin{pmatrix}
+0 & a\\
+-a & 0
+\end{pmatrix}
+\]
+
+\subsubsection*{Te Bewijzen}
+$A$ heeft geen re\"ele eigenwaarden.
+
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs uit het ongerijmde.\\
+Stel dat $\lambda$ een re\"ele eigenwaarde is van $A$ met bijhorende eigenvector $v = \begin{pmatrix}v_1\\v_2\end{pmatrix}$.
+\[
+\begin{pmatrix}
+0 & a\\
+-a & 0
+\end{pmatrix}
+\begin{pmatrix}v_1\\v_2\end{pmatrix}
+=\lambda 
+\begin{pmatrix}v_1\\v_2\end{pmatrix}
+\]
+\[
+\begin{pmatrix}
+v_2\\-v_1
+\end{pmatrix}
+=
+\begin{pmatrix}
+\lambda v_1\\\lambda v_2
+\end{pmatrix}
+\]
+\[
+\left\{
+\begin{array}{c c}
+v_2 &= \lambda v_1\\
+v_1 &= -\lambda v_2
+\end{array}
+\right.
+\]
+\[
+\left\{
+\begin{array}{c c}
+v_2 &= \lambda v_1\\
+v_1 &= -\lambda^2 v_1
+\end{array}
+\right.
+\]
+Let op de tweede vergelijking in bovenstaand stelsel. Dit stelsel kan enkel gelden indien $-\lambda^2 = 1$ geldt. Het is dus steeds strijdig als $\lambda$ re\"el is. Contradictie.+
+\end{proof}
+
+
+\subsection{Oefening 12}
 We kunnen $a$ in het voorschrift vervangen door $B$ waarbij $B$ de volgende matrix is.
 \[
 B=
