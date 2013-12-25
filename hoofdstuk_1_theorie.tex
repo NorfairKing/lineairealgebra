@@ -2,7 +2,6 @@
 \begin{document}
 
 \chapter{Theorie Hoofdstuk 1}
-
 \section{Bewijzen uit de cursus}
 
 \subsection{Definitie 1.5 p 20}
@@ -49,13 +48,15 @@
 0 & \cdots & 0 & \cdots & 0 & \cdots & 1 & \cdots & \bullet\\
 \end{pmatrix}
 \]
-
 \end{itemize}
+
 
 \subsection{Propositie 1.8 p 21}
 \label{1.8}
+
 \subsubsection*{Te Bewijzen}
 Elke matrix is rij-equivalent met een matrix in echelonvorm en met een matrix die rij-gereduceerd is.
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Zie p 20 voor een herhaling van wat echelonvorm en rij-gereduceerd precies betekent.\\
@@ -71,7 +72,10 @@ R_j \longmapsto R_j - \lambda_jR_1
 Nu we onder de besproken $1$ allemaal nullen hebben kunnen we de beschreven procedure toepassen op de deelmatrix rechts onder de $1$. De procedure stopt wanneer er enkel nog nullen overblijven of als de matrix op geraakt.\\\\
 Vervolgens kunnen we van rechtsonder naar linksboven werken zoals hierboven beschreven.
 \end{proof}
+
+
 \subsection{Stelling 1.11 p 23}
+\label{1.11}
 Zij $A$ een matrix van de volgende vorm die overeen komt met een stelsel.
 \[
 A =
@@ -89,12 +93,14 @@ A =
 \end{array}
 \right)
 \]
+
 \subsubsection*{Te bewijzen}
 \begin{enumerate}
 \item Dit stelsel heeft geen oplossingen $\Leftrightarrow \exists i: c_i \neq 0$.
 \item Dit stelsel heeft precies één oplossing $\Leftrightarrow (\forall i \in \{r+1,...,m\}: c_i=0) \wedge r=n$. 
 \item oneindig veel oplossingen $\Leftrightarrow (\forall i \in \{r+1,...,m\}: c_i=0) \wedge r\neq n$.
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 \begin{enumerate}
@@ -108,15 +114,20 @@ Dit geval houdt in dat rij $r$ overeen komt met een vergelijking met $1$ onbeken
 \item
 Als $r < n$, dan bestaat er een $i$ zodat rij $i$ overeen komt met een vergelijking $0=0$. Deze verglijking is niet slechts triviaal waar maar dit betekent ook dat de $i$-de variabele vrij te kiezen is in de oplossing. Het stelsel heeft dus oneindig veel oplossingen.
 \end{enumerate}
+
+
 \subsection{Eigenschap 1.16 p 28}
+\label{1.16}
 Zij $A,B \in \mathbb{R}^{m\times n} $ en $\lambda \in \mathbb{R}$
 Noem het element op de $i$de rij, op de $j$de kolom van matrix $X$ $X_{ij}$.
+
 \subsubsection*{Te bewijzen}
 \begin{enumerate}
 \item $(A^T)^T = A$
 \item $(A+B)^T = A^T + B^T$
 \item $(\lambda A)^T=\lambda A^T$
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{enumerate}
 \item Voor elke matrix $A$ het volgende. $\forall i\in \{1,...,m\} ,j \in \{1,...,n\}:$
@@ -137,8 +148,11 @@ A^T_{ij} = A_{ji}
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Eigenschap 1.19 p 29}
+\label{1.19}
 Zij $A,B,C \in R^{m\times n}$ en $\lambda, \mu \in \mathbb{R}$.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item \[ (A+B)+C=A+(B+C) \]
@@ -150,6 +164,7 @@ Zij $A,B,C \in R^{m\times n}$ en $\lambda, \mu \in \mathbb{R}$.
 \item \[ \lambda(\mu A) = (\lambda\mu)A\]
 \item \[ 1A =A \]
 \end{enumerate}
+
 \subsubsection*{Bewijzen}
 \begin{proof}
 \begin{enumerate}
@@ -174,10 +189,13 @@ Zij $A,B,C \in R^{m\times n}$ en $\lambda, \mu \in \mathbb{R}$.
 \end{enumerate}
 \end{proof}
 
-\subsection{Eigenschappen p 32 bovenaan}
+
+\subsection{Eigenschap 1.22 p 31}
+\label{1.22}
 Zij $A,B,C \in \mathbb{R}^{m\times n}$ en $\lambda \in \mathbb{R}$.
+
 \subsubsection*{Te Bewijzen}
-\begin{enumerate}
+\begin{enumerate}[(a)]
 \item \[ A\cdot (B+C) = A\cdot B + A \cdot C\]
 \item \[ (A+B) \cdot C = A\cdot C + B \cdot C \]
 \item \[ (A\cdot B)^T  = B^T \cdot A^T \]
@@ -185,21 +203,23 @@ Zij $A,B,C \in \mathbb{R}^{m\times n}$ en $\lambda \in \mathbb{R}$.
 \item \[ A \cdot \mathbb{I}_{n} = A \]
 \item \[ \mathbb{I}_{n} \cdot B = B \]
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
-\begin{enumerate}
+We bewijzen elk deel door de eigenschap te bewijzen voor een willekeurig element van de beschreven uitdrukking.
+\begin{enumerate}[(a)]
 \item 
 \[ (A\cdot (B+C))_{ij} = \sum_{i=1}^nA_{ij}(B+C)_{jk}\]
 \[ = \sum_{i=1}^n(A)_{jk}(B_{ij}+C_{jk}) = \sum_{i=1}^n A_{ij}B_{jk}+A_{ij}C_{jk}) = \sum_{i=1}^nA_{ij}B_{jk} + \sum_{i=1}^nA_{ij}C_{jk} = \]
 \[ (A\cdot B)_{ij} + (A \cdot C)_{ij} = (A\cdot B + A \cdot C)_{ij}\]
 
 \item 
-\[ ((A+B) \cdot C)_{ij} = \sum_{i=1}^n(B+C)_{jk}A_{ij}\]
-\[ = \sum_{i=1}^n(B_{jk}+C_{jk})A_{ij} = \sum_{i=1}^n A_{ij}B_{jk}+A_{ij}C_{jk} = \sum_{i=1}^nA_{ij}B_{jk} + \sum_{i=1}^nA_{ij}C_{jk} = \]
+\[ ((A+B) \cdot C)_{ij} = \sum_{j=1}^n(A+B)_{ij}C_{jk}\]
+\[ = \sum_{j=1}^n(A_{ij}+B_{ij})C_{jk} = \sum_{j=1}^n A_{ij}C_{jk}+B_{ij}C_{jk} = \sum_{j=1}^nA_{ij}C_{jk} + \sum_{j=1}^nB_{ij}C_{jk} = \]
 \[ (A\cdot C)_{ij} + (B \cdot C)_{ij} = (A\cdot C + B \cdot C)_{ij} \]
 \item 
 \[ ((A\cdot B)^T)_{ij}  = (A\cdot B)_{ji}\]
-\[ = \sum_{i=1}^nA_{kj}B_{ji} = \sum_{i=1}^nB_{ji}A_{kj} = \sum_{i=1}^nB^T_{ij}A^T_{jk} = (B^T \cdot A^T)_{ij} \]
+\[ = \sum_{j=1}^nA_{kj}B_{ji} = \sum_{j=1}^nB_{ji}A_{kj} = \sum_{j=1}^nB^T_{ij}A^T_{jk} = (B^T \cdot A^T)_{ij} \]
 \item 
 \[ (\lambda(A\cdot B))_{ij} = \lambda(A\cdot B)_{ij} = \lambda\sum_{i=1}^nA_{ij}B_{jk}\]
 \[ = \sum_{i=1}^n(\lambda A_{ij})B_{jk} = ((\lambda A)\cdot B)_{ij} \]
@@ -211,10 +231,14 @@ Zij $A,B,C \in \mathbb{R}^{m\times n}$ en $\lambda \in \mathbb{R}$.
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Stelling 1.26 p 33}
+\label{1.26}
 Zij $AX=B$ een stelsel van eerstegraads vergelijkingen in matrixvorm.
+
 \subsubsection*{Te Bewijzen}
 Een stelsel van eerstegraadsvergelijkingen heeft ofwel geen oplossingen, ofwel juist \'e\'en oplossing, ofwel oneindig veel oplossingen.
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs uit het ongerijmde.\\
@@ -222,17 +246,22 @@ Als het stelsel niet oplosbaar is, zijn er geen oplossingen. Als het stelsel opl
 Stel dat er twee oplossingen zijn van het stelsel, $X_1$ en $X_2$. Het is nu makkelijk te zien dat $X^(\lambda) = X_1 + \lambda(X_2-X_1)$ ook een oplossing is van het stelsel. Omdat we $\lambda$ vrij kunnen kiezen zijn dus er oneindig veel oplossingen van het stelsel.
 \end{proof}
 
+
 \subsection{Eigenschap 1.29 p 34}
+\label{1.29}
 \subsubsection*{Te Bewijzen}
 Als $A$ de linker inverse is van $B$ dan is $B^T$ de linker inverse van $A$.
+
 \subsubsection*{Bewijs}
 \begin{proof}
 \[\mathbb{I} = AB= (AB)^T = B^TA^T = \mathbb{I}\]
 \end{proof}
 
+
 \subsection{Stelling 1.30 p 34}
 \subsubsection*{Te Bewijzen}
 Als een vierkante matrix $A$ een links inverse $B$ en een rechtse $C$ heeft dan geldt $B=C$.
+
 \subsubsection*{Bewijs}
 \begin{proof}
 $B$ en $C$ moeten dezelfde afmetingen hebben als $A$, anders zijn de vermenigvuldigingen niet gedefini\"eerd.
@@ -243,19 +272,79 @@ $B$ en $C$ moeten dezelfde afmetingen hebben als $A$, anders zijn de vermenigvul
 \[B = C\]
 \end{proof}
 
+
 \subsection{Stelling 1.32 p 35}
+\label{1.32}
 \subsubsection*{Te Bewijzen}
 $A$ en $B$ zijn inverteerbare matrices van dezelfde afmetingen. $AB$ is ook inverteerbaar en het volgende geldt.
 \[
 (AB)^{-1} = B^{-1}A^{-1}
 \]
+
 \subsubsection*{Bewijs}
 \begin{proof}
 \[\mathbb{I} = ABA^{-1}B^{-1} = B^{-1}A^{-1}BA\]
 \end{proof}
 
+
+\subsection{Stelling 1.35}
+\label{1.35}
+\subsubsection*{Te Bewijzen}
+Elementaire matrices zijn inverteerbaar.
+
+\subsubsection*{Bewijs}
+\begin{proof}
+We zullen dit bewijzen door voor elke elementaire matrix de inverse te construeren.
+\begin{itemize}
+\item $E_1: R_i\mapsto \lambda R_i$
+\[
+E_1^{-1}=
+\begin{pmatrix}
+1 & 0 & 0 & \cdots & 0 & 0\\
+0 & 1 & 0 & \cdots & 0 & 0\\
+\vdots & \vdots & \ddots & \vdots& & \vdots\\
+0 & 0 & \cdots & \frac{1}{\lambda} & \cdots & 0\\
+\vdots & \vdots & & \vdots& \ddots & \vdots\\
+0 & 0 & \cdots & 0 & \cdots &1
+\end{pmatrix}
+\]
+
+\item $E_2: R_i \leftrightarrow R_j$
+\[
+E_2^{-1}=
+\begin{pmatrix}
+1 & 0 & \cdots & 0 & \cdots & 0 & \cdots & 0\\
+0 & 1 & \cdots & 0 & \cdots & 0 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots& & \vdots & &\vdots\\
+0 & 0 & \cdots & 0 & \cdots & 1 & \cdots & 0\\
+\vdots & \vdots & & \vdots& \ddots & \vdots & &\vdots\\
+0 & 0 & \cdots & 1 & \cdots & 0 & \cdots & 0\\
+\vdots & \vdots & & \vdots & & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & 0 & \cdots & 0 & \cdots & 0
+\end{pmatrix}
+\]
+\item $R_3: R_i \mapsto R_i \lambda R_j$
+\[
+E_3^{-1}=
+\begin{pmatrix}
+1 & 0 & \cdots & 0 & \cdots & 0 & \cdots & 0\\
+0 & 1 & \cdots & 0 & \cdots & 0 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots& & \vdots & &\vdots\\
+0 & 0 & \cdots & 1 & \cdots & -\lambda & \cdots & 0\\
+\vdots & \vdots & & \vdots& \ddots & \vdots & &\vdots\\
+0 & 0 & \cdots & 0 & \cdots & 1 & \cdots & 0\\
+\vdots & \vdots & & \vdots & & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & 0 & \cdots & 0 & \cdots & 0
+\end{pmatrix}
+\]
+\end{itemize}
+\end{proof}
+
+
 \subsection{Stelling 1.36 p 38}
+\label{1.36}
 Zij $A$ een $n\times n$ matrix.
+
 \subsubsection*{Te Bewijzen}
 De volgende beweringen zijn equivalent.
 \begin{enumerate}
@@ -266,6 +355,7 @@ De volgende beweringen zijn equivalent.
 \item De matrix $A$ is inverteerbaar.
 \item De matrix $A$ heeft een rechts inverse
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 \textbf{$1 \rightarrow 2$ }\\
@@ -318,13 +408,18 @@ B\cdot A = \mathbb{I}_n
 \]
 $B$ is dus ook de linker inverse van $A$.
 \end{proof}
+
+
 \subsection{Lemma 1.41 p 40}
+\label{1.41}
 Zij $A,B \in \mathbb{R}^{n\times n}$.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item $A,B$ benedendriehoeks $\Rightarrow A\cdot B$ benedendriehoeks.
 \item $A,B$ bovendriehoeks $\Rightarrow A\cdot B$ bovendriehoeks.
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 \[
@@ -336,10 +431,14 @@ Zij $A,B \in \mathbb{R}^{n\times n}$.
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Stelling 1.42 p 41}
+\label{1.42}
 Zij $A$ een $m\times n$ matrix die in echelonvorm gebracht kan worden door elementaire rijoperaties zonder rij omwisselingen te gebruiken.
+
 \subsubsection*{Te Bewijzen}
 Er bestaat een $m\times m$ benedendriehoeksmatrix $L$ en een $m\times n$ bovendriehoeksmatrix $U$ zodat $A = L\cdot U$.
+
 \subsubsection*{Bewijs}
 Om de matrix $A$ in echelonvorm te brengen moeten we deze links vermenigvuldigen met elementaire matrices die benedendriehoeksmatrices zijn als er geen rij omwisselingen nodig zijn. Noem deze elementaire matrices $E_1,...,E_k$.
 \[
@@ -354,9 +453,12 @@ $L\cdot U$ heet de $LU$-decompositie.
 
 
 \subsection{Stelling 1.45 p 43}
+\label{1.45}
 Zij $A$ een inverteerbare $n\times n$ matrix die via rijoperaties tot in trapvorm kan gebracht worden zonder rijen te verwisselen.
+
 \subsubsection*{Te Bewijzen}
 Er bestaat een unieke benedendriehoeksmatrix $L$ met enkel $1$ op de diagonaal en een unieke bovendriehoeksmatrix $U$ zodat $A=LU$.
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs uit het ongerijmde.\\
@@ -371,5 +473,6 @@ L_2^{-1}L_1 = U_2U_1^{-1}
 De matrix in het linkerlid is een benedendriehoeksmatrix met enkel $1$ op de diagonaal en de matrix in het rechterlid is een bovendriehoeksmatrix\footnote{Zie Lemma 1.41 p 40}.
 Een bovendriehoeksmatrix kan enkel gelijk zijn aan een benedendriehoeksmatrix met enkel $1$ op de hoofddiagonaal als ze beide gelijk zijn aan de eenheidsmatrix.
 \end{proof}
+
 
 \end{document}
