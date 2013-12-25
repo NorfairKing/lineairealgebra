@@ -116,14 +116,17 @@
     - [ ] 4.19 p147 jdewaen
     - [ ] 4.25 p154 fokdiekul
     - [ ] 4.37 p160 egonny
-* TODO Hoofdstuk 5
-  DEADLINE: <2013-12-10 Die>
-** TODO Oefeningen
-*** TODO Voorbereiding
+* DELEGATED Hoofdstuk 5
+  CLOSED: [2013-12-25 Wed 11:50] DEADLINE: <2013-12-10 Die>
+** DELEGATED Oefeningen
+   CLOSED: [2013-12-25 Wed 11:50]
+*** DELEGATED Voorbereiding
+    CLOSED: [2013-12-25 Wed 11:50]
     - [X] 3 NorfairKing
     - [ ] 4
       - [ ] c jdewaen
-*** TODO In Oefenzitting
+*** DELEGATED In Oefenzitting
+    CLOSED: [2013-12-25 Wed 11:50]
     - [ ] 1 egonny
     - [ ] 4
       - [ ] a fokdiekul
@@ -133,7 +136,8 @@
     - [ ] 11 fokdiekul
     - [X] 17 MajorMonodon
     - [ ] 18 jdewaen
-*** TODO Extra
+*** DELEGATED Extra
+    CLOSED: [2013-12-25 Wed 11:50]
 	- [ ] 2
 	- [ ] 4 b
 	- [ ] 5
@@ -147,18 +151,22 @@
 	- [ ] 19
 	- [ ] 20
 	- [ ] 21
-** TODO Opdrachten
+** DELEGATED Opdrachten
+   CLOSED: [2013-12-25 Wed 11:50]
     - [ ] 5.10 p 185
     - [X] 5.34 p 206
     - [ ] 5.42 p 211
-* TODO Hoofdstuk 6
-  DEADLINE: <2013-12-17 Die>
-** TODO Oefeningen
-*** TODO Werkzitting
+* DELEGATED Hoofdstuk 6
+  CLOSED: [2013-12-25 Wed 11:50] DEADLINE: <2013-12-17 Die>
+** DELEGATED Oefeningen
+   CLOSED: [2013-12-25 Wed 11:50]
+*** DELEGATED Werkzitting
+    CLOSED: [2013-12-25 Wed 11:50]
     - [ ] 5 warreee
     - [ ] 8c MajorMonodon
     - [ ] 15 jdewaen
-*** TODO Voorbereiding
+*** DELEGATED Voorbereiding
+    CLOSED: [2013-12-25 Wed 11:50]
     - [ ] 2
       - [ ] p1 warreee
       - [ ] p2 warreee
@@ -166,7 +174,8 @@
     - [ ] 7 egonny
     - [ ] 8 a MajorMonodon
     - [ ] 14 a NorfairKing
-*** TODO Extra
+*** DELEGATED Extra
+    CLOSED: [2013-12-25 Wed 11:50]
 	- [ ] 1
 	- [ ] 2 voor p3
 	- [ ] 4
@@ -185,7 +194,5 @@
 	- [ ] 18
 	- [ ] 19
 	
-** DONE Opdrachten
-   CLOSED: [2013-12-23 Mon 15:14]
-   - [X] 6.8 p 227
+
      
