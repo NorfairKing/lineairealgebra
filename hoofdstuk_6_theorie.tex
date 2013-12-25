@@ -8,12 +8,14 @@
 \subsection{Opmerking 6.2 p 222}
 \label{6.2}
 Zij $(\mathbb{R},V,+)$ een reële vectorruimte.
+
 \subsubsection*{Te Bewijzen}
 Een inproduct is lineair in de tweede component.
 \[
 \forall w_1,w_2,v\in V, \forall \lambda_1,\lambda_2 \in \mathbb{R}:
 \langle v,\lambda_1w_1+\lambda_2w_2\rangle = \lambda_1\langle v,w_1\rangle + \lambda_2\langle v,w_2\rangle
 \]
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Kies drie willekeurige vectoren $w_1,w_2,v\in V$ en beschouw het volgende inproduct. Door lineariteit in de eerste component geldt de gelijkheid.
@@ -27,13 +29,16 @@ Door symmetrie geldt dat deze twee leden ook gelijk zijn aan de volgende.
 \end{proof}
 
 \subsection{Voorbeeld 6.6 p 224}
+\label{6.6}
 Definieer $\langle f,g\rangle$ als volgt.
 \[
 \langle f,g\rangle = \int_a^bf(x)\cdot g(x)dx
 \]
 Beschouw de vectorruimte $(\mathbb{R},C[a,b],+)$.
+
 \subsubsection*{Te Bewijzen}
 $\langle f,g\rangle$ is een inproduct.
+
 \subsubsection*{Bewijs}
 \begin{proof}
 \begin{itemize}
@@ -67,8 +72,11 @@ Dit is positief als want het is een kwadraat, namelijk van $\int_a^bv(x)dx$
 \end{itemize}
 \end{proof}
 
+
 \subsection{Stelling 6.11 p 228}
+\label{6.11}
 Zij $(\mathbb{R},V,+,\langle\cdot,\cdot\rangle)$ een inproductruimte met bijhorende norm.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item 
@@ -86,6 +94,7 @@ Zij $(\mathbb{R},V,+,\langle\cdot,\cdot\rangle)$ een inproductruimte met bijhore
 \forall v\in V: \Vert v\Vert\ge 0 \Leftrightarrow v=\vec{0}
 \]
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Direct bewijs.\\
@@ -112,8 +121,11 @@ Dit kan enkel waar zijn als hetgeen onder de wortel ook nul is. Dit is zo omdat 
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Stelling 6.14 p 229}
+\label{6.14}
 Zij $(\mathbb{R},V,+,\langle\cdot,\cdot\rangle)$ een inproductruimte.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item 
@@ -166,13 +178,17 @@ Als $w$ en $v$ lineair afhankelijk zijn dan bestaat er dus een $\lambda\in\mathb
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Definitie 6.16 p 231}
+\label{6.16}
 Zij $(\mathbb{R},V,+,\langle\cdot,\cdot\rangle)$ een inproductruimte.
+
 \subsubsection*{Te Bewijzen}
 Voor elke $v,w\in V$ bestaat er een unieke hoek $\theta$ zodat de volgende gelijkheid geldt.
 \[
 \cos\theta = \frac{\langle v,w\rangle}{\Vert v\Vert\cdot \Vert w\Vert}
 \]
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Direct bewijs\\
@@ -187,12 +203,16 @@ Hieruit volgt het volgende, zorg dat je dit begrijpt.
 We weten dat voor elk getal tussen $-1$ en $1$ er een hoek bestaat zodat de cosinus ervan dat getal is.
 \end{proof}
 
+
 \subsection{Stelling 6.19 p 232}
+\label{6.19}
 Zij $(\mathbb{R},V,+,\langle\cdot,\cdot\rangle)$ een inproductruimte met bijhorende norm $||\cdot ||$.
+
 \subsubsection*{Te Bewijzen}
 \[
 \forall v,w \in V: \Vert v+w \Vert \le \Vert v\Vert + \Vert w\Vert
 \]
+
 \subsubsection*{Bewijs}
 \begin{proof}
 We weten dat $\Vert v+w \Vert$ en $\Vert v\Vert + \Vert w\Vert$ positief zijn. Bijgevolg is het voldoende te bewijzen dat $\Vert v+w \Vert^2 \le (\Vert v\Vert + \Vert w\Vert)^2$ geldt.
@@ -209,12 +229,16 @@ Passen we nu drie keer de ongelijkheid van Cauchy-Schwartz toe dan verkrijgen we
 \]
 \end{proof}
 
+
 \subsection{Opmerking 6.20 p 232}
+\label{6.20}
 Zij $(\mathbb{C},V,+,\langle\cdot,\cdot\rangle)$ een hermetische ruimte.
+
 \subsubsection*{Te Bewijzen}
 \[
 \forall v,w \in V: \Vert v+w \Vert \le \Vert v\Vert + \Vert w\Vert
 \]
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Merk allereerst op dat het wel degelijk zin heeft om dit te bewijzen. Hoewel het hermetisch product beelden heeft in $\mathbb{C}$ heeft de norm nog steeds enkel beelden in $\mathbb{R}$.
@@ -233,13 +257,16 @@ We passen nu twee keer de ongelijkheid van Cauchy-Schwartz toe (op de eerste en 
 \[
 \langle v,v\rangle + \langle v,w\rangle + \overline{\langle v,w \rangle} + \langle w,w \rangle \le \Vert v\Vert^2 + 2\Vert v\Vert \Vert w\Vert + \Vert w\Vert^2 = (\Vert v\Vert + \Vert w\Vert)^2
 \]
-
 \end{proof}
 
+
 \subsection{Stelling 6.23 p 234}
+\label{6.23}
 Zij $(\mathbb{R},V,+,\langle\cdot,\cdot\rangle)$ een inproductruimte en zij $\alpha = \{v_1,v_2,...,v_k\}$ een deelverzameling van $k$ vectoren uit $\alpha$ zodat geen enkele $v_i$ de nulvector is en zodat voor twee verschillende $v_i,v_j (i\neq j)$ orthogonaal zijn ($\langle v_i,v_j \rangle = 0$). 
+
 \subsubsection*{Te Bewijzen}
 $\alpha$ is vrij.
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs uit het ongerijmde.\\
@@ -258,16 +285,19 @@ De eerste gelijkheid geldt uit lineariteit van het inproduct \footnote{Zie opmer
 We weten dat $\Vert v_i\Vert^2$ strikt positief is aangezien $v_i \neq \vec{0}$. Hieruit volgt dat elke $\mu_i = -\lambda_i = 0$. Dit betekent dat $\alpha$ vrij is, en dat is in contradictie met de aanname.
 \end{proof}
 
+
 \subsection{Stelling 6.26 p 236}
 \label{6.26}
 Zij $(\mathbb{R}, V,+, \langle \cdot,\cdot \rangle)$ een euclidische ruimte en zij $\beta = \{v_1,v_2,...,v_n\}$ een \emph{orthonormale} basis van $V$. Zij $x,y\in \mathbb{R}^n$ twee willekeurige coördinaatvectoren ten opzichte van $\beta$. $x$ en $y$ zien er uit als volgt.
 \[
 x = (x_1,x_2,...,x_n) \text { en } y = (y_1,y_2,...,y_n)
 \]
+
 \subsubsection*{Te Bewijzen}
 \[
 \langle x,y\rangle = \sum_{i=1}^nx_iy_i
 \]
+
 \subsubsection*{Bewijs}
 Omdat $\beta$ een orthonormale basis is, geldt $\langle x, v_i \rangle = x_i$ \footnote{Zie Opmerking 6.25 p 235}.
 \begin{proof}
@@ -293,6 +323,7 @@ Omdat $\beta$ een orthonormale basis is is $i$-de component van de basisvector p
 = \sum_{i=1}^nx_i y_j
 \]
 \end{proof}
+
 
 \subsection{Stelling 6.27 p 238}
 \label{6.27}
@@ -363,12 +394,16 @@ u_{k+1} = \frac{1}{\Vert v_{k+1}'\Vert}v_{k+1}'
 Omdat $V$ eindig dimensionaal is zal dit algoritme zeker stoppen. Het resultaat is $\{u_1,u_2,...,u_n\}$, een orthonormale basis.
 \end{proof}
 
+
 \subsection{Definitie 6.30 p 240}
+\label{6.30}
 Zij $(\mathbb{R}, V,+, \langle \cdot,\cdot \rangle)$ een euclidische ruimte en zij $U$ een deelruimte van $V$.
+
 \subsubsection*{Te Bewijzen}
 \[
 U^\bot \text{ is een deelruimte van } V
 \]
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs volgens Stelling 3.11 p 94.
@@ -411,7 +446,9 @@ Nu moeten we aantonen dat dit ook voor de lineaire combinatie geldt. Kies $u$, e
 De laatste twee implicaties gelden volgens de lineariteit van het inproduct \footnote{Zie Definitie 6.1 en opmerking 6.2 p 222}.
 \end{proof}
 
+
 \subsection{Stelling 6.31 p 240}
+\label{6.31}
 Zij $(\mathbb{R}, V,+, \langle \cdot,\cdot \rangle)$ een euclidische ruimte en zij $U$ een deelruimte van $V$.
 
 \subsubsection*{Te Bewijzen}
@@ -461,9 +498,12 @@ Uit de definitie van het orthogonaal complement volgt dat $U \subset (U^\bot)^\b
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Voorbeeld 6.32 p 241}
+\label{6.32}
 \subsubsection*{Te bewijzen}
 In $\mathbb{R}^3$ is het orthogonaal complement van de $x-as$ het volledige $yz$-vlak.
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Zij $\{e_1,e_2,e_3\}$ de standaardbasis van $\mathbb{R}^3$. Elke vector op de $x$-as is een veelvoud van $e_1$ en elke vector op het $xy$-vlak kan geschreven worden als een lineaire combinatie van $e_2$ en $e_3$.
@@ -481,8 +521,11 @@ De eerste twee gelijkheden gelden omwille van de lineariteit van het inproduct \
 De laatste gelijkheid geldt omdat $e_1,e_2,e_3$ orthonormaal zijn.
 \end{proof}
 
+
 \subsection{Stelling 6.34 p 242}
+\label{6.34}
 Zij $U$ een eindig dimensionale deelruimte van de euclidische ruimte $(\mathbb{R}, V,+, \langle \cdot,\cdot \rangle)$.
+
 \subsubsection*{Te Bewijzen}
 Voor elke $v\in V$ geldt dat $pr_U(v)$ de vector in $U$ op minimale afstand van $v$ is.
 
@@ -514,10 +557,14 @@ Onderstaande ongelijkheid geldt omdat het inproduct positief is \footnote{Zie De
 \]
 \end{proof}
 
+
 \subsection{Lemma 3.36 p 243}
+\label{6.36}
 Zij $(\mathbb{R},\mathbb{R}^n,+,\langle \cdot , \cdot \rangle)$ de standaard euclidische ruimte en $L_A : \mathbb{R}^n \rightarrow \mathbb{R}^n: X \mapsto A \cdot X$ een lineaire transformatie met een symmetrische matrix $A$.
+
 \subsubsection*{Te Bewijzen}
 $A$ heeft uitsluitend re\"ele eigenwaarden.
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs door gefoefel.\\
@@ -543,7 +590,9 @@ Opnieuw gebruiken we de definitie van het hermetisch product en het feit dat $\l
 Omdat $\lambda$ gelijk is aan zijn complement zit $\lambda$ in $\mathbb{R}$.
 \end{proof}
 
+
 \subsection{Lemma 6.38 p 244}
+\label{6.38}
 Zij $(\mathbb{R},\mathbb{R}^n,+,\langle \cdot , \cdot \rangle)$ de standaard euclidische ruimte en $L_A : \mathbb{R}^n \rightarrow \mathbb{R}^n: X \mapsto A \cdot X$ een lineaire transformatie met een symmetrische matrix $A$.
 \subsubsection*{Te Bewijzen}
 Eigenvectoren bij verschillende eigenwaarden van $A$ zijn orthogonaal.
@@ -638,6 +687,7 @@ Omdat alle $\beta_i$ orthonormale basissen zijn en ze lineair onafhankelijk \foo
 \subsection{Stelling 6.46 p 249}
 \label{6.46}
 Zij $(\mathbb{R},V,+,\langle \cdot , \cdot \rangle)$ een euclidische ruimte en $A\in \mathbb{R}^{n\times n}$ een vierkante matrix.
+
 \subsubsection*{Te Bewijzen}
 \begin{center}
 De kolommen van $A$ vormen een orthonormale basis van $\mathbb{R}^n$
@@ -652,6 +702,7 @@ De kolommen van $A$ vormen een orthonormale basis van $\mathbb{R}^n$
 \begin{center}
 De rijen van $A$ vormen een orthonormale basis van $\mathbb{R}^n$
 \end{center}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs door circulaire implicaties.
@@ -682,14 +733,17 @@ De rijen van $A$ vormen een orthonormale basis. $\Rightarrow$ De kolommen van $A
 We weten dat de kolommen van $A^T$ een orthonormale basis vormen.
 Daaruit volgt dat de rijen van $A^T$ een orthonormale basis vormen.
 Dit zijn precies de kolommen van $A$.
-
 \end{itemize}
 \end{proof}
 
+
 \subsection{Stelling 6.48 p 246}
+\label{6.48}
 Zij $A\in \mathbb{R}^{n\times n}$ een symmetrische matrix.
+
 \subsubsection*{Te Bewijzen}
 Er bestaat een orthogonale matrix $P\in \mathbb{R}^{n\times n}$ zodat $P^{-1}AP = P^TAP$ een diagonaalmatrix is.
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Beschouw $A$ als de matrix van een lineaire transformatie van $\mathbb{R}^n$ ten opzichte van de standaard orthonormale basis.
@@ -697,13 +751,17 @@ Volgens de spectraalstelling bestaat er dan een orthonormale basis van eigenvect
 Zetten we die eigenvectoren in de kolommen van een matrix $P$ dan bekomen we het te bewijzen.
 \end{proof}
 
+
 \subsection{Stelling 6.49 p 249}
+\label{6.49}
 Zij $A\in \mathbb{R}^{n\times n}$ een orthogonale matrix.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item De determinant van $A$ is $1$ of $-1$.
 \item Elke (re\"eele eigenwaarde van $A$ is $1$ of $-1$.
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Direct bewijs.
@@ -722,6 +780,7 @@ det(A^{-1}) = det(A^T)
 1 = det(A)^2
 \]
 Dit kan alleen kloppen als de derminant van $A$ $1$ of $-1$ is.
+
 \item
 Let op: gefoefel! Dit is geen  moeilijk bewijs als u weet hoe eraan te beginnen. Een manier om erop te komen is door in te zien dat we moeten bewijzen dat $\lambda^2$ gelijk moet zijn aan $1$.\\
 Zij $\lambda$ een eigenwaarde van $A$ met eigenvector $v$.
@@ -729,11 +788,11 @@ Zij $\lambda$ een eigenwaarde van $A$ met eigenvector $v$.
 \lambda^2\langle v,v\rangle = \langle \lambda v,\lambda v\rangle = \langle A v,A v\rangle = v^TA^T A v = v^TA^{-1} A v = v^Tv = \langle v, v \rangle
 \]
 Dit houdt precies in dat $\lambda^2 = 1$ geldt. $\lambda$ moet dus $1$ of $-1$ zijn. Omdat deze bewering geldt voor een willekeurige eigenwaarde $\lambda$ van $A$ geldt ze voor elke eigenwaarde van $A$.
-
 \end{enumerate}
 \end{proof}
 
 \subsection{Stelling 6.50 p 250}
+\label{6.50}
 Zij $(\mathbb{R},\mathbb{R}^n,+,\langle \cdot , \cdot \rangle)$ de standaard euclidische ruimte   en $L_A : \mathbb{R}^n \rightarrow \mathbb{R}^n: X \mapsto A \cdot X$ een lineaire transformatie met een orthogonale matrix $A$. Zij $u_1,...,u_n$ een orthonormale basis voor $\mathbb{R}^n$.
 
 \subsubsection*{Te Bewijzen}
@@ -804,16 +863,22 @@ Omdat $L_A$ de lengte en orthogonaliteit behoudt (en het beeld van een basis opn
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Stelling 6.52 p 251}
+\label{6.52}
 Zij $A \in \mathbb{C}^{n\times n}$ een Hermetische matrix.
+
 \subsubsection*{Te Bewijzen}
 Er bestaan een unitaire matrix $P \in \mathbb{C}^{n\times n}$ zodat $P^{-1}AP = \overline{P}^TAP$ een diagonaalmatrix is.
+
 \subsubsection*{Bewijs}
 \begin{proof}
-
+%TODO
 \end{proof}
 
+
 \subsection{Stelling 6.56 p 252}
+\label{6.56}
 Zij $A \in \mathbb{R}^{m\times n}$ en $P \in \mathbb{R}^{m\times m}$ een orthogonale matrix.
 
 \subsubsection*{Te Bewijzen}
@@ -837,12 +902,16 @@ Of als we $A$ noteren als een rij van kolommen $(a_1 a_2 \cdots a_n)$ dan is bov
 \]
 \end{proof}
 
+
 \subsection{Stelling 6.58 p 253}
+\label{6.58}
 Zij $L$ een lineaire transformatie van een inproductruimte $(\mathbb{R},V,+,\langle \cdot,\cdot \rangle)$.
+
 \subsubsection*{Te Bewijzen}
 \[
 \text{ L is orthogonaal } \Leftrightarrow \forall v \in V: \Vert L(v) \Vert = \Vert v\Vert
 \]
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs van een equivalentie.\\
@@ -877,6 +946,7 @@ We gebruiken eenderzijds de lineariteit van $L$ en anderzijds de gegeven eigensc
 = \Vert v\Vert^2 + 2\langle L(v),L(w) \rangle +\Vert w\Vert^2
 \]
 Al deze gelijkheden gelden simpelweg omwille van de definitie van het inproduct en de norm.\footnote{Zie Definitie 6.1 p 222.} \footnote{Zie Definitie 6.9 p 227.}. De laatste gelijkheid geldt omdat $L$ de norm van elke vector in $V$ bewaart.
+
 \item
 \[
 \Vert L(v+w) \Vert^2 = \Vert v+w \Vert^2
@@ -898,13 +968,18 @@ Voegen we deze redeneringen nu samen dan krijgen we de volgende gelijkheid.
 \end{itemize}
 \end{proof}
 
+
 \subsection{Propositie 6.59 p 254}
+\label{6.59}
 Zij $L$ een lineaire transformatie van een inproductruimte $(\mathbb{R},V,+,\langle \cdot,\cdot \rangle)$.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item Elke (re\"eele) eigenwaarde van $L$ is $1$ of $-1$.
+
 \item $L$ is injectief en als $V$ eindigdimensionaal is dan is $L$ ook een isomorfisme.
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 \begin{enumerate}
@@ -917,7 +992,9 @@ Als $L$ injectief is en $V$ eindig dimensionaal, dan is $L$ bijectief en dus een
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Stelling 6.60 p 254}
+\label{6.60}
 Zij $L$ een lineaire transformatie van een $n$-dimensionale inproductruimte $(\mathbb{R},V,+,\langle \cdot,\cdot \rangle)$.
 Zij $A$ een matrix van $L$ ten opzichte van een orthonormale basis $\beta = e_1,e_2,...,e_n$.
 
@@ -1075,8 +1152,6 @@ m=\lambda_1,\lambda_2,...,\lambda_n=M
 \]
 Nu geldt voor elke $v\in \mathbb{R}^n$ dat $\Vert v\Vert = 1 \Leftrightarrow \sum_{i=1}^ny_i^2 = 1$ omdat $\beta$ orthonormaal is.
 Op de eenheidssfeer bereikt $Q$ als minimumwaarde $\lambda_1=m$ en als maximumwaarde $\lambda_n=M$. $x_m$ is dan $p_1$ en $x_M$ is dan $p_n$. Let wel op dat die $x_m$ en $x_M$ nog volgens de originele basis geschreven moeten worden.
-
-
 \end{proof}
 
 
