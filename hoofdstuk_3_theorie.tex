@@ -3,7 +3,9 @@
 
 \chapter{Theorie Hoofdstuk 3}
 \section{Bewijzen uit de cursus}
+
 \subsection{Voorbeeld 3.6 p 91}
+\label{3.6}
 \subsubsection*{2)}
 \emph{Te Bewijzen}\\
 $(\mathbb{C},\mathbb{R},+)$ is geen (complexe) vectorruimte.
@@ -31,11 +33,14 @@ v_1 + v_2 = X+1-X = 1
 
 
 \subsection{Lemma 3.7 p 93}
+\label{3.7}
 Zij $(\mathbb{R},V,+)$ een vectorruimte en $v,w,x\in V$
+
 \subsubsection*{Te Bewijzen}
 \[
 v+x = w+x \Rightarrow v=w
 \]
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Rechtstreeks bewijs.\\
@@ -61,8 +66,11 @@ v = w
 We gebruiken telkens eigenschappen van een commutatieve groep: de optelling\footnote{Zie Definitie 3.2 p 88}.
 \end{proof}
 
+
 \subsection{Lemma 3.8 p 93}
+\label{3.8}
 Zij $(\mathbb{R},V,+)$ een vectorruimte, $v\in V$ en $\lambda \in \mathbb{R}$.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item
@@ -78,6 +86,7 @@ Zij $(\mathbb{R},V,+)$ een vectorruimte, $v\in V$ en $\lambda \in \mathbb{R}$.
 (-\lambda)v = -(\lambda v ) = \lambda(-v)
 \]
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs door gefoefel.\\
@@ -137,8 +146,11 @@ $v+x=w+x \Rightarrow v=w$\footnote{Zie Lemma 3.7 p 93}.
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Stelling 3.11 p 94}
+\label{3.11}
 Zij $(\mathbb{R},V,+)$ een vectorruimte. $U \neq \emptyset$
+
 \subsubsection*{Te Bewijzen}
 \begin{center}
 $U$ is een deelruimte van $V$
@@ -156,6 +168,7 @@ $U$ is een deelruimte van $V$
 \[
 \forall x,y\in U, r,s\in \mathbb{R}: rx+sy\in U
 \]
+
 \subsubsection*{Bewijs}
 \begin{proof}
 We bewijzen eerst de equivalentie van de eerste bewering met de tweede.\\
@@ -165,37 +178,41 @@ Als $U$ een deelruimte is van $V$ dan is $U$ een vectorruimte\footnote{Zie Defin
 $U$ is niet leeg, dus $U$ bevat minstens \'e\'en element, noem het $u$. Uit de tweede voorwaarde geldt dan ook dat $-u \in U$. Uit de eerste voorwaarde geldt dan dat $u-u = \vec{0} \in U$. Voor elk element uit $U$ zit het tegengestelde ervan dus ook in $U$. Elke axioma uit definitie 3.2 en 3.3 zijn nu automatisch voldaan voor de elementen in $U$ omdat ze voldaan zijn in $V$.
 \end{proof}
 
+
 \subsection{Voorbeeld 3.13 p 95}
+\label{3.13}
+
 \subsubsection*{3)}
-\begin{itemize}
-\item \emph{(a)}\\
+\begin{enumerate}[(a)]
+\item
+Dit is makkelijk in te zien omdat de deelruimteheid equivalent is aan die van $\mathbb{R}^2$.
 %TODO bewijs
 
-\item\emph{(b)}\\
+\item
 De scalaire vermenigvuldiging is niet intern.\\
 Kies $\lambda = 2$ en $v=(1,1,5)$
 \[
 \lambda v = 2 \cdot (1,1,5) = (2,2,10) \not \in B
 \]
 
-\item\emph{(c)}\\
+\item
 Dit is makkelijk in te zien omdat de deelruimteheid equivalent is aan die van $\mathbb{R}$.
 %TODO bewijs
-\[
-\]
 
-\item\emph{(d)}\\
+\item
 De optelling is niet intern.\\
 Kies en $v=(0,1,1)$ e, $v_2 = (1,0,0)$
 \[
 v_1 + v_2 = (0,1,1) + (1,0,0) = (1,1,1) \not \in D
 \]
-\end{itemize}
+\end{enumerate}
 
 
 \subsection{Propositie 3.14 p 96}
+\label{3.14}
 \subsubsection*{Te Bewijzen}
 De doorsnede van een aantal deelruimten van een vectorruimte $(\mathbb{R},V,+)$ is opnieuw een deelruimte van $V$
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs door inductie.\\
@@ -210,7 +227,9 @@ We bewijzen nu dat als de bewerking geldt voor een bepaalde $k$, de bewering dan
 Stel dat $U_1,U_2,...,U_k,U_{k+1}$ deelruimten zijn van $V$. $\bigoplus_{i=1}^k U_i$ is een deelruimte van $V$ vanwege de inductiehypothese. $(\bigoplus_{i=1}^k U_i) \cap U_{k+1}$ is nu een deelruimte vanwege de basis stap.
 \end{proof}
 
+
 \subsection{Propositie 3.22 p 99}
+\label{3.22}
 Zij $(\mathbb{R},V,+)$. Zij $U_i$ deelruimten van $V$.
 
 \subsubsection*{Te Bewijzen}
@@ -283,12 +302,16 @@ Het eerste deel geldt omwille van de inductiehypothese, het tweede deel geldt om
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Propositie 3.26 p 101}
+\label{3.26}
 Gegeven een verzameling lineair onafhankelijke vectoren $D= \{v_1,v_2,...,v_n\}$.
+
 \subsubsection*{Te Bewijzen}
 \[
 \sum_{i=1}^n\lambda_iv_i=0 \Leftrightarrow \lambda_1 = \lambda_2 = ... = \lambda_n = 0
 \]
+
 \subsubsection*{Bewijs}
 \begin{proof}
 \emph{$\Rightarrow$}\\
@@ -310,8 +333,11 @@ Dit is evident waar\footnote{Zie Lemma 3.8 p 93 puntje 1.}.
 \]
 \end{proof}
 
+
 \subsection{Stelling 3.32 p 104}
+\label{3.32}
 Zij $(\mathbb{R},V,+)$ een vectorruimte en $A = \{x_1,x_2,...,x_m\}$ een deelverzameling van $m$ vectoren uit $V$.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item
@@ -319,6 +345,7 @@ Als $A$ voortbrengend is voor $V$, dan is elke deelverzameling van $V$ met meer 
 \item
 Als $V$ vrij is, dan is elke deelverzameling van $V$ met minder dan $m$ vectoren niet voortbrengend voor $V$.
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Dit is een relatief complex bewijs. Er zijn enkele mogelijke manieren om dit te bewijzen, de makkelijkste methode is het steunen op de theorie over stelsels en homogeniteit. Ook Definitie 3.15 op pagina 97 en Definitie 3.25 op pagina 101 zijn cruciale kennis voor dit bewijs of leveren toch een beter inzicht.\\
@@ -368,32 +395,44 @@ Een deelverzameling met minder elementen dan een vrije deelverzameling van een v
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Gevolg 3.33 p 105}
+\label{3.33}
 Zij $A$ een deelverzameling van de vectorruimte $(\mathbb{R},V,+)$ met $m$ elementen.
+
 \subsubsection*{Te Bewijzen}
 Als $A$ voortbrengend is, dan bevat elke vrij deelverzameling van $V$ hoogstens $m$ elementen.
+
 \subsubsection*{Bewijs}
 \begin{proof}
 We weten dat elke deelverzameling $B$ van $V$ met meer dan $m$ elementen niet meer vrij is. $B$ heeft dus hoogstends $m$ elementen.
 \end{proof}
 
+
 \subsection{Gevolg 3.34 p 105}
+\label{3.34}
 Zij $(\mathbb{R},V,+)$ een vectorruimte met een basis van $n$ vectoren.
+
 \subsubsection*{Te Bewijzen}
 Elke andere basis van $V$ heeft ook $n$ vectoren.
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Een basis is vrij en voortbrengend.
 Volgens het lemma van Steinitz\footnote{Zie Stelling 3.32 p 104} is elke andere deelverzameling van $V$ met meer dan $n$ vectoren niet meer vrij en elke andere deelverzameling van $V$ met minder dan $n$ vectoren niet meer voortbrengend. Elke basis van $V$ heeft dus $n$ vectoren.
 \end{proof}
 
+
 \subsection{Stelling 3.37 p 107}
+\label{3.37}
 Zij $(\mathbb{R},V,+)$ een vectorruimte met dimensie $n$.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item Elke vrije verzameling van $V$ kan uitgebreid worden tot een basis van $V$.
 \item Elke eindige voortbrengende verzameling van $V$ kan uitgedund worden tot een basis van $V$.
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 \begin{enumerate}
@@ -408,13 +447,17 @@ Elke vector in $B$ is lineair onafhankelijk van zijn 'voorgangers'. Er bestaat d
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Eigenschap 3.40 p 108}
+\label{3.40}
 Zij $V$ een $n$-dimensionale vectorruimte.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item $n$ lineair onafhankelijke vectoren in $V$ vormen een basis van $V$.
 \item $n$ voortbrengende vectoren in $V$ vormen een basis van $V$.
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 We weten dat elke basis van $V$ $n$ vectoren bevat.\footnote{Zie Gevolg 3.34 p 105}
@@ -426,14 +469,18 @@ Stel $E$ is de verzameling van $n$ voortbrengende vectoren. $D$ kan uitgedund wo
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Stelling 3.41 p 109}
+\label{3.41}
 Zij $(\mathbb{R},V,+)$ een $n$-dimensionale vectorruimte. Zij $B$ een verzameling van $n$ vectoren uit $V$.
+
 \subsubsection*{Te Bewijzen}
 \begin{center}
 $B$ is een basis van $V$.\\$\Leftrightarrow$\\
 $B$ is een vrij deel van $V$.\\$\Leftrightarrow$\\
 $B$ is een voortbrengend deel van $V$.
 \end{center}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 We bewijzen niet elke implicatie, maar enkel de voorwaartse implicaties, en de implicatie van de laatste bewering naar de eerste.
@@ -447,14 +494,18 @@ $B$ kan uitgedund worden tot een basis van $V$ door het verwijderen van geen enk
 \end{itemize}
 \end{proof}
 
+
 \subsection{Stelling 3.42 p 109}
+\label{3.42}
 Zij $(\mathbb{R},V,+)$ een vectorruimte en $\beta \subset V$.
+
 \subsubsection*{Te Bewijzen}
 \begin{center}
 $\beta$ is een basis van $V$.\\$\Leftrightarrow$\\
 $\beta$ is maximaal vrij.\\$\Leftrightarrow$\\
 $\beta$ is minimaal voortbrengend.
 \end{center}
+
 \subsubsection*{Bewijs}
 We bewijzen niet elke implicatie, maar enkel de voorwaartse implicaties, en de implicatie van de laatste bewering naar de eerste.
 \begin{proof}
@@ -465,13 +516,17 @@ Omdat elke vrije verzameling kan uitgebreid worden tot een (voortbrengende) basi
 \item \emph{$\beta$ is minimaal voortbrengend. $\Rightarrow \beta$ is een basis van $V$.}\\ $\beta$ is een voortbrengende verzameling van $V$, en kan dus uitgedund worden tot een basis van $V$. Omdat $\beta$ minimaal voortbrengend is, zou de verwijdering van slechts $1$ er al voor zorgen dat $\beta$ niet meer voortbrengend zou zijn. $\beta$ is bijgevolg al een basis van $V$.
 \end{proof}
 
+
 \subsection{Stelling 3.43 p 110}
+\label{3.43}
 Zij $(\mathbb{R},V,+)$ een eindig dimensionale vectorruimte en $U$ een deelruimte van $V$.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item $U$ is eindig voortgebracht en $dimU \le dimV$
 \item $dimU=dimV \Leftrightarrow U = V$
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Dit bewijs wordt graag gevraagd en staat niet volledig in het boek.
@@ -489,7 +544,9 @@ Omdat $U$ gelijk is aan $V$ heeft $U$ dezelfde basis als $V$. In twee dezelfde v
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Voorbeeld 3.44 p 110}
+\label{3.44}
 \begin{enumerate}
 \item
 \[
@@ -510,16 +567,18 @@ Omdat $U$ gelijk is aan $V$ heeft $U$ dezelfde basis als $V$. In twee dezelfde v
 \[
 \beta_6 = \{\sqrt{548}-e^{25}x,\phi x + 10000000\}
 \]
-
 \end{enumerate}
 
 \subsection{Stelling 3.45 p 111}
+\label{3.45}
 Zij $(\mathbb{R},V,+)$ een vectorruimte en zij $\beta = \{v_1,v_2,...,v_n\}$ een basis van $V$.
+
 \subsubsection*{Te Bewijzen}
 Elke vector kan op een unieke wijze als een lineaire combinatie van de basisvectoren uitgedrukt worden. Er bestaat dus een bijectieve afbeelding $co_{\beta}$ die $v$ afbeeldt op het stel co\"effici\"enten dat correspondeert met $v$ ten opzichte van de basis $\beta$.
 \[
 co_{\beta}: V \rightarrow \mathbb{R}^n
  : \mapsto co_{\beta}(v)\]
+ 
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs uit het ongerijmde.\\
@@ -538,12 +597,15 @@ Hieruit volgt het volgende.
 Dit is een lineaire combinatie van de basisvectoren van $V$. Omdat de basis vrij is moeten alle co\"efficienten $(a_i-b_i)$ nul zijn. Dit is in contradictie met de aanname dat het stel co\"effici\"enten niet uniek is. Het stel co\"effici\"enten is dus wel uniek.
 \end{proof}
 
+
 \subsection{Stelling 3.49 p 114}
+\label{3.49}
 \subsubsection*{Te Bewijzen}
 Als de vectorruimte V eindigdimensionaal is, dan geldt voor willekeurige deelruimten $U$ en $W$ van $V$ het volgende.
 \[
 dim(U+W) + dim(U\cap W) = dim(U) + dim(W)
 \]
+
 \subsubsection*{Bewijs}
 We willen een verband vinden tussen de dimensies van al deze verzamelingen ($(U+W)$, $U\cap W$, $U$ en $W$). Om dit te doen beginnen we met een basis van de kleinste verzameling ($U \cap W$). Daarna breiden we deze basis uit tot een basis van $U$, tot een basis van $W$ en tot een basis van $(U + W)$. De dimensie van een vectorruimte is gelijk aan het aantal elementen in de basis ervan.\footnote{Definitie 3.35 p 106}\\\\
 Zij $dim(U) = r$, $dim(W)=s$ en $dim(U\cap W) = t$.
@@ -612,13 +674,17 @@ dim(U+W) r+s-t = dim(U) + dim(W) + dim(U \cap W)
 \]
 \end{proof}
 
+
 \subsection{Stelling 3.52 p 115}
+\label{3.52}
 Zij $(\mathbb{R},V,+)$ een eindig dimensionale vectorruimte. Zij $U_1,...,U_k$ deelruimten van $V$ zodat $V=\bigoplus_{i=1}^kU_i$. Zij $\beta_i$ de basissen van deze deelruimten.
+
 \subsubsection*{Te Bewijzen}
 $\bigcup_{i=1}^k\beta_i$ is een basis van $V$ en de volgende bewering geldt dus ook.
 \[
 dimV = \sum_{i=1}^kdimU_i
 \]
+
 \subsubsection*{Bewijs}
 \begin{proof}
 We moeten bewijzen dat $\bigcup_{i=1}^k\beta_i$ vrij en voortbrengend is.
@@ -643,10 +709,14 @@ dimV = \sum_{i=1}^kdimU_i
 \]
 \end{proof}
 
+
 \subsection{Stelling 3.56 p 116}
+\label{3.56}
 Zij $(\mathbb{R},V,+)$ een eindigdimensionale vectorruimte met basis.
+
 \subsubsection*{Te bewijzen}
 Elke deelruimte van $V$ heeft een complementaire deelruimte.
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Zij $U$ een deelruimte van $V$ met basis $\beta_U = \{u_1,u_2,...,u_n)$. $U$ kan uitgebreid worden tot een basis van $V$ met vectoren $w_1,w_2,...,w_k$. Deze vectoren $w_i$ spannen dan $W$ op zodat de volgende bewering geldt.
@@ -662,8 +732,11 @@ De vectoren uit de basis van $U$ zijn lineair onafhankelijk van de vectoren uit 
 \end{itemize}
 \end{proof}
 
-\subsection{Stelling 3.60 p 119}
+
+\subsection{Stelling 3.60 p 119}7
+\label{3.60}
 Zij $A \in \mathbb{R}^{m\times n}$ en zijn $U$ de rijgereduceerde matrixvorm van $A$.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item 
@@ -679,6 +752,7 @@ R(A) = R(U)
 dimN(A) + dimR(A) = n
 \]
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs in woorden.
@@ -698,8 +772,11 @@ $dimN(U)$ is gelijk aan het aantal vrije variabelen van het stelsel $U\cdot X = 
 \end{enumerate}
 \end{proof}
 
+
 \subsection{Stelling 3.61 p 120}
+\label{3.61}
 Zij $A \in \mathbb{m \times n}$ en $B \in \mathbb{n \times o}$ zodat $A\times B$ bepaald is.
+
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
 \item
@@ -715,6 +792,7 @@ C(AB) \subset C(A)
 R(AB)\subset R(B)
 \]
 \end{enumerate}
+
 \subsubsection*{Bewijs}
 \begin{proof}
 \begin{enumerate}
@@ -747,5 +825,6 @@ C(B^T) = R(B)
 \]
 \end{enumerate}
 \end{proof}
+
 
 \end{document}
