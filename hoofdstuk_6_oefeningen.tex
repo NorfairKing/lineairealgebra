@@ -159,6 +159,276 @@ v = \vec{0} \Rightarrow \langle V,V\rangle = \langle \vec{0},\vec{0}\rangle
 =
 \]
 
+
+\subsection{Oefening 3}
+\[
+\beta = \{ (3,-3,0),(2,2,-1),(1,1,4) \}
+\]
+Eerst bepalen we of $\beta$ orthogonaal is.
+In de volgende gelijkheden zien we dat dit klopt.
+\[
+\langle (3,-3,0),(2,2,-1) \rangle = 6-6+0 = 0
+\]
+\[
+\langle (2,2,-1),(1,1,4) \rangle = 2+2-4 = 0
+\]
+\[
+\langle (3,-3,0),(1,1,4) \rangle = 3-3+0 = 0
+\]
+Vervolgens bepalen we of $\beta$ inderdaad een basis vormt voor $\mathbb{R}^3$.
+Omdat $\beta$ precies drie vectoren bevat moeten we enkel aantonen dat $\beta$ vrij is \footnote{Zie Stelling 3.41 p 109.}.
+\[
+\begin{vmatrix}
+3 & -3 & 0\\
+2 & 2 & -1\\
+1 & 1 & 4
+\end{vmatrix}
+=
+3 \cdot 
+\begin{vmatrix}
+2 & -1\\
+1 & 4
+\end{vmatrix}
++ 3 \cdot
+\begin{vmatrix}
+2 & -1\\
+1 & 4
+\end{vmatrix}
+=
+3(8+1)+3(8+1)
+=54 \neq 0
+\]
+Bovenstaande determinant toont aan dat $\beta$ vrij is.
+
+\subsection{Oefening 4}
+Stel dat $v=(a,b,c)$ een vector is die orthogonaal is met zowel $(1,2,0)$ als $(1,0,1)$, dan geldt voor $v$ het volgende.
+\[
+\left\{
+\begin{array}{c}
+\langle (a,b,c) , (1,2,0) \rangle = 0\\
+\langle (a,b,c) , (1,0,1) \rangle = 0
+\end{array}
+\right.
+\]
+\[
+\left\{
+\begin{array}{c}
+a + b + 0 = 0\\
+a + 0 + c = 0
+\end{array}
+\right.
+\]
+Dit komt overeen met een homogeen stelsel dat beschreven wordt door de volgende matrix.
+\[
+\left(
+\begin{array}{c c c | c}
+1 & 1 & 0 & 0\\
+1 & 0 & 1 & 0
+\end{array}
+\right)
+\]
+Hiervan bepalen we de oplossingen. We kunnen die aflezen nadat we de matrix te rijreduceren.
+\[
+\rightarrow
+\left(
+\begin{array}{c c c | c}
+1 & 0 & 1 & 0\\
+0 & 1 & -1 & 0
+\end{array}
+\right)
+\]
+Hieruit lezen we de volgende oplossingsverzameling af.
+\[
+\left\{
+(-\lambda,\lambda,\lambda)\ |\ \lambda\in\mathbb{R}
+\right\}
+\]
+
+\subsection{Oefening 5}
+Vooreerst normeren we $(1,2,0)$. Dit doen we door deze vector te delen door zijn lengte.
+\[
+\beta_1 = \frac{(1,2,0)}{\Vert(1,2,0)\Vert}
+= \left(\frac{\sqrt{5}}{5},\frac{2\sqrt{5}}{5},0\right)
+\]
+\[
+\beta_2' = (1,0,1) - \left\langle (1,0,1),\beta_1 \right\rangle \beta_1
+= (1,0,1) - \left(\frac{\sqrt{5}}{5},0,0\right)\left(\frac{\sqrt{5}}{5},\frac{2\sqrt{5}}{5},0\right)
+\]
+\[
+=(1,0,1) - (5,0,0) = (4,0,-1)
+\]
+Nu kunnen we $\beta_2'$ ook normeren tot $\beta_2$.
+\[
+\beta_2 = \frac{(4,0,-1)}{\Vert (4,0,-1)\Vert}
+= \left( \frac{4\sqrt{17}}{17},0,\frac{-\sqrt{17}}{17} \right)
+\]
+Vervolgens zoeken we $\beta_3'$ als volgt.
+\[
+\beta_3'
+= (2,3,1)
+- \left\langle (2,3,1),\beta_1\right\rangle\beta_1
+- \left\langle (2,3,1),\beta_2\right\rangle\beta_2
+\]
+\[
+= (2,3,1)
+- \left(7\frac{\sqrt{5}}{5}\right)  \beta_1
+- \left(7\frac{\sqrt{17}}{17} \right)  \beta_2
+\]
+\[
+=(2,3,1)
+- \left(\frac{7}{5},\frac{14}{5},0\right)
+- \left( \frac{28}{17},0,\frac{-7}{17} \right)
+= 
+\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)
+\]
+Tenslotte normeren we $\beta_3'$ nog tot $\beta_3$.
+\[
+\beta_3 = 
+\frac{\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)}
+{\Vert\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)\Vert}
+= 
+\frac{\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)}
+{\frac{89^2}{85^2}+\frac{1}{5^2}+\frac{10^2}{17^2}}
+=
+\frac{\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)}
+{\frac{7921}{7225}+\frac{1}{25}+\frac{100}{289}}
+=
+\frac{85}{126}
+\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)
+=
+\frac{1}{126}
+\left(-89,17,50\right)
+\]
+We hebben nu $\alpha$ georthonormaliseerd tot $\beta$.
+\[
+\beta
+=
+\left\{
+\frac{1}{5}
+\left(\sqrt{5},2\sqrt{5},0\right)
+,
+\frac{1}{17}
+\left( 4\sqrt{17},0,-\sqrt{17} \right)
+,
+\frac{1}{126}
+\left(-89,17,50\right)
+\right\}
+\]
+
+
+\subsection{Oefening 8}
+\subsubsection*{(c)}
+We zoeken voor de deelruimte bepaald door $vct\{\bigl(\begin{smallmatrix}
+1 & 0 \\
+1 & 2
+\end{smallmatrix}\bigr),\bigl(\begin{smallmatrix}
+1 & 1 \\
+1 & 1
+\end{smallmatrix}\bigr),\bigl(\begin{smallmatrix}
+2 & 2 \\
+0 & 1
+\end{smallmatrix}\bigr)\}$  het orthogonaal complement. Dit betekent dat we een andere deelruimte van $\mathbb{R}^{2\times2}$ zoeken waarvoor elk element loodrecht staat op de elementen uit de originele vectorruimte.
+
+Deze wordt dus voortgebracht door een vector of alle vectoren $\bigl(\begin{smallmatrix}
+a & b \\
+c & d
+\end{smallmatrix}\bigr)$ die voldoen aan:
+\[ <\bigl(\begin{smallmatrix}
+a & b \\
+c & d
+\end{smallmatrix}\bigr),\bigl(\begin{smallmatrix}
+1 & 0 \\
+1 & 2
+\end{smallmatrix}\bigr)> = 0\]
+\[ <\bigl(\begin{smallmatrix}
+a & b \\
+c & d
+\end{smallmatrix}\bigr),\bigl(\begin{smallmatrix}
+1 & 1 \\
+1 & 1
+\end{smallmatrix}\bigr)> = 0\]
+\[ <\bigl(\begin{smallmatrix}
+a & b \\
+c & d
+\end{smallmatrix}\bigr),\bigl(\begin{smallmatrix}
+2 & 2 \\
+0 & 1
+\end{smallmatrix}\bigr)> = 0\]
+
+Wat betekent dat een element van onze nieuwe deelruimte loodrecht staat op alle elementen van de basis van de oude, en dus ook op al hun lineaire combinaties. Dit geldt door de definitie van het standaardinproduct in $\mathbb{R}^{2\times2}$ als en slechts als:
+\[\left\{
+\begin{array}{l}
+a+c+2*d=0\\
+a+b+c+d=0\\
+2*a+2*b+d=0
+\end{array} \right.\]
+We kunnen dit stelsel van gelijkheden omzetten in de matrix
+\[\left(
+\begin{array}{c c c c | c}
+1 & 0 & 1 & 2 & 0\\
+1 & 1 & 1 & 1 & 0\\
+2 & 2 & 0 & 1 & 0
+\end{array}
+\right)\]
+hetgeen we door rijreductie omzetten in
+\[\left(
+\begin{array}{c c c c | c}
+1 & 0 & 0 & \frac{3}{2} & 0\\
+0 & 1 & 0 & -1 & 0\\
+0 & 0 & 1 & \frac{1}{2} & 0
+\end{array}
+\right)\]
+
+Kiezen we $d$ als vrije variabele, dan moeten alle elementen van de nieuwe deelruimte voldoen aan het voorschrift $\bigl(\begin{smallmatrix}
+\frac{-3}{2}*\lambda & \lambda \\
+\frac{-1}{2}*\lambda & \lambda
+\end{smallmatrix}\bigr)$ met $\lambda \in \mathbb{R}$.
+
+We kunnen dus door een invulling van lambda stellen dat het orthogonaal complement de deelruimte is met als voorschrift:
+\[
+vct\{\bigl(\begin{smallmatrix}
+-3 & 2 \\
+-1 & 2
+\end{smallmatrix}\bigr)\}
+\]
+
+\subsection{Oefening 9}
+\subsubsection*{(a)}
+\[
+\alpha=
+\left\{
+A \in \mathbb{R}^{n\times n}\ |\ A \text{ is symmetrisch}
+\right\}^\bot
+\]
+\[
+\beta=
+\left\{
+A \in \mathbb{R}^{n\times n}\ |\ A \text{ is scheefsymmetrisch}
+\right\}
+\]
+Kies een willekeurig element $B$ uit $\alpha$. Nu geldt voor elk element $A\in\alpha^\bot$ het volgende.
+\[
+A=A^T\text{ en } Tr(A^TB) = Tr(A^TB^T)= 0
+\]
+Voor elk element $C \in \beta$ geldt het volgende.
+\[
+-C = C^T
+\]
+Het is eenvoudig te zien dat $C$ inderdaad loodrecht staat op $A$.
+\[
+Tr(C^TA) = Tr(-CA)
+\]
+Maar ook:
+\[
+Tr(C^TA) = Tr(CA^T) = Tr(CA)
+\]
+Dit kan enkel als beide sporen nul zijn.
+
+
+\subsubsection*{(b)}
+
+
+
 \section{Opdrachten}
 \subsection{Opdracht 6.8 p 227}
 Kies willekeurige elementen $x_1,x_2,x,y \in \mathbb{R}^{2}$ en $\lambda_1,\lambda_2,\lambda \in \mathbb{R}$.

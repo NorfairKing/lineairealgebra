@@ -2,10 +2,12 @@
 ** Auteur: Tom Sydney Kerckhove
 ** Dankwoord
 *** Medewerkers
-**** Ward Shodts
+**** Ward Schodts
      Bedankt voor het idee, de fijne samenwerking en de oplossingen.
 **** Frederik Goovaerts
      Bedankt voor de hulp in verband met de licentie en de oplossingen.
+**** Willem Van Onsem
+     Bedankt voor de makefile.
 **** Andere medewerkers
      Bedankt voor de hulp met de oplossingen.
      - Thomas Dierckx 
@@ -30,3 +32,10 @@
     Het aangenaamste zou zijn dat je ze zelf verbetert en een pull request doet.
     Je kan echter ook gewoon een issue submitten (met de juiste tags), dan kijken we er zelf naar.
     Hoe meer info je in de beschrijving van het issue zet, hoe sneller we de fout kunnen verbeteren.
+*** Hoe compileer ik hiervan een .pdf bestand?
+    Als linux gebruiker kan je eenvoudigweg het make commando uitvoeren.
+    #+BEGIN_SRC shell
+       make
+    #+END_SRC
+
+    Als windows gebruiker zal je MikTex nodig hebben om het bestand te compileren.

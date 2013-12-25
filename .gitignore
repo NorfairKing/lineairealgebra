@@ -2,6 +2,8 @@
 *.swo
 *.swp
 *~
+*.*~*
+*.bak
 
 *.aux
 *.glo

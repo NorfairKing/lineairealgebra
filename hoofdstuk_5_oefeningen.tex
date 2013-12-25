@@ -315,6 +315,49 @@ Id^\alpha_\beta = \left(
 \right)
 \]
 
+\subsection{Oefening 11}
+We beschouwen allereerst het voorschrift als co\"ordinaten volgens de standaardbasis.
+\[
+\begin{pmatrix}
+a & b\\
+c & d
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+a \\ b \\ c \\ d
+\end{pmatrix}
+\text{ en }
+\begin{pmatrix}
+a+b+d & a+b+c\\
+b+c+d & a+c+d
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+a+b+d \\ a+b+c \\ b+c+d \\ a+c+d
+\end{pmatrix}
+\]
+$T$ volgens de standaardbasis ziet er als volgt uit. 
+\[
+T_\epsilon =
+\begin{pmatrix}
+1 & 1 & 0 & 1\\
+1 & 1 & 1 & 0\\
+0 & 1 & 1 & 1\\
+1 & 0 & 1 & 1
+\end{pmatrix}
+\]
+De karakteristieke veelterm van $T$ is dus de volgende.
+\[
+\begin{vmatrix}
+1-\lambda & 1 & 0 & 1\\
+1 & 1-\lambda & 1 & 0\\
+0 & 1 & 1-\lambda & 1\\
+1 & 0 & 1 & 1-\lambda
+\end{vmatrix}
+= 0
+\]
+%TODO
+
 
 \subsection{Oefening 16}
 Met een rekenmachine vinden we dat het antwoord de volgende matrix is.
@@ -495,9 +538,37 @@ We zien in dat $N$ minstens evenveel eigenvectoren heeft als $P$ eigenwaarden he
 De eigenruimte van $N$ is dus minstens rang($P$)-dimensionaal.
 \end{proof}
 
+
+\subsection{Oefening 18}
+\subsubsection*{a)}
+We weten dat de dimensies van $E_{\lambda_i}$ alledrie $1$ zijn.
+We kiezen $v_1$ als basis van $E_{\lambda_1}$ zo ook $v_2$ en $v_3$ respectievelijk als basissen van $E_{\lambda_2}$ en $E_{\lambda_3}$.
+Vervolgens kiezen we $\{v_1,v_2\}$ en $v_3$ respectievelijk als basissen van $E_{\mu_1}$ en $E_{\mu_2}$.
+Beschouw nu $v_1$ als volgt.
+\[
+A\cdot B\cdot v_1 = A\cdot\mu_1v_1 = \mu_1Av_1= \mu_1\lambda_1v_1
+\]
+Dit houdt in dat $\mu_1\lambda_1$ een eigenwaarde is van $A\cdot B$ met eigenvector $v_1$ en eigenruimte $E_{\mu_1\lambda_1} = vct(\{v_1\})$. Op dezelfde manier vinden we dat $mu_1*lambda_2$ en $mu_2*lambda_3$ eigenwaarden zijn van $A\cdot B$, met respectievelik eigenvector $v2$, $v3$ en eigenruimten $E_{\mu_1*\lambda_2} = vct(\{v_2\})$ en $E_{\mu_2*  \lambda_3} = vct(\{v_3\})$
+
+\subsubsection*{b)}
+\[
+B\cdot A\cdot v1
+= B\cdot \lambda_1\cdot v1
+= \lambda_1\cdot B\cdot v1
+= \lambda_1\cdot \mu_1\cdot v1
+= \mu_1\cdot \lambda_1\cdot v1
+= \mu_1\cdot A\cdot v1
+= A\cdot \mu_1\cdot v1
+= A\cdot B\cdot v1
+\]
+\[
+B\cdot A = A\cdot B
+\]
+
+
 \section{Opdrachten}
 \subsection{Opdracht 5.10 p 185}
-
+%TODO
 
 \subsection{Opdracht 5.34 p 206}
 Zij $\lambda$ een complexe niet-re\"ele eigenwaarde van een re\"ele vierkante matrix $A$.

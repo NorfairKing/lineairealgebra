@@ -133,27 +133,26 @@
     - [ ] 11 fokdiekul
     - [X] 17 MajorMonodon
     - [ ] 18 jdewaen
+*** TODO Extra
+	- [ ] 2
+	- [ ] 4 b
+	- [ ] 5
+	- [ ] 6
+	- [ ] 7
+	- [ ] 12
+	- [ ] 13
+	- [ ] 14
+	- [ ] 15
+	- [ ] 16
+	- [ ] 19
+	- [ ] 20
+	- [ ] 21
 ** TODO Opdrachten
     - [ ] 5.10 p 185
     - [X] 5.34 p 206
     - [ ] 5.42 p 211
 * TODO Hoofdstuk 6
   DEADLINE: <2013-12-17 Die>
-** TODO Bewijzen
-*** TODO Voorbeeld 6.28 p 238
-*** TODO Definitie 6.33 p 241 Aantonen dat deze afbeelding lineair is
-*** TODO Stelling 6.42 p 246
-*** TODO Stelling 6.43 p 246
-*** TODO Stelling 6.46 p 249
-*** TODO Stelling 6.48 p 249
-*** TODO Stelling 6.52 p 251
-*** TODO Stelling 6.56 p 252
-*** TODO Propositie 6.58 p 253
-*** TODO Propositie 6.59 p 254
-*** TODO Stelling 6.60 p 254
-*** TODO Propositite 6.62 p 255
-*** TODO Opmerking 6.63 p 255
-*** TODO Stelling 6.64 p 255
 ** TODO Oefeningen
 *** TODO Werkzitting
     - [ ] 5 warreee
@@ -165,10 +164,28 @@
       - [ ] p2 warreee
     - [ ] 3 fokdiekul
     - [ ] 7 egonny
-    - [ ] 8
-      - [ ] a MajorMonodon
-    - [ ] 14
-      - [ ] a NorfairKing
-** TODO Opdrachten
-   - [ ] 6.8 p 227
+    - [ ] 8 a MajorMonodon
+    - [ ] 14 a NorfairKing
+*** TODO Extra
+	- [ ] 1
+	- [ ] 2 voor p3
+	- [ ] 4
+	- [ ] 6
+	- [ ] 8b
+	- [ ] 9
+	- [ ] 10
+	- [ ] 11
+	- [ ] 12
+	- [ ] 13
+	- [ ] 14
+	  - [ ] b
+	  - [ ] c
+	- [ ] 16
+	- [ ] 17
+	- [ ] 18
+	- [ ] 19
+	
+** DONE Opdrachten
+   CLOSED: [2013-12-23 Mon 15:14]
+   - [X] 6.8 p 227
      

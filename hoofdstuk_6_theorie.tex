@@ -590,23 +590,27 @@ $B$ kan nu niet meer de eigenwaarde $\lambda$ hebben. Dit houdt ook in dat $d(\l
 Zij $(\mathbb{R},\mathbb{R}^n,+,\langle \cdot , \cdot \rangle)$ de standaard euclidische ruimte en $L_A : \mathbb{R}^n \rightarrow \mathbb{R}^n: X \mapsto A \cdot X$ een lineaire transformatie met een symmetrische matrix $A$.
 
 \subsubsection*{Te Bewijzen}
-Er bestaat een orthonormale basis voor $\mathbb{R}^n$ bestaande uit eigenvectoren van $A$
-
-Dit houdt in dat $A$ gelijkvormig is met een diagonaalmatrix. De gelijkvormigheid kan gerealiseerd worden door een basisverandering van de orthonormale standaardbasis naar een orthonormale basis.
+Er bestaat een orthonormale basis voor $\mathbb{R}^n$ bestaande uit eigenvectoren van $A$.
+Dit houdt in dat $A$ gelijkvormig is met een diagonaalmatrix.
+De gelijkvormigheid kan gerealiseerd worden door een basisverandering van de orthonormale standaardbasis naar een orthonormale basis.
 We noemen $A$ dan orthogonaal diagonaliseerbaar.
 
 \subsubsection*{Bewijs}
 \begin{proof}
-
+Zij $\lambda_1,\lambda_2,...,\lambda_n$ de eigenwaarden van $A$ met bijhorende eigenvectoren $v_1,v_2,...,v_n$ en eigenruimten $E_{\lambda_1},E_{\lambda_2},...,E_{\lambda_n}$.
+We kiezen nu voor elke eigenruimte $E_{\lambda_i}$ een basis en orthonormaliseren deze \footnote{Zie Stelling 6.27 p 238.} tot een orthonormale basis $\beta_i$.
+Omdat $L$ een lineaire transformatie is met een symmetrische matrix, is voor elke eigenwaarde de meetkundige multipliciteit gelijk aan de algebra\"ische \footnote{Zie Lemma 6.40 p 245.}.
+Dit houdt in dat $L$ diagonaliseerbaar is \footnote{Zie Stelling 5.23 p 192.}.
+Bijgevolg is de (disjuncte unie van de basissen van $E_{\lambda_i}$ een basis van $V$.
+\[
+\bigoplus_{i=1}^k \beta_i
+\]
+Omdat alle $\beta_i$ orthonormale basissen zijn en ze lineair onafhankelijk \footnote{Zie Stelling 5.18 p 190.} zijn vormt de disjunctie unie ervan ook een orthonormale basis.
 \end{proof}
+
 
 \subsection{Stelling 6.43 p 246}
-\subsubsection*{Te Bewijzen}
-\subsubsection*{Bewijs}
-\begin{proof}
-
-\end{proof}
-
+Dit bewijs is volledig analoog aan het vorige.
 
 \subsection{Stelling 6.46 p 249}
 Zij $(\mathbb{R},V,+,\langle \cdot , \cdot \rangle)$ een euclidische ruimte en $A\in \mathbb{R}^{n\times n}$ een vierkante matrix.
@@ -651,8 +655,9 @@ Deze redenering is precies gelijk aan de redenering in het eerste deel van dit b
 
 \item
 De rijen van $A$ vormen een orthonormale basis. $\Rightarrow$ De kolommen van $A$ vormen een orthonormale basis.\\
-Omdat de rijen een basis vormen vormen de kolommen ook een basis \footnote{Zie Stelling 4.42 p 161 (d-e) en Stelling 3.41 p 109.}. Nu rest er ons nog te bewijzen dat de rijen van $A$ ook orthogonaal en genormeerd zijn.
-TODO
+We weten dat de kolommen van $A^T$ een orthonormale basis vormen.
+Daaruit volgt dat de rijen van $A^T$ een orthonormale basis vormen.
+Dit zijn precies de kolommen van $A$.
 
 \end{itemize}
 \end{proof}
@@ -663,7 +668,9 @@ Zij $A\in \mathbb{R}^{n\times n}$ een symmetrische matrix.
 Er bestaat een orthogonale matrix $P\in \mathbb{R}^{n\times n}$ zodat $P^{-1}AP = P^TAP$ een diagonaalmatrix is.
 \subsubsection*{Bewijs}
 \begin{proof}
-
+Beschouw $A$ als de matrix van een lineaire transformatie van $\mathbb{R}^n$ ten opzichte van de standaard orthonormale basis.
+Volgens de spectraalstelling bestaat er dan een orthonormale basis van eigenvectoren van $A$ \footnote{Zie Stelling 6.42 p 246.}.
+Zetten we die eigenvectoren in de kolommen van een matrix $P$ dan bekomen we het te bewijzen.
 \end{proof}
 
 \subsection{Stelling 6.49 p 249}
@@ -783,10 +790,27 @@ Er bestaan een unitaire matrix $P \in \mathbb{C}^{n\times n}$ zodat $P^{-1}AP = 
 \end{proof}
 
 \subsection{Stelling 6.56 p 252}
+Zij $A \in \mathbb{R}^{m\times n}$ en $P \in \mathbb{R}^{m\times m}$ een orthogonale matrix.
+
 \subsubsection*{Te Bewijzen}
+Voor de Frobeniusnorm geldt het volgende \footnote{Zie Voorbeeld 6.10 p 227 (4).}.
+\[
+\Vert A\Vert_F = \Vert P\cdot A\Vert_F
+\]
+
 \subsubsection*{Bewijs}
 \begin{proof}
-
+\[
+\Vert A\Vert_F^2 = \sum_{i=1}^m\sum_{k=1}^na_{ik}^2
+\]
+Of als we $A$ noteren als een rij van kolommen $(a_1 a_2 \cdots a_n)$ dan is bovenstaande formule de volgende. (Hierbij is $\Vert a_{k}\Vert$ de standaard euclidische norm.)
+\[
+\Vert A\Vert_F^2 = \sum_{k=1}^n\Vert a_{k}\Vert^2
+\]
+\[
+ = \sum_{k=1}^n\Vert P\cdot a_{k}\Vert^2
+  = \sum_{k=1}^n\Vert P\cdot A\Vert^2_F
+\]
 \end{proof}
 
 \subsection{Stelling 6.58 p 253}
@@ -859,9 +883,14 @@ Zij $L$ een lineaire transformatie van een inproductruimte $(\mathbb{R},V,+,\lan
 \end{enumerate}
 \subsubsection*{Bewijs}
 \begin{proof}
+\begin{enumerate}
+\item
 We kiezen een basis van $V$ en orthonormaliseren deze tot een basis $\beta$ \footnote{Zie Stelling 6.27 p 238.}. Als we $L$ voorstellen ten opzichte van $\beta$ met $A$ dan is $A$ een orthonormale matrix.
-%TODO waarom
 Nu kunnen we bewezen eigenschappen toepassen op $A$ \footnote{Zie Lemma 6.49 p 249}.
+
+\item
+Als $L$ injectief is en $V$ eindig dimensionaal, dan is $L$ bijectief en dus een isomorfisme \footnote{Zie Gevolg 4.35 p 159.}.
+\end{enumerate}
 \end{proof}
 
 \subsection{Stelling 6.60 p 254}
