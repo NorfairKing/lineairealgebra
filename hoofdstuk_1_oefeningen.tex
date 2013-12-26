@@ -2912,19 +2912,16 @@ Tr(A\cdot B) = Tr(B\cdot A)
 \subsection{Opdracht 1.33}
 \label{1.33}
 Zij $A \in \mathbb{R}^{n\times n}$ een inverteerbare matrix.
-Zij $B \in \mathbb{R}^{n\times n}$ een matrix met een kolom nullen.
 
 \subsubsection*{Te Bewijzen}
-\begin{enumerate}[(1)]
+\begin{enumerate}
 \item $(A^{-1})^{-1} = A$
 \item $A^T$ is inverteerbaar.
-\item $A\cdot B$ heeft een kolom nullen.
 \end{enumerate}
 
 \subsubsection*{Bewijs}
 \begin{proof}
-Direct bewijs.
-\begin{enumerate}[(1)]
+\begin{enumerate}
 \item
 \[
 (A^{-1})^{-1}\cdot A^{-1} = (A \cdot A^{-1})^{-1} = \mathbb{I}_n^{-1} = \mathbb{I}_n
@@ -2940,24 +2937,6 @@ Direct bewijs.
 \[
 (A^{-1})^T \cdot A^T= \mathbb{I}_n
 \]
-
-\item
-$B$ ziet er als volgt uit. Noem de kolom nullen kolom $i$.
-\[
-B = 
-\begin{pmatrix}
-\bullet & \cdots & \bullet & 0 & \bullet & \cdots & \bullet\\
-\bullet & \cdots & \bullet & 0 & \bullet & \cdots & \bullet\\
-\vdots & \ddots & \vdots & \vdots & \vdots & \ddots & \vdots\\
-\bullet & \cdots & \bullet & 0 & \bullet & \cdots & \bullet\\
-\end{pmatrix}
-\]
-We beschouwen de elementen uit $A\cdot B$ op kolom $i$. We weten dat elk element $B_{ji}$ nul is omdat het op de $i$-de kolom staat.
-\[
-(A\cdot B)_{ij} = \sum_{j=1}^n A_{ij}B_{ji}
-\]
-Hieruit volgt dat $(A\cdot B)_{ij}$ ook nul is. Er kan dus nooit een $A$ bestaan zodat $(A\cdot B) = \mathbb{I}_n$. Bijgevolg is $B$ niet inverteerbaar.\\\\
-Dezelfde redenering gaat op voor rijen.
 \end{enumerate}
 \end{proof}
 
@@ -2984,11 +2963,10 @@ A\cdot A^{-1} = \mathbb{I}_n
 (\lambda A)\cdot A^{-1} = \lambda\mathbb{I}_n
 \]
 \[
-(\lambda A)\cdot A^{-1} = \mathbb{I}_n
-\]
-\[
 (\lambda A)\cdot (\frac{1}{\lambda}A^{-1}) = \mathbb{I}_n
 \]
+$$(\lambda A)^{-1}(\lambda A)\cdot (\frac{1}{\lambda}A^{-1}) = (\lambda A)^{-1} \cdot \mathbb{I}_n$$
+$$(\frac{1}{\lambda}A^{-1}) = (\lambda A)^{-1}$$
 \end{proof}
 
 \end{document}
