@@ -401,6 +401,12 @@ We bewijzen dat elementaire matrices bestaan zodat $A$ gelijk is aan het product
 E_{k}\cdot E_{k-1}\cdot ... \cdot E_{2}\cdot E_{1}\cdot A = \mathbb{I}_{n}
 \]
 Elke elementaire matrix is inverteerbaar en de inverse is telkens weer een elementaire matrix.
+\\
+We vermingvuldigen stap voor beide kanten met de inverse die het meeste links staan:
+$$(E_{k})^{-1} \cdot E_{k}\cdot E_{k-1}\cdot ... \cdot E_{2}\cdot E_{1}\cdot A = (E_{k})^{-1} \cdot \mathbb{I}_{n}$$
+$$\mathbb{I}_n\cdot E_{k-1}\cdot ... \cdot E_{2}\cdot E_{1}\cdot A = (E_{k})^{-1} $$
+$$...$$
+Dit blijven we zo herhalen tot we het volgende krijgen:
 \[
 A = E_{1}^{-1}\cdot E_{2}^{-1}\cdot ...\cdot  E_{k}^{-1}
 \]
