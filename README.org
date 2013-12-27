@@ -14,9 +14,9 @@
      - Nicholas Haesen
      - Egon Okerman
      - Jorik De Waen
-**** Tijl Jappens
-**** Jari Peeperkorn
-**** Haroen Viaene
+     - Tijl Jappens
+     - Jari Peeperkorn
+     - Haroen Viaene
 *** De Student
     Dank bij voorbaat om de algemene voorwaarden en de licentie na te leven.
 ** Algemene voorwaarden
