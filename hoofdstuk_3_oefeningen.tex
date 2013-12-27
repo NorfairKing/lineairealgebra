@@ -201,15 +201,11 @@ Welke oef uit de definitie van een vectorruimte zijn voldaan? \\
 4. nee
 
 \subsection{Oefening 5}
-Ja, $W$ is een deelruimte van $R[X]_{\le n}$ als $n\ge 1$.
-\subsubsection*{Te bewijzen}
-\[
-\forall w_1,w_2 \in W,\forall \lambda_1,\lambda_1 \in \mathbb{R}: \lambda_1w_1+\lambda_2w_2 \in W
-\]
-\subsubsection*{Bewijs}
-\begin{proof}
-Voor elke $w_1,w_2 \in W, \lambda_1,\lambda_1 \in \mathbb{R}$ geldt dat $ \lambda_1w_1+\lambda_2w_2 \in W$ want $w_1$ en $w_2$ zijn ofwel nul ofwel hebben ze graad $n$. Elke lineaire combinatie zal dus ofwel nul zijn ofwel graad $n$ hebben.
-\end{proof}
+Nee, $W$ is een deelruimte van $R[X]_{\le n}$ als $n\ge 1$.\\
+\textbf{Tegenvoorbeeld: }\\Neem $f_1=x^2+x-3$ en neem $f_2=-x^2+x+3$.
+Als we nu $f_1+f_2$ is dit geen veelterm meer van graad 2 maar van graad 1, het is dus geen deelruimte.
+\cite{Tijl}
+
 
 
 \subsection{Oefening 6}
@@ -318,7 +314,19 @@ $$1 - 1 + 0 = 0$$
 Dit is een lineaire combinatie waarbij niet alle co\"effi\"enten nul zijn en toch de nulvector als oplossing geeft. Hierdoor is
 $\{f,g,h,exp\}$ geen lineair onafhankelijke deelruimte.
 
-
+\subsection{Oefening 11}
+\[v_1\cdots v_n, v_{n+1}\text{zijn lineair afhankelijk} \Leftrightarrow \text{v is een lineaire combinatie van } v_1\cdots v_n\]
+Als
+\[\sum_{i=1}^{n}{\lambda_{i1}v_i}=0\]
+dan moeten alle $\lambda_{i1}$'s=0.\\
+Als
+\[\sum_{i=1}^{n+1}{\lambda_{i2}v_i}=0\]
+Dan is het mogelijk dat niet alle $\lambda_{i1}$'s=0.
+\[\sum_{i=1}^{n}{\lambda_{i2}v_i}+\lambda_{n+1}v_{n+1}=0\]
+Daarom mogen we het volgende doen:
+\[v_{n+1}=\frac{-1}{\lambda_{n+1}}.\sum_{i=1}^{n}{\lambda_{i2}v_i}\]
+Dus is $v_{n+1}$ een lineaire combinatie:
+ 
 \subsection{Oefening 12}
 Moest dit waar zijn dan mag er uit de verzameling $\{ e_1-e_2,e_2-e_3,\dots ,e_{n-1}-e_n,e_n-e_1\}$ geen enkel element bestaan dat een combinatie is van de andere elementen.
 $$
