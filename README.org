@@ -42,3 +42,4 @@
     #+END_SRC
 
     Als windows gebruiker zal je MikTex nodig hebben om het bestand te compileren.
+    
