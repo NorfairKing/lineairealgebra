@@ -974,11 +974,37 @@ We defini\"eren nu de lineaire afbeelding $L:V \rightarrow W$ als:
   \end{array} \right.
 \]
 Deze afbeelding is surjectief omdat alle elementen van de basis van $W$ bereikt kunnen worden en via lineaire combinatie alle elementen van $W$ zelf. Zo hebben we dus een surjectieve afbeelding gedefini\"eerd die bestaat als $dim W \leq dim V$.
-
 \end{itemize}
 \end{proof}
 
-\subsection*{Oefening 26}
+
+\subsection{Oefening 25}
+Zij $A \in \mathbb{R}^{m\times n}$ en $X,B \in \mathbb{R}^{n\times 1}$.
+
+\subsubsection*{Te Bewijzen}
+\begin{center}
+$A\cdot X = B$ Heeft een oplossing.
+\end{center}
+\[\Leftrightarrow\]
+\[Rang(A) = Rang([A B])\]
+
+\subsubsection*{Bewijs}
+\begin{proof}
+Bewijs van een equivalentie.
+\begin{itemize}
+\item $\Rightarrow$\\
+We weten dat $A\cdot X = B$ een oplossing heeft als en slechts als $B \in Im(L)$ geldt.\footnote{Zie Stelling 4.43 p 164 (\ref{4.43})} Hierin is $L$ de lineaire afbeelding gepaald door $A$ te beschouwen als de matrix van $L$ ten opzichte van de standaardbasissen.
+Bovendien weten we dat de rang van een matrix gelijk is aan de kolomrang van die matrix.
+Dit is precies de dimensie van de kolomruimte van die matrix.\\\\
+Omdat er een $X$ bestaat zodat $X$ een oplossing is van $A\cdot X = B$ zit die $X$ in de kolomruimte van $A$. Dit houdt in dat $B$ een lineaire combinatie is van de kolommen van $A$. Bijgevolg is de kolomruimte van $A$ gelijk aan die van $[A B]$ en volgens de definitie van rang is de rang van $A$ dus gelijk aan die van $[A B]$\footnote{Zie Opmerking 4.38 p 160.}.
+
+\item $\Leftarrow$\\
+Omdat de rang van $A$ gelijk is aan die van $[A B]$, is de kolomruimte van $A$ gelijk aan die van $[A B]$. Dit betekent dat $B$ lineair afhankelijk is van de kolommen van $A$. Bijgevolg is de $X$ uit $A\cdot X = B$ niet onbestaand en is $A\cdot X = B$ dus oplosbaar.
+\end{itemize}
+\end{proof}
+
+
+\subsection{Oefening 26}
 
 Volgens de 2 stellingen $4.40$ en $4.41$ nxn matrix is uitgesloten(4.42)
 
