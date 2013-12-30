@@ -605,6 +605,162 @@ Zie de eigenschappen van getransponeerde matrices \footnote{Zie Eigenschap 1.22 
 \end{proof}
 
 
+\subsection{Oefening 14}
+\subsubsection*{(a)}
+\[
+A = 
+\begin{pmatrix}
+1 & 2 & 0\\
+2 & 2 & 2\\
+0 & 2 & 3\\
+\end{pmatrix}
+\]
+We zoeken eerst de eigenwaarden van de $A$, dit zijn $\{-1,2,5\}$.
+We zoeken nu bij elk van deze eigenwaarden een genormeerde eigenvector, maar daarvoor moeten we eerst de eigenruimten van elk van deze eigenwaarden bepalen.
+\begin{itemize}
+\item $E_{-1}$
+\[
+\begin{pmatrix}
+2 & 2 & 0\\
+2 & 3 & 2\\
+0 & 2 & 4\\
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & -2\\
+0 & 1 & 2\\
+0 & 0 & 0\\
+\end{pmatrix}
+\]
+\[
+E_{-1} = 
+\left\{ 
+\lambda
+\begin{pmatrix}
+2 \\ -2\\ 1
+\end{pmatrix}
+| \lambda \in \mathbb{R}
+\right\}
+\]
+
+\item $E_{2}$
+\[
+\begin{pmatrix}
+-1 & 2 & 0\\
+2 & 0 & 2\\
+0 & 2 & 1\\
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & 1\\
+0 & 1 & \frac{1}{2}\\
+0 & 0 & 0\\
+\end{pmatrix}
+\]
+\[
+E_{2} = 
+\left\{ 
+\lambda
+\begin{pmatrix}
+-1 \\ -\frac{1}{2} \\ 1
+\end{pmatrix}
+| \lambda \in \mathbb{R}
+\right\}
+\]
+
+\item $E_{5}$
+\[
+\begin{pmatrix}
+-4 & 2 & 0\\
+2 & -3 & 2\\
+0 & 2 & -2\\
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & -\frac{1}{2}\\
+0 & 1 & -1\\
+0 & 0 & 0\\
+\end{pmatrix}
+\]
+\[
+E_{5} = 
+\left\{ 
+\lambda
+\begin{pmatrix}
+\frac{1}{2} \\ 1 \\ 1
+\end{pmatrix}
+| \lambda \in \mathbb{R}
+\right\}
+\]
+\end{itemize}
+We zoeken nu een genormeerde eigenvector uit elke eigenruimte.
+\[
+\left\Vert
+\lambda
+\begin{pmatrix}
+2 \\ -2\\ 1
+\end{pmatrix}
+\right\Vert
+=1
+\Leftrightarrow
+\lambda = \frac{\sqrt{5}}{5}
+\]
+\[
+\left\Vert
+\lambda
+\begin{pmatrix}
+-1 \\ -\frac{1}{2} \\ 1
+\end{pmatrix}
+\right\Vert
+=1
+\Leftrightarrow
+\lambda = \frac{3}{2}
+\]
+\[
+\left\Vert
+\lambda
+\begin{pmatrix}
+\frac{1}{2} \\ 1 \\ 1
+\end{pmatrix}
+\right\Vert
+=1
+\Leftrightarrow
+\lambda = \frac{3}{2}
+\]
+Werken we dit uit, dan vinden we volgende orthonormale basis van eigenvectoren.
+\[
+\left\{
+\begin{pmatrix}
+\frac{2\sqrt{5}}{5} \\ -\frac{2\sqrt{5}}{5}\\ \frac{\sqrt{5}}{5}
+\end{pmatrix}
+,
+\begin{pmatrix}
+-\frac{3}{2} \\ -\frac{3}{4} \\ \frac{3}{2}
+\end{pmatrix}
+,
+\begin{pmatrix}
+\frac{3}{4} \\ \frac{3}{2} \\ \frac{3}{2}
+\end{pmatrix}
+\right\}
+\]
+Zetten we nu deze vectoren als kolommen in een matrix, dan is deze matrix een orthogonale matrix en wel precies de $P$ die we zoeken.
+\[
+P=
+\begin{pmatrix}
+\frac{2\sqrt{5}}{5}  & -\frac{3}{2} & \frac{\sqrt{5}}{5}\\ 
+-\frac{2\sqrt{5}}{5} & -\frac{3}{4} & \frac{3}{2}\\ 
+\frac{\sqrt{5}}{5} & \frac{3}{2}    & \frac{3}{2}
+\end{pmatrix}
+\]
+
+
+\subsubsection*{(b)}
+
+
+\subsubsection*{(c)}
+
+
+
 \subsection{Oefening 19}
 Moest niet gekend zijn.
 
