@@ -216,6 +216,37 @@ dim(V) = dim(ker(L)) + dim(W)
 Hieruit volgt dat $dim(V) \ge dim(W)$ want $dim(ker(L)) \ge 0$. Dit is in contradictie met $n<m$.
 \end{proof}
 
+
+\subsection{Oefening 6}
+\subsubsection*{(a)}
+Zij $L: V \rightarrow V$ een surjectieve lineaire afbeelding. Zij $\beta = \{v_1,v_2,...,v_n\}$ een voortbrengend deel voor $V$.
+\[
+\forall w \in W, \exists v \in V: w=L(v)
+\]
+\emph{Te Bewijzen}\\
+$W$ wordt voortgebracht door $L(\beta) = \{L(v_1),L(v_2),...,L(v_n)\}$.
+\begin{proof}
+Elk willekeurig element $v\in V$ kan geschreven worden als lineaire combinatie van de elementen in $\beta$. Er bestaan dus $\lambda_i$ zodat volgende gelijkheid geldt.
+\[
+v = \sum_{i=1}^n\lambda_iv_i
+\]
+Beelden we nu beide leden af dan bekomen we volgende gelijkheid.
+\[
+L(v) = L\left(\sum_{i=1}^n\lambda_iv_i\right)
+\]
+Omdat $L$ surjectief is bereiken we op deze manier elke $w\in W$.
+Omdat $L$ lineair is, is deze bewering equivalent met de volgende.
+\[
+L(v) = \sum_{i=1}^n\lambda_iL(v_i)
+\]
+Bovenstaande bewering houdt precies in dat $W$ voortgebracht wordt door $L(\beta)$.
+\end{proof}
+
+\subsubsection*{(b)}
+
+\subsubsection*{(c)}
+
+
 \subsection{Oefening 7}
 \subsubsection*{a)}
 Omdat $L_1$ lineair is wordt $L_1$ beschreven door een matrix $A$.
