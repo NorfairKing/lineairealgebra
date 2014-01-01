@@ -243,6 +243,24 @@ Bovenstaande bewering houdt precies in dat $W$ voortgebracht wordt door $L(\beta
 \end{proof}
 
 \subsubsection*{(b)}
+Zij $L: V \rightarrow V$ een injectieve lineaire afbeelding. Zij $\beta = \{v_1,v_2,...,v_n\}$ een voortbrengend deel voor $V$.
+\[
+L(v) = L(w) \Rightarrow v = w
+\]
+\emph{Te Bewijzen}\\
+$L(\beta) = \{L(v_1),L(v_2),...,L(v_n)\}$ is vrij in $W$.
+\begin{proof}
+Bewijs uit het ongerijmde.\\
+Stel dat $L(\beta)$ niet vrij is in $W$, dan bestaan er $\lambda_i$ verschillend van nul zodat volgende gelijkheid geldt.
+\[
+\sum_{i=1}^n \lambda_i L(v_i) = \vec{0}
+\]
+Omdat $L$ lineair is geldt $\vec{0} = L(\vec{0}$. Nu zullen we de injectiviteit van $L$ moeten gebruiken om volgende gelijkheid te bekomen.
+\[
+\sum_{i=1}^n \lambda_i v_i = \vec{0}
+\]
+Bovenstaande gelijkheid houdt echter in dat $\beta$ niet vrij is in $V$. Contradictie.
+\end{proof}
 
 \subsubsection*{(c)}
 
