@@ -216,6 +216,60 @@ dim(V) = dim(ker(L)) + dim(W)
 Hieruit volgt dat $dim(V) \ge dim(W)$ want $dim(ker(L)) \ge 0$. Dit is in contradictie met $n<m$.
 \end{proof}
 
+
+\subsection{Oefening 6}
+\subsubsection*{(a)}
+Zij $L: V \rightarrow V$ een surjectieve lineaire afbeelding. Zij $\beta = \{v_1,v_2,...,v_n\}$ een voortbrengend deel voor $V$.
+\[
+\forall w \in W, \exists v \in V: w=L(v)
+\]
+\emph{Te Bewijzen}\\
+$W$ wordt voortgebracht door $L(\beta) = \{L(v_1),L(v_2),...,L(v_n)\}$.
+\begin{proof}
+Elk willekeurig element $v\in V$ kan geschreven worden als lineaire combinatie van de elementen in $\beta$. Er bestaan dus $\lambda_i$ zodat volgende gelijkheid geldt.
+\[
+v = \sum_{i=1}^n\lambda_iv_i
+\]
+Beelden we nu beide leden af dan bekomen we volgende gelijkheid.
+\[
+L(v) = L\left(\sum_{i=1}^n\lambda_iv_i\right)
+\]
+Omdat $L$ surjectief is bereiken we op deze manier elke $w\in W$.
+Omdat $L$ lineair is, is deze bewering equivalent met de volgende.
+\[
+L(v) = \sum_{i=1}^n\lambda_iL(v_i)
+\]
+Bovenstaande bewering houdt precies in dat $W$ voortgebracht wordt door $L(\beta)$.
+\end{proof}
+
+\subsubsection*{(b)}
+Zij $L: V \rightarrow V$ een injectieve lineaire afbeelding. Zij $\beta = \{v_1,v_2,...,v_n\}$ een voortbrengend deel voor $V$.
+\[
+L(v) = L(w) \Rightarrow v = w
+\]
+\emph{Te Bewijzen}\\
+$L(\beta) = \{L(v_1),L(v_2),...,L(v_n)\}$ is vrij in $W$.
+\begin{proof}
+Bewijs uit het ongerijmde.\\
+Stel dat $L(\beta)$ niet vrij is in $W$, dan bestaan er $\lambda_i$ verschillend van nul zodat volgende gelijkheid geldt.
+\[
+\sum_{i=1}^n \lambda_i L(v_i) = \vec{0}
+\]
+Omdat $L$ lineair is geldt $\vec{0} = L(\vec{0}$. Nu zullen we de injectiviteit van $L$ moeten gebruiken om volgende gelijkheid te bekomen.
+\[
+\sum_{i=1}^n \lambda_i v_i = \vec{0}
+\]
+Bovenstaande gelijkheid houdt echter in dat $\beta$ niet vrij is in $V$. Contradictie.
+\end{proof}
+
+\subsubsection*{(c)}
+Zij $L: V \rightarrow V$ een isomorfisme. Zij $\beta = \{v_1,v_2,...,v_n\}$ een basis voor $V$.\\
+\emph{Te Bewijzen}\\
+$L(\beta) = \{L(v_1),L(v_2),...,L(v_n)\}$ is een basis voor $W$.
+\begin{proof}
+$L$ is een isomorfisme, dus bijectief en lineair. Bijectiviteit houdt injectiviteit en surjectiviteit in \footnote{Zie \ref{bijectief}}. Een basis in $V$ is vrij in en voortbrengend voor $V$ \footnote{Zie Definitie 3.31 p 104}. Nu kunnen we vorige twee bewezen stellingen toepassen om te bekomen dat $L(\beta)$ ook voortbrengend is voor en vrij is in $W$, wat precies inhoudt dat $L(\beta)$ een basis vormt voor $W$.
+\end{proof}
+
 \subsection{Oefening 7}
 \subsubsection*{a)}
 Omdat $L_1$ lineair is wordt $L_1$ beschreven door een matrix $A$.
