@@ -40,6 +40,7 @@
     #+BEGIN_SRC shell
        make
     #+END_SRC
+    Je zal ook het textlive-latex-extra pakket nodig hebben, naast een standaard latex installatie.
 
     Als windows gebruiker zal je MikTex nodig hebben om het bestand te compileren.
     
