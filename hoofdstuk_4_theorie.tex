@@ -94,13 +94,13 @@ Dit volgt eenvoudig uit de definitie van lineaire afbeelding\footnote{Zie Defini
 \item
 Elke vector $v\in V$ kan geschreven worden als lineaire combinatie van de basisvectoren van $\beta = \{e_1,e_2,...,e_n\}$. Als we nu de basis van $V$ afbeelden krijgen we $L(\beta) = \{L(e_1),L(e_2),...,L(e_n)\}$ We bewijzen nu dat elke vector in $W$ geschreven kan worden als lineaire combinatie van $L(\beta)$.
 \[
-\forall v \in V:\exists\lambda_i \in \mathbb{R}: v= \sum\lambda_iv_i
+\forall v \in V:\exists\lambda_i \in \mathbb{R}: v= \sum_{i=1}^n\lambda_ie_i
 \]
 \[
-\forall v \in V:\exists\lambda_i \in \mathbb{R}: L(v)= L(\sum\lambda_iv_i)
+\forall v \in V:\exists\lambda_i \in \mathbb{R}: L(v)= L(\sum_{i=1}^n\lambda_ie_i)
 \]
 \[
-\forall v \in V:\exists\lambda_i \in \mathbb{R}: L(v)= \sum\lambda_iL(v_i)
+\forall v \in V:\exists\lambda_i \in \mathbb{R}: L(v)= \sum_{i=1}^n\lambda_iL(e_i)
 \]
 \end{enumerate}
 \end{proof}
