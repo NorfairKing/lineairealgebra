@@ -1335,7 +1335,7 @@ Id_{\beta_s}^\beta =
 1 & 0 & 0 & 0\\
 0 & 1 & -1 & 2\\
 0 & 0 & 1 & -2\\
-0 & 0 & 0 & 1
+0 & 0 & 0 & 1\\
 \end{pmatrix}
 \]
 Inverteren we deze matrix, dan krijgen we de matrix van basisverandering in de omgekeerde richting.
@@ -1343,9 +1343,9 @@ Inverteren we deze matrix, dan krijgen we de matrix van basisverandering in de o
 Id_{\beta}^{\beta_s} = 
 \begin{pmatrix}
 1 & 0 & 0 & 0\\
-0 & 1 & 1 & 0\\
-0 & 0 & 1 & 2\\
-0 & 0 & 0 & 1
+0 & 1 & 1 & 1\\
+0 & 0 & 1 & 3\\
+0 & 0 & 0 & 1\\
 \end{pmatrix}
 \]
 Nu moeten we deze matrices, samen met de gegeven matrix nog samenstellen om de matrixvoorstelling van de lineaire transformatie te vinden.
@@ -1353,7 +1353,15 @@ Nu moeten we deze matrices, samen met de gegeven matrix nog samenstellen om de m
 B = Id_{\beta}^{\beta_s}\cdot  A\cdot Id_{\beta_s}^\beta
 \]
 %TODO uitschrijven
-
+\[
+B = 
+\begin{pmatrix}
+0 & 1 & -1 &2\\
+0 & 0 & 2 &-3\\
+0 & 0 & 0 & 3\\
+0 & 0 & 0 & 0
+\end{pmatrix}
+\]
 
 \subsection{Opdracht 4.37 p 160}
 \label{4.37}
