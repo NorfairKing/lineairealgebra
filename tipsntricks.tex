@@ -39,15 +39,17 @@ Soms is de hypothese simpeler dan het gevolg, dan kan het makkelijker zijn om he
 Omdat een bewering ofwel waar is, ofwel niet waar is, maar daar niets tussen zit kunnen we een bewering ook als volgt bewijzen. We gaan ervan uit dat de te bewijzen stelling niet waar is, en proberen een contradictie (een bewering van de vorm $P\wedge\neg P$) te bekomen.
 
 \subsection{Contrapositie}
-Een implicatie $P\Rightarrow Q$ is equivalent aan $\neq Q\Rightarrow \neq P$. Als we dus dit tweede kunnen bewijzen is het eerste ook bewezen.
+Een implicatie $P\Rightarrow Q$ is equivalent aan $\neg Q\Rightarrow \neg P$. Als we dus dit tweede kunnen bewijzen is het eerste ook bewezen.
 
 \subsection{Bewijs met volledige inductie}
 Een bewering van de vorm $\forall p \in P: Q(p)$ kunnen we soms bewijzen via volledige inductie. Dit gebeurt in twee stappen.
 \begin{enumerate}
-\item Basis stap\\
+\item Basisstap\\
 We bewijzen dat de bewering $Q(p_i)$ geldt, waarin $p_i$ het kleinste element uit $P$ is.
-\item Inductie stap\\
+\item Inductiestap\\
 We gaan er nu van uit dat $Q(p_k)$ geldt voor een bepaalde $p$ (inductie hypothese). Vervolgens bewijzen we dat daaruit volgt dat de bewering geldt voor $p_{k+1}$.
+\item Besluit \\
+Om een bewijs met (volledige) inductie af te sluiten schrijven we altijd: "Uit het principe van volledige inductie en het feit dat zowel de basisstap waar is als de inductiehypothese, besluiten we dat: $\forall p\in P: Q(p)$."
 \end{enumerate}
 
 \subsection{Overzicht}
