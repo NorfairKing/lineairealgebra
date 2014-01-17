@@ -9,6 +9,15 @@ Zo wordt de benaming van elk onderdeel van een bewijs het best expliciet verklaa
 Sommige van deze verklaringen lijken waarschijnlijk overbodig, omdat u de notatie kent, maar het is toch belangrijk om het expliciet te vermelden.
 
 \section{Algemeen}
+\subsection{Expressies}
+In deze sectie beschouwen we expressies. Dit deel vindt de auteur zelf vrij belangrijk, en heeft hij nog nooit ergens expliciet beschreven gezien.\\\\
+In assembleertalen bestaan er enkel statements, deze strings \emph{doen} iets. In procedurale programmeertalen bestaan er vaak nog expressies naast statements. Expressies \emph{zijn} iets. Ze hebben een waarde. In functionele programmeertalen en in de wiskunde zijn er \emph{enkel} expressies. Elke uitdrukking heeft een waarde.\\\\
+Zo heeft '$5+3$' de \emph{waarde} '$8$' en '$v-v$' de waarde '$\vec{0}$'. We zeggen dan al gauw dat '$5+3$' '$8$' \emph{is} maar dat is niet helemaal volledig. '$5+3$' heeft wel de waarde '$8$' maar '$5+3$' is niet gelijk aan '$8$', enkel gelijk\emph{waardig}.\\\\
+We schrijven meestal enkel de expressies op die waar zijn, anders spreken we van een fout. $5+3=8$ is waar, dus we kunnen dat opschrijven. $5+2=8$ is niet waar, maar we kunnen het toch opschrijven, omdat we lef hebben, of gewoon om moeilijk te doen. Om een goed onderscheid te maken definiti\"eren we de \emph{waarde} van $5+3=8$ als $true$, waar, of iets dergelijks en de \emph{waarde} van $5+2=8$ als $false$, onwaar, fout etc....\\\\
+Dit alles is de reden dat de auteur tijdens het schrijven liever zegt 'bijgevolg geldt $a=3$' of 'zodat $a=3$ geldt' dan te zeggen 'zodat $a=3$' of 'bijgevolg is $a=3$'.
+Dit laatste ook gewoon omdat het moeilijker uit te spreken is ('bijgevolg is a is drie').\\\\
+Als je verder niets onthoudt van deze paragraaf, onthoud dan enkel dat expressies een waarde hebben en dat gelijkheid eigenlijk gelijkwaardigheid betekent. 
+
 \subsection{Indices}
 Vaak spreken we over meerdere gelijkaardige elementen met indices. Beschouw bijvoorbeeld de verzameling $\{a_1,a_2,...,a_n\}$.
 Soms spreken we van 'alle $a_i$'.
@@ -17,9 +26,23 @@ Dit betekent dan 'Elk element uit de verzameling', of nog: 'Elk element $a$ waar
 \subsection{Sommaties, Producten en andere}
 De betekenis van het sommatie- en productteken is u waarschijnlijk bekend, maar wordt hier toch nog eens expliciet vermeld als inleiding tot wat volgt. 
 \[
-\sum_{i=1}^n
+\sum_{i=a}^bQ(i) = Q(a) + Q(a+1)+ Q(a+2) + ... + Q(b) 
 \]
+\[
+\prod_{i=a}^bQ(i) = Q(a) + Q(a+1)+ Q(a+2) + ... + Q(b) 
+\]
+Merk op dat bovenstaande uitdrukkingen niet zinvol zijn wanneer $a < b$ geldt.
+De sommatie kan gezien worden als een for-lus waarbij elke iteratie een nieuw deel wordt toegevoegd aan het totaal.
+We beginnen bij $a$ en verhogen $i$ elke stap met $1$ tot $i$ gelijk is aan $i$ (inclusief).\\\\
 Er zijn echter nog reeksen bewerkingen die we korter kunnen noteren. 
+Een ander voorbeeld is de directe som $\oplus$. Zo kunnen we het volgende schrijven om de directe som te nemen van een aantal deelruimten.
+\[
+\bigoplus_{i=a}^bU_i
+\]
+In het algemeen kunnen we een bewerking $O$ korter noteren als volgt.
+\[
+O_{i=a}^bQ(i) = Q(a)\ o\ Q(a+1)\ o\ Q(a+2)\ o\ ...\ o\ Q(b) 
+\]
 
 \section{Vectoren}
 Vectoren worden meestal met een kleine letter aangeduid en meestal $v$, $w$ of $u$ als letter.
