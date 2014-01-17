@@ -9,7 +9,7 @@
 **** Willem Van Onsem
      Bedankt voor de makefile.
 **** Thalia K.
-     Bedankt het nalezen op taalfouten.
+     Bedankt voor het nalezen op taalfouten.
 **** Andere medewerkers
      Bedankt voor de hulp met de oplossingen.
      - Thomas Dierckx 
