@@ -8,6 +8,8 @@
      Bedankt voor de hulp in verband met de licentie en de oplossingen.
 **** Willem Van Onsem
      Bedankt voor de makefile.
+**** Thalia Kayma
+     Bedankt het nalezen op taalfouten.
 **** Andere medewerkers
      Bedankt voor de hulp met de oplossingen.
      - Thomas Dierckx 

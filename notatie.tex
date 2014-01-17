@@ -2,26 +2,55 @@
 \begin{document}
 
 \chapter{Notatie}
-Dit hoofdstuk is tot stand gekomen toen er iemand die de les niet mee gevolgd heeft verward was door de notatie.
-Omdat dit \'e\'en van de dingen is die de cursus nalaat duidelijk te maken wordt het hier zeer expliciet opnieuw vermeld.\\\\
+Dit hoofdstuk is tot stand gekomen toen er iemand, die de les niet mee gevolgd had, verward was door de notatie.
+Notatie is \'e\'en van de dingen die de cursus nalaat duidelijk te maken en wordt daarom hier zeer expliciet opnieuw vermeld.\\\\
 De belangrijkste regel omtrent notatie is om steeds duidelijk te maken wat u bedoelt met elk teken.
 Zo wordt de benaming van elk onderdeel van een bewijs het best expliciet verklaard.
-Sommige van deze verklaringen lijken waarschijnlijk overbodig, omdat u de notatie kent, maar het is toch belangrijk om het expliciet te vermelden.
+Sommige van deze verklaringen lijken waarschijnlijk overbodig, omdat u de notatie kent, maar het is toch belangrijk om het expliciet te vermelden. Je definieert symbolen zoals je wil, zolang je je definities  maar duidelijk noteert.\\\\
+Bijvoorbeeld, het is soms amusant voor de assistent om een inproductruimte als volgt te benoemen.
+\[
+(\spadesuit,\bigstar,\clubsuit,\blacksquare(\cdot,\cdot))
+\]
+Dit is een vectorruimte met vectoren in $\bigstar$, met scalars in $\spadesuit$, $\clubsuit$ als gedefinieerde bewerking en $\blacksquare(\cdot,\cdot)$ als inproduct.
+Voor deze vectorruimte geldt onder andere het volgende Lemma \footnote{Zie Lemma 3.7 p 93 (\ref{3.7})}.
+In $(\spadesuit,\bigstar,\clubsuit)$ geldt voor elke vector $\flat,\natural,\sharp \in \bigstar$ volgende implicatie.
+\[
+(\flat\ \clubsuit\ \sharp = \natural\ \clubsuit\ \sharp) \Rightarrow\ \flat = \natural
+\]
+\begin{proof}
+\[
+\flat\ \clubsuit\ \sharp = \natural\ \clubsuit\ \sharp
+\]
+\[
+(\flat\ \clubsuit\ \sharp)+\sharp' = (\natural\ \clubsuit\ \sharp)+\sharp'
+\]
+\[
+\flat\ \clubsuit\ (\sharp+\sharp') = \natural\ \clubsuit\ (\sharp+\sharp')
+\]
+\[
+\flat\ \clubsuit\ \vec{0} = \natural\ \clubsuit\ \vec{0}
+\]
+\[
+\flat = \natural
+\]
+\end{proof}
+\noindent De assistenten en de proffen hebben zelfs gezegd dat ze dit volledig aanvaardbaar vinden, mits het bewijs juist is.
+Met dit voorbeeld is eveneens aangetoond dat standaardnotatie belangrijk is en dat je moet weten hoe expressies te lezen.
 
 \section{Algemeen}
 \subsection{Expressies}
-In deze sectie beschouwen we expressies. Dit deel vindt de auteur zelf vrij belangrijk, en heeft hij nog nooit ergens expliciet beschreven gezien.\\\\
+%TODO remove?
+In deze sectie beschouwen we expressies. Dit deel vindt de auteur zelf vrij belangrijk en heeft hij nog nooit ergens expliciet beschreven gezien.\\\\
 In assembleertalen bestaan er enkel statements, deze strings \emph{doen} iets. In procedurale programmeertalen bestaan er vaak nog expressies naast statements. Expressies \emph{zijn} iets. Ze hebben een waarde. In functionele programmeertalen en in de wiskunde zijn er \emph{enkel} expressies. Elke uitdrukking heeft een waarde.\\\\
 Zo heeft '$5+3$' de \emph{waarde} '$8$' en '$v-v$' de waarde '$\vec{0}$'. We zeggen dan al gauw dat '$5+3$' '$8$' \emph{is} maar dat is niet helemaal volledig. '$5+3$' heeft wel de waarde '$8$' maar '$5+3$' is niet gelijk aan '$8$', enkel gelijk\emph{waardig}.\\\\
-We schrijven meestal enkel de expressies op die waar zijn, anders spreken we van een fout. $5+3=8$ is waar, dus we kunnen dat opschrijven. $5+2=8$ is niet waar, maar we kunnen het toch opschrijven, omdat we lef hebben, of gewoon om moeilijk te doen. Om een goed onderscheid te maken definiti\"eren we de \emph{waarde} van $5+3=8$ als $true$, waar, of iets dergelijks en de \emph{waarde} van $5+2=8$ als $false$, onwaar, fout etc....\\\\
-Dit alles is de reden dat de auteur tijdens het schrijven liever zegt 'bijgevolg geldt $a=3$' of 'zodat $a=3$ geldt' dan te zeggen 'zodat $a=3$' of 'bijgevolg is $a=3$'.
-Dit laatste ook gewoon omdat het moeilijker uit te spreken is ('bijgevolg is a is drie').\\\\
+We schrijven meestal enkel de expressies op die waar zijn, anders spreken we van een fout. $5+3=8$ is waar, dus we kunnen dat opschrijven. $5+2=8$ is niet waar, maar we kunnen het toch opschrijven, omdat we lef hebben of gewoon om moeilijk te doen. Om een goed onderscheid te maken, defini\"eren we de \emph{waarde} van $5+3=8$ als $true$, waar of iets dergelijks en de \emph{waarde} van $5+2=8$ als $false$, onwaar, fout etc....\\\\
+Hierom maakt dit werk gebruik van verwoordingen als 'bijgevolg geldt $a=3$' of 'zodat $a=3$ geldt' in plaats van 'zodat $a=3$' of 'bijgevolg is $a=3$'.
+Dit laatste is bovendien moeilijker uit te spreken ('bijgevolg is \emph{$a$ is drie}').\\\\
 Als je verder niets onthoudt van deze paragraaf, onthoud dan enkel dat expressies een waarde hebben en dat gelijkheid eigenlijk gelijkwaardigheid betekent. 
 
 \subsection{Indices}
 Vaak spreken we over meerdere gelijkaardige elementen met indices. Beschouw bijvoorbeeld de verzameling $\{a_1,a_2,...,a_n\}$.
-Soms spreken we van 'alle $a_i$'.
-Dit betekent dan 'Elk element uit de verzameling', of nog: 'Elk element $a$ waarbij we een zinvolle index $i$ kunnen zetten'.
+Wanneer we spreken van 'alle $a_i$' betekent dit: 'Elk element uit de verzameling', of nog: 'Elk element $a$ waarbij we een zinvolle index $i$ kunnen zetten'.
  
 \subsection{Sommaties, Producten en andere}
 De betekenis van het sommatie- en productteken is u waarschijnlijk bekend, maar wordt hier toch nog eens expliciet vermeld als inleiding tot wat volgt. 
@@ -32,7 +61,7 @@ De betekenis van het sommatie- en productteken is u waarschijnlijk bekend, maar 
 \prod_{i=a}^bQ(i) = Q(a) + Q(a+1)+ Q(a+2) + ... + Q(b) 
 \]
 Merk op dat bovenstaande uitdrukkingen niet zinvol zijn wanneer $a < b$ geldt.
-De sommatie kan gezien worden als een for-lus waarbij elke iteratie een nieuw deel wordt toegevoegd aan het totaal.
+De sommatie kan gezien worden als een for-lus waar, bij elke iteratie, een nieuw deel wordt toegevoegd aan het totaal.
 We beginnen bij $a$ en verhogen $i$ elke stap met $1$ tot $i$ gelijk is aan $i$ (inclusief).\\\\
 Er zijn echter nog reeksen bewerkingen die we korter kunnen noteren. 
 Een ander voorbeeld is de directe som $\oplus$. Zo kunnen we het volgende schrijven om de directe som te nemen van een aantal deelruimten.
@@ -44,10 +73,13 @@ In het algemeen kunnen we een bewerking $O$ korter noteren als volgt.
 O_{i=a}^bQ(i) = Q(a)\ o\ Q(a+1)\ o\ Q(a+2)\ o\ ...\ o\ Q(b) 
 \]
 
+\section{Scalars}
+%TODO
+
 \section{Vectoren}
 Vectoren worden meestal met een kleine letter aangeduid en meestal $v$, $w$ of $u$ als letter.
-Wanneer andere letters worden gebruikt wordt er soms een vector pijltje boven de letter gezet: $\vec{a}$. (Vooral in natuurkunde is dit onderscheid belangrijk.)
-Elementen uit vectoren worden meestal met een index aangeduid. Dit is natuurlijk enkel zinvol wanneer we over co\"ordinaat vectoren spreken.
+Wanneer andere letters worden gebruikt wordt er soms een vectorpijltje boven de letter gezet: $\vec{a}$. (Vooral in natuurkunde is dit onderscheid belangrijk.)
+Elementen uit vectoren worden meestal met een index aangeduid. Dit is natuurlijk enkel zinvol wanneer we over co\"ordinaatvectoren spreken.
 \[
 \vec{v} = 
 \begin{pmatrix}
@@ -60,11 +92,11 @@ a_{1}\\a_{2}\\\vdots\\a_{n}
 \end{pmatrix}
 \]
 Onbekende vectoren worden meestal als $X$ en $Y$ aangeduid, of $\vec{x}$ en $\vec{y}$. Deze worden meestal gebruikt in stelsels.\\\\
-De verzameling van alle re\"ele co\"ordinaat vectoren met $n$ elementen word met $\mathbb{R}^n$ aangeduid. Analoog wordt de verzameling van de complexe co\"ordinaatvectoren met $\mathbb{C}^n$ aangeduid.
+De verzameling van alle re\"ele co\"ordinaatvectoren met $n$ elementen word met $\mathbb{R}^n$ aangeduid. Analoog wordt de verzameling van de complexe co\"ordinaatvectoren met $\mathbb{C}^n$ aangeduid.
 
 \section{Matrices}
 Matrices worden meestal met een drukletter aangeduid.
-Vaak worden $A$, $B$ en $C$ gebruikt om onderscheid te maken van vectorruimten (zie verder). Elementen in matrices worden meestal aangeduid met een index, al dan niet met haakjes.
+Vaak worden $A$, $B$ en $C$ gebruikt om onderscheid te maken tussen vectorruimten en matrices (zie verder). Elementen in matrices worden meestal aangeduid met een index, al dan niet met haakjes.
 \[
 A = 
 \begin{pmatrix}
@@ -97,7 +129,7 @@ Element $a_{ij}$ uit een matrix $A$ is het element op \emph{rij} $i$ en \emph{ko
 
 \section{Stelsels}
 De volgorde waarin de vergelijkingen in een stelsel staan maakt niet uit.
-Een stelsel kunnen we een naam geven, maar hier zijn geen conventies voor in dit boek, omdat dit meestal niet gebeurt.
+Een stelsel kunnen we een naam geven, maar hier voor zijn in dit boek geen conventies, omdat dit meestal niet gebeurt.
 \[
 \left\{
 \begin{array}{c c c c c}
@@ -133,8 +165,67 @@ a_{m1} & a_{m2} & \cdots & a_{mn}\\
 
 
 \section{Vectorruimten}
-%TODO
+Vectorruimten worden meestal met een grote letter aangeduid en nog het meest met een $V$, $W$ of $U$.
 
-
+\section{Overige}
+Ja, dit is waarschijnlijk overbodig, maar het wordt hier toch opgesomd.
+\begin{center}
+\begin{tabular}{| c | c |}
+\hline
+Symbool & vanLees als\\
+\hline
+$=$ & ... is gelijkwaardig aan ...\\
+$\approx$ & ... is ongeveer gelijkwaardig aan ... \\
+$\in$ & ... is een element van ...\\
+$\subset$ & ... is een deelverzameling van ...\\
+$\subseteq$ & ... is een deelverzameling van of is gelijk aan ...\\
+$\cap$ & ... doorsnede ...\\
+$\cup$ & ... unie ...\\
+$\circ$ & ... na ...\\
+$\wedge$ & ... en ...\\
+$\vee$ & ... of ...\\
+$\leq$ & ... is kleiner of gelijk aan ...\\
+$\geq$ & ... is groter of gelijk aan ...\\
+$\oplus$ & ..., direct gesommeerd met ...\\
+$\sim$ & ... is asymptotisch equivalent aan ...\\
+$a \text{ is } O(b)$ & $a$ is van grootteorde $b$.\\
+\hline
+\end{tabular}
+\end{center}
+\footnote{'$\approx$' heeft geen enkele wiskundige waarde, enkel wetenschappelijke waarde.}
+\begin{center}
+\[
+\begin{array}{| c | c | c |}
+\hline
+\text{HoofdLetter} & \text{Kleine Letter}	& \text{Lees als}\\
+\hline
+			& \alpha	& alpha\\
+			& \beta		& beta\\
+\Gamma 		& \gamma 	& gamma\\
+\Delta 		& \delta 	& delta\\
+			& \epsilon	& epsilon\\
+			& \zeta		& zeta\\
+			& \eta 		& eta\\
+\Theta 		& \theta 	& theta\\
+			& \iota 	& iota\\
+			& \kappa 	& kappa\\
+\Lambda 	& \lambda	& lambda\\
+			& \mu 		& mu\\
+			& \nu 		& nu\\
+\Xi 		& \xi 		& xi\\
+			& o			& omicron\\
+\Pi 		& \pi 		& pi\\
+			& \rho 		& rho\\
+\Sigma 		& \sigma 	& sigma\\
+			& \tau 		& tau\\
+\Upsilon 	& \upsilon 	& upsilon\\
+\Phi 		& \phi 		& phi\\
+			& \chi 		& chi\\
+\Psi 		& \psi 		& psi\\
+\Omega 		& \omega	& omega\\
+\hline
+\end{array}
+\]
+\end{center}
 
 \end{document}
