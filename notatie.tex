@@ -1,0 +1,117 @@
+\documentclass[lineaire_algebra_oplossingen.tex]{subfiles}
+\begin{document}
+
+\chapter{Notatie}
+Dit hoofdstuk is tot stand gekomen toen er iemand die de les niet mee gevolgd heeft verward was door de notatie.
+Omdat dit \'e\'en van de dingen is die de cursus nalaat duidelijk te maken wordt het hier zeer expliciet opnieuw vermeld.\\\\
+De belangrijkste regel omtrent notatie is om steeds duidelijk te maken wat u bedoelt met elk teken.
+Zo wordt de benaming van elk onderdeel van een bewijs het best expliciet verklaard.
+Sommige van deze verklaringen lijken waarschijnlijk overbodig, omdat u de notatie kent, maar het is toch belangrijk om het expliciet te vermelden.
+
+\section{Algemeen}
+\subsection{Indices}
+Vaak spreken we over meerdere gelijkaardige elementen met indices. Beschouw bijvoorbeeld de verzameling $\{a_1,a_2,...,a_n\}$.
+Soms spreken we van 'alle $a_i$'.
+Dit betekent dan 'Elk element uit de verzameling', of nog: 'Elk element $a$ waarbij we een zinvolle index $i$ kunnen zetten'.
+ 
+\subsection{Sommaties, Producten en andere}
+De betekenis van het sommatie- en productteken is u waarschijnlijk bekend, maar wordt hier toch nog eens expliciet vermeld als inleiding tot wat volgt. 
+\[
+\sum_{i=1}^n
+\]
+Er zijn echter nog reeksen bewerkingen die we korter kunnen noteren. 
+
+\section{Vectoren}
+Vectoren worden meestal met een kleine letter aangeduid en meestal $v$, $w$ of $u$ als letter.
+Wanneer andere letters worden gebruikt wordt er soms een vector pijltje boven de letter gezet: $\vec{a}$. (Vooral in natuurkunde is dit onderscheid belangrijk.)
+Elementen uit vectoren worden meestal met een index aangeduid. Dit is natuurlijk enkel zinvol wanneer we over co\"ordinaat vectoren spreken.
+\[
+\vec{v} = 
+\begin{pmatrix}
+v_{1}&v_{2}&\cdots&v_{n}
+\end{pmatrix}
+\ 
+\vec{a} = 
+\begin{pmatrix}
+a_{1}\\a_{2}\\\vdots\\a_{n}
+\end{pmatrix}
+\]
+Onbekende vectoren worden meestal als $X$ en $Y$ aangeduid, of $\vec{x}$ en $\vec{y}$. Deze worden meestal gebruikt in stelsels.\\\\
+De verzameling van alle re\"ele co\"ordinaat vectoren met $n$ elementen word met $\mathbb{R}^n$ aangeduid. Analoog wordt de verzameling van de complexe co\"ordinaatvectoren met $\mathbb{C}^n$ aangeduid.
+
+\section{Matrices}
+Matrices worden meestal met een drukletter aangeduid.
+Vaak worden $A$, $B$ en $C$ gebruikt om onderscheid te maken van vectorruimten (zie verder). Elementen in matrices worden meestal aangeduid met een index, al dan niet met haakjes.
+\[
+A = 
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+a_{m1} & a_{m2} & \cdots & a_{mn}\\
+\end{pmatrix}
+= 
+\begin{pmatrix}
+A_{11} & A_{12} & \cdots & A_{1n}\\
+A_{21} & A_{22} & \cdots & A_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+A_{m1} & A_{m2} & \cdots & A_{mn}\\
+\end{pmatrix}
+=
+\begin{pmatrix}
+(A)_{11} & (A)_{12} & \cdots & (A)_{1n}\\
+(A)_{21} & (A)_{22} & \cdots & (A)_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+(A)_{m1} & (A)_{m2} & \cdots & (A)_{mn}\\
+\end{pmatrix}
+\]
+De verzameling van alle re\"ele $m\times n$ matrices word met $\mathbb{R}^n$ aangeduid.
+Analoog wordt de verzameling van de complexe matrices met $\mathbb{C}^{m\times n}$ aangeduid.
+Voor de duidelijkheid, een $m \times n$ matrix heeft $m$ rijen en $n$ kolommen.
+De kolommen en rijen hebben respectievelijk lengte $n$ en $m$.
+Element $a_{ij}$ uit een matrix $A$ is het element op \emph{rij} $i$ en \emph{kolom} $j$.
+
+
+\section{Stelsels}
+De volgorde waarin de vergelijkingen in een stelsel staan maakt niet uit.
+Een stelsel kunnen we een naam geven, maar hier zijn geen conventies voor in dit boek, omdat dit meestal niet gebeurt.
+\[
+\left\{
+\begin{array}{c c c c c}
+a_{11}x_{1} &+ a_{12}x_{2} & \cdots &+ a_{1n}x_{n} &= b_1\\
+a_{21}x_{1} &+ a_{22}x_{2} & \cdots &+ a_{2n}x_{n} &= b_2\\
+\vdots & \vdots & \ddots & \vdots & \vdots \\
+a_{m1}x_{1} &+ a_{m2}x_{2} & \cdots &+ a_{mn}x_{n} &= b_n\\
+\end{array}
+\right.
+\]
+Stelsels kunnen we echter eenvoudiger opschrijven. Dit kan bijvoorbeeld als een co\"effici\"entenmatrix, al dan niet uitgebreid. Wanneer alle $b_i$ nul zijn laten we soms die kolom weg.
+\[
+\left(
+\begin{array}{c c c c | c}
+a_{11} & a_{12} & \cdots & a_{1n} & b_1\\
+a_{21} & a_{22} & \cdots & a_{2n} & b_2\\
+\vdots & \vdots & \ddots & \vdots & \vdots \\
+a_{m1} & a_{m2} & \cdots & a_{mn} & b_n\\
+\end{array}
+\right)
+\ 
+\text{ of }
+\ 
+\left(
+\begin{array}{c c c c}
+a_{11} & a_{12} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & \ddots &   \\
+a_{m1} & a_{m2} & \cdots & a_{mn}\\
+\end{array}
+\right)
+\]
+
+
+\section{Vectorruimten}
+%TODO
+
+
+
+\end{document}
