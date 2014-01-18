@@ -611,22 +611,22 @@ We willen een verband vinden tussen de dimensies van al deze verzamelingen ($(U+
 Zij $dim(U) = r$, $dim(W)=s$ en $dim(U\cap W) = t$.
 \begin{proof}
 Ingewikkeld bewijs.\\
-$U$ en $W$ zijn beide een deelruimte van $V$, dus $(U \cap W)$ is ook een deelruimte van $V$ \footnote{Propositie 3.14 p 96}. Omdat $(U \cap W)$ een deelruimte is van $V$, zal $t \le r$ en $t \le s$. We nemen een basis van $(U\cap W)$ en noemen deze $\beta = \{v_1,...,v_n\}$.Om $\beta$ uit te breiden tot een basis $\beta_U$ van $U$ moet we $r-t$ vectoren toe voegen. Om $\beta$ uit te breiden tot een basis $\beta_W$ van $W$ moeten we $s-t$ vectoren toe.\\
-De basisvectoren van $U$ zijn dus $\{v_i,...,v_t,u_{t+1},...,u_r\}$. Bovendien zijn de basisvectoren van $W$, $\{v_i,...,v_t,w_{t+1},...,w_k\}$.
+$U$ en $W$ zijn beide een deelruimte van $V$, dus $(U \cap W)$ is ook een deelruimte van $V$ \footnote{Propositie 3.14 p 96}. Omdat $(U \cap W)$ een deelruimte is van zowel $U$ als $W$, zal $t \le r$ en $t \le s$. We nemen een basis van $(U\cap W)$ en noemen deze $\beta = \{v_1,...,v_n\}$. Om $\beta$ uit te breiden tot een basis $\beta_U$ van $U$ moet we $r-t$ vectoren toe voegen. Om $\beta$ uit te breiden tot een basis $\beta_W$ van $W$ moeten we $s-t$ vectoren toevoegen.\\
+De basisvectoren van $U$ zijn dus $\{v_i,...,v_t,u_{t+1},...,u_r\}$. De basisvectoren van $W$ zijn $\{v_i,...,v_t,w_{t+1},...,w_k\}$.
 We willen bewijzen dat de basis $\beta_U \cup \beta_W = \{v_1,...,v_t,u_{t+1},...,u_{r},w_{t+1},...,w_{s}\}$ een basis is van $U+W$.
-Een basis van een vectorruimte is vrij en voortbrengend. We bewijzen deze eigenschappen appart.\\
+Een basis van een vectorruimte is vrij en voortbrengend. We bewijzen deze eigenschappen apart.\\
 \textbf{Vrij}\\
 Neem een willekeurige lineaire combinatie van de basisvectoren van $(U+W)$.
 \[
 0 = \sum_{i=1}^tx_iv_i + \sum_{j=t+1}^ry_ju_j + \sum_{k=t+1}^sz_kw_k
 \]
 Om te bewijzen dat de $\beta_U \cup \beta_W$ vrij is, moeten we bewijzen dat alle $v_i,y_j,z_k$ nul zijn.\\
-De vector $\sum_{k=t+1}^sz_kw_k \in W$ zit in $W$ omdat alle $w_k \in W$. Bovendien kan deze vector geschreven worden als volgt.
+De vector $\sum_{k=t+1}^sz_kw_k \in W$ zit in $W$ omdat alle $w_k \in W$. Bovendien kan deze vector geschreven worden als volgt:
 \[
 \sum_{k=t+1}^sz_kw_k = -\sum_{i=1}^tx_iv_i - \sum_{j=t+1}^ry_ju_j
 \]
 Deze vector zit bijgevolg in $U$ en dus ook in $U\cap W$ want ze valt te schrijven als een lineaire combinatie van de basisvectoren van $U$ ($\beta_U$).
-Omdat $\sum_{k=t+1}^sz_kw_k \in (U\cap W)$ is de volgende bewering waar.
+Omdat $\sum_{k=t+1}^sz_kw_k \in (U\cap W)$ is de volgende bewering waar:
 \[
 \exists \lambda_i \in \mathbb{R} \sum_{k=t+1}^sz_kw_k = \sum_{i=1}^t\lambda_iv_i
 \]
@@ -634,11 +634,11 @@ Omdat $\sum_{k=t+1}^sz_kw_k \in (U\cap W)$ is de volgende bewering waar.
 \exists \lambda_i \in \mathbb{R} \sum_{k=t+1}^sz_kw_k - \sum_{i=1}^t\lambda_iv_i = 0 
 \]
 Het linkerlid van de bovenstaande vergelijking is een lineaire combinatie van de basisvectoren van $W$. Van deze basisvectoren weten we dat ze lineair onafhankelijk zijn, dus moeten alle $z_k, \lambda_i$ nul zijn. We weten nu dus al dat alle $z_k$ in de originele vergelijking nul zijn.\\
-Dezelfde redenering kunnen we toepassen op de vector $\sum_{j=t+1}^ry_ju_j \in U$. Deze vector kan geschreven worden als volgt.
+Dezelfde redenering kunnen we toepassen op de vector $\sum_{j=t+1}^ry_ju_j \in U$. Deze vector kan geschreven worden als volgt:
 \[
 \sum_{j=t+1}^ry_ju_j= -\sum_{i=1}^tx_iv_i - \sum_{k=t+1}^sz_kw_k
 \]
-Deze vector zit dus in $W$ en bijgevolg ook in $(U\cap W)$ want ze valt te schrijven als een lineaire combinatie van de basisvectoren $W$ ($\beta_W$). Omdat $\sum_{j=t+1}^ry_ju_j \in (U\cap W)$ is de volgende bewering waar.
+Deze vector zit dus in $W$ en bijgevolg ook in $(U\cap W)$ want ze valt te schrijven als een lineaire combinatie van de basisvectoren $W$ ($\beta_W$). Omdat $\sum_{j=t+1}^ry_ju_j \in (U\cap W)$ is de volgende bewering waar:
 \[
 \exists \lambda_i \in \mathbb{R} \sum_{j=t+1}^ry_ju_j = \sum_{i=1}^t\lambda_iv_i
 \]
@@ -646,12 +646,12 @@ Deze vector zit dus in $W$ en bijgevolg ook in $(U\cap W)$ want ze valt te schri
 \exists \lambda_i \in \mathbb{R} \sum_{j=t+1}^ry_ju_j - \sum_{i=1}^t\lambda_iv_i = 0 
 \]
 Het linkerlid van de bovenstaande vergelijking is een lineaire combinatie van de basisvectoren van $W$. We weten dat deze lineair onafhankelijk zijn, dus moeten alle $y_j,  \lambda_i$ ook nul zijn.\\
-In de eerste vergelijking weten we nu al dat alle $z_k,y_j$ nul zijn. Nu blijft er dus nog het volgende over.
+In de eerste vergelijking weten we nu al dat alle $z_k,y_j$ nul zijn. Nu blijft er dus nog het volgende over:
 \[
 0 = \sum_{i=1}^tx_iv_i + 0 + 0
 \]
 Het rechterlid van deze vergelijking is een lineaire combinatie van de basisvectoren van $U\cap W$. Van deze vectoren weten we dat ze lineair onafhankelijk zijn, dus alle $x_i$ moeten nul zijn.
-Nu hebben we bewezen dat $\beta_U\cup \beta_W$ een basis is van $U+W$\\\\
+We hebben bewezen dat $\beta_U\cup \beta_W$ een vrije verzameling is.\\\\
 \textbf{Voortbrengend}\\
 Om te bewijzen dat een basis voortbrengend is voor een vectorruimte nemen we een willekeurig element uit te vectorruimte en tonen we aan dat het een lineaire combinatie is van de basis.
 Neem een willekeurig element $x \in (U + W)$. We tonen de volgende bewering aan.
@@ -668,9 +668,9 @@ Kiezen we nu de $x_a,x_b$ zodat de volgende bewering geldt.
 \]
 Nu is aangetoond dat $\beta_U \cup \beta_W$ voortbrengend is.
 \\\\ 
-We weten nu dat $\beta_U \cup \beta_W$ een basis is van $U+W$. De basis van $\beta_U \cup \beta_W$ bevat precies $(r-t)+(s-t)+t = r+s-t$ basisvectoren. Als we nu terug kijken naar de benaming van de dimensies van $U$, $W$ en $U\cap W$ zien we het volgende.
+We weten nu in combinatie met het voorgaande bewijs dat $\beta_U \cup \beta_W$ een basis is van $U+W$. De basis van $\beta_U \cup \beta_W$ bevat precies $(r-t)+(s-t)+t = r+s-t$ basisvectoren. Als we nu terug kijken naar de benaming van de dimensies van $U$, $W$ en $U\cap W$ zien we het volgende.
 \[
-dim(U+W) = r+s-t = dim(U) + dim(W) + dim(U \cap W)
+dim(U+W) = r+s-t = dim(U) + dim(W) - dim(U \cap W)
 \]
 \end{proof}
 
