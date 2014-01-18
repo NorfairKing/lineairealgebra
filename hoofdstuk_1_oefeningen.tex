@@ -299,28 +299,28 @@ Dit is direct te bepalen door de laatste rij: $V=\emptyset$.
 \subsection{Oefening 5}
 \subsubsection*{a)}
 \[
-\begin{pmatrix}
-1 &  2 &  4\\
-3 &  8 &  14\\
-2 &  6 &  11
+\begin{pmatrix}[ccc|c]
+1 & 2 & 4  & 0\\
+3 & 8 & 4  & 0\\
+2 & 6 & 11 & 0
 \end{pmatrix}
 \]
 \[ R_2 \longmapsto R_2 -3\cdot R_1\]
 \[ R_3 \longmapsto R_3 -2\cdot R_1\]
 \[
-\begin{pmatrix}
-1 &  2 &  4\\
-0 &  2 &  2\\
-0 &  2 &  3
+\begin{pmatrix}[ccc|c]
+1 & 2 & 4 & 0\\
+0 & 2 & 2 & 0\\
+0 & 2 & 3 & 0
 \end{pmatrix}
 \]
 \[ R_3 \longmapsto R_3 - R_2\]
 \[ R_2 \longmapsto \frac{1}{2} R_2\]
 \[
-\begin{pmatrix}
-1 &  2 &  4\\
-0 &  1 &  1\\
-0 &  0 &  1
+\begin{pmatrix}[ccc|c]
+1 & 2 & 4 & 0\\
+0 & 1 & 1 & 0\\
+0 & 0 & 1 & 0
 \end{pmatrix}
 \]
 
@@ -329,28 +329,28 @@ V = \{(0,0,0)\}
 \]
 \subsubsection*{b)}
 \[
-\begin{pmatrix}
-3 &  2 &  4\\
-1 &  1 &  -3\\
-4 &  3 &  1
+\begin{pmatrix}[ccc|c]
+3 & 2 &  4 & 0\\
+1 & 1 & -3 & 0\\
+4 & 3 &  1 & 0
 \end{pmatrix}
 \]
 \[R_1 \leftrightarrow R_2\]
 \[ R_2 \longmapsto R_2 -3\cdot R_1\]
 \[ R_3 \longmapsto R_3 -4\cdot R_1\]
 \[
-\begin{pmatrix}
-1 &  1 &  -3\\
-0 &  -1 &  13\\
-0 &  -1 &  13
+\begin{pmatrix}[ccc|c]
+1 &  1 &  -3 & 0\\
+0 & -1 &  13 & 0\\
+0 & -1 &  13 & 0
 \end{pmatrix}
 \]
 \[ R_3 \longmapsto R_3 - R_2\]
 \[
-\begin{pmatrix}
-1 &  1 &  -3\\
-0 &  -1 &  13\\
-0 &  0 &  0
+\begin{pmatrix}[ccc|c]
+1 &  1 & -3 & 0\\
+0 & -1 & 13 & 0\\
+0 &  0 &  0 & 0
 \end{pmatrix}
 \]
 
@@ -359,27 +359,27 @@ V = \{(-10\lambda,13\lambda,\lambda)\ |\ \lambda\in\mathbb{R}\}
 \]
 \subsubsection*{c)}
 \[
-\begin{pmatrix}
-1 &  2 &  -3\\
-3 &  -1 &  2\\
-5 &  3 &  -4
+\begin{pmatrix}[ccc|c]
+1 &  2 &  -3 & 0\\
+3 &  -1 &  2 & 0\\
+5 &  3 &  -4 & 0
 \end{pmatrix}
 \]
 \[ R_2 \longmapsto R_2 -3\cdot R_1\]
 \[ R_3 \longmapsto R_3 -5\cdot R_1\]
 \[
-\begin{pmatrix}
-1 &  2 &  -3\\
-0 &  -7 &  11\\
-0 &  -7 &  11
+\begin{pmatrix}[ccc|c]
+1 &   2 &  -3 & 0\\
+0 &  -7 &  11 & 0\\
+0 &  -7 &  11 & 0
 \end{pmatrix}
 \]
 \[ R_3 \longmapsto R_3 - R_2\]
 \[
-\begin{pmatrix}
-1 &  2 &  -3\\
-0 &  -7 &  11\\
-0 &  0 &  0
+\begin{pmatrix}[ccc|c]
+1 &  2 &  -3 & 0\\
+0 & -7 &  11 & 0\\
+0 &  0 &  0  & 0
 \end{pmatrix}
 \]
 \[
@@ -387,28 +387,28 @@ V = \left\{\left( \frac{43}{7}\lambda,\frac{11}{7}\lambda,\lambda \right)\ \midd
 \]
 \subsubsection*{d)}
 \[
-\begin{pmatrix}
-1 &  1 &  -2 & 1 & 3\\
-2 &  -1 &  2 & 2 & 6\\
-3 &  2 &  -4 & -3 & -9
+\begin{pmatrix}[ccccc|c]
+1 &  1 &  -2 & 1 & 3 & 0\\
+2 &  -1 &  2 & 2 & 6 & 0\\
+3 &  2 &  -4 & -3 & -9 & 0
 \end{pmatrix}
 \]
 \[ R_2 \longmapsto R_2 -2\cdot R_1\]
 \[ R_3 \longmapsto R_3 -3\cdot R_1\]
 \[
-\begin{pmatrix}
-1 &  1 &  -2 & 1 & 3\\
-0 &  -3 &  6 & 0 & 0\\
-0 &  -1 &  2 & -6 & -18
+\begin{pmatrix}[ccccc|c]
+1 &  1 &  -2 & 1 & 3 & 0\\
+0 &  -3 &  6 & 0 & 0 & 0\\
+0 &  -1 &  2 & -6 & -18 & 0
 \end{pmatrix}
 \]
 \[ R_2 \leftrightarrow R_3\]
 \[ R_3 \longmapsto R_3 -3\cdot R_2\]
 \[
-\begin{pmatrix}
-1 &  1 &  -2 & 1 & 3\\
-0 &  -1 &  2 & -6 & -18\\
-0 &  0 &  0 & 18 & 54
+\begin{pmatrix}[ccccc|c]
+1 &  1 &  -2 & 1 & 3 & 0\\
+0 &  -1 &  2 & -6 & -18 & 0\\
+0 &  0 &  0 & 18 & 54 & 0
 \end{pmatrix}
 \]
 \[
@@ -422,13 +422,13 @@ V =
 \subsection{Oefening 6}
 \subsubsection*{a)}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  2 &  4 &  6\\
 3 &  8 & 14 & 16\\
 2 &  6 & 11 & 12
 \end{pmatrix}
 \longrightarrow
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  0 &  0 &  4\\
 0 &  1 &  0 & -3\\
 0 &  0 &  1 &  2
@@ -441,13 +441,13 @@ V=\{(4,-3,2)\}
 
 \subsubsection*{b)}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 3 &  2 &  4 &  5\\
 1 &  1 & -3 &  2\\
 4 &  3 &  1 &  7
 \end{pmatrix}
 \longrightarrow
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  0 & 10 &  1\\
 0 &  1 & -13&  1\\
 0 &  0 &  0 &  0
@@ -460,13 +460,13 @@ V=\{(1-10t,1+13t,t) \mid t \in \mathbb{R}\}
 
 \subsubsection*{c)}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  2 & -3 & -1\\
 3 & -1 &  2 &  7\\
 5 &  3 & -4 &  2
 \end{pmatrix}
 \longrightarrow
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  0 & \frac{1}{7} &  0\\
 0 &  1 & \frac{-11}{7}&  0\\
 0 &  0 &  0 &  1
@@ -479,13 +479,13 @@ V=\emptyset
 
 \subsubsection*{d)}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccccc|c]
 1 &  1 & -2 &  1 &  2 & 1\\
 2 & -1 &  2 &  2 &  6 & 2\\
 3 &  2 & -4 & -3 & -9 & 3
 \end{pmatrix}
 \longrightarrow
-\begin{pmatrix}
+\begin{pmatrix}[ccccc|c]
 1 &  0 &  0 &  0 &  0 & 1\\
 0 &  1 & -2 &  0 &  0 & 0\\
 0 &  0 &  0 &  1 &  3 & 0
@@ -499,7 +499,7 @@ V=\{(1,2a,a,-3b,b)\ |\ a,b \in \mathbb{R} \}
 \subsection{Oefening 7}
 \subsubsection*{a)}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 2 & -3 & 0 & 8\\
 4 & -5 & 1 & 15\\
 2 & 0 & 4 & 1
@@ -508,7 +508,7 @@ V=\{(1,2a,a,-3b,b)\ |\ a,b \in \mathbb{R} \}
 \[ R_2 \longmapsto R_2 - 2\cdot R_1\]
 \[ R_3 \longmapsto R_3 -  R_1\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 2 & -3 & 0 & 8\\
 0 & 1 & 1 & -1\\
 0 & 3 & 4 & -7
@@ -518,7 +518,7 @@ V=\{(1,2a,a,-3b,b)\ |\ a,b \in \mathbb{R} \}
 \[ R_3 \longmapsto R_3 - 3\cdot R_2\]
 
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 2 & -3 & 0 & 8\\
 0 & 1 & 1 & -1\\
 0 & 0 & 1 & -4
@@ -537,7 +537,7 @@ V = \left\{\left( -\frac{7}{2},-5,4 \right)\right\}
 
 \subsubsection*{b)}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 0 & 2 & -1 & 1\\
 4 & -10 & 3 & 5\\
 3 & -3 & 0 & 6
@@ -546,7 +546,7 @@ V = \left\{\left( -\frac{7}{2},-5,4 \right)\right\}
 
 \[ R_1 \leftrightarrow R_3\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 3 & -3 & 0 & 6\\
 4 & -10 & 3 & 5\\
 0 & 2 & -1 & 1
@@ -555,7 +555,7 @@ V = \left\{\left( -\frac{7}{2},-5,4 \right)\right\}
 
 \[ R_1 \longmapsto R_1 / 3\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & -1 & 0 & 2\\
 4 & -10 & 3 & 5\\
 0 & 2 & -1 & 1
@@ -563,7 +563,7 @@ V = \left\{\left( -\frac{7}{2},-5,4 \right)\right\}
 \]
 \[ R_2 \longmapsto R_2 - 4\cdot R_1\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & -1 & 0 & 2\\
 0 & -6 & 3 & -3\\
 0 & 2 & -1 & 1
@@ -571,7 +571,7 @@ V = \left\{\left( -\frac{7}{2},-5,4 \right)\right\}
 \]
 \[ R_2 \longmapsto R_2 + 3\cdot R_3\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & -1 & 0 & 2\\
 0 & 0 & 0 & 0\\
 0 & 2 & -1 & 1
@@ -579,7 +579,7 @@ V = \left\{\left( -\frac{7}{2},-5,4 \right)\right\}
 \]
 \[ R_2 \leftrightarrow R_3\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & -1 & 0 & 2\\
 0 & 2 & -1 & 1\\
 0 & 0 & 0 & 0
@@ -592,7 +592,7 @@ V = \left\{\left( -\frac{\lambda+1}{2} + 2,\frac{\lambda+1}{2},\lambda \right)\ 
 
 \subsubsection*{c)}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cccc|c]
 1 & 1 & 1 &-1&-2\\
 2 & -1 & 1 & -1 & 0\\
 3 & 2 & -1 & -1 & 1\\
@@ -604,7 +604,7 @@ V = \left\{\left( -\frac{\lambda+1}{2} + 2,\frac{\lambda+1}{2},\lambda \right)\ 
 \[ R_4 \longmapsto R_4 - R_1\]
 
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cccc|c]
 1 & 1 & 1 & -1 & -2\\
 0 & -3 & -1 & 1 & 4\\
 0 & -1 & -4 & 2 & 7\\
@@ -614,7 +614,7 @@ V = \left\{\left( -\frac{\lambda+1}{2} + 2,\frac{\lambda+1}{2},\lambda \right)\ 
 \[ R_2 \leftrightarrow R_3\]
 
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cccc|c]
 1 & 1 & 1 & -1 & -2\\
 0 & -1 & -4 & 2 & 7\\
 0 & -3 & -1 & 1 & 4\\
@@ -624,7 +624,7 @@ V = \left\{\left( -\frac{\lambda+1}{2} + 2,\frac{\lambda+1}{2},\lambda \right)\ 
 \[ R_2 \longmapsto  -1\cdot R_2\]
 
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cccc|c]
 1 & 1 & 1 & -1 & -2\\
 0 & 1 & 4 & -2 & -7\\
 0 & -3 & -1 & 1 & 4\\
@@ -633,7 +633,7 @@ V = \left\{\left( -\frac{\lambda+1}{2} + 2,\frac{\lambda+1}{2},\lambda \right)\ 
 \]
 \[ R_3 \longmapsto R_3 + 3\cdot R_2\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cccc|c]
 1 & 1 & 1 & -1 & -2\\
 0 & 1 & 4 & -2 & -7\\
 0 & 0 & 11 & 5 & 17\\
@@ -643,7 +643,7 @@ V = \left\{\left( -\frac{\lambda+1}{2} + 2,\frac{\lambda+1}{2},\lambda \right)\ 
 \[ R_3 \leftrightarrow R_4\]
 
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cccc|c]
 1 & 1 & 1 & -1 & -2\\
 0 & 1 & 4 & -2 & -7\\
 0 & 0 & 2 & -2 & -6\\
@@ -654,7 +654,7 @@ V = \left\{\left( -\frac{\lambda+1}{2} + 2,\frac{\lambda+1}{2},\lambda \right)\ 
 \]
 
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cccc|c]
 1 & 1 & 1 & -1 & -2\\
 0 & 1 & 4 & -2 & -7\\
 0 & 0 & 1 & -1 & -3\\
@@ -664,7 +664,7 @@ V = \left\{\left( -\frac{\lambda+1}{2} + 2,\frac{\lambda+1}{2},\lambda \right)\ 
 \[ R_4 \longmapsto R_4 - 11\cdot R_3\]
 
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cccc|c]
 1 & 1 & 1 & -1 & -2\\
 0 & 1 & 4 & -2 & -7\\
 0 & 0 & 1 & -1 & -3\\
@@ -678,7 +678,7 @@ V = \left\{\left( -\frac{175}{8},-\frac{135}{8}, -\frac{-31}{16}, \frac{17}{16} 
 \subsection{Oefening 8}
 \subsubsection*{a)}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 2 &  i &  -(1+i) & 1 \\
 1 &  -2 &  i & 0 \\
 -i &  1 &  -(2-i) & 1
@@ -688,7 +688,7 @@ V = \left\{\left( -\frac{175}{8},-\frac{135}{8}, -\frac{-31}{16}, \frac{17}{16} 
 \[ R_2 \longmapsto R_2 -2\cdot R_1\]
 \[ R_3 \longmapsto R_3 +i\cdot R_1\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  -2 &  i & 0 \\
 0 &  i+4 &  -1-3i & 1 \\
 0 &  1-2i &  -3+i & 1
@@ -697,7 +697,7 @@ V = \left\{\left( -\frac{175}{8},-\frac{135}{8}, -\frac{-31}{16}, \frac{17}{16} 
 \[ R_2 \longmapsto \frac{1}{i+4} R_2 \]
 \[ R_3 \longmapsto R_3 -(1-2i)\cdot R_2\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  -2 &  i & 0 \\
 0 &  1 &  \frac{-1-3i}{i+4} & \frac{1}{i+4} \\
 0 &  0 &  \frac{-6+2i}{i+4} & \frac{3+3i}{i+4} 
@@ -710,7 +710,7 @@ V = \left\{\left( \frac{-1+5i}{-6+2i} , \frac{-2+4i}{-6+2i} , \frac{3+3i}{-6+2i}
 
 \subsection{Oefening 9}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 2 &  1 &  7 & b_1\\
 6 & -2 & 11 & b_2 \\
 2 & -1 &  3 & b_3\\
@@ -719,7 +719,7 @@ V = \left\{\left( \frac{-1+5i}{-6+2i} , \frac{-2+4i}{-6+2i} , \frac{3+3i}{-6+2i}
 \[ R_2 \longmapsto R_2 -3\cdot R_1\]
 \[ R_3 \longmapsto R_3 - R_1\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 2 &  1 &  7 & b_1\\
 0 & -5 & -10& b_2-3b_1 \\
 0 & -2 &  -4& b_3-b_1\\
@@ -727,7 +727,7 @@ V = \left\{\left( \frac{-1+5i}{-6+2i} , \frac{-2+4i}{-6+2i} , \frac{3+3i}{-6+2i}
 \]
 \[ R_3 \longmapsto 5 \cdot R_3 - 2 \cdot R_2\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 2 &  1 &  7 & b_1\\
 0 & -5 & -10& b_2-3b_1 \\
 0 & 0  &  0 & 5b_3-2b_2+b_1\\
@@ -738,14 +738,14 @@ Als $5b_3-2b_2+b_1 \neq 0$, dan heeft het stelsel geen oplossingen ($V=\emptyset
 
 \subsection{Oefening 10}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|c]
 1 & h & 1\\
 2 & 3 & k\\
 \end{pmatrix}
 \]
 \[ R_2 \longmapsto R_2 - 2 \cdot R_1\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|c]
 1 & h & 1\\
 0 & 3-2h & k-2\\
 \end{pmatrix}
@@ -759,14 +759,14 @@ Als $h = \frac{3}{2}$ en $k = 2$
 
 \subsection{Oefening 11}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|c]
 -3 &  h &  1\\
 6 &  k &  -3\\
 \end{pmatrix}
 \]
 \[R_2 \longmapsto R_2 + 2\cdot R_1\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|c]
 -3 &  h &  1\\
 0 &  k+2h &  -1\\
 \end{pmatrix}
@@ -784,7 +784,7 @@ Nooit, er is immers geen nulrij mogelijk.
 Wissel $R_1$ en $R_3$, en daarna $R_2$ en $R_1$.
 \end{center}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  1 &  k & 1\\
 1 &  k &  1 & 1\\
 k &  1 &  1 & 1
@@ -793,7 +793,7 @@ k &  1 &  1 & 1
 \[ R_2 \longmapsto R_2 - R_1\]
 \[ R_3 \longmapsto R_3 - k \cdot	R_1\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  1 &  k & 1\\
 0 & k-1& 1-k& 0\\
 0 & 1-k & 1-k^2 & 1-k
@@ -801,7 +801,7 @@ k &  1 &  1 & 1
 \]
 Geval 1: $k=1$
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  1 & 1 & 1\\
 0 &  0 & 0 & 0\\
 0 &  0 & 0 & 0
@@ -815,7 +815,7 @@ Geval 2: $k\neq 1$\\
 \[ R_2 \longmapsto \frac{1}{k-1}R_2\]
 \[ R_3 \longmapsto \frac{1}{1-k}R_3\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  1 &  k & 1\\
 0 &  1 & -1 & 0\\
 0 &  1 & k+1& 1
@@ -824,7 +824,7 @@ Geval 2: $k\neq 1$\\
 \[ R_1 \longmapsto R_1-R_2\]
 \[ R_3 \longmapsto R_3-R_1\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  0 &  k+1 & 1\\
 0 &  1 & -1 & 0\\
 0 &  0 & k+2& 1
@@ -832,7 +832,7 @@ Geval 2: $k\neq 1$\\
 \]\\
 Geval 2a: $k = -2$\\
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  0 & -1 & 1\\
 0 &  1 & -1 & 0\\
 0 &  0 &  0 & 1
@@ -845,7 +845,7 @@ V=\emptyset
 Geval 2b: $k\neq-2$\\
 \[ R_3 \longmapsto \frac{1}{k+2}R_3\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  0 &  k+1 & 1\\
 0 &  1 & -1 & 0\\
 0 &  0 &  1 & \frac{1}{k+2}
@@ -854,7 +854,7 @@ Geval 2b: $k\neq-2$\\
 \[ R_1 \longmapsto R_1 - (k+1)\cdot R_3\]
 \[ R_2 \longmapsto R_2 + R_3\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 &  0 &  0 & \frac{1}{k+2}\\
 0 &  1 &  0 & \frac{1}{k+2}\\
 0 &  0 &  1 & \frac{1}{k+2}
@@ -873,7 +873,7 @@ Als $k=-2$ dan heeft het stelsel geen oplossingen:
 \[
 V=\emptyset
 \]
-Anders heeft het stelsel precies één oplossing:
+Anders heeft het stelsel precies \'e\'en oplossing:
 \[
 V=\left\{\left( \frac{1}{k+2},\frac{1}{k+2},\frac{1}{k+2} \right)\right\}
 \]
@@ -883,21 +883,21 @@ V=\left\{\left( \frac{1}{k+2},\frac{1}{k+2},\frac{1}{k+2} \right)\right\}
 Verwissel $R_1$ en $R_2$.
 \end{center}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|c]
 1 &  k &  k+1\\
 k &  1 &  2
 \end{pmatrix}
 \]
 \[ R_2 \longmapsto R_2 - k\cdot R_3\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|c]
 1 &  k &  k+1\\
 0 &  1-k^2 &  -k^2-k+2
 \end{pmatrix}
 \]\\
 Geval 1: $k=1$\\
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|c]
 1 &  1 &  2\\
 0 &  0 &  0
 \end{pmatrix}
@@ -908,7 +908,7 @@ V=\{(2-t,t) | t \in \mathbb{R}\}
 \]\\
 Geval 2: $k=-1$\\
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|c]
 1 & -1 &  0\\
 0 &  0 &  2
 \end{pmatrix}
@@ -920,14 +920,14 @@ V=\emptyset
 Geval 3: $k\neq 1 \wedge k\neq -1$\\
 \[ R_2 \longmapsto \frac{1}{1-k^2}\cdot R_2 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|c]
 1 &  k &  k+1\\
 0 &  1 &  -\frac{k+2}{k+1}
 \end{pmatrix}
 \]
 \[ R_1 \longmapsto R_1-k\cdot R_2 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|c]
 1 &  0 &  \frac{2k^2+4k+1}{k+1}\\
 0 &  1 &  -\frac{k+2}{k+1}
 \end{pmatrix}
@@ -937,7 +937,7 @@ Antwoord:
 V=\left\lbrace\left(\frac{2k^2+4k+1}{k+1},-\frac{k+2}{k+1}\right)\right\rbrace
 \]\\
 \textbf{Samenvatting}:\\
-Als $k=1$ dan heeft het stelsel oneindig veel oplossinen:
+Als $k=1$ dan heeft het stelsel oneindig veel oplossingen:
 \[
 V=\{(2-t,t)\ |\ t \in \mathbb{R}\}
 \]
@@ -945,14 +945,14 @@ Als $k=-1$ dan heeft het stelsel geen oplossingen:
 \[
 V=\emptyset
 \]
-Anders heeft het stelsel precies één oplossing:
+Anders heeft het stelsel precies \'e\'en oplossing:
 \[
 V=\left\lbrace\left(\frac{2k^2+4k+1}{k+1},-\frac{k+2}{k+1}\right)\right\rbrace
 \]
 
 \subsubsection*{c)}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 k & k+1 & 1 & 0\\
 k & 1 & k+1 & 0\\s
 2k & 1 & 1 & k+1\\
@@ -960,7 +960,7 @@ k & 1 & k+1 & 0\\s
 \]
 Geval 1: $k=0$:
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 0 & 1 & 1 & 0\\l
 0 & 1 & 1 & 0\\
 0 & 1 & 1 & 1\\
@@ -969,7 +969,7 @@ Geval 1: $k=0$:
 \[ R_1 \longmapsto R_1 - R_2 \]
 \[ R_3 \longmapsto R_3 - R_2 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 0 & 0 & 0 & 0\\
 0 & 1 & 1 & 0\\
 0 & 0 & 0 & 1\\
@@ -982,7 +982,7 @@ V=\emptyset
 Geval 2: $k\neq0$:
 \[ R_1 \longmapsto \frac{1}{k}R_1 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & \frac{k+1}{k} & \frac{1}{k} & 0\\
 k & 1 & k+1 & 0\\
 2k & 1 & 1 & k+1\\
@@ -991,7 +991,7 @@ k & 1 & k+1 & 0\\
 \[ R_2 \longmapsto R_2 - k\cdot R_1 \]
 \[ R_3 \longmapsto R_3 - 2k\cdot R_1 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & \frac{k+1}{k} & \frac{1}{k} & 0\\
 0 & -k & k & 0\\
 0 & -2k-1 & -1 & k+1\\
@@ -999,7 +999,7 @@ k & 1 & k+1 & 0\\
 \]
 \[ R_2 \longmapsto \frac{-1}{k}R_2\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & \frac{k+1}{k} & \frac{1}{k} & 0\\
 0 & 1 & -1 & 0\\
 0 & -2k-1 & -1 & k+1\\
@@ -1008,7 +1008,7 @@ k & 1 & k+1 & 0\\
 \[ R_1 \longmapsto R_1 - \frac{k+1}{k}\cdot R_2 \]
 \[ R_3 \longmapsto R_3 + (2k+1)\cdot R_2 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 0 & \frac{k+2}{k} & 0\\
 0 & 1 & -1 & 0\\
 0 & 0 & -2k-2 & k+1\\
@@ -1016,7 +1016,7 @@ k & 1 & k+1 & 0\\
 \]
 Geval 2a $k=-1$:
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 0 & \frac{1}{k} & 0\\
 0 & 1 & -1 & 0\\
 0 & 0 & 0 & 0\\
@@ -1029,7 +1029,7 @@ V=\left\{\left(\frac{t}{k},t,t\right)\ \middle|\ t \in \mathbb{R}\right\}
 Geval 2b $k\neq-1$:
 \[ R_3 \longmapsto \frac{1}{-2k-2}R_3\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 0 & \frac{k+2}{k} & 0\\
 0 & 1 & -1 & 0\\
 0 & 0 & 1 & -2\\
@@ -1038,7 +1038,7 @@ Geval 2b $k\neq-1$:
 \[ R_1 \longmapsto R_1 - \frac{k+2}{k}\cdot R_3 \]
 \[ R_2 \longmapsto R_2 + R_3 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 0 & 0 & 2\frac{k+2}{k}\\
 0 & 1 & 0 & -2\\
 0 & 0 & 1 & -2\\
@@ -1057,7 +1057,7 @@ Als $k=-1$ dan heeft het stelsel geen oplossingen:
 \[
 V=\left\lbrace\left(\frac{t}{k},t,t\right)\ \middle|\ t \in \mathbb{R}\right\rbrace
 \]
-Anders heeft het stelsel precies één oplossing:
+Anders heeft het stelsel precies \'e\'en oplossing:
 \[
 V=\left\lbrace\left(2\frac{k+2}{k},-2,-2\right)\right\rbrace
 \]
@@ -1073,48 +1073,44 @@ $1-ca = 0$ en $ d -bc = 0$
 $1-ca \neq 0$
 \end{enumerate}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|c]
 1 & a & b\\
 c & 1 & d\\
 \end{pmatrix}
 \]
 \[ R_2 \longmapsto R_2 - c \cdot R_1\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|c]
 1 & a & b\\
 0 & 1-ca & d-cb\\
 \end{pmatrix}
 \]
-
 \subsection{Oefening 14}
 \[R_1 \leftrightarrow R_2 \]
 \[R_2 \longmapsto R_2 + b\cdot R_1\]
 \[R_3 \longmapsto R_3 - R_1\]
 \[R_4 \longmapsto R_4 - R_1\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cccc|c]
 1 &  -2 &  b & -1 & 0\\
 0 &  2-2b &  -2 & 0 & -2\\
 0 & 2b-2 & 2-2b & b & 2\\
 0 & -2b+2 & -4b-2 & 4b-4 & 2b-4
 \end{pmatrix}
 \]
-1) b=1: Strijdig 
-\[\]
-2) b=/=1:
+1) $b=1$: Strijdig\\
+2) $b \neq 1$:
 \[R_3 \longmapsto R_3 + R_2\]
 \[R_4 \longmapsto R_4 - R_2\]
-\[R_4 \longmapsto R_4 -2/cdot R_3\]
-2a) b = 2: Strijdig
-\[\]
-2b) b =/= 2: 1 oplossing
-
+\[R_4 \longmapsto R_4 -2 \cdot R_3\]
+2a) $b=2$: Strijdig\\
+2b) $b \neq 2$: 1 oplossing
 \subsection{Oefening 15}
 \begin{center}
 Verwissel $R_1$ en $R_3$.
 \end{center}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 1 & ab & 1\\
 a & 1 & b & 1\\
 1 & a & b & 1\\
@@ -1123,7 +1119,7 @@ a & 1 & b & 1\\
 \[ R_2 \longmapsto R_2 - a\cdot R_1 \]
 \[ R_3 \longmapsto R_3 - R_1 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 1 & ab & 1\\
 0 & 1-a & b-a^2b & 1-a\\
 0 & a-1 & b-ab & 0\\
@@ -1131,7 +1127,7 @@ a & 1 & b & 1\\
 \]
 Geval 1: $a=1$
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 1 & b & 1\\
 0 & 0 & 0 & 0\\
 0 & 0 & 0 & 0\\
@@ -1145,7 +1141,7 @@ Geval 2: $a \neq -1$
 \[ R_2 \longmapsto \frac{1}{1-a}\cdot R_2 \]
 \[ R_3 \longmapsto \frac{1}{1-a}\cdot R_3 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 1 & ab & 1\\
 0 & 1 & b(1+a) & 1\\
 0 & -1 & b & 0\\
@@ -1154,7 +1150,7 @@ Geval 2: $a \neq -1$
 \[ R_1 \longmapsto R_1 - R_2 \]
 \[ R_3 \longmapsto R_3 + R_2 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 0 & -b & 0\\
 0 & 1 & b(1+a) & 1\\
 0 & 0 & b(2+a) & 1\\
@@ -1162,7 +1158,7 @@ Geval 2: $a \neq -1$
 \]
 Geval 2a: $b=0 \vee a=-2$
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 0 & -b & 0\\
 0 & 1 & b(1+a) & 1\\
 0 & 0 & 0 & 1\\
@@ -1175,7 +1171,7 @@ V=\emptyset
 Geval 2b: $b\neq \wedge a \neq -2$
 \[ R_3 \longmapsto \frac{1}{b(2+a)}\cdot R_3 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 0 & -b & 0\\
 0 & 1 & b(1+a) & 1\\
 0 & 0 & 1 & \frac{1}{b(2+a)}\\
@@ -1184,7 +1180,7 @@ Geval 2b: $b\neq \wedge a \neq -2$
 \[ R_1 \longmapsto R_2 + b\cdot R_3 \]
 \[ R_2 \longmapsto R_2 - b(1+a)\cdot R_3 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 0 & 0 & 0\\
 0 & 1 & 0 & \frac{b(2+a)-1}{b(2+a)}\\
 0 & 0 & 1 & \frac{1}{b(2+a)}\\
@@ -1203,14 +1199,14 @@ Als $k=-1$ dan heeft het stelsel geen oplossingen:
 \[
 V=\emptyset
 \]
-Anders heeft het stelsel precies één oplossing:
+Anders heeft het stelsel precies \'e\'en oplossing:
 \[
 V=\left\lbrace\left(0,\frac{b(2+a)-1}{b(2+a)}, \frac{1}{b(2+a)}\right)\right\rbrace
 \]
 \subsection{Oefening 16}
 Haal de gegevens van de twee tabel door de eerste:
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cccc|c]
 4 & 1 & 1 & 1 & 16800\\
 2 & 2 & 2 & 1 & 18500\\
 1 & 3 & 1 & 3 & 21700\\
@@ -1219,7 +1215,7 @@ Haal de gegevens van de twee tabel door de eerste:
 \]
 Dit oplossen geeft:
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cccc|c]
 1 & 0 & 0 & 0 & 2100\\
 0 & 1 & 0 & 0 & 3100\\
 0 & 0 & 1 & 0 & 2800\\
@@ -1228,14 +1224,14 @@ Dit oplossen geeft:
 \]
 Dit geeft voor Laurens:
 \[
-Premie = 2\cdot 2100 + 3\cdot 3100 + 2\cdot 2800 + 2\cdot 2500 = 24100
+\textit{Premie} = 2\cdot 2100 + 3\cdot 3100 + 2\cdot 2800 + 2\cdot 2500 = 24100
 \]
 \subsection{Oefening 17}
 \subsubsection*{a)}
 \[A + B + C = 15000\]
 \[0.05A + 0.07B + 0.08C = 870\]
 \[A-2B-2C=0\]
-\[\]
+Oplossing:
 \[X = 10000\]
 \[Y = 3000\]
 \[Z = 2000\]
@@ -1247,7 +1243,6 @@ A=8500 en C = 2000
 
 
 \section{Oefeningen 1.7.2}
-
 \subsection{Oefening 1}
 \subsubsection*{(AB)C}
 (AB) result:
@@ -1439,7 +1434,7 @@ $$
 \subsubsection*{a)}
 
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|ccc]
 2 & 1 & 3 & 1 & 0 & 0\\
 -1 & 2 & 0 & 0 & 1 & 0\\
 3 & -2 & 1 & 0 & 0 & 1
@@ -1448,7 +1443,7 @@ $$
 \[ R_1 \leftrightarrow R_2 \]
 \[ R_1 \longmapsto R_1 * -1\cdot R_1\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|ccc]
 1 & -2 & 0 & 0 & -1 & 0\\
 2 & 1 & 3 & 1 & 0 & 0\\
 3 & -2 & 1 & 0 & 0 & 1
@@ -1457,7 +1452,7 @@ $$
 \[ R_2 \longmapsto R_2 - 2\cdot R_1 \]
 \[ R_3 \longmapsto R_3 - 3\cdot R_1 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|ccc]
 1 & -2 & 0 & 0 & -1 & 0\\
 0 & 5 & 3 & 1 & 2 & 0\\
 0 & 4 & 1 & 0 & 3 & 1
@@ -1465,7 +1460,7 @@ $$
 \]
 \[ R_2 \longmapsto R_2 - R_3 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|ccc]
 1 & -2 & 0 & 0 & -1 & 0\\
 0 & 1 & 2 & 1 & -1 & 0\\
 0 & 4 & 1 & 0 & 3 & 1
@@ -1474,7 +1469,7 @@ $$
 \[ R_1 \longmapsto R_1 + 2\cdot R_2 \]
 \[ R_3 \longmapsto R_3 - 4\cdot R_1 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|ccc]
 1 & 0 & 4 & 2 & -3 & 0\\
 0 & 1 & 2 & 1 & -1 & 0\\
 0 & 0 & -7 & -4 & 7 & 1
@@ -1482,7 +1477,7 @@ $$
 \]
 \[ R_3 \longmapsto R_3 \div -7  \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|ccc]
 1 & 0 & 4 & 2 & -3 & 0\\
 0 & 1 & 2 & 1 & -1 & 0\\
 0 & 0 & 1 & \frac{-4}{7} & -1 & \frac{-1}{7}
@@ -1491,7 +1486,7 @@ $$
 \[ R_1 \longmapsto R_1  - 4 \cdot R_3 \]
 \[ R_2 \longmapsto R_2 - 2 \cdot R_3 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|ccc]
 1 & 0 & 0 & \frac{6}{14} & 1 & 0\frac{4}{7}\\
 0 & 1 & 0 & \frac{-1}{7} & 1 & \frac{2}{7}\\
 0 & 0 & 1 & \frac{-4}{7} & -1 & \frac{-1}{7}
@@ -1499,138 +1494,128 @@ $$
 \]
 \subsubsection*{b)}
 \[
-\begin{vmatrix}
+\begin{pmatrix}[cccc|cccc]
 1 & 3 & 1 & 1 & 1 & 0 & 0 & 0\\
 2 & 5 & 2 & 2 & 0 & 1 & 0 & 0\\
 1 & 3 & 8 & 9 & 0 & 0 & 1 & 0\\
 1 & 3 & 2 & 2 & 0 & 0 & 0 & 1
-\end{vmatrix}
+\end{pmatrix}
 \]
-\[ E1 is \]
-\[
-\begin{vmatrix}
+\[ E_1 =
+\begin{pmatrix}
 1 & 0 & 0 & 0\\
 -2 & 1 & 0 & 0\\
 -1 & 0 & 1 & 0\\
 -1 & 0 & 0 & 1
-\end{vmatrix}
+\end{pmatrix}
 \]
-\[ E2 is \]
-\[
-\begin{vmatrix}
+\[ E_2 =
+\begin{pmatrix}
 1 & 0 & 3 & -1\\
 0 & -1 & 0 & 0\\
 0 & 0 & 1 & -7\\
 0 & 0 & 0 & 1
-\end{vmatrix}
+\end{pmatrix}
 \]
-\[ E3 is \]
-\[
-\begin{vmatrix}
+\[ E_3 =
+\begin{pmatrix}
 1 & 0 & 0 & 0\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 0\\
 0 & 0 & -1 & 1
-\end{vmatrix}
+\end{pmatrix}
 \]
-\[ E4 is \]
-\[
-\begin{vmatrix}
+\[ E_4 =
+\begin{pmatrix}
 1 & 0 & 0 & 0\\
 0 & 1 & 0 & 0\\
 0 & 0 & 0 & 1\\
 0 & 0 & 1 & 0
-\end{vmatrix}
+\end{pmatrix}
 \]
-\[ inverse is  \]
+De inverse is:
 \[
-\begin{vmatrix}
+\begin{pmatrix}[cccc|cccc]
 1 & 0 & 0 & 0 & -4 & 3 & 0 & -1\\
 0 & 1 & 0 & 0 & 2 & -1 & 0 & 0\\
 0 & 0 & 1 & 0 & -7 & 0 & -1 & 8\\
 0 & 0 & 0 & 1 & 6 & 0 & 1 & -7
-\end{vmatrix}
+\end{pmatrix}
 \]
-\[ A is E4 \cdot E3 \cdot E2 \cdot E1 \cdot A^-1 \]
+\[ A = E_4 \cdot E_3 \cdot E_2 \cdot E_1 \cdot A^{-1} \]
 
 \subsubsection*{c)}
 \[
-\begin{vmatrix}
+\begin{pmatrix}[ccc|ccc]
 1 & 1 & 3 & 1 & 0 & 0\\
 2 & 3 & 4 & 0 & 1 & 0\\
 1 & 5 & 7 & 0 & 0 & 1
-\end{vmatrix}
+\end{pmatrix}
 \]
 \[ R_2 \leftrightarrow R_2 - 2 \cdot R_1 \]
 \[ R_3 \leftrightarrow R_3 - R_1 \]
 \[ 
-\begin{vmatrix}
+\begin{pmatrix}[ccc|ccc]
 1 & 1 & 3 & 1 & 0 & 0\\
 0 & 1 & -2 & -2 & 1 & 0\\
 0 & 4 & 4  & -1 & 0 & 1
-\end{vmatrix}
+\end{pmatrix}
 \]
-\[E1 is\] 
-\[
-\begin{vmatrix}
+\[E_1 =
+\begin{pmatrix}
 1 & 0 & 0\\
 -2 & 1 & 0\\
 -1 & 0 & 1
-\end{vmatrix}
+\end{pmatrix}
 \]
 \[ R_1 \leftrightarrow R_1 - 2 \cdot R_2 \]
 \[ R_3 \leftrightarrow R_3 - 4 \cdot R_2 \]
 \[ 
-\begin{vmatrix}
+\begin{pmatrix}[ccc|ccc]
 1 & 0 & 5 & 3 & -1 & 0\\
 0 & 1 & -2 & -2 & 1 & 0\\
 0 & 0 & 12 & 7 & -4 & 1
-\end{vmatrix}
+\end{pmatrix}
 \]
-\[E2 is \]
-\[
-\begin{vmatrix}
+\[E_2 =
+\begin{pmatrix}
 1 & -1 & 0\\
 0 & 1 & 0\\
 0 & -4 & 1
-\end{vmatrix}
+\end{pmatrix}
 \]
 \[ R_4 \leftrightarrow\frac{R_4}{12} \]
 \[ 
-\begin{vmatrix}
+\begin{pmatrix}[ccc|ccc]
 1 & 0 & 5 & 3 & -1 & 0\\
 0 & 1 & -2 & -2 & 1 & 0\\
 0 & 0 & 1 & \frac{7}{12} & \frac{-4}{12} & \frac{1}{12}
-\end{vmatrix}
+\end{pmatrix}
 \]
-\[ E3 is  \]
-\[
-\begin{vmatrix}
+\[ E_3 =
+\begin{pmatrix}
 1 & 0 & 0\\
 0 & 1 & 0\\
 0 & 0 & \frac{1}{12}
-\end{vmatrix}
+\end{pmatrix}
 \]
 \[ R_1 \leftrightarrow R_1 - 5 \cdot R_3 \]
 \[ R_2 \leftrightarrow R_2 + 2 \cdot R_3 \]
 \[ 
-\begin{vmatrix}
+\begin{pmatrix}[ccc|ccc]
 1 & 0 & 0 & \frac{1}{12} & \frac{2}{3} & \frac{-5}{12}\\
 0 & 1 & 0 & \frac{-5}{6} & \frac{4}{12} & \frac{2}{12}\\
 0 & 0 & 1 & \frac{7}{12} & \frac{-4}{12} & \frac{1}{12}
-\end{vmatrix}
+\end{pmatrix}
 \]
-\[ E4 is  \]
-\[
-\begin{vmatrix}
+\[ E_4 =
+\begin{pmatrix}
 1 & 0 & -5\\
 0 & 1 & 2\\
 0 & 0 & 1
-\end{vmatrix}
+\end{pmatrix}
 \]
-\[ nu is A gelijk aan E4 \cdot E3 \cdot E2 \cdot E1 \cdot A^-1 \]
-\[ het product van A met A^-1 was de eenheidsmatrix. \]
-
+\[ A = E_4 \cdot E_3 \cdot E_2 \cdot E_1 \cdot A^{-1} \]
 \subsection{Oefening 8}
 \subsubsection*{a)}
 $$
@@ -1690,40 +1675,40 @@ Aangezien hier enkel rijopraties van type II zijn gebruikt is de inverse van dez
 \subsection{Oefening 9}
 
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|cc]
 a & b & 1 & 0\\
 c & 0 & 0 & 1
 \end{pmatrix}
 \]
 \[ R_1 \longmapsto \frac{1}{a} R_1 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|cc]
 1 & \frac{b}{a} & \frac{1}{a} & 0\\
 c & 0 & 0 & 1
 \end{pmatrix}
 \]
 \[ R_2 \longmapsto R_2 - c \cdot R_1\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|cc]
 1 & \frac{b}{a} & \frac{1}{a} & 0\\
 0 & -\frac{bc}{a} & \frac{c}{a} & 1
 \end{pmatrix}
 \]
 \[ R_2 \longmapsto -\frac{a}{bc} R_2 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|cc]
 1 & \frac{b}{a} & \frac{1}{a} & 0\\
 0 & 1 & -\frac{1}{b} & -\frac{a}{bc}
 \end{pmatrix}
 \]
 \[ R_1 \longmapsto R_1 - \frac{b}{a} \cdot R_2\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[cc|cc]
 1 & 0 & \frac{2}{a} & -\frac{b}{a}\\
 0 & 1 & -\frac{1}{b} & -\frac{a}{bc}
 \end{pmatrix}
 \]
-\\De inverse van 
+De inverse van 
 \[
 \begin{pmatrix}
 a & b\\
@@ -1767,7 +1752,7 @@ De oplossingen van de stelsel zijn geven een antwoord op te vraag.
 7/2 & 1/2 & -1
 \end{pmatrix}
 \]
-\[A^{-1}.B = 
+\[A^{-1} \cdot B = 
 \begin{pmatrix}
 2\\
 17\\
@@ -1775,7 +1760,7 @@ De oplossingen van de stelsel zijn geven een antwoord op te vraag.
 \end{pmatrix}
 \]
 \subsubsection*{b)}
-\[A^{-1}.B = 
+\[A^{-1} \cdot B = 
 \begin{pmatrix}
 -1/7 & -16/7 & 10/7\\
 2/7 & -3/7 & 1/7\\
@@ -1810,7 +1795,8 @@ a_{11} & 0 & \cdots & 0 & 0\\
 0 & 0 & \cdots & a_{n-1,n-1} & 0 \\
 0 & 0 & \cdots & 0 & a_{n,n}
 \end{pmatrix}
-$$, dan
+$$
+dan
 $$ D^{-1} = \begin{pmatrix}
 (a_{11})^{-1} & 0 & \cdots & 0 & 0\\
 0 & (a_{22})^{-1} & \cdots & 0 & 0\\
@@ -1941,10 +1927,12 @@ Door de inductiehypothese weten we dat $A^{k}$ inverteerbaar is.We weten ook dat
 Te bewijzen: $A$ is nilpotent met $A^k=O \Rightarrow \mathbb{I}-A$ is inverteerbaar met inverse $(\mathbb{I}+A+A^2+...+A^{k-1})$.
 \begin{proof}
 Als we een matrix $\mathbb{I}-A$ vermenigvuldigen met zijn inverse $(\mathbb{I}+A+A^2+...+A^{k-1})$ zouden we $\mathbb{I}$ moeten uitkomen.
-\[ (\mathbb{I}-A)(\mathbb{I}+A+A^2+...+A^{k-1}) \]
-\[ = \mathbb{I}^{2} -A+A-A^{2}+A^{2}-...-A^{k-1}+A^{k-1}-A^{k}\]
-\[ = \mathbb{I}-A^{k}\]
-Omdat A nilpotent is met $A^k=0$, is dit gelijk aan $\mathbb{I}$
+\begin{align*}
+(\mathbb{I}-A)(\mathbb{I}+A+A^2+ \ldots +A^{k-1})
+&= \mathbb{I} + A + A^2 + \ldots + A^{k-1} - A - A^2 - \ldots - A^{k-1} - A^k \\
+&= \mathbb{I}-A^{k}
+\end{align*}
+Omdat A nilpotent is met $A^k=0$, is dit gelijk aan $\mathbb{I}.$
 \end{proof}
 
 \subsection{Oefening 17}
@@ -1957,20 +1945,10 @@ A= \left(\begin{array} {cc}
 \]
 
 \subsubsection*{b)}
+Stel $A$ is idempotent en inverteerbaar, dan geldt dat $A^2 = A$ en er bestaat een $B$ zodat $AB = \mathbb{I} = BA$. Hieruit volgt:
 \[
-A*A=A 
+\mathbb{I} = A \cdot B = A^2 \cdot B = A \cdot (AB) = A
 \]
-\[
-A*A^{-1}=A
-\]
-
-\begin{gather*}
-A*A=A /*A^{-1}\\
-A*(A*A^{-1})=A*A^{-1}\\
-A*I=I\\
-A=I
-\end{gather*}
-
 \subsection{Oefening 18}
 \subsubsection*{a)}
 \[
@@ -1987,12 +1965,12 @@ A=I
 0 & 1 & 0\\
 0 & 0 & 1
 \end{pmatrix}
-\right.\Bigg|
+\ \middle|\ 
 \begin{pmatrix}
 1 & -2 & 3\\
 -2 & 7 & -2\\
 0 & 1 & 5
-\end{pmatrix}
+\end{pmatrix}\right.
 \]
 \[ R_2 \longmapsto R_2 + 2R_1 \]
 \[
@@ -2002,12 +1980,12 @@ A=I
 0 & 0 & 1
 \end{pmatrix}
 \cdot E1
-\right.\Bigg|
+\ \middle|\ 
 \begin{pmatrix}
 1 & -2 & 3\\
 0 & 3 & 4\\
 0 & 1 & 5
-\end{pmatrix}
+\end{pmatrix}\right.
 \]
 \[ R_3 \longmapsto 3R_3 - R_2 \]
 \[
@@ -2017,12 +1995,12 @@ A=I
 0 & -1 & 3
 \end{pmatrix}
 \cdot E2 \cdot E1
-\right.\Bigg|
+\ \middle|\ 
 \begin{pmatrix}
 1 & -2 & 3\\
 0 & 3 & 4\\
 0 & 0 & 11
-\end{pmatrix}
+\end{pmatrix}\right.
 \]
 
 \[ U = 
@@ -2059,13 +2037,13 @@ A=I
 3 & 0 & 3 & 0\\
 -2 & 0 & 0 & 3
 \end{pmatrix}
-\right.\Bigg|
+\ \middle|\ 
 \begin{pmatrix}
 3 & -2 & -5 & 4\\
 0 & -4 & 14 & 5\\
 0 & 6 & -6 & 3\\
 0 & -5 & -5 & 16
-\end{pmatrix}
+\end{pmatrix}\right.
 \]
 \[ R_3 \longmapsto -4R_3 - 6R_2 \]
 \[ R_4 \longmapsto -4R_4 + 5R_2\]
@@ -2077,13 +2055,13 @@ A=I
 0 & 5 & 0 & -4
 \end{pmatrix}
 \cdot E1
-\right.\Bigg|
+\ \middle|\ 
 \begin{pmatrix}
 3 & -2 & -5 & 4\\
 0 & -4 & 14 & 5\\
 0 & 0 & -60 & -42\\
 0 & 0 & 90 & -39
-\end{pmatrix}
+\end{pmatrix}\right.
 \]
 \[ R_4 \longmapsto -2R_4 - 3R_3 \]
 \[
@@ -2094,13 +2072,13 @@ A=I
 0 & 0 & -3 & -2
 \end{pmatrix}
 \cdot E2 \cdot E1
-\right.\Bigg|
+\ \middle|\ 
 \begin{pmatrix}
 3 & -2 & -5 & 4\\
 0 & -4 & 14 & 5\\
 0 & 0 & -60 & -42\\
 0 & 0 & 0 & 204
-\end{pmatrix}
+\end{pmatrix}\right.
 \]
 
 \[ U = 
@@ -2157,95 +2135,149 @@ De oplossing van dit stelsel is:\\
 $$V = {(4,2,3)}$$
 
 \subsection{Oefening 21}
-\[
+\begin{align*}
 \begin{pmatrix}
 1 & 1 & 1\\
 1 & 4 & 5\\
 1 & 4 & 7
-\end{pmatrix}
-\]
-\[R_2 \longmapsto R_2-R_1\]
-\[
-\begin{pmatrix}
+\end{pmatrix}\;\;
+&R_2 \longmapsto R_2-R_1
+&\left.\begin{pmatrix}
 1 & 0 & 0\\
 -1 & 1 & 0\\
 0 & 0 & 1
 \end{pmatrix}
+\ \middle|\ 
 \begin{pmatrix}
 1 & 1 & 1\\
 0 & 3 & 4\\
 1 & 4 & 7
-\end{pmatrix}
-\]
-\[R_3 \longmapsto R_3-R_1\]
-\[ E1 \cdot
+\end{pmatrix}\right.
+&=\left.
+E_1
+\ \middle|\ 
 \begin{pmatrix}
+1 & 1 & 1\\
+0 & 3 & 4\\
+1 & 4 & 7
+\end{pmatrix}\right. \\
+&R_3 \longmapsto R_3-R_1
+&\left.\begin{pmatrix}
 1 & 0 & 0\\
 0 & 1 & 0\\
 -1 & 0 & 1
 \end{pmatrix}
+\cdot E_1
+\ \middle|\ 
 \begin{pmatrix}
 1 & 1 & 1\\
 0 & 3 & 4\\
 0 & 3 & 6
-\end{pmatrix}
-\]
-\[R_3 \longmapsto R_3-R_2\]
-\[ E1 \cdot E2 \cdot
+\end{pmatrix}\right.
+&=\left.
+E_2 \cdot E_1
+\ \middle|\ 
 \begin{pmatrix}
+1 & 1 & 1\\
+0 & 3 & 4\\
+0 & 3 & 6
+\end{pmatrix}\right. \\
+&R_3 \longmapsto R_3-R_2
+&\left.\begin{pmatrix}
 1 & 0 & 0\\
 0 & 1 & 0\\
 0 & -1 & 1
 \end{pmatrix}
+\cdot E_2 \cdot E_1
+\ \middle|\ 
 \begin{pmatrix}
 1 & 1 & 1\\
 0 & 3 & 4\\
 0 & 0 & 2
-\end{pmatrix}
-\]
-\[\]
-\[E1 \cdot E2 \cdot E3 \cdot A = 
+\end{pmatrix}\right.
+&=\left.
+E_3 \cdot E_2 \cdot E_1
+\ \middle|\ 
 \begin{pmatrix}
 1 & 1 & 1\\
 0 & 3 & 4\\
 0 & 0 & 2
-\end{pmatrix}
-= U \]
-\[A = E1^{-1} \cdot E2^{-1} \cdot E3^{-1} \cdot U\]
-\[
+\end{pmatrix}\right.
+\end{align*}
+\begin{align*}
+E_3 \cdot E_2 \cdot E_1 \cdot A
+&=U \\
+&=
+\begin{pmatrix}
+1 & 1 & 1\\
+0 & 3 & 4\\
+0 & 0 & 2
+\end{pmatrix} \\ \\
+A
+&= E_1^{-1} \cdot E_2^{-1} \cdot E_3^{-1} \cdot U \\
+&=
 \begin{pmatrix}
 1 & 0 & 0\\
 1 & 1 & 0\\
 1 & 1 & 1
 \end{pmatrix}
+\cdot U \\
+&= L \cdot U
+\end{align*}
+\begin{align*}
+L \cdot Y = B
+&\Longleftrightarrow
 \begin{pmatrix}
-1 & 1 & 1\\
-0 & 3 & 4\\
-0 & 0 & 2
+1 & 0 & 0\\
+1 & 1 & 0\\
+1 & 1 & 1
 \end{pmatrix}
-= B\]
-\[ Y =
+\cdot
+\begin{pmatrix}
+y_1\\
+y_2\\
+y_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+1\\
+3\\
+5
+\end{pmatrix}
+\Longrightarrow
+\tilde{Y} = 
 \begin{pmatrix}
 1 \\
 2 \\
 2 
-\end{pmatrix}
-\]
-\[
+\end{pmatrix} \\
+U \cdot X = \tilde{Y}
+&\Longleftrightarrow
 \begin{pmatrix}
 1 & 1 & 1\\
 0 & 3 & 4\\
 0 & 0 & 2
 \end{pmatrix}
-\cdot X = Y\]
-\[ X =
+\cdot
 \begin{pmatrix}
-2/3\\
--2/3\\
-1
+x_1\\
+x_2\\
+x_3
 \end{pmatrix}
-\]
-
+=
+\begin{pmatrix}
+1\\
+2\\
+2
+\end{pmatrix}
+\Longrightarrow
+\tilde{X} = 
+\begin{pmatrix}
+\frac{2}{3} \\
+\frac{-2}{3} \\
+1 
+\end{pmatrix}
+\end{align*}
 \subsection{Oefening 22}
 \[
 A=
@@ -2455,7 +2487,7 @@ B=\left(\begin{array}{cc}
 A=A^{-1}\\
 B=B^{-1}\\
 \\
-(A*B)^{-1}=B^{-1}*A^{-1}=B*A
+(A \cdot B)^{-1}=B^{-1} \cdot A^{-1}=B \cdot A
 \end{gather*}
 
 \subsubsection*{d)}
@@ -2467,22 +2499,22 @@ A+B=0
 \end{gather*}
 
 \subsubsection*{e)}
- True
+True
 \begin{gather*}
 A=A^{T}\\
 B=B^{T}\\
-A*B=(A*B)^{T}\\
+A \cdot B=(A \cdot B)^{T}\\
 \\
-A*B=(A*B)^{T}=B^T*A^T=B*A
+A \cdot B=(A \cdot B)^{T}=B^T \cdot A^T=B \cdot A
 \end{gather*}
 
 \subsubsection*{f)}
 \[
-A*B = \left( \begin{array}{ccc}
+A \cdot B = \left( \begin{array}{ccc}
     0 & 1 & 0 \\
     1 & 0 & 0 \\
     0 & 0 & 1 \\
-  \end{array} \right) * \left( \begin{array}{ccc}
+  \end{array} \right)  \cdot  \left( \begin{array}{ccc}
     1 & 0 & 0 \\
     0 & 0 & 1 \\
     0 & 1 & 0 \\
@@ -2494,11 +2526,11 @@ A*B = \left( \begin{array}{ccc}
  \]
 
 \subsubsection*{g)}
-True (not sure of the proof)
-Let \[A*B\] be and invertible matrix and A a non-invertible matrix. Then there is a matrix D such  as \[A*B*D=I\] namely a right inverse of the matrix \[A*B\] However \[B*D\] is a right inverse of the matrix  A, which leads to A is invertible.
+True\\
+Bewijs uit het ongerijmde: stel $AB$ is inverteerbaar door $C$, dus $ABC = \mathbb{I} = CAB$. In dat geval heeft $A$ de rechterinverse $BC$ en dus is $A$ inverteerbaar. Dit leidt tot een contradictie.
 
 \subsubsection*{h)}
- False
+False
 \[
 E_1=\left( \begin{array}{cc}
     5 & 0\\
@@ -2526,17 +2558,18 @@ E_2*E_1=\left( \begin{array}{cc}
 
 \subsection{Extra (Oefenzitting)}
 \[
-\left\lbrace
-\begin{array}{c c c c c c c}
+\left\{
+\begin{array}{ccccccc}
 ax &+& 4y &+& az &=& 0\\
 x  &+& ay &+& 3z &=& b\\
 (a+1)x &+& (a+4)y &+& (a-b^{2})z &=& b-2
 \end{array}
-\right\rbrace
+\right.
 \]
-De matrix die hiermee overeen komt is:
+
+De matrix die hiermee overeenkomt is:
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 a & 4 & a & 0\\
 1 & a & 3 & b\\
 (a+1) & (a+4) & (a-b^{2}) & (b-2)\\
@@ -2546,7 +2579,7 @@ a & 4 & a & 0\\
 Verwissel $R_1$ en $R_2$.
 \end{center}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & a & 3 & b\\
 a & 4 & a & 0\\
 (a+1) & (a+4) & (a-b^{2}) & (b-2)\\
@@ -2555,7 +2588,7 @@ a & 4 & a & 0\\
 \[ R_2 \longmapsto R_2 - a\cdot R_1 \]
 \[ R_3 \longmapsto R_3 - (a+1)\cdot R_1 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & a & 3 & b\\
 0 & 4-a^{2} & -2a & -ab\\
 0 & 4-a^{2} & -b^{2}-2a-3 & -2-ab\\
@@ -2563,7 +2596,7 @@ a & 4 & a & 0\\
 \]
 \\Geval 1: $a=2$
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 2 & 3 & b\\
 0 & 0 & -4 & -2b\\
 0 & 0 & -b^{2}-7 & -2-2b\\
@@ -2571,7 +2604,7 @@ a & 4 & a & 0\\
 \]
 \[ R_2 \longmapsto \frac{-1}{4}R_2 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 2 & 3 & b\\
 0 & 0 & 1 & \frac{b}{2}\\
 0 & 0 & -b^{2}-7 & -2-2b\\
@@ -2580,7 +2613,7 @@ a & 4 & a & 0\\
 \[ R_1 \longmapsto R_1 - 3\cdot R_2 \]
 \[ R_3 \longmapsto R_3 + (b^{2}+7)\cdot R_2 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 2 & 0 & -\frac{b}{2}\\
 0 & 0 & 1 & \frac{b}{2}\\
 0 & 0 & 0 & \frac{b^{3}+3b-4}{2}\\
@@ -2590,7 +2623,7 @@ a & 4 & a & 0\\
 Vereenvoudig
 \end{center}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 2 & 0 & -\frac{b}{2}\\
 0 & 0 & 1 & \frac{b}{2}\\
 0 & 0 & 0 & b^{3}+3b-4\\
@@ -2598,7 +2631,7 @@ Vereenvoudig
 \]
 \\Geval 1a: $b=1$
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 2 & 0 & -\frac{1}{2}\\
 0 & 0 & 1 & \frac{1}{2}\\
 0 & 0 & 0 & 0\\
@@ -2610,7 +2643,7 @@ V = \left\lbrace \left(-\frac{1}{2}-2\lambda,\lambda,\frac{1}{2}\right)| \lambda
 \]
 \\Geval 1b: $b\neq 1$
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 2 & 0 & -\frac{b}{2}\\
 0 & 0 & 1 & \frac{b}{2}\\
 0 & 0 & 0 & b^{3}+3b-4\\
@@ -2622,7 +2655,7 @@ V = \emptyset
 \]
 \\Geval 2: $a=-2$
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & -2 & 3 & b\\
 0 & 0 & 4 & 2b\\
 0 & 0 & 1-b^{2} & 2b-2\\
@@ -2630,7 +2663,7 @@ V = \emptyset
 \]
 \[ R_2 \longmapsto \frac{1}{4}\cdot R_2 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & -2 & 3 & b\\
 0 & 0 & 1 & \frac{b}{2}\\
 0 & 0 & 1-b^{2} & 2b-2\\
@@ -2639,7 +2672,7 @@ V = \emptyset
 \[ R_1 \longmapsto R_1 - 3\cdot R_2 \]
 \[ R_3 \longmapsto R_3 - (1-b^{2})\cdot R_2 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & -2 & 0 & -\frac{b}{2}\\
 0 & 0 & 1 & \frac{b}{2}\\
 0 & 0 & 0 & \frac{b^3+3b-4}{2}\\
@@ -2649,7 +2682,7 @@ V = \emptyset
 Vereenvoudig
 \end{center}
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & -2 & 0 & -\frac{b}{2}\\
 0 & 0 & 1 & \frac{b}{2}\\
 0 & 0 & 0 & b^3+3b-4\\
@@ -2657,7 +2690,7 @@ Vereenvoudig
 \]
 \\Geval 2a: $b=1$
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & -2 & 0 & -\frac{1}{2}\\
 0 & 0 & 1 & \frac{1}{2}\\
 0 & 0 & 0 & 0\\
@@ -2670,7 +2703,7 @@ V= \left\lbrace \left(2\lambda-\frac{1}{2},\lambda,\frac{1}{2}\right)| \lambda \
 \\Geval 2b: $b \neq 1$
 \[ R_3 \longmapsto \frac{1}{b^3+3b-4}R_3 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & -2 & 0 & -\frac{b}{2}\\
 0 & 0 & 1 & \frac{b}{2}\\
 0 & 0 & 0 & 1\\
@@ -2683,7 +2716,7 @@ V= \emptyset
 \\Geval 3: $a\neq 2 \wedge a \neq -2$ 
 \[ R_2 \longmapsto \frac{1}{4-a^{2}}R_2 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & a & 3 & b\\
 0 & 1 & \frac{-2a}{4-a^{2}} & \frac{-ab}{4-a^{2}}\\
 0 & 4-a^{2} & -b^{2}-2a-3 & -2-ab\\
@@ -2692,7 +2725,7 @@ V= \emptyset
 \[ R_1 \longmapsto R_1 - a \cdot R_2 \]
 \[ R_3 \longmapsto R_3 - (4-a^{2}) \cdot R_2 \]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 0 & \frac{12-a^{2}}{4-a^{2}} & \frac{4b}{4-a^{2}}\\
 0 & 1 & \frac{-2a}{4-a^{2}} & \frac{-ab}{4-a^{2}}\\
 0 & 0 & -b^{2}-3 & -2\\
@@ -2700,7 +2733,7 @@ V= \emptyset
 \]
 \[ R_3 \longmapsto -\frac{1}{b^{2}+3}R_3\]
 \[
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1 & 0 & \frac{12-a^{2}}{4-a^{2}} & \frac{4b}{4-a^{2}}\\
 0 & 1 & \frac{-2a}{4-a^{2}} & \frac{-ab}{4-a^{2}}\\
 0 & 0 & 1 & \frac{2}{b^{2}+3}\\
@@ -2709,15 +2742,15 @@ V= \emptyset
 \[ R_1 \longmapsto R_1 - \frac{12-a^{2}}{4-a^{2}} \cdot R_3 \]
 \[ R_2 \longmapsto R_2 + \frac{2a}{4-a^{2}} \cdot R_3 \]
 \[
-\begin{pmatrix}
-1 & 0 & 0 & \frac{4b^{3}+2a^{2}-12}{(4-a^{2})(b^{2}+3)}\\
+\begin{pmatrix}[ccc|c]
+1 & 0 & 0 & \frac{4b^3+12b+2a^2-24}{(4-a^{2})(b^{2}+3)}\\
 0 & 1 & 0 & \frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)}\\
 0 & 0 & 1 & \frac{2}{b^{2}+3}\\
 \end{pmatrix}
 \]
 Antwoord:
 \[
-V = \left\lbrace\left(\frac{4b^{3}+2a^{2}-12}{(4-a^{2})(b^{2}+3)},\frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)},\frac{2}{b^{2}+3}\right)\right\rbrace
+V = \left\lbrace\left(\frac{4b^3+12b+2a^2-24}{(4-a^{2})(b^{2}+3)},\frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)},\frac{2}{b^{2}+3}\right)\right\rbrace
 \]
 \\Samenvatting:
 \begin{itemize}
@@ -2745,7 +2778,7 @@ V= \emptyset
 \end{itemize}
 \item $a\neq 2 \wedge a \neq -2$ 
 \[
-V = \left\lbrace\left(\frac{4b^{3}+2a^{2}-12}{(4-a^{2})(b^{2}+3)},\frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)},\frac{2}{b^{2}+3}\right)\right\rbrace
+V = \left\lbrace\left(\frac{4b^3+12b+2a^2-24}{(4-a^{2})(b^{2}+3)},\frac{-ab^{3}-3ab+4a}{(4-a^{2})(b^{2}+3)},\frac{2}{b^{2}+3}\right)\right\rbrace
 \]
 \end{itemize}
 
@@ -2830,35 +2863,41 @@ E^{-1}=
 \subsection{Opdracht 1.23}
 \label{1.23}
 \subsubsection*{1.}
-\[
-AA^T \ en \ A + A^T zijn \ symmetrisch:
-\]
-\[
-AA^T = (A\cdot A^T)^T
-\]
-$$eig: \ (A\cdot B)^T = B^T \cdot A^T $$
-$$AA^T = (A^T)^T \cdot A^T$$
-$$AA^T = A \cdot A^T$$
-\\
-$$A +A^T = (A +A^T)^T$$
-$$eig: (A+B)^T = A^T + B^T$$
-$$A +A^T = A^T + (A^T)^T$$
-$$A +A^T = A^T + A$$
-$$A +A^T = A + A^T$$
+We bewijzen dat $AA^T$ symmetrisch is met behulp van deze eigenschap: $(A\cdot B)^T = B^T \cdot A^T$.
+\begin{align*}
+AA^T
+&= (A\cdot A^T)^T\\
+&= (A^T)^T \cdot A^T \\
+&= A \cdot A^T
+\end{align*}
+We bewijzen dat $A+A^T$ symmetrisch is met behulp van deze eigenschap: $(A+B)^T = A^T + B^T$.
+\begin{align*}
+A +A^T
+&= (A +A^T)^T \\
+&= A^T + (A^T)^T \\
+&= A^T + A \\
+&= A + A^T
+\end{align*}
 \subsubsection*{2.}
-$$A - A^T \ is \ scheefsymmetrisch:$$
-$$A - A^T = -(A+(-A^T))^T$$
-$$A - A^T = -(A^T + (-A^T)^T)$$
-$$A - A^T = -A^T + A$$
+$A - A^T$ is scheefsymmetrisch.
+\begin{align*}
+A - A^T
+&= -(A+(-A^T))^T \\
+&= -(A^T + (-A^T)^T) \\
+&= -A^T + A
+\end{align*}
 \subsubsection*{3.}
-$$ A =  \frac{1}{2}(A + A^T) + \frac{1}{2}(A - A^T)$$
-$$ A = \frac{1}{2}(A + A^T + A - A^T)$$
-$$ A = \frac{1}{2}(2\cdot A)$$
-$$ A = A$$
+\begin{align*}
+A 
+&= \frac{1}{2}(A + A^T) + \frac{1}{2}(A - A^T) \\
+&= \frac{1}{2}(A + A^T + A - A^T) \\
+&= \frac{1}{2}(2\cdot A) \\
+&= A
+\end{align*}
 \subsubsection*{4.}
 A is een vierkant matrix.\\
-Stel A = X + Y waarbij X symmertrisch is en Y scheefsymmetrisch.\\
-Dat is: $A^T$ = A en $B^T$ = -B.\\
+Stel A = X + Y waarbij X symmetrisch is en Y scheefsymmetrisch.\\
+Dat is: $A^T$ = A en $B^T = -B$.
 $$A^T = X^T + Y^T$$
 of: $$A^T = X - Y$$
 $$A + A^T = X + Y + X - Y = 2X$$
