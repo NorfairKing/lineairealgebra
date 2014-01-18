@@ -455,7 +455,7 @@ V=\{(4,-3,2)\}
 \]
 Antwoord:
 \[
-V=\{(1-10t,1+13t,t) | t \in \mathbb{R}\}
+V=\{(1-10t,1+13t,t) \mid t \in \mathbb{R}\}
 \]
 
 \subsubsection*{c)}
@@ -725,26 +725,16 @@ V = \left\{\left( \frac{-1+5i}{-6+2i} , \frac{-2+4i}{-6+2i} , \frac{3+3i}{-6+2i}
 0 & -2 &  -4& b_3-b_1\\
 \end{pmatrix}
 \]
-\[ R_2 \longmapsto -\frac{1}{5} R_2\]
+\[ R_3 \longmapsto 5 \cdot R_3 - 2 \cdot R_2\]
 \[
 \begin{pmatrix}
 2 &  1 &  7 & b_1\\
-0 &  1 &  2 & -\frac{1}{5}(b_2-3b_1) \\
-0 & -2 &  -4& b_3-b_1\\
+0 & -5 & -10& b_2-3b_1 \\
+0 & 0  &  0 & 5b_3-2b_2+b_1\\
 \end{pmatrix}
 \]
-\[ R_1 \longmapsto R_1 - R_2\]
-\[ R_3 \longmapsto R_3 + 2 \cdot	R_2\]
-\[
-\begin{pmatrix}
-2 &  0 &  5 & b_1 + \frac{1}{5}(b_2-3b_1)\\
-0 &  1 &  2 & -\frac{1}{5}(b_2-3b_1) \\
-0 &  0 &  0 & (b_3-b_1) - \frac{2}{5}(b_2-3b_1)\\
-\end{pmatrix}
-\]
-Antwoord:\\
-Als $(b_3-b_1) - \frac{2}{5}(b_2-3b_1) = 0$ dan heeft het stelsel oneindig veel oplossingen.
-Als $(b_3-b_1) - \frac{2}{5}(b_2-3b_1) \neq 0$ dan heeft het stelsel geen oplossingen ($V=\emptyset$)
+Als $5b_3-2b_2+b_1 = 0$, dan is het stelsel oplosbaar.\\
+Als $5b_3-2b_2+b_1 \neq 0$, dan heeft het stelsel geen oplossingen ($V=\emptyset$).
 
 \subsection{Oefening 10}
 \[
@@ -754,7 +744,6 @@ Als $(b_3-b_1) - \frac{2}{5}(b_2-3b_1) \neq 0$ dan heeft het stelsel geen oploss
 \end{pmatrix}
 \]
 \[ R_2 \longmapsto R_2 - 2 \cdot R_1\]
-
 \[
 \begin{pmatrix}
 1 & h & 1\\
@@ -767,6 +756,7 @@ Als $h = \frac{3}{2}$ en $k \neq 2$
 Als $h \neq \frac{3}{2}$
 \subsubsection*{c) Meerdere oplossingen:}
 Als $h = \frac{3}{2}$ en $k = 2$
+
 \subsection{Oefening 11}
 \[
 \begin{pmatrix}
