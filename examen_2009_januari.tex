@@ -24,7 +24,7 @@ Te Bewijzen:\\
 \[
 \forall x,y \in \mathbb{R}\ u,v \in H: x\cdot u + y\cdot v \in H
 \]
-\begin{proof}
+\begin{proof} (rechtstreeks bewijs)\\
 Kies een willekeurige $u = (u_1,u_2,u_3)$ en $v = (v_1,v_2,v_3)$ in $H$ en noem $a = (a_1,a_2,a_3)$ en $b = (b_1,b_2,b_3)$.
 \[
 x\cdot u + y\cdot v = (xu_1 + yv_1, xu_2 + yv_2, xu_3 + yv_3)
@@ -63,12 +63,41 @@ x\cdot 0 + y\cdot 0 = 0
 \right.
 \]
 \end{proof}
-
+\noindent Zie Stelling 3.11 p 94 (\ref{3.11}).
 
 \subsubsection*{b)}
+Aangezien een dimensie nooit negatief kan zijn, moeten we enkel bewijzen dat de dimensie van $H$ niet nul is. Als de dimensie van $H$ nul zou zijn dan zou $H$ gelijk zijn aan $\{\vec{0}\}$. We moeten dus aantonen dat er een niet-nul vector bestaat in $H$.\\\\
+Bekijken we $H$ eens met het standaard inproduct in het achterhoofd, dan zien we dat $H$ bestaat uit alle vectoren die loodrecht staat op precies twee vectoren $a$ en $b$. Intu\"itief zien we dus al dat $H$ een rechte vormt wanneer $a$ en $b$ lineair onafhankelijk zijn dat $H$ een vlak vormt wanneer $a$ en $b$ lineair afhankelijk zijn en dat $H$ de driedimensionale ruimte vormt wanneer $a$ en $b$ beide nulvectoren zijn. De dimensie van $H$ is dus $1$, $2$ of $3$, maar zeker niet nul.
+%TODO formeel bewijs.
 
+\begin{proof}
+We construeren een vector $u = (u_1,u_2,u_3)$ zodat $u$ geen nulvector is, en toch in $H$ zit.
+\[
+u = a \times b =
+(a_2b_3-b_2a_3, b_1a_1-a_1b_3, a_1b_2-b_1a_2)
+\]
+We gaan nu na of $u$ tot $H$ behoort.
+\[
+\left\{
+\begin{array}{c}
+a_1(a_2b_3-b_2a_3) + a_2(b_1a_1-a_1b_3) + a_3(a_1b_2-b_1a_2) = 0\\
+b_1(a_2b_3-b_2a_3) + b_2(b_1a_1-a_1b_3) + b_3(a_1b_2-b_1a_2) = 0
+\end{array}
+\right.
+\]
+\[
+\left\{
+\begin{array}{c}
+a_1a_2b_3-a_1b_2a_3 + a_2b_1a_1-a_2a_1b_3 + a_3a_1b_2-a_3b_1a_2 = 0\\
+b_1a_2b_3-b_1b_2a_3 + b_2b_1a_1-b_2a_1b_3 + b_3a_1b_2-b_3b_1a_2 = 0
+\end{array}
+\right.
+\]
+Nu zien we dat alle termen mooi wegvallen en dat $u$ bijgevolg in $H$ zit. Merk op dat $u$ enkel nul is wanneer $a$ en $b$ beide nulvectoren zijn. In dat geval kunnen we voor $u$ een willekeurige vector uit $\mathbb{R}^3$ kiezen.
+\end{proof}
 
 \subsubsection*{c)}
+Kies bijvoorbeeld $a= (1,0,0)$ en $b=(0,1,0)$. $H$ heeft dan dimensie $1$ en $H : \{(0,0,1)\}$.
 
 \subsection{Vraag 4}
 \subsubsection*{a)}
