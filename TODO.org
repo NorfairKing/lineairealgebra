@@ -17,7 +17,6 @@
 *** TODO Oefening 2.27.f p 83
 *** TODO Oefening 2.27.m p 83
 *** TODO Oefening 2.28 p 83
-*** TODO Extra oefening hoofdstuk 2
 *** TODO Opdracht 2.14 p 65
 
 *** TODO Voorbeeld 3.6 p 91
