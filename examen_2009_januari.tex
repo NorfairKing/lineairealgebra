@@ -158,24 +158,32 @@ x\\y\\z
 
 \subsection{Vraag 6}
 \subsubsection*{a)}
+Bewijs uit het ongerijmde:
 \[
-dim(Im(g\circ f)) \ge dim(Im(g)) + dim(Im(f)) - dim(W)
+dim(Im(g\circ f)) < dim(Im(g)) + dim(Im(f)) - dim(W)
 \]
 De dimensie van het beeld van $g \circ f$ is zeker kleiner of gelijk aan de dimensie van het beeld van $g$. Zo is ook de dimensie van de kern van $g \circ f$ groter of gelijk aan de dimensie van de kern van $f$ omdat de nulvector steeds op zichzelf wordt afgebeeld. ($f$ en $g$ zijn lineaire afbeeldingen).
 %TODO is dit juist?
 \begin{proof}
 \[
-dim(Im(g)) \ge dim(Im(g\circ f)) \ge dim(Im(g)) + dim(Im(f)) - dim(W)
+dim(Im(g\circ f)) < dim(Im(g)) + dim(Im(f)) - dim(W)
 \]
 \[
-dim(Im(g)) \ge dim(Im(g)) + dim(Im(f)) - dim(W)
+dim(V) - dim(Ker(g\circ f)) < dim(Im(g)) + dim(V) - dim(Ker(f)) - dim(W)
 \]
 \[
-0 \ge dim(Im(f)) - dim(W)
+-dim(Ker(g\circ f)) < dim(Im(g)) - dim(Ker(f)) - dim(W)
 \]
 \[
-dim(W) \ge dim(Im(f))
+-dim(Ker(g\circ f)) < dim(Im(g)) - dim(Ker(f)) - dim(Im(g)) - dim(Ker(g))
 \]
+\[
+-dim(Ker(g\circ f)) < - dim(Ker(f)) - dim(Ker(g))
+\]
+\[
+dim(Ker(g\circ f)) > dim(Ker(f)) + dim(Ker(g))
+\]
+Contradictie.
 \end{proof}
 
 \subsubsection*{b)}
