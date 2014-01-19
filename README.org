@@ -15,6 +15,7 @@
      - Thomas Dierckx 
      - Nicholas Haesen
      - Egon Okerman
+     - Giel Dops
      - Jorik De Waen
      - Tijl Jappens
      - Jari Peeperkorn
