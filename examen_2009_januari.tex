@@ -17,6 +17,11 @@ Dit bewijs staat letterlijk in de cursus. Zie Stelling 4.41 p. 157 (\ref{4.31}).
 Dit staat letterlijk in de cursus. Zie Stelling 6.27 p. 238 (\ref{6.27}).
 
 \subsubsection*{b)}
+Noem $v_i$ de co\"ordinaat van $v$ ten opzichte van $e_i$ en $w_i$ de co\"ordinaat van $w$ ten opzichte van $e_i$. Noem $v' = (v_1,v_2,...,v_n)$ en $w' = (w_1,w_2,...,w_n)$. Het inproduct van $v$ en $w$ ziet er nu als volgt uit.
+\[
+\langle v,w \rangle = \langle v',w' \rangle = v'^Tw' = \sum_{i=1}^nv_iw_i
+\]
+Zie Stelling 6.26 p. 236 (\ref{6.26}).
 
 \subsection{Vraag 3}
 \subsubsection*{a)}
@@ -162,8 +167,6 @@ Bewijs uit het ongerijmde:
 \[
 dim(Im(g\circ f)) < dim(Im(g)) + dim(Im(f)) - dim(W)
 \]
-De dimensie van het beeld van $g \circ f$ is zeker kleiner of gelijk aan de dimensie van het beeld van $g$. Zo is ook de dimensie van de kern van $g \circ f$ groter of gelijk aan de dimensie van de kern van $f$ omdat de nulvector steeds op zichzelf wordt afgebeeld. ($f$ en $g$ zijn lineaire afbeeldingen).
-%TODO is dit juist?
 \begin{proof}
 \[
 dim(Im(g\circ f)) < dim(Im(g)) + dim(Im(f)) - dim(W)
@@ -204,6 +207,23 @@ dim(W) = 2
 \[
 1 \ge 1 + 1 - 2
 \]
+
+\subsection{Vraag 7}
+\subsubsection*{a)}
+Fout. Tegenvoorbeeld:\\
+\[
+A = 
+\begin{pmatrix}
+1 & 1\\
+0 & 1
+\end{pmatrix}
+\]
+$A$ heeft enkel eigenwaarde $1$ met algebraïsche multipliciteit $2$ en meetkundige multipliciteit $1$. $A$ is dus niet diagonaliseerbaar.
+
+\subsubsection*{b)}
+Juist.
+Omdat $L$ injectief is, is  $L$ bijectief en dus inverteerbaar. Dit betekent dat de matrix van $L$ steeds inverteerbaar is. Nu rest er ons dus nog te bewijzen dat inverteerbare matrices gelijkvormig zijn.
+%TODO
 
 
 
