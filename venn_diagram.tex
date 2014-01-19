@@ -7,19 +7,23 @@
 \begin{tikzpicture}
 
 \node (a)  at (0,0) {};  
-\node (b)  at (0,6) {};
-\node (c)  at (8,6) {};
-\node (d)  at (8,0) {};
+\node (b)  at (0,12) {};
+\node (c)  at (9,12) {};
+\node (d)  at (9,0) {};
 
 \begin{scope}[fill opacity=0.5]
-    \filldraw[fill=yellow!50] ($(a) + (-1,-1)$) 
-        to[out=135,in=225] ($(b) + (-1,1)$) 
-        to[out=45,in=135] ($(c) + (1,1)$)
-        to[out=315,in=45] ($(d) + (1,-1)$)
-        to[out=225,in=315] ($(a) + (-1,-1) $);        
+    \filldraw[fill=yellow!50] ($(a) + (-1,-0)$) 
+    	to ($(b) + (-1,0)$)
+        to[out=90,in=180] ($(b) + (0,1)$) 
+        to ($(c) + (0,1)$)
+        to[out=0,in=90] ($(c) + (1,0)$)
+        to ($(d) + (1,0)$)
+        to[out=270,in=0] ($(d) + (0,-1)$)
+        to ($(a) + (0,-1)$)
+        to[out=180,in=270] ($(a) + (-1,0) $);
 \end{scope}
 
-\node at (-3,-3) {$\mathbb{R}^{m\times n}$};
+\node at (-4,-1) {$\mathbb{R}^{m\times n}$};
 \node at (0,0) {$R^{n\times n}$};      
     
 \end{tikzpicture}
@@ -38,11 +42,11 @@ TV 						& \subset 	& \cdot 	& =\\
 EV 						& \subset 	& \cdot 	& \subset 	& =\\
 RR 						& \subset 	& \cdot 	& \subset 	& \subset 			& =\\ 
 Sym 					& \subset	& \subset	& Diag		& \{\mathbb{I}_n\}	& \{\mathbb{I}_n\}	& =\\
-SSym 					& \subset	& \subset	& \cdot		& \cdot				& \{O\} 		& \{O\}	& =\\
-Diag 					& \subset	& \cdot		& \subset	& \cdot				& \cdot				& \subset	& \{O\}	& =\\
-BoD 					& \subset	& \cdot		& \cdot		& \cdot 			& \cdot				& Diag				& \{O\}	& \supset	& =\\
-BeD 					& \subset	& \cdot		& \cdot		& \cdot 			& \cdot				& Diag				& \{O\} & \supset	& Diag	& =\\
-Inv						& \subset	& \subset	& \cdot		& \subset			& \subset			& \subset	& \cdot 		& \subset	& \subset	& \subset 	& =\\
+SSym 					& \subset	& \subset	& \{O\}		& \{O\}				& \{O\} 			& \{O\}	& =\\
+Diag 					& \subset	& \cdot		& \subset	& \{\mathbb{I}_n,O\}& \{\mathbb{I}_n,O\}& \subset	& \{O\}	& =\\
+BoD 					& \subset	& \cdot		& \supset	& \supset 			& \supset			& Diag				& \{O\}	& \supset	& =\\
+BeD 					& \subset	& \cdot		& Diag		& \{\mathbb{I}_n,O\}& \{\mathbb{I}_n,O\}& Diag				& \{O\} & \supset	& Diag	& =\\
+Inv						& \subset	& \subset	& \cdot		& \cdot 			& \cdot 			& \cdot	& \cdot 		& \cdot	& \cdot		& \cdot 	& =\\
 \end{array}\\
 \]
 \[
