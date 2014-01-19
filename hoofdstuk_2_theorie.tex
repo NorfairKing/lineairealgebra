@@ -373,8 +373,145 @@ Zij $A \in \mathbb{R}^{n\times n}$
 \]
 \end{enumerate}
 \end{proof}
-
-
+\subsection{Determinant van Wronski p 70}
+\label{wronski}
+\subsubsection*{a)}
+\textit{Te bewijzen:}
+\[
+W(x, \sin(x), \cos(x), e^x) = -2e^x(x-1)
+\]
+\begin{proof}
+We stellen de determinant van Wronski op.
+\[
+W(e^{\lambda_1x}, e^{\lambda_2x}, e^{\lambda_3x})
+= \det
+\begin{pmatrix}
+x &  \sin(x) &  \cos(x)  & e^x \\
+1 &  \cos(x) & -\sin(x) & e^x \\
+0 & -\sin(x) & -\cos(x) & e^x \\
+0 & -\cos(x) &  \sin(x) & e^x
+\end{pmatrix}
+\]
+We ontwikkelen naar de eerste kolom.
+\[
+= x \cdot \det
+\begin{pmatrix}
+\cos(x)  & -\sin(x) & e^x \\
+-\sin(x) & -\cos(x) & e^x \\
+-\cos(x) &  \sin(x) & e^x
+\end{pmatrix}
+- \det
+\begin{pmatrix}
+\sin(x)  &  \cos(x)  & e^x \\
+-\sin(x) & -\cos(x) & e^x \\
+-\cos(x) &  \sin(x) & e^x
+\end{pmatrix}
+\]
+Op de eerste determinant voeren we de ERO $R_3 \longmapsto R_3 + R_1$ uit. Op de tweede determinant voeren we $R_2 \longmapsto R_2 + R_1$ uit.
+\[
+= x \cdot \det
+\begin{pmatrix}
+\cos(x)  & -\sin(x) & e^x \\
+-\sin(x) & -\cos(x) & e^x \\
+0        &  0       & 2e^x
+\end{pmatrix}
+- \det
+\begin{pmatrix}
+\sin(x)  &  \cos(x) & e^x \\
+0        & 0        & 2e^x \\
+-\cos(x) &  \sin(x) & e^x
+\end{pmatrix}
+\]
+We ontwikkelen naar respectievelijk de derde en tweede rij en rekenen verder uit.
+\begin{align*}
+&=
+2xe^x \cdot \det
+\begin{pmatrix}
+\cos(x)  & -\sin(x) \\
+-\sin(x) & -\cos(x)
+\end{pmatrix}
++ 2 e^x \cdot \det
+\begin{pmatrix}
+\sin(x)  &  \cos(x) \\
+-\cos(x) &  \sin(x)
+\end{pmatrix} \\
+&=
+2xe^x \cdot
+(-\cos^2(x) - \sin^2(x))
++ 2e^x \cdot
+(sin^2(x) + cos^2(x))
+\end{align*}
+Gelukkig bestaat $\sin^2(\alpha) + \cos^2(\alpha) = 1$ zodat we van die sinussen en cosinussen af geraken.
+\begin{align*}
+&=
+- 2xe^x + 2e^x \\
+&=
+-2e^x(x-1) 
+\end{align*}
+\end{proof}
+\subsubsection*{b)}
+\textbf{Er staat een fout in het boek. De opgave hieronder is de juiste opgave.}\\
+\textit{Te bewijzen:}
+\[
+W(e^{\lambda_1x}, e^{\lambda_2x}, e^{\lambda_3x}) = (\lambda_1-\lambda_2) (\lambda_1-\lambda_3) (\lambda_2-\lambda_3)
+e^{(\lambda_1 + \lambda_2 + \lambda_3)x}
+\]
+\begin{proof}
+We stellen de determinant van Wronski op.
+\[
+W(e^{\lambda_1x}, e^{\lambda_2x}, e^{\lambda_3x})
+= \det
+\begin{pmatrix}
+e^{\lambda_1x}             & e^{\lambda_2x}             & e^{\lambda_3x} \\
+\lambda_1 e^{\lambda_1x}   & \lambda_2 e^{\lambda_2x}   & \lambda_3 e^{\lambda_3x} \\
+\lambda_1^2 e^{\lambda_1x} & \lambda_2^2 e^{\lambda_2x} & \lambda_3^2 e^{\lambda_3x}
+\end{pmatrix}
+\]
+We voeren de volgende ERO's uit: $R_2 \longmapsto R_2 - \lambda_1R_1$ en $R_3 \longmapsto R_3 - \lambda_1^2R_1$.
+\[
+= \det
+\begin{pmatrix}
+e^{\lambda_1x} & e^{\lambda_2x}                           & e^{\lambda_3x} \\
+0              & (\lambda_2-\lambda_1) e^{\lambda_2x}     & (\lambda_3-\lambda_1) e^{\lambda_3x} \\
+0              & (\lambda_2^2-\lambda_1^2) e^{\lambda_2x} & (\lambda_3^2-\lambda_1^2) e^{\lambda_3x}
+\end{pmatrix}
+\]
+We ontwikkelen naar de eerste kolom.
+\[
+= e^{\lambda_1x} \cdot \det
+\begin{pmatrix}
+(\lambda_2-\lambda_1) e^{\lambda_2x}     & (\lambda_3-\lambda_1) e^{\lambda_3x} \\
+(\lambda_2^2-\lambda_1^2) e^{\lambda_2x} & (\lambda_3^2-\lambda_1^2) e^{\lambda_3x}
+\end{pmatrix}
+\]
+We voeren de volgende ERO uit: $R_2 \longmapsto R_2 - (\lambda_2+\lambda_1)R_1$
+\[
+= e^{\lambda_1x} \cdot \det
+\begin{pmatrix}
+(\lambda_2-\lambda_1) e^{\lambda_2x} & (\lambda_3-\lambda_1) e^{\lambda_3x} \\
+0                                    & (\lambda_3^2-\lambda_1^2) e^{\lambda_3x} - (\lambda_2+\lambda_1) (\lambda_3-\lambda_1) e^{\lambda_3x}
+\end{pmatrix}
+\]
+We halen $(\lambda_3-\lambda_1)$ uit de laatste rij en rekenen verder uit.
+\begin{align*}
+&= (\lambda_3-\lambda_1) e^{\lambda_1x} \cdot \det
+\begin{pmatrix}
+(\lambda_2-\lambda_1) e^{\lambda_2x} & (\lambda_3-\lambda_1) e^{\lambda_3x} \\
+0                                    & (\lambda_3+\lambda_1) e^{\lambda_3x} - (\lambda_2+\lambda_1) e^{\lambda_3x}
+\end{pmatrix} \\
+&= (\lambda_3-\lambda_1) e^{\lambda_1x} \cdot \det
+\begin{pmatrix}
+(\lambda_2-\lambda_1) e^{\lambda_2x} & (\lambda_3-\lambda_1) e^{\lambda_3x} \\
+0                                    & (\lambda_3-\lambda_2) e^{\lambda_3x}
+\end{pmatrix} \\
+&= (\lambda_3-\lambda_1) e^{\lambda_1x} \cdot
+(\lambda_2-\lambda_1) e^{\lambda_2x} (\lambda_3-\lambda_2) e^{\lambda_3x} \\
+&= (\lambda_3-\lambda_1) (\lambda_2-\lambda_1) (\lambda_3-\lambda_2)
+e^{(\lambda_1 + \lambda_2 + \lambda_3)x} \\
+&= -(\lambda_1-\lambda_2) (\lambda_1-\lambda_3) (\lambda_2-\lambda_3)
+e^{(\lambda_1 + \lambda_2 + \lambda_3)x}
+\end{align*}
+\end{proof}
 \subsection{Stelling 2.21 p 71}
 \label{2.21}
 Zij $A \in \mathbb{R}^{n\times n}$.
