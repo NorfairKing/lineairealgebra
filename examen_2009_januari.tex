@@ -105,15 +105,98 @@ Een afbeelding is lineair als ze een lineaire combinatie behoudt\footnote{Zie Le
 \[
 \forall \lambda_1,\lambda_2 \in \mathbb{R} v_1,v_2 \in \mathbb{R}^{2}:\  A(\lambda_1v_1+\lambda_2v_2) = \lambda_1A(v_1)+\lambda_2A(v_2)
 \]
+We hoeven dit echter niet formeel uit te rekenen. Het is makkelijk in te zien dat $A$ enkel lineair is wanneer de rechte waarrond gespiegeld wordt door de oorsprong gaat. $b$ moet dus nul zijn.
 
 \subsubsection*{b)}
+De matrix van $A$ is de volgende. Ik heb geen idee hoe u dit uit uw duim zou moeten zuigen. Ik heb het ook maar opgezocht.
+\[
+\frac{1}{a^2 + 1}
+\begin{pmatrix}
+1-a^2 & 2a\\
+2a & a^2-1
+\end{pmatrix}
+\]
+%TODO
 
 \subsection{Vraag 5}
+\[
+A_a:
+\begin{pmatrix}
+x\\y\\z
+\end{pmatrix}
+\mapsto
+\begin{pmatrix}
+ax+z\\
+x+(1-a)y+az\\
+(2a-1)x+(1-a^2)y+a^2z\\
+\end{pmatrix}
+\]
+\[
+A_a \leftrightarrow
+\begin{pmatrix}
+a & 0 & 1\\
+1 & (1-a) & a\\
+(2a-1) & (1-a^2) & a^2
+\end{pmatrix}
+\]
+\[
+Ker(A_a) \leftrightarrow
+\begin{pmatrix}
+a & 0 & 1\\
+1 & (1-a) & a\\
+(2a-1) & (1-a^2) & a^2
+\end{pmatrix}
+\begin{pmatrix}
+x\\y\\z
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}
+\]
+%TODO
 
 \subsection{Vraag 6}
 \subsubsection*{a)}
-
+\[
+dim(Im(g\circ f)) \ge dim(Im(g)) + dim(Im(f)) - dim(W)
+\]
+De dimensie van het beeld van $g \circ f$ is zeker kleiner of gelijk aan de dimensie van het beeld van $g$. Zo is ook de dimensie van de kern van $g \circ f$ groter of gelijk aan de dimensie van de kern van $f$ omdat de nulvector steeds op zichzelf wordt afgebeeld. ($f$ en $g$ zijn lineaire afbeeldingen).
+%TODO is dit juist?
+\begin{proof}
+\[
+dim(Im(g)) \ge dim(Im(g\circ f)) \ge dim(Im(g)) + dim(Im(f)) - dim(W)
+\]
+\[
+dim(Im(g)) \ge dim(Im(g)) + dim(Im(f)) - dim(W)
+\]
+\[
+0 \ge dim(Im(f)) - dim(W)
+\]
+\[
+dim(W) \ge dim(Im(f))
+\]
+\end{proof}
 
 \subsubsection*{b)}
+Zij $f$ en $g$ de volgende transformatie van $\mathbb{R}^2$
+\[
+f = g : \mathbb{R}^2 \rightarrow \mathbb{R}^2: (x,y) \mapsto (x,0)
+\]
+Nu zien we het volgende:
+\[
+dim(Im(f)) = dim(Im(g)) = 1
+\]
+\[
+dim(Im(g\circ f)) = 1
+\]
+\[
+dim(W) = 2
+\]
+\[
+1 \ge 1 + 1 - 2
+\]
+
+
 
 \end{document}
