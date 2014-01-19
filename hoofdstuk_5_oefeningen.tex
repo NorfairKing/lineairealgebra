@@ -87,7 +87,7 @@ Tr(A) &= 2+4 &= 6\\
 
 \subsection{Oefening 3}
 \subsubsection*{Eigenwaarden}
-Om de eigenwaarden van $A$ te vinden zoeken we de nulpunten van de characteristieke veelterm van $A$.
+Om de eigenwaarden van $A$ te vinden zoeken we de nulpunten van de karakteristieke veelterm van $A$.
 \[
 \phi_A = det(A-\lambda\mathbb{I}_n) =
 \begin{vmatrix}
@@ -111,13 +111,13 @@ We kunnen deze determinant domweg uitrekenen. Dit vraagt vrij veel rekenwerk en 
 1 & 1 & 1 & 1-\lambda\\
 0 & 0 & -\lambda & \lambda\\
 0 & -\lambda & 0 & \lambda\\
-0 & \lambda & \lambda & -\lambda^2\\
+0 & \lambda & \lambda & 2\lambda-\lambda^2\\
 \end{vmatrix}
 =
 \begin{vmatrix}
 0 & -\lambda & \lambda\\
 -\lambda & 0 & \lambda\\
-\lambda & \lambda & -\lambda^2\\
+\lambda & \lambda & 2\lambda-\lambda^2\\
 \end{vmatrix}
 \]
 \[
@@ -125,14 +125,14 @@ We kunnen deze determinant domweg uitrekenen. Dit vraagt vrij veel rekenwerk en 
 \begin{vmatrix}
 0 & -1 & 1\\
 -1 & 0 & 1\\
-1 & 1 & -\lambda\\
+1 & 1 & 2-\lambda\\
 \end{vmatrix}
 =
 \lambda^3
 \left(
 \begin{vmatrix}
 -1 & 1\\
-1 & -\lambda\\
+1 & 2-\lambda\\
 \end{vmatrix}
 +
 \begin{vmatrix}
@@ -141,12 +141,17 @@ We kunnen deze determinant domweg uitrekenen. Dit vraagt vrij veel rekenwerk en 
 \end{vmatrix}
 \right)
 =
-\lambda^4
+\lambda^3
+\left(
+-3+\lambda-1
+\right)
+=
+\lambda^3(\lambda-4)
 \]
 $A$ heeft dus de eigenwaarde $0$ met multipliciteit $m(\lambda) = 4$.
 
 \subsubsection*{Eigenvector(en)}
-De eigenruimte $E_0$ is de nulruimte van $A = A-\lambda\mathbb{I}_n$. We hoeven dus enkel $A-\mathbb{I}_n$ te rijreduceren om een oplossing te zien staan.
+De eigenruimte $E_\lambda$ is de nulruimte van $A = A-\lambda\mathbb{I}_n$. We hoeven dus enkel $A-\lambda\mathbb{I}_n$ te rijreduceren om een oplossing te zien staan.
 \[
 \begin{pmatrix}
 1 & 1 & 1 & 1\\
@@ -161,17 +166,38 @@ De eigenruimte $E_0$ is de nulruimte van $A = A-\lambda\mathbb{I}_n$. We hoeven 
 0 & 0 & 0 & 0\\
 0 & 0 & 0 & 0\\
 \end{pmatrix}
-\]
-\[
+\Longrightarrow
 E_0 = 
 \left\lbrace
 \begin{pmatrix}
 -\lambda-\mu-\nu\\\lambda\\\mu\\\nu
 \end{pmatrix}
-| \lambda,\mu,\nu\in\mathbb{R}
+\middle| \lambda,\mu,\nu\in\mathbb{R}
 \right\rbrace
 \]
-
+\[
+\begin{pmatrix}
+-3 & 1 & 1 & 1\\
+1 & -3 & 1 & 1\\
+1 & 1 & -3 & 1\\
+1 & 1 & 1 & -3\\
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & 0 & -1\\
+0 & 1 & 0 & -1\\
+0 & 0 & 1 & -1\\
+0 & 0 & 0 & 0\\
+\end{pmatrix}
+\Longrightarrow
+E_4 = 
+\left\lbrace
+\begin{pmatrix}
+\lambda\\\lambda\\\lambda\\\lambda
+\end{pmatrix}
+\middle| \lambda\in\mathbb{R}
+\right\rbrace
+\]
 
 \subsection{Oefening 9}
 We stellen allereerst de matrix van $L$ op ten opzichte van de standaardbasis. De lineaire combinatie die we zien in het voorschrift zetten we in de rijen van een $3\times 3$ matric.
