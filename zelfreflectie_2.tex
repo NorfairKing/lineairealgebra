@@ -112,7 +112,7 @@ De beweging geldt voor $n=2$.
 Stel dat de bewering geldt voor een bepaalde $k$. We bewijzen nu dat de bewering geldt voor $k+1$.
 De determinant van $V_{k+1}$ ziet er dan als volgt uit
 \[
-det(V_{k+1}) =
+\det(V_{k+1}) =
 \begin{vmatrix}
 1 & x_1 & x_1^2 & \hdots & x_1^{k}\\
 1 & x_2 & x_2^2 & \hdots & x_2^{k}\\
@@ -122,7 +122,7 @@ det(V_{k+1}) =
 \]
 We trekken nu van elke rij behalve de eerste de eerste af. De waarde van de determinant verandert niet, en we krijgen de volgende uitdrukking.
 \[
-det(V_{k+1}) =
+\det(V_{k+1}) =
 \begin{vmatrix}
 1 & x_1 & x_1^2 & \hdots & x_1^{k}\\
 0 & x_2-x_1 & x_2^2-x_1^2 & \hdots & x_2^{k}-x_1^{k}\\
@@ -132,7 +132,7 @@ det(V_{k+1}) =
 \]
 Nu trekken we(in volgorde, van achter naar voor) $x_1$ keer kolom $n-1$ van kolom $n$ af voor elke $n > 1$. We krijgen dan de volgende uitdrukking, na enig gefoefel.
 \[
-det(V_{k+1}) =
+\det(V_{k+1}) =
 \begin{vmatrix}
 1 & 0 & 0 & \hdots & 0\\
 0 & x_2-x_1 & (x_2-x_1)x_2 & \hdots & (x_2-x_1)x_2^{k-1}\\
@@ -142,7 +142,7 @@ det(V_{k+1}) =
 \]
 In elke rij $j \neq 1$ kunnen we $x_j-x_1$ afzonderen.
 \[
-det(V_{k+1}) =
+\det(V_{k+1}) =
 \prod_{k=2}^n(x_k-x_1)
 \begin{vmatrix}
 1 & 0 & 0 & \hdots & 0\\
@@ -153,7 +153,7 @@ det(V_{k+1}) =
 \]
 De determinant die na het product nog overblijf is een determinant van vandermonde $V_k$.
 \[
-det(V_{k+1}) =
+\det(V_{k+1}) =
 \prod_{k=2}^n(x_k-x_1)
 \prod_{i>j,j>2}(x_i-x_j)
 = \prod_{i>j}(x_i-x_j)
@@ -165,7 +165,7 @@ Als $a=0$ kunnen we de beschreven determinant ofwel omvormen, tot een matrix waa
 
 \subsection{Oefening 5}
 \[
-det\left(
+\det\left(
 \begin{matrix}
 a_{11} & a_{12}\\
 a_{21} & a_{22}
@@ -173,7 +173,7 @@ a_{21} & a_{22}
 \right)
 \]
 \[
-det\left(
+\det\left(
 \begin{matrix}
 a_{11} & a_{12} & a_{13}\\
 a_{21} & a_{22} & a_{23}\\
@@ -186,7 +186,7 @@ Bewijs elke eigenschap die nodig is voor de regel van sarrus, gebruik de regel v
 \subsection{Oefening 6}
 Ja, we weten dat $A$ inverteerbaar is, want $A$ komt uit het stelsel van Cramer. Zie nu p 72 gevolg 2.22.
 \[
-X = \frac{1}{det(A)}adj(A)\cdot B = A^{-1}\cdot B
+X = \frac{1}{\det(A)}\text{adj}(A)\cdot B = A^{-1}\cdot B
 \]
 \[
 A\cdot X = B

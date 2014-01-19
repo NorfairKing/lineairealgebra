@@ -79,7 +79,7 @@ Omdat $\phi_{A}$ volledig te ontbinden valt int een product van eerstegraads fac
 \[
 \left\{
 \begin{array}{r l l}
-det(A) &= 2\cdot 4 &=  8\\
+\det(A) &= 2\cdot 4 &=  8\\
 Tr(A) &= 2+4 &= 6\\
 \end{array}
 \right.
@@ -89,7 +89,7 @@ Tr(A) &= 2+4 &= 6\\
 \subsubsection*{Eigenwaarden}
 Om de eigenwaarden van $A$ te vinden zoeken we de nulpunten van de karakteristieke veelterm van $A$.
 \[
-\phi_A = det(A-\lambda\mathbb{I}_n) =
+\phi_A = \det(A-\lambda\mathbb{I}_n) =
 \begin{vmatrix}
 1-\lambda & 1 & 1 & 1\\
 1 & 1-\lambda & 1 & 1\\
@@ -326,22 +326,22 @@ T^\alpha_\alpha = \left(
 \end{array}
 \right)
 \]
-Hieruit kunnen we de karakteristieke veelterm halen met de formule $det(\lambda * I_3 - T^\alpha_\alpha)$, waarbij $I_n$ de eenheidsmatrix uit $\mathbb{R}^{n\times n}$ is.
+Hieruit kunnen we de karakteristieke veelterm halen met de formule $\det(\lambda * I_3 - T^\alpha_\alpha)$, waarbij $I_n$ de eenheidsmatrix uit $\mathbb{R}^{n\times n}$ is.
 
-\[det(\lambda * I_3 - T^\alpha_\alpha)=\]
-\[det\left(
+\[\det(\lambda * I_3 - T^\alpha_\alpha)=\]
+\[\det\left(
 \begin{array}{c c c}
 \lambda-5 & -2 & -3 \\
 -2 & \lambda+1 & 0 \\
 -3 & 0 & \lambda-1 \\
 \end{array}
 \right)=\]
-\[-3*det\left(
+\[-3*\det\left(
 \begin{array}{c c}
 -2 & -3 \\
 \lambda+1 & 0 \\
 \end{array}
-\right) + (\lambda-1)*det\left(
+\right) + (\lambda-1)*\det\left(
 \begin{array}{c c}
 \lambda-5 & -2 \\
 -2 & \lambda+1 \\

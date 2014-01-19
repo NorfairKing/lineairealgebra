@@ -14,7 +14,7 @@ Een getal $\lambda\in\mathbb{R}$ is een eigenwaarde van $A$.
 \end{center}
 \[\Leftrightarrow\]
 \begin{center}
-$\lambda$ is een nulpunt van de karakteristieke veelterm $det(X\mathbb{I}_n - A)$ van $A$
+$\lambda$ is een nulpunt van de karakteristieke veelterm $\det(X\mathbb{I}_n - A)$ van $A$
 \end{center}
 
 \subsubsection*{Bewijs}
@@ -34,7 +34,7 @@ Omdat $v$ per definitie geen nulvector is moet de determinant van $(A-\lambda\ma
 Dit is zo omdat $(A-\lambda\mathbb{I}_n)\cdot v = \vec{0}$ een homogeen stelsel is, en homogene stelsels enkel een niet-nuloplossing hebben als de determinant van de matrix ervan nul is.
 
 \item $\Leftarrow$\\
-Als $det(A-\lambda\mathbb{I}_n) = 0$ geldt voor $\lambda$ met $v$ als eigenvector, dan heeft het volgende stelsel een niet-nuloplossing. Dit is nodig omdat eigenvectoren per definitie geen nulvectoren zijn.
+Als $\det(A-\lambda\mathbb{I}_n) = 0$ geldt voor $\lambda$ met $v$ als eigenvector, dan heeft het volgende stelsel een niet-nuloplossing. Dit is nodig omdat eigenvectoren per definitie geen nulvectoren zijn.
 \[
 (A-\lambda\mathbb{I}_n)\cdot v = \vec{0}
 \]
@@ -170,20 +170,20 @@ Direct bewijs.
 \begin{enumerate}
 \item 
 \[
-det(X\mathbb{I}_n - B) = det(X\mathbb{I}_n - P^{-1}AP) = det(XP^{-1}P - P^{-1}AP)
+\det(X\mathbb{I}_n - B) = \det(X\mathbb{I}_n - P^{-1}AP) = \det(XP^{-1}P - P^{-1}AP)
 \]
 Merk op dat $X$ een scalar is, geen vector.
 We weten dat $XP^{-1}P = XP^{-1}\mathbb{I}_nP=P^{-1}X\mathbb{I}_nP$ geldt \footnote{Zie Eigenschap 1.22 p 32 d)}. We kunnen dus verder gaan via gelijkheden.
 \[
-= det(P^{-1} XI P - P^{-1}AP) = det(P^{-1}\cdot ( XI P - AP)) = det(P^{-1}\cdot ( XI- A) \cdot P))
+= \det(P^{-1} XI P - P^{-1}AP) = \det(P^{-1}\cdot ( XI P - AP)) = \det(P^{-1}\cdot ( XI- A) \cdot P))
 \]
 De bovenstaande twee vergelijkingen gelden omwille van de distributiviteit van de matrixvermenigvuldiging ten opzichte van de matrix optelling\footnote{Zie Eigenschap 1.22 p 32 a) en b)}. De volgende gelijkheden gelden omwille van een eigenschap dan de determinantafbeelding\footnote{Zie Stelling 2.4 p 59 3} en de commutativiteit van de vermenigvuldiging in $\mathbb{R}$.
 \[
-=det(P^{-1})\cdot det( XI- A)\cdot det(P) =det( XI- A)\cdot det(P^{-1}) \cdot det(P)
+=\det(P^{-1})\cdot \det( XI- A)\cdot \det(P) =\det( XI- A)\cdot \det(P^{-1}) \cdot \det(P)
 \]
-We weten dat $det( P^{-1}) = \frac{1}{det(P)}$\footnote{Zie Gevolg 2.5 p 60} dus de volgende gelijkheid geldt ook.
+We weten dat $\det( P^{-1}) = \frac{1}{\det(P)}$\footnote{Zie Gevolg 2.5 p 60} dus de volgende gelijkheid geldt ook.
 \[
-=det( XI- A)\cdot \frac{1}{det(P)}\cdot det(P) = det( XI- A)
+=\det( XI- A)\cdot \frac{1}{\det(P)}\cdot \det(P) = \det( XI- A)
 \]
 Dat laatste rechterlid is precies de karakteristieke vergelijking van $A$.
 
@@ -194,10 +194,10 @@ B = P^{-1}AP
 \]
 Nemen we nu de determinant van beide kanten dan bekomen we de volgende gelijkheid.
 \[
-det(B) = det(P^{-1}AP) = det(P^{-1})\cdot det(A)\cdot det(P)
+\det(B) = \det(P^{-1}AP) = \det(P^{-1})\cdot \det(A)\cdot \det(P)
 \]
 \[
-= det(A)\cdot det(P^{-1})\cdot det(P) = det(A)\cdot \frac{1}{det(P)}\cdot det(P) = det(A) \cdot 1 = det(A)
+= \det(A)\cdot \det(P^{-1})\cdot \det(P) = \det(A)\cdot \frac{1}{\det(P)}\cdot \det(P) = \det(A) \cdot 1 = \det(A)
 \]
 
 \item
@@ -507,18 +507,18 @@ X^n + (-1)(m_1\lambda_1 + m_2\lambda_2 + ... + m_3\lambda_3)X^{n-1} + (-1)^2(m_1
 Per defintie is de karakteristieke veelterm ook gelijk aan het volgende.
 In deze formule is $A$ de matrix van $L$ ten opzichte van eender welke basis van $V$.
 \[
-\phi_L(X) = det(X\mathbb{I}_n-A))
+\phi_L(X) = \det(X\mathbb{I}_n-A))
 \]
 %TODO Hier gebeurt iets fishy, wtf?? Het is de eerste term van de bovenstaande uitdrukking, maar wut?
 \[
-(-1)^n\prod_{i=1}^k\lambda_i^{m_i} = \prod_{i=1}^k(-\lambda_i)^{m_i} = \phi_L(0) = det(-A) = (-1)^ndet(A) = (-1)^ndet(L) %Waar komt die laatste stap ineens vandaan??
+(-1)^n\prod_{i=1}^k\lambda_i^{m_i} = \prod_{i=1}^k(-\lambda_i)^{m_i} = \phi_L(0) = \det(-A) = (-1)^n\det(A) = (-1)^n\det(L) %Waar komt die laatste stap ineens vandaan??
 \]
-$det(L)$ is dus precies gelijk aan het product van alle eigenwaarden van $L$ waarbij elke eigenwaarde $\lambda_i$ $m_i$ keer geteld wordt.
+$\det(L)$ is dus precies gelijk aan het product van alle eigenwaarden van $L$ waarbij elke eigenwaarde $\lambda_i$ $m_i$ keer geteld wordt.
 
 \item
 We beschouwen $\phi_L$ opnieuw op beide manieren.
 \[
-\phi_L = \prod_{i=1}^k(X-\lambda_i)^{m_i} \text{ en }\phi_L = det(X\mathbb{I}_n - A)
+\phi_L = \prod_{i=1}^k(X-\lambda_i)^{m_i} \text{ en }\phi_L = \det(X\mathbb{I}_n - A)
 \]
 In beide schrijfwijzen beschouwen we enkel de term bij co\"effici\"ent $X^{n-1}$.
 Deze moeten gelijk zijn.
@@ -609,7 +609,7 @@ Beschouw het stelsel $M\cdot X = \lambda X$ met $\lambda = 1$. De volgende bewer
 \]
 Omdat $M$ een stochastische matrix is geldt dat de som van de elementen van elke kolom gelijk is aan $1$. Daaruit volgt dat de som van de elementen van elke kolom in $M-\mathbb{I}_n$ gelijk is aan $0$. Als we de rijen van $M$ optellen krijgen we een nulrij. Dit houdt in dat de rijen van $M-\mathbb{I}_n$ lineair afhankelijk zijn \footnote{Zie Stelling 2.2 p 57 D-5 en Steling 2.3 p 58 1.} en dat de volgende bewering geldt.
 \[
-det(M - \mathbb{I}_n) = det(M - \lambda\mathbb{I}_n) = 0
+\det(M - \mathbb{I}_n) = \det(M - \lambda\mathbb{I}_n) = 0
 \]
 Dit betekent precies dat $1$ een eigenwaarde is van $M$.
 (De eigenruimte $E_1$ bestaat uit de vaste punten van de overgang (vandaar de naam vaste vector). M.a.w. de $X$ waarvoor geldt dat $M\cdot X = X$).

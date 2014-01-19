@@ -79,7 +79,7 @@ R_i' \\ \vdots \\ R_1 \\\vdots \\R_n
 \end{pmatrix}
 \right)
 \] 
-We verwisselen in de matrixen in beide termen opnieuw rij $1$ met rij $i$.
+We verwisselen in de matrices in beide termen opnieuw rij $1$ met rij $i$.
 \[
 \lambda
 f\left(
@@ -180,7 +180,7 @@ $A' = E\cdot A$ is de matrix waarin $E$ uitgevoerd is op $A$. In het eerste deel
 f(E\cdot A) = f(A') = f(A) = f(E)\cdot f(A)
 \]
 \item $E$ correspondeert met  $R_i \leftrightarrow R_j$.\\
-$A' = E\cdot A$ is de matrix waarin twee rijen verwisselt zijn zoals beschreven door $E$. Als we twee rijen verwisselen in een matrix keert het teken van $f$ om\footnote{Zie definitie 2.1 p 57 D-2}.
+$A' = E\cdot A$ is de matrix waarin twee rijen verwisseld zijn zoals beschreven door $E$. Als we twee rijen verwisselen in een matrix keert het teken van $f$ om\footnote{Zie definitie 2.1 p 57 D-2}.
 \[
 f(E\cdot A) = f(A') = -f(A) = f(E)\cdot f(A)
 \]
@@ -347,50 +347,187 @@ Zij $A \in \mathbb{R}^{n\times n}$
 \begin{enumerate}
 \item
 \[
-det(A) = \sum_{j=1}^n(-1)^{i+j}a_{ij}det(M_{ij})
+\det(A) = \sum_{j=1}^n(-1)^{i+j}a_{ij}\det(M_{ij})
 \]
 \item
 \[
-det(A) = \sum_{i=1}^n(-1)^{i+j}a_{ij}det(M_{ij})
+\det(A) = \sum_{i=1}^n(-1)^{i+j}a_{ij}\det(M_{ij})
 \]
 \end{enumerate}
 
 \subsubsection*{Bewijs}
 \begin{proof}
 \[
-det(A) = \sum_{\sigma \in \mathbb{S}_n} a_{1\sigma(1)}a_{2\sigma(2)}...a_{n\sigma(n)}
+\det(A) = \sum_{\sigma \in \mathbb{S}_n} a_{1\sigma(1)}a_{2\sigma(2)}...a_{n\sigma(n)}
 \]
 \begin{enumerate}
 \item
 \[
 = \sum_{i=1}^m a_{ij} (-1)^{i+j}C_{ij}
-= \sum_{i=1}^m a_{ij} det_{M_{ij}}
+= \sum_{i=1}^m a_{ij} \det_{M_{ij}}
 \]
 \item
 \[
 = \sum_{j=1}^m a_{ij} (-1)^{i+j}C_{ij}
-= \sum_{j=1}^m a_{ij} det_{M_{ij}}
+= \sum_{j=1}^m a_{ij} \det_{M_{ij}}
 \]
 \end{enumerate}
 \end{proof}
-
-
+\subsection{Determinant van Wronski p 70}
+\label{wronski}
+\subsubsection*{a)}
+\textit{Te bewijzen:}
+\[
+W(x, \sin(x), \cos(x), e^x) = -2e^x(x-1)
+\]
+\begin{proof}
+We stellen de determinant van Wronski op.
+\[
+W(e^{\lambda_1x}, e^{\lambda_2x}, e^{\lambda_3x})
+= \det
+\begin{pmatrix}
+x &  \sin(x) &  \cos(x)  & e^x \\
+1 &  \cos(x) & -\sin(x) & e^x \\
+0 & -\sin(x) & -\cos(x) & e^x \\
+0 & -\cos(x) &  \sin(x) & e^x
+\end{pmatrix}
+\]
+We ontwikkelen naar de eerste kolom.
+\[
+= x \cdot \det
+\begin{pmatrix}
+\cos(x)  & -\sin(x) & e^x \\
+-\sin(x) & -\cos(x) & e^x \\
+-\cos(x) &  \sin(x) & e^x
+\end{pmatrix}
+- \det
+\begin{pmatrix}
+\sin(x)  &  \cos(x)  & e^x \\
+-\sin(x) & -\cos(x) & e^x \\
+-\cos(x) &  \sin(x) & e^x
+\end{pmatrix}
+\]
+Op de eerste determinant voeren we de ERO $R_3 \longmapsto R_3 + R_1$ uit. Op de tweede determinant voeren we $R_2 \longmapsto R_2 + R_1$ uit.
+\[
+= x \cdot \det
+\begin{pmatrix}
+\cos(x)  & -\sin(x) & e^x \\
+-\sin(x) & -\cos(x) & e^x \\
+0        &  0       & 2e^x
+\end{pmatrix}
+- \det
+\begin{pmatrix}
+\sin(x)  &  \cos(x) & e^x \\
+0        & 0        & 2e^x \\
+-\cos(x) &  \sin(x) & e^x
+\end{pmatrix}
+\]
+We ontwikkelen naar respectievelijk de derde en tweede rij en rekenen verder uit.
+\begin{align*}
+&=
+2xe^x \cdot \det
+\begin{pmatrix}
+\cos(x)  & -\sin(x) \\
+-\sin(x) & -\cos(x)
+\end{pmatrix}
++ 2 e^x \cdot \det
+\begin{pmatrix}
+\sin(x)  &  \cos(x) \\
+-\cos(x) &  \sin(x)
+\end{pmatrix} \\
+&=
+2xe^x \cdot
+(-\cos^2(x) - \sin^2(x))
++ 2e^x \cdot
+(sin^2(x) + cos^2(x))
+\end{align*}
+Gelukkig bestaat $\sin^2(\alpha) + \cos^2(\alpha) = 1$ zodat we van die sinussen en cosinussen af geraken.
+\begin{align*}
+&=
+- 2xe^x + 2e^x \\
+&=
+-2e^x(x-1) 
+\end{align*}
+\end{proof}
+\subsubsection*{b)}
+\textbf{Er staat een fout in het boek. De opgave hieronder is de juiste opgave.}\\
+\textit{Te bewijzen:}
+\[
+W(e^{\lambda_1x}, e^{\lambda_2x}, e^{\lambda_3x}) = (\lambda_1-\lambda_2) (\lambda_1-\lambda_3) (\lambda_2-\lambda_3)
+e^{(\lambda_1 + \lambda_2 + \lambda_3)x}
+\]
+\begin{proof}
+We stellen de determinant van Wronski op.
+\[
+W(e^{\lambda_1x}, e^{\lambda_2x}, e^{\lambda_3x})
+= \det
+\begin{pmatrix}
+e^{\lambda_1x}             & e^{\lambda_2x}             & e^{\lambda_3x} \\
+\lambda_1 e^{\lambda_1x}   & \lambda_2 e^{\lambda_2x}   & \lambda_3 e^{\lambda_3x} \\
+\lambda_1^2 e^{\lambda_1x} & \lambda_2^2 e^{\lambda_2x} & \lambda_3^2 e^{\lambda_3x}
+\end{pmatrix}
+\]
+We voeren de volgende ERO's uit: $R_2 \longmapsto R_2 - \lambda_1R_1$ en $R_3 \longmapsto R_3 - \lambda_1^2R_1$.
+\[
+= \det
+\begin{pmatrix}
+e^{\lambda_1x} & e^{\lambda_2x}                           & e^{\lambda_3x} \\
+0              & (\lambda_2-\lambda_1) e^{\lambda_2x}     & (\lambda_3-\lambda_1) e^{\lambda_3x} \\
+0              & (\lambda_2^2-\lambda_1^2) e^{\lambda_2x} & (\lambda_3^2-\lambda_1^2) e^{\lambda_3x}
+\end{pmatrix}
+\]
+We ontwikkelen naar de eerste kolom.
+\[
+= e^{\lambda_1x} \cdot \det
+\begin{pmatrix}
+(\lambda_2-\lambda_1) e^{\lambda_2x}     & (\lambda_3-\lambda_1) e^{\lambda_3x} \\
+(\lambda_2^2-\lambda_1^2) e^{\lambda_2x} & (\lambda_3^2-\lambda_1^2) e^{\lambda_3x}
+\end{pmatrix}
+\]
+We voeren de volgende ERO uit: $R_2 \longmapsto R_2 - (\lambda_2+\lambda_1)R_1$
+\[
+= e^{\lambda_1x} \cdot \det
+\begin{pmatrix}
+(\lambda_2-\lambda_1) e^{\lambda_2x} & (\lambda_3-\lambda_1) e^{\lambda_3x} \\
+0                                    & (\lambda_3^2-\lambda_1^2) e^{\lambda_3x} - (\lambda_2+\lambda_1) (\lambda_3-\lambda_1) e^{\lambda_3x}
+\end{pmatrix}
+\]
+We halen $(\lambda_3-\lambda_1)$ uit de laatste rij en rekenen verder uit.
+\begin{align*}
+&= (\lambda_3-\lambda_1) e^{\lambda_1x} \cdot \det
+\begin{pmatrix}
+(\lambda_2-\lambda_1) e^{\lambda_2x} & (\lambda_3-\lambda_1) e^{\lambda_3x} \\
+0                                    & (\lambda_3+\lambda_1) e^{\lambda_3x} - (\lambda_2+\lambda_1) e^{\lambda_3x}
+\end{pmatrix} \\
+&= (\lambda_3-\lambda_1) e^{\lambda_1x} \cdot \det
+\begin{pmatrix}
+(\lambda_2-\lambda_1) e^{\lambda_2x} & (\lambda_3-\lambda_1) e^{\lambda_3x} \\
+0                                    & (\lambda_3-\lambda_2) e^{\lambda_3x}
+\end{pmatrix} \\
+&= (\lambda_3-\lambda_1) e^{\lambda_1x} \cdot
+(\lambda_2-\lambda_1) e^{\lambda_2x} (\lambda_3-\lambda_2) e^{\lambda_3x} \\
+&= (\lambda_3-\lambda_1) (\lambda_2-\lambda_1) (\lambda_3-\lambda_2)
+e^{(\lambda_1 + \lambda_2 + \lambda_3)x} \\
+&= -(\lambda_1-\lambda_2) (\lambda_1-\lambda_3) (\lambda_2-\lambda_3)
+e^{(\lambda_1 + \lambda_2 + \lambda_3)x}
+\end{align*}
+\end{proof}
 \subsection{Stelling 2.21 p 71}
 \label{2.21}
 Zij $A \in \mathbb{R}^{n\times n}$.
 
 \subsubsection*{Te Bewijzen}
 \[
-A\cdot Adj(A) = adj(A) \cdot A = det(A)\cdot\mathbb{I}_n
+A\cdot \text{adj}(A) = \text{adj}(A) \cdot A = \det(A)\cdot\mathbb{I}_n
 \]
 
 \subsubsection*{Bewijs}
 \begin{proof}
-We zullen het matrixproduct $A\cdot Adj(A)$ en $adj(A) \cdot A$ berekenen.\\\\
+We zullen het matrixproduct $A\cdot \text{adj}(A)$ en $\text{adj}(A) \cdot A$ berekenen.\\\\
 \emph{Elementen op de hoofddiagonaal van het product}\\
 Het element op de $i$-de rij en de $i$-de kolom van het product ziet er als volgt uit.
 \[
-(A\cdot Adj(A))_{ii} =
+(A\cdot \text{adj}(A))_{ii} =
 \begin{pmatrix}
 a_{i1} & a_{i2}&\cdots&a_{in}\\
 \end{pmatrix}
@@ -398,12 +535,12 @@ a_{i1} & a_{i2}&\cdots&a_{in}\\
 C_{i1}\\C_{i2}\\\vdots\\C_{in}
 \end{pmatrix}
 =
-\sum_{k=1}^na_{ik}C_{ik} = det(A)
+\sum_{k=1}^na_{ik}C_{ik} = \det(A)
 \]
-Deze uitdrukking geeft de ontwikkeling van $det(A)$ naar rij $i$ weer.
-Analoog geldt voor $adj(A) \cdot A$ iets gelijkaardig.
+Deze uitdrukking geeft de ontwikkeling van $\det(A)$ naar rij $i$ weer.
+Analoog geldt voor $\text{adj}(A) \cdot A$ iets gelijkaardig.
 \[
-(adj(A) \cdot A)_{ii} =
+(\text{adj}(A) \cdot A)_{ii} =
 \begin{pmatrix}
 C_{i1}&C_{i2}&\cdots&C_{in}\\
 \end{pmatrix}
@@ -411,13 +548,13 @@ C_{i1}&C_{i2}&\cdots&C_{in}\\
 a_{i1}\\a_{i2}\\\cdots\\a_{in}\\
 \end{pmatrix}
 =
-\sum_{k=1}^na_{ik}C_{ik} = det(A)
+\sum_{k=1}^na_{ik}C_{ik} = \det(A)
 \]
 \emph{Elementen niet op de hoofddiagonaal van het product}\\
 Voor de elementen niet op de hoofddiagonaal rest er ons nu nog te bewijzen dat die nul zijn.\\
 We berekenen het element van het product op positie $i\neq j$.
 \[
-(A\cdot Adj(A))_{ij} =
+(A\cdot \text{adj}(A))_{ij} =
 \begin{pmatrix}
 a_{i1} & a_{i2}&\cdots&a_{in}\\
 \end{pmatrix}
@@ -429,9 +566,9 @@ C_{j1}\\C_{j2}\\\vdots\\C_{jn}
 =0
 \]
 Deze laatste uitdrukking vormt de ontwikkeling van rij $j$ van de determinant van een matrix $A'$ waarbij $A'$ een matrix is waarbij $R_i = R_j = \begin{pmatrix}a_{i1} & a_{i2}&\cdots&a_{in}\\\end{pmatrix}$. Deze determinant is evident nul omdat er in $A$ twee gelijke rijen voorkomen\footnote{Zie Stelling 2.2 p 57 D-5}.\\
-Opnieuw is de uitdrukking voor $adj(A) \cdot A$ analoog.
+Opnieuw is de uitdrukking voor $\text{adj}(A) \cdot A$ analoog.
 \[
-(A\cdot Adj(A))_{ij} =
+(A\cdot \text{adj}(A))_{ij} =
 \begin{pmatrix}
 C_{j1}&C_{j2}&\cdots&C_{jn}\\
 \end{pmatrix}
@@ -451,21 +588,21 @@ Zij $A \in \mathbb{R}^{n\times n}$ inverteerbaar.
 
 \subsubsection*{Te Bewijzen}
 \[
-A^{-1} = \frac{1}{det(A)}adj(A)
+A^{-1} = \frac{1}{\det(A)}\text{adj}(A)
 \]
 
 \subsubsection*{Bewijs}
 \begin{proof}
 Rechtstreeks bewijs.\\
-We weten dat $A\cdot Adj(A) = adj(A) \cdot A = det(A)\cdot\mathbb{I}_n$\footnote{Zie Stelling 2.21 p 71}.
+We weten dat $A\cdot \text{adj}(A) = \text{adj}(A) \cdot A = \det(A)\cdot\mathbb{I}_n$\footnote{Zie Stelling 2.21 p 71}.
 \[
-adj(A) \cdot A = det(A)\cdot\mathbb{I}_n
+\text{adj}(A) \cdot A = \det(A)\cdot\mathbb{I}_n
 \]
 \[
-adj(A) = det(A) \cdot A_{-1}
+\text{adj}(A) = \det(A) \cdot A_{-1}
 \]
 \[
-A^{-1} = \frac{1}{det(A)}adj(A)
+A^{-1} = \frac{1}{\det(A)}\text{adj}(A)
 \]
 \end{proof}
 
@@ -483,7 +620,7 @@ Stel dat de volgende uitdrukking deze veelterm functie voorstelt.
 \[
 f: \mathbb{R} \rightarrow \mathbb{R} : x \mapsto a_0 + a_1x + a_2x^2+...+a_nx^n
 \]
-Nu moeten we bewijzen dat de co\"eficienten $a_i$ bestaan en uniek zijn zodat het volgende stelsel geldt.
+Nu moeten we bewijzen dat de co\"effici\"enten $a_i$ bestaan en uniek zijn zodat het volgende stelsel geldt.
 \[
 \left\lbrace
 \begin{array}{ c }
@@ -494,7 +631,7 @@ a_0 + a_1x_n + a_2x_n^2 + \cdots + a_nx_n^n = y_n\\
 \end{array}
 \right.
 \]
-Deze coeffici\"enten bestaan inderdaad en zijn uniek want de volgende determinant is niet nul.
+Deze co\"effici\"enten bestaan inderdaad en zijn uniek want de volgende determinant is niet nul.
 \[
 \begin{vmatrix}
 1 & x_0 & x_0^2 & \cdots & x_0^n\\
