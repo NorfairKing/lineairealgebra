@@ -17,6 +17,11 @@ Dit bewijs staat letterlijk in de cursus. Zie Stelling 4.41 p. 157 (\ref{4.31}).
 Dit staat letterlijk in de cursus. Zie Stelling 6.27 p. 238 (\ref{6.27}).
 
 \subsubsection*{b)}
+Noem $v_i$ de co\"ordinaat van $v$ ten opzichte van $e_i$ en $w_i$ de co\"ordinaat van $w$ ten opzichte van $e_i$. Noem $v' = (v_1,v_2,...,v_n)$ en $w' = (w_1,w_2,...,w_n)$. Het inproduct van $v$ en $w$ ziet er nu als volgt uit.
+\[
+\langle v,w \rangle = \langle v',w' \rangle = v'^Tw' = \sum_{i=1}^nv_iw_i
+\]
+Zie Stelling 6.26 p. 236 (\ref{6.26}).
 
 \subsection{Vraag 3}
 \subsubsection*{a)}
@@ -105,15 +110,121 @@ Een afbeelding is lineair als ze een lineaire combinatie behoudt\footnote{Zie Le
 \[
 \forall \lambda_1,\lambda_2 \in \mathbb{R} v_1,v_2 \in \mathbb{R}^{2}:\  A(\lambda_1v_1+\lambda_2v_2) = \lambda_1A(v_1)+\lambda_2A(v_2)
 \]
+We hoeven dit echter niet formeel uit te rekenen. Het is makkelijk in te zien dat $A$ enkel lineair is wanneer de rechte waarrond gespiegeld wordt door de oorsprong gaat. $b$ moet dus nul zijn.
 
 \subsubsection*{b)}
+De matrix van $A$ is de volgende. Ik heb geen idee hoe u dit uit uw duim zou moeten zuigen. Ik heb het ook maar opgezocht.
+\[
+\frac{1}{a^2 + 1}
+\begin{pmatrix}
+1-a^2 & 2a\\
+2a & a^2-1
+\end{pmatrix}
+\]
+%TODO
 
 \subsection{Vraag 5}
+\[
+A_a:
+\begin{pmatrix}
+x\\y\\z
+\end{pmatrix}
+\mapsto
+\begin{pmatrix}
+ax+z\\
+x+(1-a)y+az\\
+(2a-1)x+(1-a^2)y+a^2z\\
+\end{pmatrix}
+\]
+\[
+A_a \leftrightarrow
+\begin{pmatrix}
+a & 0 & 1\\
+1 & (1-a) & a\\
+(2a-1) & (1-a^2) & a^2
+\end{pmatrix}
+\]
+\[
+Ker(A_a) \leftrightarrow
+\begin{pmatrix}
+a & 0 & 1\\
+1 & (1-a) & a\\
+(2a-1) & (1-a^2) & a^2
+\end{pmatrix}
+\begin{pmatrix}
+x\\y\\z
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}
+\]
+%TODO
 
 \subsection{Vraag 6}
 \subsubsection*{a)}
-
+Bewijs uit het ongerijmde:
+\[
+dim(Im(g\circ f)) < dim(Im(g)) + dim(Im(f)) - dim(W)
+\]
+\begin{proof}
+\[
+dim(Im(g\circ f)) < dim(Im(g)) + dim(Im(f)) - dim(W)
+\]
+\[
+dim(V) - dim(Ker(g\circ f)) < dim(Im(g)) + dim(V) - dim(Ker(f)) - dim(W)
+\]
+\[
+-dim(Ker(g\circ f)) < dim(Im(g)) - dim(Ker(f)) - dim(W)
+\]
+\[
+-dim(Ker(g\circ f)) < dim(Im(g)) - dim(Ker(f)) - dim(Im(g)) - dim(Ker(g))
+\]
+\[
+-dim(Ker(g\circ f)) < - dim(Ker(f)) - dim(Ker(g))
+\]
+\[
+dim(Ker(g\circ f)) > dim(Ker(f)) + dim(Ker(g))
+\]
+Contradictie.
+\end{proof}
 
 \subsubsection*{b)}
+Zij $f$ en $g$ de volgende transformatie van $\mathbb{R}^2$
+\[
+f = g : \mathbb{R}^2 \rightarrow \mathbb{R}^2: (x,y) \mapsto (x,0)
+\]
+Nu zien we het volgende:
+\[
+dim(Im(f)) = dim(Im(g)) = 1
+\]
+\[
+dim(Im(g\circ f)) = 1
+\]
+\[
+dim(W) = 2
+\]
+\[
+1 \ge 1 + 1 - 2
+\]
+
+\subsection{Vraag 7}
+\subsubsection*{a)}
+Fout. Tegenvoorbeeld:\\
+\[
+A = 
+\begin{pmatrix}
+1 & 1\\
+0 & 1
+\end{pmatrix}
+\]
+$A$ heeft enkel eigenwaarde $1$ met algebraïsche multipliciteit $2$ en meetkundige multipliciteit $1$. $A$ is dus niet diagonaliseerbaar.
+
+\subsubsection*{b)}
+Juist.
+Omdat $L$ injectief is, is  $L$ bijectief en dus inverteerbaar. Dit betekent dat de matrix van $L$ steeds inverteerbaar is. Nu rest er ons dus nog te bewijzen dat inverteerbare matrices gelijkvormig zijn.
+%TODO
+
+
 
 \end{document}
