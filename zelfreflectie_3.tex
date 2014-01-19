@@ -15,26 +15,26 @@ De tweede bewering. Deze oefening beschrijft precies wat er mis is met de cursus
 Ja. Het triviaal voorbeeld is natuurlijk $\{\vec{0}\}$. Als dit niet voldoende is, bestaan er ook nog binaire ringen. Dit zijn ook vectorruimten, als we de bewerkingen goed defini\"eren.
 
 \subsection{Oefening 4}
-De deelruimten van de gepunte ruimte zijn ruimtes, vlakken of rechten door de oorsprong, en de deelruimte met enkel de oorsprong. Twee lineair onafhankelijke vectoren spannen een vlak op. één vector spant een rechte op. Dire lineair onafhankelijke vectoren spannen opnieuw de ruimte op. 
+De deelruimten van de gepunte ruimte zijn ruimtes, vlakken of rechten door de oorsprong, en de deelruimte met enkel de oorsprong. Twee lineair onafhankelijke vectoren spannen een vlak op. \'e\'en vector spant een rechte op. Dire lineair onafhankelijke vectoren spannen opnieuw de ruimte op. 
 
 \subsection{Oefening 5}
 Een basis is voortbrengend en vrij (definitie). Noem $\beta = \{v_1,v_2,...,v_n\}$ de basis van $V$.
 \begin{proof}
-$\beta$ is maximaal vrij want elke vector in $V$ in is een lineaire combinatie van de vectoren in $\beta$. Als één van die vectoren aan $\beta$ toegevoegd zou worden, zou $\beta$ dus niet meer vrij zijn. Dit is precies de definitie van maximaal vrij.\\
+$\beta$ is maximaal vrij want elke vector in $V$ in is een lineaire combinatie van de vectoren in $\beta$. Als \'e\'en van die vectoren aan $\beta$ toegevoegd zou worden, zou $\beta$ dus niet meer vrij zijn. Dit is precies de definitie van maximaal vrij.\\
 Stel dat $\beta$ niet minimaal voortbrengend zou zijn zou $\beta$ uitgedunt kunnen worden tot $\beta'$ door er $b$ uit te halen zodat $\beta'$ nog steeds voortbrengend is. Als dit waar is dan zou $b$ een lineaire combinatie zijn van de vectoren uit $\beta'$. Dit is in contradictie met het feit dat $V$ vrij is. $\beta$ is dus minimaal voortbrengend.
 \end{proof}
 
 \subsection{Oefening 6}
 \subsubsection*{Te bewijzen}
 Zij $v_1,v_2,...,v_n \in R^n$ $n$. Zij $A$ de matrix met in de kolommen de vectoren $v_1,v_2,...,v_n \in R^n$.
-$v_1,v_2,...,v_n \in R^n$ vormen een basis van $R^n \Leftrightarrow det(A) \neq 0$.
+$v_1,v_2,...,v_n \in R^n$ vormen een basis van $R^n \Leftrightarrow \det(A) \neq 0$.
 \subsubsection*{Bewijs}
 \begin{proof}
 Rechtstreeks bewijs.\\
 \emph{$\Rightarrow$}\\
-$v_1,v_2,...,v_n$ is een basis van $R^n$ dus $v_1,v_2,...,v_n$ is vrij en voortbrengend. Omdat $v_1,v_2,...,v_n$ vrij is, zal $det(A)$ niet nul zijn. ($A$ kan niet rijgereduceert worden naar een matrix met een nulrij, want $v_1,v_2,...,v_n$ is vrij.)\\\\
+$v_1,v_2,...,v_n$ is een basis van $R^n$ dus $v_1,v_2,...,v_n$ is vrij en voortbrengend. Omdat $v_1,v_2,...,v_n$ vrij is, zal $\det(A)$ niet nul zijn. ($A$ kan niet rijgereduceert worden naar een matrix met een nulrij, want $v_1,v_2,...,v_n$ is vrij.)\\\\
 \emph{$\Leftarrow$}\\
-Als $det(A) \neq 0$ dan zal $A$ niet gereduceerd kunnen worden naar een matrix met een nulrij. Dit houdt in dat de kolommen van $A$ lineair onafhankelijk zijn. Omdat het aantal vectoren in de gevormde deelverzameling gelijk is aan $n$, zal deze deelverzameling een basis zijn voor $R^n$.
+Als $\det(A) \neq 0$ dan zal $A$ niet gereduceerd kunnen worden naar een matrix met een nulrij. Dit houdt in dat de kolommen van $A$ lineair onafhankelijk zijn. Omdat het aantal vectoren in de gevormde deelverzameling gelijk is aan $n$, zal deze deelverzameling een basis zijn voor $R^n$.
 \end{proof}
 
 \subsection{Oefening 7}
@@ -59,7 +59,7 @@ TODO
 Propositie 3.14 zegt dat elke doorsnede van twee deelruimten een deelruimte is. Neem nu drie deelruimten van $V$. Neem de doorsnede van de eerste twee, en daarvan de doorsnede met de derde. Nu weten we dat voor elke $3$ deelruimten, de doorsnede ervan een deelruimte is. Dit kunnen we itereren voor elke $k \in \mathbb{N}$. Oneindig veel deelruimten geldt dit ook.
 
 \subsection{Oefening 9}
-Als $D$ één element bevat, is de beschreven verzameling een deelruimte met dimensie $1$. Als $D$ $k+1$ elementen bevat, is het laatste element ofwel een lineaire combinatie van de$k$ andere elementen, ofwel is het er geen. Als het wel een lineaire combinatie van de andere $k$ elementen is, dan is de beschreven verzameling dezelfde als die voor de $k$ andere elementen. Als het geen lineaire combinatie is, dan is het een deelruimte met één dimensie meer dan die voor de $k$ andere elementen.
+Als $D$ \'e\'en element bevat, is de beschreven verzameling een deelruimte met dimensie $1$. Als $D$ $k+1$ elementen bevat, is het laatste element ofwel een lineaire combinatie van de$k$ andere elementen, ofwel is het er geen. Als het wel een lineaire combinatie van de andere $k$ elementen is, dan is de beschreven verzameling dezelfde als die voor de $k$ andere elementen. Als het geen lineaire combinatie is, dan is het een deelruimte met \'e\'en dimensie meer dan die voor de $k$ andere elementen.
 
 \subsection{Oefening 10}
 Ja, maar in onze cursus spreken we niet over oneindige sommen van vectoren, omdat dit concept nog niet gedefinieerd is.
@@ -81,7 +81,7 @@ Nu proberen we aan te tonen dat de volgende bewering geldt.
 \[
 \sum_{i=1}^n \lambda_i co_\beta\left(\sum_{j=1}^m\gamma_j\beta_j\right) = 0 \Leftrightarrow \forall i:\lambda_i=0
 \]
-Neem opnieuw de tweede vergelijking, en neem aan beide kanten de coordinaatafbeelding. Dit kan omdat aan beide kanten elementen uit $V$ staan ($0$ is de nulvector, niet de scalar $0$).
+Neem opnieuw de tweede vergelijking, en neem aan beide kanten de co\"ordinaatafbeelding. Dit kan omdat aan beide kanten elementen uit $V$ staan ($0$ is de nulvector, niet de scalar $0$).
 \[
 co_{\beta}\left(\sum_{i=1}^n \lambda_1\sum_{j=1}^m\gamma_j\beta_j\right) = co_{\beta}(0) \Leftrightarrow \forall i:\lambda_i=0
 \]

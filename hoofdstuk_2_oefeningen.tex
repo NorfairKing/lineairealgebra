@@ -192,21 +192,21 @@ $$
 0 & 0 & 0 & 7
 \end{pmatrix}
 \]
-\[det = -7 \text{(3 rijwissels)} \]
+\[\det = -7 \text{(3 rijwissels)} \]
 2)
-\[ -2 \cdot det
+\[ -2 \cdot \det
 \begin{pmatrix}
 1 & 1 & 1\\
 2 & 0 & 1\\
 1 & 1 & 0
 \end{pmatrix}
-+2 \cdot det
++2 \cdot \det
 \begin{pmatrix}
 1 & 1 & 1\\
 0 & 1 & 1\\
 1 & 1 & 0
 \end{pmatrix}
-- det 
+- \det 
 \begin{pmatrix}
 1 & 1 & 1\\
 0 & 1 & 1\\
@@ -215,7 +215,7 @@ $$
 =-7
 \]
 \subsubsection*{h)}
-\[ det
+\[ \det
 \begin{pmatrix}
 4 & 3 & 1 & 5\\
 4 & 0 & -2 & 4\\
@@ -223,19 +223,19 @@ $$
 8 & 3 & -1 & 9
 \end{pmatrix}
 \]
-\[ = -3 \cdot det
+\[ = -3 \cdot \det
 \begin{pmatrix}
 4 & -2 & 4\\
 8 & 5 & -11\\
 8 & -1 & 9
 \end{pmatrix}
--9 \cdot det 
+-9 \cdot \det 
 \begin{pmatrix}
 4 & 1 & 5\\
 4 & -2 & 4\\
 8 & -1 & 9
 \end{pmatrix}
-+3 \cdot det
++3 \cdot \det
 \begin{pmatrix}
 4 & 1 & 5\\
 4 & -2 & 4\\
@@ -340,20 +340,20 @@ Door ontwikkeling:
 \]
 
 \subsection{Oefening 2}
-\[det(A) = -7, det(B) = 3\]
+\[\det(A) = -7, \det(B) = 3\]
 \begin{gather*}
-    det(A^2BA^{-1}) =
-    det(A^2) \cdot det(B) \cdot det(A^{-1}) =\\
-    det(A)^2 \cdot det(B) \cdot det(A)^{-1} = det(A) \cdot det(B) = -21
+    \det(A^2BA^{-1}) =
+    \det(A^2) \cdot \det(B) \cdot \det(A^{-1}) =\\
+    \det(A)^2 \cdot \det(B) \cdot \det(A)^{-1} = \det(A) \cdot \det(B) = -21
 \end{gather*}
 \begin{gather*}
-    det(B^{-1}A^3) = det(B^{-1}) \cdot det(A^3) = det(B)^{-1} \cdot det(A)^3 = \frac{1}{3} \cdot (-7)^3 = \frac{-343}{3}
+    \det(B^{-1}A^3) = \det(B^{-1}) \cdot \det(A^3) = \det(B)^{-1} \cdot \det(A)^3 = \frac{1}{3} \cdot (-7)^3 = \frac{-343}{3}
 \end{gather*}
 
 \subsection{Oefening 3}
-$det(AB) = 0$ als $det(A) = 0$ of $det(B) = 0$
+$\det(AB) = 0$ als $\det(A) = 0$ of $\det(B) = 0$
 \\
-\[det(A) = \begin{vmatrix}
+\[\det(A) = \begin{vmatrix}
 x + 2 & 3x\\
 3 & x + 2
 \end{vmatrix}
@@ -361,14 +361,14 @@ x + 2 & 3x\\
 \]
 $x^2 -5 x + 4 = 0$ voor $x_1, x_2$ met $x_{1,2} = \frac{5 \pm 3}{2}$ ($x_1 = 1$ en $x_2 = 4$)
 \\
-\[det(B) = \begin{vmatrix}
+\[\det(B) = \begin{vmatrix}
 x & 0\\
 5 & x + 2
 \end{vmatrix}
  = x \cdot (x + 2) = x^2 + 2x\]
 $x^2 + 2x$ voor $x_3, x_4$ met $x_3 = -2$ en $x_4 = 0$ 
 \subsubsection*{Besluit}
-$det(AB) = 0$ voor $x$ met $x \in \{-2, 0, 1, 4\}$.
+$\det(AB) = 0$ voor $x$ met $x \in \{-2, 0, 1, 4\}$.
 \subsection{Oefening 4}
 \subsubsection*{a)}
 Aangezien er tweemaal een ERO van het verwisselen van rijen voorkomt, wordt de uitkomst:
@@ -396,21 +396,21 @@ Voor elke grotere vierkante matrix is deze determinant $0$, omdat door rij reduc
 \subsection{Oefening 6}
 \subsubsection*{a)}
 \[
-det(A^{-1}) = \frac{1}{det(A)} $$
+\det(A^{-1}) = \frac{1}{\det(A)} $$
 dus:
 $$
-det(A^{-1}) = \frac{1}{-7} 
+\det(A^{-1}) = \frac{1}{-7} 
 \]
 \subsubsection*{b)}
-$$ det(2(A^{-1}) = 4\cdot det(A^{-1}) = 4 \cdot \frac{1}{-7} = \frac{-4}{7}
+$$ \det(2(A^{-1}) = 4\cdot \det(A^{-1}) = 4 \cdot \frac{1}{-7} = \frac{-4}{7}
 $$
 \subsubsection*{c)}
-\[ det((2A)^{-1}) = det(2A)^{-1} = 2^{3}det(A)^{-1} = -8/7\]
+\[ \det((2A)^{-1}) = \det(2A)^{-1} = 2^{3}\det(A)^{-1} = -8/7\]
 \subsection{Oefening 7}
 \begin{proof}
 De determinant van een product is het product van de determinanten.
 \[
-det(AB) = det(A) det(B) = 0 det(B) = 0 
+\det(AB) = \det(A) \det(B) = 0 \det(B) = 0 
 \]
 \end{proof}
 
@@ -552,7 +552,7 @@ d_{k+1} = 2* d_{k} - d_{k-1} = 2*(k+1) - ((k-1)+1) = 2k+2-k = k+2
 
 \subsection{Oefening 11}
 \subsubsection*{a)}
-Waar: We kunnen de determinant van de matrix bepalen door er een bovendriehoeksmatrix van te maken en dan de elementen op de diagonaal te vermenigvuldigen. Dit kunnen we doen door zowel van $A$ als $D$ een bovendriehoeksmatrix te maken. Als we dit doen worden enkel de elementen van respectievelijk $A$ en $D$ aangepast (alle nullen blijven) dus de determinant is gelijk aan de $det(A)$. $det(D)$
+Waar: We kunnen de determinant van de matrix bepalen door er een bovendriehoeksmatrix van te maken en dan de elementen op de diagonaal te vermenigvuldigen. Dit kunnen we doen door zowel van $A$ als $D$ een bovendriehoeksmatrix te maken. Als we dit doen worden enkel de elementen van respectievelijk $A$ en $D$ aangepast (alle nullen blijven) dus de determinant is gelijk aan de $\det(A)$. $\det(D)$
 
 \subsubsection*{b)}
 \begin{proof}
@@ -658,22 +658,22 @@ A^T= -A
 \subsubsection*{Te bewijzen}
 Voor $A\in R^{n\times n}$ met $n$ oneven.
 \[
-det(A) = 0
+\det(A) = 0
 \]
 \subsubsection*{Bewijs}
 \[
 A^T = -A
 \]
 \[
-det(A^T) = det(-A)
+\det(A^T) = \det(-A)
 \]
 We weten:
 \[
-det(A^T) = det(A) \text{ en } det(-A) = (-1)^n det(A)
+\det(A^T) = \det(A) \text{ en } \det(-A) = (-1)^n \det(A)
 \]
 dus
 \[
-det(A) = det(-A) \Rightarrow det(A) = 0
+\det(A) = \det(-A) \Rightarrow \det(A) = 0
 \]
 
 \subsubsection*{Tegenvoorbeeld}
@@ -686,7 +686,7 @@ det(A) = det(-A) \Rightarrow det(A) = 0
 \end{vmatrix}
 \]
 \subsection{Oefening 15}
-\[ det(A-nI_{n})=0 \longmapsto \]
+\[ \det(A-nI_{n})=0 \longmapsto \]
 \[
 \begin{pmatrix}
 -(n-1) & 1 & 1 &... & 1\\
@@ -708,7 +708,7 @@ det(A) = det(-A) \Rightarrow det(A) = 0
 -(n-1) & 1 & 1 &... & 1
 \end{pmatrix} 
 \]
-\[ \text{Als we deze matrix naar echelonvorm brengen zullen altijd een nulrij krijgen. Dus det=0}\]
+\[ \text{Als we deze matrix naar echelonvorm brengen zullen altijd een nulrij krijgen. Dus $\det=0$.}\]
 
 \subsection{Oefening 16}
 \subsubsection*{b)}
@@ -718,8 +718,8 @@ det(A) = det(-A) \Rightarrow det(A) = 0
 2 & 3 & 4\\
 1 & 5 & 7
 \end{vmatrix}
-det(A) = 12
-adj(A) =
+\det(A) = 12
+\text{adj}(A) =
 \begin{vmatrix}
 C_{11} & C_{21} & C_{31}\\
 C_{21} & C_{22} & C_{32}\\
@@ -733,8 +733,8 @@ C_{13} & C_{23} & C_{33}
 10 & 4 & -2\\
 7 & 4 & 1
 \end{vmatrix}
-det(adj A) = 152
-A^-1 = \frac{1}{det(A)} \cdot adj(A)
+\det(\text{adj} A) = 152
+A^-1 = \frac{1}{\det(A)} \cdot \text{adj}(A)
 	 = \frac{1}{12} \cdot \begin{vmatrix}
 	 						1 & -8	-5\\
 	 						10 & 4 & -2\\
@@ -745,7 +745,7 @@ A^-1 = \frac{1}{det(A)} \cdot adj(A)
 
 \subsection{Oefening 17}
 \[
-adj(A)=
+\text{adj}(A)=
 \begin{pmatrix}
 -3i & 4 & 10+16i\\
 0 & 1+i & -5-4i\\
@@ -935,14 +935,14 @@ $.
 \subsubsection*{d)}
 \begin{proof}
 \[
-det(cI_n - A^T) = det(cI_n^T - A^T) = det(cI_n - A)
+\det(cI_n - A^T) = \det(cI_n^T - A^T) = \det(cI_n - A)
 \]
 \end{proof}
 
 \subsubsection*{h)}
 Niet waar. Tegenvoorbeeld: $A=I$ en $k=3$
 \[
-\rightarrow det(3A) = 27 \neq 3
+\rightarrow \det(3A) = 27 \neq 3
 \]
 \subsubsection*{g)}
 WAAR.
@@ -950,13 +950,13 @@ WAAR.
 \exists k: A^k = 0
 \]
 \[
-det(A^k) = det(0)
+\det(A^k) = \det(0)
 \]
 \[
-det(A)^k = 0
+\det(A)^k = 0
 \]
 \[
-det(A) = 0
+\det(A) = 0
 \]
 
 \subsubsection*{i)}
