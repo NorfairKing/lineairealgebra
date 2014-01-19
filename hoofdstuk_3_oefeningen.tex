@@ -238,7 +238,7 @@ Vanuit de definitie van deelverzameling betekent deze bewering het volgende.
 (\exists w': w' \in W \wedge w' \not\in U) \wedge (\exists u': u' \in U \wedge u' \not\in W) 
 \]
 We moeten nu tot een contradictie komen met ``$U\cup W \text{ is een deelruimte van }V$''.
-$U\cup W \text{ is een deelruimte van }V$ betekent vanuit de definitie het volgende.
+$U\cup W$ is een deelruimte van $V$ betekent vanuit de definitie het volgende.
 \[
 \forall w, u \in ĉ,\; \forall \lambda_1 , \lambda_2 \in \mathbb{R}: \lambda_1\cdot u + \lambda_2\cdot w \in U\cup W
 \]
@@ -452,8 +452,8 @@ We kunnen dit oplossen als matrix die we rijreduceren:
 \right]
 \]
 
-\[R2 \mapsto -R2 + 2*R1 \]
-\[R3 \mapsto -R3 + 2*R1 \]
+\[R_2 \mapsto -R_2 + 2*R_1 \]
+\[R_3 \mapsto -R_3 + 2*R_1 \]
 (Dit zijn niet echt volledig correcte overgangen op elementair niveau, maar eerder een samentrekking)
 
 \[
@@ -466,7 +466,7 @@ We kunnen dit oplossen als matrix die we rijreduceren:
 \right]
 \]
 
-\[R2 \leftrightarrow R3\]
+\[R_2 \leftrightarrow R_3\]
 
 \[
 \left[
@@ -478,8 +478,8 @@ We kunnen dit oplossen als matrix die we rijreduceren:
 \right]
 \]
 
-\[R1 \mapsto R1 - R3 \]
-\[R2 \mapsto R2 - 2*R3 \]
+\[R_1 \mapsto R_1 - R_3 \]
+\[R_2 \mapsto R_2 - 2*R_3 \]
 
 \[
 \left[
@@ -491,7 +491,7 @@ We kunnen dit oplossen als matrix die we rijreduceren:
 \right]
 \]
 
-\[R2 \mapsto \frac{R2}{3}\]
+\[R_2 \mapsto \frac{R_2}{3}\]
 
 \[
 \left[
@@ -503,7 +503,7 @@ We kunnen dit oplossen als matrix die we rijreduceren:
 \right]
 \]
 
-\[R1 \mapsto R1 - R2\]
+\[R_1 \mapsto R_1 - R_2\]
 
 \[
 \left[
@@ -573,9 +573,9 @@ Voor $\bigl(
 \right]
 \]
 
-\[R2 \mapsto R2 + R1 \]
-\[R3 \mapsto R3 - 2*R1 \]
-\[R4 \mapsto R4 - 3*R1 \]
+\[R_2 \mapsto R_2 + R_1 \]
+\[R_3 \mapsto R_3 - 2*R_1 \]
+\[R_4 \mapsto R_4 - 3*R_1 \]
 
 \[
 \left[
@@ -588,8 +588,8 @@ Voor $\bigl(
 \right]
 \]
 
-\[R3 \mapsto 3*R3 + 5*R2 \]
-\[R4 \mapsto 3*R4 + 3*R2 \]
+\[R_3 \mapsto 3*R_3 + 5*R_2 \]
+\[R_4 \mapsto 3*R_4 + 3*R_2 \]
 
 \[
 \left[
@@ -1197,60 +1197,44 @@ v = 1\cdot v \tag{co\"effici\"ent}
 \label{3.17}
 \begin{enumerate}
 \item
-\begin{itemize}
-\item \emph{(a)}\\
+\begin{enumerate}
+\item
 \[
 D_1 = \{(1,0,0),(0,0,1)\}
 \]
 
-\item \emph{(b)}\\
+\item
 \[
 D_2 = \{(1,1,1)\}
 \]
-\end{itemize}
+\end{enumerate}
 
 \item De gepunte driedimensionale ruimte is een deelruimte van zichzelf.
 Elk vlak is een deelruimte, elke rechte is een deelruimte en de triviale vectorruimte $\{\vec{0}\}$ is ook een deelruimte.
 
 \item
 \[
-f_1 : \mathbb{R} \rightarrow \mathbb{R}, x \rightarrow 1
+f_1 : \mathbb{R} \rightarrow \mathbb{R} : x \mapsto 1
 \]
 \[
-f_2 : \mathbb{R} \rightarrow \mathbb{R}, x \rightarrow x
+f_2 : \mathbb{R} \rightarrow \mathbb{R} : x \mapsto x
 \]
 \[
-f_3 : \mathbb{R} \rightarrow \mathbb{R}, x \rightarrow x^2
+f_3 : \mathbb{R} \rightarrow \mathbb{R} : x \mapsto x^2
 \]
-
 \subsubsection*{Te Bewijzen}
 \[
 vct\{f_1,f_2,f_3\} = \mathbb{R}[X]_{\le 2}
 \]
-
 \subsubsection*{Bewijs}
 \begin{proof}
 Door lineaire combinaties te nemen van $f_1$, $f_2$ en $f_3$ kunnen we heel $\mathbb{R}[X]_{\le 2}$ bekomen.
 \[
 vct\{f_1,f_2,f_3\} = \{ \lambda f_1+ \mu f_2 + \nu f_3| \lambda,\mu,\nu \in \mathbb{R}\}
 \]
-\[ = \{f\ |\ f : \mathbb{R} \rightarrow \mathbb{R}, x \rightarrow (\lambda 1+ \mu x + \nu x^2) ,\lambda,\mu,\nu \in \mathbb{R}\}= \mathbb{R}[X]_{\le 2}
+\[ = \{f\ |\ f : \mathbb{R} \rightarrow \mathbb{R} : x \mapsto (\lambda 1+ \mu x + \nu x^2) ,\ \lambda,\mu,\nu \in \mathbb{R}\}= \mathbb{R}[X]_{\le 2}
 \]
 \end{proof}
-
-\[
-f_1 : \mathbb{R} \rightarrow \mathbb{R}, x \rightarrow 1
-\]
-\[
-f_2 : \mathbb{R} \rightarrow \mathbb{R}, x \rightarrow x
-\]
-\[
-f_3 : \mathbb{R} \rightarrow \mathbb{R}, x \rightarrow x
-\]
-\[
-vct\{f_1,f_2,f_3\} = \mathbb{R}[X]_{n\le 2}
-\]
-
 \end{enumerate}
 
 \subsection{Opdracht 3.18 p 98}
@@ -1258,7 +1242,7 @@ vct\{f_1,f_2,f_3\} = \mathbb{R}[X]_{n\le 2}
 Zij $(\mathbb{R},V,+)$ een vectorruimte. Zij $D$ een deelverzameling van $V$ en $U_i$ deelruimten van $V$ die $D$ omvatten.
 
 \subsubsection*{Te Bewijzen}
-\[
+\[\displaystyle
 vct(D) = \bigcap_{i}U_i
 \]
 
@@ -1271,7 +1255,7 @@ Voor elke $U_i$ geldt dus het volgende.
 \[
 vct(D) \subseteq U_i 
 \]
-Dit houdt precies in dat $vct(D) = \bigcap_iU_i$ geldt.
+Dit houdt precies in dat $vct(D) = \displaystyle\bigcap_iU_i$ geldt.
 \end{proof}
 
 
