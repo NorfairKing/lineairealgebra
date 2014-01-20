@@ -65,6 +65,13 @@ $\lambda$, een eigenwaarde van $A$, voldoet aan de vergelijking.
 
 \subsection{Vraag 4}
 \subsubsection*{(a)}
+\begin{proof}
+De kern van $L$ is gelijk aan de nulruimte van $A$. Bovendien is de nulruimte van $A$ het orthogonaal complement van de rijruimte van $A$, of de kolomruimte van $A^T$. De kolomruimte van $A^T$ is precies het beeld van $L^T$.
+\[
+Ker(L) = Im(L^T)^\bot
+\]
+\end{proof}
+
 
 \subsubsection*{(b)}
 \[
@@ -110,6 +117,30 @@ a & 0 & a & 3\\
 0 & 0 & a-4033 & -9
 \end{pmatrix}
 \]
+Lelijk he? Met een beetje inzicht kan het simpeler. We onderscheiden $a=0$ en $a\neq 0$
+\subsubsection*{Geval 1: $a=0$}
+\[
+\begin{pmatrix}
+1 & 0 & 2012 & 7\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 3\\
+0 & 0 & 2011 & 1\\
+2 & 0 & -9 & 5
+\end{pmatrix}
+\]
+Neem de eerste, derde en vierde vector als basis.
+
+\subsubsection*{Geval 2: $a\neq0$}
+\[
+\begin{pmatrix}
+1 & 0 & 2012 & 7\\
+0 & 1 & 0 & 0\\
+a & 0 & a & 3\\
+0 & 0 & 2011 & 1\\
+2 & 0 & a-9 & 5
+\end{pmatrix}
+\]
+Neem alle vier de vectoren als basis.
 
 \subsection{Vraag 6}
 
