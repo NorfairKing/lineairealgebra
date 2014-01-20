@@ -346,6 +346,11 @@ Dit is een $dimV \times dimW$ matrix.
 Bereken de matrices van basisverandering van $\alpha$ naar $\epsilon_1$ en van $\beta$ naar $\epsilon_2$. Bereken ook de inversen ervan indien nodig.
 
 \item
+Vermeningvuldig de berekende matrices als volgt.
+\[
+L_{\alpha}^{\beta}
+= Id_{\epsilon_2}^{\beta} \cdot L_{\epsilon_1}^{\epsilon_2} \cdot Id_{\alpha}^{\epsilon_1} 
+\]
 \end{enumerate}
 
 
@@ -487,6 +492,35 @@ L_{\alpha}^{\beta} =
 
 \section{Basissen zodat een lineaire afbeelding een specifieke matrix wordt}
 \label{specifieke_basissen_voor_lineaire_afbeelding}
+\subsection*{Generiek}
+\subsubsection*{Opgave}
+Zij $L: \mathbb{R}^n \rightarrow \mathbb{R}^m$ een lineaire afbeelding waarvan de matrix ten opzichte van de standaardbasissen $\epsilon_n$ en $\epsilon_m$ gelijk is aan $L_{\epsilon_n}^{\epsilon_m}$
+\[
+L_{\epsilon_n}^{\epsilon_m} =
+\begin{pmatrix}
+l_{11} & l_{12} & \cdots & l_{1m}\\
+l_{21} & l_{22} & \cdots & l_{2m}\\
+\vdots & \vdots & \ddots & \vdots\\
+l_{n1} & l_{n2} & \cdots & l_{nm}\\
+\end{pmatrix}
+\]
+Bepaal basissen $\beta_n$ van $\mathbb{R}^n$ en $\beta_m$ van $\mathbb{R}^m$ zodat $L_{\beta_n}^{\beta_m}$ er als volgt uit ziet:
+\[
+L_{\beta_n}^{\beta_m} = 
+\begin{pmatrix}
+\mathbb{I}_r & O\\
+O & O\\
+\end{pmatrix}
+\]
+$r$ is hier de rang van $L$ en $O$ zijn blokmatrices van nullen zodat $L_{\beta_n}^{\beta_m}$ zinvolle afmetingen heeft.
+\subsubsection*{Oplossing}
+
+
+\subsection*{Voorbeeld}
+
+\subsubsection*{Opgave}
+
+\subsubsection*{Oplossing}
 
 
 
