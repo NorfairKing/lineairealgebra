@@ -4,7 +4,7 @@
 \chapter{Andere Bewijzen}
 \section{Matrices}
 
-\subsection{Scheefsymmetrische matrix}
+\subsection{Scheefsymmetrische Matrix}
 \begin{itemize}
 \item
 Zij $A$ een scheefsymmetrische matrix.
@@ -23,6 +23,35 @@ $A$ is scheefsymmetrisch. We beschouwen nu een element op de hoofddiagonaal van 
 \[
 a = 0
 \]
+\end{proof}
+\end{itemize}
+
+\section{Rijruimte, Nulruimte en Kolomruimte}
+\subsection*{Orthogonaal Complement}
+\begin{itemize}
+\item Zij $A$ een $\mathbb{R}^{m \times n}$. Beschouw $A$ als een kolom van rijen $a_i$.
+\[
+A = 
+\begin{pmatrix}
+a_1\\a_2\\\vdots\\a_m
+\end{pmatrix}
+\] 
+
+\subsubsection*{Te Bewijzen}
+De rijruimte van $A$ is het orthogonaal complement van de nulruimte van $A$.
+
+\subsubsection*{Bewijs}
+\begin{proof}
+De nulruimte van $A$ bestaat uit vectoren $x$ zodat $Ax = \vec{0}$ geldt.
+\[
+A \cdot x = 
+\begin{pmatrix}
+a_1 x\\a_2 x\\\vdots\\a_m x  
+\end{pmatrix}
+=
+\vec{0}
+\]
+Dit betekent dat het inproduct van elke rij van $A$ met $x$ nul is. Dit houdt precies in dat de rijruimte van $A$ het orthogonaal complement is van de nulruimte van $A$.
 \end{proof}
 
 

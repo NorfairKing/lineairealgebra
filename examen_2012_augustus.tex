@@ -82,8 +82,34 @@ dim(Im(L^T)) = \mathbb{R}^n - dim(Ker(L))
 \[
 dim(Im(L^T)) = dim(Im(L))
 \]
-\subsection{Vraag 5}
 
+\subsection{Vraag 5}
+We rijreduceren eerst volgende matrix om de dimensie van $vct(D)$ te vinden.
+\[
+\begin{pmatrix}
+1 & 0 & 2012 & 7\\
+0 & a & 0 & 0\\
+a & 0 & a & 3\\
+0 & a^2 & 2011 & 1\\
+2 & a & a-9 & 5
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & 2012 & 7\\
+0 & a & 0 & 0\\
+a & 0 & a & 3\\
+0 & 0 & 2011 & 1\\
+2 & 0 & a-9 & 5
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & 2012 & 7\\
+0 & a & 0 & 0\\
+0 & 0 & -2011a & 3\\
+0 & 0 & 2011 & 1\\
+0 & 0 & a-4033 & -9
+\end{pmatrix}
+\]
 
 \subsection{Vraag 6}
 
