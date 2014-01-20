@@ -1189,20 +1189,42 @@ Omdat de rang van $A$ gelijk is aan die van $[A B]$, is de kolomruimte van $A$ g
 
 
 \subsection{Oefening 26}
+\[
+A = 
+\begin{pmatrix}
+2 & 2 & -6 & 8\\
+3 & 3 & -9 & 8\\
+1 & 1 & x & 4\\
+\end{pmatrix}
+\rightarrow
+A'= 
+\begin{pmatrix}
+1 & 1 & -3 & 4\\
+0 & 0 & x+3 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}
+\]
+\subsubsection*{Geval 1: $x=-3$}
+\[
+A'= 
+\begin{pmatrix}
+1 & 1 & -3 & 4\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}
+\]
+De rang van $A$ is $2$.
 
-Volgens de 2 stellingen $4.40$ en $4.41$ nxn matrix is uitgesloten(4.42)
-
-gegeven: $ A ^ {m x n} $
-
-1) Volgens 4.40: 
-
-$rang(A) = n $ als rijen lineair onafhankelijk zijn.
-Deze zijn vrij indien $x \neq -2 \wedge -3$ Hierdoor zouden de rijen immers lineair afhankelijk worden! 
-
-2) volgens 4.41
-
-$rang(A) = m $ als de kolommen lineair onafhankelijk zijn. De eerste 2 rijen zijn duidelijk niet vrij, dus kunnen we dit geval uitsluiten.
-
+\subsubsection*{Geval 2: $x\neq-3$}
+\[
+A'= 
+\begin{pmatrix}
+1 & 1 & -3 & 4\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}
+\]
+De rang van $A$ is $3$.
 
 \section{Opdrachten}
 
