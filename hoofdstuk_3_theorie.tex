@@ -265,8 +265,8 @@ W = \sum_i^k U_i
 \end{enumerate}
 
 \subsubsection*{Bewijs}
-\begin{proof}
-\begin{enumerate}7
+\begin{proof}~
+\begin{enumerate}
 \item
 \emph{$\Rightarrow$}\\
 Stel dat $W = U_1 \oplus U_2$.
@@ -274,7 +274,8 @@ Er bestaan dan voor elke $w\in W$ twee vectoren $u_1\in U_1$ en $u_2 \in U_2$.
 Dit betekent dat $W = U_1+U_2$. We bewijzen nu dat $U_1\cap U_2 = \{0\}$.
 Stel dat $v \neq 0 \in U_1\cap U_2$, dan kunnen we $v$ schrijven als $v+\vec{0}=\vec{0}+v$.
 Dit zou betekenen dat $W$ geen directe som meer is.
-$\vec{0}$ moet dus wel het enige element zijn in $U_1\cap U_2$.\\\\
+$\vec{0}$ moet dus wel het enige element zijn in $U_1\cap U_2$.\\
+
 \emph{$\Leftarrow$}\\
 Stel dat $U_1\cap U_2 = \{\vec{0}\}$, dan tonen we nu aan dat $W = U_1+U_2$ een directe som is.
 Noem $w$ een vector in $W$. $w$ kan dan geschreven worden als volgt.
@@ -301,7 +302,7 @@ Het eerste deel geldt omwille van de inductiehypothese, het tweede deel geldt om
 \end{proof}
 
 
-\subsection{Propositie 3.26 p 101}
+\subsection{Propositie 3.26 p 101} %TODO het bewijs in de cursus bewijst iets anders
 \label{3.26}
 Gegeven een verzameling lineair onafhankelijke vectoren $D= \{v_1,v_2,...,v_n\}$.
 
@@ -437,7 +438,7 @@ Zij $(\mathbb{R},V,+)$ een vectorruimte met dimensie $n$.
 \item
 We kiezen een willekeurige vrije deelverzameling $D$ van $V$ met $k$ elementen. Nu geldt $k\le n$\footnote{Zie Gevolg 3.33 p 105}. Ofwel is $D$ voortbrengend, en dan moet $D$ niet uitgebreid worden. Ofwel bestaat er een vector $v\in V$ die niet in $D$ zit die geen lineaire combinatie is van vectoren uit $D$ want $D$ is niet voortbrengend. $D \cup \{v\}$ is vrij want $v$ is geen lineaire combinatie van vectoren in $D$. Dit proces kunnen we herhalen tot de resulterende deelverzameling een basis is.
 \item
-We kiezen een willekeurige voortbrengende deelverzameling $S$ van $D$. Te bewijzen is nu dat er een deelverzameling van $S$ bestaat die een basis is van $V$. We schappen eerst alle nulvectoren uit $S$. $S$ is dan nog steeds voortbrengend. We overlopen nu in volgorde de vectoren in $S$. We schappen elke vector die lineair afhankelijk is van de vorige vectoren. De overblijvende verzameling $B$ is een basis van $V$.\\
+We kiezen een willekeurige voortbrengende deelverzameling $S$ van $D$. Te bewijzen is nu dat er een deelverzameling van $S$ bestaat die een basis is van $V$. We schrappen eerst alle nulvectoren uit $S$. $S$ is dan nog steeds voortbrengend. We overlopen nu in volgorde de vectoren in $S$. We schappen elke vector die lineair afhankelijk is van de vorige vectoren. De overblijvende verzameling $B$ is een basis van $V$.\\
 \emph{$B$ is voortbrengend:}\\
 Elke vector in $S$ is een lineaire combinatie van $B$ en $S$ is voortbrengend. Bijgevolg is $B$ ook voortbrengend.\\
 \emph{$B$ is vrij:}\\
@@ -521,8 +522,8 @@ Zij $(\mathbb{R},V,+)$ een eindig dimensionale vectorruimte en $U$ een deelruimt
 
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
-\item $U$ is eindig voortgebracht en $dimU \le dimV$
-\item $dimU=dimV \Leftrightarrow U = V$
+\item $U$ is eindig voortgebracht en $\dim U \le \dim V$
+\item $\dim U=\dim V \Leftrightarrow U = V$
 \end{enumerate}
 
 \subsubsection*{Bewijs}
@@ -530,28 +531,28 @@ Zij $(\mathbb{R},V,+)$ een eindig dimensionale vectorruimte en $U$ een deelruimt
 Dit bewijs wordt graag gevraagd en staat niet volledig in het boek.
 \begin{enumerate}
 \item
-Als $U=\{\vec{0}\}$ geldt, dan wordt $U$ eindig voortgebracht door de basis: $\emptyset$\footnote{Niet $\{\vec{0}\}$! want $\vec{0}$ is lineair afhankelijk van zichzelf.}. $dimU = 0$ bijgevolg geldt zeker dat $dimU\le dimV$ want dimensies zijn nooit negatief.\\
-Als $U \neq \{\vec{0}\}$, dan kiezen we een vector $u_1 \in U$. We kunnen nu telkens \'e\'en lineair onafhankelijke vector $u_i$ toevoegen tot we een maximaal vrij deel $\beta$ van $U$ bekomen. Dit maximaal vrij deel is een basis van $U$ en bevat bijgevolg $dimU$ vectoren. $\beta$ brengt $U$ voort en het aantal vectoren in $\beta$ is eindig omdat de vectoren uit $\beta$ ook lineair onafhankelijk moeten zijn in $V$. $U$ wordt dus minimaal voortgebracht door $\beta$ en $dimU \le dimV$.
+Als $U=\{\vec{0}\}$ geldt, dan wordt $U$ eindig voortgebracht door de basis: $\emptyset$\footnote{Niet $\{\vec{0}\}$! want $\vec{0}$ is lineair afhankelijk van zichzelf.}. $\dim U = 0$ bijgevolg geldt zeker dat $\dim U\le \dim V$ want dimensies zijn nooit negatief.\\
+Als $U \neq \{\vec{0}\}$, dan kiezen we een vector $u_1 \in U$. We kunnen nu telkens \'e\'en lineair onafhankelijke vector $u_i$ toevoegen tot we een maximaal vrij deel $\beta$ van $U$ bekomen. Dit maximaal vrij deel is een basis van $U$ en bevat bijgevolg $\dim U$ vectoren. $\beta$ brengt $U$ voort en het aantal vectoren in $\beta$ is eindig omdat de vectoren uit $\beta$ ook lineair onafhankelijk moeten zijn in $V$. $U$ wordt dus minimaal voortgebracht door $\beta$ en $\dim U \le \dim V$.
 \item
 \begin{itemize}
 \item $\Rightarrow$\\
-In het vorige deel van dit bewijs hebben we bewezen dat $U$ eindig voortgebracht wordt door een basis $\beta$ met $dimU$ elementen. Wanneer we nu weten dat $dimU=dimW$, dan volgt daaruit dat de basis $\beta$ van $U$ dus ook een basis is van $W$ omdat $U$ een deelruimte is van $V$. Omdat $U$ en $V$ dezelfde basis hebben, geldt $U = V$.
+In het vorige deel van dit bewijs hebben we bewezen dat $U$ eindig voortgebracht wordt door een basis $\beta$ met $\dim U$ elementen. Wanneer we nu weten dat $\dim U=\dim W$, dan volgt daaruit dat de basis $\beta$ van $U$ dus ook een basis is van $W$ omdat $U$ een deelruimte is van $V$. Omdat $U$ en $V$ dezelfde basis hebben, geldt $U = V$.
 \item $\Leftarrow$\\
-Omdat $U$ gelijk is aan $V$ heeft $U$ dezelfde basis als $V$. In twee dezelfde verzamelingen zitten evenveel elementen, dus $dimU=dimV$.
+Omdat $U$ gelijk is aan $V$ heeft $U$ dezelfde basis als $V$. In twee dezelfde verzamelingen zitten evenveel elementen, dus $\dim U=\dim V$.
 \end{itemize}
 \end{enumerate}
 \end{proof}
 
 
-\subsection{Voorbeeld 3.44 p 110}
+\subsection{Voorbeeld 3.44 p 110} %TODO dit zijn basissen voor ruimtes met n=1, niet n=2 (de eerste 2 voorbeelden heb ik al aangepast)
 \label{3.44}
 \begin{enumerate}
 \item
 \[
-\beta_1 = \{1,x\}
+\beta_1 = \{1,x,x^2\}
 \]
 \[
-\beta_2 = \{1,x+1\}
+\beta_2 = \{1,x+1,x^2+x+1\}
 \]
 \[
 \beta_3 = \{2x+1,x+2\}
@@ -601,12 +602,12 @@ Dit is een lineaire combinatie van de basisvectoren van $V$. Omdat de basis vrij
 \subsubsection*{Te Bewijzen}
 Als de vectorruimte V eindigdimensionaal is, dan geldt voor willekeurige deelruimten $U$ en $W$ van $V$ het volgende.
 \[
-dim(U+W) + dim(U\cap W) = dim(U) + dim(W)
+\dim(U+W) + \dim(U\cap W) = \dim(U) + \dim(W)
 \]
 
 \subsubsection*{Bewijs}
 We willen een verband vinden tussen de dimensies van al deze verzamelingen ($(U+W)$, $U\cap W$, $U$ en $W$). Om dit te doen beginnen we met een basis van de kleinste verzameling ($U \cap W$). Daarna breiden we deze basis uit tot een basis van $U$, tot een basis van $W$ en tot een basis van $(U + W)$. De dimensie van een vectorruimte is gelijk aan het aantal elementen in de basis ervan.\footnote{Definitie 3.35 p 106}\\\\
-Zij $dim(U) = r$, $dim(W)=s$ en $dim(U\cap W) = t$.
+Zij $\dim(U) = r$, $\dim(W)=s$ en $\dim(U\cap W) = t$.
 \begin{proof}
 Ingewikkeld bewijs.\\
 $U$ en $W$ zijn beide een deelruimte van $V$, dus $(U \cap W)$ is ook een deelruimte van $V$ \footnote{Propositie 3.14 p 96}. Omdat $(U \cap W)$ een deelruimte is van zowel $U$ als $W$, zal $t \le r$ en $t \le s$. We nemen een basis van $(U\cap W)$ en noemen deze $\beta = \{v_1,...,v_n\}$. Om $\beta$ uit te breiden tot een basis $\beta_U$ van $U$ moet we $r-t$ vectoren toe voegen. Om $\beta$ uit te breiden tot een basis $\beta_W$ van $W$ moeten we $s-t$ vectoren toevoegen.\\
@@ -619,7 +620,7 @@ Neem een willekeurige lineaire combinatie van de basisvectoren van $(U+W)$.
 0 = \sum_{i=1}^tx_iv_i + \sum_{j=t+1}^ry_ju_j + \sum_{k=t+1}^sz_kw_k
 \]
 Om te bewijzen dat de $\beta_U \cup \beta_W$ vrij is, moeten we bewijzen dat alle $v_i,y_j,z_k$ nul zijn.\\
-De vector $\sum_{k=t+1}^sz_kw_k \in W$ zit in $W$ omdat alle $w_k \in W$. Bovendien kan deze vector geschreven worden als volgt:
+De vector $\sum_{k=t+1}^sz_kw_k$ zit in $W$ omdat alle $w_k \in W$. Bovendien kan deze vector geschreven worden als volgt:
 \[
 \sum_{k=t+1}^sz_kw_k = -\sum_{i=1}^tx_iv_i - \sum_{j=t+1}^ry_ju_j
 \]
@@ -668,7 +669,7 @@ Nu is aangetoond dat $\beta_U \cup \beta_W$ voortbrengend is.
 \\\\ 
 We weten nu in combinatie met het voorgaande bewijs dat $\beta_U \cup \beta_W$ een basis is van $U+W$. De basis van $\beta_U \cup \beta_W$ bevat precies $(r-t)+(s-t)+t = r+s-t$ basisvectoren. Als we nu terug kijken naar de benaming van de dimensies van $U$, $W$ en $U\cap W$ zien we het volgende.
 \[
-dim(U+W) = r+s-t = dim(U) + dim(W) - dim(U \cap W)
+\dim(U+W) = r+s-t = \dim(U) + \dim(W) - \dim(U \cap W)
 \]
 \end{proof}
 
@@ -680,7 +681,7 @@ Zij $(\mathbb{R},V,+)$ een eindig dimensionale vectorruimte. Zij $U_1,...,U_k$ d
 \subsubsection*{Te Bewijzen}
 $\bigcup_{i=1}^k\beta_i$ is een basis van $V$ en de volgende bewering geldt dus ook.
 \[
-dimV = \sum_{i=1}^kdimU_i
+\dim V = \sum_{i=1}^k\dim U_i
 \]
 
 \subsubsection*{Bewijs}
@@ -703,7 +704,7 @@ Elk van de vectoren uit de deelruimte kan geschreven worden als een lineaire com
 \end{itemize}
 Omdat de doorsnede van elke twee $U_i$ gelijk is aan $\{\vec{0}\}$ is de doorsnede van elke twee $\beta_i$ leeg. Bijgevolg geldt dat $\#(\bigcup_{i=1}^k\beta_i) = \sum_{i=1}^k\#(\beta_i)$. Hieruit volgt direct het te bewijzen.
 \[
-dimV = \sum_{i=1}^kdimU_i
+\dim V = \sum_{i=1}^k\dim U_i
 \]
 \end{proof}
 
@@ -717,7 +718,7 @@ Elke deelruimte van $V$ heeft een complementaire deelruimte.
 
 \subsubsection*{Bewijs}
 \begin{proof}
-Zij $U$ een deelruimte van $V$ met basis $\beta_U = \{u_1,u_2,...,u_n)$. $U$ kan uitgebreid worden tot een basis van $V$ met vectoren $w_1,w_2,...,w_k$. Deze vectoren $w_i$ spannen dan $W$ op zodat de volgende bewering geldt.
+Zij $U$ een deelruimte van $V$ met basis $\beta_U = \{u_1,u_2,...,u_n)$. $\beta_U$ kan uitgebreid worden tot een basis van $V$ met vectoren $w_1,w_2,...,w_k$. Deze vectoren $w_i$ spannen dan $W$ op zodat de volgende bewering geldt.
 \[
 U \oplus W = V
 \]
@@ -747,7 +748,7 @@ R(A) = R(U)
 \]
 \item
 \[
-dimN(A) + dimR(A) = n
+\dim N(A) + \dim R(A) = n
 \]
 \end{enumerate}
 
@@ -765,8 +766,8 @@ N(A) = N(U)
 R(A) = R(U)
 \]
 \item
-$dimR(U)$ is precies gelijk aan het aantal niet-nulrijen in $U$.
-$dimN(U)$ is gelijk aan het aantal vrije variabelen van het stelsel $U\cdot X = \vec{0}$. Het aantal niet-vrije variabelen (niet-nulrijen) plus het aantal vrije variabelen is gelijk aan het totaal aantal variabelen.
+$\dim R(U)$ is precies gelijk aan het aantal niet-nulrijen in $U$.
+$\dim N(U)$ is gelijk aan het aantal vrije variabelen van het stelsel $U\cdot X = \vec{0}$. Het aantal niet-vrije variabelen (niet-nulrijen) plus het aantal vrije variabelen is gelijk aan het totaal aantal variabelen.
 \end{enumerate}
 \end{proof}
 

@@ -2,8 +2,6 @@
 
 *** TODO Opdracht 1.33 p 35
 
-*** TODO Oefening 2.10 p 80
-*** TODO Oefening 2.13 p 80
 *** TODO Oefening 2.16.a p 81
 *** TODO Oefening 2.16.c p 81
 *** TODO Oefening 2.18 p 81
@@ -22,9 +20,9 @@
 *** TODO Voorbeeld 3.6 p 91
 *** TODO Voorbeeld 3.13 p 95
 *** TODO Voorbeeld 3.58 p 118
-*** TODO Oefening 3.10 p 125
-*** TODO Oefening 3.11 p 125
-*** TODO Oefening 3.15 p 125
+*** TODO Oefening 3.2.h p 123
+*** TODO Oefening 3.2.k p 123
+*** TODO Oefening 3.2.m p 123
 *** TODO Oefening 3.17.c p 126
 *** TODO Oefening 3.18 p 126
 *** TODO Oefening 3.19.a p 126
@@ -38,9 +36,6 @@
 *** TODO Oefening 3.28.b p 128
 *** TODO Oefening 3.29 p 128
 *** TODO Oefening 3.32 p 128
-*** TODO Oefening 3.2.h p 123
-*** TODO Oefening 3.2.k p 123
-*** TODO Oefening 3.2.m p 123
 *** TODO Opdracht 3.48 p 113
 *** TODO Opdracht 3.55 p 116
 *** TODO Opdracht 3.64 p 123
