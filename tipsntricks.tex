@@ -494,9 +494,9 @@ L_{\alpha}^{\beta} =
 \label{specifieke_basissen_voor_lineaire_afbeelding}
 \subsection*{Generiek}
 \subsubsection*{Opgave}
-Zij $L: \mathbb{R}^n \rightarrow \mathbb{R}^m$ een lineaire afbeelding waarvan de matrix ten opzichte van de standaardbasissen $\epsilon_n$ en $\epsilon_m$ gelijk is aan $L_{\epsilon_n}^{\epsilon_m}$
+Zij $L: \mathbb{R}^m \rightarrow \mathbb{R}^n$ een lineaire afbeelding waarvan de matrix ten opzichte van de standaardbasissen $\epsilon_m$ en $\epsilon_n$ gelijk is aan $L_{\epsilon_m}^{\epsilon_n}$
 \[
-L_{\epsilon_n}^{\epsilon_m} =
+L_{\epsilon_m}^{\epsilon_n} =
 \begin{pmatrix}
 l_{11} & l_{12} & \cdots & l_{1m}\\
 l_{21} & l_{22} & \cdots & l_{2m}\\
@@ -504,17 +504,58 @@ l_{21} & l_{22} & \cdots & l_{2m}\\
 l_{n1} & l_{n2} & \cdots & l_{nm}\\
 \end{pmatrix}
 \]
-Bepaal basissen $\beta_n$ van $\mathbb{R}^n$ en $\beta_m$ van $\mathbb{R}^m$ zodat $L_{\beta_n}^{\beta_m}$ er als volgt uit ziet:
+Bepaal basissen $\beta_n$ van $\mathbb{R}^n$ en $\beta_m$ van $\mathbb{R}^m$ zodat $L_{\beta_m}^{\beta_n}$ er als volgt uit ziet:
 \[
-L_{\beta_n}^{\beta_m} = 
+L_{\beta_m}^{\beta_n} = 
 \begin{pmatrix}
 \mathbb{I}_r & O\\
 O & O\\
 \end{pmatrix}
 \]
-$r$ is hier de rang van $L$ en $O$ zijn blokmatrices van nullen zodat $L_{\beta_n}^{\beta_m}$ zinvolle afmetingen heeft.
+$r$ is hier de rang van $L$ en $O$ zijn blokmatrices van nullen zodat $L_{\beta_m}^{\beta_n}$ zinvolle afmetingen heeft.
 \subsubsection*{Oplossing}
-
+Allereerst berekenen we de rang van $L$. Dit kunnen we doen door $L$ te rijreduceren. Noem $L'$ de rijreductie van $L$. $L'$ ziet er dan als volgt uit.
+\[
+L' = 
+\begin{pmatrix}
+1 & 0 & \cdots & 0 & l'_{1,r+1} & \cdots & l'_{1,m}\\
+0 & 1 & \cdots & 0 & l'_{2,r+1} & \cdots & l'_{2,m}\\
+\vdots & \vdots & \ddots & \vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & 1 & l'_{r,r+1} & \cdots & l'_{r,m}\\
+0 & 0 & \cdots & 0 & 0 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & 0 & 0 & \cdots & 0\\
+\end{pmatrix}
+\]
+Hieruit kunnen we eenvoudigweg de kern van $L$ aflezen.
+\[
+Ker(L) = 
+\left\{
+\begin{pmatrix}
+-\sum_{i=1}^{m-r} \lambda_il'_{1,r+i}\\
+-\sum_{i=1}^{m-r} \lambda_il'_{2,r+i}\\
+\vdots\\
+-\sum_{i=1}^{m-r} \lambda_il'_{m,r+i}
+\end{pmatrix}
+\ |\ 
+\lambda_1,\lambda_2,...,\lambda_{m-r} \in \mathbb{R}
+\right\}
+\]
+We weten nu ook dat $L_{\beta_m}^{\beta_n}$ er als volgt uit ziet. $L_{\beta_m}^{\beta_n}$ is een $m\times n$ matrix met $\mathbb{I}_r$ linksboven.
+\[
+L_{\beta_m}^{\beta_n} = 
+\begin{pmatrix}
+1 & 0 & \cdots & 0 & 0 & \cdots & 0\\
+0 & 1 & \cdots & 0 & 0 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & 1 & 0 & \cdots & 0\\
+0 & 0 & \cdots & 0 & 0 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & 0 & 0 & \cdots & 0\\
+\end{pmatrix}
+\]
+We nemen eerst $r$ gemakkelijke vectoren uit $\mathbb{R}^m$ als basisvectoren $\beta_{m,1},...,\beta_{m,r}$ en beelden deze af op $r$ basisvectoren van $\mathbb{R}^n$, $L(\beta_{m,1}),...,L(\beta_{m,r}) = \beta_{n,1},...,\beta_{n,r}$. Zorg ervoor dat deze vectoren \emph{niet} in de kern van $L$ zitten en lineair onafhankelijk zijn.
+We kiezen nu nog $m-r$ lineair onafhankelijke vectoren uit $\mathbb{R}^m$ om de basis voor $\mathbb{R}^m$ compleet te maken. Tenslotte kiezen we nog $n-r$ lineair onafhankelijke vectoren uit de kern van $\mathbb{R}^n$ om de basis voor $\mathbb{R}^n$ compleet te maken.
 
 \subsection*{Voorbeeld}
 
