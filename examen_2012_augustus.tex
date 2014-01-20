@@ -3,4 +3,72 @@
 
 \section{Examen Augustus 2012}
 
+\subsection{Vraag 1 (Theorie)}
+Zie Stelling 3.49 p. 114 (\ref{3.49}).
+
+\subsection{Vraag 2 (Theorie)}
+Zie Stelling 5.18 p. 190 (\ref{5.18}).
+
+\subsection{Vraag 3}
+\[
+A^n + a_{n-1}A^{n-1} + ... + a_1A + a_0\mathbb{I}_n = 0
+\]
+\subsection*{(a)}
+\[
+A^n + a_{n-1}A^{n-1} + ... + a_1A + a_0\mathbb{I}_n = 0
+\]
+\begin{proof}
+Bewijs van een equivalentie.
+\[
+A(A^{n-1} + a_{n-1}A^{n-2} + ... + a_1\mathbb{I}_n) = -a_0\mathbb{I}_n
+\]
+\begin{itemize}
+\item $\Rightarrow$
+Stel $A$ is inverteerbaar en $a_0$ is \emph{wel} nul.
+\[
+A^{n-1} + a_{n-1}A^{n-2} + ... + a_2A + a_1\mathbb{I}_n = 0
+\]
+Maar $n$ is het kleinste getal waarvoor dit soort gelijkheid geldt, contradictie.
+
+\item $\Leftarrow$
+Stel $a_0 \neq 0$ en $A$ \emph{niet} inverteerbaar. $\det(A) = 0$
+\[
+\det(A(A^{n-1} + a_{n-1}A^{n-2} + ... + a_1\mathbb{I}_n)) = \det(-a_0\mathbb{I}_n)
+\]
+\[
+\det(A)\det((A^{n-1} + a_{n-1}A^{n-2} + ... + a_1\mathbb{I}_n)) = \det(-a_0\mathbb{I}_n)
+\]
+\[
+0 = -a_0
+\]
+Contradictie.
+\end{itemize}
+\end{proof}
+
+\subsubsection*{(b)}
+\[
+(A^n + a_{n-1}A^{n-1} + ... + a_1A + a_0\mathbb{I}_n)v = 0
+\]
+\[
+A^nv + a_{n-1}A^{n-1}v + ... + a_1Av + a_0\mathbb{I}_nv = 0
+\]
+\[
+\lambda^nv + a_{n-1}\lambda^{n-1}v + ... + a_1\lambda v + a_0v = 0
+\]
+\[
+(\lambda^n + a_{n-1}\lambda^{n-1} + ... + a_1\lambda + a_0)v = 0
+\]
+\[
+\lambda^n + a_{n-1}\lambda^{n-1} + ... + a_1\lambda + a_0 = 0
+\]
+$\lambda$, een eigenwaarde van $A$, voldoet aan de vergelijking.
+
+\subsection{Vraag 4}
+
+
+\subsection{Vraag 5}
+
+
+\subsection{Vraag 6}
+
 \end{document}
