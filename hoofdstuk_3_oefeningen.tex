@@ -46,175 +46,167 @@ Dit lijkt te kloppen.
 
 \subsection{Oefening 2}
 \subsubsection*{a)}
-Deze verzameling vormt de unie van de drie vlakken rond de assen. Dit is geen deelruimte want de optelling is niet intern.\\
-\underline{Tegenvoorbeeld:}\\
+Deze verzameling vormt de unie van de drie vlakken rond de assen. Dit is geen deelruimte want de optelling is niet intern. Tegenvoorbeeld:
 \[
 (1,0,0) + (0,1,1) = (1,1,1) \not \in W_1
 \]
 \subsubsection*{b)}
-$W_2$ is geen deelruimte van $\mathbb{R}^{3}$.\\
-\underline{Tegenvoorbeeld:}\\
-$x = (3, 4, 5) \in W_2$ en $y = (2, 2, \sqrt{8}) \in W_2$ maar $x + y = (5, 6, 5 + \sqrt{8}) \not \in W_2$
+$W_2$ is geen deelruimte van $\mathbb{R}^{3}$. Tegenvoorbeeld:
+\[
+x = (1,0,1) \in W_2 \text{ en } y = (0,1,1) \in W_2 \text{ maar } x + y = (1,1,2) \not \in W_2
+\]
 
 \subsubsection*{c)}
 $W_3$ is geen deelruimte van $R^3$ want de lineaire combinatie is niet intern.\\
-Tegenvoorbeeld: Stel $\lambda = \pi$ en $v = (1,0,0) \in \mathbb{Q}$.
+Tegenvoorbeeld: stel $\lambda = \pi$ en $v = (1,0,0) \in \mathbb{Q}$.
 \[
 \lambda v = \pi (1,0,0) = (\pi,0,0)
 \]
 $\pi$ is geen element van $\mathbb{Q}$.
 
 \subsubsection*{d)}
-$W_4$ is geen deelruimte van $R^3$. Intu\"itief is dit makkelijk te zien omdat $W_4$ precies een sfeer beschrijft.
-Tegenvoorbeeld: Stel $v_1 = (1,0,0)$ en $v_2 =(1,0,0)$.
+$W_4$ is geen deelruimte van $\mathbb{R}^3$. Intu\"itief is dit makkelijk te zien omdat $W_4$ precies een sfeer beschrijft.\\
+Tegenvoorbeeld: stel $v_1 = (1,0,0)$ en $v_2 =(1,0,0)$.
 \[
 v_1 + v_2 = (2,0,0) \not \in W_4
 \]
 
 \subsubsection*{e)}
-waar\\
-*) $0 \in W_5$ \\
-*) $A,B \in W_5 \longmapsto A+B \in W_5$ \\
-$ \sum\limits_{i=1,j=1}^a (A+B)_{ij} = \sum\limits_{i=1,j=1}^a A_{ij} + \sum\limits_{i=1,j=1}^a B_{ij} = 0+0 = 0 $ \\
-*) $ A \in W_5, \lambda \in R \longmapsto \lambda A \in W_5$ \\
-$ \sum\limits_{i=1,j=1}^a (\lambda A)_{ij} = \lambda \sum\limits_{i=1,j=1}^a A_{ij} = \lambda 0 = 0$
-
-
+$W_5$ is een deelruimte van $\mathbb{R}^{3 \times 3}$. Ze moet aan de 3 eigenschappen voldoen.
+\begin{itemize}
+\item De nulmatrix $O \in W_5$
+\item $A,B \in W_5 \longrightarrow A+B \in W_5$
+\[
+\sum\limits_{i=1,j=1}^a (A+B)_{ij} = \sum\limits_{i=1,j=1}^a A_{ij} + \sum\limits_{i=1,j=1}^a B_{ij} = 0+0 = 0
+\]
+\item $ A \in W_5, \lambda \in \mathbb{R} \longrightarrow \lambda A \in W_5$
+\[
+\sum\limits_{i=1,j=1}^a (\lambda A)_{ij} = \lambda \sum\limits_{i=1,j=1}^a A_{ij} = \lambda 0 = 0
+\]
+\end{itemize}
 \subsubsection*{f)}
-$W_6$ is geen deelruimte van $R^{3}$ want de volgende eigenschap geldt niet: (zie p 94)
-\[
-\forall x,y\in W_6,\;\forall r,s\in\mathbb{R}:\; r\cdot x+s\cdot y\in U
-\]
-Tegenvoorbeeld:
-stel $x=y$, $r=1$ en $s=-1$.\\
-Concreet:
-\[
-x = I_3
-\]
+$W_6$ is geen deelruimte van $\mathbb{R}^{3}$ omdat de nulmatrix $O \not \in W_6$ aangezien $\det(O) = 0$.
 
 \subsubsection*{g)}
-$W_7$ is een deelruimte van $\mathbb{R}^{3x3}$.\\
-\begin{proof} 
-
-1) $W_7$ bevat het nulelement. De nulmatrix is immers ook een symmetrische matrix. \\
-2) $ Symm(A1) + Symm(A2) = A3 $
-	and $A3 = \mathbb{R}^{3x3}$ \\
-3) $ \lambda \cdot Symm(A) = A2 $
-	and $ A2 = \mathbb{R}^{3x3}$
-
-Er is voldaan aan de drie eigenschappen.
-
-\end{proof}
-
+$W_7$ is een deelruimte van $\mathbb{R}^{3x3}$.
+\begin{itemize}
+\item De nulmatrix $O \in W_7$, de nulmatrix is immers ook een symmetrische matrix.
+\item De som van twee symmetrische matrices is ook een symmetrische matrix.
+\item Een symmetrische matrix vermenigvuldigen met een scalar geeft opnieuw een symmetrische matrix.
+\end{itemize}
 
 \subsubsection*{i)}
-$W_9$ is geen deelruimte van $R^{3\times 3}$. De optelling is namelijk niet intern.
+$W_9$ is geen deelruimte van $\mathbb{R}^{3\times 3}$. De optelling is namelijk niet intern.
 \[
 (0,1,0) + (1,0,0) = (1,1,0) \not \in W_9
 \]
 
 \subsubsection*{j)}
-$W_{10}$ is geen deelruimte van $R\rightarrow R$ want het neutraal element van $R\rightarrow R$  zit niet in $W_{10}$.
+$W_{10}$ is geen deelruimte van $f:\mathbb{R}\rightarrow\mathbb{R}$.\\
+Tegenvoorbeeld: we maken een functie $g \in W_{10}$ met $g : \mathbb{R}\rightarrow\mathbb{R} : x \mapsto e^x$.
+\[
+(g+g)(0) = g(0) + g(0) = 1+1 = 2 \Longrightarrow (g+g) \not \in W_{10}
+\]
+
 \subsubsection*{l)}
-Neem $f, g \in W_{12}$ en $\lambda, \mu \in \mathbb{R}$ willekeurig.\\
-Omdat $f$ en $g$ integreerbaar zijn, is $\lambda f + \mu g$ integreerbaar.
+$W_{12}$ is een deelruimte van $\mathbb{R}^{3\times 3}$.\\
+Het is duidelijk dat $0 \in W_{12}$.\\
+Neem $f, g \in W_{12}$ en $\lambda, \mu \in \mathbb{R}$ willekeurig. Omdat $f$ en $g$ integreerbaar zijn, is $\lambda f + \mu g$ integreerbaar.
 \begin{align*}
   \int^1_0 (\lambda f + \mu g)(x)dx &= \int^1_0(\lambda f(x) + \mu g(x))dx\\
   &= \int^1_0 \lambda f(x)dx + \int^1_0 \mu g(x)dx\\
   &= \lambda \int^1_0 f(x)dx + \mu \int^1_0 g(x)dx = \lambda \cdot 0 + \mu \cdot 0 = 0
 \end{align*}
-$W_{12}$ is dus een deelruimte van $\mathbb{R} \rightarrow \mathbb{R}$.
 
 
 
-\subsection{Oefening 3}
-\subsubsection*{Optelling}
-\underline{Associativiteit:}\\
-Stel $r_1$, $r_2$, $r_3$ willekeurige rijen met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$.\\
-Dan geldt
+\subsection{Oefening 3}% deze oplossing was fout, deze versie is juist
+\textit{Gegeven:}
+\[
+V = \left\{ (x_n)_{n \in \mathbb{N}} \ \middle|\ x_{n+2} = x_{n+1} + x_n \ ,\ \forall n \in \mathbb{N} \right\}
+\]
+\textit{Te bewijzen:}\\
+We moeten aantonen dat $V$ een vectorruimte is. Dit kunnen we het makkelijkst doen door te bewijzen dat $V$ een deelruimte is van alle rijen.
+\begin{proof}
+We gaan de 3 eigenschappen van een deelruimte na.
+\begin{itemize}
+\item $0 \in V$
+\item Zij $x = (x_n)_{n \in \mathbb{N}} \in V$ en $y = (y_n)_{n \in \mathbb{N}} \in V$. We controleren of $(x+y) \in V$.\\
+Voor alle $n \in \mathbb{N}$ geldt:
 \begin{align*}
-    (r_1 + r_2) + r_3 &= (a_1 + b_1) + c_1 , (a_2 + b_2) + c_2 , ... , (a_n + b_n)+ c_n\\
-    &= a_1 + b_1 + c_1, a_2 + b_2 + c_2, ... , a_n + b_n + c_n\\
-    &= a_1 + (b_1 + c_1), a_2 + (b_2 + c_2), ..., a_n + (b_n + c_n)
+(x+y)_{n+2}
+&= x_{n+2} + y_{n+2} \\
+&= x_{n+1} + x_n + y_{n+1} + y_n \\
+&= (x_{n+1} + y_{n+1}) + (x_n + y_n) \\
+&= (x+y)_{n+1} + (x+y)_{n+1}
 \end{align*}
-\underline{Neutraal element:}\\
-We nemen als neutraal element de nulrij 0, met $x_1 = 0, x_2 = 0$ . 
-Door de differentievergelijking is ieder volgend element ook nul.\\
-Hierdoor geldt dan voor een willekeurige rij r
+\item Zij $x = (x_n)_{n \in \mathbb{N}} \in V$ en $\lambda \in \mathbb{R}$. We controleren of $\lambda x \in V$.\\
+Voor alle $n \in \mathbb{N}$ geldt:
 \begin{align*}
-  r + 0 &= a_1 + 0, a_2 + 0, ..., a_n + 0\\
-  &= a_1, a_2, ..., a_n\\
-  &= r\\
-  &= 0 + a_1, 0 + a_2, ..., 0 + a_n\\
-  &= 0 + r
+(\lambda x)_{n+2}
+&= \lambda \cdot x_{n+2} \\
+&= \lambda \cdot x_{n+1} + \lambda \cdot x_n \\
+&= (\lambda x)_{n+1} + (\lambda x)_n
 \end{align*}
-\underline{Tegengesteld element:}\\
-Als er een rij $r$ bestaat met $x_1 = a_1$, $x_2 = a_2$, dan kiezen we als tegengesteld element de rij $r'$ met $x_1 = -a_1$ en $x_2 = -a_2$.\\
-Hierdoor geldt dan
-\begin{align*}
-    r + r' &= a_1 - a_1, a_2 - a_2, ...,a_n - a_n\\
-    &= 0, 0, ..., 0\\
-    &= -a_1 + a_1, -a_2 + a_2, ..., -a_n + a_n\\
-    &= r' + r
-\end{align*}
-\underline{Commutativiteit:}\\
-Stel $r_1$, $r_2$ willekeurige rijen met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$.\\
-Dan geldt
-\begin{align*}
-    r_1 + r_2 &= a_1 + b_1, a_2 + b_2, ..., a_n + b_n\\
-    &= b_1 + a_1, b_2 + a_2, ..., b_n + a_n\\
-    &= r_2 + r_1
-\end{align*}
-\subsubsection*{Scalaire vermenigvuldiging}
-\underline{Distributiviteit-1:}\\
-Stel $r_1$, $r_2$ willekeurige rijen met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$, en een willekeurige $\lambda \in \mathbb{R}$.
-\begin{align*}
-    \lambda \cdot(r_1 + r_2) &= \lambda (a_1 + b_1), \lambda (a_2 + b_2), ..., \lambda (a_n + b_n)\\
-    &= \lambda a_1 + \lambda b_1, \lambda a_2 + \lambda b_2, ..., \lambda a_n + \lambda b_n\\
-    &= \lambda \cdot r_1 + \lambda \cdot r_2
-\end{align*}
-\underline{Distributiviteit-2:}\\
-Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$, en een willekeurige $\lambda_1 , \lambda_2 \in \mathbb{R}$.
-\begin{align*}
-    (\lambda_1 + \lambda_2) \cdot r &= (\lambda_1 + \lambda_2) a_1, (\lambda_1 + \lambda_2) a_2, ..., (\lambda_1 + \lambda_2) a_n\\
-    &= \lambda_1 a_1 + \lambda_2 a_1, \lambda_1 a_2 + \lambda_2 a_2, ..., \lambda_1 a_n + \lambda_2 a_n\\
-    &= \lambda_1 \cdot r + \lambda_2 \cdot r
-\end{align*}
-\underline{Gemengde associativiteit:}\\
-Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$, en een willekeurige $\lambda_1 , \lambda_2 \in \mathbb{R}$.
-\begin{align*}
-    \lambda_1 \cdot (\lambda_2 \cdot r) &= \lambda_1 \cdot (\lambda_2 a_1), \lambda_1 \cdot (\lambda_2 a_2), ..., \lambda_1 \cdot (\lambda_2 a_n)\\
-    &= (\lambda_1 \cdot \lambda_2) a_1, (\lambda_1 \cdot \lambda_2) a_2, ..., (\lambda_1 \cdot \lambda_2) a_n\\
-    &= (\lambda_1 \cdot \lambda_2) \cdot r
-\end{align*}
-\underline{Co\"effici\"ent 1:}\\
-Stel $r$ een willekeurige rij met differentievergelijking $x_{n + 2} = x_{n + 1} + x_n$.
-\begin{align*}
-     1 \cdot r &= 1 \cdot a_1, 1 \cdot a_2, ..., 1 \cdot a_n\\
-     &= a_1, a_2, ..., a_n\\
-     &= r
-\end{align*}
+\end{itemize}
+\end{proof}
 
-\subsection{Oefening 4}
-Welke oef uit de definitie van een vectorruimte zijn voldaan? \\
-1. De optelling is inwendig en overal bepaald, ja \\
-2. De optelling is associatief,	ja \\
-3. Er is een neutr element, ja \\
-4. Elk element heeft een tegeng element, ja \\
-5. De opt is comm, nee \\
-
-1. Distr-1, \\
-2. Distr-2, ja \\
-3. gemeng asso, ja\\
-4. nee
+\subsection{Oefening 4}% deze oplossing was fout, deze versie is juist
+\underline{Associativiteit:} niet voldaan.\\
+Neem $n=2$ en willekeurige $v,w \in \mathbb{R}^n$ en een willekeurige $x \in \mathbb{R}^n\backslash\{0\}$.
+\begin{align*}
+& (v \oplus w) \oplus x = (v-w) \oplus x = (v - w) - x = v - w - x \\
+& v \oplus (w \oplus x) = v \oplus (w-x) = v - (w-x) = v - w + x
+\end{align*}
+\underline{Neutraal element:} niet voldaan.\\
+Stel $e \in \mathbb{R}^n$ is een neutraal element: $e \oplus e = e-e = 0$.
+\[
+e \oplus (1,0,\ldots,0)
+= (0,0,\ldots,0) - (1,0,\ldots,0) = (-1,0,\ldots,0)
+\neq (1,0,\ldots,0)
+\]
+\underline{Tegengesteld element:} niet voldaan.\\
+Niet gedefinieerd.\\\\
+\underline{Commutativiteit:} niet voldaan.
+\begin{align*}
+&0 \oplus v
+= (0,0,\ldots,0) \oplus (1,0,\ldots,0) = (-1,0,\ldots,0) \\
+&v \oplus 0
+= (1,0,\ldots,0) \oplus (1,0,\ldots,0) = (1,0,\ldots,0)
+\end{align*}
+\underline{Distributiviteit-1:} wel voldaan.\\
+Zij willekeurige $v,w \in \mathbb{R}^n$ en $\lambda \in \mathbb{R}$.
+\begin{align*}
+\lambda \cdot (v \oplus w)
+&= \lambda \cdot (v-w) = -\lambda(v-w) = -\lambda v + \lambda w \\
+&= -\lambda(v \oplus w) = -\lambda(v-w) = -\lambda v + \lambda w
+\end{align*}
+\underline{Distributiviteit-2:} niet voldaan.
+\begin{align*}
+(1+1) \cdot (1,0,\ldots,0)
+&= 2 \cdot (1,0,\ldots,0) = -2 (1,0,\ldots,0) = (-2,0,\ldots,0) \\
+&= (-1,0,\ldots,0) \oplus (-1,0,\ldots,0) = (-1,0,\ldots,0) - (-1,0,\ldots,0) = (0,0,\ldots,0)
+\end{align*}
+\underline{Gemengde associativiteit:} niet voldaan.\\
+Zij $v = (1,0,\ldots,0)$ en $\times$ de vermenigvuldiging tussen 2 scalars.
+\begin{align*}
+&(1 \times 1) \cdot v = 1 \cdot v = -v \\
+&1 \cdot (1 \cdot v) = - (1 \cdot v) = -(-v) = v
+\end{align*}
+\underline{Co\"effici\"ent 1:} niet voldaan.\\
+Zij $v = (1,0,\ldots,0)$.
+\[
+1 \cdot v = -v \neq v
+\]
 
 \subsection{Oefening 5}
-Nee, $W$ is een deelruimte van $R[X]_{\le n}$ als $n\ge 1$.\\
-\textbf{Tegenvoorbeeld: }\\Neem $f_1=x^2+x-3$ en neem $f_2=-x^2+x+3$.
-Als we nu $f_1+f_2$ is dit geen veelterm meer van graad 2 maar van graad 1, het is dus geen deelruimte.
-\cite{Tijl}
-
-
+Nee, $W$ is geen deelruimte van $R[X]_{\le n}$ als $n\ge 1$. Tegenvoorbeeld:\\
+We defini\"eren $f \in W$ en $g \in W$ en tonen aan dat $(f+g) \not \in W$.
+\begin{align*}
+&f = x^n \\
+&g = -x^n + 1 \\
+&f+g = x^n - x^n + 1 = 1
+\end{align*}
 
 \subsection{Oefening 6}
 \subsubsection*{Gegeven}
@@ -224,15 +216,10 @@ $U$ en $W$ zijn deelruimten van een vectorruimte $(\mathbb{R},V,+)$.
 U \cup W \text{ is een deelruimte van }V \Leftrightarrow U \subset W \vee W \subset U
 \]
 \subsubsection*{Bewijs}
-\begin{proof} Samengesteld bewijs.
-\\Deel 1: $(\Rightarrow)$
-\\ Te bewijzen:
-\[
-U \cup W \text{ is een deelruimte van }V \Rightarrow U \subset W \vee W \subset U
-\]
-Bewijs uit het ongerijmde.
-\\Stel dat $\neg(U \subset W \wedge W \subset U)$.
-\\Dit is equivalent met $U \not\subset W \wedge W \not\subset U$.
+\begin{proof} Samengesteld bewijs.\\
+$\Longrightarrow$ (bewijs uit het ongerijmde)\\ %TODO dit kan simpeler en sneller
+Stel dat $\neg(U \subset W \wedge W \subset U)$.\\
+Dit is equivalent met $U \not\subset W \wedge W \not\subset U$.
 Vanuit de definitie van deelverzameling betekent deze bewering het volgende.
 \[
 (\exists w': w' \in W \wedge w' \not\in U) \wedge (\exists u': u' \in U \wedge u' \not\in W) 
@@ -252,15 +239,10 @@ Als dit geldt voor elke $\lambda_1$ en $\lambda_2$, geldt het ook voor $\lambda_
 \[
 u' + w' \in U \cup W
 \]
-We weten dat dit niet klopt, want stel als $u' + w' \in U \cup W$ en $u' \in U$, dan $w' \in U$. Contradictie.
-\\Deel 2: $(\Leftarrow)$
-\\ Te bewijzen:
-\[
-U \cup W \text{ is een deelruimte van }V \Leftarrow U \subset W \vee W \subset U
-\]
-Direct bewijs.\\
-Stel $U \subset W$. (Het andere geval is volledig analoog)\\
-Als $U \subset W$, dan is $U\cup W = W$. Van $W$ is gegeven dat het een deelruimte is van $W$. Hiermee is bewezen dat $U\cup W$ een deelruimte is van $V$.6
+We weten dat dit niet klopt, want stel als $u' + w' \in U \cup W$ en $u' \in U$, dan $w' \in U$. Contradictie.\\\\
+$\Longleftarrow$ (direct bewijs)\\
+Stel $U \subset W$ (het geval waarbij $W \subset U$ is analoog).\\
+Er geldt dat $U\cup W = W$. Van $W$ is gegeven dat het een deelruimte is van $V$. Hiermee is bewezen dat $U\cup W$ een deelruimte is van $V$.
 \end{proof}
 
 \subsection{Oefening 7}
@@ -269,7 +251,7 @@ Dus:
 $$a(2,-1,3,2) + b(-1,1,1,-3) + c(1,1,9,-5) \overset{?}{=} (3,-1,0,-1)$$
 We gieten dit in een matrix:
 $$
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 2 & -1 & 1 &3\\
 -1 & 1 & 1 & -1\\
 3 & 1 &9 & 0\\
@@ -278,7 +260,7 @@ $$
 $$
 Door rijreductie verkrijgen we volgende matrix:
 $$
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1&0&2&0\\
 0&1&3&0\\
 0&0&0&1\\
@@ -288,7 +270,7 @@ $$
 Dit is een ongeldige matrix en dus bestaat er geen lineaire combinatie zodat de vector $d$ gevormd wordt. De vector behoort dus niet tot de deelruimte.
 
 \subsection{Oefening 8}
-We willen $p(X)$ opschrijven als lineaire combinatie van $p_1(X), p_2(X), p_3(X)$, dus $p(X) = \lambda_1 p_1(X) + \lambda_2 p_2(X) + \lambda_2 p_3(X)$.
+We willen $p(X)$ opschrijven als lineaire combinatie van $p_1(X)$, $p_2(X)$, $p_3(X)$, dus $p(X) = \lambda_1 p_1(X) + \lambda_2 p_2(X) + \lambda_2 p_3(X)$.
 Hiervoor lossen we het volgende stelsel op:
 \[
 \left\{
@@ -306,7 +288,7 @@ Dit vullen we in in een matrix, die we hierna oplossen m.b.v. rijreductie.
   2 & 5 & 8 & -3\\
   1 & 0 & -2 & 3
 \end{pmatrix}
-\rightarrow
+\longrightarrow
 \begin{pmatrix}[ccc|c]
   1 & 0 & 0 & -1\\
   0 & 1 & 0 & 3\\
@@ -315,58 +297,151 @@ Dit vullen we in in een matrix, die we hierna oplossen m.b.v. rijreductie.
 \]
 We resulteren dus dat $p(X) = - p_1(X) + 3 p_2(X) - 2 p_3(X)$.
 
-
 \subsection{Oefening 9}
-$$f(x)+g(x)-h(x)+0\cdot exp(x) = 0$$
+$$f(x)+g(x)-h(x)+0\cdot \exp(x) = 0$$
 $$1 - 1 + 0 = 0$$
-Dit is een lineaire combinatie waarbij niet alle co\"effici\"enten nul zijn en toch de nulvector als oplossing geeft. Hierdoor is
-$\{f,g,h,exp\}$ geen lineair onafhankelijke deelruimte.
+Dit is een lineaire combinatie waarbij niet alle co\"effici\"enten nul zijn en toch de nulvector als oplossing geeft. Hierdoor is $\{f,g,h,\exp\}$ geen lineair onafhankelijke deelruimte.
+
+\subsection{Oefening 10}
+We bepalen of een verzameling vrij is op 3 verschillende manieren. In (a) gebruiken we determinanten. In (b) werken we intu\"itief. In (c) zoeken we een oplossing van een homogeen stelsel.
+\subsubsection*{a)}
+\[
+\det
+\begin{pmatrix}
+1 &  2 &  1 \\
+2 & -1 &  7 \\
+0 &  1 & -1
+\end{pmatrix}
+= \det
+\begin{pmatrix}
+-1 &  7 \\
+ 1 & -1
+\end{pmatrix}
+- 2 \cdot \det
+\begin{pmatrix}
+2 &  2 \\
+1 & -1
+\end{pmatrix}
+= -6-2 \cdot (-3) = 0
+\]
+Deze verzameling is niet vrij omdat $\det(A) = 0$.
+
+\subsection*{b)}
+\[
+v_1+v_2 = 2 \cdot
+\begin{pmatrix}
+0 & 1 \\
+0 & 0
+\end{pmatrix}
+\text{ en }
+v_1 - v_2 = -2 \cdot
+\begin{pmatrix}
+1 & 0 \\
+0 & 0
+\end{pmatrix}
+\]
+Dus $\begin{pmatrix}
+1 & 0 \\
+0 & 0
+\end{pmatrix}$,
+$\begin{pmatrix}
+0 & 1 \\
+0 & 0
+\end{pmatrix}$,
+$\begin{pmatrix}
+0 & 0 \\
+1 & 0
+\end{pmatrix}$ en
+$\begin{pmatrix}
+0 & 0 \\
+0 & 1
+\end{pmatrix}$ zitten in de verzameling. Dus $\{v_1,v_2,v_3,v_4\}$ brengt de standaardbasis voort en is dus zelf ook een basis en dus ook vrij.
+\subsection*{c)}
+\[
+\begin{pmatrix}[ccc|c]
+1 &  0 &  1 & 0 \\
+2 & -1 & -1 & 0 \\
+0 &  3 &  2 & 0 \\
+0 &  1 & -1 & 0
+\end{pmatrix}
+\longrightarrow
+\dots
+\longrightarrow
+\begin{pmatrix}[ccc|c]
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
+\]
+Deze verzameling is niet vrij omdat we geen oplossing verschillend van 0 vinden.
 
 \subsection{Oefening 11}
-\[v_1\cdots v_n, v_{n+1}\text{zijn lineair afhankelijk} \Leftrightarrow \text{v is een lineaire combinatie van } v_1\cdots v_n\]
-Als
-\[\sum_{i=1}^{n}{\lambda_{i1}v_i}=0\]
-dan moeten alle $\lambda_{i1}$'s=0.\\
-Als
-\[\sum_{i=1}^{n+1}{\lambda_{i2}v_i}=0\]
-Dan is het mogelijk dat niet alle $\lambda_{i1}$'s=0.
-\[\sum_{i=1}^{n}{\lambda_{i2}v_i}+\lambda_{n+1}v_{n+1}=0\]
-Daarom mogen we het volgende doen:
-\[v_{n+1}=\frac{-1}{\lambda_{n+1}}.\sum_{i=1}^{n}{\lambda_{i2}v_i}\]
-Dus is $v_{n+1}$ een lineaire combinatie:
+\textit{Gegeven.}\\
+Zij $(\mathbb{R},V,+)$ een vectorruimte en $v_1,v_2,\ldots,v_n,v \in V$ zodat $v_1,v_2,\ldots,v_n$ lineair onafhankelijk zijn.\\\\
+\textit{Te bewijzen.}\\
+$\{v_1, v_2, \ldots, v_n, v\}$ zijn lineair afhankelijk $\Longleftrightarrow$ $v$ is een lineaire combinatie van $\{v_1,v_2,\ldots,v_n\}$.\\
+\begin{proof} We bewijzen de equivalentie door ze in 2 richtingen te bewijzen.\\
+$\Longrightarrow$\\
+Stel $\{ v_1, v_2,\ldots, v_n, v \}$ zijn lineair afhankelijk.\\
+Er bestaan dus $\lambda_1, \lambda_2,\ldots, \lambda_n, \lambda \in \mathbb{R}$ (niet allemaal 0) zodat:
+\[ \lambda_1 v_1 + \lambda_2 v_2 +  \ldots + \lambda_n v_n + \lambda v = 0\]
+Stel nu $\lambda = 0$. Omdat $\{v_1,v_2,\ldots,v_n\}$ lineair onafhankelijk zijn, geldt er dat $\lambda_1 = \lambda_2 = \ldots = \lambda_n = 0$. Hieruit volgt dat $\lambda_1 v_1 + \lambda_2 v_2 + \ldots + \lambda_n v_n + 0 \cdot v = 0$. Dit is een contradictie en dus geldt er dat:
+\[
+\lambda \neq 0
+\]
+Nu kunnen we makkelijk aantonen dat $v$ een lineaire combinatie is van $\{v_1,v_2,\ldots,v_n\}$:
+\[
+v = \frac{\lambda_1}{\lambda}v_1 - \frac{\lambda_2}{\lambda}v_2 - \ldots - \frac{\lambda_n}{\lambda}v_n
+\]\\
+$\Longleftarrow$\\
+Stel $v$ is een lineaire combinatie van $\{v_1,\ldots,v_n\}$.\\
+Er bestaan dus $\lambda_1, \lambda_2,\ldots, \lambda_n \in \mathbb{R}$ zodat:
+\[
+v = \lambda_1 v_1 + \lambda_2 v_2 +  \ldots + \lambda_n v_n
+\]
+Er geldt dan:
+\[
+-v + \lambda_1 v_1 + \lambda_2 v_2 +  \ldots + \lambda_n v_n = 0
+\]
+Dus niet alle alle $\lambda_1, \lambda_2,\ldots, \lambda_n, \lambda$ zijn gelijk aan 0 en dus is $\{v_1, v_2, \ldots, v_n, v\}$ lineair afhankelijk.
+\end{proof}
  
 \subsection{Oefening 12}
-Moest dit waar zijn dan mag er uit de verzameling $\{ e_1-e_2,e_2-e_3,\dots ,e_{n-1}-e_n,e_n-e_1\}$ geen enkel element bestaan dat een combinatie is van de andere elementen.
-$$
-\text{We zien nu voor}\ 1 \leq i \leq n:
-$$
-$$ 
-(e_1-e_2)+(e_2-e_3)+\dots +(e_{i-1}-e_i)+(e_{i+1}-e_{i+2})+\dots + (e_n - e_1)
-$$
-$$
-= (\not e_1-\not e_2+\not e_2-\not e_3+\dots +\not e_{i-1}-e_i+e_{i+1}-\not e_{i+2}+\dots + \not e_n - \not e_1)
-$$
-$$
-= -e_i + e_{i+1}
-$$
-Dus voor een willkeurige vector:
-$$
-e_i - e_{i+1} = -\left((e_1-e_2)+(e_2-e_3)+\dots +(e_{i-1}-e_i)+(e_{i+1}-e_{i+2})+\dots + (e_n - e_1)\right)
-$$
-kunnen we dus telkens een combinatie vinden uit de andere vectoren, hierdoor is het geen vrij deel. 
+Voor willekeurige $\lambda_i \in \mathbb{R}$ geldt:
+\begin{align*}
+\lambda_1(e_1-e_2) + \lambda_2 (e_2-e_3) + \ldots + \lambda_n(e_n-e_1) &=0 \\
+\lambda_1e_1 + \lambda_2e_2 + \ldots + \lambda_ne_n - \lambda_1e_2 - \lambda_2e_3 - \ldots - \lambda_ne_1 &=0 \\
+(\lambda_1 - \lambda_n)e_1 + (\lambda_2 - \lambda_1)e_2 + \ldots + (\lambda_n - \lambda_{n-1})e_n &=0
+\end{align*}
+Dit geldt enkel als alle co\"effici\"enten nul zijn dus als $\lambda_i = \lambda_{i-1}$.\\
+Dit leidt tot:
+\[
+\lambda_1 = \lambda_2 = \ldots = \lambda_{n-1} = \lambda_n
+\]
+Neem nu bijvoorbeeld $\lambda_1 = \ldots = \lambda_n = 3$, dan geldt er:
+\[
+3\cdot(e_1-e_2) + 3\cdot(e_2-e_3) + \ldots + 3\cdot(e_n-e_1) = 0
+\]
+Aangezien we een oplossing vinden waarbij niet alle $\lambda_i$ verschillend van 0 zijn, kunnen we besluiten dat de gegeven verzameling geen vrij deel is.
+
 \subsection{Oefening 13}
 Hiervoor kunnen we aantonen dat $\{1+X,1+X^2,X+X^2\}$ minimaal voortbrengend is, hiervoor laten we zien dat elke vector uit  $(\mathbb{R},\mathbb{R}[X]_{\leq 2},+)$ een lineaire combinatie is van de basisvectoren:
-$$aX^2 + bX + c = \lambda_{1} (1+X) + \lambda_{2} (1+X^2) + \lambda_{3} (X+X^2)$$
-Als we deze vergelijking uitwerking uitwerken krijgen we:
-$$a = \lambda_{1} + \lambda_2$$
-$$b = \lambda_1 + \lambda_3$$
-$$c = \lambda_1 + \lambda_2$$
-Dit is een stelsel met exact 1 oplossing. Hierme tonen we aan dat het stelsel voortbrengend is en minimaal voortbrengend. Moesten we nog extra vergelijkingen er aan toevoegen zouden we redundantie invoeren of het stelsel onoplosbaar maken.
+\[
+aX^2 + bX + c = \lambda_{1} (1+X) + \lambda_{2} (1+X^2) + \lambda_{3} (X+X^2)
+\]
+Als we deze vergelijking uitwerken krijgen we:
+\begin{align*}
+a &= \lambda_2 + \lambda_3 \\
+b &= \lambda_1 + \lambda_3 \\
+c &= \lambda_1 + \lambda_2
+\end{align*}
+Dit is een stelsel met exact 1 oplossing. Hiermee tonen we aan dat het stelsel voortbrengend is en minimaal voortbrengend. Moesten we nog extra vergelijkingen er aan toevoegen zouden we redundantie invoeren of het stelsel onoplosbaar maken.
 \\
 \\
 De co\"ordinaten van de vector $4 -3X + X^2$ kunnen we berekenen ze in een stelsel te gieten:
 $$
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1&1&0&4\\
 1&0&1&-3\\
 0&1&1&1
@@ -374,7 +449,7 @@ $$
 $$
 Via rijoperaties verkrijgen we dan:
 $$
-\begin{pmatrix}
+\begin{pmatrix}[ccc|c]
 1&0&0&0\\
 0&1&0&4\\
 0&0&1&-3
@@ -383,7 +458,7 @@ $$
 Dit komt overeen met de co\"ordinaten $(0,4,-3)$.
 \\
 \\
-Het co\"ordinatenstel $(2,-3,1)$ komt dan weer overeen met:
+De co\"ordinaten $(2,-3,1)$ komt dan weer overeen met:
 $$
 2\cdot (1+X) -3 \cdot (1+X^2)+ 1\cdot (X+X^2)= -1 +3X-2X^2
 $$
@@ -391,27 +466,22 @@ $$
 \subsection{Oefening 14}
 
 \subsubsection*{a)}
-Beschouwen we eerst de verzameling met alleen het eerste element van de voorgestelde basis. We voegen nu stapsgewijs de daaropvolgende elementen toe, en proberen voor elk toegevoegd element dit element te schrijven als een lineaire combinatie van de reeds toegevoegden. Indien dit lukt maakt het de verzameling lineair afhankelijk en voegen we het niet toe. Indien het geen lineaire combinatie is kunnen we het toevoegen aan onze nieuwe verzameling zonder de vrijheid ervan in gevaar te brengen.\\
-
-Het toevoegen van $(1,2,0)$ is triviaal. Geen veelvoud van $(1,2,3)$ kunnen we gelijk stellen hieraan. Het mag dus bij de verzameling. De volgende elementen zullen we meer systematisch aanpakken.\\
-
-Bij het toevoegen van $(1,1,1)$ proberen we dit te schijven als een lineaire combinatie van de voorgaande als volgt:\\
+Beschouwen we eerst de verzameling met alleen het eerste element van de voorgestelde basis. We voegen nu stapsgewijs de daaropvolgende elementen toe, en proberen voor elk toegevoegd element dit element te schrijven als een lineaire combinatie van de reeds toegevoegden. Indien dit lukt maakt het de verzameling lineair afhankelijk en voegen we het niet toe. Indien het geen lineaire combinatie is kunnen we het toevoegen aan onze nieuwe verzameling zonder de vrijheid ervan in gevaar te brengen.\\\\
+Het toevoegen van $(1,2,0)$ is triviaal. Geen veelvoud van $(1,2,3)$ kunnen we gelijk stellen hieraan. Het mag dus bij de verzameling. De volgende elementen zullen we meer systematisch aanpakken.\\\\
+Bij het toevoegen van $(1,1,1)$ proberen we dit te schijven als een lineaire combinatie van de voorgaande als volgt:
 \[
-a * (1,2,3) + b * (1,2,0) = (1,1,1)
+a \cdot (1,2,3) + b \cdot (1,2,0) = (1,1,1)
 \]
-
 Dit is equivalent met het stelsel
 \[
 \left\{
 \begin{array}{l}
 a + b = 1\\
-2*a + 2*b = 1\\
-3*a = 1
+2a + 2b = 1\\
+3a = 1
 \end{array} \right.
 \]
-
 wat resulteert in het strijdig (in de eerste twee regels, maar ook indien men het verder probeert uit te werken) stelsel
-
 \[
 \left\{
 \begin{array}{l}
@@ -420,119 +490,82 @@ a + b = \frac{1}{2}\\
 a = \frac{1}{3}
 \end{array} \right.
 \]
-
 $(1,1,1)$ is dus geen lineaire combinatie van de eerste twee, en mogen we dus aan onze vrije verzameling toevoegen, deze blijft vrij. Passen we dit stramien toe op de volgende vector, namelijk $(1,1,0)$, vinden we dat deze een lineaire combinatie is, namelijk
 \[
--\frac{1}{3} * (1,2,3) + \frac{1}{3} * (1,2,0) + (1,1,1) = (1,1,0)
+-\frac{1}{3} \cdot (1,2,3) + \frac{1}{3} \cdot (1,2,0) + (1,1,1) = (1,1,0)
 \]
-Dit kunnen we makkelijk met een stelsel bekomen. We zien dus dat dit een lineaire combinatie is, en voegen het niet toe aan de verzameling. Deze is dus nog steeds $\{(1,2,3), (1,2,0), (1,1,1)\}$.
-
+Dit kunnen we makkelijk met een stelsel bekomen. We zien dus dat dit een lineaire combinatie is, en voegen het niet toe aan de verzameling. Deze is dus nog steeds $\{(1,2,3), (1,2,0), (1,1,1)\}$.\\
 De laatste vector schrijven we nog even met een stelsel op voor de duidelijkheid. Indien het stelsel
-
 \[
 \left\{
 \begin{array}{l}
 a + b + c = 4\\
-2*a + 2*b + c = 5\\
-3*a + c = 6
+2a + 2b + c = 5\\
+3a + c = 6
 \end{array} \right.
 \]
-
-klopt, dan is de vector $(4,5,6)$ een lineaire combinatie van onze vrije verzameling.
-
+klopt, dan is de vector $(4,5,6)$ een lineaire combinatie van onze vrije verzameling.\\
 We kunnen dit oplossen als matrix die we rijreduceren:
-
 \[
-\left[
-\begin{array}{c c c | c}
+\begin{pmatrix}[ccc|c]
 1 & 1 & 1 & 4\\
 2 & 2 & 1 & 5\\
 3 & 0 & 1 & 6
-\end{array}
-\right]
+\end{pmatrix}
 \]
-
-\[R_2 \mapsto -R_2 + 2*R_1 \]
-\[R_3 \mapsto -R_3 + 2*R_1 \]
-(Dit zijn niet echt volledig correcte overgangen op elementair niveau, maar eerder een samentrekking)
-
+\[R_2 \mapsto -R_2 + 2R_1 \]
+\[R_3 \mapsto -R_3 + 2R_1 \]
 \[
-\left[
-\begin{array}{c c c | c}
+\begin{pmatrix}[ccc|c]
 1 & 1 & 1 & 4\\
 0 & 0 & 1 & 3\\
 0 & 3 & 2 & 6
-\end{array}
-\right]
+\end{pmatrix}
 \]
-
 \[R_2 \leftrightarrow R_3\]
-
 \[
-\left[
-\begin{array}{c c c | c}
+\begin{pmatrix}[ccc|c]
 1 & 1 & 1 & 4\\
 0 & 3 & 2 & 6\\
 0 & 0 & 1 & 3
-\end{array}
-\right]
+\end{pmatrix}
 \]
-
 \[R_1 \mapsto R_1 - R_3 \]
-\[R_2 \mapsto R_2 - 2*R_3 \]
-
+\[R_2 \mapsto R_2 - 2R_3 \]
 \[
-\left[
-\begin{array}{c c c | c}
+\begin{pmatrix}[ccc|c]
 1 & 1 & 0 & 1\\
 0 & 3 & 0 & 0\\
 0 & 0 & 1 & 3
-\end{array}
-\right]
+\end{pmatrix}
 \]
-
 \[R_2 \mapsto \frac{R_2}{3}\]
-
 \[
-\left[
-\begin{array}{c c c | c}
+\begin{pmatrix}[ccc|c]
 1 & 1 & 0 & 1\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 3
-\end{array}
-\right]
+\end{pmatrix}
 \]
-
 \[R_1 \mapsto R_1 - R_2\]
-
 \[
-\left[
-\begin{array}{c c c | c}
+\begin{pmatrix}[ccc|c]
 1 & 0 & 0 & 1\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 3
-\end{array}
-\right]
+\end{pmatrix}
 \]
-
-We besluiten dus dat $(4,5,6)$ een lineaire combinatie is uit onze verzameling, namelijk\\
-
+We besluiten dus dat $(4,5,6)$ een lineaire combinatie is uit onze verzameling, namelijk
 \[
-(1,2,3) + 3 * (1,1,1) = (4,5,6)
+(1,2,3) + 3 \cdot (1,1,1) = (4,5,6)
 \]
-
-Deze mag dus niet bij in de verzameling.\\
-
+Deze mag dus niet bij in de verzameling.\\\\
 De uitgedunde verzameling is dus $\{(1,2,3), (1,2,0), (1,1,1)\}$.\\
-
 Dit is de originele verzameling waar stapsgewijs de lineaire combinaties uitgehaald zijn, en deze is dus vrij.
 
 \subsubsection*{b)}
-
 We kunnen voor de verzameling via de vorige oefening bepalen dat deze vrij is, dat laten we even buiten beschouwing.\\
-
-We willen deze verzameling voortbrengend maken. Dit betekent dat elk element van $\mathbb{R}^{2x2}$ moet kunnen geschreven worden als een combinatie van de elementen uit de verzameling.\\
-
+We willen deze verzameling voortbrengend maken. Dit betekent dat elk element van $\mathbb{R}^{2x2}$ moet kunnen geschreven worden als een combinatie van de elementen uit de verzameling.\\\\
 Beschouwen we de standaardbasis $\{\bigl(
 \begin{smallmatrix}
 1&0\\ 0&0
@@ -553,61 +586,46 @@ $\bigl(
 0&0\\ 0&1
 \end{smallmatrix}
 \bigr)$\}, dan kunnen we stellen dat elk van deze elementen te vormen moet zijn uit onze voorgestelde basis, als lineaire combinatie. Indien dit voor alle elementen van de standaardbasis geldt is de verzameling voortbrengend, immers, we kunnen de elementen van de standaardbasis vormen en hier lineaire combinaties van maken om alle elementen uit $\mathbb{R}^{2x2}$ te schrijven.\\
-
-Indien er een element van de standaardbasis is dat niet als lineaire combinatie geschreven kan worden mogen we dit toevoegen, het is immers niet lineair afhankelijk, de verzameling blijft dus vrij, en de verzameling brengt nu ook dat element van de standaardbasis voort.
-
+Indien er een element van de standaardbasis is dat niet als lineaire combinatie geschreven kan worden mogen we dit toevoegen, het is immers niet lineair afhankelijk, de verzameling blijft dus vrij, en de verzameling brengt nu ook dat element van de standaardbasis voort.\\\\
 Voor $\bigl(
 \begin{smallmatrix}
 1&0\\ 0&0
 \end{smallmatrix}
 \bigr)$ kijken we of we deze kunnen vormen als lineaire combinatie via de matrix
-
 \[
-\left[
-\begin{array}{c c c | c}
+\begin{pmatrix}[ccc|c]
 1 & 2 & 0 & 1\\
 -1 & 1 & -3 & 0\\
 2 & -1 & 5 & 0\\
 3 & 4 & 4 & 0
-\end{array}
-\right]
+\end{pmatrix}
 \]
-
 \[R_2 \mapsto R_2 + R_1 \]
 \[R_3 \mapsto R_3 - 2*R_1 \]
 \[R_4 \mapsto R_4 - 3*R_1 \]
-
 \[
-\left[
-\begin{array}{c c c | c}
+\begin{pmatrix}[ccc|c]
 1 & 2 & 0 & 1\\
 0 & 3 & -3 & 1\\
 0 & -5 & 5 & -2\\
 0 & -2 & 4 & -2
-\end{array}
-\right]
+\end{pmatrix}
 \]
-
 \[R_3 \mapsto 3*R_3 + 5*R_2 \]
 \[R_4 \mapsto 3*R_4 + 3*R_2 \]
-
 \[
-\left[
-\begin{array}{c c c | c}
+\begin{pmatrix}[ccc|c]
 1 & 2 & 0 & 1\\
 0 & 3 & -3 & 1\\
 0 & 0 & 0 & -1\\
 0 & 0 & -6 & -4
-\end{array}
-\right]
+\end{pmatrix}
 \]
-
 Het stelsel is strijdig, dus kunnen we beslissen dat $\bigl(
 \begin{smallmatrix}
 1&0\\ 0&0
 \end{smallmatrix}
-\bigr)$ geen lineaire combinatie is van onze verzameling. Deze mag er dus bij zonder dat de vrijheid van de verzameling verdwijnt.\\
-
+\bigr)$ geen lineaire combinatie is van onze verzameling. Deze mag er dus bij zonder dat de vrijheid van de verzameling verdwijnt.\\\\
 Nu kunnen we al beslissen dat onze basis volledig is volgens Gevolg 3.34. De standaardbasis heeft namelijk 4 elementen en deze verzameling ook. Aangezien de verzameling tevens vrij is mogen we beslissen dat de verzameling $\{\bigl(
 \begin{smallmatrix}
 1&-1\\ 2&3
@@ -627,52 +645,95 @@ $\bigl(
 \begin{smallmatrix}
 1&0\\ 0&0
 \end{smallmatrix}
-\bigr)$\} een basis is van $\mathbb{R}^{2x2}$.\\
-
+\bigr)$\} een basis is van $\mathbb{R}^{2x2}$.\\\\
 Indien $\bigl(
 \begin{smallmatrix}
 1&0\\ 0&0
 \end{smallmatrix}
 \bigr)$ wel een lineaire combinatie was zouden we deze niet toegevoegd hebben, en de andere elementen van de standaardbasis ge\"evalueerd hebben. Er moet immers volgens eerder aangehaald gevolg nog precies een element toegevoegd worden aan onze verzameling om een basis te kunnen zijn.
 
+\subsection{Oefening 15}
+\[
+\lambda_1 \cdot (1,-3,2) + \lambda_2 \cdot (2,-1,1) = (1,k,5)
+\]
+We zetten dit in matrixvorm.
+\[
+\begin{pmatrix}[cc|c]
+ 1 &  2 & 1 \\
+-3 & -1 & k \\
+ 2 &  1 & 5
+\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}[cc|c]
+1 & 0 & 3 \\
+0 & 1 & -1 \\
+0 & 5 & k+3
+\end{pmatrix}
+\]
+We moeten ervoor zorgen dat het stelsel niet-strijdig is, dit gaat enkel als we $R_2$ van $R_3$ kunnen aftrekken zodat er een nulrij overblijft. Dus:
+\[
+-5 = k+3 \Longrightarrow k = -8
+\]
+
 \subsection{Oefening 16}
-
-Standaard basis : $\beta1 = {e1 =(1,0,0,0), e2 =(0,1,0,0), e3 = (0,0,1,0), e4 = (0,0,0,1) }$
-
-tweede basis : $\beta2 = {f1 = (1,1,1,1), f2 =(0,1,1,1), f3 = (0,0,1,1), f4= (0,0,0,1) }$
-
-volgens $\beta1  V = a1e1 + a2e2 + a3e3 + a4e4$
-volgens $\beta2 V = \lambda1 \cdot f1 + \lambda2 \cdot f2 + \lambda3 \cdot f3 + \lambda4 \cdot f4 $ 
-
-$=> (\lambda1, \lambda2, \lambda3, \lambda4) $
+De standaardbasis is uiteraard:
+\[
+\beta_1 = \{ e_1 = (1,0,0,0), e_2 = (0,1,0,0), e_3 = (0,0,1,0), e_4 = (0,0,0,1) \}
+\]
+De nieuwe basis is gegeven als:
+\[
+\beta_2 = \{ f_1 = (1,1,1,1), f_2 = (0,1,1,1), f_3 = (0,0,1,1), f_4 = (0,0,0,1) \}
+\]
+We gooien dit in matrixvorm:
+\[
+\begin{pmatrix}[cccc|c]
+1 &0 &0 &0 & a_1 \\
+1 &1 &0 &0 & a_2 \\
+1 &1 &1 &0 & a_3 \\
+1 &1 &1 &1 & a_4
+\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}[cccc|c]
+1 &0 &0 &0 & a_1 \\
+0 &1 &0 &0 & a_2-a_1 \\
+0 &0 &1 &0 & a_3-a_2-a_1 \\
+0 &0 &0 &1 & a_4-a_3-a_2-a_1
+\end{pmatrix}
+\]
+De co\"ordinaten van $v$ ten opzichte van de nieuwe basis zijn dus:
+\[
+(a_1, a_2-a_1, a_3-a_2-a_1, a_4-a_3-a_2-a_1)
+\]
 
 \subsection{Oefening 17}
 \subsubsection*{a)}
 $W_1$ vormt een vlak. We zoeken twee lineair onafhankelijke vectoren in dat vlak, die zijn dan een basis.
 \[
-\left\lbrace
-\begin{pmatrix}
-1\\-2\\1\\
-\end{pmatrix}
-,
-\begin{pmatrix}
-2\\-2\\0
-\end{pmatrix}
-\right\rbrace
+\{(1,-2,1),(2,-2,0)\}
 \]
 
 \subsubsection*{b)}
 Voor de basis te kennen lossen we eerst volgend stelsel op want hieraan moet voldaan zijn:
-$$
-\begin{pmatrix}[c c c | c]
-1 & 2&-1&0\\
-2&1&1&0\\
+\[
+\begin{pmatrix}[ccc|c]
+1 & 2 & -1 & 0 \\
+2 & 1 &  1 & 0
 \end{pmatrix}
-$$
-Hiervoor krijgen we de oplossing $x=-k$, $y= k$, $z=k$. Een oplossing is dus telkens van de vorm $(-k,k,k)$.\\
+\longrightarrow
+\begin{pmatrix}[ccc|c]
+1 & 0 &  1 & 0 \\
+0 & 1 & -1 & 0
+\end{pmatrix}
+\]
+Hiervoor krijgen we de oplossing $x=-k$, $y= k$, $z=k$, dus van de vorm $(-k,k,k)$.\\
 We krijgen dus als basis:
-$$W_2 = \{(-\lambda, \lambda, \lambda)|\lambda \in \mathbb{R}\}$$
-De dimensie is dus 1.
+\[
+W_2 = \{(-\lambda, \lambda, \lambda)\mid\lambda \in \mathbb{R}\}
+\Longrightarrow
+\beta_2 = \{ (-1,1,1) \}
+\]
+Het is duidelijk dat $\dim W_2 = 1$.
+
 \subsection{Oefening 19}
 \subsubsection*{b)}
 \[ A =
@@ -683,7 +744,7 @@ De dimensie is dus 1.
   1 & -1 & -1
 \end{pmatrix}
 \]
-Na Gauss-eliminatie krijgen we de rij-gereduceeerde vorm
+Na Gauss-eliminatie krijgen we de rijgereduceeerde vorm
 \[ U =
 \begin{pmatrix}
   1 & 0 & 0\\
@@ -1063,7 +1124,7 @@ Als $a=2$ dan zien we dat de twee vectoren die $U$ opspannen lineair afhankelijk
 \end{pmatrix}
 \right\rbrace
 \]
-Hier is de dimensie van $W_a$ $1$. De als we de laatste vector verwijderen blijven er weer drie lineair onafhankelijke vectoren over. De dimensie vande doorsnede is weer $0$ en de basis daarvoor weer $\emptyset$.
+Hier is de dimensie van $W_a$ $1$. De als we de laatste vector verwijderen blijven er weer drie lineair onafhankelijke vectoren over. De dimensie van de doorsnede is weer $0$ en de basis daarvoor weer $\emptyset$.
 \subsubsection*{$a=-1$}
 \[
 \left\lbrace
@@ -1272,8 +1333,8 @@ Veronderstel dat twee willekeurige vectoren $x$ en $y \in U_1 + U_2$ bestaan.\\
 Dan volgt uit de definitie van $U_1 + U_2$ dat er twee vectoren $x_1$ en $y_1 \in U_1$ en $x_2$ en $y_2 \in U_2$ bestaan zodat $x = x_1 + x_2$ en $y = y_1 + y_2$.\\
 Hieruit volgt:
 $$x + y = (x_1 + x_2) + (y_1 + y_2) = (x_1 + y_1) + (x_2 + y_2)$$
-Omdat $x_1, y_1 \in U_1$ en $U_1$ is een deelruimte van V, $x_1 + y_1 \in U_1$.\\
-Omdat $x_2, y_2 \in U_2$ en $U_2$ is een deelruimte van V, $x_2 + y_2 \in U_2$.\\
+Omdat $x_1, y_1 \in U_1$ en $U_1$ is een deelruimte van $V$, $x_1 + y_1 \in U_1$.\\
+Omdat $x_2, y_2 \in U_2$ en $U_2$ is een deelruimte van $V$, $x_2 + y_2 \in U_2$.\\
 Nu hebben we aangetoond dat $x+y$ de som is van een vector in $U_1$ en een vector in $U_2$. 
 Dus $x + y \in U_1 + U_2$ door de definitie van $U_1 + U_2$ en aangezien $x$ en $y$ willekeurig waren geldt dit voor alle $x,y \in U_1 + U_2$.
 
@@ -1282,14 +1343,14 @@ Dus $x + y \in U_1 + U_2$ door de definitie van $U_1 + U_2$ en aangezien $x$ en 
 Veronderstel dat een willekeurige $x \in U_1 + U_2$ en $r \in \mathbb{R}$ bestaan. Dan volgt uit de definitie van $U_1 + U_2$ dat er een $x_1 \in U_1$ en $x_2 \in U_2$ bestaan zodat $x = x_1 + x_2$.\\
 Hieruit volgt:
 $$rx = r(x_1+x_2) = rx_1+rx_2$$
-Omdat $x_1 \in U_1$ en $U_1$ is een deelruimte van V, $rx_1 \in U_1$.\\
-Omdat $x_2 \in U_2$ en $U_2$ is een deelruimte van V, $rx_2 \in U_2$.\\
+Omdat $x_1 \in U_1$ en $U_1$ is een deelruimte van $V$, $rx_1 \in U_1$.\\
+Omdat $x_2 \in U_2$ en $U_2$ is een deelruimte van $V$, $rx_2 \in U_2$.\\
 Nu hebben we aangetoond dat $rx$ de som is van een vector in $U_1$ en een vector in $U_2$. 
 Dus $rx \in U_1 + U_2$ door de definitie van $U_1 + U_2$ en aangezien $x$ en $r$ willekeurig waren geldt dit voor alle $r \in \mathbb{R}$ en $x \in U_1 + U_2$.
 \end{enumerate}
 
 
-\subsection{Opdracht 3.24 p 100}
+\subsection{Opdracht 3.24 p 100} %TODO na te kijken, (a) en (b) lijken fout
 \label{3.24}
 \begin{enumerate}
 \item
@@ -1302,8 +1363,8 @@ $$U_3 = \{ (x,y,0)\} $$
 \[
 U + W = \mathbb{R}[X]_{\le 4}
 \]
-$U+W$ is niet de directe som van $U$ en $W$ omdat sommige vectoren op verschillende manieren geschreven kunnen worden als de sum van een $u\in U$ en een $w\in W$.\\
-BvB:
+$U+W$ is niet de directe som van $U$ en $W$ omdat sommige vectoren op verschillende manieren geschreven kunnen worden als de som van een $u\in U$ en een $w\in W$.\\
+Bijvoorbeeld:
 $u_1 = x$, $u_2 = 1$, $w_1 = 1$ en $w_2 = x$.
 \[
 u_1 + w_1 = u_2 = w_2 = x+1 \in U+W
@@ -1365,7 +1426,7 @@ $U+W$ is de deelruimte van $R[X]_{\le4}$ waarbij $a_3 = a_4$.
 \[U+W = \{a_0 + a_1 X + a_2 X^2 +a_3 X^3 + a_4 X^4 | a_3 = a_4\}\]
 Een basis van $U$ is simpelweg $\beta_U = \{1,X,X^2\}$. Een basis van $W$ is $\beta_W = \{X+X^2,X^3+X^4\}$. Een basis voor $U\cap W$ is $\beta_{U\cap W} = \{X+X^2\}$. Tenslotte is $\beta_{U+W} = \{1,X,X^2,X^3+X^4\}$ een basis van $U+W$. We verifi\"eren nu de dimensie stelling\footnote{Zie stelling 3.49 p 114.}.
 \[
-dim(U+W) + dim(U\cap W) = dimU+dimW
+\dim(U+W) + \dim(U \cap W) = \dim U+\dim W
 \]
 \[
 4 + 1 = 3+2
