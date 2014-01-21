@@ -92,7 +92,7 @@ Deze overgang lijk triviaal maar het werkt omdat $L(v)$ een element van een vect
 Dit volgt eenvoudig uit de definitie van lineaire afbeelding\footnote{Zie Definitie 4.1 p 130}. Kies willekeurige $v_i$ en $\lambda_i$.
 \[L\left(\sum_{i=1}^n\lambda_iv_i\right) =  \sum_{i=1}^nL(\lambda_iv_i)= \sum_{i=1}^n\lambda_iL(v_i)\]
 \item
-Elke vector $v\in V$ kan geschreven worden als lineaire combinatie van de basisvectoren van $\beta = \{e_1,e_2,...,e_n\}$. Als we nu de basis van $V$ afbeelden krijgen we $L(\beta) = \{L(e_1),L(e_2),...,L(e_n)\}$ We bewijzen nu dat elke vector in $W$ geschreven kan worden als lineaire combinatie van $L(\beta)$.
+Elke vector $v\in V$ kan geschreven worden als lineaire combinatie van de basisvectoren van $\beta = \{e_1,e_2,\ldots,e_n\}$. Als we nu de basis van $V$ afbeelden krijgen we $L(\beta) = \{L(e_1),L(e_2),\ldots,L(e_n)\}$ We bewijzen nu dat elke vector in $W$ geschreven kan worden als lineaire combinatie van $L(\beta)$.
 \[
 \forall v \in V:\exists\lambda_i \in \mathbb{R}: v= \sum_{i=1}^n\lambda_ie_i
 \]
@@ -349,14 +349,14 @@ De nulvector $\vec{0}$ wordt niet op zichzelf afgebeeld.
 \item De identieke afbeelding is een lineaire afbeelding.
 \begin{proof}
 \[
-Id(\lambda_1v_1+\lambda_2v_2) = \lambda_1v_1+\lambda_2v_2 = \lambda_1Id(v_1)+\lambda_2Id(v_2))
+Id(\lambda_1v_1+\lambda_2v_2) = \lambda_1v_1+\lambda_2v_2 = \lambda_1Id(v_1)+\lambda_2Id(v_2)
 \]
 \end{proof}
 
 \item De nulafbeelding is een lineaire afbeelding.
 \begin{proof}
 \[
-(0)(\lambda_1v_1+\lambda_2v_2) = \vec{0} = \lambda_1(0)(v_1)+\lambda_2(0)(v_2))
+(0)(\lambda_1v_1+\lambda_2v_2) = \vec{0} = \lambda_1(0)(v_1)+\lambda_2(0)(v_2)
 \]
 \end{proof}
 
@@ -364,7 +364,7 @@ Id(\lambda_1v_1+\lambda_2v_2) = \lambda_1v_1+\lambda_2v_2 = \lambda_1Id(v_1)+\la
 \begin{proof}
 Dit is geen belangrijk bewijs, maar het is makkelijk in te zien.
 \[
-(+1)(\lambda_1v_1+\lambda_2v_2) = \lambda_1(+1)(v_1)+\lambda_2(+1)(v_2))
+(+1)(\lambda_1v_1+\lambda_2v_2) = \lambda_1(+1)(v_1)+\lambda_2(+1)(v_2)
 \]
 \end{proof}
 \end{enumerate}
@@ -373,11 +373,11 @@ Dit is geen belangrijk bewijs, maar het is makkelijk in te zien.
 \begin{proof}
 De optelling en de scalaire vermenigvuldiging gaan door de afgeleide.
 \[
-D(\lambda_1v_1+\lambda_2v_2) = \lambda_1D(v_1)+\lambda_2D(v_2))
+D(\lambda_1v_1+\lambda_2v_2) = \lambda_1D(v_1)+\lambda_2D(v_2)
 \]
 \end{proof}
 
-\item Elke lineaire combinatie van afgeleiden is een lineare afbeelding.
+\item Elke lineaire combinatie van afgeleiden is een lineaire afbeelding.
 \begin{proof}
 Dit volgt meteen uit het vorige bewijs.
 \end{proof}
@@ -386,55 +386,56 @@ Dit volgt meteen uit het vorige bewijs.
 \begin{proof}
 De optelling en de scalaire vermenigvuldiging gaan door de bepaalde integraal.
 \[
-\int_a^b(\lambda_1v_1+\lambda_2v_2) = \lambda_1\int_a^b(v_1)+\lambda_2\int_a^b(v_2))
+\int_a^b(\lambda_1v_1+\lambda_2v_2) = \lambda_1\int_a^b(v_1)+\lambda_2\int_a^b(v_2)
 \]
 \end{proof}
-\item 
 
-\begin{itemize}
 \item
+\begin{enumerate}
+\item[a)]
 De volgende afbeelding is een lineaire afbeelding.
 \[f: \mathbb{R}^2 \rightarrow \mathbb{R}: (x,y) \mapsto ax+by\]
 \begin{proof}
-\[
-f(\lambda_1v_1+\lambda_2v_2) = (a\lambda_1v_{1x}+b\lambda_1(v_{1y})+(a\lambda_2v_{2x}+b\lambda_2v_{2y})
-\]
-\[
-= \lambda_1(av_{1x}+bv_{1y})+\lambda_2(av_{2x}+bv_{2y}) = \lambda_1f(v_1)+\lambda_2f(v_2))
-\]
+\begin{align*}
+f(\lambda_1v_1+\lambda_2v_2)
+&= (a\lambda_1v_{1x}+b\lambda_1(v_{1y})+(a\lambda_2v_{2x}+b\lambda_2v_{2y}) \\
+&= \lambda_1(av_{1x}+bv_{1y})+\lambda_2(av_{2x}+bv_{2y})\\
+&= \lambda_1f(v_1)+\lambda_2f(v_2)
+\end{align*}
 \end{proof}
 
-\item De volgende afbeelding is niet lineair
+\item[b)] De volgende afbeelding is niet lineair
 \[g: \mathbb{R}^2 \rightarrow \mathbb{R}: (x,y) \mapsto ax+by+c\]
 \begin{proof}
 De nulvector $\vec{0}$ wordt niet op zichzelf afgebeeld maar op $c$.
 \end{proof}
-\end{itemize}
+\end{enumerate}
 
 \item De projecties $p_i$ die co\"ordinaatvectoren afbeelden op individuele co\"ordinaten zijn lineaire vormen.
 \begin{proof}
 Het is duidelijk dat deze afbeelding op $(\mathbb{R},\mathbb{R},+)$ wordt afgebeeld. Nu rest er ons nog te bewijzen dat $p_i$ lineair is.
-\[
-p_i(\lambda_1v_1+\lambda_2v_2) = (\lambda_1v_1+\lambda_2v_2)_i
-= \lambda_1v_{1i}+\lambda_2v_{2i} = \lambda_1p_i(v_1)+\lambda_2p_i(v_2))
-\]
+\begin{align*}
+p_i(\lambda_1v_1+\lambda_2v_2)
+&= (\lambda_1v_1+\lambda_2v_2)_i \\
+&= \lambda_1v_{1i}+\lambda_2v_{2i} \\
+&= \lambda_1p_i(v_1)+\lambda_2p_i(v_2) \\
+\end{align*}
 \end{proof}
 
 \item De spoorafbeelding is een lineaire afbeelding.
 \[
-Tr:\mathbb{R}^{n\times n}\rightarrow \mathbb{R}:A\mapsto Tr(A)=a_{11}+a_{22}+...+a_{nn}
+\text{Tr}:\mathbb{R}^{n\times n}\rightarrow \mathbb{R}:A\mapsto \text{Tr}(A)=a_{11}+a_{22}+\ldots+a_{nn}
 \]
 \begin{proof}
-\[
-Tr(\lambda_1v_1+\lambda_2v_2) = (\lambda_1v_1+\lambda_2v_2)_{11}+(\lambda_1v_1+\lambda_2v_2)_{22}+...+(\lambda_1v_1+\lambda_2v_2)_{nn}
-\]
-\[
-\lambda_1 (v_{1_{11}}+v_{1_{22}}+...+v_{1_{nn}}) + \lambda_2 (v_{2_{11}}+v_{2_{22}}+...+v_{2_{nn}}) = \lambda_1Tr(v_1)+\lambda_2Tr(v_2))
-\]
+\begin{align*}
+\text{Tr}(\lambda_1v_1+\lambda_2v_2)
+&= (\lambda_1v_1+\lambda_2v_2)_{11}+(\lambda_1v_1+\lambda_2v_2)_{22}+ \ldots+(\lambda_1v_1+\lambda_2v_2)_{nn}\\
+&= \lambda_1 (v_{1_{11}}+v_{1_{22}}+\ldots+v_{1_{nn}}) + \lambda_2 (v_{2_{11}}+v_{2_{22}}+\ldots +v_{2_{nn}}) \\
+&= \lambda_1\text{Tr}(v_1)+\lambda_2\text{Tr}(v_2)
+\end{align*}
 \end{proof}
 
 \item De overgang is een lineaire afbeelding.
-Te Bewijzen:
 \[
 \forall \lambda_1, \lambda_2 \in \mathbb{R}, v_1,v_2 \in \mathbb{R}^3: S(\lambda_1v_1+\lambda_2v_2) = \lambda_1 S v_1+\lambda_2Sv_2)
 \]
@@ -445,25 +446,23 @@ S(\lambda_1v_1+\lambda_2v_2)
 = S(\lambda_1v_1)+S(\lambda_2v_2)
 = \lambda_1 S (v_1)+\lambda_2S(v_2)
 \]
-Dit geldt door de lineairiteit van de linkse vermenigvuldiging met een matrix van de juiste afmetingen \footnote{Zie Eigenschap 1.19 p 29.} \footnote{Zie Eigenschappen 1.22 p 31}.
+Dit geldt door de lineariteit van de linkse vermenigvuldiging met een matrix van de juiste afmetingen \footnote{Zie Eigenschap 1.19 p 29.} \footnote{Zie Eigenschappen 1.22 p 31}.
 \end{proof}
 
 Zij $X$ de vector die voorstelt hoeveel klanten er van elk merk zijn.
 $A\cdot X$ is dan diezelfde vector na \'e\'en jaar. $A^n\cdot X$ is de verwachtte vector na $n$ jaar.
 
-\item 
-\emph{Te Bewijzen}\\
-Elke matrix $A \in \mathbb{R}^{m\times n}$ bepaalt een lineaire afbeelding.
-\emph{Bewijs}\\
+\item Elke matrix $A \in \mathbb{R}^{m\times n}$ bepaalt een lineaire afbeelding.
 \begin{proof}
 Dit is een vrij belangrijk maar eenvoudig bewijs.\\
 Kies willekeurige $\lambda_1, \lambda_2 \in \mathbb{R}$ en $v_1,v_2 \in \mathbb{R}^3$:
-\[
-L(\lambda_1v_1+\lambda_2v_2) = A(\lambda_1v_1+\lambda_2v_2) = A(\lambda_1v_1)+A(\lambda_2v_2)
-\]
-\[
- = \lambda_1A(v_1)+\lambda_2A(v_2) =\lambda_1 L(v_1)+\lambda_2L(v_2)
-\]
+\begin{align*}
+L(\lambda_1v_1+\lambda_2v_2)
+&= A\cdot(\lambda_1v_1+\lambda_2v_2) \\
+&= A\cdot(\lambda_1v_1)+A\cdot(\lambda_2v_2) \\
+&= \lambda_1A\cdot(v_1)+\lambda_2A\cdot(v_2) \\
+&= \lambda_1 L(v_1)+\lambda_2L(v_2)
+\end{align*}
 Zie de eigenschappen van de matrixvermenigvuldiging in hoofdstuk 1 om te zien waarom dit geldt.
 \end{proof}
 
@@ -479,25 +478,22 @@ Zie de eigenschappen van de matrixvermenigvuldiging in hoofdstuk 1 om te zien wa
 \label{4.6}
 \subsubsection*{Te Bewijzen}
 De co\"ordinaatafbeelding ten opzichte van elke basis is niet enkel bijectief, maar ook lineair en dus een isomorfisme.
-
 \subsubsection*{Bewijs}
 \begin{proof}
-Zij $co_{\beta}$ de co\"ordinaatafbeelding van $V$ ten opzichte van een willekeurige basis $\beta = \{e_1,...,e_n\}$.
-Kies willekeurige $\mu_1,\mu_2 \in \mathbb{R}$ en $v_1,v_2 \in V$. Zij $\nu_1,...,\nu_n$ de co\"ordinaten van $\mu_1v_1+\mu_2v_2$ ten opzichte van $\beta$.
-\[
-(\nu_1,...,\nu_n)
-= co_{\beta}(\mu_1v_1+\mu_2v_2)
-= (\mu_1\lambda_{11}+ \mu_2\lambda_{21},...,\mu_1\lambda_{12}+ \mu_2\lambda_{22})
-\]
-\[
-= \mu_1(\lambda_{11},...,\lambda_{12})
-+ \mu_2(\lambda_{21},...,\lambda_{22})
-= \mu_1co_{\beta}(v_1)+\mu_2co_{\beta}(v_2)
-\]
+Zij $\text{co}_{\beta}$ de co\"ordinaatafbeelding van $V$ ten opzichte van een willekeurige basis $\beta = \{e_1,\ldots,e_n\}$.
+Kies willekeurige $\mu_1,\mu_2 \in \mathbb{R}$ en $v_1,v_2 \in V$. Zij $\nu_1,\ldots,\nu_n$ de co\"ordinaten van $\mu_1v_1+\mu_2v_2$ ten opzichte van $\beta$.
+\begin{align*}
+(\nu_1,\ldots,\nu_n)
+&= \text{co}_{\beta}(\mu_1v_1+\mu_2v_2) \\
+&= (\mu_1\lambda_{11}+ \mu_2\lambda_{21},\ldots,\mu_1\lambda_{12}+ \mu_2\lambda_{22}) \\
+&= \mu_1(\lambda_{11},\ldots,\lambda_{12})
++ \mu_2(\lambda_{21},\ldots,\lambda_{22}) \\
+&= \mu_1\text{co}_{\beta}(v_1)+\mu_2\text{co}_{\beta}(v_2)
+\end{align*}
 \end{proof}
 
 
-\subsection{Opmerking 4.7}
+\subsection{Opmerking 4.7 p 138}
 \label{4.7}
 Zij $(\mathbb{R},V,+)$ een vectorruimte.
 Zij $L_{\alpha}^{\beta} = A$ de matrix van basisverandering van een basis $\alpha$ van $V$ naar een basis $\beta$ van $V$.
@@ -508,8 +504,8 @@ $L_{\alpha}^{\beta}$ is uniek.
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs uit het ongerijmde.\\
-Stel dat er nog een matrix $A'$ bestaat die $L$ bepaalt ten opzichte van de gegeven basissen. $(A\neq A)$
-Kies een willekeurige co\"ordinaatvector $X$ van een vector $v\in V$ ten opzichte van $\alpha$. Beschouw $A$ en $A'$ als rijen van kolomvectoren $(a_1,...,a_n)$ en $(a_1',...,a_n')$.
+Stel dat er nog een matrix $A'$ bestaat die $L$ bepaalt ten opzichte van de gegeven basissen $(A\neq A')$.
+Kies een willekeurige co\"ordinaatvector $X$ van een vector $v\in V$ ten opzichte van $\alpha$. Beschouw $A$ en $A'$ als rijen van kolomvectoren $(a_1,\ldots,a_n)$ en $(a_1',\ldots,a_n')$.
 \[
 A \cdot X = L(X) = A'\cdot X
 \]
@@ -531,19 +527,16 @@ Zij $(\mathbb{R},V,+)$ en $(\mathbb{R},W,+)$ vectorruimten. Zij $f$ en $g$ linea
 \begin{enumerate}
 \item De volgende afbeelding is lineair.
 \[f+g: V \rightarrow W: v\mapsto(f+g)(v)=f(v)+g(v)\]
-
 \item De volgende afbeelding is eveneens lineair.
 \[\lambda f: V\rightarrow W: v\mapsto (\lambda f)(v) = \lambda f(v)\]
-
-\item De verzameling van alle lineaire afbeeldingen van $V$ naar $W$ is een lineaire afbeelding.
+\item De verzameling van alle lineaire afbeeldingen van $V$ naar $W$ is een re\"ele vectorruimte.
 \end{enumerate}
-
 \subsubsection*{Bewijs}
 \begin{proof}
 Direct bewijs.
 \begin{enumerate}
 \item
-We veri\"eren de lineariteit van deze afbeelding.
+We verifi\"eren de lineariteit van deze afbeelding.
 \[
 (f+g)(\lambda_1v_1+\lambda_2v_2) = f(\lambda_1v_1+\lambda_2v_2) + g(\lambda_1v_1+\lambda_2v_2)
 \]
@@ -553,11 +546,11 @@ Nu geldt door de lineariteit van $f$ en $g$ het volgende.
 \]
 Dit is precies wat nodig is voor lineariteit.
 \[
-\lambda_1(f+g)(v_1)+\lambda_2(f+g)(v_2)
+= \lambda_1(f+g)(v_1)+\lambda_2(f+g)(v_2)
 \]
 
 \item
-We veri\"eren de lineariteit van deze afbeelding.
+We verifi\"eren de lineariteit van deze afbeelding.
 \[
 (\lambda f)(\lambda_1v_1+\lambda_2v_2) = \lambda f(\lambda_1v_1+\lambda_2v_2)
 \]
@@ -576,27 +569,22 @@ De verzameling van alle lineaire afbeelding is een deelverzameling van alle afbe
 
 \subsection{Stelling 4.12 p 142}
 \label{4.12}
-Zij $(\mathbb{R},V,+)$ en  $(\mathbb{R},W,+)$ eindigdimensionale vecotrruimten van dimensie respectievelijk $n$ en $m$.
-
+Zij $(\mathbb{R},V,+)$ en  $(\mathbb{R},W,+)$ eindigdimensionale vectorruimten van dimensie respectievelijk $n$ en $m$.
 \subsubsection*{Te Bewijzen}
-Na basiskeuze in $V$ en $W$ is de vectorruimte van de lineaire afbeeldingen van $V$ naar $W$, namelijk $Hom_{\mathbb{R}}(V,W)$, in bijectief verband met de vectorruimte van de matrices $\mathbb{R}^{m\times n}$.
-
+Na basiskeuze in $V$ en $W$ is de vectorruimte van de lineaire afbeeldingen van $V$ naar $W$, namelijk $\textit{Hom}_{\mathbb{R}}(V,W)$, in bijectief verband met de vectorruimte van de matrices $\mathbb{R}^{m\times n}$.
 \subsubsection*{Bewijs}
 \begin{proof}
 Na basiskeuze beschrijft elke lineaire afbeelding van $V$ naar $W$ precies \'e\'en matrix $A\in \mathbb{R}^{n\times m}$. Deze matrix is bovendien uniek \footnote{Zie Opmerking 4.7 p 138.}.
 \end{proof}
 
-
 \subsection{Stelling 4.13 p 142}
 \label{4.13}
 Zij $K:U\rightarrow V$ en $L:V\rightarrow W$ lineaire afbeeldingen.
-
 \subsubsection*{Te Bewijzen}
 De samenstelling van twee lineaire afbeeldingen is opnieuw een lineaire afbeelding.
 \[
-\forall u_1,u_2\in U \lambda_1,\lambda_2\in\mathbb{R}: (L\circ K)(\lambda_1u_1 + \lambda_2u_2) = \lambda_1(L\circ K)u_1 + \lambda_2(L\circ K)u_2
+\forall u_1,u_2\in U \ ,\ \lambda_1,\lambda_2\in\mathbb{R}: (L\circ K)(\lambda_1u_1 + \lambda_2u_2) = \lambda_1(L\circ K)u_1 + \lambda_2(L\circ K)u_2
 \]
-
 \subsubsection*{Bewijs}
 \begin{proof}
 Kies willekeurige $u_1,u_2\in U$ en $\lambda_1,\lambda_2\in\mathbb{R}$
@@ -604,9 +592,10 @@ Kies willekeurige $u_1,u_2\in U$ en $\lambda_1,\lambda_2\in\mathbb{R}$
 (L\circ K)(\lambda_1u_1 + \lambda_2u_2) = L(K(\lambda_1u_1 + \lambda_2u_2))
 \]
 Bovenstaande gelijkheid geldt volgens de definitie van samengestelde afbeeldingen. Zie \ref{samenstelling_van_afbeeldingen}. De volgende gelijkheden gelden door de lineariteit van $L$ en $K$
-\[
-= L(\lambda_1K(u_1) + \lambda_2K(u_2)) = \lambda_1L(K(u_1)) + \lambda_2L(K(u_2))
-\]
+\begin{align*}
+&= L(\lambda_1K(u_1) + \lambda_2K(u_2)) \\
+&= \lambda_1L(K(u_1)) + \lambda_2L(K(u_2))
+\end{align*}
 Opnieuw volgens de definitie van samengestelde afbeeldingen geldt de volgende vergelijking.
 \[
 = \lambda_1(L\circ K)u_1 + \lambda_2(L\circ K)u_2
@@ -618,19 +607,17 @@ Dit betekent precies dat de samenstelling van lineaire afbeeldingen lineair is.
 \subsection{Stelling 4.16 p 145}
 \label{4.16}
 Zij $L:V\rightarrow W$ een bijectieve lineaire afbeelding van de vectorruimte $(\mathbb{R},V,+)$ naar de vectorruimte $(\mathbb{R},W,+)$.
-
 \subsubsection*{Te Bewijzen}
-De inverse afbeelding van $L$ is (noem het $K$) is linear.
-
+De inverse afbeelding van $L$ (noem het $K$) is lineair. Dus $K : W \rightarrow V$ is lineair.
 \subsubsection*{Bewijs}
 \begin{proof}
-$K$ is ook bijectief. Te bewijzen is nu nog dat $K$ lineair is.
+$K$ is ook bijectief. Te bewijzen is nu nog dat $K$ lineair is. Omdat $L \circ K = \textit{Id}_W$ volgt:
 \[
-(L\circ K)(\lambda_1u_1 + \lambda_2u_2) = \lambda_1u_1 + \lambda_2u_2 = L(\lambda_1K(u_1) + \lambda_2K(u_2))
+(L\circ K)(\lambda_1w_1 + \lambda_2w_2) = \lambda_1w_1 + \lambda_2w_2 = L(\lambda_1K(w_1) + \lambda_2K(w_2))
 \]
 Omdat $L$ injectief is geldt de volgende vergelijking.
 \[
-K(\lambda_1u_1 + \lambda_2u_2) = \lambda_1K(u_1) + \lambda_2K(u_2)
+K(\lambda_1w_1 + \lambda_2w_2) = \lambda_1K(w_1) + \lambda_2K(w_2)
 \]
 \end{proof}
 
@@ -643,41 +630,40 @@ Zij $L: V\rightarrow W$ een lineaire afbeelding.
 \begin{enumerate}
 \item De kern van $L$ is een deelruimte van $V$.
 \[
-\forall l_1l_2\in ker(L), \lambda_1,\lambda_2\in \mathbb{R}: \lambda_1l_1+\lambda_2l_2 \in ker(L)
+\forall l_1l_2\in \text{Ker}(L), \lambda_1,\lambda_2\in \mathbb{R}: \lambda_1l_1+\lambda_2l_2 \in \text{Ker}(L)
 \]
 
 \item Het beeld van $L$ is een deelruimte van $W$.
 \[
-\forall l_1l_2\in Im(L), \lambda_1,\lambda_2\in \mathbb{R}: \lambda_1l_1+\lambda_2l_2 \in Im(L)
+\forall l_1l_2\in \text{Im}(L), \lambda_1,\lambda_2\in \mathbb{R}: \lambda_1l_1+\lambda_2l_2 \in \text{Im}(L)
 \]
 
-\item $Im(L)$ is de vectorruimte voortgebracht door de beelden van een basis van $V$.
+\item $\text{Im}(L)$ is de vectorruimte voortgebracht door de beelden van een basis van $V$.
 \[
-Im(L) = vct\{L(e)|e\in \beta\}
+\text{Im}(L) = vct\{L(e)|e\in \beta\}
 \]
-
 \end{enumerate}
 
 \subsubsection*{Bewijs}
 \begin{proof}
 Rechtstreeks bewijs.
 \begin{enumerate}
-\item Kies twee elementen $v,w \in ker(L)$. We weten nu dat $L(v)=L(w)=0$ geldt volgens de definitie van de kern van een lineaire afbeelding. Kies nu twee willekeurige $\lambda_1,\lambda_2 \in \mathbb{R}$.
+\item Kies twee elementen $v,w \in \text{Ker}(L)$. We weten nu dat $L(v)=L(w)=0$ geldt volgens de definitie van de kern van een lineaire afbeelding. Kies nu twee willekeurige $\lambda_1,\lambda_2 \in \mathbb{R}$.
 \[
  L(0) = \lambda_1L(v)+\lambda_2L(w) = L(\lambda_1v+\lambda_2w) = \vec{0}
- \Rightarrow  (\lambda_1v+\lambda_2w) \in ker(L)
+ \Rightarrow  (\lambda_1v+\lambda_2w) \in \text{Ker}(L)
 \]
 Volgens de lineariteit van $L$ geldt de tweede gelijkheid\footnote{Zie Lemma 4.2 p 130}.
 
-\item Kies twee elementen $w_1,w_2 \in Im(L)$ en twee willekeurige $\lambda_1,\lambda_2 \in \mathbb{R}$.
+\item Kies twee elementen $w_1,w_2 \in \text{Im}(L)$ en twee willekeurige $\lambda_1,\lambda_2 \in \mathbb{R}$.
 \[
-\lambda_1w_1+\lambda_2w_2 = \lambda_1L(v_1) + \lambda_2L(v_1) = L(\lambda_1v_1+\lambda_2v_2) \in Im(L)
+\lambda_1w_1+\lambda_2w_2 = \lambda_1L(v_1) + \lambda_2L(v_1) = L(\lambda_1v_1+\lambda_2v_2) \in \text{Im}(L)
 \]
-De eerste gelijkheid geldt omwille van de definitie van $Im(L)$ en de tweede omwille van de lineariteit van $L$\footnote{Zie Lemma 4.2 p 130}.
+De eerste gelijkheid geldt omwille van de definitie van $\text{Im}(L)$ en de tweede omwille van de lineariteit van $L$\footnote{Zie Lemma 4.2 p 130}.
 
-\item Zij $\beta = \{e_1,e_2,...,e_n\}$ een basis van $V$, dan is elke vector $v\in V$ te schrijven als een lineaire combinatie van de vectoren in $\beta$\footnote{Zie Stelling 3.41 p 109}. We beschouwen nu het beeld van een willekeurige $v$.
+\item Zij $\beta = \{e_1,e_2,\ldots,e_n\}$ een basis van $V$, dan is elke vector $v\in V$ te schrijven als een lineaire combinatie van de vectoren in $\beta$\footnote{Zie Stelling 3.41 p 109}. We beschouwen nu het beeld van een willekeurige $v$.
 \[
-L(v) = L(\lambda_1e_1+\lambda_2e_2 + ... + \lambda_ne_n) = \lambda_1L(e_1)+\lambda_2L(e_2) + ... + \lambda_nL(e_n)
+L(v) = L(\lambda_1e_1+\lambda_2e_2 + \ldots + \lambda_ne_n) = \lambda_1L(e_1)+\lambda_2L(e_2) + \ldots + \lambda_nL(e_n)
 \] 
 De tweede gelijkheid geldt volgens de lineariteit van $L$\footnote{Zie Lemma 4.2 p 130}.
 \end{enumerate}
@@ -689,43 +675,35 @@ De tweede gelijkheid geldt volgens de lineariteit van $L$\footnote{Zie Lemma 4.2
 Zij $L:V\rightarrow W$ een lineaire afbeelding.
 
 \subsubsection*{Te Bewijzen}
-\begin{center}
-$L$ is injectief.
-\end{center}
-\[\Leftrightarrow\]
-\[
-ker(L) = \{\vec{0}\}
-\]
+\begin{gather*}
+L \text{ is injectief}\\
+\Leftrightarrow\\
+\text{Ker}(L) = \{\vec{0}\}
+\end{gather*}
 
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs van een equivalentie in twee delen.
 \begin{itemize}
 \item $\Rightarrow$\\
-Neem een willekeurige $v\in ker(L)$. Voor $v$ geldt dat $L(v) = \vec{0}$ omwille van de definitie van de kern van een lineaire afbeelding\footnote{Zie Definitie 4.26 p 155}. Omdat $L$ een lineaire afbeelding is geldt dat $L(\vec{0}) = \vec{0}$.
+Neem een willekeurige $v\in \text{Ker}(L)$. Voor $v$ geldt dat $L(v) = \vec{0}$ omwille van de definitie van de kern van een lineaire afbeelding\footnote{Zie Definitie 4.26 p 155}. Omdat $L$ een lineaire afbeelding is geldt dat $L(\vec{0}) = \vec{0}$.
 \[
 L(v) = \vec{0} = L(\vec{0})
 \]
-Vanwege de injectiviteit\ref{injectief} van $L$ geldt nu dat $v=\vec{0}$ voor elke $v \in ker(L)$. Dit betekent dat in $ker(L)$ enkel de nulvector zit.
+Vanwege de injectiviteit\ref{injectief} van $L$ geldt nu dat $v=\vec{0}$ voor elke $v \in \text{Ker}(L)$. Dit betekent dat in $\text{Ker}(L)$ enkel de nulvector zit.
 
 \item $\Leftarrow$\\
 Kies twee vectoren $v_1,v_2 \in V$ zodat $L(v_1)=L(v_2)$. We moeten nu aantonen dat dit impliceert dat $v_1$ en $v_2$ gelijk zijn.
-\[
-L(v_1)=L(v_2)
-\]
-\[
-L(v_1)-L(v_2) = \vec{0}
-\]
-\[
-L(v_1-v_2) = \vec{0}
-\]
-Bovenstaande bewering houdt in dat $v_1-v_2 \in ker(L)$. Omdat $ker(L) = \{\vec{0}\}$ geldt het volgende.
-\[
-v_1-v_2 = \vec{0}
-\]
-\[
-v_1=v_2
-\]
+\begin{align*}
+L(v_1) &= L(v_2) \\
+L(v_1)-L(v_2) &= \vec{0} \\
+L(v_1-v_2) &= \vec{0}
+\end{align*}
+Bovenstaande bewering houdt in dat $v_1-v_2 \in \text{Ker}(L)$. Omdat $\text{Ker}(L) = \{\vec{0}\}$ geldt het volgende.
+\begin{align*}
+v_1-v_2 &= \vec{0} \\
+v_1 &= v_2
+\end{align*}
 Dit houdt in dat $L$ injectief is.
 \end{itemize}
 \end{proof}
@@ -734,46 +712,44 @@ Dit houdt in dat $L$ injectief is.
 \subsection{Stelling 4.31 p 157}
 \label{4.31}
 Zij $(\mathbb{R},V,+)$ en $(\mathbb{R},W,+)$ vectorruimten zijn waarvan $V$ eindig dimensionaal is. Zij $L:V\rightarrow W$ een lineaire afbeelding.
-
 \subsubsection*{Te Bewijzen}
 \[
-dimV = dim(Ker(L)) + dim(Im(L))
+\dim V = \dim (\text{Ker}(L)) + \dim (\text{Im}(L))
 \]
-
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs van dimensies.\\
-We kiezen een basis van $Ker(L)$ en breiden deze uit tot een basis van $V$. Dit kan omdat $V$ eindig dimensionaal is en omdat $Ker(L)$ een deelruimte is van $V$\footnote{Zie Propositie 4.27 p 156}. Kies $\beta = \{v_1,v_2,...,v_r\}$ als basis van $Ker(L)$. We breiden $\beta$ nu uit tot $\beta'= \{v_1,v_2,...,v_r,v_{r+1},...,v_{n}\}$ door $n-r$ vectoren toe te voegen. 
-We zullen nu bewijzen dat de uitbreiding $\{v_{r+1},...,v_{n}\}$ een basis is van $Im(L)$. We weten het volgende over het beeld van $L$.
+We kiezen een basis van $\text{Ker}(L)$ en breiden deze uit tot een basis van $V$. Dit kan omdat $V$ eindig\-dimensionaal is en omdat $\text{Ker}(L)$ een deelruimte is van $V$\footnote{Zie Propositie 4.27 p 156}. Kies $\beta = \{v_1,v_2,\ldots,v_r\}$ als basis van $\text{Ker}(L)$. We breiden $\beta$ nu uit tot $\beta'= \{v_1,v_2,\ldots,v_r,v_{r+1},\ldots,v_{n}\}$ door $n-r$ vectoren toe te voegen. 
+We zullen nu bewijzen dat de uitbreiding $\{v_{r+1},\ldots,v_{n}\}$ een basis is van $\text{Im}(L)$. We weten het volgende over het beeld van $L$.
 \[
-Im(L) = vct\{L(v_1),L(v_2),...,L(v_r),L(v_{r+1}),...,L(v_{n})\}
+\text{Im}(L) = vct\{L(v_1),L(v_2),\ldots,L(v_r),L(v_{r+1}),\ldots,L(v_{n})\}
 \]
-Omdat $v_1,v_2,...,v_r$ in $Ker(L)$ zitten weten we het volgende.
+Omdat $v_1,v_2,\ldots,v_r$ in $\text{Ker}(L)$ zitten weten we het volgende.
 \[
-Im(L) = vct \{L(v_{r+1}),...,L(v_{n})\}
+\text{Im}(L) = vct \{L(v_{r+1}),\ldots,L(v_{n})\}
 \]
-We beweren nu dat de verzameling $\{L(v_{r+1}),...,L(v_{n})\}$ inderdaad vrij is.
+We beweren nu dat de verzameling $\{L(v_{r+1}),\ldots,L(v_{n})\}$ inderdaad vrij is.
 \[
 \vec{0}=\sum_{i=r+1}^nx_iL(v_i)=L\left(\sum_{i=r+1}^nx_iv_i\right)
 \]
-Bovenstaande bewering houdt precies in dat $\sum_{i=r+1}^nx_iv_i\in Ker(L)$ geldt. Omdat $\sum_{i=r+1}^nx_iv_i$ is dus een lineaire combinatie van $\{v_1,v_2,...,v_r\}$ en bijgevolg bestaan er $\lambda_i$ zodat het volgende geldt.
+Bovenstaande bewering houdt precies in dat $\sum_{i=r+1}^nx_iv_i\in \text{Ker}(L)$ geldt.\\
+Omdat $\sum_{i=r+1}^nx_iv_i$ dus een lineaire combinatie van $\{v_1,v_2,\ldots,v_r\}$ is, bestaan er bijgevolg $\lambda_i \in \mathbb{R}$ zodat het volgende geldt.
+\begin{align*}
+\sum_{i=r+1}^nx_iv_i &= \sum_{i=1}^r\lambda_iv_i \\
+\sum_{i=r+1}^nx_iv_i - \sum_{i=1}^r\lambda_iv_i &= \vec{0} \\
+\sum_{i=r+1}^nx_iv_i + \sum_{i=1}^r(-\lambda_i)v_i &= \vec{0}
+\end{align*}
+Omdat $\{v_1,v_2,\ldots,v_r,v_{r+1},\ldots,v_{n}\}$ een basis is van $V$, geldt dat alle $x_i$ en $\lambda_i$ gelijk zijn aan nul. En dus is $\{L(v_{r+1}),\ldots,L(v_{n})\}$ een basis van $\text{Im}(L)$.\\
+De basis van $\text{Im}(L)$ en $\text{Ker}(L)$ bevatten respectievelijk $n-r$ en $r$ vectoren. Bijgevolg geldt het volgende en is de stelling bewezen.
 \[
-\sum_{i=r+1}^nx_iv_i = \sum_{i=1}^r\lambda_iv_i
-\]
-\[
-\sum_{i=r+1}^nx_iv_i + \sum_{i=1}^r(-\lambda_i)v_i = \vec{0}
-\]
-Omdat $\{v_1,v_2,...,v_r,v_{r+1},...,v_{n}\}$ een basis is van $V$ geldt dat alle $x_i$ en $\lambda_i$ gelijk zijn aan nul. $\{L(v_{r+1}),...,L(v_{n})\}$ is dus een basis van $Im(L)$
-De basis van $Im(L)$ en $(Ker(L))$ bevatten respectievelijk $n-r$ en $r$ vectoren. Bijgevolg geldt het volgende en is de stelling bewezen.
-\[
-dimV = n = r + (n-r) = dim(Ker(L)) + dim(Im(L))
+\dim V = n = r + (n-r) = \dim (\text{Ker}(L)) + \dim (\text{Im}(L))
 \]
 \end{proof}
 
 
 \subsection{Stelling 4.34 p 159}
 \label{4.34}
-Zij $(\mathbb{R},V,+)$ en $(\mathbb{R},W,+)$ eindig dimensionale vectorruimten en zijn $L:V\rightarrow W$ een lineaire afbeelding.
+Zij $(\mathbb{R},V,+)$ en $(\mathbb{R},W,+)$ eindigdimensionale vectorruimten en zijn $L:V\rightarrow W$ een lineaire afbeelding.
 
 \subsubsection*{Te Bewijzen}
 Er bestaat een basis $\alpha$ van $V$ en een basis $\beta$ van $W$ zodat de matrix van $L$ t.o.v. deze basissen van de volgende vorm is.
@@ -798,13 +774,13 @@ Hierin is $r$ de rang van de lineaire afbeelding $L$.
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs in woorden.\\
-Omdat $L$ rang $r$ heeft, bestaan er net $r$ dimensies van beelden van $L$. Omdat elke dimensie onafhankelijk is kunnen we $L$ dus voorstellen door een identiteitsmatrix (met nullen errond) mits we de juiste basissen kiezen. De informatie die $L$ beschrijft, zit dan in de basissen, in plaats van in de matrix.+
+Omdat $L$ rang $r$ heeft, bestaan er net $r$ dimensies van beelden van $L$. Omdat elke dimensie onafhankelijk is kunnen we $L$ dus voorstellen door een identiteitsmatrix (met nullen errond) mits we de juiste basissen kiezen. De informatie die $L$ beschrijft, zit dan in de basissen, in plaats van in de matrix.
 \end{proof}
 
 
 \subsection{Gevolg 4.35 p 159}
 \label{4.35}
-Zij $L: V\rightarrow V : v\mapsto L(v)$ een lineaire transformatie is van de eindig dimensionale vectorruimte $(\mathbb{R},V,+)$.
+Zij $L: V\rightarrow V : v\mapsto L(v)$ een lineaire transformatie van de eindigdimensionale vectorruimte $(\mathbb{R},V,+)$.
 
 \subsubsection*{Te Bewijzen}
 \begin{center}
@@ -817,11 +793,11 @@ Bewijs door circulaire implicaties.
 \begin{itemize}
 \item $L$ is injectief $\Rightarrow L$ is surjectief.\\
 Omdat $L$ injectief is, zal de kern van $L$ enkel de nulvector bevatten\footnote{Zie Stelling 4.29 p 156}.
-\[Ker(L) = \{\vec{0}\}\]
-$dim(Ker(L))$ is dus gelijk aan $0$. Uit de dimensiestelling volgt dan dat $dim(Im(L)) = dim(V)$ geldt. Omdat $Im(L)$ een deelruimte is van $V$\footnote{Zie Propositie 4.27 p 155} geldt dat $Im(L) = V$. Dit houdt in dat $L$ surjectief is.
+\[\text{Ker}(L) = \{\vec{0}\}\]
+$\dim (\text{Ker}(L))$ is dus gelijk aan $0$. Uit de dimensiestelling volgt dan dat $\dim (\text{Im}(L)) = \dim (V)$ geldt. Omdat $\text{Im}(L)$ een deelruimte is van $V$\footnote{Zie Propositie 4.27 p 155} geldt dat $\text{Im}(L) = V$. Dit houdt in dat $L$ surjectief is.
 
 \item $L$ is surjectief $\Rightarrow L$ is bijectief.\\
-Omdat $L$ surjectief is geldt $Im(L)=V$. Uit de dimensiestelling volgt dan dat $dim(Ker(L)) = 0$\footnote{Zie Propositie 4.27 p 155}. Bijgevolg geldt $Ker(L) = \{\vec{0}\}$. Dit houdt precies in dat $V$ injectief is\footnote{Zie Stelling 4.29 p 156}. Omdat $L$ injectief en surjectief is geldt dat $L$ bijectief is(Zie \ref{bijectief}).
+Omdat $L$ surjectief is, geldt er dat $\text{Im}(L)=V$. Uit de dimensiestelling volgt dan dat $\dim (\text{Ker}(L)) = 0$\footnote{Zie Propositie 4.27 p 155}. Bijgevolg geldt $\text{Ker}(L) = \{\vec{0}\}$. Dit houdt precies in dat $V$ injectief is\footnote{Zie Stelling 4.29 p 156}. Omdat $L$ injectief en surjectief is, geldt er dat $L$ bijectief is (Zie \ref{bijectief}).
 
 \item $L$ is bijectief $\Rightarrow L$ is injectief.\\
 Dit volgt meteen uit de definitie van bijectiviteit (Zie \ref{bijectief}).
@@ -841,9 +817,9 @@ We weten het volgende over matrices en hun kolomruimten \footnote{Zie Stelling 6
 \[
 C(AB) \subset C(A) \text{ en } R(AB) \subset R(B)
 \]
-Dit houdt ook in dat $dimC(AB) \le dimC(A)$ en $dimR(AB) \le dimR(B)$ gelden \footnote{Zie Stelling 4.43 p 110.}. Omdat de kolomrang en de rijrang van $AB$ gelijk zijn geldt nu ook de volgende bewering \footnote{Zie Opmerking 4.38 p 160.}.
+Dit houdt ook in dat $\dim C(AB) \le \dim C(A)$ en $\dim R(AB) \le \dim R(B)$ gelden \footnote{Zie Stelling 4.43 p 110.}. Omdat de kolomrang en de rijrang van $AB$ gelijk zijn geldt nu ook de volgende bewering \footnote{Zie Opmerking 4.38 p 160.}.
 \[
-rang(AB) \le rang(A) \text{ en } rang(AB) \le rang(B)
+\text{rang}(AB) \le \text{rang}(A) \text{ en } \text{rang}(AB) \le \text{rang}(B)
 \]
 Dit houdt precies in wat er te bewijzen valt.
 \end{proof}
@@ -854,34 +830,33 @@ Dit houdt precies in wat er te bewijzen valt.
 Zij $A \in \mathbb{R}^{m\times n}$.
 
 \subsubsection*{Te Bewijzen}
-\begin{center}
-$A\cdot X = b$ is oplosbaar voor elke $b\in \mathbb{R}^m$
-\end{center}
-\[\Leftrightarrow\]
-\[C(A) = \mathbb{R}^m\]
-\[\Leftrightarrow\]
-\begin{center}
-De rang van $A$ is $m$
-\end{center}
-\[\Leftrightarrow\]
-\begin{center}
-De rijen van $A$ zijn lineair onafhankelijk.
-\end{center}
+\begin{gather*}
+A\cdot X = b \text{ is oplosbaar voor elke } b\in \mathbb{R}^m \\
+\Leftrightarrow \\
+C(A) = \mathbb{R}^m \\
+\Leftrightarrow \\
+\text{De rang van $A$ is $m$} \\
+\Leftrightarrow \\
+\text{De rijen van $A$ zijn lineair onafhankelijk}
+\end{gather*}
 
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs door circulaire implicaties.
 \begin{itemize}
 \item
-$A\cdot X = b$ is oplosbaar voor elke $b\in \mathbb{R}^m \Rightarrow C(A) = \mathbb{R}^m$.\\
+$A\cdot X = b$ is oplosbaar voor elke $b\in \mathbb{R}^m \Rightarrow C(A) = \mathbb{R}^m$.
+
 Als elke $b\in \mathbb{R}^m$ gevormd kan worden door lineaire combinatie van de kolommen van $A$ houdt dit precies in dat de kolomruimte van $A$ heel $\mathbb{R}^m$ is.
 
 \item
-$C(A) = \mathbb{R}^m \Rightarrow $ De rang van $A$ is $m$.\\
+$C(A) = \mathbb{R}^m \Rightarrow $ De rang van $A$ is $m$.
+
 We weten dat de kolomrang gelijk is aan de rijrang en de rang van $A$. De kolomrang is gelijk aan de dimensie van de kolomruimte. Deze is duidelijk $m$. De rang van $A$ dus ook.
 
 \item
- De rang van $A$ is $m \Rightarrow$ De rijen van $A$ zijn lineair onafhankelijk.\\
+De rang van $A$ is $m \Rightarrow$ De rijen van $A$ zijn lineair onafhankelijk.
+ 
 Het aantal lineair onafhankelijk rijen van $A$ is precies gelijk aan de rang van $A$. Er zijn dus nul lineaire afhankelijke rijen in $A$. De rijen van $A$ zijn bijgevolg lineair onafhankelijk.
 
 \item
@@ -897,19 +872,15 @@ Als de rijen van $A$ lineair onafhankelijk zijn komen er geen nulrijen tevoorsch
 Zij $A \in \mathbb{R}^{m\times n}$
 
 \subsubsection*{Te Bewijzen}
-\begin{center}
-Voor elke $b \in \mathbb{R}^m$ heeft het stelsel $A\cdot X = b$ hoogstens \'e\'en oplossing.
-\end{center}
-\[\Leftrightarrow\]
-\[N(A) = \{\vec{0}\}\]
-\[\Leftrightarrow\]
-\begin{center}
-De rang van $A$ is gelijk aan $m$.
-\end{center}
-\[\Leftrightarrow\]
-\begin{center}
-De kolommen van $A$ zijn lineair onafhankelijk.
-\end{center}
+\begin{gather*}
+\text{Voor elke $b \in \mathbb{R}^m$ heeft het stelsel $A\cdot X = b$ hoogstens \'e\'en oplossing} \\
+\Leftrightarrow \\
+N(A) = \{\vec{0}\} \\
+\Leftrightarrow \\
+\text{De rang van $A$ is gelijk aan $m$} \\
+\Leftrightarrow \\
+\text{De kolommen van $A$ zijn lineair onafhankelijk}
+\end{gather*}
 
 \subsubsection*{Bewijs}
 \begin{proof}
@@ -921,13 +892,18 @@ Voor elke $b \in \mathbb{R}^m$ heeft het stelsel $A\cdot X = b$ hoogstens \'e\'e
 $A\cdot X = b$ heeft dus ook hoogstens \'e\'en oplossing voor $b = \vec{0}$. Die \'ene oplossing moet de nulvector zijn omdat  p $N(A)$ een deelruimte is\footnote{Propositie 4.27 p 155} en de kleinste deelruimte enkel de nulvector bevat.
 
 \item
-$N(A) = \{\vec{0}\} \Rightarrow $ De rang van $A$ is gelijk aan $n$.\\
+$N(A) = \{\vec{0}\} \Rightarrow $ De rang van $A$ is gelijk aan $n$.
+
 %TODO
+
 \item
-De rang van $A$ is gelijk aan $m$. $\Rightarrow$ De kolommen van $A$ zijn lineair onafhankelijk.\\
+De rang van $A$ is gelijk aan $m$. $\Rightarrow$ De kolommen van $A$ zijn lineair onafhankelijk.
+
 %TODO
+
 \item
 De kolommen van $A$ zijn lineair onafhankelijk. $\Rightarrow$ Voor elke $b \in \mathbb{R}^m$ heeft het stelsel $A\cdot X = b$ hoogstens \'e\'en oplossing.
+
 %TODO
 \end{itemize}
 \end{proof}
@@ -938,42 +914,45 @@ De kolommen van $A$ zijn lineair onafhankelijk. $\Rightarrow$ Voor elke $b \in \
 Zij $A\in \mathbb{R}^{n \times n}$ een vierkante matrix.
 
 \subsubsection*{Te Bewijzen}
-\begin{center}
-A is inverteerbaar.
-\end{center}
-\[\Leftrightarrow\]
-\[\det(A) \neq 0\]
-\[\Leftrightarrow\]
-\begin{center}
-De rang van $A$ is gelijk aan $n$.
-\end{center}
-\[\Leftrightarrow\]
-\begin{center}
-De rijen van $A$ zijn lineair onafhankelijk.
-\end{center}
-\[\Leftrightarrow\]
-\begin{center}
-De kolommen van $A$ zijn lineair onafhankelijk.
-\end{center}
+\begin{gather*}
+\text{A is inverteerbaar} \\
+\Leftrightarrow \\
+\det(A) \neq 0 \\
+\Leftrightarrow \\
+\text{De rang van $A$ is gelijk aan $n$} \\
+\Leftrightarrow \\
+\text{De rijen van $A$ zijn lineair onafhankelijk} \\
+\Leftrightarrow \\
+\text{De kolommen van $A$ zijn lineair onafhankelijk} \\
+\end{gather*}
 
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs door circulaire implicaties.
 \begin{itemize}
 \item
-A is inverteerbaar. $\Rightarrow \det(A) \neq 0$\\
+A is inverteerbaar. $\Rightarrow \det(A) \neq 0$
+
 Dit is een stelling die al bewezen is\footnote{Zie Stelling 2.4 p 59}.
+
 \item
-$\det(A) \neq 0 \Rightarrow $ De rang van $A$ is gelijk aan $n$.\\
+$\det(A) \neq 0 \Rightarrow $ De rang van $A$ is gelijk aan $n$.
+
 %TODO
+
 \item
-De rang van $A$ is gelijk aan $n$. $\Rightarrow $ De rijen van $A$ zijn lineair onafhankelijk.\\
+De rang van $A$ is gelijk aan $n$. $\Rightarrow $ De rijen van $A$ zijn lineair onafhankelijk.
+
 %TODO
+
 \item
-De rijen van $A$ zijn lineair onafhankelijk. $\Rightarrow$ De kolommen van $A$ zijn lineair onafhankelijk.\\
+De rijen van $A$ zijn lineair onafhankelijk. $\Rightarrow$ De kolommen van $A$ zijn lineair onafhankelijk.
+
 Als de rijen van $A$ lineair onafhankelijk zijn dan geldt $\det(A) \neq 0$ en omdat $\det(A) = \det(A^T)$ zijn de kolommen dus ook onafhankelijk.
+
 \item
-De kolommen van $A$ zijn lineair onafhankelijk. $\Rightarrow$ A is inverteerbaar.\\
+De kolommen van $A$ zijn lineair onafhankelijk. $\Rightarrow$ A is inverteerbaar.
+
 %TODO
 \end{itemize}
 \end{proof}
@@ -985,33 +964,38 @@ Zij $L:V\rightarrow W$ een lineaire afbeelding van $(\mathbb{R},V,+)$ naar $(\ma
 
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
-\item Dit lineair probleem heeft een oplossing als en slechts als $w_0 \in Im(L)$.
+\item Dit lineair probleem heeft een oplossing als en slechts als $w_0 \in \text{Im}(L)$.
 
 \item
 Als het probleem oplosbaar is en $x_p$ een oplossing is dan wordt de oplossingsverzameling de volgende.
 \[
-X = \{x_p + x_h | x_h \in Ker(L)\}
+X = \{x_p + x_h \mid x_h \in \text{Ker}(L)\}
 \]
 \end{enumerate}
 
 \subsubsection*{Bewijs}
-\begin{proof}
+\begin{proof}~
 \begin{enumerate}
-\item Stel dat het probleem oplosbaar zou zijn met $w_0$ een oplossing maar dat $w_0 \not\in Im(L)$.
+\item Stel dat het probleem oplosbaar zou zijn met $w_0$ een oplossing maar dat $w_0 \not\in \text{Im}(L)$.
 
-Omdat $w_0$ een oplossing is bestaat er een $x$ zodat $L(x) = w_0$ geldt. Omdat $w_0$ niet in $Im(L)$ zit bestaat er geen $x$ zodat $L(x) = w_0$. Dit is contradictorisch.
+Omdat $w_0$ een oplossing is bestaat er een $x$ zodat $L(x) = w_0$ geldt. Omdat $w_0$ niet in $\text{Im}(L)$ zit bestaat er geen $x$ zodat $L(x) = w_0$. Dit is contradictorisch.
+
 \item
 We bewijzen eerst dat de verzameling $X$ een deelverzameling is van de oplossingsverzameling. Daarna bewijzen we dat de oplossingsverzameling een deelverzameling is van $X$.\\\\
-Zij $x_p$ een particuliere oplossing van het lineair probleem, dan is elke vector van de vorm $x_p+x_h$ met $x_h\in Ker(L)$ ook een oplossing.
+Zij $x_p$ een particuliere oplossing van het lineair probleem, dan is elke vector van de vorm $x_p+x_h$ met $x_h\in \text{Ker}(L)$ ook een oplossing.
 \[
 L(x_p+x_h)=L(x_p)+L(x_h)=w_0+\vec{0} = w_0
 \]
 De eerste gelijkheid geldt omwille van de lineariteit van $L$\footnote{Zie Definitie 4.1 p 130}. De derde gelijkheid geldt omwille van het neutraal element van een vectorruimte\footnote{Zie Definitie 3.2 p 88}.\\\\
-Zij $x$ een willekeurige oplossing van het lineaire probleem ($L(x)=w_0)$), dan kunnen we $x$ schrijven als volgt.
+Zij $x$ een willekeurige oplossing van het lineaire probleem $(L(x)=w_0)$, dan kunnen we $x$ schrijven als volgt.
 \[
 x = x_p + (x-x_p)
 \]
-Hierboven is $x_p$ een particuliere oplossing van het lineair probleem. Omdat $L(x-x_p) = L(x) - L(x_p) = w_0-w_0=\vec{0}$ geldt, zit $(x-x_p)$ in de kern van $L$.
+Hierboven is $x_p$ een particuliere oplossing van het lineair probleem.
+\[
+L(x-x_p) = L(x) - L(x_p) = w_0-w_0=\vec{0}
+\]
+Hieruit volgt dat $(x-x_p)$ in de kern van $L$ zit.
 \end{enumerate}
 \end{proof}
 

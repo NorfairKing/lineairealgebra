@@ -5,86 +5,75 @@
 \section{Oefeningen 4.8}
 \subsection{Oefening 1}
 \subsubsection*{a)}
-Deze afbeelding is niet lineair. Tegenvoorbeeld: Kies $\lambda = 2$\\
+Deze afbeelding is niet lineair. Tegenvoorbeeld: kies $\lambda = 2$.
 \[
-\lambda L(v) = 2 . 2 . x + 2 \neq 2 . 2 x + 1 = L(\lambda v)
+\lambda L_1(v) = 2 \cdot 2 \cdot x + 2 \neq 2 \cdot 2 \cdot x + 1 = L_1(\lambda v)
 \]
 
 \subsubsection*{b)}
-Deze afbeelding is lineair.
-\begin{proof}
-Kies willekeurige $v_1, v_2 \in \mathbb{R}^2$ en $\lambda_1, \lambda_2 \in \mathbb{R}^2$
-\[
-L_2(\lambda_1v_1 + \lambda_2v_2)
-\]
-TODO afmaken
-\end{proof}
+\begin{align*}
+L_2 \big((a,b)+(c,d)\big)
+&= L_2 (a+c,b+d) = a+c+b+d \\
+&= L_2(a,b) + L_2(c,d) = a+b+c+d
+\end{align*}
+\begin{align*}
+L_2 \big(\lambda(a,b)\big)
+&= \lambda L_2(a,b) = \lambda(a+b) = \lambda a + \lambda b \\
+&= L_2(\lambda a, \lambda b) = \lambda a + \lambda b
+\end{align*}
+Hieruit volgt dus dat $L_2$ lineair is. We berekenen de kern en het beeld.
+\begin{align*}
+&\text{Ker}(L) = \{(x,y) \in \mathbb{R}^2 \mid L_2(x,y)=0 \} = \{(x,y) \in \mathbb{R}^2 \mid x+y=0 \} = \{(\lambda,-\lambda) \mid \lambda \in \mathbb{R} \} = \textless(1,-1)\textgreater \\
+&\text{Im}(L) = \text{vct}\{L(e) \mid e \in \beta_V \} = \textless(1)\textgreater
+\end{align*}
+Het is duidelijk dat aan de dimensiestelling voldaan is. $L_2$ is niet isomorf omdat het niet bijectief is.
 
 \subsubsection*{c)}
-$$
-L_3:\mathbb{R}^2\rightarrow\mathbb{R}:(x,y)\mapsto |x-y|
-$$
-$$
-Ker(L_3)= \{(x,y)|x=y \wedge x,y \in \mathbb{R} \}
-$$
-$$
-Im(L_3)= \{(x,y)|x\neq y \wedge x,y \in \mathbb{R} \}
-$$
-\begin{center}
-Niet isomorf want $L_3$ is niet bijectief.
-\end{center}
+Deze afbeelding is niet lineair. Tegenvoorbeeld: kies $v_1 = (1,0)$ en $v_2=(0,1)$.
+\begin{align*}
+L_3(v_1+v_2)
+&= L_3(x_1+x_2,y_1+y_2) = |x_1+x_2-y_1-y2| = 0 \\
+&= L_3(x_1,y_1) + L_3(x_2,y_2) = |x_1-y_1| + |x_2-y_2| = 2
+\end{align*}
 
 \subsubsection*{d)}
-$L_4$ is niet lineair want $\sin(x)$ is niet lineair.
-Tegenvoorbeeld:\\
-Kies $v_1=(1,0),v_2=\vec{0},\lambda_1 = 2,\lambda_2=0$
-\[
-L_4(\lambda_1v_1+\lambda_2v_2) = L(2\cdot(1,0))= L((2,0))=(\sin(2),0,0)
-\]
-\[
-\neq (2\cdot \sin(1),0,0) = 2\cdot L(1,0) = \lambda_1L(v_1)+\lambda_2L(v_2)
-\]
+$L_4$ is niet lineair want $\sin(x)$ is niet lineair.\\
+Tegenvoorbeeld: kies $v_1=(\frac{\pi}{2},0),v_2=\vec{0},\lambda_1 = 2,\lambda_2=0$.
+\begin{align*}
+L_4(\lambda_1v_1+\lambda_2v_2)
+&= L_4\left(2\cdot\left(\frac{\pi}{2},0\right) + 0\cdot(0,0)\right) = L_4(\pi,0)=(0,0,0) \\
+&= 2\cdot L_4\left(\frac{\pi}{2},0\right)+0\cdot L_4(0,0) = \left(2\cdot \sin\frac{\pi}{2},0,0\right)=(2,0,0)
+\end{align*}
 
 \subsubsection*{e)}
-$$
-L_5:\mathbb{R}^3\rightarrow\mathbb{R}^2:(x,y,z)\mapsto (3y+z,x-y-z)
-$$
-$$
-Ker(L_4)= \{(4\lambda ,\lambda ,-3\lambda)|\lambda \in \mathbb{R} \}
-$$
-$$
-Im(L_4)= \ \{(x ,y ,z)|x,y,z \in \mathbb{R} \}
-$$
-\begin{center}
-Niet isomorf want $L_4$ is niet bijectief.
-\end{center}
+Bewijs zelf dat $L_5$ een lineaire afbeelding is.
+\begin{align*}
+& \text{Ker}(L_5)= \{(-2\lambda ,\lambda ,-3\lambda)\mid\lambda \in \mathbb{R} \} \\
+& \text{Im}(L_5)= \ \{(\lambda,\mu) \mid \lambda,\mu \in \mathbb{R} \} = \textless(1,0),(0,1)\textgreater
+\end{align*}
+Niet isomorf want $L_5$ is niet bijectief.
 
 \subsubsection*{h)}
-
-Deze is niet lineair:
-Nemen we $n=2$, dan beschouwen we het tegenvoorbeeld:
-\[L_8(2) = 2^2 = 4\]
-\[L_8(4*2) = 8^2 = 64\]
-\[4*L_8(2) = 16\]
-\[L_8(4*2) \neq 4*L_8(2)\]
-Volgens Propositie 4.10.1 is dit geen lineaire afbeelding.\\
+Deze afbeelding is niet lineair. Tegenvoorbeeld: kies $n=2$, $x=2$ en $y=3$.
+\begin{align*}
+L_8(x+y)
+&= L_8(2) + L_8(3) = 4 + 9 = 13 \\
+&= L_8(5) = 25
+\end{align*}
 
 \subsubsection*{j)}
-<TODO Aan Jorik: nakijken!>
+%TODO Aan Jorik: nakijken!
+%TODO verwijs naar lemmaatje>
+We bewijzen dat $\text{ev}_a$ lineair is. Neem twee vectoren $f_1,f_2 \in \mathbb{R}^{\mathbb{R}}$ en twee scalars $\lambda_1, \lambda_2 \in \mathbb{R}$.
 \[
-ker(ev_a) = \{ f \in \mathbb{R}^{\mathbb{R}} | f(a) = 0\}
+\text{ev}_a(\lambda_1f_1 + \lambda_2f_2) = (\lambda_1f_1 + \lambda_2f_2)(a) = \lambda_1f_1(a) + \lambda_2f_2(a) = \lambda_1\text{ev}_a(f_2) + \lambda_2\text{ev}_a(f_1)
 \]
-\[
-Im(ev_a) = \mathbb{R}
-\]
-Hiervoor moeten we bewijzen dat $\mathbb{R} \subset Im(ev_a)$.
-\begin{proof}
-Om te bewijzen dat $ev_a$ lineair is nemen we twee vectoren $f_1,f_2 \in \mathbb{R}^{\mathbb{R}}$ en twee scalars $\lambda_1, \lambda_2 \in \mathbb{R}$.
-\[
-ev_a(\lambda_1f_1 + \lambda_2f_2) = (\lambda_1f_1 + \lambda_2f_2)(a) = \lambda_1f_1(a) + \lambda_2f_2(a) = \lambda_1ev_a(f_2) + \lambda_2ev_a(f_1)
-\]
-<TODO verwijs naar lemmaatje>
-\end{proof}
+De afbeelding is dus lineair.
+\begin{align*}
+& \text{Ker}(\text{ev}_a) = \{ f \in \mathbb{R}^{\mathbb{R}} \mid f(a) = 0\} \\
+& \text{Im}(\text{ev}_a) = \mathbb{R}
+\end{align*}
+Hiervoor moeten we bewijzen dat $\mathbb{R} \subset \text{Im}(\text{ev}_a)$.
 
 \subsection{Oefening 2}
 Om de kern te vinden zoeken we alle $X$ zodat de volgende vergelijking opgaat.
@@ -128,43 +117,40 @@ a\\b\\c\\d\\e
 TODO stelsel oplossen.
 
 \subsection{Oefening 3}
-\subsubsection*{$K\circ L$}
-\[
-(K\circ L): \mathbb{R}^3\rightarrow\mathbb{R}^3 (x,y,z)\mapsto (x-y+z,-y,x+z)
-\]
-\subsubsection*{$L\circ K$}
-\[
-(K\circ L): \mathbb{R}^2\rightarrow\mathbb{R}^2 (x,y)\mapsto (2y,x+y)
-\]
+\begin{align*}
+& (K\circ L): \mathbb{R}^3\rightarrow\mathbb{R}^3 :(x,y,z)\mapsto (x-y+z,-y,x+z) \\
+& (L\circ K): \mathbb{R}^2\rightarrow\mathbb{R}^2 :(x,y)\mapsto (2y,x+y)
+\end{align*}
 
 \subsection{Oefening 4}
 Zij $(\mathbb{R},V,+)$ een $n$-dimensionale vectorruimte en zij $\alpha = \{a_1,a_2,...,a_n\}$ een basis van $V$.
 \subsubsection*{Te Bewijzen}
-\[co_\alpha:V\rightarrow \mathbb{R} \text{ is lineair.}\]
+\[\text{co}_\alpha:V\rightarrow \mathbb{R}^n \text{ is lineair.}\]
 \[
-\forall v_1,v_2 \in V, \lambda_1,\lambda_2\in \mathbb{R}: co_\alpha(\lambda_1v_1+\lambda_2v_2)=\lambda_1co_\alpha(v_1)+\lambda_2co_\alpha(v_2)
+\forall v_1,v_2 \in V ,\ \forall\lambda_1,\lambda_2\in \mathbb{R}: \text{co}_\alpha(\lambda_1v_1+\lambda_2v_2)=\lambda_1\text{co}_\alpha(v_1)
++\lambda_2\text{co}_\alpha(v_2)
 \]
 \subsubsection*{Bewijs}
 \begin{proof}
 Direct bewijs.\\
-Zij $v = \sum_{i=1}^n\lambda_ia_i \in V$ een vector geschreven als de lineaire combinatie van de basisvectoren, dan is $(\lambda_1,\lambda_2,...,\lambda_n)$ het beeld ervan door $co_\alpha$.
+Zij $v = \sum_{i=1}^n\lambda_ia_i \in V$ een vector geschreven als de lineaire combinatie van de basisvectoren, dan is $(\lambda_1,\lambda_2,...,\lambda_n)$ het beeld ervan door $\text{co}_\alpha$.
 Kies nu willekeurig $v_1,v_2 \in V$ en $\lambda_1,\lambda_2\in \mathbb{R}$.
 \[
-co_\alpha(\lambda_1v_1+\lambda_2v_2)= co_\alpha(\lambda_1\sum_{i=1}\lambda_{1i}a_{1i} + \lambda_2\sum_{i=1}\lambda_{2i}a_{i}) = co_\alpha(\sum_{i=1}\lambda_1\lambda_{1i}a_{i} + \sum_{i=1}\lambda_2\lambda_{2i}a_{i})
+\text{co}_\alpha(\lambda_1v_1+\lambda_2v_2)= \text{co}_\alpha(\lambda_1\sum_{i=1}\lambda_{1i}a_{1i} + \lambda_2\sum_{i=1}\lambda_{2i}a_{i}) = \text{co}_\alpha(\sum_{i=1}\lambda_1\lambda_{1i}a_{i} + \sum_{i=1}\lambda_2\lambda_{2i}a_{i})
 \]
 \[
-= co_\alpha(\sum_{i=1}((\lambda_1\lambda_{1i}+\lambda_2\lambda_{2i})a_{i}) = ((\lambda_1\lambda_{11}+\lambda_2\lambda_{21}),(\lambda_1\lambda_{12}+\lambda_2\lambda_{22}),...,(\lambda_1\lambda_{1n}+\lambda_2\lambda_{2n}))
+= \text{co}_\alpha(\sum_{i=1}((\lambda_1\lambda_{1i}+\lambda_2\lambda_{2i})a_{i}) = ((\lambda_1\lambda_{11}+\lambda_2\lambda_{21}),(\lambda_1\lambda_{12}+\lambda_2\lambda_{22}),...,(\lambda_1\lambda_{1n}+\lambda_2\lambda_{2n}))
 \]
 \[
 ((\lambda_1\lambda_{11}),(\lambda_1\lambda_{12}),...,(\lambda_1\lambda_{1n}))+((\lambda_2\lambda_{21}),(\lambda_2\lambda_{22}),...,(\lambda_2\lambda_{2n}))
 \]
 \[
-\lambda_1(\lambda_{11},\lambda_{12},...,\lambda_{1n})+ \lambda_2(\lambda_{21},\lambda_{22},...,\lambda_{2n}) = \lambda_1co_\alpha(v_1)+\lambda_2co_\alpha(v_2)
+\lambda_1(\lambda_{11},\lambda_{12},...,\lambda_{1n})+ \lambda_2(\lambda_{21},\lambda_{22},...,\lambda_{2n}) = \lambda_1\text{co}_\alpha(v_1)+\lambda_2\text{co}_\alpha(v_2)
 \]
 \end{proof}
-We kunnen $(co_\alpha)_\alpha^\epsilon$ nu generisch opschrijven.
+We kunnen $(\text{co}_\alpha)_\alpha^\epsilon$ nu generisch opschrijven.
 \[
-v(co_\alpha)_\alpha^\epsilon = 
+v(\text{co}_\alpha)_\alpha^\epsilon = 
 \begin{pmatrix}
 a_{11} & a_{12} & \cdots & a_{1n}\\
 a_{21} & a_{22} & \cdots & a_{2n}\\
@@ -174,7 +160,7 @@ a_{n1} & a_{n2} & \cdots & a_{nn}\\
 \]
 
 \subsection{Oefening 5}
-Zij $L:V \rightarrow W$ een lineaire afbeelding en zij $dim V = n$ en $dim W = m$.\\
+Zij $L:V \rightarrow W$ een lineaire afbeelding en zij $\dim V = n$ en $\dim W = m$.\\
 \subsubsection*{a)}
 \textbf{Te Bewijzen}
 \[
@@ -185,11 +171,11 @@ n > m \Rightarrow L \text{ is niet injectief}
 Bewijs uit het ongerijmde.\\
 Stel $n>m$ en $L$ is injectief.
 \[
-dim(V) = dim(ker(L)) + dim(Im(L))
+\dim (V) = \dim (\text{Ker}(L)) + \dim (\text{Im}(L))
 \]
-Als $L$ injectief is dan $ker(L)=\{0\}$.\footnote{Zie stelling 4.29 p 156} en $Im(L) \subset W$ dus $dim(Im(L))\le dim(W)$. We weten nu het volgende en dit is een contradictie met $n>m$.
+Als $L$ injectief is dan $\text{Ker}(L)=\{0\}$.\footnote{Zie stelling 4.29 p 156} en $\text{Im}(L) \subset W$ dus $\dim (\text{Im}(L))\le \dim (W)$. We weten nu het volgende en dit is een \text{co}ntradictie met $n>m$.
 \[
-dim(V) \le dim(W)
+\dim (V) \le \dim (W)
 \]
 \end{proof}
 \subsubsection*{b)}
@@ -204,16 +190,16 @@ Stel $n<m$ en $L$ is surjectief.
 \[
 \forall w\in W:\exists v\in V: L(v)=w
 \]
-Hieruit volgt dat $Im(V)=W$ dus ook dat $dim(Im(V))=dim(W)$.
+Hieruit volgt dat $\text{Im}(V)=W$ dus ook dat $\dim (\text{Im}(V))=\dim (W)$.
 We kijken nu opnieuw naar stelling 4.31 p 157.
 \[
-dim(V) = dim(ker(L)) + dim(Im(L))
+\dim (V) = \dim (\text{Ker}(L)) + \dim (\text{Im}(L))
 \]
 Als we dit invullen krijgen we het volgende.
 \[
-dim(V) = dim(ker(L)) + dim(W)
+\dim (V) = \dim (\text{Ker}(L)) + \dim (W)
 \]
-Hieruit volgt dat $dim(V) \ge dim(W)$ want $dim(ker(L)) \ge 0$. Dit is in contradictie met $n<m$.
+Hieruit volgt dat $\dim (V) \ge \dim (W)$ want $\dim (\text{Ker}(L)) \ge 0$. Dit is in contradictie met $n<m$.
 \end{proof}
 
 
@@ -315,85 +301,37 @@ L_1:\mathbb{R}^2\rightarrow\mathbb{R}^2: (x,y)\mapsto (-4x+2y,-x)
 \]
 
 \subsection{Oefening 8}
-Om de matrices van de basisverandering te berekenen stellen we voor beide bases een matrix op waarbij ze beide uitgeschreven worden ten opzichte van eenzelfde basis, bijvoorbeeld, de standaardbasis, en als kolommen gebruikt worden in bijhorende matrix. Deze matrices plaatsen we naast elkaar en rijreduceren we tot de linkse matrix de eenheidsmatrix is. De eerste oefening is relatief triviaal, zoals we zullen zien.
-\subsubsection*{a)}
-We schrijven beide uit in functie van standaardbasis \{(0,1), (1,0)\}, zetten de bekomen co\"ordinaten in een matrix als kolommen (wat hier niet overdreven duidelijk is, maar in $b$ en $c$ hopelijk wel, waarna we beide matrices aan elkaar te zetten en komen tot
+Om de matrices van de basisverandering te berekenen stellen we voor beide basissen een matrix op waarbij ze beide uitgeschreven worden ten opzichte van eenzelfde basis, bijvoorbeeld, de standaardbasis, en als kolommen gebruikt worden in bijhorende matrix. Deze matrices plaatsen we naast elkaar en rijreduceren we tot de linkse matrix de eenheidsmatrix is. De eerste oefening is relatief triviaal, zoals we zullen zien.
 
+\subsubsection*{a)}
+We schrijven beide uit in functie van standaardbasis $\{(1,0), (0,1)\}$, zetten de bekomen co\"ordinaten in een matrix als kolommen (wat hier niet overdreven duidelijk is, maar in $b$ en $c$ hopelijk wel), waarna we beide matrices aan elkaar te zetten en komen tot
 \[
-\left[
-\begin{array}{ c c | c c }
+\begin{pmatrix}[cc|cc]
 1 & 0 & 5 & 1\\
 0 & 1 & 1 & 2
-\end{array}
-\right]
+\end{pmatrix}
 \]
-
 De linkerkant is reeds de eenheidsmatrix dus geldt dat de matrix 
 \[
-\left[
-\begin{array}{ c c }
+\begin{pmatrix}
 5 & 1\\
 1 & 2
-\end{array}
-\right]
+\end{pmatrix}
 \]
-de matrix voor de basisverandering van $\alpha$ naar $\beta$. We zeggen altijd dat het de basisverandering van onze basis van de rechtse matrix is naar die van de linkse matrix. Voor de andere matrix, van $\beta$ naar $\alpha$ rijreduceren we dezelfde matrix, maar met de linker en rechterhelft omgewisseld, wat dus neerkomt op de inverse zoeken van zijn andere basisveranderingmatrix. We vinden
-
+de matrix voor de basisverandering van $\alpha$ naar $\beta$. We zeggen altijd dat het de basisverandering van onze basis van de rechtse matrix is naar die van de linkse matrix. Voor de andere matrix, van $\beta$ naar $\alpha$ rijreduceren we dezelfde matrix, maar met de linker- en rechterhelft omgewisseld, wat dus neerkomt op de inverse zoeken van zijn andere basisveranderingmatrix. We vinden
 \[
-\left[
-\begin{array}{ c c | c c }
+\begin{pmatrix}[cc|cc]
 5 & 1 & 1 & 0\\
 1 & 2 & 0 & 1
-\end{array}
-\right]
-\]
-
-\[R1 \leftrightarrow R2 \]
-
-\[
-\left[
-\begin{array}{ c c | c c }
-1 & 2 & 0 & 1\\
-5 & 1 & 1 & 0
-\end{array}
-\right]
-\]
-
-\[R2 \mapsto R2 - 5*R1 \]
-
-\[
-\left[
-\begin{array}{ c c | c c }
-1 & 2 & 0 & 1\\
-0 & -9 & 1 & -5
-\end{array}
-\right]
-\]
-
-\[R2 \mapsto \frac{R2}{-9} \]
-
-\[
-\left[
-\begin{array}{ c c | c c }
-1 & 2 & 0 & 1\\
-0 & 1 & \frac{-1}{9} & \frac{5}{9}
-\end{array}
-\right]
-\]
-
-\[R1 \mapsto R1 - 2*R2 \]
-
-\[
-\left[
-\begin{array}{ c c | c c }
-1 & 0 & \frac{2}{9} & \frac{-1}{9}\\
-0 & 1 & \frac{-1}{9} & \frac{5}{9}
-\end{array}
-\right]
+\end{pmatrix}
+\longrightarrow \dots \longrightarrow
+\begin{pmatrix}[cc|cc]
+1 & 0 & \dfrac{2}{9}  & \dfrac{-1}{9} \\[6pt]
+0 & 1 & \dfrac{-1}{9} & \dfrac{5}{9}
+\end{pmatrix}
 \]
 
 \subsubsection*{b)}
-
 We nemen deze keer als standaardbasis \{$\bigl(
 \begin{smallmatrix}
 1&0\\ 0&0
@@ -414,108 +352,68 @@ $\bigl(
 0&0\\ 0&1
 \end{smallmatrix}
 \bigr)$\}, waardoor we de opgegeven bases in volgende matrix kunnen weergeven (met $\beta$ links):
-
 \[
-\left[
-\begin{array}{ c c c c | c c c c }
+\begin{pmatrix}[cccc|cccc]
 1 & 0 & 0 & 0 & 1 & 3 & 1 & 2\\
 0 & 0 & 0 & 1 & 1 & 1 & -1 & 1\\
 0 & 1 & 0 & 0 & -1 & -1 & 2 & -1\\
 0 & 0 & 1 & 0 & 2 & 2 & -3 & 0
-\end{array}
-\right]
-\]
-
-dewelke we door achtereenvolgens $R2 \leftrightarrow R4$ en $R2 \leftrightarrow R3$ toe te passen omzetten tot
-
-\[
-\left[
-\begin{array}{ c c c c | c c c c }
+\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}[cccc|cccc]
 1 & 0 & 0 & 0 & 1 & 3 & 1 & 2\\
 0 & 1 & 0 & 0 & -1 & -1 & 2 & -1\\
 0 & 0 & 1 & 0 & 2 & 2 & -3 & 0\\
 0 & 0 & 0 & 1 & 1 & 1 & -1 & 1
-\end{array}
-\right]
+\end{pmatrix}
 \]
-
 De rechtse kant is dus de basisveranderingsmatrix van $\alpha$ naar $\beta$. Rekenen we nu de andere kant uit hebben we
-
 \[
-\left[
-\begin{array}{ c c c c | c c c c }
+\begin{pmatrix}[cccc|cccc]
 1 & 3 & 1 & 2 & 1 & 0 & 0 & 0\\
 -1 & -1 & 2 & -1 & 0 & 1 & 0 & 0\\
 2 & 2 & -3 & 0 & 0 & 0 & 1 & 0\\
 1 & 1 & -1 & 1 & 0 & 0 & 0 & 1
-\end{array}
-\right]
+\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}[cccc|cccc]
+1 & 0 & 0 & 0 & \dfrac{-1}{2} & \dfrac{9}{4}  & \dfrac{1}{4}  & \dfrac{13}{4} \\[8pt]
+0 & 0 & 0 & 1 & \dfrac{1}{2}  & \dfrac{-3}{4} & \dfrac{1}{4}  & \dfrac{-7}{4} \\[10pt]
+0 & 1 & 0 & 0 & 0             & 1             & 0             &  1 \\[4pt]
+0 & 0 & 1 & 0 & 0             & \dfrac{-1}{2} & \dfrac{-1}{2} & \dfrac{1}{2}
+\end{pmatrix}
 \]
-
-dewelke we door rijreductie terugbrengen tot
-
-\[
-\left[
-\begin{array}{ c c c c | c c c c }
-1 & 0 & 0 & 0 & \frac{-1}{2} & \frac{-3}{4} & \frac{1}{4} & \frac{1}{4}\\
-0 & 1 & 0 & 0 & \frac{1}{2} & \frac{1}{4} & \frac{1}{4} & \frac{-3}{4}\\
-0 & 0 & 1 & 0 & 0 & \frac{-1}{3} & 0 & \frac{-1}{3}\\
-0 & 0 & 0 & 1 & 0 & \frac{1}{6} & \frac{-1}{2} & \frac{7}{6}
-\end{array}
-\right]
-\]
-
 De rechterkant van deze laatste is dus de basisveranderingsmatrix van basis $\beta$ naar $\alpha$.
 
 \subsubsection*{c)}
-We nemen als standaardbasis \{1, X, X$^2$\}, waardoor we als beginmatrix voor ons rekenwerk als makkelijkste deze krijgen:
-
+We nemen als standaardbasis $\{1, X, X^2\}$, waardoor we als beginmatrix voor ons rekenwerk als makkelijkste deze krijgen:
 \[
-\left[
-\begin{array}{ c c c | c c c }
+\begin{pmatrix}[ccc|ccc]
 0 & 0 & 1 & 3 & 4 & 2\\
 0 & 1 & 0 & 2 & 0 & 1\\
 1 & 0 & 0 & 1 & -1 & 0
-\end{array}
-\right]
-\]
-
-\[R1 \leftrightarrow R3 \]
-
-\[
-\left[
-\begin{array}{ c c c | c c c }
+\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}[ccc|ccc]
 1 & 0 & 0 & 1 & -1 & 0\\
 0 & 1 & 0 & 2 & 0 & 1\\
 0 & 0 & 1 & 3 & 4 & 2
-\end{array}
-\right]
+\end{pmatrix}
 \]
-
 Deze laatste is dus onze basisveranderingsmatrix van $\alpha$ naar $\beta$. Rekenen we de andere richting uit, bekomen we
-
 \[
-\left[
-\begin{array}{ c c c | c c c }
+\begin{pmatrix}[ccc|ccc]
 1 & -1 & 0 & 1 & 0 & 0\\
 2 & 0 & 1 & 0 & 1 & 0\\
 3 & 4 & 2 & 0 & 0 & 1
-\end{array}
-\right]
+\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}[ccc|ccc]
+1 & 0 & 0 & \dfrac{4}{3}  & \dfrac{-2}{3}  & \dfrac{1}{3}\\[8pt]
+0 & 1 & 0 & \dfrac{1}{3}  & \dfrac{-2}{3} & \dfrac{1}{3}\\[8pt]
+0 & 0 & 1 & \dfrac{-8}{3} & \dfrac{7}{3}  & \dfrac{-2}{3}
+\end{pmatrix}
 \]
-
-Wat we door rijreductie omvormen tot
-
-\[
-\left[
-\begin{array}{ c c c | c c c }
-1 & 0 & 0 & \frac{4}{3} & \frac{-2}{3} & \frac{1}{3}\\
-0 & 1 & 0 & \frac{1}{3} & \frac{-2}{3} & \frac{1}{3}\\
-0 & 0 & 1 & \frac{-8}{3} & \frac{7}{3} & \frac{-2}{3}
-\end{array}
-\right]
-\]
-
 De rechterkant van deze laatste is dus de basisveranderingsmatrix van basis $\beta$ naar $\alpha$.
 
 \subsection{Oefening 9}
@@ -532,26 +430,22 @@ We plaatsen dezen in de matrix van de lineaire afbeelding als kolommen en bekome
 
 \[
 T^{\alpha}_{\alpha} =
-\left[
-\begin{array}{c c c}
+\begin{pmatrix}
 2 & -3 & -4\\
 5 & -1 & 2\\
 4 & 7 & 0
-\end{array}
-\right]
+\end{pmatrix}
 \]\\
 
 Voor de tweede basis zijn 2 elementen van plaats verwisseld. We kunnen deze verwisselen bij de berekening en bekomen dan de vergelijkbare matrix
 
 \[
 T^{\beta}_{\beta} =
-\left[
-\begin{array}{c c c}
+\begin{pmatrix}
 4 & -3 & 2\\
 2 & -1 & 5\\
 0 & 7 & 4
-\end{array}
-\right]
+\end{pmatrix}
 \]
 
 
@@ -570,14 +464,12 @@ T(X^3) &= X^3-12X^2+6X\\
 
 \[
 T^{\alpha}_{\alpha} =
-\left[
-\begin{array}{c c c c}
+\begin{pmatrix}
 5 & 4 & 0-4 & 18\\
 -4 & -3 & -3 & 0\\
 0 & 0 & 1 & -12\\
 0 & 0 & 0 & 1
-\end{array}
-\right]
+\end{pmatrix}
 \]\\
 
 \subsection{Oefening 11}
@@ -804,7 +696,7 @@ L =
 
 \subsection{Oefening 16}
 Bij deze oefening gebruiken we hetzelfde idee als de laatste subvraag van oefening 14. We willen een lineaire afbeelding van een gegeven (niet-standaard) basis naar een andere (niet-standaard) basis bepalen in de vorm van een matrix.\\
-Beschouwen we gegeven bases $\alpha$ en $\beta$ kunnen we ook bijhorende standaardbases kiezen als respectievelijk:
+Beschouwen we gegeven basissen $\alpha$ en $\beta$ kunnen we ook bijhorende standaardbasissen kiezen als respectievelijk:
 \[ \epsilon_\alpha = \{(1,0,0,0),(0,1,0,0),(0,0,1,0),(0,0,0,1)\}\]
 \[ \epsilon_\beta = \{\bigl(\begin{smallmatrix} 1&0\\ 0&0 \end{smallmatrix} \bigr),\bigl(\begin{smallmatrix} 0&1\\ 0&0 \end{smallmatrix} \bigr),\bigl(\begin{smallmatrix} 0&0\\ 1&0 \end{smallmatrix} \bigr),\bigl(\begin{smallmatrix} 0&0\\ 0&1 \end{smallmatrix} \bigr)\}\]
 We kunnen nu de gezochte afbeelding $L^\beta_\alpha$, de afbeelding $L$ van basis $\alpha$ naar $\beta$, zo defini\"eren:
@@ -813,7 +705,7 @@ We kunnen nu de gezochte afbeelding $L^\beta_\alpha$, de afbeelding $L$ van basi
 L^\beta_\alpha = Id^\beta_{\epsilon_\beta}\cdot L^{\epsilon_\beta}_{\epsilon_\alpha}\cdot Id^{\epsilon_\alpha}_{\alpha}
 \]
 
-We zoeken de drie componenten van deze matrixvermenigvuldiging. $Id^\beta_{\epsilon_\beta}$, de basisverandering van $\epsilon_\beta$ naar $\beta$, vinden we door beide bases in een matrix te plaatsen, kolomgewijs, geschreven volgens de standaardbasis, zoals eerder reeds uitgevoerd. We bekomen
+We zoeken de drie componenten van deze matrixvermenigvuldiging. $Id^\beta_{\epsilon_\beta}$, de basisverandering van $\epsilon_\beta$ naar $\beta$, vinden we door beide basissen in een matrix te plaatsen, kolomgewijs, geschreven volgens de standaardbasis, zoals eerder reeds uitgevoerd. We bekomen
 \[
 \left(
 \begin{array}{c c c c | c c c c}
@@ -834,7 +726,7 @@ Waarbij de het linkse deel de basis $\beta$ ten opzichte van de standaardbasis i
 \end{array}
 \right)
 \]
-Vervolgens berekenen we $L^{\epsilon_\beta}_{\epsilon_\alpha}$, de afbeelding, gevormd met de standaardbases. We bepalen de beelden van elk element van de eerste basis, en schrijven dit als co\"ordinaten voor de tweede basis, waarna we deze co\"ordinaten als kolommen van een matrix gebruiken. Dit is de afbeeldingsmatrix. Dus:
+Vervolgens berekenen we $L^{\epsilon_\beta}_{\epsilon_\alpha}$, de afbeelding, gevormd met de standaardbasissen. We bepalen de beelden van elk element van de eerste basis, en schrijven dit als co\"ordinaten voor de tweede basis, waarna we deze co\"ordinaten als kolommen van een matrix gebruiken. Dit is de afbeeldingsmatrix. Dus:
 \[L(1,0,0,0)=\bigl(\begin{smallmatrix} 1&1\\ 0&0 \end{smallmatrix} \bigr) = 1*\bigl(\begin{smallmatrix} 1&0\\ 0&0 \end{smallmatrix} \bigr) + 1*\bigl(\begin{smallmatrix} 0&1\\ 0&0 \end{smallmatrix} \bigr)\]
 \[L(0,1,0,0)=\bigl(\begin{smallmatrix}0&0\\ 1&1 \end{smallmatrix} \bigr) = 1*\bigl(\begin{smallmatrix} 0&0\\ 1&0 \end{smallmatrix} \bigr) + 1*\bigl(\begin{smallmatrix} 0&0\\ 0&1 \end{smallmatrix} \bigr)\]
 \[L(0,0,1,0)=\bigl(\begin{smallmatrix} 1&0\\ 0&1 \end{smallmatrix} \bigr) = 1*\bigl(\begin{smallmatrix} 1&0\\ 0&0 \end{smallmatrix} \bigr) + 1*\bigl(\begin{smallmatrix} 0&0\\ 0&1 \end{smallmatrix} \bigr)\]
@@ -849,7 +741,7 @@ Waaruit we de matrix bekomen:
 \end{array}
 \right)
 \]
-Rest ons nu nog $Id^{\epsilon_\alpha}_{\alpha}$ te bepalen, dewelke we vinden door elementen van beide bases te schrijven als co\"ordinaten volgens de standaardbasis, en als kolommen voor een matrix te gebruiken. Vervolgens rijreduceren we de kant die de originele basis van de basisverandering voorstelt en geeft de andere kant ons de matrix voor basisverandering. We bekomen:
+Rest ons nu nog $Id^{\epsilon_\alpha}_{\alpha}$ te bepalen, dewelke we vinden door elementen van beide basissen te schrijven als co\"ordinaten volgens de standaardbasis, en als kolommen voor een matrix te gebruiken. Vervolgens rijreduceren we de kant die de originele basis van de basisverandering voorstelt en geeft de andere kant ons de matrix voor basisverandering. We bekomen:
 \[
 \left(
 \begin{array}{c c c c | c c c c}
@@ -943,7 +835,7 @@ a_3
 0\\0\\1\\
 \end{pmatrix}
 \]
-Als $v$ nu in $ker(L)$ zit dan geldt ook het volgende.
+Als $v$ nu in $\text{Ker}(L)$ zit dan geldt ook het volgende.
 \[
 L(v) = 0 = a_1 \cdot (4\beta_1) + a_2 \cdot (2 \beta_1 + 1\beta_2) + a_3 \cdot (\beta_1 + 3\beta_2)
 \]
@@ -984,8 +876,8 @@ Dit moeten we echter nog omvormen tot de kern van $L$.
 -\frac{3}{4}\\-2\\1\\
 \end{pmatrix}
 \]
-De dimensie van $ker(L)$ is $1$ met $\left\{\begin{pmatrix}-\frac{3}{4}\\-2\\1\\\end{pmatrix}\right\}$ als basis.
-We weten nu dat de dimensie van het beeld van $L$ gelijk is aan de dimensie van $\mathbb{R}^3$ min de dimensie van de kern\footnote{Zie stelling 4.31 p 157}. $dim(Im(L))= 2$ met basis ... <TODO aanvullen, verduidelijken...>
+De dimensie van $\text{Ker}(L)$ is $1$ met $\left\{\begin{pmatrix}-\frac{3}{4}\\-2\\1\\\end{pmatrix}\right\}$ als basis.
+We weten nu dat de dimensie van het beeld van $L$ gelijk is aan de dimensie van $\mathbb{R}^3$ min de dimensie van de kern\footnote{Zie stelling 4.31 p 157}. $\dim (\text{Im}(L))= 2$ met basis ... <TODO aanvullen, verduidelijken...>
 
 \subsubsection*{b)}
 \[
@@ -1132,24 +1024,24 @@ W_1 =
 \subsection{Oefening 24}
 \subsubsection*{a)}
 We beschouwen een de lineaire afbeelding $L:V\rightarrow W$. We zoeken nu een deelruimte van de bronverzameling $V$ zodat deze verzameling $U$ de volgende eigenschappen heeft:\\
-$ker(L)\cap U = \{0\}$, wat betekent dat het enige element dat $U$ en de kern van $L$ gemeenschappelijk hebben het element $0$ is. Dat betekent dus dat we alleen het nulelement nodig hebben uit $V$, en geen andere elementen van de kern van $L$, omdat onze doorsnede dan niet meer zou kloppen.\\
-$Im(L) = \{L(u)| u\in U\}$, wat betekent dat het beeld van de originele afbeelding $L$ gelijk moet zijn aan het beeld van de afbeelding $L$ op $U$ in plaats van $V$.\\
+$\text{Ker}(L)\cap U = \{0\}$, wat betekent dat het enige element dat $U$ en de kern van $L$ gemeenschappelijk hebben het element $0$ is. Dat betekent dus dat we alleen het nulelement nodig hebben uit $V$, en geen andere elementen van de kern van $L$, omdat onze doorsnede dan niet meer zou kloppen.\\
+$\text{Im}(L) = \{L(u)| u\in U\}$, wat betekent dat het beeld van de originele afbeelding $L$ gelijk moet zijn aan het beeld van de afbeelding $L$ op $U$ in plaats van $V$.\\
 We merken dus op dat het enige dat we moeten elimineren uit $V$ om $U$ te bekomen, alle elementen van de kern zijn, die niet het nulelement zijn.\\
 We kunnen dit (dixit de assistente) doen door uit te gaan van het bewijs van de dimensiestelling, op pagina 157, waarbij we enkel de eerste paar regels beschouwen, en daarin het toevoegen van de basis van de kern, $\{v_{r+1},\cdots,v_n\}$ elimineren. We bekomen zo de gevraagde deelruimte, want we hebben alle overtollige elementen van de kern ge\"elimineerd.
 \subsubsection*{b)}
 Te Bewijzen:
-Er bestaat een surjectieve lineaire afbeelding $L:V\rightarrow W \Leftrightarrow dimW\le dimV$
+Er bestaat een surjectieve lineaire afbeelding $L:V\rightarrow W \Leftrightarrow \dim W\le \dim V$
 \begin{proof}
 Bewijs van een equivalentie.
 \begin{itemize}
 \item $\Rightarrow$\\
-We bewijzen dat $dimW$ zeker niet groter is dan $dimV$. Omdat er een surjectieve lineaire afbeelding bestaat van $W$ naar $V$, wordt elke $w\in W$ bereikt. Het beeld van $L$ kunnen we dus defini\"eren als $Im(L)=W$. Indien we dit invullen in de dimensiestelling bekomen we:
-\[dim_{\mathbb{R}} V = dim_{\mathbb{R}} (kerL) + dim_{\mathbb{R}} (ImL)\]
-\[\Rightarrow dim_{\mathbb{R}} V = dim_{\mathbb{R}} (kerL) + dim_{\mathbb{R}} W\]
-\[\Rightarrow dim_{\mathbb{R}} V - dim_{\mathbb{R}} W= dim_{\mathbb{R}} (kerL)\]
-Aangezien de dimensie per definitie een (niet-strikt) positief getal is, kan deze gelijkheid alleen gelden als $dim W \leq dim V$, anders wordt de dimensie van de kern negatief.
+We bewijzen dat $\dim W$ zeker niet groter is dan $\dim V$. Omdat er een surjectieve lineaire afbeelding bestaat van $W$ naar $V$, wordt elke $w\in W$ bereikt. Het beeld van $L$ kunnen we dus defini\"eren als $\text{Im}(L)=W$. Indien we dit invullen in de dimensiestelling bekomen we:
+\[\dim_{\mathbb{R}} V = \dim_{\mathbb{R}} (\text{Ker}L) + \dim_{\mathbb{R}} (\text{Im}L)\]
+\[\Rightarrow \dim_{\mathbb{R}} V = \dim_{\mathbb{R}} (\text{Ker}L) + \dim_{\mathbb{R}} W\]
+\[\Rightarrow \dim_{\mathbb{R}} V - \dim_{\mathbb{R}} W= \dim_{\mathbb{R}} (\text{Ker}L)\]
+Aangezien de dimensie per definitie een (niet-strikt) positief getal is, kan deze gelijkheid alleen gelden als $\dim W \leq \dim V$, anders wordt de dimensie van de kern negatief.
 \item $\Leftarrow$\\
-Nemen we $\{v_1,v_2,\cdots,v_n\}$ een basis van $V$ en $\{w_1,w_2,\cdots,w_m\}$ een basis van $W$ met $n=dim V$ en $m=dim W$ en $n \geq m$.\\
+Nemen we $\{v_1,v_2,\cdots,v_n\}$ een basis van $V$ en $\{w_1,w_2,\cdots,w_m\}$ een basis van $W$ met $n=\dim V$ en $m=\dim W$ en $n \geq m$.\\
 We defini\"eren nu de lineaire afbeelding $L:V \rightarrow W$ als:
 \[ L(v_i) = \left\{
   \begin{array}{l l}
@@ -1157,7 +1049,7 @@ We defini\"eren nu de lineaire afbeelding $L:V \rightarrow W$ als:
     0 & \quad \text{als $i > m$}\\
   \end{array} \right.
 \]
-Deze afbeelding is surjectief omdat alle elementen van de basis van $W$ bereikt kunnen worden en via lineaire combinatie alle elementen van $W$ zelf. Zo hebben we dus een surjectieve afbeelding gedefinieerd die bestaat als $dim W \leq dim V$.
+Deze afbeelding is surjectief omdat alle elementen van de basis van $W$ bereikt kunnen worden en via lineaire combinatie alle elementen van $W$ zelf. Zo hebben we dus een surjectieve afbeelding gedefinieerd die bestaat als $\dim W \leq \dim V$.
 \end{itemize}
 \end{proof}
 
@@ -1177,7 +1069,7 @@ $A\cdot X = B$ Heeft een oplossing.
 Bewijs van een equivalentie.
 \begin{itemize}
 \item $\Rightarrow$\\
-We weten dat $A\cdot X = B$ een oplossing heeft als en slechts als $B \in Im(L)$ geldt.\footnote{Zie Stelling 4.43 p 164 (\ref{4.43})} Hierin is $L$ de lineaire afbeelding gepaald door $A$ te beschouwen als de matrix van $L$ ten opzichte van de standaardbasissen.
+We weten dat $A\cdot X = B$ een oplossing heeft als en slechts als $B \in \text{Im}(L)$ geldt.\footnote{Zie Stelling 4.43 p 164 (\ref{4.43})} Hierin is $L$ de lineaire afbeelding gepaald door $A$ te beschouwen als de matrix van $L$ ten opzichte van de standaardbasissen.
 Bovendien weten we dat de rang van een matrix gelijk is aan de kolomrang van die matrix.
 Dit is precies de dimensie van de kolomruimte van die matrix.\\\\
 Omdat er een $X$ bestaat zodat $X$ een oplossing is van $A\cdot X = B$ zit die $X$ in de kolomruimte van $A$. Dit houdt in dat $B$ een lineaire combinatie is van de kolommen van $A$. Bijgevolg is de kolomruimte van $A$ gelijk aan die van $[A B]$ en volgens de definitie van rang is de rang van $A$ dus gelijk aan die van $[A B]$\footnote{Zie Opmerking 4.38 p 160.}.
@@ -1290,10 +1182,9 @@ Deze expressies zijn niet gelijk.
 
 \subsubsection*{1)}
 We bepalen eerst de co\"ordinaten van $(2,0,5)$ ten opzichte van de eerste basis. Aangezien het over een transformatie gaat is $\beta$ zowel de eerste als de tweede basis. 
-Na het opstellen van een stelsel en rijreductie vinden we dat de co\"ordinaten $\left(\frac{12}{5},\frac{3}{5},\frac{-2}{5}\right)$ zijn.
-
+Na het opstellen van een stelsel en rijreductie vinden we dat de co\"ordinaten $\left(\frac{12}{5},\frac{3}{5},\frac{-2}{5}\right)$ zijn.\\
 Voeren we nu de vermenigvuldiging van de matrix van $L$ met de bekomen co\"ordinaten vinden we:\\
-$$
+\[
 \begin{pmatrix}
 1&0&5\\
 0&-2&2\\
@@ -1307,19 +1198,19 @@ $$
 \begin{pmatrix}
 \strut \frac{2}{5}\\ -2\\ \strut \frac{-8}{5}
 \end{pmatrix}
-$$
+\]
 Dit is dan ook het antwoord op de vraag.
 
 \subsubsection*{2a)}
 We gaan na of de verzameling lineair onafhankelijk is door de determinant te berekenen:
-$$
+\[
 \begin{vmatrix}
 2 & 0 & -2\\
 0&3&3\\
 3&-2&-4
 \end{vmatrix}
 = 6
-$$
+\]
 Aangezien de determinant niet 0 is deze verzameling niet lineair afhankelijk en dus vrij.
 \\
 \\
@@ -1342,121 +1233,75 @@ $$
 Als we dit oplossen en we krijgen een oplossing dan wil dit zeggen dat er voor elke willekeurige vector zo'n combinatie bestaat, en dit wil zeggen dat het voortbrengend is.
 
 \subsubsection*{2b)}
-Beschouwen we de eerste basis in functie van de tweede bekomen we:\\
-
-$D(X^2+3) = \bigl(
-\begin{smallmatrix}
-1&-3\\ 1&3
-\end{smallmatrix}
-\bigr) = \bigl(
-\begin{smallmatrix}
-1&0\\ 0&0
-\end{smallmatrix}
-\bigr) -3* \bigl(
-\begin{smallmatrix}
-0&1\\ 0&0
-\end{smallmatrix}
-\bigr) + \bigl(
-\begin{smallmatrix}
-0&0\\ 1&0
-\end{smallmatrix}
-\bigr) +3* \bigl(
-\begin{smallmatrix}
-0&0\\ 0&1
-\end{smallmatrix}
-\bigr)$\\
-
-$D(-2X^2+3X-4) = \bigl(
-\begin{smallmatrix}
-1&7\\ -5&-1
-\end{smallmatrix}
-\bigr) = \bigl(
-\begin{smallmatrix}
-1&0\\ 0&0
-\end{smallmatrix}
-\bigr) + 7* \bigl(
-\begin{smallmatrix}
-0&1\\ 0&0
-\end{smallmatrix}
-\bigr) - 5* \bigl(
-\begin{smallmatrix}
-0&0\\ 1&0
-\end{smallmatrix}
-\bigr) - \bigl(
-\begin{smallmatrix}
-0&0\\ 0&1
-\end{smallmatrix}
-\bigr)$\\
-
-$D(3X-2) = \bigl(
-\begin{smallmatrix}
-3&5\\ -3&1
-\end{smallmatrix}
-\bigr) = 3* \bigl(
-\begin{smallmatrix}
-1&0\\ 0&0
-\end{smallmatrix}
-\bigr) + 5* \bigl(
-\begin{smallmatrix}
-0&1\\ 0&0
-\end{smallmatrix}
-\bigr) - 3* \bigl(
-\begin{smallmatrix}
-0&0\\ 1&0
-\end{smallmatrix}
-\bigr) + \bigl(
-\begin{smallmatrix}
-0&0\\ 0&1
-\end{smallmatrix}
-\bigr)$\\
-
+Beschouwen we de eerste basis in functie van de tweede bekomen we:
+\begin{align*}
+&D(X^2+3)
+= \begin{pmatrix}1&-3\\ 1&3\end{pmatrix}
+=         \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}
+- 3 \cdot \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}
++         \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}
++ 3 \cdot \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} \\
+&D(-2X^2+3X-4)
+= \begin{pmatrix}1&7\\ -5&-1\end{pmatrix}
+=         \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}
++ 7 \cdot \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}
+- 5 \cdot \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}
+-         \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} \\
+&D(3X-2)
+= \begin{pmatrix}3&5\\ -3&1\end{pmatrix}
+= 3 \cdot \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}
++ 5 \cdot \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}
+- 3 \cdot \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}
++         \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}
+\end{align*}
 Nemen we dus de bekomen co\"effici\"enten met de tweede basis, vormen we de matrix van $L$ op de twee basissen als volgt:\\
 
 \[
-L^{\beta_1}_{\beta_2} =
-\left[
-\begin{array}{c c c}
+L^{\beta_2}_{\beta_1} =
+\begin{pmatrix}
 1 & 1 & 3\\
 -3 & 7 & 5\\
 1 & -5 & -3\\
 3 & -1 & 1
-\end{array}
-\right]
+\end{pmatrix}
 \]
 
 \subsubsection*{2c)}
-Door direct te berekenen bekomen we\\
-
-$ L(-X^2+6X-3) = \bigl(
-\begin{smallmatrix}
--1+6&6+3\\ -1-6&6-3
-\end{smallmatrix}\bigr) = \bigl(
-\begin{smallmatrix}
-5&9\\ -7&3
-\end{smallmatrix}\bigr)$\\
-
-Om ditzelfde met de matrix van $L$ te berekenen bepalen we eerst de co\"ordinaten van $-X^2+6X-3$ ten opzichte van de eerste basis.
-Na het opstellen van een stelsel en rijreductie vinden we dat de co\"ordinaten $(1,1,1)$ zijn.
-
-Voeren we nu de vermenigvuldiging van de matrix van $L$ met de bekomen co\"ordinaten vinden we:\\
-
-$\begin{pmatrix}
+Door direct te berekenen bekomen we
+\[
+L(-X^2+6X-3)
+= \begin{pmatrix}
+-1+6 & 6+3 \\
+-1-6 & 6-3
+\end{pmatrix}
+= \begin{pmatrix}
+5  & 9 \\
+-7 & 3
+\end{pmatrix}
+\]
+Om ditzelfde met $L^{\beta_2}_{\beta_1}$ te berekenen bepalen we eerst de co\"ordinaten van $-X^2+6X-3$ ten opzichte van $\beta_1$.
+Na het opstellen van een stelsel en rijreductie, vinden we dat de co\"ordinaten $(1,1,1)$ zijn.\\
+Voeren we nu de vermenigvuldiging van $L^{\beta_2}_{\beta_1}$ met de bekomen co\"ordinaten uit, dan vinden we:
+\[
+\begin{pmatrix}
 1 & 1 & 3\\
 -3 & 7 & 5\\
 1 & -5 & -3\\
 3 & -1 & 1
-\end{pmatrix} * \begin{pmatrix}
+\end{pmatrix} \cdot
+\begin{pmatrix}
 1\\
 1\\
 1
-\end{pmatrix} = \begin{pmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
 5\\
 9\\
 -7\\
 3
-\end{pmatrix}$\\
-
-Deze resulterende co\"rdinaten gebruiken we voor de tweede basis, waardoor we $\bigl(
+\end{pmatrix}
+\]
+Deze resulterende co\"ordinaten gebruiken we voor de tweede basis, waardoor we $\bigl(
 \begin{smallmatrix}
 5&9\\ -7&3
 \end{smallmatrix}\bigr)$ bekomen, hetzelfde resultaat als de directe berekening.
@@ -1464,10 +1309,10 @@ Deze resulterende co\"rdinaten gebruiken we voor de tweede basis, waardoor we $\
 
 \subsection{Opdracht 4.19 p 147}
 \label{4.19}
-Deze deelruimte is isomorf met $\mathbb{R}^n$. Dit is makkelijk in te zien omdat we enkel de $0$ componenten moeten weg laten. 
+Deze deelruimte is isomorf met $\mathbb{R}^n$. Dit is makkelijk in te zien omdat we enkel de 0-componenten moeten weglaten. 
 
 
-\subsection{Opdracht 4.25 p 154}
+\subsection{Opdracht 4.25 p 154} %TODO dit is volledig fout volgens mij
 \label{4.25}
 We stellen beide basissen voor ten opzichte van de standaardbasis, en zetten de co\"ordinaatvectoren die we dan bekomen in de kolommen van een matrix.
 Vervolgens rijreduceren we die matrix en vinden we aan de rechterkant de matrix van basisverandering van $\beta_s$ naar $\beta$.
@@ -1476,7 +1321,7 @@ Vervolgens rijreduceren we die matrix en vinden we aan de rechterkant de matrix 
 \begin{array}{c c c c | c c c c}
 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0\\
 0 & 1 & 0 & 0 & 0 & 1 & -1 & 2\\
-0 & 0 & 1 & 0 & 0 & 0 & 1 & -2\\
+0 & 0 & 1 & 0 & 0 & 0 & 1 & -3\\
 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
 \end{array}
 \right)
@@ -1486,7 +1331,7 @@ Id_{\beta_s}^\beta =
 \begin{pmatrix}
 1 & 0 & 0 & 0\\
 0 & 1 & -1 & 2\\
-0 & 0 & 1 & -2\\
+0 & 0 & 1 & -3\\
 0 & 0 & 0 & 1\\
 \end{pmatrix}
 \]
@@ -1518,9 +1363,6 @@ B =
 \subsection{Opdracht 4.37 p 160}
 \label{4.37}
 In Gevolg 4.35 op pagina 159 staat net dat zo'n transformatie niet bestaat als hij eindig dimensionaal moet zijn. We moeten dus oneindigdimensionaal gaan denken.\\
-Beschouw de vectorruimte $(\mathbb{R},\mathbb{R}^\mathbb{R},+)$. De integraalafbeelding is een lineaire transformatie van deze vectorruimte. De integraalafbeelding is injectief, maar niet surjectief want er bestaan niet afleidbare functies.
+Beschouw de vectorruimte $(\mathbb{R},\mathbb{R}^\mathbb{R},+)$. De integraalafbeelding is een lineaire transformatie van deze vectorruimte. De integraalafbeelding is injectief, maar niet surjectief want er bestaan niet-afleidbare functies.
 %TODO zeker?
-
-
-
 \end{document}
