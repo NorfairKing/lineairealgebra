@@ -143,5 +143,106 @@ a & 0 & a & 3\\
 Neem alle vier de vectoren als basis.
 
 \subsection{Vraag 6}
+\subsubsection*{(a)}
+\subsubsection*{(b)}
+Te Bewijzen:
+\[
+\begin{vmatrix}
+1 & a & a^2 & bcd\\
+1 & b & b^2 & acd\\
+1 & c & c^2 & abd\\
+1 & d & d^2 & abc
+\end{vmatrix}
+=
+-
+\begin{vmatrix}
+1 & a & a^2 & a^3\\
+1 & b & b^2 & b^3\\
+1 & c & c^2 & c^3\\
+1 & d & d^2 & d^3
+\end{vmatrix}
+\]
+\begin{proof}
+We bewijzen dat het linkerlid tegengesteld is aan het rechterlid door eerst beide leden uit te werken, en dan te tonen dat ze tegengesteld zijn.\\
+Als \'e\'en paar elementen gelijk is, is de determinant nul. Voor de verdere redenering gaan we er daarom van uit dat $a$, $b$, $c$ en $d$ ondeling verschillend zijn.
+Zie p. 70 in de cursus (Determinant van Vandermonde).
+\begin{itemize}
+\item Linkerlid
+\[
+\begin{vmatrix}
+1 & a & a^2 & bcd\\
+1 & b & b^2 & acd\\
+1 & c & c^2 & abd\\
+1 & d & d^2 & abc
+\end{vmatrix}
+\]
+\[
+=
+\begin{vmatrix}
+1 & a & a^2 & bcd\\
+0 & b-a & b^2-a^2 & acd-bcd\\
+0 & c-a & c^2-a^2 & abd-bcd\\
+0 & d-a & d^2-a^2 & abc-bcd
+\end{vmatrix}
+=
+\begin{vmatrix}
+b-a & b^2-a^2 & acd-bcd\\
+c-a & c^2-a^2 & abd-bcd\\
+d-a & d^2-a^2 & abc-bcd
+\end{vmatrix}
+\]
+\[
+(b-a)(c-a)(d-a)
+\begin{vmatrix}
+1 & b+a & -cd\\
+1 & c+a & -bd\\
+1 & d+a & -bc
+\end{vmatrix}
+=
+(b-a)(c-a)(d-a)
+\begin{vmatrix}
+1 & b+a & -cd\\
+0 & c-b & cd-bd\\
+0 & d-b & cd-bc
+\end{vmatrix}
+\]
+\[
+=
+(b-a)(c-a)(d-a)
+\begin{vmatrix}
+c-b & cd-bd\\
+d-b & cd-bc
+\end{vmatrix}
+=
+(b-a)(c-a)(d-a)(c-b)(d-b)
+\begin{vmatrix}
+1 & d\\
+1 & c
+\end{vmatrix}
+\]
+\[
+=
+(b-a)(c-a)(d-a)(c-b)(d-b)(c-d)
+\]
+\[
+=
+-(a-b)(a-c)(a-d)(b-c)(b-d)(c-d)
+\]
+
+\item Rechterlid
+\[
+\begin{vmatrix}
+1 & a & a^2 & a^3\\
+1 & b & b^2 & b^3\\
+1 & c & c^2 & c^3\\
+1 & d & d^2 & d^3
+\end{vmatrix}
+=
+(a-b)(a-c)(a-d)(b-c)(b-d)(c-d)
+\]
+
+\end{itemize}
+\end{proof}
+
 
 \end{document}
