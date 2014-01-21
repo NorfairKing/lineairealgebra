@@ -246,8 +246,100 @@ We zoeken de eigenwaarden van $A$.
 Omdat $A$ drie verschillende eigenwaarden heeft, heeft $A$ een enkelvoudig spectrum en is $A$ dus diagonaliseerbaar\footnote{Zie Gevolg 5.20 p. 191 (\ref{5.20})}. $A$ is dus gelijkvormig met een diagonaalmatrix en deze gelijkvormigheid wordt gerealiseerd door een basisverandering naar een basis van eigenvectoren\footnote{Zie Definitie 5.6 p. 181 (\ref{5.6})}.
 
 
-
 \subsection{Vraag 6}
+\subsubsection*{(a)}
+$U$ is een strikte deelverzameling als de gegeven vectoren lineair afhankelijk zijn.
+\[
+\begin{vmatrix}
+a & b & c\\
+a & 2b & 3c\\
+a & c & c
+\end{vmatrix}
+=
+\begin{vmatrix}
+a & b & c\\
+0 & b & 2c\\
+0 & c-b & 0
+\end{vmatrix}
+=
+a
+\begin{vmatrix}
+b & 2c\\
+c-b & 0
+\end{vmatrix}
+=
+2ac(c-b)
+\]
+Deze determinant is nul wanneer $a=0\vee c=0\vee c=b$ geldt.
+
+\subsubsection*{(b)}
+\[
+\left\{
+\begin{pmatrix}
+a\\b\\c\\
+\end{pmatrix}
+,
+\begin{pmatrix}
+a\\2b\\c\\
+\end{pmatrix}
+,
+\begin{pmatrix}
+a\\c\\c\\
+\end{pmatrix}
+\right\}
+=
+\left\{
+\begin{pmatrix}
+a\\b\\b\\
+\end{pmatrix}
+,
+\begin{pmatrix}
+a\\2b\\b\\
+\end{pmatrix}
+,
+\begin{pmatrix}
+a\\b\\b\\
+\end{pmatrix}
+\right\}
+\]
+We kunnen deze verzameling uitdunnen tot een basis voor $U$\footnote{Zie Stelling 3.37 p. 107 (\ref{3.37})}. Schrap de laatste, omdat ze gelijk is aan de eerste, zodat de volgende basis voor $U$ overblijft.
+\[
+\left\{
+\begin{pmatrix}
+a\\b\\b\\
+\end{pmatrix}
+,
+\begin{pmatrix}
+a\\2b\\b\\
+\end{pmatrix}
+\right\}
+\]
+
+\subsubsection*{(c)}
+We zoeken de vectoren $v= (x,y,z)$ zodat $v$ zowel loodrecht op $(a,b,b)$ als op $(a,2b,b)$ staat.
+\[
+\begin{pmatrix}
+a & b & b\\
+a & 2b & b
+\end{pmatrix}
+X=\vec{0}
+\]
+\[
+\rightarrow
+\begin{pmatrix}[ccc|c]
+a & 0 & b & 0\\
+0 & b & 0 & 0
+\end{pmatrix}
+\]
+\[
+U^\bot = 
+\left\{
+\begin{pmatrix}
+-\lambda\frac{b}{a} \\ 0 \\ \lambda
+\end{pmatrix}
+\ |\ \lambda\in\mathbb{R}
+\right\}
+\]
 
 
 \end{document}
