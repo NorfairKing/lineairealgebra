@@ -37,7 +37,7 @@
     We willen onze kan zo groot mogelijk maken dat er mensen een handje toesteken, en dat gaat het makkelijkst door naar deze repo te verwijzen, omdat er dan makkelijker een stuk toegevoegd kan worden.
 *** Ik heb een fout gevonden, wat nu?
     Het aangenaamste zou zijn dat je ze zelf verbetert en een pull request doet.
-    Je kan echter ook gewoon een issue submitten (met de juiste tags), dan kijken we er zelf naar.
+    Je kan echter ook gewoon een issue submitten *met de juiste labels*, dan kijken we er zelf naar.
     Hoe meer info je in de beschrijving van het issue zet, hoe sneller we de fout kunnen verbeteren.
 *** Hoe compileer ik hiervan een .pdf bestand?
     Als linux gebruiker kan je eenvoudigweg het make commando uitvoeren.

@@ -999,28 +999,39 @@ X^2, X^2+1, X^2+X
 
 
 \subsection{Oefening 30}
+Het is makkelijk in te zien dat dit klopt als we naar logaritmes kijken.
 \begin{proof}
-Eerst de optelling.
-De optelling is inwendig en overal bepaald zoals uit $R_{0}^{+} x R_{0}^{+} \rightarrow R_{0}^{+} $ 
-De optelling is associatief.
-$ (x + y) + z = x + (y+z) $
-$ xy + z = x + yz$
-$ xyz = xyz $
-
-Er is een neutraal element.
-$x \cdot 1 = x $
-
-GEEN Tegengesteld element.
-Het is niet mogenlijk om een uniek tegengesteld element te vinden voor elk element dat gelijk is aan 0.
-
-Commutatief!
-$xy = yx$
-
-Alle eigenschappen voor de optelling zijn niet voldaan, dus het is geen geldige definitie.
-
-Bij $ \bigotimes $ geldt distr1 ook al niet.
-
+Bewijs van een vectorruimte\footnote{Zie Definitie 3.2 en 3.3 p. 88 en 89.}.
+\begin{enumerate}
+\item
+Optelling
+\begin{itemize}
+\item Intern en bepaald.\\
+Ja, it staat al in ``$R_{0}^{+} x R_{0}^{+} \rightarrow R_{0}^{+}$ ''.
+\item Associatief.\\
+Ja, de vermenigvuldiging is associatief.
+\item Neutraal Element.\\
+Ja, het neutraal element is $1$.
+\item Tegengesteld Element.\\
+Ja, het tegengesteld element $v'$ van $v$ is gelijk aan $\frac{1}{v}$.
+\item Commutatief.\\
+Ja, de vermenigvuldiging is commutatief.
+\end{itemize}
+\item
+Scalaire vermenigvuldiging
+\begin{itemize}
+\item Distributiviteit-1.\\
+Ja, $(v\cdot w)^\lambda = v^\lambda \cdot w^\lambda$.
+\item Distributiviteit-2.\\
+Ja, $v^{\lambda_1 + \lambda_2} = v^{\lambda_1}\cdot v^{\lambda_2}$
+\item Gemengde Associativiteit.\\
+Ja, $v^{\lambda_2^{\lambda_1}} = v^{\lambda_1 \cdot \lambda_2}$
+\item Co\"efficient 1.\\
+Ja, $v^{1} = v$
+\end{itemize}
+\end{enumerate}
 \end{proof}
+
 
 \subsection{Oefening 31}
 \subsubsection*{a)}
