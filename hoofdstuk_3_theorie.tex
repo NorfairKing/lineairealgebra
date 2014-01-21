@@ -573,10 +573,10 @@ Omdat $U$ gelijk is aan $V$ heeft $U$ dezelfde basis als $V$. In twee dezelfde v
 Zij $(\mathbb{R},V,+)$ een vectorruimte en zij $\beta = \{v_1,v_2,...,v_n\}$ een basis van $V$.
 
 \subsubsection*{Te Bewijzen}
-Elke vector kan op een unieke wijze als een lineaire combinatie van de basisvectoren uitgedrukt worden. Er bestaat dus een bijectieve afbeelding $co_{\beta}$ die $v$ afbeeldt op het stel co\"effici\"enten dat correspondeert met $v$ ten opzichte van de basis $\beta$.
+Elke vector kan op een unieke wijze als een lineaire combinatie van de basisvectoren uitgedrukt worden. Er bestaat dus een bijectieve afbeelding $\text{co}_{\beta}$ die $v$ afbeeldt op het stel co\"effici\"enten dat correspondeert met $v$ ten opzichte van de basis $\beta$.
 \[
-co_{\beta}: V \rightarrow \mathbb{R}^n
- : \mapsto co_{\beta}(v)\]
+\text{co}_{\beta}: V \rightarrow \mathbb{R}^n : v \mapsto \text{co}_{\beta}(v)
+\]
  
 \subsubsection*{Bewijs}
 \begin{proof}
@@ -724,7 +724,7 @@ U \oplus W = V
 \]
 \begin{itemize}
 \item $V = U + W$\\
-Alle vectoren uit $V$ moeten geschreven kunnen worden als de som van een vector uit $U$ en een vector uit $W$. Alle vectoren in $U$ respectievelijk $W$ kunnen geschreven worden als de lineaire combinatie van de basisvectoren van $U$, respectievelijk $W$. Hieruit volgt dat alle vectoren uit $V$ geschreven kunnen worden als de sum van lineaire combinaties van basissen van deelruimten. Deze som is precies de lineaire combinatie die we gebruiken om de vector te vormen door een lineaire combinatie van de basisvectoren in $V$.
+Alle vectoren uit $V$ moeten geschreven kunnen worden als de som van een vector uit $U$ en een vector uit $W$. Alle vectoren in $U$ respectievelijk $W$ kunnen geschreven worden als de lineaire combinatie van de basisvectoren van $U$, respectievelijk $W$. Hieruit volgt dat alle vectoren uit $V$ geschreven kunnen worden als de som van lineaire combinaties van basissen van deelruimten. Deze som is precies de lineaire combinatie die we gebruiken om de vector te vormen door een lineaire combinatie van de basisvectoren in $V$.
 
 \item $U\cap W = \{\vec{0}\}$\\
 De vectoren uit de basis van $U$ zijn lineair onafhankelijk van de vectoren uit de basis van $W$. In de doorsnede van deze deelruimten zit dus enkel de nulvector.
@@ -732,7 +732,7 @@ De vectoren uit de basis van $U$ zijn lineair onafhankelijk van de vectoren uit 
 \end{proof}
 
 
-\subsection{Stelling 3.60 p 119}7
+\subsection{Stelling 3.60 p 119}
 \label{3.60}
 Zij $A \in \mathbb{R}^{m\times n}$ en zijn $U$ de rijgereduceerde matrixvorm van $A$.
 
@@ -774,7 +774,7 @@ $\dim N(U)$ is gelijk aan het aantal vrije variabelen van het stelsel $U\cdot X 
 
 \subsection{Stelling 3.61 p 120}
 \label{3.61}
-Zij $A \in \mathbb{m \times n}$ en $B \in \mathbb{n \times o}$ zodat $A\times B$ bepaald is.
+Zij $A \in \mathbb{R}^{m \times n}$ en $B \in \mathbb{R}^{n \times o}$ zodat $AB$ bepaald is.
 
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
@@ -802,7 +802,7 @@ Stel dat $X\in N(B)$, dan geldt dat $BX=0$. We tonen nu aan dat ook $(AB)X=0$ ge
 \[A0=0\]
 \[0=0\]
 \item
-$C(AB)$ is de verzameling van alle lineaire combinaties van kolommen van $AB$. De kolommen van $AB$ zijn van de vorm $Ab_i$ met $b_i$ kolommen van $B$. $Ab_i$ is een lineaire combinatie van de kolommen van $A$. Voor elke vector $v \in C(AB)$ geldt dus $v\in C(A)$. Met andere woorden geldt het volgende.
+$C(AB)$ is de verzameling van alle lineaire combinaties van kolommen van $AB$. De kolommen van $AB$ zijn van de vorm $Ab_i$ met $b_i$ kolommen van $B$. Elke $Ab_i$ is een lineaire combinatie van de kolommen van $A$. Voor elke vector $v \in C(AB)$ geldt dus $v\in C(A)$. Met andere woorden geldt het volgende.
 \[C(AB) \subset C(A)\]
 \item
 Door middel van enig gefoefel kunnen we dit gemakkelijk bewijzen.
