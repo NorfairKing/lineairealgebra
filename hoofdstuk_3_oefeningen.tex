@@ -735,31 +735,56 @@ W_2 = \{(-\lambda, \lambda, \lambda)\mid\lambda \in \mathbb{R}\}
 Het is duidelijk dat $\dim W_2 = 1$.
 
 \subsection{Oefening 19}
+\subsubsection*{a)}
+\[
+A =
+\begin{pmatrix}
+1 & 2 &  1 & 5 \\
+2 & 4 & -3 & 0 \\
+1 & 2 & -1 & 1
+\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}
+1 & 2 & 0 & 3 \\
+0 & 0 & 1 & 2 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
+= U
+\]
+Dit stelsel heeft de volgende oplossingsverzameling:
+\begin{align*}
+V
+&= \{ (-2x_2-3x_4,x_2,-2x_4,x_4) \mid x_2,x_4 \in \mathbb{R} \} \\
+&= \{ x_2(-2,1,0,0) + x_4(-3,0,-2,1) \mid x_2,x_4 \in \mathbb{R} \}
+\end{align*}
+Hieruit volgt de basis voor de \textbf{nulruimte}: $\{ (-2,1,0,0), (-3,0,-2,1) \}$.\\
+Omdat $x_1$ en $x_3$ de gebonden variabelen zijn, is de basis van de \textbf{kolomruimte} gelijk aan de kolommen $c_1$ en $c_2$ uit de oorspronkelijke matrix $A$, dus $\{(1,2,1),(1,-3,-1)\}$.\\
+De rijen $r_1$ en $r_2$ zijn niet-nulrijen, de basis van de \textbf{rijruimte} is dan gelijk aan die rijen uit de oorspronkelijke matrix $A$, dus $\{(1,2,1,5),(2,4,-3,0)\}$.
 \subsubsection*{b)}
-\[ A =
+\[
+A =
 \begin{pmatrix}
   1 & 1 & 1\\
   1 & 1 & -1\\
   1 & -1 & 1\\
   1 & -1 & -1
 \end{pmatrix}
-\]
-Na Gauss-eliminatie krijgen we de rijgereduceeerde vorm
-\[ U =
+\longrightarrow
 \begin{pmatrix}
   1 & 0 & 0\\
   0 & 1 & 0\\
   0 & 0 & 1\\
   0 & 0 & 0
 \end{pmatrix}
+= U
 \]
-Hierdoor krijgen we de oplossingsverzameling $\{(0,0,0)\}$.\\
-De basis van de \underline{nulruimte} is dus $\emptyset$.\\
-De rijen $r_1, r_2, r_3$ zijn niet-nulrijen, de basis van de \underline{rijruimte} is dus $vct\{(1,1,1), (1,1,-1), (1,-1,1)\}$.\\
-De kolommen $c_1, c_2, c_3$ zijn onafhankelijk en voortbrengend, de basis van de \underline{kolomruimte} is dus $vct\{(1,1,1,1), (1,1,-1,-1), (1,-1,1,-1)\}$.
+Hierdoor krijgen we de oplossingsverzameling $\{(0,0,0)\}$. De basis van de \textbf{nulruimte} is dus $\emptyset$.\\
+De rijen $r_1, r_2, r_3$ zijn niet-nulrijen, de basis van de \textbf{rijruimte} is dus $\{(1,1,1), (1,1,-1), (1,-1,1)\}$.\\
+De kolommen $c_1, c_2, c_3$ zijn onafhankelijk en voortbrengend, de basis van de \textbf{kolomruimte} is dus $\{(1,1,1,1), (1,1,-1,-1), (1,-1,1,-1)\}$.
 
 \subsubsection*{c)}
 \[
+A =
 \begin{pmatrix}
 0 & 1 & -1 &  -2 & 1 \\
 1 & 1 & -1 & 3   & 1 \\
@@ -775,27 +800,57 @@ De kolommen $c_1, c_2, c_3$ zijn onafhankelijk en voortbrengend, de basis van de
 0 & 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 & 0 \\
 \end{pmatrix}
+= U
 \]
-De eerste drie rijen van deze gereduceerde matrix vormen een basis voor de rijruimte.
-De eerste drie kolommen van de gereduceerde matrix vormen een basis voor de kolomruimte. 
-De oplossing van het homogeen stelsel van de gereduceerde matrix vormt de nullruimte van de matrix.
 De oplossingsverzameling is de volgende.
 \[
-\{(-5\lambda_1,3\lambda_1,\lambda_1,\lambda_1,\lambda_2)|\lambda_1,\lambda_2\in \mathbb{R}\}
+\{ x_4(-5,3,1,1,0) + x_5(0,0,0,0,1) \mid x_4, x_5 \in \mathbb{R}\}
 \]
-We kiezen hieruit twee onafhankelijke vectoren ($2=5-3$).
-\[
-\left\lbrace
-\begin{pmatrix}
--5\\3\\1\\1\\0\\
-\end{pmatrix}
-,
-\begin{pmatrix}
-0\\0\\0\\0\\1\\
-\end{pmatrix}
-\right\rbrace
-\]
+De \textbf{nulruimte} wordt dus bepaald door $\{ (-5,3,1,1,0) , (0,0,0,0,1) \}$.\\
+De eerste drie rijen van deze oorspronkelijke matrix $A$ vormen een basis voor de \textbf{rijruimte}.\\
+De eerste drie kolommen van de oorspronkelijke matrix $A$ vormen een basis voor de \textbf{kolomruimte}.
 
+\subsection{Oefening 22}
+\subsubsection*{b)}
+We nemen de basissen samen en reduceren tot een nieuwe basis voor $U+W$.
+\[
+\begin{pmatrix}
+ 1 &  0 &  0 &  1 \\
+-1 &  1 &  0 &  0 \\
+ 0 & -1 &  1 &  0 \\
+ 0 &  0 & -1 & -1
+\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}
+1 & 0 & 0 & 1 \\
+0 & 1 & 0 & 1 \\
+0 & 0 & 1 & 1 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
+\]
+Een basis voor $U+W$ is dus:
+\[
+\left\{
+\begin{pmatrix}
+1 & -1 \\
+0 &  0
+\end{pmatrix},
+\begin{pmatrix}
+ 0 & 1 \\
+-1 & 0
+\end{pmatrix},
+\begin{pmatrix}
+0 &  0 \\
+1 & -1
+\end{pmatrix}
+\right\}
+\]
+Hieruit volgt dat $\dim(U+W) = 3$. Aangezien $\dim U = 2$ en $\dim W = 2$, geldt:
+\begin{align*}
+\dim(U+W) + \dim(U \cap W) &= \dim U + \dim W \\
+\dim(U \cap W) &= 2+2-3 = 1
+\end{align*}
+Omdat $\dim(U \cap W) \neq 0$, kunnen we besluiten dat $U+W$ geen directe som is.
 \subsection{Oefening 23}
 Ik ga ervan uit dat we een bewijs moeten geven van deze stelling. Het staat er namelijk nergens bij.\\
 Zij $V$ een vectorruimte met $\beta$ een basis ervan. Zij $\beta_1,...,\beta_k$ de disjuncte unie ervan. Noteer $U_i=vct(\beta_i)$.
@@ -810,46 +865,52 @@ Nu hoeven we enkel nog te bewijzen dat $\sum_i U_i=V$. Voor elke $u_i \in U_i$ g
 \end{proof}
 
 
-
 \subsection{Oefening 25}
-Toon aan:
-$ U \bigoplus W = \mathbb{R}^{n x n}$
+\textit{Te bewijzen.}
+\[
+U \oplus W = \mathbb{R}^{n \times n}
+\]
 
 \begin{proof}
-Wat zijn de voorwaarden die moeten voldoen?
-1) $ U + W = \mathbb{R}^{n x n}$
-2) $ U \cap W = {0}$
+We controleren de voorwaarden van een directe som.
+\begin{itemize}
+\item $U \cap W = 0$
 
-nakijken 1) :
-Het is duidelijk dat de doorsnede van U en W enkel de nulmatrix is.
+Het is duidelijk dat $U \cap W$ enkel de nulmatrix bevat.
+\item $U+W = \mathbb{R}^{n \times n}$
 
-nakijken 2) : 
-De som van 2 vierkante matrices met grootte n is opniew een vierkante matrix met afmeting n. $U + W = \mathbb{R}^{n x n}$
-
-QED
-
+De som van 2 vierkante matrices behorende tot $\mathbb{R}^{n \times n}$ is opnieuw een vierkante matrix behorende tot $\mathbb{R}^{n \times n}$.
+\end{itemize}
 \end{proof}
 
 \subsection{Oefening 26}
-We kiezen $U = vct\{(0,1,0), (0,0,1)\}$.\\ Hierdoor is $(\mathbb{R}, \mathbb{R}^3, +) = U + W$ en $U \cap W = \{0\}$.\\
-Dan is $v = v_U + v_W$ en $w = w_U + w_W$ met
+We kiezen $U = \text{vct}\{(0,1,0), (0,0,1)\}$. Hierdoor is $(\mathbb{R}, \mathbb{R}^3, +) = U + W$ en $U \cap W = \{0\}$.\\
+We bekomen $v = (2,2,0) = \lambda_1 (1,6,4) + \lambda_2 (0,1,0) + \lambda_3 (0,0,1)$. Na dit in een matrix te gieten en dit stelsel op te lossen bekomen we $\lambda_1 = 2$, $\lambda_2 = -10$ en $\lambda_3 = -8$. Dus:
+\begin{align*}
+v &= 2\cdot (1,6,4) -10\cdot (0,1,0) -8\cdot (0,0,1)
+   = (2,12,8) - (0,-10,0) - (0,0,-8) \\
+  &= v_U + v_W = (0,-10,-8) + (2,12,8)
+\end{align*}
+Op dezelfde manier berekenen we $w$ als som van een vector in $U$ en een vector in $W$.
 \[
-v_U = (0,-10,-8), 
-v_W = (2,12,8), 
-w_U = (0,4,4), 
-w_W = (0,0,0)
+w = w_U + w_W = (0,4,4) + (0,0,0)
 \]
 
 \subsection{Oefening 27}
 \subsubsection*{a)}
-$$\lambda_1 v_1 = \lambda_2 v_2 = 0$$
-$$\lambda_1(1,0,1,1,2,3,5,8,...) + \lambda_2(0,1,1,2,3,5,8,...)=(0,0,0,0,0,...)$$
+Stel $\lambda_1,\lambda_2 \in \mathbb{R}$ zodat:
+\begin{align*}
+&\lambda_1 v_1 + \lambda_2 v_2 = 0 \\
+&\lambda_1(1,0,1,1,2,3,5,8,\ldots) + \lambda_2(0,1,1,2,3,5,8,\ldots) =(0,0,\ldots)
+\end{align*}
 We nemen nu de eerste component van $v_1$ en $v_2$:
-$$\lambda_1 \cdot 1 + \lambda_2 \cdot 0 = 0$$
-$$\Rightarrow \lambda_1 = 0$$
-
-$$\lambda_1 \cdot 0 + \lambda_2 \cdot 1 = 0$$
-$$\Rightarrow \lambda_2 = 0$$
+\begin{align*}
+\lambda_1 \cdot 1 + \lambda_2 \cdot 0 = 0
+& \Rightarrow \lambda_1 = 0 \\
+\lambda_1 \cdot 0 + \lambda_2 \cdot 1 = 0
+& \Rightarrow \lambda_2 = 0
+\end{align*}
+Hieruit volgt dat $\lambda_1 = \lambda_2 = 0$ en dus zijn $v_1$ en $v_2$ lineair onafhankelijk.
 \subsubsection*{b)}
 We beweren dat $v_3 = v_1 + v_2$.\\
 We bewijzen dat $(v_3)_n = (v_1 + v_2)_n$ \hspace{5pt} $\forall n \in \mathbb{N}$\\
@@ -881,107 +942,69 @@ v_{n+2} = v_{n+1}+v_n=\lambda_1v_{1_{n+1}}+\lambda_2v_{2_{n+1}} + \lambda_1v_{1_
 \]
 Dit is juist volgens de definitie van vectorsom en scalaire vermenigvuldiging.
 \end{proof}
-
 \subsubsection*{d)}
 $v_3 = (1,1)$
 
 \subsection{Oefening 28}
-\subsubsection*{b)}
-Zij $V = \{(1,0,...),(0,1,0,...),(0,0,1,0,...),...)\}$.\\
-\textbf{Te Bewijzen}\\
-$V$ is geen basis van $\mathbb{R}^\mathbb{N}$.\\
-\textbf{Bewijs}
+\textit{Gegeven.}\\
+We defini\"eren  $v_i = (0,0,\ldots,0,0,1,0,0,\ldots)$ waarbij de 1 op de $i$-de plaats staat.
+\[
+A = \{v_1,v_2,\ldots,v_n,\ldots\}
+\]
+
+\subsubsection*{a)}
+\textit{Te bewijzen.}\\
+$A$ is een vrij deel van $\mathbb{R}^\mathbb{N}$.
 \begin{proof}
-In 28 a hebben we bewezen dat $V$ een vrij deel is van $\mathbb{R}^\mathbb{N}$. Om te bewijzen dat $V$ geen basis is van $\mathbb{R}^\mathbb{N}$ moeten we dus aantonen dat $V$ niet voortbrengend is voor $\mathbb{R}^\mathbb{N}$.
-TODO <wat betekent $\mathbb{R}^\mathbb{N}$?>
+Zij $\lambda_1,\lambda_2,\ldots,\lambda_k \in \mathbb{R}$ en $(v_i)_1,(v_i)_2,\ldots,(v_i)_k$ verschillende elementen in $A$ zodat:
+\[
+\lambda_1 (v_i)_1 + \lambda_2 (v_i)_2 + \ldots + \lambda_k (v_i)_k = 0
+\]
+Als je naar de $(i)_j$-de plaats kijkt, zie je dat $\lambda_j=0$ met $j \in \{1,2,\ldots,k\}$.\\
+Hieruit volgt dus $\lambda_1 = \lambda_2 = \ldots = \lambda_k = 0$.
 \end{proof}
 
+\subsubsection*{b)}
+\textit{Te bewijzen.}\\
+$A$ is geen basis van $\mathbb{R}^\mathbb{N}$. Dus $A$ is niet voortbrengend.
+\begin{proof}
+Neem vector $x=(1,1,\ldots) \in \mathbb{R}^\mathbb{N}$, we gaan nu bewijzen dat je die vector $x$ niet kan vormen door een \textbf{eindige} som te nemen van vectoren uit $A$.\\
+Neem willekeurige $f_1,f_2,\ldots,f_n \in A$, dan is er een $i \in \mathbb{N}$ zodat:
+\[
+v_i \not \in \{f_1,f_2,\ldots,f_n\}
+\]
+Dus op plaats $i$ in $x$ zal een 0 komen waardoor je $(1,1,\ldots)$ niet kan vormen.
+\end{proof}
 
 \subsection{Oefening 29}
 \subsubsection*{(a)}
-Niet waar. Tegenvoorbeeld:\\
-Kies $\alpha$ en $\beta$ als volgt.
-\[
-\alpha =
-\left\{
-\begin{pmatrix}
-1\\0
-\end{pmatrix}
-,
-\begin{pmatrix}
-0\\1
-\end{pmatrix}
-\right\}
-\text{ en }
-\beta
-=
-\begin{pmatrix}
-1\\0
-\end{pmatrix}
-,
-\begin{pmatrix}
-0\\2
-\end{pmatrix}
-\]
-$\alpha\cup\beta$ is niet vrij. want $2\alpha_2 = \beta_2$ geldt.
-\[
-\alpha\cup\beta = 
-\left\{
-\begin{pmatrix}
-1\\0
-\end{pmatrix}
-,
-\begin{pmatrix}
-0\\1
-\end{pmatrix}
-,
-\begin{pmatrix}
-0\\2
-\end{pmatrix}
-\right\}
-\]
+Niet waar. Tegenvoorbeeld.\\
+In $V=(\mathbb{R},\mathbb{R},+)$ defini\"eren we $\alpha = \{1\}$ en $\beta = \{2\}$, deze zijn beide vrij in $V$.\\
+Het is echter makkelijk in te zien dat hun unie $\alpha \cup \beta = \{1,2\}$ niet vrij is in $V=(\mathbb{R},\mathbb{R},+)$.
 
 \subsubsection*{(b)}
-Niet waar. Tegenvoorbeeld:\\
-Kies $V = \mathbb{R}$, $W=\mathbb{R}$ en $\alpha$ en $\beta$ als volgt.
-\[
-\alpha = \{1\} \text{ en } \beta = \{2\}
-\]
-\[
-\alpha \cap \beta = \emptyset
-\]
-De doorsnede van $V$ en $W$ is $\mathbb{R}$, maar $\alpha \cap \beta$ vormt enkel een basis voor $\{0\}$.
+Niet waar. Tegenvoorbeeld.\\
+Kies $V = W = \mathbb{R}$ en $\alpha = \{1\}$ en $\beta = \{-1\}$.\\
+Dan is $V \cap W = V = W = \mathbb{R}$ en $\alpha \cap \beta = \emptyset$ en is dus te klein om een basis te zijn in $\mathbb{R}$.
 
 \subsubsection*{(c)}
 Niet waar. Tegenvoorbeeld:\\
-Kies $V= \mathbb{R}$, $v=-1$ en $w=1$.
-Nu geldt dat $v+w \in \{0\}$ en dat $\{0\}$ een deelruimte is van $V$. maar $v$ en $w$ zitten niet in $\{0\}$.
+Kies $V= \mathbb{R}$, $v=-1$ en $w=1$ die beiden behoren tot $V$.\\
+Nu geldt dat $v+w \in \{0\}$. Het is duidelijk dat $\{0\}$ een deelruimte is van $V$ maar $v \not \in \{0\}$ en $w \not \in \{0\}$.
 
 \subsubsection*{(d)}
-Niet waar. Tegenvoorbeeld:\\
-Kies $V = \mathbb{R}^{2}$. Kies als drie deelruimten de deelruimten opgespannen door respectievelijk de volgende vectoren.
+Waar.
 \[
-v_1 = 
-\begin{pmatrix}
-1\\0
-\end{pmatrix}
-,
-v_2 = 
-\begin{pmatrix}
-1\\0.5
-\end{pmatrix}
-,
-v_3 = 
-\begin{pmatrix}
-0.5\\1
-\end{pmatrix}
-,
-v_4 = 
-\begin{pmatrix}
-0\\1
-\end{pmatrix}
+0 \le \dim U_1 \le \dim U_2 \le \ldots \le \dim U_r \le n
 \]
-Deze deelruimten zijn niet gelijk, maar het zijn er wel  meer dan $2+1$.
+Omdat $r > n+1$ moet er een $i$ bestaan zodat:
+\[
+\dim U_{i+1} = \dim U_i
+\]
+Aangezien $U_i \subset U_{i+1}$ geldt er:
+\[
+U_{i+1} = U_i
+\]
 
 \subsubsection*{(e)}
 Waar. Voorbeeld.\\
@@ -990,13 +1013,12 @@ Kies $e_1,e_2,e_3$ als volgt.
 \[
 e_1 = 1, e_2 = X, e_3= X^2
 \]
-Nu bestaat er een basis voor $V$ waarvan geen enkel element in $W$ zit, namelijk de volgende bijvoorbeeld.
+Nu bestaat er een basis voor $V$ waarvan geen enkel element in $W$ zit, bijvoorbeeld:
 \[
 \left\{
 X^2, X^2+1, X^2+X
 \right\}
 \]
-
 
 \subsection{Oefening 30}
 Het is makkelijk in te zien dat dit klopt als we naar logaritmes kijken.
@@ -1090,107 +1112,43 @@ a = -1\\
 \end{array}
 \right.
 \]
-Nu weten we dus dat als $a$ \textit{niet} \'e\'en van die waarden aanneemt, de doorsnede van $U$ en $W$, $\{\vec{0}\}$ zal zijn. Een basis van $\{\vec{0}\}$ is de lege verzameling en de dimensie ervan is $0$.
-Tenslotte bepalen we nog voor de speciale gevallen van $a$ de dimensie en een basis.
-\subsubsection*{$a = 2$}
+\subsubsection*{Geval 1: $a \in \mathbb{N}\backslash\{-10,-1,2\}$}
+De doorsnede van $U$ en $V$ is $\{\vec{0}\}$. Een basis van $\{\vec{0}\}$ is de lege verzameling en $\dim\{\vec{0}\}=0$.
+
+\subsubsection*{Geval 2: $a = 2$}
+\begin{align*}
+U_2 &= \text{vct}\{(6,2,0,-2),(3,1,0,-1)\} = \text{vct}\{(6,2,0,-2),(3,1,0,-1)\}\\
+V_2 &= \text{vct}\{(3,5,3,-5),(0,12,0,0)\}
+\end{align*}
+De twee vectoren die $U_2$ opspannen zijn lineair afhankelijk, $U_2$ is dus \'e\'endimensionaal. Als we de eerste vector verwijderen zijn de overblijvende vectoren lineair onafhankelijk. De dimensie van de somruimte is dus $3$.
 \[
-\left\lbrace
-\begin{pmatrix}
-6\\2\\0\\-2
-\end{pmatrix}
-,
-\begin{pmatrix}
-3\\1\\0\\-1
-\end{pmatrix}
-\right\rbrace
-\left\lbrace
-\begin{pmatrix}
-3\\5\\3\\-5
-\end{pmatrix}
-,
-\begin{pmatrix}
-0\\12\\0\\0
-\end{pmatrix}
-\right\rbrace
+U_2+V_2 = \text{vct}\{(3,1,0,-1),(3,5,3,-5),(0,12,0,0)\}
 \]
-Als $a=2$ dan zien we dat de twee vectoren die $U$ opspannen lineair afhankelijk zijn. $U_2$ is dus \'e\'endimensionaal. Als we de eerste vector verwijderen zijn de overblijvende vectoren lineair onafhankelijk. De dimensie van de somruimte is dus $3$. Bij gevolg is de dimensie van de doorsnede $0$ en de basis ervoor $\emptyset$.
-\subsubsection*{$a=-10$}
+Hierdoor is de dimensie van $U_2 \cap W_2$ gelijk aan 0, een basis hiervoor is dus $\emptyset$.
+
+\subsubsection*{Geval 3: $a=-10$}
+\begin{align*}
+U_{-10} &= \text{vct}\{(-6,2,0,-2),(3,-11,0,-1)\} \\
+V_{-10} &= \text{vct}\{(3,5,-9,-5),(0,0,0,0)\} = \text{vct}\{(3,5,-9,-5)\}
+\end{align*}
+Hier is de dimensie van $V_{-10}$ gelijk aan 1. Er blijven opnieuw drie lineair onafhankelijke vectoren over en dus $\dim(U_{-10}+V_{-10})=3$.
 \[
-\left\lbrace
-\begin{pmatrix}
-5\\2\\0\\-2
-\end{pmatrix}
-,
-\begin{pmatrix}
-3\\-11\\0\\-1
-\end{pmatrix}
-\right\rbrace
-\left\lbrace
-\begin{pmatrix}
-3\\5\\-5\\-5
-\end{pmatrix}
-,
-\begin{pmatrix}
-0\\0\\0\\0
-\end{pmatrix}
-\right\rbrace
+U_{-10}+V_{-10} = \text{vct}\{(-6,2,0,-2),(3,-11,0,-1),(3,5,-9,-5)\}
 \]
-Hier is de dimensie van $W_a$ $1$. De als we de laatste vector verwijderen blijven er weer drie lineair onafhankelijke vectoren over. De dimensie van de doorsnede is weer $0$ en de basis daarvoor weer $\emptyset$.
-\subsubsection*{$a=-1$}
+De dimensie van de doorsnede is weer $0$ en een basis hiervoor is dus $\emptyset$.
+\subsubsection*{Geval 4: $a=-1$}
+\begin{align*}
+U_{-1} &= \text{vct}\{(3,2,0,-2),(3,-2,0,-1)\} \\
+V_{-1} &= \text{vct}\{(3,5,0,-5),(0,9,0,0)\}
+\end{align*}
+In $U_{-1}$ en in $V_{-1}$ zijn de vectoren lineair onafhankelijk, in de somruimte echter niet. Hier volstaat het om de laatste vector uit $V_{-1}$ te verwijderen. De dimensie van de somruimte is dus 3.
 \[
-\left\lbrace
-\begin{pmatrix}
-3\\2\\0\\-2
-\end{pmatrix}
-,
-\begin{pmatrix}
-3\\-2\\0\\-1
-\end{pmatrix}
-\right\rbrace
-\left\lbrace
-\begin{pmatrix}
-3\\5\\0\\-5
-\end{pmatrix}
-,
-\begin{pmatrix}
-0\\9\\0\\0
-\end{pmatrix}
-\right\rbrace
+U_{-1}+V_{-1} = \text{vct}\{(3,2,0,-2),(3,-2,0,-1),(3,5,0,-5)\}
 \]
-We weten dat voor elke vector $u = \begin{pmatrix}
-u_1\\u_2\\u_3\\u_4
-\end{pmatrix} \in V\cap W$ geldt:
-\[\exists \lambda_1,\lambda_2 :u = 
-\lambda_1
-\begin{pmatrix}
-3\\2\\0\\-2
-\end{pmatrix} + 
-\lambda_2
-\begin{pmatrix}
-3\\-2\\0\\-1
-\end{pmatrix}
-\wedge
-\exists \lambda_3,\lambda_4 :u = 
-\lambda_3
-\begin{pmatrix}
-3\\5\\0\\-5
-\end{pmatrix} + 
-\lambda_4
-\begin{pmatrix}
-0\\9\\0\\0
-\end{pmatrix}
-\]
+De dimensie van de doorsnede is in dit geval $1$. Als we aan de somruimte de vector $(0,0,1,0)$ toevoegen, krijgen we 4 onafhankelijke vectoren die een basis vormen voor $\mathbb{R}^4$.
 \[
-\left\lbrace
-\begin{array}{r l l}
-u_1 &= 3\lambda_1+3\lambda_2 &= 3\lambda_3\\
-u_2 &= 2\lambda_1-2\lambda_2 &= 5\lambda_3+9\lambda_4\\
-u_3 &= 0 &= 0\\
-u_4 &= -2\lambda_1 -1\lambda_2 &= -5\lambda_3
-\end{array}
-\right.
+U_{-1} \cap V_{-1} = \text{vct}\{(0,0,1,0)\}
 \]
-%TODO <wat nu?!>
 
 \subsection{Extra Oefening}
 \subsubsection*{1.1}
@@ -1470,7 +1428,7 @@ a_1x_1 + b_3x_2+ c_3x_3 + d_3x_4 &= 0 \\
 \end{array}
 \right.
 \]
-Het bovenstaande stelsel heeft een niet-triviale oplossing. (Oneindig veel niet-triviale oplossingen zelfs.)
+Het bovenstaande stelsel heeft een niet-triviale oplossing (oneindig veel niet-triviale oplossingen zelfs).
 
 \subsubsection*{Bewijs}
 \begin{proof}
@@ -1495,7 +1453,7 @@ a & b & c & d
 x_1\\ x_2\\x_3
 \end{pmatrix}
 \]
-Beschouwen we vectoren $(a_1,a_2,a_3)$, $(b_1,b_2,b_3)$, $(c_1,c_2,c_3)$ en $(d_1,d_2,d_3)$. Volgens het Lemma van Steinitz\footnote{Zie Stelling 3.32 p 104} is elke verzameling van vectoren in $\mathbb{R}^3$ met meer dan drie elementen lineaire afhankelijkheid. Dit geldt dus ook voor onze vier beschouwde vectoren. Als we nu stellen dat minstens \'e\'en van de vectoren samengesteld wordt uit de anderen, dan kunnen we onze onbekenden $x_1$, $x_2$, $x_3$ en $x_4$ zo kiezen dat we het tegengestelde van de samengestelde (lineair afhankelijke) vector(en) vormen uit het lineair onafhankelijk en (eventueel deels) voortbrengend deel. Stel dat $d$ lineair afhankelijk is van $a, b$ en $c$ (welke vector dit is maakt niet uit omwille van de commutativiteit van de optelling in $\mathbb{R}$.), dan ziet dit er uit als volgt.
+Beschouwen we vectoren $(a_1,a_2,a_3)$, $(b_1,b_2,b_3)$, $(c_1,c_2,c_3)$ en $(d_1,d_2,d_3)$. Volgens het Lemma van Steinitz\footnote{Zie Stelling 3.32 p 104} is elke verzameling van vectoren in $\mathbb{R}^3$ met meer dan drie elementen lineaire afhankelijk. Dit geldt dus ook voor onze vier beschouwde vectoren. Als we nu stellen dat minstens \'e\'en van de vectoren samengesteld wordt uit de anderen, dan kunnen we onze onbekenden $x_1$, $x_2$, $x_3$ en $x_4$ zo kiezen dat we het tegengestelde van de samengestelde (lineair afhankelijke) vector(en) vormen uit het lineair onafhankelijk en (eventueel deels) voortbrengend deel. Stel dat $d$ lineair afhankelijk is van $a, b$ en $c$ (welke vector dit is maakt niet uit omwille van de commutativiteit van de optelling in $\mathbb{R}$.), dan ziet dit er uit als volgt.
 \[
 \left\lbrace
 \begin{array}{c c}
@@ -1505,7 +1463,7 @@ Beschouwen we vectoren $(a_1,a_2,a_3)$, $(b_1,b_2,b_3)$, $(c_1,c_2,c_3)$ en $(d_
 \end{array}
 \right.
 \]
-Dan is voldaan aan ons homogeen stelsel omdat beide elkaar zullen opheffen. Deze oplossing van het homogeen stelsel is niet triviaal omdat een eigenschap van lineaire onafhankelijkheid\footnote{Zie Propositie 2.26 p 101} zegt dat de co\"ffici\"enten $x_1,x_2,x_3$ niet nul mogen zijn.
+Dan is voldaan aan ons homogeen stelsel omdat beide elkaar zullen opheffen. Deze oplossing van het homogeen stelsel is niet triviaal omdat een eigenschap van lineaire onafhankelijkheid\footnote{Zie Propositie 2.26 p 101} zegt dat de co\"effici\"enten $x_1,x_2,x_3$ niet nul mogen zijn.
 Deze redenering geldt voor elke keuze van $x_4\in \mathbb{R}$, dus er zijn oneindig veel triviale oplossingen.
 \end{proof}
 
