@@ -18,7 +18,65 @@ Zie Stelling 6.36 p 243 (\ref{6.36}).
 
 
 \subsection{Vraag 3}
+\subsubsection*{(a)}
+\begin{proof}
+\[
+\begin{vmatrix}
+-\lambda & 0 & \cdots & 0 & -a_0\\
+1 & -\lambda & \cdots & 0 & -a_1\\
+0 & 1 & \cdots & 0 & -a_2\\
+\vdots & \vdots & \ddots & \vdots & \vdots\\
+0 & 0 & \cdots & 1 & -a_{n-1}-\lambda
+\end{vmatrix}
+=
+-\lambda
+\begin{vmatrix}
+-\lambda & \cdots & 0 & -a_1\\
+1 & \cdots & 0 & -a_2\\
+\vdots & \ddots & \vdots & \vdots\\
+0 & \cdots & 1 & -a_{n-1}-\lambda
+\end{vmatrix}
+-
+\begin{vmatrix}
+0 & \cdots & 0 & -a_0\\
+1 & \cdots & 0 & -a_2\\
+\vdots & \ddots & \vdots & \vdots\\
+0 & \cdots & 1 & -a_{n-1}-\lambda
+\end{vmatrix}
+\]
+Wanneer we dit uitwerken krijgen we het volgende.
+\[
+a_0 + \lambda(a_1 + \lambda(a_2 + \lambda(... + \lambda(a_{n-1} + \lambda)))\cdots)
+\]
+\end{proof}
 
+\subsubsection*{(b)}
+Zij $\lambda$ een willekeurige eigenwaarde van $L$. We weten bovendien dat $\lambda = 0$ geen nulpunt is van vorige functie.
+\[
+\begin{pmatrix}
+-\lambda & 0 & \cdots & 0 & -a_0\\
+1 & -\lambda & \cdots & 0 & -a_1\\
+0 & 1 & \cdots & 0 & -a_2\\
+\vdots & \vdots & \ddots & \vdots & \vdots\\
+0 & 0 & \cdots & 1 & -a_{n-1}-\lambda
+\end{pmatrix}
+\]
+\[
+\rightarrow
+\begin{pmatrix}
+-\lambda & 0 & \cdots & 0 & -a_0\\
+0 & -\lambda^2 & \cdots & 0 & -\lambda a_1-a_0\\
+0 & 0 & \cdots & 0 & -\lambda a_2-\lambda(\lambda a_1-a_0)\\
+\vdots & \vdots & \ddots & \vdots & \vdots\\
+0 & 0 & \cdots & 0 & -a_0 + \lambda(a_1 + \lambda(a_2 + \lambda(... + \lambda(a_{n-1} + \lambda)))\cdots)
+\end{pmatrix}
+\]
+Aangezien het element, het meest rechtsonder in die matrix een nul is, en er voor de rest geen nulrijen zijn, is $E_\lambda$ \'e'endimensionaal.
+
+\subsubsection*{(c)}
+\begin{proof}
+Wanneer $L$ $n$ (\'e\'endimensionale) eigenruimten heeft, heeft $L$ $n$ verschillende eigenwaarden\footnote{Zie Stelling 5.18 p. 190 (\ref{5.18})}. Omdat er evenveel verschillende eigenwaarden zijn van $L$ als er dimensies zijn in $\mathbb{R}^n$ is het spectrum van $L$ enkelvoudig. Elke lineaire transformatie met een enkelvoudig spectrum is diagonaliseerbaar \footnote{Zie Gevolg 5.20 p. 191 (\ref{5.20})}.
+\end{proof}
 
 \subsection{Vraag 4}
 
