@@ -125,6 +125,127 @@ Omdat dit voor elke $u_1$ en $u_2$ geldt geldt het ook als $u_1=0$ en als $u_2=0
 \end{proof}
 
 \subsection{Vraag 5}
+\subsubsection*{(a)}
+De matrix van $A$ ten opzichte van de standaardbasis noemen we $A_{\epsilon_3}$.
+\[
+A_{\epsilon_3}=
+\begin{pmatrix}
+1 & 1 & 0\\
+1 & 1 & 0\\
+1 & 0 & 1
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & 1\\
+0 & 1 & -1\\
+0 & 0 & 0
+\end{pmatrix}
+\]
+De kern van $A$ is dus de volgende verzameling:
+\[
+Ker(A) = 
+\left\{
+\begin{pmatrix}
+-\lambda\\\lambda\\\lambda
+\end{pmatrix}
+\ |\ \lambda\in\mathbb{R}
+\right\}
+\]
+Mits enig inzicht zien we ook dat het beeld van $A$ er als volgt uit ziet.
+\[
+Im(A) = 
+\left\{
+\begin{pmatrix}
+\lambda\\\lambda\\\mu
+\end{pmatrix}
+\ |\ \lambda,\mu\in\mathbb{R}
+\right\}
+\]
+De dimensie van $Ker(A)$ is $1$ en de dimensie van $Im(A)$ is $2$.
+Kies de volgende verzamelingen respectievelijk als basis voor $Ker(A)$ en voor $Im(A)$.
+\[
+\left\{
+\begin{pmatrix}
+-1\\1\\1
+\end{pmatrix}
+\right\}
+\]
+\[
+\left\{
+\begin{pmatrix}
+1\\1\\0
+\end{pmatrix}
+,
+\begin{pmatrix}
+0\\0\\1
+\end{pmatrix}
+\right\}
+\]
+
+\subsubsection*{(b)}
+Kies $v_1 = (1,0,0)$ en $v_2 = (0,1,0)$ buiten de kern van $A$. De beelden van deze vectoren zijn $w_1=(1,1,1)$, $w_2=(1,1,0)$. Kies nu nog een lineair onafhankelijke $v_3=(-1,1,1)$ uit de kern van $A$ en nog een lineair onafhankelijke $w_3 = (1,0,0)$ \footnote{Voor meer details over deze procedure, zie \ref{specifieke_basissen_voor_lineaire_afbeelding}.}.
+$V$ en $W$ zien er nu als volgt uit.
+\[
+V = 
+\left\{
+\begin{pmatrix}
+1\\0\\0
+\end{pmatrix}
+,
+\begin{pmatrix}
+0\\1\\0
+\end{pmatrix}
+,
+\begin{pmatrix}
+-1\\1\\1
+\end{pmatrix}
+\right\}
+\]
+\[
+W = 
+\left\{
+\begin{pmatrix}
+1\\1\\1
+\end{pmatrix}
+,
+\begin{pmatrix}
+1\\1\\0
+\end{pmatrix}
+,
+\begin{pmatrix}
+1\\0\\0
+\end{pmatrix}
+\right\}
+\]
+
+\subsubsection*{(c)}
+Nee, het beeld van $M_{V,W}$ heeft maar \'e\'en dimensie, en dat van $A$ heeft er twee.
+
+\subsubsection*{(d)}
+We zoeken de eigenwaarden van $A$.
+\[
+\begin{vmatrix}
+1-\lambda & 1 & 0\\
+1 & 1-\lambda & 0\\
+1 & 0 & 1-\lambda
+\end{vmatrix}
+=
+(1-\lambda)
+\begin{vmatrix}
+1-\lambda & 1\\
+1 & 1-\lambda
+\end{vmatrix}
+=
+(1-\lambda)((1-\lambda)^2-1)
+\]
+\[
+(1-\lambda)(\lambda^2-2\lambda)
+=
+\lambda(1-\lambda)(\lambda-2)
+\]
+Omdat $A$ drie verschillende eigenwaarden heeft, heeft $A$ een enkelvoudig spectrum en is $A$ dus diagonaliseerbaar\footnote{Zie Gevolg 5.20 p. 191 (\ref{5.20})}. $A$ is dus gelijkvormig met een diagonaalmatrix en deze gelijkvormigheid wordt gerealiseerd door een basisverandering naar een basis van eigenvectoren\footnote{Zie Definitie 5.6 p. 181 (\ref{5.6})}.
+
+
 
 \subsection{Vraag 6}
 
