@@ -79,7 +79,50 @@ Wanneer $L$ $n$ (\'e\'endimensionale) eigenruimten heeft, heeft $L$ $n$ verschil
 \end{proof}
 
 \subsection{Vraag 4}
+\subsubsection*{(a)}
+Fout. Tegenvoorbeeld:
+Kies $U_1$ als de $x$-as. Kies $U_1$ als de $y$-as en kies $U_3$ als de identieke $\leftrightarrow y=x$.
+\[
+V = U_1 \oplus U_2
+\]
+Maar
+\[
+(U_3 \cap U_1) = \{\vec{0}\}
+\]
+\[
+(U_3 \cap U_2) = \{\vec{0}\}
+\]
+\[
+U_2 \neq \{\vec{0}\} \oplus \{\vec{0}\}
+\]
 
+\subsubsection*{(b)}
+Juist.
+\begin{proof}
+We bewijzen dat elke vector in het linkerlid in de verzameling in het rechterlid zit, en omgekeerd.
+\[
+W_1 = U_1^\bot \cap U_2^\bot = \{\ v\ |\ \langle v,u_1\rangle = 0 \langle v,u_2\rangle = 0\ \}
+\]
+\[
+W_2 = (U_1+U_2)^\bot = \{\ v\ |\ \langle v, u_1+u_2\rangle = 0\ \}
+\]
+\begin{itemize}
+\item $\subseteq$\\
+Kies een willekeurige $w_1 \in W_1$, een $u_1 \in U_1$ en een $u_2 \in U_2$. $\langle w_1,u_1\rangle = 0$ en $\langle w_1,u_2\rangle = 0$ geldt. Tellen we nu deze vergelijkingen bij elkaar op, dan krijgen we de volgende:
+\[
+\langle w_1,u_1\rangle + \langle w_1,u_2\rangle = 0
+\]
+We gebruiken nu de lineariteit van het inproduct in de tweede component.
+\[
+\langle w_1,u_1+u_2\rangle = 0
+\]
+Dit betekent dat $w_1 \in W_2$ geldt.
+
+\item $\supseteq$\\
+Kies een willekeurige $w_2 \in W_2$, een $u_1 \in U_1$ en een $u_2 \in U_2$. $\langle w_2,u_1+u_2\rangle = 0$ en geldt.
+Omdat dit voor elke $u_1$ en $u_2$ geldt geldt het ook als $u_1=0$ en als $u_2=0$. $w_2$ staat dus ook loodrecht op $u_1$ en $u_2$ appart en zit daarom in $W_1$.
+\end{itemize}
+\end{proof}
 
 \subsection{Vraag 5}
 
