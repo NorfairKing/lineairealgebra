@@ -1,19 +1,20 @@
 \documentclass[lineaire_algebra_oplossingen.tex]{subfiles}
 \begin{document}
 
+%TODO Hermaak dit als je je geroepen voelt. Er staan nog fouten in (zie de opmerkingen eronder). Voel je vrij om het te verbeteren.
+
 \chapter{Diagrammen}
 \begin{figure}[H]
 \begin{mdframed}
 \begin{tikzpicture}
-
-\node (bl)  at (0,0) {};  
+\node (bl)  at (0,5) {};  
 \node (tl)  at (0,12) {};
 \node (tr)  at (9,12) {};
-\node (br)  at (9,0) {};
+\node (br)  at (9,5) {};
 
 \node (bl2)  at (-2,9) {};  
-\node (tl2)  at (-2,12) {};
-\node (tr2)  at (9,12) {};
+\node (tl2)  at (-2,11.5) {};
+\node (tr2)  at (9,11.5) {};
 \node (br2)  at (9,9) {};
 
 \node (bl3)  at (-1.5,9) {};  
@@ -26,7 +27,34 @@
 \node (tr4)  at (7,10) {};
 \node (br4)  at (7,9) {};
 
+\node (x1)  at (8,8) {};  
+\node (x2)  at (8,7) {}; 
+\node (x3)  at (6,7) {}; 
+
+\node (bl5)  at (-3,9) {};  
+\node (tl5)  at (-3,12) {};
+\node (tr5)  at (9,12) {};
+\node (br5)  at (9,9) {};
+
+\node (x4)  at (9,7) {}; 
+
+\node (bl6)  at (7.25,7) {};  
+\node (tl6)  at (7.25,11.75) {};
+\node (tr6)  at (7.75,11.75) {};
+\node (br6)  at (8.25,7) {};
+\node (wtf)  at (7.75,7) {};
+
 \begin{scope}[fill opacity=0.5]
+	\filldraw[fill=green!15] ($(bl5) + (-1,-0)$) 
+    	to ($(tl5) + (-1,0)$)
+        to[out=90,in=180] ($(tl5) + (0,1)$) 
+        to ($(tr5) + (0,1)$)
+        to[out=0,in=90] ($(tr5) + (1,0)$)
+        to ($(br5) + (1,0)$)
+        to[out=270,in=0] ($(br5) + (0,-1)$)
+        to ($(bl5) + (0,-1)$)
+        to[out=180,in=270] ($(bl5) + (-1,0) $);
+        
     \filldraw[fill=yellow!25] ($(bl) + (-1,-0)$) 
     	to ($(tl) + (-1,0)$)
         to[out=90,in=180] ($(tl) + (0,1)$) 
@@ -46,6 +74,17 @@
         to[out=270,in=0] ($(br2) + (0,-1)$)
         to ($(bl2) + (0,-1)$)
         to[out=180,in=270] ($(bl2) + (-1,0) $);
+        
+    \filldraw[fill=black!15] ($(bl6) + (-1,-0)$) 
+    	to ($(tl6) + (-1,0)$)
+        to[out=90,in=180] ($(tl6) + (0,1)$) 
+        to ($(tr6) + (0,1)$)
+        to[out=0,in=90] ($(tr6) + (1,0)$)
+        to ($(wtf) + (1,1)$)
+        to ($(br6) + (1,0)$)
+        to[out=270,in=0] ($(br6) + (0,-1)$)
+        to ($(bl6) + (0,-1)$)
+        to[out=180,in=270] ($(bl6) + (-1,0) $);
         
     \filldraw[fill=green!25] ($(bl3) + (-1,-0)$) 
     	to ($(tl3) + (-1,0)$)
@@ -67,28 +106,67 @@
         to ($(bl4) + (0,-1)$)
         to[out=180,in=270] ($(bl4) + (-1,0) $);
         
-        
+    \filldraw[fill=green!25] ($(x1) + (-1,0)$) 
+    	to ($(x1) + (1,0)$)
+    	to ($(x1) + (0,1)$) 
+    	to[out=270,in=0] ($(x1) + (-1,0)$); 
+    	
+    \filldraw[fill=purple!25] ($(x1) + (-0.8,0)$) 
+    	to ($(x2)$)
+    	to ($(x2) + (1,0)$)
+    	to ($(x1) + (1,0)$)
+    	to ($(x1) + (0,1)$) 
+    	to[out=270,in=0] ($(x1) + (-1,0)$);
+    	
+    \filldraw[fill=purple!25] ($(x3) + (1.2,1)$)
+    	to ($(x3) + (0,1)$)
+    	to ($(x3)$)
+    	to ($(x3) + (1,0)$)
+    	to ($(x3) + (1.2,1)$);
+    \filldraw[fill=blue!25] ($(x1) + (-0.8,0)$)
+    	to ($(x4) + (0,1)$) 
+    	to ($(x4)$)
+    	to ($(x4) + (1,0)$)
+    	to ($(x4) + (1,1)$)
+    	to ($(x1) + (1,0)$)
+    	to ($(x1) + (0,1)$) 
+    	to[out=270,in=0] ($(x1) + (-1,0)$);    
 \end{scope}
 
-\node at (-4,-1) {$\mathbb{R}^{m\times n}$};
-\node at (0,0) {$R^{n\times n}$};      
-\node at (9,12.5) {TV};   
-\node at (7,11.5) {EV};   
-\node at (7,10.5) {RR};    
-\node (v1) at (7.5,8.5) {$O$}; 
-\node (v2) at (7.2,8.4) {$\mathbb{I}_n$}; 
+\node at (-4,4) {$\mathbb{R}^{m\times n}$};
+\node at (0,5) {$R^{n\times n}$};      
+\node at (9.2,12.0) {$TV$};   
+\node at (7,11.5) {$EV$};   
+\node at (7,10.5) {$RR$};    
+\node at (8.2,8.4) {$Diag$}; 
+\node at (8.2,7.4) {$Sym$}; 
+\node at (6.5,7.4) {$SSym$}; 
+\node at (-3.4,12.5) {$BoD$};
+\node at (9.5,7.4) {$BeD$}; 
+\node at (8.5,6.5) {$Inv$}; 
+\node (v1) at (7.5,8.5) {$\mathbb{I}_n$}; 
+\node (v2) at (7.2,8.4) {$O$}; 
+
 
 \foreach \v in {1,2,...,2} {
    \fill (v\v)+(0,-0.4) circle (0.05);
 }
-    
 \end{tikzpicture}
 \end{mdframed}
 \label{matrices}
 \caption{Matrices}
 \end{figure}
+In bovenstaande figuur (\ref{matrices}) staat een Venn diagram van matrices en hun eigenschappen.
+Merk op:
+\begin{itemize}
+\item De verzamelingen zijn niet op schaal getekend.
+\item $Diag \subset BeD$ geldt, maar dit is niet heel duidelijk op de figuur omdat het moeilijk te tekenen is.
+\item $Diag \subset Sym$ geldt ook, maar heeft hetzelfde probleem.
+\item Dit diagram gaat ervan uit de nulrijen in een diagonaalmatrix steeds onderaan staan zodat het makkelijker te tekenen is.
+\end{itemize}
 
-\begin{figure}
+
+\begin{figure}[H]
 \centering
 \[
 \begin{array}{c | c c c c c c c c c c c}
@@ -116,7 +194,7 @@ O 						& \in & \in & \in & \in & \in & \in & \in 		& \in & \in & \in & \not\in\
 \end{array}
 \]
 \label{tabel}
-\caption{Tabel}
+\caption{Tabel Ter Verduidelijking}
 \end{figure}
 
 
