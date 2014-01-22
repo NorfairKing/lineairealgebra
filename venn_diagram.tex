@@ -26,6 +26,10 @@
 \node (tr4)  at (7,10) {};
 \node (br4)  at (7,9) {};
 
+\node (x1)  at (8,8) {};  
+\node (x2)  at (8,7) {}; 
+\node (x3)  at (6,7) {}; 
+
 \begin{scope}[fill opacity=0.5]
     \filldraw[fill=yellow!25] ($(bl) + (-1,-0)$) 
     	to ($(tl) + (-1,0)$)
@@ -67,16 +71,37 @@
         to ($(bl4) + (0,-1)$)
         to[out=180,in=270] ($(bl4) + (-1,0) $);
         
+    \filldraw[fill=green!25] ($(x1) + (-1,0)$) 
+    	to ($(x1) + (1,0)$)
+    	to ($(x1) + (0,1)$) 
+    	to[out=270,in=0] ($(x1) + (-1,0)$); 
+    	
+    \filldraw[fill=purple!25] ($(x1) + (-0.8,0)$) 
+    	to ($(x2)$)
+    	to ($(x2) + (1,0)$)
+    	to ($(x1) + (1,0)$)
+    	to ($(x1) + (0,1)$) 
+    	to[out=270,in=0] ($(x1) + (-1,0)$);
+    	
+    \filldraw[fill=purple!25] ($(x3) + (1.2,1)$)
+    	to ($(x3) + (0,1)$)
+    	to ($(x3)$)
+    	to ($(x3) + (1,0)$)
+    	to ($(x3) + (1.2,1)$);
         
 \end{scope}
 
 \node at (-4,-1) {$\mathbb{R}^{m\times n}$};
 \node at (0,0) {$R^{n\times n}$};      
-\node at (9,12.5) {TV};   
-\node at (7,11.5) {EV};   
-\node at (7,10.5) {RR};    
-\node (v1) at (7.5,8.5) {$O$}; 
-\node (v2) at (7.2,8.4) {$\mathbb{I}_n$}; 
+\node at (9,12.5) {$TV$};   
+\node at (7,11.5) {$EV$};   
+\node at (7,10.5) {$RR$};    
+\node at (8.2,8.4) {$Diag$}; 
+\node at (8.2,7.4) {$Sym$}; 
+\node at (6.5,7.4) {$SSym$}; 
+\node (v1) at (7.5,8.5) {$\mathbb{I}_n$}; 
+\node (v2) at (7.2,8.4) {$O$}; 
+
 
 \foreach \v in {1,2,...,2} {
    \fill (v\v)+(0,-0.4) circle (0.05);
