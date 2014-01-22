@@ -21,6 +21,7 @@
      - Jari Peeperkorn
      - Haroen Viaene
      - Eline Vrijsen
+     - Nick Van den Broeck
 *** De Student
     Dank bij voorbaat om de algemene voorwaarden en de licentie na te leven.
 ** Algemene voorwaarden
