@@ -1,15 +1,16 @@
 \documentclass[lineaire_algebra_oplossingen.tex]{subfiles}
 \begin{document}
 
+%TODO Hermaak dit als je je geroepen voelt. Er staan nog fouten in (zie de opmerkingen eronder). Voel je vrij om het te verbeteren.
+
 \chapter{Diagrammen}
 \begin{figure}[H]
 \begin{mdframed}
 \begin{tikzpicture}
-
-\node (bl)  at (0,3) {};  
+\node (bl)  at (0,5) {};  
 \node (tl)  at (0,12) {};
 \node (tr)  at (9,12) {};
-\node (br)  at (9,3) {};
+\node (br)  at (9,5) {};
 
 \node (bl2)  at (-2,9) {};  
 \node (tl2)  at (-2,11.5) {};
@@ -129,14 +130,12 @@
     	to ($(x4) + (1,1)$)
     	to ($(x1) + (1,0)$)
     	to ($(x1) + (0,1)$) 
-    	to[out=270,in=0] ($(x1) + (-1,0)$);
-   	
-        
+    	to[out=270,in=0] ($(x1) + (-1,0)$);    
 \end{scope}
 
-\node at (-4,3) {$\mathbb{R}^{m\times n}$};
-\node at (0,4) {$R^{n\times n}$};      
-\node at (9,12.0) {$TV$};   
+\node at (-4,4) {$\mathbb{R}^{m\times n}$};
+\node at (0,5) {$R^{n\times n}$};      
+\node at (9.2,12.0) {$TV$};   
 \node at (7,11.5) {$EV$};   
 \node at (7,10.5) {$RR$};    
 \node at (8.2,8.4) {$Diag$}; 
@@ -152,14 +151,22 @@
 \foreach \v in {1,2,...,2} {
    \fill (v\v)+(0,-0.4) circle (0.05);
 }
-    
 \end{tikzpicture}
 \end{mdframed}
 \label{matrices}
 \caption{Matrices}
 \end{figure}
+In bovenstaande figuur (\ref{matrices}) staat een Venn diagram van matrices en hun eigenschappen.
+Merk op:
+\begin{itemize}
+\item De verzamelingen zijn niet op schaal getekend.
+\item $Diag \subset BeD$ geldt, maar dit is niet heel duidelijk op de figuur omdat het moeilijk te tekenen is.
+\item $Diag \subset Sym$ geldt ook, maar heeft hetzelfde probleem.
+\item Dit diagram gaat ervan uit de nulrijen in een diagonaalmatrix steeds onderaan staan zodat het makkelijker te tekenen is.
+\end{itemize}
 
-\begin{figure}
+
+\begin{figure}[H]
 \centering
 \[
 \begin{array}{c | c c c c c c c c c c c}
