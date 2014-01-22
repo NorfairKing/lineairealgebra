@@ -777,9 +777,21 @@ P=
 
 \subsubsection*{(c)}
 
-
-\subsection{Oefening 19}
-Moest niet gekend zijn.
+\subsection{Oefening 18}
+\label{oef:6.18}
+\[U^{\bot_{\mathbb{R}^n}} + W = \begin{pmatrix} W^{\bot_U} \end{pmatrix}^{\bot_{\mathbb{R}^n}}.\]
+\begin{proof}
+Kies $v \in U^{\bot_{\mathbb{R}^n}} + W$ en $w^{\bot_U} \in W^{\bot_U}$ willekeurig. We zien dat $v = u^{\bot} + w$, geld waarbij $u^{\bot} \in U^{\bot_{\mathbb{R}^n}}$ en $w \in W$ geldt.\\
+Aangezien $w \in W$ en $w^{\bot} \in W^{\bot_U}$ gelden, geldt $\langle w, w^{\bot} \rangle = 0$. We weten ook dat $u^{\bot} \in U^{\bot_{\mathbb{R}^n}}$ geldt, dus $u^{\bot}$ staat loodrecht op elk element van $U$. We weten echter dat $W^{\bot_u} \subset U$, dus geldt ook $\langle u^{\bot}, w^{\bot} \rangle = 0$. Hieruit volgt nu
+\[\langle v, w^{\bot} \rangle = 0\]
+voor elke $v \in U^{\bot_{\mathbb{R}^n}} + W$ en $w^{\bot_U} \in W^{\bot_U}$. Dit betekent dat
+\[(W^{\bot_U})^{\bot_{\mathbb{R}^n}} \subseteq U^{\bot_{\mathbb{R}^n}} + W.\]
+We bewijzen nu dat de dimensies gelijk zijn. Zij $\dim(W \cap U^{\bot_{\mathbb{R}^n}}) = r$, $\dim W = k$, $\dim(U^{\bot_{\mathbb{R}^n}}) = l$ en $\dim(U) = n - l$. We zien nu:
+\[\dim(U^{\bot_{\mathbb{R}^n}} + W) = \dim(U^{\bot_{\mathbb{R}^n}}) + \dim W - \dim(U^{\bot_{\mathbb{R}^n}}) = k + l - r.\]
+Voor de dimensie van het rechterlid krijgen we
+\[\dim \begin{bmatrix} \begin{pmatrix} W^{\bot_u} \end{pmatrix}^{\bot_{\mathbb{R}^n}} \end{bmatrix} = \dim \mathbb{R}^n - \dim(W^{\bot_u})\]
+\[= n - \begin{bmatrix} \dim U - \dim W + \dim \begin{pmatrix} W \cap U^{\bot_{\mathbb{R}^n}} \end{pmatrix} \end{bmatrix} = n - \begin{bmatrix} (n - l) - k + r \end{bmatrix} = l + k - r.\]
+We zien dus dat de deelruimten dezelfde dimensie hebben en dat de ene deelruimte een deelverzameling is van de andere. Hieruit volgt dat ze gelijk zijn. \end{proof}
 
 
 \section{Opdrachten}
