@@ -49,25 +49,26 @@ We zoeken nog een oplossing van de volgende vergelijking.
 \[
 \begin{pmatrix}
 -1 & -1\\
--1 & -1\\
+-1 & -1
 \end{pmatrix}
 \cdot
 \begin{pmatrix}
-x\\y
+x \\
+y
 \end{pmatrix}
 =
 \vec{0}
 \]
 De oplossingsverzameling hiervan is de volgende.
 \[
-V = \{-\lambda,\lambda|\lambda\in\mathbb{R}\}
+V = \{ (-\lambda,\lambda) \mid \lambda\in\mathbb{R}\}
 \]
 Als we nu $\lambda = 1$ kiezen krijgen we als eigenvector bij voorbeeld $(-1,1)$.
 
 \subsubsection*{5)}
 Voor elke eigenvector $v$ van $D$ geldt dat de afgeleide van $v$ een veelvoud is van $v$. Elke constante functie is een eigenvector en $0$ is de eigenwaarde voor die functies. Dit is gemakkelijk te zien aan de matrix van de afgeleide afbeelding.
 \[
-D_{\varepsilon} = 
+D_\varepsilon = 
 \begin{pmatrix}
 0 & 1 & 0 & 0 & \cdots\\
 0 & 0 & 2 & 0 & \cdots\\
@@ -110,45 +111,46 @@ Omdat $A$ diagonaliseerbaar is bestaat er een inverteerbare matrix $P$ zodat $P^
 \end{pmatrix}
 \]
 Nu geldt $A \cdot P = P \cdot \Lambda$ omwille van de definitie van inverteerbaarheid\footnote{Zie Definitie 1.27 p 34}.
-We beschouwen $P$ nu als een rij van kolommen $P=(p_1 p_2 \cdots p_n)$
+We beschouwen $P$ nu als een rij van kolommen $P=(p_1 \; p_2 \; \cdots \; p_n)$.\\
 $A\cdot P$ ziet er dus als volgt uit.
 \[
-A\cdot P = A(p_1 p_2 \cdots p_n) = (Ap_1 Ap_2 \cdots Ap_n)
+A\cdot P = A(p_1 \; p_2 \; \cdots \; p_n) = (Ap_1 \; Ap_2 \; \cdots \; Ap_n)
 \]
 Bovendien geldt de volgende bewering omdat $A \cdot P = P \cdot \Lambda$ geldt.
 \[
-A(p_1 p_2 \cdots p_n) = (Ap_1 Ap_2 \cdots Ap_n) = (p_1 p_2 \cdots p_n)\Lambda = (\lambda_1p_1 \lambda_2p_2 \cdots \lambda_np_n)
+A(p_1 \; p_2 \; \cdots \; p_n) = (Ap_1 \; Ap_2 \; \cdots \; Ap_n) = (p_1 \; p_2 \; \cdots \; p_n)\Lambda = (\lambda_1p_1 \; \lambda_2p_2 \; \cdots \; \lambda_np_n)
 \]
-Elk van de kolommen in $(\lambda_1p_1 \lambda_2p_2 \cdots \lambda_np_n)$ voldoet dus aan de volgende vergelijking omdat $\Lambda$ een diagonaalmatrix is.
+Elk van de kolommen in $(\lambda_1p_1 \; \lambda_2p_2 \; \cdots \; \lambda_np_n)$ voldoet dus aan de volgende vergelijking omdat $\Lambda$ een diagonaalmatrix is.
 \[
 Ap_i = \lambda_ip_i
 \]
-\textbf{Elke kolom van $P$ is bijgevolg een eigenvector van $A$ de eigenwaarden die horen bij deze eigenvectoren staan dan in de overeenkomstige kolommen op de diagonaal van $\Lambda$.}
-Nu moeten we nog bewijzen dat de kolommen van $P$ een basis vormen voor $\mathbb{R}^n$
+\textbf{Elke kolom van $P$ is bijgevolg een eigenvector van $A$, de eigenwaarden die horen bij deze eigenvectoren staan dan in de overeenkomstige kolommen op de diagonaal van $\Lambda$.}\\\\
+Nu moeten we nog bewijzen dat de kolommen van $P$ een basis vormen voor $\mathbb{R}^n$.\\
 Omdat $P$ precies $n$ kolommen bevat moeten we enkel bewijzen dat de kolommen van $P$ lineair onafhankelijk of dat ze voortbrengend zijn\footnote{Zie Stelling 3.41 p 109}.
 Omdat $P$ inverteerbaar is geldt dat de determinant van $P$ niet nul is\footnote{Zie Stelling 2.4 p 59}.
-Bijgevolg zijn de kolommen van $P$ lineair onafhankelijk\footnote{Stelling 2.2 p 57 en Zie Stelling 2.3 p 58} omdat $P$ rijreduceerbaar is tot een matrix zonder nulrijen.
+Bijgevolg zijn de kolommen van $P$ lineair onafhankelijk\footnote{Stelling 2.2 p 57 en Zie Stelling 2.3 p 58} omdat $P$ rijreduceerbaar is tot een matrix zonder nulrijen.\\
 
 \item $\Leftarrow$
 $\mathbb{R}^n$ heeft een basis volledig bestaand uit eigenvectoren van $A$. Noem deze basis $\beta = \{\beta_1,\beta_2,\ldots,\beta_n\}$. De vectoren uit deze basis voldoen dus aan de volgende bewering.
 \[
 A\cdot \beta_i = \lambda_i\beta_i
 \]
-$A$ beschouwen we als de matrix van een lineaire afbeelding ten opzichte van de standaard basis.
+$A$ beschouwen we als de matrix van een lineaire afbeelding ten opzichte van de standaardbasis.
 De matrix van basisverandering van de basis van de eigenvectoren naar de standaardbasis noemen we $P$.
-Dit is precies de matrix waarin de eigenvectoren van $A$ (de vectoren van $\beta$) in kolommen staan.
-$P^{-1}$ is nu de matrix van basisverandering van de standaardmatrix naar de basis van eigenvectoren.
+Dit is precies de matrix waarin de eigenvectoren van $A$ (de vectoren van $\beta$) in kolommen staan.\\
+$P^{-1}$ is nu de matrix van basisverandering van de standaardbasis naar de basis van eigenvectoren.
 $P$ is zeker inverteerbaar omdat de kolommen lineair onafhankelijk zijn (ze vormen een basis).
+
 We weten nu dat $A = PBP^{-1}$ geldt\footnote{Zie pagina 150 voor meer uitleg.}. Vermenigvuldig nu $P$ rechts aan beide kanten.
 \[
 AP = PB
 \]
-Beschouw $P = (\beta_1 \beta_2 \cdots \beta _n)$ als een rij van kolommen $\beta_i$. Beschouw $B = (b_1 b_2 \cdots b_n)$ als een kolom van rijen $b_i$.
+Beschouw $P = (\beta_1 \; \beta_2 \; \cdots \; \beta _n)$ als een rij van kolommen $\beta_i$. Beschouw $B = (b_1 \; b_2 \; \cdots \; b_n)$ als een kolom van rijen $b_i$.
 \[
-AP = (A\beta_1 A\beta_2 \cdots A\beta_n) = (\lambda_1\beta_1 \lambda_2\beta_2 \cdots \lambda_n\beta_n) = PB
+AP = (A\beta_1 \; A\beta_2 \; \cdots \; A\beta_n) = (\lambda_1\beta_1 \; \lambda_2\beta_2 \; \cdots \; \lambda_n\beta_n) = PB
 \]
-De tweede gelijkheid geldt omdat $\beta_i$ eigenvectoren zijn.
-De derde gelijkheid kan enkel gelden als $B$ een diagonaalmatrix is. Sterker nog, $\lambda_i$, de eigenwaarden van $A$ staan precies op de diagonaal van $P$.
+De tweede gelijkheid geldt omdat $\beta_i$ eigenvectoren zijn.\\
+De derde gelijkheid kan enkel gelden als $B$ een diagonaalmatrix is. Sterker nog, $\lambda_i$ (de eigenwaarden van $A$) staan precies op de diagonaal van $P$.
 \end{itemize}
 \end{proof}
 
@@ -193,21 +195,20 @@ Als $A$ gelijkvormig is met $B$ geldt de volgende gelijkheid.
 B = P^{-1}AP
 \]
 Nemen we nu de determinant van beide kanten dan bekomen we de volgende gelijkheid.
-\[
-\det(B) = \det(P^{-1}AP) = \det(P^{-1})\cdot \det(A)\cdot \det(P)
-\]
-\[
-= \det(A)\cdot \det(P^{-1})\cdot \det(P) = \det(A)\cdot \frac{1}{\det(P)}\cdot \det(P) = \det(A) \cdot 1 = \det(A)
-\]
+\begin{align*}
+\det(B)
+&= \det(P^{-1}AP) = \det(P^{-1})\cdot \det(A)\cdot \det(P) \\
+&= \det(A)\cdot \det(P^{-1})\cdot \det(P) = \det(A)\cdot \frac{1}{\det(P)}\cdot \det(P) = \det(A) \cdot 1 = \det(A)
+\end{align*}
 
 \item
 \[
 B = P^{-1}AP 
 \]
 \[
-Tr(B) = Tr(P^{-1}A P) = Tr(P^{-1}P A) = Tr(IA) = Tr(A)
+\text{Tr}(B) = \text{Tr}(P^{-1}A P) = \text{Tr}(P^{-1}P A) = \text{Tr}(IA) = \text{Tr}(A)
 \]
-Bovenstaande gelijkheden gelden omwille van een eigenschap van het spoor van een product, namelijk dat $Tr(AB) = Tr(BA)$ geldt\footnote{Zie opdracht 1.25 p 33}.
+Bovenstaande gelijkheden gelden omwille van een eigenschap van het spoor van een product, namelijk dat $\text{Tr}(AB) = \text{Tr}(BA)$ geldt\footnote{Zie opdracht 1.25 p 33}.
 \end{enumerate}
 \end{proof}
 
@@ -228,12 +229,12 @@ We moeten enkel bewijzen dat elke matrixvoorstelling van $L$ gelijkvormig is met
 \subsection{Stelling 5.16 p 189}
 \label{5.16}
 Zij $L:V\rightarrow V$ een lineaire transformatie van de eindig dimensionale vectorruimte $(\mathbb{R},V,+)$ met spectrum $\text{Spec}(L) = \{\lambda_1,\lambda_2,\ldots,\lambda_n\}$.
-
+ 
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
-\item $m(\lambda_i) \ge 1$\\
-\item $d(\lambda_i) \ge 1$\\
-\item $d(\lambda_i) \le m(\lambda_i)$\\w
+\item $m(\lambda_i) \ge 1$
+\item $d(\lambda_i) \ge 1$
+\item $d(\lambda_i) \le m(\lambda_i)$
 \end{enumerate}
 
 \subsubsection*{Bewijs}
@@ -249,9 +250,9 @@ Anders zou het geen eigenwaarde zijn.
 \item
 We weten dat de eigenruimte $E_{\lambda_i}$ van $\lambda_i$ dimensie $d(\lambda) = d$ heeft.
 Er bestaat dus een basis $\beta = v_1,v_2,\ldots,v_d$ voor $E_\lambda$ met $d$ elementen.
-Omdat $\beta$ een vrij deel is van $E_\lambda$ en $V$ en omdat $E_\lambda$ een deelruimte is van V\footnote{Zie Definitie 5.14 p 188} geldt dat $\beta$ uitgebreid kan worden tot een basis van $V$\footnote{Zie Stelling 3.37 p 107}.
-Ten opzichte die uitgebreide basis $\beta'$ van $V$ ziet de matrix van $L$ er als volgt uit\footnote{Zie Stelling 5.7 p 181}.
-(Dit is het punt van eigenvectoren).
+Omdat $\beta$ een vrij deel is van $E_\lambda$ en $V$ en omdat $E_\lambda$ een deelruimte is van V\footnote{Zie Definitie 5.14 p 188}, geldt dat $\beta$ uitgebreid kan worden tot een basis van $V$\footnote{Zie Stelling 3.37 p 107}. \\
+Ten opzichte van die uitgebreide basis $\beta'$ van $V$ ziet de matrix van $L$ er als volgt uit\footnote{Zie Stelling 5.7 p 181}.\\
+(Dit is het punt van eigenvectoren).\\
 ($L_{\beta'}^{\beta'}\cdot v_i$ moet $\lambda v_i$ zijn.)
 \[
 L_{\beta'}^{\beta'} = 
@@ -263,11 +264,16 @@ L_{\beta'}^{\beta'} =
 \vdots & \vdots & & \vdots & \vdots & \ddots & \vdots\\
 0 & 0 &\cdots & 0 & \bullet & \cdots & \bullet\\
 \end{pmatrix}
+=
+\begin{pmatrix}
+\lambda \mathbb{I}_d & \bullet \\
+0 & \bullet
+\end{pmatrix}
 \]
 We weten dat de karakteristieke veelterm onafhankelijk is van de gekozen basis\footnote{Zie Gevolg 5.9 p 182}. We beschouwen nu de karakteristieke veelterm van bovenstaande matrix.
 De karakteristieke veelterm van deze matrix is dan van de volgende vorm. 
 \[
-\phi_L(X) = (X-\lambda)^dp(X)
+\varphi_L(X) = (X-\lambda)^dp(X)
 \]
 $m(\lambda)$ is minstens $d$ want $(X-\lambda)^d$ zorgt al voor multipliciteit $d$, maar in $p(X)$ kan $\lambda$ ook nog voorkomen. In symbolen:
 \[
@@ -288,12 +294,12 @@ $v_1,v_2,\ldots,v_n$ zijn lineair onafhankelijke vectoren.
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs door inductie op $n$.\\\\
-\emph{Stap 1: (basis stap)}\\
-De bewering geldt voor $n=1$ want $\{v_i\}$ is lineair onafhankelijk. Dit is waar omdat $v_i$ geen nulvector is\footnote{Zie Definitie 5.3 p 178}.\\\\
-\emph{Stap 2: (inductie stap)}\\
+\emph{Stap 1: (basisstap)}\\
+De bewering geldt voor $n=1$ want $\{v_1\}$ is lineair onafhankelijk. Dit is waar omdat $v_1$ geen nulvector is\footnote{Zie Definitie 5.3 p 178}.\\\\
+\emph{Stap 2: (inductiestap)}\\
 Stel dat de bewering geldt voor een bepaalde $n=k$ (inductiehypothese). We bewijzen nu dat daaruit volgt dat de bewering geldt voor $n=k+1$.
 We beschouwen $k+1$ eigenwaarden met bijhorende eigenvectoren. Uit de inductiehypothese volgt dat elke deelverzameling van $k$ elementen van die eigenvectoren vrij is.
-We bewijzen uit het ongerijmde dat wanneer we de $k+1$-ste eigenvector toevoegen aan die deelverzameling, de verzameling nog steeds vrij is.
+We bewijzen uit het ongerijmde dat wanneer we de $(k+1)$-ste eigenvector toevoegen aan die deelverzameling, de verzameling nog steeds vrij is.
 We nemen dus aan dat $v_{k+1}$ lineaire afhankelijk is van $v_1,v_2,\ldots,v_k$ en proberen tot een contradictie te komen.
 \[
 \exists \mu_i\in\mathbb{R} : v_{k+1} = \sum_{i=1}^k\mu_iv_i
@@ -317,7 +323,7 @@ Voegen we deze twee nu samen dan krijgen we het volgende.
 \[
 \sum_{i=1}^k \mu_i(\lambda_i-\lambda_{k+1})v_i = 0
 \]
-Omdat we weten dat alle $\lambda_i$ onderling verschillend zijn (gegeven) en dat alle $v_i$ lineair onafhankelijk zijn houdt dit in dat alle $\mu_i$ nul moeten zijn. Dit zou betekenen dat alle $v_i$ lineair onafhankelijk zijn en dat is in contradictie met de aanname van lineair afhankelijkheid.
+Omdat we weten dat alle $\lambda_i$ onderling verschillend zijn (gegeven) en dat alle $v_i$ lineair onafhankelijk zijn houdt dit in dat alle $\mu_i$ nul moeten zijn. Dit zou betekenen dat alle $v_i$ lineair onafhankelijk zijn en dat is in contradictie met de aanname van lineaire afhankelijkheid.
 \end{proof}
 
 
@@ -349,21 +355,21 @@ De karakteristieke veelterm van $L$ is volledig te ontbinden als product van eer
 
 \subsubsection*{Bewijs}
 \begin{proof}
-Omdat $L$ diagonaliseerbaar is bestaat er een inverteerbare $P$ zodat $B$ een diagonaalmatrix is in $L = P^{-1}BP$ \footnote{Zie het bewijs van Stelling 5.7 p 181}. Omdat de karakteristieke veelter onafhankelijk is van de basis is deze voor $L_A$ en $L_B$ gelijk \footnote{Zie Gevolg 5.9 p 182}. De karakteristieke veelterm van $L_B$ is dus $\phi_L = \prod_{i=1}^n(X-\lambda_i)$ met $\lambda_i$ de waarden op de diagonaal van $B$ (dit zijn de eigenwaarden van $L$).  $\phi_L$ is bijgevolg een product van eerstegraadsfactoren.
+Omdat $L$ diagonaliseerbaar is bestaat er een inverteerbare $P$ zodat $B$ een diagonaalmatrix is in $L = P^{-1}BP$ \footnote{Zie het bewijs van Stelling 5.7 p 181}. Omdat de karakteristieke veelter onafhankelijk is van de basis is deze voor $L_A$ en $L_B$ gelijk \footnote{Zie Gevolg 5.9 p 182}. De karakteristieke veelterm van $L_B$ is dus $\varphi_L = \prod_{i=1}^n(X-\lambda_i)$ met $\lambda_i$ de waarden op de diagonaal van $B$ (dit zijn de eigenwaarden van $L$).  $\varphi_L$ is bijgevolg een product van eerstegraadsfactoren.
 \end{proof}
 
 
 \subsection{Stelling 5.23 p 192}
 \label{5.23}
-Zij $(\mathbb{R},V,+)$ een vectorruimte van dimensie $n$ en zij $L$ een lineaire transformatie van $V$ waarvan de karakteristieke veelterm $\phi_L$ volledig te ontbinden valt als product van eerstegraadsfactoren. Zij $\text{Spec}(L) = \{\lambda_1,\lambda_2,\ldots,\lambda_n\}$ het spectrum van $L$.
+Zij $(\mathbb{R},V,+)$ een vectorruimte van dimensie $n$ en zij $L$ een lineaire transformatie van $V$ waarvan de karakteristieke veelterm $\varphi_L$ volledig te ontbinden valt als product van eerstegraadsfactoren. Zij $\text{Spec}(L) = \{\lambda_1,\lambda_2,\ldots,\lambda_n\}$ het spectrum van $L$.
 
 \subsubsection*{Te Bewijzen}
 \begin{center}
-$L$ is diagonaliseerbaar.
+$L$ is diagonaliseerbaar
 \end{center}
 \[\Leftrightarrow\]
 \[
-\forall \text{ eigenwaarde } \lambda_i: d(\lambda_i) = m(\lambda_i)
+\forall \lambda_i \in \text{Spec}(L) : d(\lambda_i) = m(\lambda_i)
 \]
 
 \subsubsection*{Bewijs}
@@ -371,7 +377,7 @@ $L$ is diagonaliseerbaar.
 Bewijs van een equivalentie.
 \begin{itemize}
 \item $\Rightarrow$\\
-We weten dat er een basis $\beta$ van $V$ bestaat die volledig uit eigenvectoren van $L$ bestaat omdat $L$ diagonaliseerbaar is\footnote{Zie Definitie 5.6 p 181}. Rangschik de vectoren in $\beta$ nu volgens eigenwaarde. Per eigenwaarde zijn er dus $m(\lambda)$ vectoren. De vectoren die bij dezelfde eigenwaarde horen vormen een basis voor de eigenruimte van die eigenwaarde. Per eigenwaarde zijn er dus $d(\lambda)$ vectoren. Voor elke eigenwaarden geldt dus de volgende bewering.
+We weten dat er een basis $\beta$ van $V$ bestaat die volledig uit eigenvectoren van $L$ bestaat omdat $L$ diagonaliseerbaar is\footnote{Zie Definitie 5.6 p 181}. Rangschik de vectoren in $\beta$ nu volgens eigenwaarde. Per eigenwaarde zijn er dus $m(\lambda)$ vectoren. De vectoren die bij dezelfde eigenwaarde horen vormen een basis voor de eigenruimte van die eigenwaarde. Per eigenwaarde zijn er dus $d(\lambda)$ vectoren. Voor elke eigenwaarde geldt dus de volgende bewering.
 \[
 d(\lambda_i) = m(\lambda_i)
 \]
@@ -389,12 +395,11 @@ Dit is gemakkelijk te zien als we matrixvoorstelling van $L$ ten opzichte van de
 0 & 0 & \cdots & 0 & 0 & \cdots & 0 & \cdots & \lambda_n\\
 \end{pmatrix}
 \]
-Zoals we zien komt $\lambda_i$ precies $m(\lambda_i)$ keer voor en komen er met $\lambda_i$ precies $d(\lambda_i)$ eigenvectoren voor.
+$\lambda_i$ komt dus precies $m(\lambda_i)$ keer voor, met $\lambda_i$ komen precies $d(\lambda_i)$ eigenvectoren overeen.
 
 \item $\Leftarrow$\\
-Voor elke eigenwaarde geldt $d(\lambda_i) = m(\lambda_i) = m_i$.
-Omdat de karakteristieke veelterm volledig als product kan ontbonden worden in eerstegraadsfactoren en de karakteristieke veelterm van graag $n$ is (omdat de afmetingen van $L_A$ $n\times
-n$ zijn) geldt de volgende bewering.
+Voor elke eigenwaarde geldt $d(\lambda_i) = m(\lambda_i) = m_i$.\\
+Omdat de karakteristieke veelterm volledig als product kan ontbonden worden in eerstegraadsfactoren en de karakteristieke veelterm van graad $n$ is (omdat de afmetingen van $L_A$ $n\times n$ zijn), geldt de volgende bewering.
 \[
 \sum_{i=1}^km_i = n
 \]
@@ -420,7 +425,7 @@ De lineaire combinatie kan dus ook geschreven worden als volgt.
 \sum_{i=1}^ku_i = \vec{0}
 \]
 Alle $u_i$ in deze uitdrukking horen bij \emph{verschillende} eigenwaarden. Dit betekent dat de $u_i$ lineair onafhankelijk zijn \footnote{Zie stelling 5.18 p 190.}. $u_i$ kunnen enkel lineair onafhankelijk zijn als alle $u_i$ nulvectoren zijn.
-%Hier zit iets raar, lineair onafhankelijke nulvectoren? TODO
+%TODO Hier zit iets raar, lineair onafhankelijke nulvectoren?
 \[
 u_1 = u_2 = \ldots = u_k
 \]
@@ -460,11 +465,11 @@ We groeperen de eigenvectoren in $\beta$ per eigenwaarde.
 Uit de vorige stelling weten we nu dat elk van deze groepjes een basis vormen voor de respectievelijke eigenruimten $E_{\lambda_i}$.
 Omdat $\beta$ een basis is van $V$ en elke groepje een basis is van $E_{\lambda_i}$ geldt nu dat elke vector $v\in V$ geschreven kan worden als een som van een vector in elke eigenruimte. 
 Nu rest er ons nog te bewijzen dat deze som uniek is.
-We moeten daarvoor enkel nog aantonen dat de doorsnede van de eigenruimten elke keer enkel de nulvector bevat \footnote{Zie Propositie 3.22 p 99.}.\\
+We moeten daarvoor enkel nog aantonen dat de doorsnede van de eigenruimten elke keer enkel de nulvector bevat \footnote{Zie Propositie 3.22 p 99.}.
 
 Stel dat \'e\'en van die doorsneden meer dan enkel de nulvector bevat, zeg, nog een vector $v$.
 Dan zou dit betekenen dat $v$ een eigenvector is die bij twee verschillende eigenwaarden hoort.
-Dit kan niet omdat eigenvectoren in verschillende eigenwaarden lineair onafhankelijk zijn voor diagonaliseerbare lineaire transformaties \footnote{Zie Stelling 5.18 p 190.}.\\\\
+Dit kan niet omdat eigenvectoren in verschillende eigenwaarden lineair onafhankelijk zijn voor diagonaliseerbare lineaire transformaties \footnote{Zie Stelling 5.18 p 190.}.
 
 $V$ is dus de directe som van alle eigenruimten van $L$.
 
@@ -474,7 +479,7 @@ Omdat de karakteristieke veelterm van $L$ zich volledig ontbindt als product van
 \[
 \sum_{i=1}^km_i = n
 \]
-Nemen we de unie van de basissen van de eigenruimten dan vormt deze unie opnieuw een basis van $V$. Voor meer uitleg zie het bewijs van Stelling 5.23 p 192.
+Nemen we de unie van de basissen van de eigenruimten, dan vormt deze unie opnieuw een basis van $V$. Voor meer uitleg zie het bewijs van Stelling 5.23 p 192.
 \end{enumerate}
 \end{proof}
 
@@ -498,33 +503,31 @@ Zij $\text{Spec}(L) = \{\lambda_1,\lambda_2,\ldots,\lambda_k\}$ het spectrum van
 Zij $m_i = m(\lambda)$ de algebra\"ische multipliciteit van eigenwaarde $i$.
 De karakteristieke veelterm van $L$ ziet er nu als volgt uit.
 \[
-\phi_L(X) = \prod_{i=1}^k(X-\lambda_i)^{m_i}
+\varphi_L(X) = \prod_{i=1}^k(X-\lambda_i)^{m_i}
 \]
-Wanneer we dit product uitwerken ziet het er als volgt uit.
-%TODO meer uitleg.
+Wanneer we dit product uitwerken ziet het er als volgt uit. %TODO meer uitleg.
 \[
-X^n + (-1)(m_1\lambda_1 + m_2\lambda_2 + \ldots + m_3\lambda_3)X^{n-1} + (-1)^2(m_1\lambda_1 + m_2\lambda_2 + \ldots + m_3\lambda_3)^2X^{n-2} + \ldots + (-1)^n\prod_{i=1}^k\lambda_i^{m_i}
+X^n + (-1)(m_1\lambda_1 + \ldots + m_k\lambda_k)X^{n-1} + (-1)^2(m_1\lambda_1 + \ldots + m_k\lambda_k)^2X^{n-2} + \ldots + (-1)^n\prod_{i=1}^k\lambda_i^{m_i}
 \]
 Per definitie is de karakteristieke veelterm ook gelijk aan het volgende.
 In deze formule is $A$ de matrix van $L$ ten opzichte van eender welke basis van $V$.
 \[
-\phi_L(X) = \det(X\mathbb{I}_n-A))
+\varphi_L(X) = \det(X\mathbb{I}_n-A)
 \]
-%TODO Hier gebeurt iets fishy, wtf?? Het is de eerste term van de bovenstaande uitdrukking, maar wut?
 \[
-(-1)^n\prod_{i=1}^k\lambda_i^{m_i} = \prod_{i=1}^k(-\lambda_i)^{m_i} = \phi_L(0) = \det(-A) = (-1)^n\det(A) = (-1)^n\det(L) %Waar komt die laatste stap ineens vandaan??
+(-1)^n\prod_{i=1}^k\lambda_i^{m_i} = \prod_{i=1}^k(-\lambda_i)^{m_i} = \varphi_L(0) = \det(-A) = (-1)^n\det(A) = (-1)^n\det(L) %Waar komt die laatste stap ineens vandaan??
 \]
-$\det(L)$ is dus precies gelijk aan het product van alle eigenwaarden van $L$ waarbij elke eigenwaarde $\lambda_i$ $m_i$ keer geteld wordt.
+$\det(L)$ is dus precies gelijk aan het product van alle eigenwaarden van $L$ waarbij elke eigenwaarde $\lambda_i$ exact $m_i$ keer geteld wordt.
 
 \item
-We beschouwen $\phi_L$ opnieuw op beide manieren.
+We beschouwen $\varphi_L$ opnieuw op beide manieren.
 \[
-\phi_L = \prod_{i=1}^k(X-\lambda_i)^{m_i} \text{ en }\phi_L = \det(X\mathbb{I}_n - A)
+\varphi_L = \prod_{i=1}^k(X-\lambda_i)^{m_i} \text{ en }\varphi_L = \det(X\mathbb{I}_n - A)
 \]
 In beide schrijfwijzen beschouwen we enkel de term bij co\"effici\"ent $X^{n-1}$.
 Deze moeten gelijk zijn.
 \[
--\sum_{i=1}^km_i\lambda_i = -\sum_{k=1}^n(A)_{ii} = -Tr(A) = -Tr(L)
+-\sum_{i=1}^km_i\lambda_i = -\sum_{k=1}^n(A)_{ii} = -\text{Tr}(A) = -\text{Tr}(L)
 \]
 Het spoor van $L$ is dus gelijk aan de som van alle eigenwaarden $\lambda_i$ waarin elke eigenwaarde $m_i$ keer geteld wordt.
 \end{enumerate}
@@ -533,17 +536,17 @@ Het spoor van $L$ is dus gelijk aan de som van alle eigenwaarden $\lambda_i$ waa
 
 \subsection{Stelling 5.28 p 203}
 \label{5.28}
-We zullen hiervoor geen bewijs geven. Dit moet je ook niet kunnen, maar zorg wel dat je goed begrijpt wat deze stelling inhoudt.
+We zullen hiervoor geen bewijs geven. Dit bewijs moet je dan ook niet kennen, maar zorg wel dat je heel goed begrijpt wat deze stelling inhoudt.
 %TODO Eventueel nog meer uitleg?
 
 \subsection{Stelling 5.31 p 205}
 \label{5.31}
-Dit bewijzen we op dezelfde manier als Stelling 5.23 p 192
+Dit bewijzen we op dezelfde manier als Stelling 5.23 p 192.
 %TODO uitschrijven
 
 \subsection{Propositie 5.32 p 205}
 \label{5.32}
-Dit bewijzen we op dezelfde manier als Stelling 5.25 p 194
+Dit bewijzen we op dezelfde manier als Stelling 5.25 p 194.
 %TODO uitshrijven
 
 \subsection{Propositie 5.38 p 209}
@@ -576,15 +579,15 @@ Zij alle $X_0$ een kansvector en $M$ een stochastische matrix.
 \subsubsection*{Te Bewijzen}
 Een Markov-keten bestaat uit een rij kansvectoren. Alle $X_i$ zijn dus kansvectoren.
 \[
-X0, X_1 = M\cdot X_0, X_2 = M^2\cdot X_0,\ldots,X_n = M^n\cdot X_0
+X_0,\; X_1 = M\cdot X_0,\; X_2 = M^2\cdot X_0,\ldots,\;X_n = M^n\cdot X_0
 \]
 
 \subsubsection*{Bewijs}
 \begin{proof}
 Bewijs door inductie op $n$.\\\\
-\emph{Stap 1: (Basis stap)}\\
+\emph{Stap 1: (Basisstap)}\\
 De bewering geldt voor $n=1$ \footnote{Zie Propositie 5.38 p 209}.\\\\
-\emph{Stap 2: (Inductie stap}\\
+\emph{Stap 2: (Inductiestap}\\
 Stel dat de bewering geldt voor een bepaalde $n=k$, dan bewijzen we nu dat daaruit volgt dat de bewering geldt voor $n=k+1$.
 We moeten nu bewijzen dat de volgende vector een kansvector is.
 \[
@@ -599,7 +602,7 @@ Volgens de basisstap geldt dat $M\cdot X_0$ een kansvector is. Volgens de induct
 Zij $M\in \mathbb{R}^{n\times n}$ een stochastische matrix.
 
 \subsubsection*{Te Bewijzen}
-Het getal $1$ is een eigenwaarde van $M$
+Het getal $1$ is een eigenwaarde van $M$.
 
 \subsubsection*{Bewijs}
 \begin{proof}
@@ -608,7 +611,7 @@ Beschouw het stelsel $M\cdot X = \lambda X$ met $\lambda = 1$. De volgende bewer
 \[
 (M-\mathbb{I}_n)\cdot X = \vec{0}
 \]
-Omdat $M$ een stochastische matrix is geldt dat de som van de elementen van elke kolom gelijk is aan $1$. Daaruit volgt dat de som van de elementen van elke kolom in $M-\mathbb{I}_n$ gelijk is aan $0$. Als we de rijen van $M$ optellen krijgen we een nulrij. Dit houdt in dat de rijen van $M-\mathbb{I}_n$ lineair afhankelijk zijn \footnote{Zie Stelling 2.2 p 57 D-5 en Stelling 2.3 p 58 1.} en dat de volgende bewering geldt.
+Omdat $M$ een stochastische matrix is geldt, dat de som van de elementen van elke kolom gelijk is aan exact $1$. Daaruit volgt dat de som van de elementen van elke kolom in $M-\mathbb{I}_n$ gelijk is aan $0$. Als we de rijen van $M$ optellen krijgen we een nulrij. Dit houdt in dat de rijen van $M-\mathbb{I}_n$ lineair afhankelijk zijn \footnote{Zie Stelling 2.2 p 57 D-5 en Stelling 2.3 p 58 1.} en dat de volgende bewering geldt.
 \[
 \det(M - \mathbb{I}_n) = \det(M - \lambda\mathbb{I}_n) = 0
 \]
@@ -632,7 +635,7 @@ De eigenruimte $E_1$ bestaat, heeft dimensie $1$ en bevat precies $1$ kansvector
 \[
 M\cdot X = X\\ \Leftrightarrow M\cdot \lambda X = \lambda X 
 \]
-(Dit is makkelijk in te zien als we $M$ als een lineaire afbeelding beschouwen.)
+Dit is makkelijk in te zien als we $M$ als een lineaire afbeelding beschouwen.
 \item Stel dat er meer dan \'e\'en vaste vector van $M$ bestaat die ook een kansvector is, noem ze $X$ en $Y$.
 Dan geldt dat er een $\lambda 1$ bestaat zodat $\lambda X = Y$ want we kunnen $X$ als de basis voor $E_1$ nemen. De som van de elementen van $Y$ is dus $\lambda$ keer die van $X$. Dit zou betekenen dat $\lambda$ $1$ is omdat $\lambda X = Y$ en de som van de elementen van $Y$ $1$. Dit is in contradictie met de aanname dat $X$ verschillend is van $Y$.
 \end{itemize}
