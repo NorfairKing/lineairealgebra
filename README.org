@@ -49,3 +49,8 @@
 
     Als windows gebruiker zal je MikTex nodig hebben om het bestand te compileren.
     
+*** Er staan nog oefeningen in de cursus waarvan er geen oplossing staat in dit boek, waar blijven die?
+    Als er nog een oefening ontbreekt, wordt u uitgenodigd om ze te maken en ze toe te voegen.
+    Dit boek is nog niet af.
+    Helaas zal het waarschijnlijk niet afgewerkt worden door de auteur.
+    De auteur hoop dat het boek zal afgewerkt worden door volgende generaties studenten die lineaire algebra volgen.
