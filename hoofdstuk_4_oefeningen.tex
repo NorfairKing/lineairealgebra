@@ -123,7 +123,7 @@ TODO stelsel oplossen.
 \end{align*}
 
 \subsection{Oefening 4}
-Zij $(\mathbb{R},V,+)$ een $n$-dimensionale vectorruimte en zij $\alpha = \{a_1,a_2,...,a_n\}$ een basis van $V$.
+Zij $(\mathbb{R},V,+)$ een $n$-dimensionale vectorruimte en zij $\alpha = \{a_1,a_2,\ldots,a_n\}$ een basis van $V$.
 \subsubsection*{Te Bewijzen}
 \[\text{co}_\alpha:V\rightarrow \mathbb{R}^n \text{ is lineair.}\]
 \[
@@ -133,24 +133,24 @@ Zij $(\mathbb{R},V,+)$ een $n$-dimensionale vectorruimte en zij $\alpha = \{a_1,
 \subsubsection*{Bewijs}
 \begin{proof}
 Direct bewijs.\\
-Zij $v = \sum_{i=1}^n\lambda_ia_i \in V$ een vector geschreven als de lineaire combinatie van de basisvectoren, dan is $(\lambda_1,\lambda_2,...,\lambda_n)$ het beeld ervan door $\text{co}_\alpha$.
+Zij $v = \sum_{i=1}^n\lambda_ia_i \in V$ een vector geschreven als de lineaire combinatie van de basisvectoren, dan is $(\lambda_1,\lambda_2,\ldots,\lambda_n)$ het beeld ervan door $\text{co}_\alpha$.
 Kies nu willekeurig $v_1,v_2 \in V$ en $\lambda_1,\lambda_2\in \mathbb{R}$.
 \[
 \text{co}_\alpha(\lambda_1v_1+\lambda_2v_2)= \text{co}_\alpha(\lambda_1\sum_{i=1}\lambda_{1i}a_{1i} + \lambda_2\sum_{i=1}\lambda_{2i}a_{i}) = \text{co}_\alpha(\sum_{i=1}\lambda_1\lambda_{1i}a_{i} + \sum_{i=1}\lambda_2\lambda_{2i}a_{i})
 \]
 \[
-= \text{co}_\alpha(\sum_{i=1}((\lambda_1\lambda_{1i}+\lambda_2\lambda_{2i})a_{i}) = ((\lambda_1\lambda_{11}+\lambda_2\lambda_{21}),(\lambda_1\lambda_{12}+\lambda_2\lambda_{22}),...,(\lambda_1\lambda_{1n}+\lambda_2\lambda_{2n}))
+= \text{co}_\alpha(\sum_{i=1}((\lambda_1\lambda_{1i}+\lambda_2\lambda_{2i})a_{i}) = ((\lambda_1\lambda_{11}+\lambda_2\lambda_{21}),(\lambda_1\lambda_{12}+\lambda_2\lambda_{22}),\ldots,(\lambda_1\lambda_{1n}+\lambda_2\lambda_{2n}))
 \]
 \[
-((\lambda_1\lambda_{11}),(\lambda_1\lambda_{12}),...,(\lambda_1\lambda_{1n}))+((\lambda_2\lambda_{21}),(\lambda_2\lambda_{22}),...,(\lambda_2\lambda_{2n}))
+((\lambda_1\lambda_{11}),(\lambda_1\lambda_{12}),\ldots,(\lambda_1\lambda_{1n}))+((\lambda_2\lambda_{21}),(\lambda_2\lambda_{22}),\ldots,(\lambda_2\lambda_{2n}))
 \]
 \[
-\lambda_1(\lambda_{11},\lambda_{12},...,\lambda_{1n})+ \lambda_2(\lambda_{21},\lambda_{22},...,\lambda_{2n}) = \lambda_1\text{co}_\alpha(v_1)+\lambda_2\text{co}_\alpha(v_2)
+\lambda_1(\lambda_{11},\lambda_{12},\ldots,\lambda_{1n})+ \lambda_2(\lambda_{21},\lambda_{22},\ldots,\lambda_{2n}) = \lambda_1\text{co}_\alpha(v_1)+\lambda_2\text{co}_\alpha(v_2)
 \]
 \end{proof}
-We kunnen $(\text{co}_\alpha)_\alpha^\epsilon$ nu generisch opschrijven.
+We kunnen $(\text{co}_\alpha)_\alpha^\varepsilon$ nu generisch opschrijven.
 \[
-v(\text{co}_\alpha)_\alpha^\epsilon = 
+v(\text{co}_\alpha)_\alpha^\varepsilon = 
 \begin{pmatrix}
 a_{11} & a_{12} & \cdots & a_{1n}\\
 a_{21} & a_{22} & \cdots & a_{2n}\\
@@ -160,7 +160,7 @@ a_{n1} & a_{n2} & \cdots & a_{nn}\\
 \]
 
 \subsection{Oefening 5}
-Zij $L:V \rightarrow W$ een lineaire afbeelding en zij $\dim V = n$ en $\dim W = m$.\\
+Zij $L:V \rightarrow W$ een lineaire afbeelding en zij $\dim V = n$ en $\dim W = m$.
 \subsubsection*{a)}
 \textbf{Te Bewijzen}
 \[
@@ -171,9 +171,9 @@ n > m \Rightarrow L \text{ is niet injectief}
 Bewijs uit het ongerijmde.\\
 Stel $n>m$ en $L$ is injectief.
 \[
-\dim (V) = \dim (\text{Ker}(L)) + \dim (\text{Im}(L))
+\dim (V) = \dim (\text{Ker }L) + \dim (\text{Im }L)
 \]
-Als $L$ injectief is dan $\text{Ker}(L)=\{0\}$.\footnote{Zie stelling 4.29 p 156} en $\text{Im}(L) \subset W$ dus $\dim (\text{Im}(L))\le \dim (W)$. We weten nu het volgende en dit is een \text{co}ntradictie met $n>m$.
+Als $L$ injectief is dan $\text{Ker}(L)=\{0\}$\footnote{Zie stelling 4.29 p 156} en $\text{Im}(L) \subset W$ dus $\dim (\text{Im }L)\le \dim (W)$. We weten nu het volgende en dit is een \text{co}ntradictie met $n>m$.
 \[
 \dim (V) \le \dim (W)
 \]
@@ -190,27 +190,27 @@ Stel $n<m$ en $L$ is surjectief.
 \[
 \forall w\in W:\exists v\in V: L(v)=w
 \]
-Hieruit volgt dat $\text{Im}(V)=W$ dus ook dat $\dim (\text{Im}(V))=\dim (W)$.
+Hieruit volgt dat $\text{Im}(L)=W$ dus ook dat $\dim (\text{Im }L)=\dim (W)$.
 We kijken nu opnieuw naar stelling 4.31 p 157.
 \[
-\dim (V) = \dim (\text{Ker}(L)) + \dim (\text{Im}(L))
+\dim (V) = \dim (\text{Ker }L) + \dim (\text{Im }L)
 \]
 Als we dit invullen krijgen we het volgende.
 \[
-\dim (V) = \dim (\text{Ker}(L)) + \dim (W)
+\dim (V) = \dim (\text{Ker }L) + \dim (W)
 \]
-Hieruit volgt dat $\dim (V) \ge \dim (W)$ want $\dim (\text{Ker}(L)) \ge 0$. Dit is in contradictie met $n<m$.
+Hieruit volgt dat $\dim (V) \ge \dim (W)$ want $\dim (\text{Ker }L) \ge 0$. Dit is in contradictie met $n<m$.
 \end{proof}
 
 
 \subsection{Oefening 6}
 \subsubsection*{(a)}
-Zij $L: V \rightarrow V$ een surjectieve lineaire afbeelding. Zij $\beta = \{v_1,v_2,...,v_n\}$ een voortbrengend deel voor $V$.
+Zij $L: V \rightarrow V$ een surjectieve lineaire afbeelding. Zij $\beta = \{v_1,v_2,\ldots,v_n\}$ een voortbrengend deel voor $V$.
 \[
 \forall w \in W, \exists v \in V: w=L(v)
 \]
-\emph{Te Bewijzen}\\
-$W$ wordt voortgebracht door $L(\beta) = \{L(v_1),L(v_2),...,L(v_n)\}$.
+\emph{Te bewijzen.}\\
+$W$ wordt voortgebracht door $L(\beta) = \{L(v_1),L(v_2),\ldots,L(v_n)\}$.
 \begin{proof}
 Elk willekeurig element $v\in V$ kan geschreven worden als lineaire combinatie van de elementen in $\beta$. Er bestaan dus $\lambda_i$ zodat volgende gelijkheid geldt.
 \[
@@ -229,12 +229,12 @@ Bovenstaande bewering houdt precies in dat $W$ voortgebracht wordt door $L(\beta
 \end{proof}
 
 \subsubsection*{(b)}
-Zij $L: V \rightarrow V$ een injectieve lineaire afbeelding. Zij $\beta = \{v_1,v_2,...,v_n\}$ een voortbrengend deel voor $V$.
+Zij $L: V \rightarrow V$ een injectieve lineaire afbeelding. Zij $\beta = \{v_1,v_2,\ldots,v_n\}$ een voortbrengend deel voor $V$.
 \[
 L(v) = L(w) \Rightarrow v = w
 \]
 \emph{Te Bewijzen}\\
-$L(\beta) = \{L(v_1),L(v_2),...,L(v_n)\}$ is vrij in $W$.
+$L(\beta) = \{L(v_1),L(v_2),\ldots,L(v_n)\}$ is vrij in $W$.
 \begin{proof}
 Bewijs uit het ongerijmde.\\
 Stel dat $L(\beta)$ niet vrij is in $W$, dan bestaan er $\lambda_i$ verschillend van nul zodat volgende gelijkheid geldt.
@@ -249,9 +249,9 @@ Bovenstaande gelijkheid houdt echter in dat $\beta$ niet vrij is in $V$. Contrad
 \end{proof}
 
 \subsubsection*{(c)}
-Zij $L: V \rightarrow V$ een isomorfisme. Zij $\beta = \{v_1,v_2,...,v_n\}$ een basis voor $V$.\\
+Zij $L: V \rightarrow V$ een isomorfisme. Zij $\beta = \{v_1,v_2,\ldots,v_n\}$ een basis voor $V$.\\
 \emph{Te Bewijzen}\\
-$L(\beta) = \{L(v_1),L(v_2),...,L(v_n)\}$ is een basis voor $W$.
+$L(\beta) = \{L(v_1),L(v_2),\ldots,L(v_n)\}$ is een basis voor $W$.
 \begin{proof}
 $L$ is een isomorfisme, dus bijectief en lineair. Bijectiviteit houdt injectiviteit en surjectiviteit in \footnote{Zie \ref{bijectief}}. Een basis in $V$ is vrij in en voortbrengend voor $V$ \footnote{Zie Definitie 3.31 p 104}. Nu kunnen we vorige twee bewezen stellingen toepassen om te bekomen dat $L(\beta)$ ook voortbrengend is voor en vrij is in $W$, wat precies inhoudt dat $L(\beta)$ een basis vormt voor $W$.
 \end{proof}
@@ -417,46 +417,44 @@ Deze laatste is dus onze basisveranderingsmatrix van $\alpha$ naar $\beta$. Reke
 De rechterkant van deze laatste is dus de basisveranderingsmatrix van basis $\beta$ naar $\alpha$.
 
 \subsection{Oefening 9}
-
-Berekenen we voor de elementen van de basis hun lineaire afbeelding als volgt:\\
-
-$T(e1) = T( (1,0,0) ) = (2,5,4) = 2 * e1 + 5 * e2 + 4 * e3$\\
-
-$T(e2) = T( (0,1,0) ) = (-3,-1,7) = -3 * e1 + -1 * e2 + 7 * e3$\\
-
-$T(e3) = T( (0,0,1) ) = (4,2,0) = 4 * e1 + 2 * e2$\\
-
-We plaatsen dezen in de matrix van de lineaire afbeelding als kolommen en bekomen zo\\
-
+Berekenen we voor de elementen van de basis hun lineaire afbeelding als volgt:
+\begin{align*}
+& T(e_1) = T\big( (1,0,0) \big) = (2,5,4) = 2 \cdot e_1 + 5 \cdot e_2 + 4 \cdot e_3 \\
+& T(e_2) = T\big( (0,1,0) \big) = (-3,-1,7) = -3 \cdot e_1 + -1 \cdot e_2 + 7 \cdot e_3 \\
+& T(e_3) = T\big( (0,0,1) \big) = (4,2,0) = 4 \cdot e_1 + 2 \cdot e_2
+\end{align*}
+We plaatsen dezen in de matrix van de lineaire afbeelding als kolommen en bekomen zo
 \[
-T^{\alpha}_{\alpha} =
+T^\alpha_\alpha =
 \begin{pmatrix}
-2 & -3 & -4\\
+2 & -3 & 4\\
 5 & -1 & 2\\
-4 & 7 & 0
+4 &  7 & 0
 \end{pmatrix}
-\]\\
-
-Voor de tweede basis zijn 2 elementen van plaats verwisseld. We kunnen deze verwisselen bij de berekening en bekomen dan de vergelijkbare matrix
-
+\]
+Voor de transformatie in basis $\beta$ hebben we $\textit{Id}\,_\alpha^\beta$ en $\textit{Id}\,_\beta^\alpha$ nodig.
 \[
-T^{\beta}_{\beta} =
+T^\beta_\beta =
+\textit{Id}\,_\alpha^\beta
+\cdot
+T^\alpha_\alpha
+\cdot
+\textit{Id}\,_\beta^\alpha
+=
 \begin{pmatrix}
-4 & -3 & 2\\
-2 & -1 & 5\\
-0 & 7 & 4
+0 &  7 & 4 \\
+2 & -1 & 5 \\
+4 & -3 & 2
 \end{pmatrix}
 \]
 
-
 \subsection{Oefening 10}
-\textbf{VERBETERING}
 \[
 \left\lbrace
 \begin{array}{r l}
 T(X) &= X-4\\
 T(1+X) &= X-3\\
-T(X+X^2) &= X^2-7X-3\\
+T(X+X^2) &= X^2-7X-2\\
 T(X^3) &= X^3-12X^2+6X\\
 \end{array}
 \right.
@@ -465,12 +463,12 @@ T(X^3) &= X^3-12X^2+6X\\
 \[
 T^{\alpha}_{\alpha} =
 \begin{pmatrix}
-5 & 4 & 0-4 & 18\\
--4 & -3 & -3 & 0\\
+5 & 4 & -6 & 18\\
+-4 & -3 & -2 & 0\\
 0 & 0 & 1 & -12\\
 0 & 0 & 0 & 1
 \end{pmatrix}
-\]\\
+\]
 
 \subsection{Oefening 11}
 \subsubsection*{a)}
@@ -486,7 +484,7 @@ We berekenen hoe we de vectoren in $\alpha$ schrijven als lineaire combinatie va
 \]
 Hieruit volgt het volgende.
 \[
-Id_\alpha^\beta = 
+\textit{Id}\,_\alpha^\beta = 
 \begin{pmatrix}
 1 & -1 & 0\\
 0 & 1 & -1\\
@@ -502,27 +500,27 @@ Omgekeerd gaat het analoog.
 (1,1,1) &= 1\cdot (1,0,0) &+ 1\cdot (0,1,0) &+ 1\cdot (0,0,1)
 \end{array}
 \right.
-\]
-\[
-Id_\beta^\alpha = 
+\longrightarrow
+\textit{Id}\,_\beta^\alpha = 
 \begin{pmatrix}
 1 & 1 & 1\\
 0 & 1 & 1\\
 0 & 0 & 1\\
 \end{pmatrix}
 \]
+
 \subsubsection*{b)}
 \[
 \left\lbrace
 \begin{array}{c l c c c}
-T((1,0,0)) &= (1,0,1) &= 1\cdot (1,0,0) &+ 0\cdot (0,1,0) &+ 1\cdot (0,0,1) \\
-T((0,1,0)) &= (2,-1,0)&= 2\cdot (1,0,0) &- 1\cdot (0,1,0) &+ 0\cdot (0,0,1)\\
-T((0,0,1)) &= (1,0,4) &= 1\cdot (1,0,0) &+ 0\cdot (0,1,0) &+ 4\cdot (0,0,1)\\ 
+T\big((1,0,0)\big) &= (1,0,1) &= 1\cdot (1,0,0) &+ 0\cdot (0,1,0) &+ 1\cdot (0,0,1) \\
+T\big((0,1,0)\big) &= (2,-1,0)&= 2\cdot (1,0,0) &- 1\cdot (0,1,0) &+ 0\cdot (0,0,1)\\
+T\big((0,0,1)\big) &= (1,0,4) &= 1\cdot (1,0,0) &+ 0\cdot (0,1,0) &+ 4\cdot (0,0,1)\\ 
 \end{array}
 \right.
 \]
 \[
-Id_\alpha^\alpha = 
+T_\alpha^\alpha = 
 \begin{pmatrix}
 1 & 2 & 1\\
 0 & -1 & 0\\
@@ -534,130 +532,127 @@ Id_\alpha^\alpha =
 \[
 \left\lbrace
 \begin{array}{c l c c c}
-T((1,0,0)) &= (1,0,1) &= 1\cdot (1,0,0) &- 1\cdot (1,1,0) &+ 1\cdot (1,1,1)\\
-T((1,1,0)) &= (3,-1,1)&= 4\cdot (1,0,0) &- 2\cdot (1,1,0) &+ 1\cdot (1,1,1)\\
-T((1,1,1)) &= (4,-1,5)&= 5\cdot (1,0,0) &- 6\cdot (1,1,0) &+ 5\cdot (1,1,1)\\
+T\big((1,0,0)\big) &= (1,0,1) &= 1\cdot (1,0,0) &- 1\cdot (1,1,0) &+ 1\cdot (1,1,1)\\
+T\big((1,1,0)\big) &= (3,-1,1)&= 4\cdot (1,0,0) &- 2\cdot (1,1,0) &+ 1\cdot (1,1,1)\\
+T\big((1,1,1)\big) &= (4,-1,5)&= 5\cdot (1,0,0) &- 6\cdot (1,1,0) &+ 5\cdot (1,1,1)\\
 \end{array}
 \right.
 \]
 \[
-Id_\beta^\beta = 
+T_\beta^\beta = 
 \begin{pmatrix}
 1 & 4 & 5\\
 -1 & -2 & -6\\
 1 & 1 & 5\\
 \end{pmatrix}
+= \textit{Id}\,_\alpha^\beta \cdot T_\alpha^\alpha \cdot \textit{Id}\,_\beta^\alpha
 \]
 
 \subsection{Oefening 14}
 \subsubsection*{a)}
-De oplossing bekomen we door de volgende matrix te rijreduceren en de oplossing aan de rechterkant af te lezen. Merk op dat de linkerkant van deze matrix precies de matrix van basisverandering van $\epsilon_{1}$ naar $\alpha$ is.
+Intu\"itief vinden we de simpele oplossing.
 \[
-\left(
-\begin{array}{c c c c c | c c c c c}
+\textit{Id}\,_\alpha^{\varepsilon_1} =
+\begin{pmatrix}[ccccc]
+1 & 1 & 1 & 1 & 1 \\ 
+0 & 1 & 2 & 3 & 4 \\ 
+0 & 0 & 1 & 3 & 6 \\ 
+0 & 0 & 0 & 1 & 4 \\ 
+0 & 0 & 0 & 0 & 1
+\end{pmatrix}
+\]
+We kunnen ook $\textit{Id}\,_{\varepsilon_1}^\alpha$ vinden door de volgende matrix te rijreduceren en de oplossing aan de rechterkant af te lezen.
+\[
+\begin{pmatrix}[ccccc|ccccc]
 1 & 1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 & 0\\ 
 0 & 1 & 2 & 3 & 4 & 0 & 1 & 0 & 0 & 0\\ 
 0 & 0 & 1 & 3 & 6 & 0 & 0 & 1 & 0 & 0\\ 
 0 & 0 & 0 & 1 & 4 & 0 & 0 & 0 & 1 & 0\\ 
-0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1\\ 
-\end{array}
-\right)
+0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1
+\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}[ccccc|ccccc]
+1 & 0 & 0 & 0 & 0 & 1 & -1 & 1 & -1 & 1 \\
+0 & 1 & 0 & 0 & 0 & 0 & 1 & -2 & 3 & -4\\
+0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & -3 & 6\\
+0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & -4\\
+0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1
+\end{pmatrix}
 \]
 \[
-\rightarrow
-\left(
-\begin{array}{c c c c c | c c c c c}
-1 & 0 & 0 & 0 & 0 & 1 & -1 & 1 & -1 & 1 \\ 
-0 & 1 & 0 & 0 & 0 & 0 & 1 & -2 & 3 & -4\\ 
-0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & -3 & 6\\ 
-0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & -4\\ 
-0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1\\ 
-\end{array}
-\right)
-\]
-De matrix die we zoeken $L_\alpha^{\epsilon_{1}}$.
-\[
-L_\alpha^{\epsilon_{1}}
+\textit{Id}\,_{\varepsilon_1}^\alpha
 =
-\left(
-\begin{array}{c c c c c}
-1 & -1 & 1 & -1 & 1 \\ 
-0 & 1 & -2 & 3 & -4\\ 
-0 & 0 & 1 & -3 & 6\\ 
-0 & 0 & 0 & 1 & -4\\ 
-0 & 0 & 0 & 0 & 1\\ 
-\end{array}
-\right)
+\begin{pmatrix}
+1 & -1 &  1 & -1 &  1 \\
+0 &  1 & -2 &  3 & -4 \\
+0 &  0 &  1 & -3 &  6 \\
+0 &  0 &  0 &  1 & -4 \\
+0 &  0 &  0 &  0 &  1
+\end{pmatrix}
 \]
-Voor de volledigheid berekenen we ook de matrices van basisverandering van $\epsilon_{2}$ naar $\beta$ en omgekeerd, we hebben deze verder nog nodig.
+Voor de volledigheid berekenen we ook de matrices van basisverandering van $\varepsilon_2$ naar $\beta$ en omgekeerd, we hebben deze verder nog nodig.
 \[
-\left(
-\begin{array}{c c | c c}
+\begin{pmatrix}[cc|cc]
 1 & 1 & 1 & 0\\ 
-1 & -1 & 0 & 1\\ 
-\end{array}
-\right)
-\rightarrow
-\left(
-\begin{array}{c c | c c}
-1 & 0 & \frac{1}{2} & \frac{1}{2}\\ 
-0 & 1 & \frac{1}{2} & -\frac{1}{2}\\ 
-\end{array}
-\right)
+1 & -1 & 0 & 1
+\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}[cc|cc]
+1 & 0 & \dfrac{1}{2} & \dfrac{1}{2}\\[8pt]
+0 & 1 & \dfrac{1}{2} & -\dfrac{1}{2}
+\end{pmatrix}
 \]
 \[
-L_{\epsilon_{2}}^\beta =
+\textit{Id}\,_{\varepsilon_2}^\beta =
 \begin{pmatrix}
 1 & 1\\ 
-1 & -1\\
+1 & -1
 \end{pmatrix}
 \text{ en }
-L_\beta^{\epsilon_{2}} =
+\textit{Id}\,_\beta^{\varepsilon_2} =
 \begin{pmatrix}
-\frac{1}{2} & \frac{1}{2}\\ 
-\frac{1}{2} & -\frac{1}{2}\\ 
+\dfrac{1}{2} & \dfrac{1}{2}\\[8pt]
+\dfrac{1}{2} & -\dfrac{1}{2}
 \end{pmatrix}
 \]
 
 \subsubsection*{b)}
+We vinden de volgende formule, $v_{\varepsilon_1}$ is simpelweg de vector $X+X^3+X^4$ geschreven als co\"ordinaten in de standaardbasis $\varepsilon_1$, dus $(0,1,0,1,1)^T$.
 \[
-Id_{\epsilon_1}^\alpha\cdot X  =
-\left(
-\begin{array}{c c c c c}
-1 & 1 & 1 & 1 & 1\\ 
-0 & 1 & 2 & 3 & 4\\ 
-0 & 0 & 1 & 3 & 6\\ 
-0 & 0 & 0 & 1 & 4\\ 
-0 & 0 & 0 & 0 & 1\\ 
-\end{array}
-\right)
+v_\alpha = 
+\textit{Id}\,_{\varepsilon_1}^\alpha \cdot v_{\varepsilon_1} =
+\begin{pmatrix}
+1 & -1 &  1 & -1 &  1 \\
+0 &  1 & -2 &  3 & -4 \\
+0 &  0 &  1 & -3 &  6 \\
+0 &  0 &  0 &  1 & -4 \\
+0 &  0 &  0 &  0 &  1
+\end{pmatrix}
 \cdot 
 \begin{pmatrix}
-a\\b\\c\\d\\e
+0 \\
+1 \\
+0 \\
+1 \\
+1
 \end{pmatrix}
 =
 \begin{pmatrix}
-0\\1\\0\\1\\1
-\end{pmatrix}
-=
-b
-\]
-Merk op dat de bovenstaande matrix net de matrix van basisverandering van de standaardbasis naar $\alpha$ omdat $X+X^3+X^4$ volgens de standaard matrix is geschreven in $b$.
-De oplossing is de volgende.
-\[
-X = 
-\begin{pmatrix}
--1 \\ 0 \\ 3 \\ -3 \\ 1
+ 1 \\
+ 0 \\
+ 3 \\
+-3 \\
+ 1
 \end{pmatrix}
 \]
 
 \subsubsection*{c)}
 We zien in het voorschrift van $L$ eenvoudig welke lineaire combinaties van de standaardbasissen nodig zijn om $L$ voor te stellen.
 \[
-L_{\epsilon_{1}}^{\epsilon_2}=
+L_{\varepsilon_1}^{\varepsilon_2}=
 \begin{pmatrix}
 1 & 1 & 0 & 0 & 0\\
-0 & 0 & 1 & 1 & 1\\
+0 & 0 & 1 & 1 & 1
 \end{pmatrix}
 \]
 
@@ -665,156 +660,139 @@ L_{\epsilon_{1}}^{\epsilon_2}=
 De matrix van $L$ kunnen we berekenen met de matrices die we al hebben gevonden in vorige delen van de oefening. Kijk naar pagina 149 en \ref{matrix_van_lineaire_afbeeldingen_tov_gegeven_basissen} voor meer uitleg.
 De gevraagde matrix $L_\alpha^\beta$ is nu de volgende.
 \[
-L_\alpha^\beta = Id_{\epsilon_2}^\beta\cdot L_{\epsilon_1}^{\epsilon_2}\cdot Id_{\alpha}^{\epsilon_1}
+L_\alpha^\beta = \textit{Id}\,_{\varepsilon_2}^\beta\cdot L_{\varepsilon_1}^{\varepsilon_2}\cdot \textit{Id}\,_{\alpha}^{\varepsilon_1}
 \]
-We verklaren deze formule door hem eens te analyseren. De matrix van de lineaire afbeelding van basis $\alpha$ naar $\beta$ is te herschrijven als, de basisverandering van $\alpha$ naar $\epsilon_1$, gevolgd door de (matrix van de) lineaire afbeelding van $\epsilon_1$ naar $\epsilon_2$, en tenslotte de basisverandering van $\epsilon_2$ naar $\beta$. We hebben als het ware het probleem opgesplitst in tussenstappen die we reeds berekend hebben. Zo bekomen we: 
+We verklaren deze formule door hem eens te analyseren. De matrix van de lineaire afbeelding van basis $\alpha$ naar $\beta$ is te herschrijven als, de basisverandering van $\alpha$ naar $\varepsilon_1$, gevolgd door de (matrix van de) lineaire afbeelding van $\varepsilon_1$ naar $\varepsilon_2$, en tenslotte de basisverandering van $\varepsilon_2$ naar $\beta$. We hebben als het ware het probleem opgesplitst in tussenstappen die we reeds berekend hebben.
 \[
-L = 
+L_\alpha^\beta = 
 \begin{pmatrix}
-1 & 1\\ 
-1 & -1\\
+\dfrac{1}{2} & \dfrac{1}{2}\\[8pt]
+\dfrac{1}{2} & -\dfrac{1}{2}
 \end{pmatrix}
 \cdot
 \begin{pmatrix}
 1 & 1 & 0 & 0 & 0\\
-0 & 0 & 1 & 1 & 1\\
+0 & 0 & 1 & 1 & 1
 \end{pmatrix}
 \cdot
 \begin{pmatrix}
-1 & -1 & 1 & -1 & 1 \\ 
-0 & 1 & -2 & 3 & -4\\ 
-0 & 0 & 1 & -3 & 6\\ 
-0 & 0 & 0 & 1 & -4\\ 
-0 & 0 & 0 & 0 & 1\\ 
+1 & 1 & 1 & 1 & 1 \\ 
+0 & 1 & 2 & 3 & 4 \\ 
+0 & 0 & 1 & 3 & 6 \\ 
+0 & 0 & 0 & 1 & 4 \\ 
+0 & 0 & 0 & 0 & 1
 \end{pmatrix}
 =
 \begin{pmatrix}
-0 & 0 & 0 & 0 & 0\\
-0 & 0 & -2 & 4 & -6\\
+\dfrac{1}{2} & 1 & 2 & 4 &  8 \\[8pt]
+\dfrac{1}{2} & 1 & 1 & 0 & -3
 \end{pmatrix}
 \]
 
 \subsection{Oefening 16}
-Bij deze oefening gebruiken we hetzelfde idee als de laatste subvraag van oefening 14. We willen een lineaire afbeelding van een gegeven (niet-standaard) basis naar een andere (niet-standaard) basis bepalen in de vorm van een matrix.\\
-Beschouwen we gegeven basissen $\alpha$ en $\beta$ kunnen we ook bijhorende standaardbasissen kiezen als respectievelijk:
-\[ \epsilon_\alpha = \{(1,0,0,0),(0,1,0,0),(0,0,1,0),(0,0,0,1)\}\]
-\[ \epsilon_\beta = \{\bigl(\begin{smallmatrix} 1&0\\ 0&0 \end{smallmatrix} \bigr),\bigl(\begin{smallmatrix} 0&1\\ 0&0 \end{smallmatrix} \bigr),\bigl(\begin{smallmatrix} 0&0\\ 1&0 \end{smallmatrix} \bigr),\bigl(\begin{smallmatrix} 0&0\\ 0&1 \end{smallmatrix} \bigr)\}\]
-We kunnen nu de gezochte afbeelding $L^\beta_\alpha$, de afbeelding $L$ van basis $\alpha$ naar $\beta$, zo defini\"eren:
-
+\textbf{Tip:} deze oefening oplossen kan veel sneller dan de methode hieronder beschreven. Je kan namelijk zonder standaardbasissen werken. Zet in een $(4 \times 8)$-matrix in de linkerkant elke vector van $\beta$ in een kolom. Daarna zet je de uitkomsten van $L(v_i)$ met $v_i \in \alpha$ in de kolommen aan de rechterkant. Als je deze matrix uitrekent volgens Gauss, bekom je aan de rechterkant de matrix $L^\beta_\alpha$.\\\\
+Beschouwen we gegeven basissen $\alpha$ en $\beta$, kunnen we ook de bijhorende standaardbasissen kiezen.
+\begin{align*}
+& \varepsilon_\alpha = \{(1,0,0,0),(0,1,0,0),(0,0,1,0),(0,0,0,1)\} \\
+& \varepsilon_\beta
+= \left\{
+     \begin{pmatrix} 1&0\\ 0&0 \end{pmatrix}
+   , \begin{pmatrix} 0&1\\ 0&0 \end{pmatrix}
+   , \begin{pmatrix} 0&0\\ 1&0 \end{pmatrix}
+   , \begin{pmatrix} 0&0\\ 0&1 \end{pmatrix}
+  \right\}
+\end{align*}
+We kunnen nu de gezochte afbeelding $L^\beta_\alpha$, de afbeelding $L$ van basis $\alpha$ naar $\beta$, defini\"eren:
 \[
-L^\beta_\alpha = Id^\beta_{\epsilon_\beta}\cdot L^{\epsilon_\beta}_{\epsilon_\alpha}\cdot Id^{\epsilon_\alpha}_{\alpha}
+L^\beta_\alpha = \textit{Id}\,^\beta_{\varepsilon_\beta}\cdot L^{\varepsilon_\beta}_{\varepsilon_\alpha}\cdot \textit{Id}\,^{\varepsilon_\alpha}_{\alpha}
 \]
-
-We zoeken de drie componenten van deze matrixvermenigvuldiging. $Id^\beta_{\epsilon_\beta}$, de basisverandering van $\epsilon_\beta$ naar $\beta$, vinden we door beide basissen in een matrix te plaatsen, kolomgewijs, geschreven volgens de standaardbasis, zoals eerder reeds uitgevoerd. We bekomen
+We zoeken de drie componenten van deze matrixvermenigvuldiging. $\textit{Id}\,^\beta_{\varepsilon_\beta}$, de basisverandering van $\varepsilon_\beta$ naar $\beta$, vinden we door beide basissen in een matrix te plaatsen, kolomsgewijs, geschreven volgens de standaardbasis, zoals eerder reeds uitgevoerd. We bekomen
 \[
-\left(
-\begin{array}{c c c c | c c c c}
+\begin{pmatrix}[cccc|cccc]
 0 & 0 & 1 & -1 & 1 & 0 & 0 & 0 \\ 
 0 & 1 & -1 & 1 & 0 & 1 & 0 & 0 \\ 
 1 & -1 & 1 & 0 & 0 & 0 & 1 & 0 \\ 
 -1 & 1 & 0 & 0 & 0 & 0 & 0 & 1 \\ 
-\end{array}
-\right)
+\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}[cccc|cccc]
+1 & 0 & 0 & 0 &  1 & 1 & 0 & -1 \\
+0 & 1 & 0 & 0 &  1 & 1 & 0 &  0 \\
+0 & 0 & 1 & 0 &  0 & 0 & 1 &  1 \\
+0 & 0 & 0 & 1 & -1 & 0 & 1 &  1
+\end{pmatrix}
 \]
-Waarbij de het linkse deel de basis $\beta$ ten opzichte van de standaardbasis is. Dus:
-\[Id^\beta_{\epsilon_\beta} = \left(
-\begin{array}{c c c c}
-0 & 0 & 1 & -1 \\ 
-0 & 1 & -1 & 1 \\ 
-1 & -1 & 1 & 0 \\ 
--1 & 1 & 0 & 0 \\ 
-\end{array}
-\right)
+Hieruit volgt dus:
+\[
+\textit{Id}\,^\beta_{\varepsilon_\beta} = 
+\begin{pmatrix}
+ 1 & 1 & 0 & -1 \\
+ 1 & 1 & 0 &  0 \\
+ 0 & 0 & 1 &  1 \\
+-1 & 0 & 1 &  1
+\end{pmatrix}
 \]
-Vervolgens berekenen we $L^{\epsilon_\beta}_{\epsilon_\alpha}$, de afbeelding, gevormd met de standaardbasissen. We bepalen de beelden van elk element van de eerste basis, en schrijven dit als co\"ordinaten voor de tweede basis, waarna we deze co\"ordinaten als kolommen van een matrix gebruiken. Dit is de afbeeldingsmatrix. Dus:
-\[L(1,0,0,0)=\bigl(\begin{smallmatrix} 1&1\\ 0&0 \end{smallmatrix} \bigr) = 1*\bigl(\begin{smallmatrix} 1&0\\ 0&0 \end{smallmatrix} \bigr) + 1*\bigl(\begin{smallmatrix} 0&1\\ 0&0 \end{smallmatrix} \bigr)\]
-\[L(0,1,0,0)=\bigl(\begin{smallmatrix}0&0\\ 1&1 \end{smallmatrix} \bigr) = 1*\bigl(\begin{smallmatrix} 0&0\\ 1&0 \end{smallmatrix} \bigr) + 1*\bigl(\begin{smallmatrix} 0&0\\ 0&1 \end{smallmatrix} \bigr)\]
-\[L(0,0,1,0)=\bigl(\begin{smallmatrix} 1&0\\ 0&1 \end{smallmatrix} \bigr) = 1*\bigl(\begin{smallmatrix} 1&0\\ 0&0 \end{smallmatrix} \bigr) + 1*\bigl(\begin{smallmatrix} 0&0\\ 0&1 \end{smallmatrix} \bigr)\]
-\[L(0,0,0,1)=\bigl(\begin{smallmatrix} 0&1\\ -1&0 \end{smallmatrix} \bigr) = 1*\bigl(\begin{smallmatrix} 0&1\\ 0&0 \end{smallmatrix} \bigr) + (-1)*\bigl(\begin{smallmatrix} 0&0\\ 1&0 \end{smallmatrix} \bigr)\]
+Vervolgens berekenen we $L^{\varepsilon_\beta}_{\varepsilon_\alpha}$, de afbeelding gevormd met de standaardbasissen. We bepalen de beelden van elk element van de eerste basis, en schrijven dit als co\"ordinaten voor de tweede basis, waarna we deze co\"ordinaten als kolommen van een matrix gebruiken. Dit is de afbeeldingsmatrix.
+\begin{align*}
+& L(1,0,0,0)=\bigl(\begin{smallmatrix} 1&1\\ 0&0 \end{smallmatrix} \bigr) = 1\cdot\bigl(\begin{smallmatrix} 1&0\\ 0&0 \end{smallmatrix} \bigr) + 1\cdot\bigl(\begin{smallmatrix} 0&1\\ 0&0 \end{smallmatrix} \bigr) \\
+& L(0,1,0,0)=\bigl(\begin{smallmatrix}0&0\\ 1&1 \end{smallmatrix} \bigr) = 1\cdot\bigl(\begin{smallmatrix} 0&0\\ 1&0 \end{smallmatrix} \bigr) + 1\cdot\bigl(\begin{smallmatrix} 0&0\\ 0&1 \end{smallmatrix} \bigr) \\
+& L(0,0,1,0)=\bigl(\begin{smallmatrix} 1&0\\ 0&1 \end{smallmatrix} \bigr) = 1\cdot\bigl(\begin{smallmatrix} 1&0\\ 0&0 \end{smallmatrix} \bigr) + 1\cdot\bigl(\begin{smallmatrix} 0&0\\ 0&1 \end{smallmatrix} \bigr) \\
+& L(0,0,0,1)=\bigl(\begin{smallmatrix} 0&1\\ -1&0 \end{smallmatrix} \bigr) = 1\cdot\bigl(\begin{smallmatrix} 0&1\\ 0&0 \end{smallmatrix} \bigr) + (-1)\cdot\bigl(\begin{smallmatrix} 0&0\\ 1&0 \end{smallmatrix} \bigr)
+\end{align*}
 Waaruit we de matrix bekomen:
-\[L^{\epsilon_\beta}_{\epsilon_\alpha} = 
-\left(\begin{array}{c c c c}
+\[L^{\varepsilon_\beta}_{\varepsilon_\alpha} = 
+\begin{pmatrix}
 1 & 0 & 1 & 0 \\ 
 1 & 0 & 0 & 1 \\ 
 0 & 1 & 0 & -1 \\ 
 0 & 1 & 1 & 0 \\ 
-\end{array}
-\right)
+\end{pmatrix}
 \]
-Rest ons nu nog $Id^{\epsilon_\alpha}_{\alpha}$ te bepalen, dewelke we vinden door elementen van beide basissen te schrijven als co\"ordinaten volgens de standaardbasis, en als kolommen voor een matrix te gebruiken. Vervolgens rijreduceren we de kant die de originele basis van de basisverandering voorstelt en geeft de andere kant ons de matrix voor basisverandering. We bekomen:
-\[
-\left(
-\begin{array}{c c c c | c c c c}
-1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 \\ 
-1 & 1 & 1 & 0 & 0 & 1 & 0 & 0 \\ 
-1 & 1 & 0 & 0 & 0 & 0 & 1 & 0 \\ 
-1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\ 
-\end{array}
-\right)
+Rest ons nu nog $\textit{Id}\,^{\varepsilon_\alpha}_{\alpha}$ te bepalen. Dit is simpelweg de matrix met als kolommen de vectoren van $\alpha$.
+\[\textit{Id}\,^{\varepsilon_\alpha}_{\alpha} =
+\begin{pmatrix}
+1 & 1 & 1 & 1 \\
+1 & 1 & 1 & 0 \\
+1 & 1 & 0 & 0 \\
+1 & 0 & 0 & 0
+\end{pmatrix}
 \]
-\[
-\rightarrow
-\left(
-\begin{array}{c c c c | c c c c}
-1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\ 
-0 & 1 & 0 & 0 & 0 & 0 & 1 & -1 \\ 
-0 & 0 & 1 & 0 & 0 & 1 & -1 & 0 \\ 
-0 & 0 & 0 & 1 & 1 & -1 & 0 & 0 \\
-\end{array}
-\right)
-\]
-We beslissen dus dat
-\[Id^{\epsilon_\alpha}_{\alpha} = \left(
-\begin{array}{c c c c}
-0 & 0 & 0 & 1 \\ 
-0 & 0 & 1 & -1 \\ 
-0 & 1 & -1 & 0 \\ 
-1 & -1 & 0 & 0 \\
-\end{array}
-\right)
-\]
-
 Nu, terug naar onze originele formule, we bekomen door invulling:
-\[
-L^\beta_\alpha = Id^\beta_{\epsilon_\beta}\cdot L^{\epsilon_\beta}_{\epsilon_\alpha}\cdot Id^{\epsilon_\alpha}_{\alpha}
-\]
-\[L^\beta_\alpha = \left(
-\begin{array}{c c c c}
-0 & 0 & 1 & -1 \\ 
-0 & 1 & -1 & 1 \\ 
-1 & -1 & 1 & 0 \\ 
--1 & 1 & 0 & 0 \\ 
-\end{array}
-\right) \cdot \left(\begin{array}{c c c c}
+\begin{align*}
+L^\beta_\alpha &=
+\textit{Id}\,^\beta_{\varepsilon_\beta}\cdot L^{\varepsilon_\beta}_{\varepsilon_\alpha}\cdot \textit{Id}\,^{\varepsilon_\alpha}_{\alpha} \\
+&=
+\begin{pmatrix}
+ 1 & 1 & 0 & -1 \\
+ 1 & 1 & 0 &  0 \\
+ 0 & 0 & 1 &  1 \\
+-1 & 0 & 1 &  1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
 1 & 0 & 1 & 0 \\ 
 1 & 0 & 0 & 1 \\ 
 0 & 1 & 0 & -1 \\ 
 0 & 1 & 1 & 0 \\ 
-\end{array}
-\right) \cdot \left(
-\begin{array}{c c c c}
-0 & 0 & 0 & 1 \\ 
-0 & 0 & 1 & -1 \\ 
-0 & 1 & -1 & 0 \\ 
-1 & -1 & 0 & 0 \\
-\end{array}
-\right)
-\]
-\[L^\beta_\alpha = \left(
-\begin{array}{c c c c}
--1 & 0 & 1 & 0 \\ 
-2 & -1 & -1 & 1 \\ 
--2 & 3 & 0 & -1 \\ 
-1 & -2 & 1 & 0 \\
-\end{array}
-\right)
-\]
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+1 & 1 & 1 & 1 \\
+1 & 1 & 1 & 0 \\
+1 & 1 & 0 & 0 \\
+1 & 0 & 0 & 0
+\end{pmatrix} \\
+&=
+\begin{pmatrix}
+2 & 1 & 1 &  2 \\ 
+4 & 3 & 2 &  2 \\ 
+2 & 3 & 2 &  0 \\ 
+0 & 1 & 1 & -1
+\end{pmatrix}
+\end{align*}
 
 
 \subsection{Oefening 17}
-AAN WARD: nog nakijken, gewoon opgeschreven wat er in de oz gezegd werd.
-
-
 \subsubsection*{a)}
 Voor alle $v \in V$ geldt het volgende.
 \[
@@ -822,64 +800,61 @@ v
 =
 a_1
 \begin{pmatrix}
-1\\0\\0\\
+1\\0\\0
 \end{pmatrix}
 +
 a_2
 \begin{pmatrix}
-1\\0\\0\\
+0\\1\\0
 \end{pmatrix}
 +
 a_3
 \begin{pmatrix}
-0\\0\\1\\
+0\\0\\1
 \end{pmatrix}
 \]
 Als $v$ nu in $\text{Ker}(L)$ zit dan geldt ook het volgende.
+\begin{align*}
+L(v)
+&= 0 = a_1 \cdot (4\beta_1) + a_2 \cdot (2 \beta_1 + 1\beta_2) + a_3 \cdot (\beta_1 + 3\beta_2) \\
+&= (4a_1+2a_2+a_3)\cdot\beta_1 + (a_2+3a_3)\cdot\beta_2
+\end{align*}
 \[
-L(v) = 0 = a_1 \cdot (4\beta_1) + a_2 \cdot (2 \beta_1 + 1\beta_2) + a_3 \cdot (\beta_1 + 3\beta_2)
-\]
-\[
-= (4a_1+2a_2+a_3)\cdot\beta_1 + (a_2+3a_3)\cdot\beta_2
-\]
-\[
-\rightarrow
+\longrightarrow
 \left\lbrace
 \begin{array}{c c}
 (4a_1+2a_2+a_3) &= 0\\
-(a_2+3a_3) &= 0\\
+(a_2+3a_3) &= 0
 \end{array}
 \right.
+\longrightarrow
+\begin{pmatrix}[ccc|c]
+4 & 2 & 1 & 0 \\
+0 & 1 & 3 & 0
+\end{pmatrix}
 \]
 Als we dit oplossen vinden we de co\"ordinaten van kern van $L$ volgens basis $\alpha$.
 \[
 (a_1,a_2,a_3) = 
-\left\{(\frac{5}{4}\lambda,-3\lambda,\lambda) | \lambda \in \mathbb{R}\right\}
+\left\{ \left( \frac{5}{4}\lambda,-3\lambda,\lambda \right) \ \middle|\ \lambda \in \mathbb{R} \right\}
 \]
-Dit moeten we echter nog omvormen tot de kern van $L$.
+Dit is de kern van $L$. We kunnen dit ook opschrijven als volgt.
 \[
-\frac{5}{4}\cdot
-\begin{pmatrix}
-1\\0\\0\\
-\end{pmatrix}
-+
--3
-\begin{pmatrix}
-1\\0\\0\\
-\end{pmatrix}
-+
-\begin{pmatrix}
-0\\0\\1\\
-\end{pmatrix}
-=
-\begin{pmatrix}
--\frac{3}{4}\\-2\\1\\
-\end{pmatrix}
+\text{Ker}(L)
+= \left\{ \left( \frac{5}{4}\lambda,-3\lambda,\lambda \right) \ \middle|\ \lambda \in \mathbb{R} \right\}
+= \textless(5,-12,4)\textgreater
 \]
-De dimensie van $\text{Ker}(L)$ is $1$ met $\left\{\begin{pmatrix}-\frac{3}{4}\\-2\\1\\\end{pmatrix}\right\}$ als basis.
-We weten nu dat de dimensie van het beeld van $L$ gelijk is aan de dimensie van $\mathbb{R}^3$ min de dimensie van de kern\footnote{Zie stelling 4.31 p 157}. $\dim (\text{Im}(L))= 2$ met basis ... <TODO aanvullen, verduidelijken...>
+De dimensie van $\text{Ker}(L)$ is duidelijk $1$.\\
+We weten nu dat $\dim(\text{Im } L) = \dim(\mathbb{R}^3) - \dim(\text{Ker }L) = 3-1=2$. We kunnen het beeld verkrijgen door $L(\varepsilon_i)$ uit te rekenen voor elke $\varepsilon_i$ in de standaardbasis van $\mathbb{R}^3$.
+\[
+L(\varepsilon) = \{ (4,0),(2,1),(1,3) \}
+\]
+Het is duidelijk dat dit geen vrije verzameling is, er is namelijk \'e\'en vector te veel. Door een bepaalde vector te schrappen, krijgen we een verzameling van 2 vrije vectoren.
+\[
+\text{Im}(L) = \textless(4,0),(2,1)\textgreater
+\]
 
-\subsubsection*{b)}
+\subsubsection*{b)} %TODO nakijken
 \[
 L(x,y,z) = (4x-y+z,y+2z)
 \]
@@ -901,10 +876,10 @@ a^3 & 0 & b^3 & 0 & c^3 & 0\\
 
 \subsection{Oefening 20}
 %TODO HERMAKEN
-We berekenen de rang van $L_{\epsilon_2}^{\epsilon_3}$. Deze is $1$.
-We kiezen een makkelijke $v_1 = (1,0)$ en beelden deze af op $w_1 = (2,4,6)$. We kiezen nog een $v_2 = (3,-2)$ uit de kern van $L$. Nu kiezen we nog 2 lineair onafhankelijke vectoren uit $W$. $w_2 = (0,1,0)$ en $w_3 = (0,0,1)$. We hebben nu de gezochte basissen.
+We berekenen de rang van $L_{\varepsilon_2}^{\varepsilon_3}$. Deze is $1$.
+We kiezen een makkelijke $v_1 = (1,0)$ en beelden deze af op $w_1 = (2,4,6)$. We kiezen nog een $v_2 = (3,-2)$ uit de kern van $L$. Nu kiezen we nog 2 lineair onafhankelijke vectoren uit $W$: $w_2 = (0,1,0)$ en $w_3 = (0,0,1)$. We hebben nu de gezochte basissen.
 \[
-V =
+\mathcal{V} =
 \left\{
 \begin{pmatrix}
 1\\0
@@ -915,7 +890,7 @@ V =
 \end{pmatrix}
 \right\}
 \text{ en }
-W =
+\mathcal{W} =
 \left\{
 \begin{pmatrix}
 2\\4\\6
@@ -933,7 +908,7 @@ W =
 Zie \ref{specifieke_basissen_voor_lineaire_afbeelding} voor een gedetailleerdere uitleg.
 
 \subsection{Oefening 21}
-Wanneer we $L_{\epsilon_{4}}^{\epsilon_{3}}$ rijreduceren zien we dat de rang van $L$ $r=2$ is.
+Wanneer we $L_{\varepsilon_4}^{\varepsilon_3}$ rijreduceren zien we dat de rang van $L$ gelijk is aan $r=2$.
 \[
 \begin{pmatrix}
 1 & 0 & -1 & -2\\
@@ -942,9 +917,8 @@ Wanneer we $L_{\epsilon_{4}}^{\epsilon_{3}}$ rijreduceren zien we dat de rang va
 \end{pmatrix}
 \]
 \subsubsection*{a)}
-$L_{V_{1}}^{W_{1}}$ ziet er als volgt uit:
 \[
-L_{V_{1}}^{W_{1}} = 
+L_{\mathcal{V}_1}^{\mathcal{W}_1} = 
 \begin{pmatrix}
 1 & 1 & 0 & 0\\
 0 & 1 & 0 & 0\\
@@ -954,9 +928,8 @@ L_{V_{1}}^{W_{1}} =
 %TODO afmaken
 
 \subsubsection*{b)}
-$L_{V_{2}}^{W_{2}}$ ziet er als volgt uit:
 \[
-L_{V_{2}}^{W_{2}} = 
+L_{\mathcal{V}_2}^{\mathcal{W}_2} = 
 \begin{pmatrix}
 1 & 1 & 1 & 1\\
 0 & 1 & 1 & 1\\
@@ -966,9 +939,8 @@ L_{V_{2}}^{W_{2}} =
 %TODO afmaken
 
 \subsubsection*{extra}
-$L_{V}^{W}$ ziet er als volgt uit:
 \[
-L_{V}^{W} = 
+L_\mathcal{V}^\mathcal{W} = 
 \begin{pmatrix}
 1 & 0 & 0 & 0\\
 0 & 1 & 0 & 0\\
@@ -985,7 +957,7 @@ De kern van $L$ is de volgende verzameling.
 We zoeken hier nog twee onafhankelijke vectoren uit. Kies $v_3 = (1,-2,1,0)$ en $v_4 = (2,-2,0,1)$.
 $V_1$ en $W_1$ hebben we nu volledig berekent.
 \[
-V_1 = 
+\mathcal{V}_1 = 
 \left\{
 \begin{pmatrix}
 1\\0\\0\\0
@@ -1004,7 +976,7 @@ V_1 =
 \end{pmatrix}
 \right\}
 \text{ en }
-W_1 = 
+\mathcal{W}_1 = 
 \left\{
 \begin{pmatrix}
 1\\2\\3
@@ -1020,6 +992,27 @@ W_1 =
 \right\}
 \]
 
+\subsection{Oefening 22}
+\textbf{Hint uit de oefenzitting}\\
+Bepaal
+\begin{align*}
+\varphi^{-1}(U)
+&= \left\{ x \in \mathbb{R}^3 \ \middle|\ \varphi(x) \in U \right\} \\
+&= \left\{ x \in \mathbb{R}^3 \ \middle|\ \exists \lambda_1,\lambda_2 \in \mathbb{R} : \varphi(x) = \lambda_1 (0,0,1) + \lambda_2 (1,1,1) \right\}
+\end{align*}
+Los het volgende stelsel op:
+\[
+L(x,y,z) = (\lambda_2,\lambda_2,\lambda_1 + \lambda_2)
+\]
+\textbf{Uitkomst}\\
+Het stelsel heeft enkel oplossingen als $\lambda_1 + \lambda_2 = 0$, dus $\lambda_1 = -\lambda_2$. We bekomen de volgende oplossingsverzameling.
+\[
+\left\{ \left( \frac{-1}{2} \mu , \lambda_2 + 2 \mu , \mu \right) \ \middle|\ \mu \in \mathbb{R} \right \}
+\]
+Hieruit volgt:
+\[
+\varphi^{-1}(U) = \left\{ \left( \frac{-1}{2} \mu , \lambda_2 + 2 \mu , \mu \right) \ \middle|\ \lambda_2,\mu \in \mathbb{R} \right \}
+\]
 
 \subsection{Oefening 24}
 \subsubsection*{a)}
@@ -1327,7 +1320,7 @@ Vervolgens rijreduceren we die matrix en vinden we aan de rechterkant de matrix 
 \right)
 \]
 \[
-Id_{\beta_s}^\beta = 
+\textit{Id}\,_{\beta_s}^\beta = 
 \begin{pmatrix}
 1 & 0 & 0 & 0\\
 0 & 1 & -1 & 2\\
@@ -1337,7 +1330,7 @@ Id_{\beta_s}^\beta =
 \]
 Inverteren we deze matrix, dan krijgen we de matrix van basisverandering in de omgekeerde richting.
 \[
-Id_{\beta}^{\beta_s} = 
+\textit{Id}\,_{\beta}^{\beta_s} = 
 \begin{pmatrix}
 1 & 0 & 0 & 0\\
 0 & 1 & 1 & 1\\
@@ -1347,7 +1340,7 @@ Id_{\beta}^{\beta_s} =
 \]
 Nu moeten we deze matrices, samen met de gegeven matrix nog samenstellen om de matrixvoorstelling van de lineaire transformatie te vinden.
 \[
-B = Id_{\beta}^{\beta_s}\cdot  A\cdot Id_{\beta_s}^\beta
+B = \textit{Id}\,_{\beta}^{\beta_s}\cdot  A\cdot \textit{Id}\,_{\beta_s}^\beta
 \]
 %TODO uitschrijven
 \[
