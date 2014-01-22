@@ -67,7 +67,7 @@ Als we nu $\lambda = 1$ kiezen krijgen we als eigenvector bij voorbeeld $(-1,1)$
 \subsubsection*{5)}
 Voor elke eigenvector $v$ van $D$ geldt dat de afgeleide van $v$ een veelvoud is van $v$. Elke constante functie is een eigenvector en $0$ is de eigenwaarde voor die functies. Dit is gemakkelijk te zien aan de matrix van de afgeleide afbeelding.
 \[
-D_{\epsilon} = 
+D_{\varepsilon} = 
 \begin{pmatrix}
 0 & 1 & 0 & 0 & \cdots\\
 0 & 0 & 2 & 0 & \cdots\\
@@ -130,7 +130,7 @@ Omdat $P$ inverteerbaar is geldt dat de determinant van $P$ niet nul is\footnote
 Bijgevolg zijn de kolommen van $P$ lineair onafhankelijk\footnote{Stelling 2.2 p 57 en Zie Stelling 2.3 p 58} omdat $P$ rijreduceerbaar is tot een matrix zonder nulrijen.
 
 \item $\Leftarrow$
-$\mathbb{R}^n$ heeft een basis volledig bestaand uit eigenvectoren van $A$. Noem deze basis $\beta = \{\beta_1,\beta_2,...,\beta_n\}$. De vectoren uit deze basis voldoen dus aan de volgende bewering.
+$\mathbb{R}^n$ heeft een basis volledig bestaand uit eigenvectoren van $A$. Noem deze basis $\beta = \{\beta_1,\beta_2,\ldots,\beta_n\}$. De vectoren uit deze basis voldoen dus aan de volgende bewering.
 \[
 A\cdot \beta_i = \lambda_i\beta_i
 \]
@@ -227,7 +227,7 @@ We moeten enkel bewijzen dat elke matrixvoorstelling van $L$ gelijkvormig is met
 
 \subsection{Stelling 5.16 p 189}
 \label{5.16}
-Zij $L:V\rightarrow V$ een lineaire transformatie van de eindig dimensionale vectorruimte $(\mathbb{R},V,+)$ met spectrum $Spec(L) = \{\lambda_1,\lambda_2,...,\lambda_n\}$.
+Zij $L:V\rightarrow V$ een lineaire transformatie van de eindig dimensionale vectorruimte $(\mathbb{R},V,+)$ met spectrum $\text{Spec}(L) = \{\lambda_1,\lambda_2,\ldots,\lambda_n\}$.
 
 \subsubsection*{Te Bewijzen}
 \begin{enumerate}
@@ -248,7 +248,7 @@ Anders zou het geen eigenwaarde zijn.
 
 \item
 We weten dat de eigenruimte $E_{\lambda_i}$ van $\lambda_i$ dimensie $d(\lambda) = d$ heeft.
-Er bestaat dus een basis $\beta = v_1,v_2,...,v_d$ voor $E_\lambda$ met $d$ elementen.
+Er bestaat dus een basis $\beta = v_1,v_2,\ldots,v_d$ voor $E_\lambda$ met $d$ elementen.
 Omdat $\beta$ een vrij deel is van $E_\lambda$ en $V$ en omdat $E_\lambda$ een deelruimte is van V\footnote{Zie Definitie 5.14 p 188} geldt dat $\beta$ uitgebreid kan worden tot een basis van $V$\footnote{Zie Stelling 3.37 p 107}.
 Ten opzichte die uitgebreide basis $\beta'$ van $V$ ziet de matrix van $L$ er als volgt uit\footnote{Zie Stelling 5.7 p 181}.
 (Dit is het punt van eigenvectoren).
@@ -280,10 +280,10 @@ m(\lambda) \ge d = d(\lambda)
 \subsection{Stelling 5.18 p 190}
 \label{5.18}
 \textit{\textbf{Examen Januari 2010}}\\
-Zij $L:V\rightarrow V$ een lineaire transformatie van een eindigdimensionale vectorruimte $(\mathbb{R},V,+)$ en zij $\lambda_1,\lambda_2,...,\lambda_n$ verschillende eigenwaarden van $L$ met bijhorende eigenvectoren $v_1,v_2,...,v_n$.
+Zij $L:V\rightarrow V$ een lineaire transformatie van een eindigdimensionale vectorruimte $(\mathbb{R},V,+)$ en zij $\lambda_1,\lambda_2,\ldots,\lambda_n$ verschillende eigenwaarden van $L$ met bijhorende eigenvectoren $v_1,v_2,\ldots,v_n$.
 
 \subsubsection*{Te Bewijzen}
-$v_1,v_2,...,v_n$ zijn lineair onafhankelijke vectoren.
+$v_1,v_2,\ldots,v_n$ zijn lineair onafhankelijke vectoren.
 
 \subsubsection*{Bewijs}
 \begin{proof}
@@ -294,7 +294,7 @@ De bewering geldt voor $n=1$ want $\{v_i\}$ is lineair onafhankelijk. Dit is waa
 Stel dat de bewering geldt voor een bepaalde $n=k$ (inductiehypothese). We bewijzen nu dat daaruit volgt dat de bewering geldt voor $n=k+1$.
 We beschouwen $k+1$ eigenwaarden met bijhorende eigenvectoren. Uit de inductiehypothese volgt dat elke deelverzameling van $k$ elementen van die eigenvectoren vrij is.
 We bewijzen uit het ongerijmde dat wanneer we de $k+1$-ste eigenvector toevoegen aan die deelverzameling, de verzameling nog steeds vrij is.
-We nemen dus aan dat $v_{k+1}$ lineaire afhankelijk is van $v_1,v_2,...,v_k$ en proberen tot een contradictie te komen.
+We nemen dus aan dat $v_{k+1}$ lineaire afhankelijk is van $v_1,v_2,\ldots,v_k$ en proberen tot een contradictie te komen.
 \[
 \exists \mu_i\in\mathbb{R} : v_{k+1} = \sum_{i=1}^k\mu_iv_i
 \]
@@ -349,13 +349,13 @@ De karakteristieke veelterm van $L$ is volledig te ontbinden als product van eer
 
 \subsubsection*{Bewijs}
 \begin{proof}
-Omdat $L$ diagonaliseerbaar is bestaat er een inverteerbare $P$ zodat $B$ een diagonaalmatrix is in $L = P^{-1}BP$ \footnote{Zie het bewijs van Stelling 5.7 p 181}. Omdat de karakteristieke veelter onafhankelijk is van de basis is deze voor $L_A$ en $L_B$ gelijk \footnote{Zie Gevolg 5.9 p 182}. De karakteristieke veelterm van $L_B$ is dus $\phi_L = \prod_{i=1}^n(X-\lambda_i)$ met $\lambda_i$ de waarden op de diagonaal van $B$ (dit zijn de eigenwaarden van $L$).  $\phi_L$ is bijgevolg een product van eerstegraadsvectoren.
+Omdat $L$ diagonaliseerbaar is bestaat er een inverteerbare $P$ zodat $B$ een diagonaalmatrix is in $L = P^{-1}BP$ \footnote{Zie het bewijs van Stelling 5.7 p 181}. Omdat de karakteristieke veelter onafhankelijk is van de basis is deze voor $L_A$ en $L_B$ gelijk \footnote{Zie Gevolg 5.9 p 182}. De karakteristieke veelterm van $L_B$ is dus $\phi_L = \prod_{i=1}^n(X-\lambda_i)$ met $\lambda_i$ de waarden op de diagonaal van $B$ (dit zijn de eigenwaarden van $L$).  $\phi_L$ is bijgevolg een product van eerstegraadsfactoren.
 \end{proof}
 
 
 \subsection{Stelling 5.23 p 192}
 \label{5.23}
-Zij $(\mathbb{R},V,+)$ een vectorruimte van dimensie $n$ en zij $L$ een lineaire transformatie van $V$ waarvan de karakteristieke veelterm $\phi_L$ volledig te ontbinden valt als product van eerstegraadsfactoren. Zij $Spec(L) = \{\lambda_1,\lambda_2,...,\lambda_n\}$ het spectrum van $L$.
+Zij $(\mathbb{R},V,+)$ een vectorruimte van dimensie $n$ en zij $L$ een lineaire transformatie van $V$ waarvan de karakteristieke veelterm $\phi_L$ volledig te ontbinden valt als product van eerstegraadsfactoren. Zij $\text{Spec}(L) = \{\lambda_1,\lambda_2,\ldots,\lambda_n\}$ het spectrum van $L$.
 
 \subsubsection*{Te Bewijzen}
 \begin{center}
@@ -398,11 +398,11 @@ n$ zijn) geldt de volgende bewering.
 \[
 \sum_{i=1}^km_i = n
 \]
-We kiezen nu voor elke eigenruimte $E_{\lambda_i}$ een basis $\beta_{E_{\lambda_i}} = \{v_{i,1},v_{i,2},...,v_{i,m_i}\}$. Zetten we nu al deze vectoren samen dan krijgen we de volgende verzameling.
+We kiezen nu voor elke eigenruimte $E_{\lambda_i}$ een basis $\beta_{E_{\lambda_i}} = \{v_{i,1},v_{i,2},\ldots,v_{i,m_i}\}$. Zetten we nu al deze vectoren samen dan krijgen we de volgende verzameling.
 \[
 \beta = 
 \{
-v_{1,1},v_{1,2},...,v_{1,m_i},v_{2,1},v_{2,2},...,v_{2,m_i},v_{k,1},v_{k,2},...,v_{k,m_i}
+v_{1,1},v_{1,2},\ldots,v_{1,m_i},v_{2,1},v_{2,2},\ldots,v_{2,m_i},v_{k,1},v_{k,2},\ldots,v_{k,m_i}
 \}
 \]
 Omdat $\sum_{i=1}^km_i = n$ geldt bevat deze verzameling $\beta$ precies $n$ elementen.
@@ -422,7 +422,7 @@ De lineaire combinatie kan dus ook geschreven worden als volgt.
 Alle $u_i$ in deze uitdrukking horen bij \emph{verschillende} eigenwaarden. Dit betekent dat de $u_i$ lineair onafhankelijk zijn \footnote{Zie stelling 5.18 p 190.}. $u_i$ kunnen enkel lineair onafhankelijk zijn als alle $u_i$ nulvectoren zijn.
 %Hier zit iets raar, lineair onafhankelijke nulvectoren? TODO
 \[
-u_1 = u_2 = ... = u_k
+u_1 = u_2 = \ldots = u_k
 \]
 Nu geldt voor elke $i$ dus het volgende.
 \[
@@ -451,7 +451,7 @@ De (disjunctie) unie van basissen van de $E_{\lambda_{i}}$ vormt een basis van $
 
 \subsubsection*{Bewijs}
 \begin{proof}
-Omdat $L$ diagonaliseerbaar is heeft $V$ een basis $\beta=\{\beta_1,\beta_2,...,\beta_n\} $ die volledig uit basisvectoren van $L$ bestaat \footnote{Zie Definitie 5.6 p 181.}.
+Omdat $L$ diagonaliseerbaar is heeft $V$ een basis $\beta=\{\beta_1,\beta_2,\ldots,\beta_n\} $ die volledig uit basisvectoren van $L$ bestaat \footnote{Zie Definitie 5.6 p 181.}.
 Noem $\lambda_i$ de eigenwaarde die bij eigenvector $\beta_i$ hoort en $E_{\lambda_i}$ de eigenruimte die bij $\lambda_i$ hoort.
 
 \begin{enumerate}
@@ -494,7 +494,7 @@ Zij $L$ een lineaire transformatie van de eindig dimensionale vectorruimte $(\ma
 Bewijs door gefoefel.
 \begin{enumerate}
 \item
-Zij $Spec(L) = \{\lambda_1,\lambda_2,...,\lambda_k\}$ het spectrum van $L$.
+Zij $\text{Spec}(L) = \{\lambda_1,\lambda_2,\ldots,\lambda_k\}$ het spectrum van $L$.
 Zij $m_i = m(\lambda)$ de algebra\"ische multipliciteit van eigenwaarde $i$.
 De karakteristieke veelterm van $L$ ziet er nu als volgt uit.
 \[
@@ -503,9 +503,9 @@ De karakteristieke veelterm van $L$ ziet er nu als volgt uit.
 Wanneer we dit product uitwerken ziet het er als volgt uit.
 %TODO meer uitleg.
 \[
-X^n + (-1)(m_1\lambda_1 + m_2\lambda_2 + ... + m_3\lambda_3)X^{n-1} + (-1)^2(m_1\lambda_1 + m_2\lambda_2 + ... + m_3\lambda_3)^2X^{n-2} + ... + (-1)^n\prod_{i=1}^k\lambda_i^{m_i}
+X^n + (-1)(m_1\lambda_1 + m_2\lambda_2 + \ldots + m_3\lambda_3)X^{n-1} + (-1)^2(m_1\lambda_1 + m_2\lambda_2 + \ldots + m_3\lambda_3)^2X^{n-2} + \ldots + (-1)^n\prod_{i=1}^k\lambda_i^{m_i}
 \]
-Per defintie is de karakteristieke veelterm ook gelijk aan het volgende.
+Per definitie is de karakteristieke veelterm ook gelijk aan het volgende.
 In deze formule is $A$ de matrix van $L$ ten opzichte van eender welke basis van $V$.
 \[
 \phi_L(X) = \det(X\mathbb{I}_n-A))
@@ -562,7 +562,7 @@ In een stochastische matrix en in een kansvector zijn alle elementen positief. E
 \[
 \sum_{i=1}^n(M\cdot X)_i = \sum_{i=1}^n\sum_{j=1}^nm_{ij}x_j= \sum_{j=1}^nx_j(\sum_{i=1}^nm_{ij})
 \]
-Let in bovenstaande vergelijking goed op de sommatie tekens. Voor de tweede gelijkheid wisselen we eerst de sommatietekens om. Dit mag omwille van de commutatitviteit van de optelling in $\mathbb{R}$. Daarna zonderen we de sommen van kolommen af. We weten dat die precies elke keer $1$ zijn omdat $M$ een stochastische matrix is.
+Let in bovenstaande vergelijking goed op de sommatie tekens. Voor de tweede gelijkheid wisselen we eerst de sommatietekens om. Dit mag omwille van de commutativiteit van de optelling in $\mathbb{R}$. Daarna zonderen we de sommen van kolommen af. We weten dat die precies elke keer $1$ zijn omdat $M$ een stochastische matrix is.
 \[
 \sum_{j=1}^nx_j(\sum_{i=1}^nm_{ij}) = \sum_{j=1}^nx_j = 1
 \]
@@ -574,9 +574,9 @@ De laatste gelijkheid geldt omdat $X$ een kansvector is, en de som van de elemen
 Zij alle $X_0$ een kansvector en $M$ een stochastische matrix.
 
 \subsubsection*{Te Bewijzen}
-Een markov keten bestaat uit een rij kansvectoren. Alle $X_i$ zijn dus kansvectoren.
+Een Markov-keten bestaat uit een rij kansvectoren. Alle $X_i$ zijn dus kansvectoren.
 \[
-X0, X_1 = M\cdot X_0, X_2 = M^2\cdot X_0,...,X_n = M^n\cdot X_0
+X0, X_1 = M\cdot X_0, X_2 = M^2\cdot X_0,\ldots,X_n = M^n\cdot X_0
 \]
 
 \subsubsection*{Bewijs}
@@ -594,7 +594,7 @@ Volgens de basisstap geldt dat $M\cdot X_0$ een kansvector is. Volgens de induct
 \end{proof}
 
 
-\subsection{Propositite 5.40 p 209}
+\subsection{Propositie 5.40 p 209}
 \label{5.40}
 Zij $M\in \mathbb{R}^{n\times n}$ een stochastische matrix.
 
@@ -608,7 +608,7 @@ Beschouw het stelsel $M\cdot X = \lambda X$ met $\lambda = 1$. De volgende bewer
 \[
 (M-\mathbb{I}_n)\cdot X = \vec{0}
 \]
-Omdat $M$ een stochastische matrix is geldt dat de som van de elementen van elke kolom gelijk is aan $1$. Daaruit volgt dat de som van de elementen van elke kolom in $M-\mathbb{I}_n$ gelijk is aan $0$. Als we de rijen van $M$ optellen krijgen we een nulrij. Dit houdt in dat de rijen van $M-\mathbb{I}_n$ lineair afhankelijk zijn \footnote{Zie Stelling 2.2 p 57 D-5 en Steling 2.3 p 58 1.} en dat de volgende bewering geldt.
+Omdat $M$ een stochastische matrix is geldt dat de som van de elementen van elke kolom gelijk is aan $1$. Daaruit volgt dat de som van de elementen van elke kolom in $M-\mathbb{I}_n$ gelijk is aan $0$. Als we de rijen van $M$ optellen krijgen we een nulrij. Dit houdt in dat de rijen van $M-\mathbb{I}_n$ lineair afhankelijk zijn \footnote{Zie Stelling 2.2 p 57 D-5 en Stelling 2.3 p 58 1.} en dat de volgende bewering geldt.
 \[
 \det(M - \mathbb{I}_n) = \det(M - \lambda\mathbb{I}_n) = 0
 \]

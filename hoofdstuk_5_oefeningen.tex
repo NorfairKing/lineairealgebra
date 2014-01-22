@@ -200,7 +200,7 @@ E_4 =
 \]
 
 \subsection{Oefening 9}
-We stellen allereerst de matrix van $L$ op ten opzichte van de standaardbasis. De lineaire combinatie die we zien in het voorschrift zetten we in de rijen van een $3\times 3$ matric.
+We stellen allereerst de matrix van $L$ op ten opzichte van de standaardbasis. De lineaire combinatie die we zien in het voorschrift zetten we in de rijen van een $3\times 3$ matrix.
 \[
 L_\epsilon = 
 \begin{pmatrix}
@@ -209,7 +209,7 @@ L_\epsilon =
 1 & 0 & 1
 \end{pmatrix}
 \]
-Uit de theorie weten we dat dit iets met de eigenwaarden en eigenvectoren te maken heeft. Sterker nog, dit is precies waarvoor eigenwaarden en eigenvectoren dienen. We zoeken de matrix van eigenvectoren $P$ zodat $AP = PB$, dan is $B$ een diagonaalmatrix \footnote{Zie het bewijs van Steling 5.7}.
+Uit de theorie weten we dat dit iets met de eigenwaarden en eigenvectoren te maken heeft. Sterker nog, dit is precies waarvoor eigenwaarden en eigenvectoren dienen. We zoeken de matrix van eigenvectoren $P$ zodat $AP = PB$, dan is $B$ een diagonaalmatrix \footnote{Zie het bewijs van Stelling 5.7}.
 Nu moeten we dus eerst een basis van eigenvectoren van $\mathbb{R}^n$ zoeken.
 We lossen de karakteristieke vergelijking van $L$ op.
 \[
@@ -660,7 +660,7 @@ A^{10}=
 Te Bewijzen:
 Als $P = NP$ en $P$ is diagonaliseerbaar, dan heeft $N$ een eigenruimte die minstens rang($P$)-dimensionaal is.
 \begin{proof}
-We weten dat P diagonaliseerbaar is. Hieruit kunnen we stellen dat Spec($P$) gelijk is aan $\{\lambda_1, \lambda_2,\cdots,\lambda_n\}$ met bijhorende verzameling eigenvectoren $\{v_1, v_2,\cdots,v_n\}$.\\
+We weten dat P diagonaliseerbaar is. Hieruit kunnen we stellen dat $\text{Spec}(P)$ gelijk is aan $\{\lambda_1, \lambda_2,\cdots,\lambda_n\}$ met bijhorende verzameling eigenvectoren $\{v_1, v_2,\cdots,v_n\}$.\\
 We kunnen voor elk van deze eigenwaarden stellen:
 \[P*v_i = \lambda_i*v_i\]
 en daaruit
@@ -685,7 +685,7 @@ Beschouw nu $v_1$ als volgt.
 \[
 A\cdot B\cdot v_1 = A\cdot\mu_1v_1 = \mu_1Av_1= \mu_1\lambda_1v_1
 \]
-Dit houdt in dat $\mu_1\lambda_1$ een eigenwaarde is van $A\cdot B$ met eigenvector $v_1$ en eigenruimte $E_{\mu_1\lambda_1} = vct(\{v_1\})$. Op dezelfde manier vinden we dat $\mu_1*lambda_2$ en $\mu_2*lambda_3$ eigenwaarden zijn van $A\cdot B$, met respectievelik eigenvector $v2$, $v3$ en eigenruimten $E_{\mu_1*\lambda_2} = vct(\{v_2\})$ en $E_{\mu_2*  \lambda_3} = vct(\{v_3\})$
+Dit houdt in dat $\mu_1\lambda_1$ een eigenwaarde is van $A\cdot B$ met eigenvector $v_1$ en eigenruimte $E_{\mu_1\lambda_1} = vct(\{v_1\})$. Op dezelfde manier vinden we dat $\mu_1*lambda_2$ en $\mu_2*lambda_3$ eigenwaarden zijn van $A\cdot B$, met respectievelijk eigenvector $v2$, $v3$ en eigenruimten $E_{\mu_1*\lambda_2} = vct(\{v_2\})$ en $E_{\mu_2*  \lambda_3} = vct(\{v_3\})$
 
 \subsubsection*{b)}
 \[
@@ -770,7 +770,7 @@ o_1 & 0-\lambda\mathbb{I}_n & \cdots & \cdots & 0\\
 \end{vmatrix}
 = 0
 \]
-We bekomen de gezochtte veelterm door simpelweg de bovenstaande determinant recursief naar de onderste rij te ontwikkelen.
+We bekomen de gezochte veelterm door simpelweg de bovenstaande determinant recursief naar de onderste rij te ontwikkelen.
 \end{proof}
 
 
