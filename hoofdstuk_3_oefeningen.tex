@@ -1151,53 +1151,55 @@ U_{-1} \cap V_{-1} = \text{vct}\{(0,0,1,0)\}
 \]
 
 \subsection{Extra Oefening}
+Het symbool $\boxplus$ is de som van 2 functies. Voor het vermenigvuldigen met een scalar gebruiken we $\boxdot$.
 \subsubsection*{1.1}
-\underline{+} is de som van de functies\\
-Neem $f,g,h \in \mathbb{R}^{\mathbb{R}}$ willekeurig.\\
-Neem $x \in \mathbb{R}$ willekeurig dan is:
+Neem $f,g,h \in \mathbb{R}^{\mathbb{R}}$ willekeurig. Neem $x \in \mathbb{R}$ willekeurig dan is:
 \begin{align*}
-((f\underline{+}g)+h)(x) = (f\underline{+} g)(x) +h(x)\\
-=(f(x)+g(x))+h(x)\\
-=f(x)+(g(x)+h(x))\\
-=f(x)+(g\underline{+}h)(x)\\
-=(f\underline{+}(g\underline{+}h)(x))\\
+\big( (f \boxplus g) \boxplus h \big) (x)
+&= \big( f \boxplus g \big)(x) + h(x)\\
+&= \big( f(x) + g(x) \big) + h(x)\\
+&= f(x) + \big( g(x) + h(x) \big)\\
+&= f(x) + \big( g \boxplus h\big) (x)\\
+&= \big( f \boxplus (g \boxplus h) \big) (x)\\
 \end{align*}
 Dus:
-\begin{align*}
-(f\underline{+}g)\underline{+}h = f\underline{+}(g\underline{+}h)
-\end{align*}
+\[
+(f \boxplus g) \boxplus h = f \boxplus (g \boxplus h)
+\]
 \subsubsection*{1.3}
 Tegengesteld element:
 \[
 \forall v \in V:\;\exists v' \in V:\; v+v'=v'+v=0
 \]
 Stel $g'$ is het tegengesteld element van $g$.
-Noteer het neutraal element als $\odot$.
+Noteer het neutraal element als $\circledcirc$.
 \[
-g' = (-1)\bullet g
+g' = (-1) \boxdot g
 \]
 \begin{proof}
 \[
-g\textbf{+}g' = g\textbf{+} (-1)\bullet g
+g \boxplus g' = g \boxplus (-1) \boxdot g
 \]
-We evalueren dit in een willekeurige $x \in R$:
+We evalueren dit in een willekeurige $x \in \mathbb{R}$:
 \[ 
-(g\textbf{+} (-1)\bullet g)(x) \overset{def\;1}{=} g(x) -g(x) = 0 = \odot
+\big( g\boxplus (-1) \boxdot g \big)(x) \overset{\text{def 1}}{=} g(x) -g(x) = 0 = \circledcirc
 \]
 Vanwege de commutativiteit geldt ook:
 \[
-g(x) -g(x) = -g(x) + g(x) = 0 = \odot
+g(x) -g(x) = -g(x) + g(x) = 0 = \circledcirc
 \]
 \end{proof}
 \subsubsection{1.4}
 Stel $f:\mathbb{R} \rightarrow \mathbb{R}: x \mapsto f(x)$ en $g:\mathbb{R} \rightarrow \mathbb{R}: x \mapsto g(x)$, dan geldt voor iedere $x \in \mathbb{R}$ dat
-\[ (\lambda \bullet (f \boldsymbol{+} g))(x) 
-    = \lambda (f \boldsymbol{+} g)(x) 
-    = \lambda (f(x) + g(x))
-    = \lambda \cdot f(x) + \lambda \cdot g(x)
-    = (\lambda \bullet f)(x) + (\lambda \bullet g)(x)
-    = (\lambda \bullet f \boldsymbol{+} \lambda \bullet g)(x)\]
-en dus $\lambda \bullet (f \boldsymbol{+} g) = \lambda \bullet f \boldsymbol{+} \lambda \bullet g $
+\begin{align*}
+\big( \lambda \boxdot (f \boxplus g) \big)(x) 
+    &= \lambda \big( f \boxplus g \big)(x) 
+     = \lambda \big( f(x) + g(x) \big)
+     = \lambda \cdot f(x) + \lambda \cdot g(x) \\
+    &= \big( \lambda \boxdot f \big)(x) + \big( \lambda \boxdot g \big)(x)
+     = \big( \lambda \boxdot f \boxplus \lambda \boxdot g \big)(x)
+\end{align*}
+en dus $\lambda \boxdot (f \boxplus g) = \lambda \boxdot f \boxplus \lambda \boxdot g $
 
 
 \section{Opdrachten}
