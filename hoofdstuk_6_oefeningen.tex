@@ -13,57 +13,57 @@
 \]
 Waarbij het inproduct als volgt gedefinieerd is.
 \[
-\langle A,B \rangle = Tr(A^T\cdot B)
+\langle A,B \rangle = \text{Tr}(A^T\cdot B)
 \]
 
 \subsubsection*{Bewijs}
 Dit is een heel langdradig bewijs, maar het is hier toch eens volledig uitgeschreven bij wijze van voorbeeld.
 \begin{proof}
-$(\mathbb{R},\mathbb{R}^{2\times 2},+,Tr)$ is een eindig dimensionale vectorruimte.
-We moeten dus enkel de eigenschappen van $\langle A,B \rangle = Tr(A^T,B)$ als inproduct nagaan.\\
+$(\mathbb{R},\mathbb{R}^{2\times 2},+,\text{Tr})$ is een eindig dimensionale vectorruimte.
+We moeten dus enkel de eigenschappen van $\langle A,B \rangle = \text{Tr}(A^T,B)$ als inproduct nagaan.\\
 Kies willekeurige $V_1,V_2,V, W \in \mathbb{R}^{2\times 2}$ en $\lambda_1,\lambda_2 \in \mathbb{R}^{2\times 2}$.
 
 \begin{itemize}
 \item Lineariteit in de eerste component.\\
 \[
 \langle \lambda_1V_1 + \lambda_2V_2,W \rangle
-= Tr((\lambda_1V_1 + \lambda_2V_2)^T\cdot W)
-= Tr((\lambda_1V_1^T + \lambda_2V_2^T)\cdot W)
+= \text{Tr}((\lambda_1V_1 + \lambda_2V_2)^T\cdot W)
+= \text{Tr}((\lambda_1V_1^T + \lambda_2V_2^T)\cdot W)
 \]
 Bovenstaande gelijkheden gelden omwille van de gegeven definitie en de lineariteit van het transponeren van een matrix \footnote{Zie Eigenschap 1.16 p 28.}.
 Volgende gelijkheid geldt omdat de spoorafbeelding een lineaire afbeelding is \footnote{Zie Voorbeeld 4.4 p 131 9.}.
 \[
-= Tr(\lambda_1V_1^T\cdot W + \lambda_2V_2^T\cdot W)
-= \lambda_1Tr(V_1^T\cdot W) + \lambda_2Tr(V_2^T\cdot W)
+= \text{Tr}(\lambda_1V_1^T\cdot W + \lambda_2V_2^T\cdot W)
+= \lambda_1\text{Tr}(V_1^T\cdot W) + \lambda_2\text{Tr}(V_2^T\cdot W)
 = \lambda_1\langle V_1, W\rangle + \lambda_2\langle V_2, W\rangle
 \]
 Samengevat staat hierboven het volgende, wat precies betekent dat het gegeven inproduct lineair is in de eerste component.
 
-\item Symmetrie\\
+\item Symmetrie
 \[
-\langle V,W\rangle = Tr(V^T\cdot W) = Tr(V\cdot W^T) = \langle V,W\rangle
+\langle V,W\rangle = \text{Tr}(V^T\cdot W) = \text{Tr}(V\cdot W^T) = \langle V,W\rangle
 \]
 
-\item Positief\\
+\item Positief
 \[
-\langle V,V\rangle = Tr(V^T\cdot V)
+\langle V,V\rangle = \text{Tr}(V^T\cdot V)
 = \sum_{i=1}^n(V^T\cdot V)_{ii}
 = \sum_{i=1}^n\sum_{j=1}^nV^T_{ij}V_{ji} \ge 0
 \]
 
-\item Definiet\\
+\item Definiet
 \[
 \langle V,V\rangle
 = 0 \Leftrightarrow V=\vec{0}
 \]
 \begin{itemize}
-\item $\Rightarrow$\\
+\item $\Rightarrow$
 \[
 \langle V,V\rangle
 = 0 \Rightarrow \sum_{i=1}^n\sum_{j=1}^nV^T_{ij}V_{ji} = 0 \Rightarrow V = \vec{0}
 \]
 
-\item $\Leftarrow$\\
+\item $\Leftarrow$
 \[
 v = \vec{0} \Rightarrow \langle V,V\rangle = \langle \vec{0},\vec{0}\rangle
 = \sum_{i=1}^n\sum_{j=1}^n\vec{0}_{ij}\vec{0}_{ji} = 0
@@ -74,91 +74,52 @@ v = \vec{0} \Rightarrow \langle V,V\rangle = \langle \vec{0},\vec{0}\rangle
 \end{itemize}
 \end{proof}
 \subsubsection*{Extra}
-\[
-\Vert A_1 \Vert 
-= 1
-\]
-\[
-\Vert A_2 \Vert 
-= \sqrt{5}
-\]
-\[
-\Vert A_3 \Vert
-= \sqrt{14}
-\]
-\[
-\Vert A_4 \Vert
-= 2
-\]
-\[
-\langle A_1,A_2 \rangle
-= 2
-\]
 %TODO Inproducten
-\[
+%TODO Hoeken
+%TODO Afstanden
+\begin{align*}
+\Vert A_1 \Vert 
+&= 1 \\
+\Vert A_2 \Vert 
+&= \sqrt{5} \\
+\Vert A_3 \Vert
+&= \sqrt{14} \\
+\Vert A_4 \Vert
+&= 2 \\
+\langle A_1,A_2 \rangle
+&= 2 \\
 \langle A_1,A_3 \rangle
-=
-\]
-\[
+&= \\
 \langle A_1,A_4 \rangle
-=
-\]
-\[
+&= \\
 \langle A_2,A_3 \rangle
-=
-\]
-\[
+&= \\
 \langle A_2,A_4 \rangle
-=
-\]
-\[
+&= \\
 \langle A_3,A_4 \rangle
-=
-\]
-%TODO hoeken
-\[
+&= \\
 \widehat{A_1,A_2}
-= \arccos\frac{2}{1\cdot \sqrt{5}}
-= \arccos\frac{2\sqrt{5}}{5}
-\]
-\[
+&= \arccos\frac{2}{1\cdot \sqrt{5}}
+= \arccos\frac{2\sqrt{5}}{5} \\
 \widehat{A_1,A_3}
-=
-\]
-\[
+&= \\
 \widehat{A_1,A_4}
-=
-\]
-\[
+&= \\
 \widehat{A_2,A_3}
-=
-\]
-\[
+&= \\
 \widehat{A_3,A_4}
-=
-\]
-%TODO afstanden
-\[
+&= \\
 \Vert A_2-A_1 \Vert
-=
-\]
-\[
+&= \\
 \Vert A_3-A_1 \Vert
-=
-\]
-\[
+&= \\
 \Vert A_4-A_1 \Vert
-=
-\]
-\[
+&= \\
 \Vert A_3-A_2 \Vert
-=
-\]
-\[
+&= \\
 \Vert A_4-A_3 \Vert
-=
-\]
-
+&=
+\end{align*}
 
 \subsection{Oefening 3}
 \[
@@ -166,15 +127,11 @@ v = \vec{0} \Rightarrow \langle V,V\rangle = \langle \vec{0},\vec{0}\rangle
 \]
 Eerst bepalen we of $\beta$ orthogonaal is.
 In de volgende gelijkheden zien we dat dit klopt.
-\[
-\langle (3,-3,0),(2,2,-1) \rangle = 6-6+0 = 0
-\]
-\[
-\langle (2,2,-1),(1,1,4) \rangle = 2+2-4 = 0
-\]
-\[
-\langle (3,-3,0),(1,1,4) \rangle = 3-3+0 = 0
-\]
+\begin{align*}
+\langle (3,-3,0),(2,2,-1) \rangle &= 6-6+0 = 0 \\
+\langle (2,2,-1),(1,1,4) \rangle &= 2+2-4 = 0 \\
+\langle (3,-3,0),(1,1,4) \rangle &= 3-3+0 = 0
+\end{align*}
 Vervolgens bepalen we of $\beta$ inderdaad een basis vormt voor $\mathbb{R}^3$.
 Omdat $\beta$ precies drie vectoren bevat moeten we enkel aantonen dat $\beta$ vrij is \footnote{Zie Stelling 3.41 p 109.}.
 \[
@@ -210,8 +167,7 @@ Stel dat $v=(a,b,c)$ een vector is die orthogonaal is met zowel $(1,2,0)$ als $(
 \langle (a,b,c) , (1,0,1) \rangle = 0
 \end{array}
 \right.
-\]
-\[
+\longrightarrow
 \left\{
 \begin{array}{c}
 a + 2b + 0 = 0\\
@@ -248,44 +204,36 @@ Hieruit lezen we de volgende oplossingsverzameling af.
 
 \subsection{Oefening 5}
 Vooreerst normeren we $(1,2,0)$. Dit doen we door deze vector te delen door zijn lengte.
-\[
-\beta_1 = \frac{(1,2,0)}{\Vert(1,2,0)\Vert}
-= \left(\frac{\sqrt{5}}{5},\frac{2\sqrt{5}}{5},0\right)
-\]
-\[
-\beta_2' = (1,0,1) - \left\langle (1,0,1),\beta_1 \right\rangle \beta_1
-= (1,0,1) - \left(\frac{\sqrt{5}}{5},0,0\right)\left(\frac{\sqrt{5}}{5},\frac{2\sqrt{5}}{5},0\right)
-\]
-\[
-=(1,0,1) - (5,0,0) = (4,0,-1)
-\]
+\begin{align*}
+\beta_1 &= \frac{(1,2,0)}{\Vert(1,2,0)\Vert}
+= \left(\frac{\sqrt{5}}{5},\frac{2\sqrt{5}}{5},0\right) \\
+\beta_2' &= (1,0,1) - \left\langle (1,0,1),\beta_1 \right\rangle \beta_1
+= (1,0,1) - \left(\frac{\sqrt{5}}{5},0,0\right)\left(\frac{\sqrt{5}}{5},\frac{2\sqrt{5}}{5},0\right) \\
+&= (1,0,1) - (5,0,0) = (4,0,-1)
+\end{align*}
 Nu kunnen we $\beta_2'$ ook normeren tot $\beta_2$.
 \[
 \beta_2 = \frac{(4,0,-1)}{\Vert (4,0,-1)\Vert}
 = \left( \frac{4\sqrt{17}}{17},0,\frac{-\sqrt{17}}{17} \right)
 \]
 Vervolgens zoeken we $\beta_3'$ als volgt.
-\[
+\begin{align*}
 \beta_3'
-= (2,3,1)
+&= (2,3,1)
 - \left\langle (2,3,1),\beta_1\right\rangle\beta_1
-- \left\langle (2,3,1),\beta_2\right\rangle\beta_2
-\]
-\[
-= (2,3,1)
+- \left\langle (2,3,1),\beta_2\right\rangle\beta_2 \\
+&= (2,3,1)
 - \left(7\frac{\sqrt{5}}{5}\right)  \beta_1
-- \left(7\frac{\sqrt{17}}{17} \right)  \beta_2
-\]
-\[
-=(2,3,1)
+- \left(7\frac{\sqrt{17}}{17} \right)  \beta_2 \\
+&=(2,3,1)
 - \left(\frac{7}{5},\frac{14}{5},0\right)
-- \left( \frac{28}{17},0,\frac{-7}{17} \right)
-= 
-\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)
-\]
+- \left( \frac{28}{17},0,\frac{-7}{17} \right) \\
+&= \left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)
+\end{align*}
 Tenslotte normeren we $\beta_3'$ nog tot $\beta_3$.
-\[
-\beta_3 = 
+\begin{align*}
+\beta_3
+&= 
 \frac{\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)}
 {\Vert\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)\Vert}
 = 
@@ -293,14 +241,14 @@ Tenslotte normeren we $\beta_3'$ nog tot $\beta_3$.
 {\frac{89^2}{85^2}+\frac{1}{5^2}+\frac{10^2}{17^2}}
 =
 \frac{\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)}
-{\frac{7921}{7225}+\frac{1}{25}+\frac{100}{289}}
-=
+{\frac{7921}{7225}+\frac{1}{25}+\frac{100}{289}} \\
+&=
 \frac{85}{126}
 \left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)
 =
 \frac{1}{126}
 \left(-89,17,50\right)
-\]
+\end{align*}
 We hebben nu $\alpha$ georthonormaliseerd tot $\beta$.
 \[
 \beta
@@ -325,24 +273,20 @@ v_i =
 x_i\\y_i\\z_i
 \end{pmatrix}
 \]
-\[
-\forall i,j\in \{1,2,3\}:\ \langle v_i,v_j\rangle = 0
-\]
-\[
-\forall i\in \{1,2,3\}:\ \Vert v_i\Vert = 1
-\]
+\begin{align*}
+\forall i,j\in \{1,2,3\} &: \ \langle v_i,v_j\rangle = 0 \\
+\forall i\in \{1,2,3\} &: \ \Vert v_i\Vert = 1
+\end{align*}
 Elke $v_1$ is van de vorm $(\mu - 2\lambda,\lambda,\mu)$ omdat ze aan $x+2y+z=0$ voldoet.
 %TODO
 
 \subsection{Oefening 8}
 \subsubsection*{(a)}
 We zoeken een deelruimte $D$ van $\mathbb{R}^3$ waarvoor geldt dat elk er van loodrecht staat op elk element in $U_1$. Een willekeurige vector $(a,b,c)$ moet dus voldoen aan volgend stelsel.
-\[
-\langle (a,b,c),(1,1,1)\rangle = 0
-\]
-\[
-\langle (a,b,c),(1,1,0)\rangle = 0
-\]
+\begin{align*}
+\langle (a,b,c),(1,1,1)\rangle &= 0
+\langle (a,b,c),(1,1,0)\rangle &= 0
+\end{align*}
 Of nog het volgend.
 \[
 \left\{
@@ -370,7 +314,7 @@ Bovenstaand stelsel komt overeen met een matrix, die we rijreduceren.
 \]
 In deze matrix lezen we de volgende oplossingsverzameling af.
 \[
-\{ (-\lambda,\lambda,0)\ |\ \lambda\in\mathbb{R}\}
+\{ (-\lambda,\lambda,0) \mid \lambda\in\mathbb{R}\}
 \]
 
 
@@ -381,23 +325,19 @@ We zoeken een deelruimte $D$ van $\mathbb{R}^3$ waarvoor geldt dat elk er van lo
 \]
 Of nog het volgende stelsel
 \[
-\left\{
-\begin{array}{c c}
+\begin{pmatrix}
 a + b + c = 0 
-\end{array}
-\right.
+\end{pmatrix}
 \]
 Intu\"itief zien we al dat dit een vlak is dat loodrecht staat op de rechte $U_2$.
 \[
-\left(
-\begin{array}{c c c | c}
+\begin{pmatrix}[ccc|c]
 1 & 1 & 1 & 0 
-\end{array}
-\right)
+\end{pmatrix}
 \]
 Hieruit volgt de volgende oplossingsverzameling.
 \[
-\{ (-\lambda - \mu , \lambda, \mu)\ |\ \lambda,\mu \in \mathbb{R}\}
+\{ (-\lambda - \mu , \lambda, \mu) \mid \lambda,\mu \in \mathbb{R}\}
 \]
 
 
@@ -411,8 +351,7 @@ We zoeken voor de deelruimte bepaald door $vct\{\bigl(\begin{smallmatrix}
 \end{smallmatrix}\bigr),\bigl(\begin{smallmatrix}
 2 & 2 \\
 0 & 1
-\end{smallmatrix}\bigr)\}$  het orthogonaal complement. Dit betekent dat we een andere deelruimte van $\mathbb{R}^{2\times2}$ zoeken waarvoor elk element loodrecht staat op de elementen uit de originele vectorruimte.
-
+\end{smallmatrix}\bigr)\}$  het orthogonaal complement. Dit betekent dat we een andere deelruimte van $\mathbb{R}^{2\times2}$ zoeken waarvoor elk element loodrecht staat op de elementen uit de originele vectorruimte.\\
 Deze wordt dus voortgebracht door een vector of alle vectoren $\bigl(\begin{smallmatrix}
 a & b \\
 c & d
@@ -438,61 +377,58 @@ c & d
 2 & 2 \\
 0 & 1
 \end{smallmatrix}\bigr)> = 0\]
-
 Wat betekent dat een element van onze nieuwe deelruimte loodrecht staat op alle elementen van de basis van de oude, en dus ook op al hun lineaire combinaties. Dit geldt door de definitie van het standaardinproduct in $\mathbb{R}^{2\times2}$ als en slechts als:
-\[\left\{
+\[
+\left\{
 \begin{array}{l}
-a+c+2*d=0\\
+a+c+2 \cdot d=0\\
 a+b+c+d=0\\
-2*a+2*b+d=0
-\end{array} \right.\]
+2 \cdot a+2 \cdot b+d=0
+\end{array} \right.
+\]
 We kunnen dit stelsel van gelijkheden omzetten in de matrix
-\[\left(
-\begin{array}{c c c c | c}
+\[
+\begin{pmatrix}[cccc|c]
 1 & 0 & 1 & 2 & 0\\
 1 & 1 & 1 & 1 & 0\\
 2 & 2 & 0 & 1 & 0
-\end{array}
-\right)\]
+\end{pmatrix}
+\]
 hetgeen we door rijreductie omzetten in
-\[\left(
-\begin{array}{c c c c | c}
+\[
+\begin{pmatrix}[cccc|c]
 1 & 0 & 0 & \frac{3}{2} & 0\\
 0 & 1 & 0 & -1 & 0\\
 0 & 0 & 1 & \frac{1}{2} & 0
-\end{array}
-\right)\]
-
+\end{pmatrix}
+\]
 Kiezen we $d$ als vrije variabele, dan moeten alle elementen van de nieuwe deelruimte voldoen aan het voorschrift $\bigl(\begin{smallmatrix}
-\frac{-3}{2}*\lambda & \lambda \\
-\frac{-1}{2}*\lambda & \lambda
-\end{smallmatrix}\bigr)$ met $\lambda \in \mathbb{R}$.
-
+\frac{-3}{2} \cdot \lambda & \lambda \\
+\frac{-1}{2} \cdot \lambda & \lambda
+\end{smallmatrix}\bigr)$ met $\lambda \in \mathbb{R}$.\\
 We kunnen dus door een invulling van lambda stellen dat het orthogonaal complement de deelruimte is met als voorschrift:
 \[
-vct\{\bigl(\begin{smallmatrix}
+\text{vct}\left\{\bigl(\begin{smallmatrix}
 -3 & 2 \\
 -1 & 2
-\end{smallmatrix}\bigr)\}
+\end{smallmatrix}\bigr)\right\}
 \]
 
 \subsection{Oefening 9}
 \subsubsection*{(a)}
-\[
-\alpha=
+\begin{align*}
+\alpha &=
 \left\{
-A \in \mathbb{R}^{n\times n}\ |\ A \text{ is symmetrisch}
-\right\}^\bot
-\]
-\[
-\beta=
+A \in \mathbb{R}^{n\times n} \mid A \text{ is symmetrisch}
+\right\}^\bot \\
+\beta &=
 \left\{
-A \in \mathbb{R}^{n\times n}\ |\ A \text{ is scheefsymmetrisch}
+A \in \mathbb{R}^{n\times n} \mid A \text{ is scheefsymmetrisch}
 \right\}
-\]
+\end{align*}
 Kies een willekeurig element $B$ uit $\alpha$. Nu geldt voor elk element $A\in\alpha^\bot$ het volgende.
 \[
-A=A^T\text{ en } Tr(A^TB) = Tr(A^TB^T)= 0
+A=A^T\text{ en } \text{Tr}(A^TB) = \text{Tr}(A^TB^T)= 0
 \]
 Voor elk element $C \in \beta$ geldt het volgende.
 \[
@@ -500,11 +436,11 @@ Voor elk element $C \in \beta$ geldt het volgende.
 \]
 Het is eenvoudig te zien dat $C$ inderdaad loodrecht staat op $A$.
 \[
-Tr(C^TA) = Tr(-CA)
+\text{Tr}(C^TA) = \text{Tr}(-CA)
 \]
 Maar ook:
 \[
-Tr(C^TA) = Tr(CA^T) = Tr(CA)
+\text{Tr}(C^TA) = \text{Tr}(CA^T) = \text{Tr}(CA)
 \]
 Dit kan enkel als beide sporen nul zijn.
 
@@ -526,41 +462,37 @@ $A$ heeft geen re\"ele eigenwaarden.
 \begin{proof}
 Bewijs uit het ongerijmde.\\
 Stel dat $\lambda$ een re\"ele eigenwaarde is van $A$ met bijhorende eigenvector $v = \begin{pmatrix}v_1\\v_2\end{pmatrix}$.
-\[
+\begin{align*}
 \begin{pmatrix}
 0 & a\\
 -a & 0
 \end{pmatrix}
 \begin{pmatrix}v_1\\v_2\end{pmatrix}
-=\lambda 
-\begin{pmatrix}v_1\\v_2\end{pmatrix}
-\]
-\[
+&=\lambda 
+\begin{pmatrix}v_1\\v_2\end{pmatrix}\\
 \begin{pmatrix}
 v_2\\-v_1
 \end{pmatrix}
-=
+&=
 \begin{pmatrix}
 \lambda v_1\\\lambda v_2
 \end{pmatrix}
-\]
-\[
-\left\{
-\begin{array}{c c}
+\end{align*}
+\begin{align*}
+&\left\{
+\begin{array}{ll}
 v_2 &= \lambda v_1\\
 v_1 &= -\lambda v_2
 \end{array}
-\right.
-\]
-\[
-\left\{
-\begin{array}{c c}
+\right. \\
+&\left\{
+\begin{array}{ll}
 v_2 &= \lambda v_1\\
 v_1 &= -\lambda^2 v_1
 \end{array}
 \right.
-\]
-Let op de tweede vergelijking in bovenstaand stelsel. Dit stelsel kan enkel gelden indien $-\lambda^2 = 1$ geldt. Het is dus steeds strijdig als $\lambda$ re\"el is. Contradictie.+
+\end{align*}
+Let op de tweede vergelijking in bovenstaand stelsel. Dit stelsel kan enkel gelden indien $-\lambda^2 = 1$ geldt. Het is dus steeds strijdig als $\lambda$ re\"el is. Contradictie.
 \end{proof}
 
 
@@ -601,12 +533,10 @@ Wanneer we dit oplossen vinden we dat $a$ gelijk moet zijn aan $1$.
 
 \subsection*{Oefening 13}
 Zij $A$ en $A'$ de matrices van respectievelijk $T$ en $T'$ ten opzichte van $\beta$.
-\[
-A^T = A^{-1}
-\]
-\[
-A'^T = A^{-1}
-\]
+\begin{align*}
+A^T &= A^{-1} \\
+A'^T &= A^{-1}
+\end{align*}
 
 \subsubsection*{Te Bewijzen}
 De matrixvoorstelling van $T'\circ T$ ten opzichte van $\beta$ is orthogonaal
@@ -712,7 +642,7 @@ E_{5} =
 \]
 \end{itemize}
 We zoeken nu een genormeerde eigenvector uit elke eigenruimte.
-\[
+\begin{align*}
 \left\Vert
 \lambda
 \begin{pmatrix}
@@ -720,10 +650,8 @@ We zoeken nu een genormeerde eigenvector uit elke eigenruimte.
 \end{pmatrix}
 \right\Vert
 =1
-\Leftrightarrow
-\lambda = \frac{\sqrt{5}}{5}
-\]
-\[
+&\Leftrightarrow
+\lambda = \frac{\sqrt{5}}{5} \\
 \left\Vert
 \lambda
 \begin{pmatrix}
@@ -731,10 +659,8 @@ We zoeken nu een genormeerde eigenvector uit elke eigenruimte.
 \end{pmatrix}
 \right\Vert
 =1
-\Leftrightarrow
-\lambda = \frac{3}{2}
-\]
-\[
+&\Leftrightarrow
+\lambda = \frac{3}{2} \\
 \left\Vert
 \lambda
 \begin{pmatrix}
@@ -742,9 +668,9 @@ We zoeken nu een genormeerde eigenvector uit elke eigenruimte.
 \end{pmatrix}
 \right\Vert
 =1
-\Leftrightarrow
+&\Leftrightarrow
 \lambda = \frac{3}{2}
-\]
+\end{align*}
 Werken we dit uit, dan vinden we volgende orthonormale basis van eigenvectoren.
 \[
 \left\{
@@ -765,37 +691,44 @@ Zetten we nu deze vectoren als kolommen in een matrix, dan is deze matrix een or
 \[
 P=
 \begin{pmatrix}
-\frac{2\sqrt{5}}{5}  & -\frac{3}{2} & \frac{\sqrt{5}}{5}\\ 
--\frac{2\sqrt{5}}{5} & -\frac{3}{4} & \frac{3}{2}\\ 
-\frac{\sqrt{5}}{5} & \frac{3}{2}    & \frac{3}{2}
+\dfrac{2\sqrt{5}}{5}  & -\dfrac{3}{2} & \dfrac{\sqrt{5}}{5}\\[6pt]
+-\dfrac{2\sqrt{5}}{5} & -\dfrac{3}{4} & \dfrac{3}{2}\\[6pt]
+\dfrac{\sqrt{5}}{5} & \dfrac{3}{2}    & \dfrac{3}{2}
 \end{pmatrix}
 \]
 
-
-\subsubsection*{(b)}
-
-
-\subsubsection*{(c)}
-
 \subsection{Oefening 18}
 \label{oef:6.18}
-\[U^{\bot_{\mathbb{R}^n}} + W = \begin{pmatrix} W^{\bot_U} \end{pmatrix}^{\bot_{\mathbb{R}^n}}.\]
+\[U^{\bot_{\mathbb{R}^n}} + W = \begin{pmatrix} W^{\bot_U} \end{pmatrix}^{\bot_{\mathbb{R}^n}}\]
 \begin{proof}
 Kies $v \in U^{\bot_{\mathbb{R}^n}} + W$ en $w^{\bot_U} \in W^{\bot_U}$ willekeurig. We zien dat $v = u^{\bot} + w$, geld waarbij $u^{\bot} \in U^{\bot_{\mathbb{R}^n}}$ en $w \in W$ geldt.\\
 Aangezien $w \in W$ en $w^{\bot} \in W^{\bot_U}$ gelden, geldt $\langle w, w^{\bot} \rangle = 0$. We weten ook dat $u^{\bot} \in U^{\bot_{\mathbb{R}^n}}$ geldt, dus $u^{\bot}$ staat loodrecht op elk element van $U$. We weten echter dat $W^{\bot_u} \subset U$, dus geldt ook $\langle u^{\bot}, w^{\bot} \rangle = 0$. Hieruit volgt nu
-\[\langle v, w^{\bot} \rangle = 0\]
-voor elke $v \in U^{\bot_{\mathbb{R}^n}} + W$ en $w^{\bot_U} \in W^{\bot_U}$. Dit betekent dat
-\[(W^{\bot_U})^{\bot_{\mathbb{R}^n}} \subseteq U^{\bot_{\mathbb{R}^n}} + W.\]
-We bewijzen nu dat de dimensies gelijk zijn. Zij $\dim(W \cap U^{\bot_{\mathbb{R}^n}}) = r$, $\dim W = k$, $\dim(U^{\bot_{\mathbb{R}^n}}) = l$ en $\dim(U) = n - l$. We zien nu:
-\[\dim(U^{\bot_{\mathbb{R}^n}} + W) = \dim(U^{\bot_{\mathbb{R}^n}}) + \dim W - \dim(U^{\bot_{\mathbb{R}^n}}) = k + l - r.\]
+\[
+\langle v, w^{\bot} \rangle = 0
+\]
+voor elke $v \in U^{\bot_{\mathbb{R}^n}} + W$ en $w^{\bot_U} \in W^{\bot_U}$.\\
+Dit betekent dat
+\[
+(W^{\bot_U})^{\bot_{\mathbb{R}^n}} \subseteq U^{\bot_{\mathbb{R}^n}} + W
+\]
+We bewijzen nu dat de dimensies gelijk zijn.\\
+Zij $\dim(W \cap U^{\bot_{\mathbb{R}^n}}) = r$, $\dim W = k$, $\dim(U^{\bot_{\mathbb{R}^n}}) = l$ en $\dim(U) = n - l$.
+\[
+\dim(U^{\bot_{\mathbb{R}^n}} + W) = \dim(U^{\bot_{\mathbb{R}^n}}) + \dim W - \dim(U^{\bot_{\mathbb{R}^n}}) = k + l - r
+\]
 Voor de dimensie van het rechterlid krijgen we
-\[\dim \begin{bmatrix} \begin{pmatrix} W^{\bot_u} \end{pmatrix}^{\bot_{\mathbb{R}^n}} \end{bmatrix} = \dim \mathbb{R}^n - \dim(W^{\bot_u})\]
-\[= n - \begin{bmatrix} \dim U - \dim W + \dim \begin{pmatrix} W \cap U^{\bot_{\mathbb{R}^n}} \end{pmatrix} \end{bmatrix} = n - \begin{bmatrix} (n - l) - k + r \end{bmatrix} = l + k - r.\]
-We zien dus dat de deelruimten dezelfde dimensie hebben en dat de ene deelruimte een deelverzameling is van de andere. Hieruit volgt dat ze gelijk zijn. \end{proof}
+\begin{align*}
+\dim \begin{bmatrix} \begin{pmatrix} W^{\bot_u} \end{pmatrix}^{\bot_{\mathbb{R}^n}} \end{bmatrix}
+&= \dim \mathbb{R}^n - \dim(W^{\bot_u}) \\
+&= n - \begin{bmatrix} \dim U - \dim W + \dim \begin{pmatrix} W \cap U^{\bot_{\mathbb{R}^n}} \end{pmatrix} \end{bmatrix} \\
+&= n - \begin{bmatrix} (n - l) - k + r \end{bmatrix} \\
+&= l + k - r
+\end{align*}
+We zien dus dat de deelruimten dezelfde dimensie hebben en dat de ene deelruimte een deelverzameling is van de andere. Hieruit volgt dat ze gelijk zijn.
+\end{proof}
 
 
 \section{Opdrachten}
-
 \subsection{Opdracht 6.8 p 227}
 \label{6.8}
 Kies willekeurige elementen $x_1,x_2,x,y \in \mathbb{R}^{2}$ en $\lambda_1,\lambda_2,\lambda \in \mathbb{R}$.
@@ -804,19 +737,12 @@ Kies willekeurige elementen $x_1,x_2,x,y \in \mathbb{R}^{2}$ en $\lambda_1,\lamb
 \begin{proof}
 \begin{enumerate}
 \item Lineair in de eerste component
-\[
-\langle \lambda_1x_1 + \lambda_2x_2,y \rangle_1
-\]
-\[
-= 3(\lambda_1x_1 + \lambda_2x_2)_1y_1 - 2(\lambda_1x_1 + \lambda_2x_2)_1y_2-2(\lambda_1x_1 + \lambda_2x_2)_2y_1+2(\lambda_1x_1 + \lambda_2x_2)_2y_2
-\]
-\[
-= \lambda_1(3x_{11}y_1-2x_{11}y_2-2x_{12}y_1+2x_{12}y_2) + \lambda_2(3x_{21}y_1-2x_{21}y_2-2x_{22}y_1+2x_{22}y_2)
-\]
-\[
-= \lambda_1\langle x_1,y \rangle_1
-+  \lambda_2\langle x_2,y \rangle_1
-\]
+\begin{align*}
+\langle \lambda_1&x_1+ \lambda_2x_2,y \rangle_1 \\
+&= 3(\lambda_1x_1 + \lambda_2x_2)_1y_1 - 2(\lambda_1x_1 + \lambda_2x_2)_1y_2-2(\lambda_1x_1 + \lambda_2x_2)_2y_1+2(\lambda_1x_1 + \lambda_2x_2)_2y_2 \\
+&= \lambda_1(3x_{11}y_1-2x_{11}y_2-2x_{12}y_1+2x_{12}y_2) + \lambda_2(3x_{21}y_1-2x_{21}y_2-2x_{22}y_1+2x_{22}y_2) \\
+&= \lambda_1\langle x_1,y \rangle_1 + \lambda_2\langle x_2,y \rangle_1
+\end{align*}
 
 \item Symmetrisch
 \[
@@ -835,47 +761,35 @@ Kies willekeurige elementen $x_1,x_2,x,y \in \mathbb{R}^{2}$ en $\lambda_1,\lamb
 \[
 \langle x,x \rangle_1 = 0 \Leftrightarrow x= \vec{0}
 \]
-
 \begin{itemize}
 \item $\Rightarrow$
-\[
-\langle x,x \rangle_1 = 0 
-\]
-\[
-x_1^2=0
-\]
-\[
-\Rightarrow x= \vec{0}
-\]
+\begin{align*}
+\langle x,x \rangle_1 &= 0 \\
+x_1^2 &= 0 \\
+&\Longrightarrow x = \vec{0}
+\end{align*}
 
 \item $\Leftarrow$
-\[
-x= \vec{0}
-\]
-\[
-x_1^2=0
-\]
-\[
- \Rightarrow \langle x,x \rangle_1 = 0
-\]
+\begin{align*}
+x &= \vec{0} \\
+x_1^2 &= 0 \\
+& \Longrightarrow \langle x,x \rangle_1 = 0
+\end{align*}
 \end{itemize}
 \end{enumerate}
 \end{proof}
 
 \item
 Dit inproduct is niet positief. 
-Kies bevoorbeeld $x$ als volgt.
-\[
-x = 
+Kies bijvoorbeeld $x$ als volgt.
+\begin{align*}
+x &= 
 \begin{pmatrix}
 1\\1
-\end{pmatrix}
-\]
-\[
-\langle x,x \rangle_1 = -1 <0
-\]
+\end{pmatrix} \\
+\langle x,x \rangle_1 &= -1 <0
+\end{align*}
 \end{enumerate}
-
 
 
 
