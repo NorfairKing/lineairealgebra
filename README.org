@@ -1,10 +1,10 @@
 * Lineaire Algebra
-** Auteur: Tom Sydney Kerckhove
+** Auteur: Tom Sydney Kerckhove (15/20)
 ** Dankwoord
 *** Medewerkers
 **** Ward Schodts
      Bedankt voor het idee, de fijne samenwerking en de oplossingen.
-**** Frederik Goovaerts
+**** Frederik Goovaerts (14/20)
      Bedankt voor de hulp in verband met de licentie en de oplossingen.
 **** Willem Van Onsem
      Bedankt voor de makefile.
@@ -14,14 +14,14 @@
      Bedankt voor de hulp met de oplossingen.
      - Thomas Dierckx 
      - Nicholas Haesen
-     - Egon Okerman
-     - Giel Dops
-     - Jorik De Waen
+     - Egon Okerman (12/20)
+     - Giel Dops (10/20)
+     - Jorik De Waen (11/20)
      - Tijl Jappens
      - Jari Peeperkorn
      - Haroen Viaene
      - Eline Vrijsen
-     - Nick Van den Broeck
+     - Nick Van den Broeck (18/20)
 *** De Student
     Dank bij voorbaat om de algemene voorwaarden en de licentie na te leven.
 ** Algemene voorwaarden
