@@ -4,7 +4,7 @@
 *** Medewerkers
 **** Ward Schodts
      Bedankt voor het idee, de fijne samenwerking en de oplossingen.
-**** Frederik Goovaerts (14/20)
+**** Frederik Goovaerts
      Bedankt voor de hulp in verband met de licentie en de oplossingen.
 **** Willem Van Onsem
      Bedankt voor de makefile.
