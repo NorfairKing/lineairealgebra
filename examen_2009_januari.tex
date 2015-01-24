@@ -113,15 +113,11 @@ Een afbeelding is lineair als ze een lineaire combinatie behoudt\footnote{Zie Le
 We hoeven dit echter niet formeel uit te rekenen. Het is makkelijk in te zien dat $A$ enkel lineair is wanneer de rechte waarrond gespiegeld wordt door de oorsprong gaat. $b$ moet dus nul zijn.
 
 \subsubsection*{b)}
-De matrix van $A$ is de volgende. Ik heb geen idee hoe u dit uit uw duim zou moeten zuigen. Ik heb het ook maar opgezocht.
-\[
-\frac{1}{a^2 + 1}
-\begin{pmatrix}
-1-a^2 & 2a\\
-2a & a^2-1
-\end{pmatrix}
-\]
-%TODO
+De transformatiematrix van een reflectie tegenover een rechte gaande door de oorsprong kan uitgerekend worden als een rotatie van deze rechte om gelijk te vallen met de x-as, een spiegeling om de x-as en een omgekeerde rotatie om terug naar de startpositie te gaan. Dit is echter niet nodig. We herinneren ons de definitie van eigenwaarden en eigenvectoren:
+\begin{center}
+Een getal $\lambda$ is een eigenwaarde van matrix $A$ met eigenvector $x$ a.s.a. $Ax = \lambda x$.
+\end{center}
+Een eigenvector wordt door de transformatie voorgesteld door $A$ afgebeeld op een veelvoud van zichzelf. Het is eenvoudig in te zien dat dit bij een spiegeling enkel gebeurt voor vectoren die zich bevinden op de spiegelas zelf, en wel met eigenwaarde 1.
 
 \subsection{Vraag 5}
 \[
