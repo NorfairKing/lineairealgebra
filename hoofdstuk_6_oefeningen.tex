@@ -207,14 +207,14 @@ Vooreerst normeren we $(1,2,0)$. Dit doen we door deze vector te delen door zijn
 \begin{align*}
 \beta_1 &= \frac{(1,2,0)}{\Vert(1,2,0)\Vert}
 = \left(\frac{\sqrt{5}}{5},\frac{2\sqrt{5}}{5},0\right) \\
-\beta_2' &= (1,0,1) - \left\langle (1,0,1),\beta_1 \right\rangle \beta_1
-= (1,0,1) - \left(\frac{\sqrt{5}}{5},0,0\right)\left(\frac{\sqrt{5}}{5},\frac{2\sqrt{5}}{5},0\right) \\
-&= (1,0,1) - (5,0,0) = (4,0,-1)
+\beta_2' &= (1,0,1) - \left\langle (1,0,1),\beta_1 \right\rangle \cdot \beta_1
+= (1,0,1) - \frac{1}{\sqrt{5}}\left(\frac{\sqrt{5}}{5},\frac{2\sqrt{5}}{5},0\right) \\
+&= (1,0,1) - (\frac{1}{{5}},\frac{2}{5},0) = (\frac{4}{5},\frac{-2}{5},-1)
 \end{align*}
 Nu kunnen we $\beta_2'$ ook normeren tot $\beta_2$.
 \[
-\beta_2 = \frac{(4,0,-1)}{\Vert (4,0,-1)\Vert}
-= \left( \frac{4\sqrt{17}}{17},0,\frac{-\sqrt{17}}{17} \right)
+\beta_2 = \frac{(\frac{4}{5},\frac{-2}{5},-1)}{\Vert (\frac{4}{5},\frac{-2}{5},-1)\Vert}
+= \left( \frac{4}{3\sqrt{5}},\frac{-2}{3\sqrt{5}},\frac{5}{3\sqrt{5}} \right)
 \]
 Vervolgens zoeken we $\beta_3'$ als volgt.
 \begin{align*}
@@ -223,45 +223,39 @@ Vervolgens zoeken we $\beta_3'$ als volgt.
 - \left\langle (2,3,1),\beta_1\right\rangle\beta_1
 - \left\langle (2,3,1),\beta_2\right\rangle\beta_2 \\
 &= (2,3,1)
-- \left(7\frac{\sqrt{5}}{5}\right)  \beta_1
-- \left(7\frac{\sqrt{17}}{17} \right)  \beta_2 \\
+- \left(\frac{8}{\sqrt{5}}\right)  \beta_1
+- \left(\frac{7}{3\sqrt{5}} \right)  \beta_2 \\
 &=(2,3,1)
-- \left(\frac{7}{5},\frac{14}{5},0\right)
-- \left( \frac{28}{17},0,\frac{-7}{17} \right) \\
-&= \left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)
+- \left(\frac{8}{5},\frac{16}{5},0\right)
+- \left( \frac{28}{45},\frac{-14}{45},\frac{-35}{45} \right) \\
+&= \left(\frac{-2}{9},\frac{1}{9},\frac{2}{9}\right)
 \end{align*}
 Tenslotte normeren we $\beta_3'$ nog tot $\beta_3$.
 \begin{align*}
 \beta_3
 &= 
-\frac{\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)}
-{\Vert\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)\Vert}
-= 
-\frac{\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)}
-{\frac{89^2}{85^2}+\frac{1}{5^2}+\frac{10^2}{17^2}}
+\frac{\left(\frac{-2}{9},\frac{1}{9},\frac{2}{9}\right)}
+{\Vert\left(\frac{-2}{9},\frac{1}{9},\frac{2}{9}\right)\Vert}
 =
-\frac{\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)}
-{\frac{7921}{7225}+\frac{1}{25}+\frac{100}{289}} \\
+\frac{\left(\frac{-2}{9},\frac{1}{9},\frac{2}{9}\right)}
+{\frac{1}{3}} \\
 &=
-\frac{85}{126}
-\left(-\frac{89}{85},\frac{1}{5},\frac{10}{17}\right)
+3
+\left(\frac{-2}{9},\frac{1}{9},\frac{2}{9}\right)
 =
-\frac{1}{126}
-\left(-89,17,50\right)
+\left(\frac{-2}{3},\frac{1}{3},\frac{2}{3}\right)
 \end{align*}
 We hebben nu $\alpha$ georthonormaliseerd tot $\beta$.
 \[
 \beta
 =
 \left\{
-\frac{1}{5}
-\left(\sqrt{5},2\sqrt{5},0\right)
+\left( \frac{\sqrt{5}}{5},\frac{2\sqrt{5}}{5},0 \right)
 ,
-\frac{1}{17}
-\left( 4\sqrt{17},0,-\sqrt{17} \right)
+\left( \frac{4}{3\sqrt{5}},\frac{-2}{ 3\sqrt{5} },\frac{5}{ 3\sqrt{5} } \right)
 ,
-\frac{1}{126}
-\left(-89,17,50\right)
+\left( \frac{-2}{3},\frac{1}{3},\frac{2}{3} \right)
+,
 \right\}
 \]
 
