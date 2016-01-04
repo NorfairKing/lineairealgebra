@@ -491,9 +491,9 @@ Let op de tweede vergelijking in bovenstaand stelsel. Dit stelsel kan enkel geld
 
 
 \subsection{Oefening 12}
-We kunnen $a$ in het voorschrift vervangen door $B$ waarbij $B$ de volgende matrix is.
+We kunnen de lineaire transformatie voorstellen als een matrix ten opzichte van de standaardbasis ($\alpha$) van $\mathbb{R}^2$ . We doen dit als volgt:
 \[
-B=
+T_{\alpha}^\alpha=
 \begin{pmatrix}
 a & 0 & \cdots & 0\\
 0 & a & \cdots & 0\\
@@ -501,13 +501,13 @@ a & 0 & \cdots & 0\\
 0 & 0 & \cdots & a
 \end{pmatrix}
 \]
-Nu ziet $T$ er als volgt uit ten opzichte van de standaardbasis. ($B$ is de matrix van $T$ ten opzichte van de standaardmatrix.)
+De transformatie wordt dus gegeven door:
 \[
-T: A \mapsto BA
+T: A \mapsto T_{\alpha}^\alpha A
 \]
-Zodat $B$ een orthogonale matrix zou zijn moeten volgende gelijkheden gelden.
+Opdat $T_{\alpha}^\alpha$ een orthogonale matrix zou zijn, moeten volgende gelijkheden gelden.
 \[
-B^{-1}=
+(T_{\alpha}^\alpha)^{-1}=
 \begin{pmatrix}
 \frac{1}{a} & 0 & \cdots & 0\\
 0 & \frac{1}{a} & \cdots & 0\\
@@ -521,9 +521,21 @@ a & 0 & \cdots & 0\\
 \vdots & \vdots& \ddots & \vdots\\
 0 & 0 & \cdots & a
 \end{pmatrix}
-= B^T
+= (T_{\alpha}^\alpha)^T
 \]
-Wanneer we dit oplossen vinden we dat $a$ gelijk moet zijn aan $1$.
+We vinden nu:
+\[
+\frac{1}{a} = a
+\]
+
+\[
+\Leftrightarrow a^2 = 1
+\]
+
+\[
+\Leftrightarrow a \in \{-1,1\}
+\]
+
 
 \subsection*{Oefening 13}
 Zij $A$ en $A'$ de matrices van respectievelijk $T$ en $T'$ ten opzichte van $\beta$.
