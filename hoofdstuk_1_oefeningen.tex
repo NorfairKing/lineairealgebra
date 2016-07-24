@@ -386,7 +386,7 @@ V = \{(-10\lambda,13\lambda,\lambda)\ |\ \lambda\in\mathbb{R}\}
 \[
 \begin{pmatrix}[ccc|c]
 1 &  2 &  -3 & 0\\
-0 & 1 &  \frac{-11}{7} & 0\\
+0 & 1 &  -\frac{11}{7} & 0\\
 0 &  0 &  0  & 0
 \end{pmatrix}
 \]
@@ -394,12 +394,12 @@ V = \{(-10\lambda,13\lambda,\lambda)\ |\ \lambda\in\mathbb{R}\}
 \[
 \begin{pmatrix}[ccc|c]
 1 &  0 &  \frac{1}{7} & 0\\
-0 & 1 &  \frac{-11}{7} & 0\\
+0 & 1 &  -\frac{11}{7} & 0\\
 0 &  0 &  0  & 0
 \end{pmatrix}
 \]
 \[
-V = \left\{\left( \frac{-1}{7}\lambda,\frac{11}{7}\lambda,\lambda \right)\ \middle|\  \lambda\in\mathbb{R} \right\}
+V = \left\{\left( -\frac{1}{7}\lambda,\frac{11}{7}\lambda,\lambda \right)\ \middle|\  \lambda\in\mathbb{R} \right\}
 \]
 \subsubsection*{d)}
 \[
@@ -510,6 +510,60 @@ V=\emptyset
 Antwoord:
 \[
 V=\{(1,2a,a,-3b,b)\ |\ a,b \in \mathbb{R} \}
+\]
+
+\subsection{Oefening 7 - tweede editie}
+\[
+\begin{pmatrix}[ccc|c]
+2 & -3 & 5 & 3\\
+-4 & 7 & 2 & 0\\
+0 & 2 & -1 & 2
+\end{pmatrix}
+\]
+\[ R_2 \longmapsto R_2 + 2\cdot R_1\]
+\[
+\begin{pmatrix}[ccc|c]
+2 & -3 & 5 & 3\\
+0 & 1 & 12 & 6\\
+0 & 2 & -1 & 2
+\end{pmatrix}
+\]
+\[ R_1 \longmapsto R_1 + 3\cdot R_2\]
+\[ R_3 \longmapsto R_3 - 2\cdot R_2\]
+\[
+\begin{pmatrix}[ccc|c]
+2 & 0 & 41 & 21\\
+0 & 1 & 12 & 6\\
+0 & 0 & -25 & -10
+\end{pmatrix}
+\]
+\[ R_3 \longmapsto -\frac{1}{25}\cdot R_3\]
+\[
+\begin{pmatrix}[ccc|c]
+2 & 0 & 41 & 21\\
+0 & 1 & 12 & 6\\
+0 & 0 & 1 & \frac{2}{5}
+\end{pmatrix}
+\]
+\[ R_1 \longmapsto R_1 - 41\cdot R_3\]
+\[ R_2 \longmapsto R_2 - 12\cdot R_3\]
+\[
+\begin{pmatrix}[ccc|c]
+2 & 0 & 0 & \frac{23}{5}\\
+0 & 1 & 0 & \frac{6}{5}\\
+0 & 0 & 1 & \frac{2}{5}
+\end{pmatrix}
+\]
+\[ R_1 \longmapsto \frac{1}{2}\cdot R_1\]
+\begin{pmatrix}[ccc|c]
+1 & 0 & 0 & \frac{23}{10}\\
+0 & 1 & 0 & \frac{6}{5}\\
+0 & 0 & 1 & \frac{2}{5}
+\end{pmatrix}
+\]
+Antwoord:
+\[
+V = \left\{\left( \frac{10}{23},\frac{5}{6},\frac{5}{2} \right)\right\}
 \]
 
 \subsection{Oefening 7}
