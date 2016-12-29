@@ -1405,6 +1405,29 @@ Een basis van $U$ is simpelweg $\beta_U = \{1,X,X^2\}$. Een basis van $W$ is $\b
 Dit ziet er juist uit.
 
 
+\subsection{Opdracht 3.52 p 118 (versie 2)}
+\label{3.52}
+Bewijs door contradictie.
+\begin{proof}
+Stel dat de determinant van de $(n\times n)$-matrix niet gelijk is aan $0$.
+Dan heeft de matrix
+\begin{itemize}
+\item
+ofwel een nul-kolom. 
+De nul-vector is dus een deel van de $n$ vectoren waarvoor we controleren of ze een basis vormen.
+Deze $n$ vectoren zijn dan lineair afhankelijk aangezien een willekeurige $\lambda \neq 0$ de nul-vector oplevert voor $\lambda (0, 0, \dots, 0)$.
+De vectoren kunnen dus onmogelijk een basis vormen voor $\mathbb{R}^n$.
+
+\item
+ofwel twee kolommen die aan elkaar gelijk zijn.
+Dit wil zeggen dat de $n$ vectoren waarvoor we controleren of ze een basis vormen twee dezelfde vectoren (zeg $v_1=v_2$) bevatten.
+De vectoren zijn dus lineair afhankelijk ($v_1=\lambda v_2$ met $\lambda = 1$).
+De vectoren kunnen dus onmogelijk een basis vormen voor $\mathbb{R}^n$ aangezien door het wegnemen van een van de twee gelijke vectoren, de verzameling nog slechts $n-1$ elementen bevat en een basis voor $\mathbb{R}^n$ exact $n$ elementen bevat.
+\end{itemize}
+De determinant van de $n\times n$-matrix moet dus verschillen van $0$ opdat de $n$ vectoren een basis van $\mathbb{R}^n$ kunnen vormen.
+\end{proof}
+
+
 %\subsection{Opdracht 3.55 p 116}
 %\label{3.55}
 %TODO
