@@ -1090,6 +1090,80 @@ a + b = 1
 \]
 
 die we met het uitdunningsalgoritme bekomen. Beide zijn strijdig, dus is de verzameling vrij. Roepen we weer Stelling 3.11 aan, weten we dat voor $\mathbb{R}^3$ een vrije verzameling met 3 elementen een basis is. Aangezien de verzameling een basis bevat van $\mathbb{R}^3$, wordt $\mathbb{R}^3$ ook voortgebracht door $K$ zelf.
+\subsection{Oefening 32 (tweede editie)}
+\subsubsection*{a)}
+\textbf{Fout}\\
+Beschouw $\alpha = \{(1,0),(0,1)\}$ en $\beta=\{(1,1)\}$ in $\mathbb{R}^2$. De unie $\alpha \cup \beta = \{(1,0),(0,1), (1,1)\}$. Deze verzameling is duidelijk niet vrij want je kan $(1,1)$ schrijven als de som, en dus een lineaire combinatie, van $(1,0)$ en $(1,1)$.
+\subsubsection*{b)}
+\textbf{Fout}\\
+Neem bijvoorbeeld in $\mathbb{R}^2$:\\
+$U = \mathbb{R}^2 = vct\{((1,0),(0,1))\}$ wat een deelruimte is van $\mathbb{R}^2$ en
+$W = \mathbb{R}^2  = vct\{((-1,0),(0,-1))\}$ wat eveneens een deelruimte is van $\mathbb{R}^2$. De doorsnede $U \cap W = \mathbb{R}^2 $. De doorsnede van de basissen is leeg: $\{((1,0),(0,1))\} \cap \{((-1,0),(0,-1))\} = \emptyset$
+
+\subsubsection*{b)}
+\textbf{Fout}\\
+Neem bijvoorbeeld in $\mathbb{R}^2$:\\
+$U = \mathbb{R}^2 = vct\{((1,0),(0,1))\}$ wat een deelruimte is van $\mathbb{R}^2$ en
+$W = \mathbb{R}^2  = vct\{((-1,0),(0,-1))\}$ wat eveneens een deelruimte is van $\mathbb{R}^2$. De doorsnede $U \cap W = \mathbb{R}^2 $. De doorsnede van de basissen is leeg: $\{((1,0),(0,1))\} \cap \{((-1,0),(0,-1))\} = \emptyset$
+
+\subsubsection*{c)}
+\textbf{Fout}\\
+Neem $U=vct\{(1,1)\}$. Beschouw $v=(0,1)$ en $w=(1,0)$ dan is $v+w = (1,1) \in U$ echter  $v \notin U$ en $u \notin U$.
+
+\subsubsection*{c)}
+\textbf{Fout}\\
+Neem $U=vct\{(1,1)\}$. Beschouw $v=(0,1)$ en $w=(1,0)$ dan is $v+w = (1,1) \in U$ echter  $v \notin U$ en $u \notin U$.
+
+\subsubsection*{d)}
+
+\subsubsection*{e)}
+\textbf{Juist}\\
+Vorm de basis $\{v_1,v_2,v_3\}$ met
+\begin{equation*}
+\begin{cases}
+v_1 = e_3 - e_2\\
+v_2  = e_3 - e_1\\
+v_3 = e_3\\
+\end{cases}
+\end{equation*}
+We zien duidelijk dat $v_i \notin W$ voor $i=1,2,3$.
+We moeten nu nog aantonen dat het een basis is en bijgevolg voortbrengend en vrij is.\\
+\newline
+\textbf{Voortbrengend}\\
+We moeten aantonen dat elke vector $v \in V$ kan geschreven worden als
+$$ v = \lambda_1 v_1 + \lambda_2  v_2 + \lambda_3  v_3$$ met $\lambda_1,\lambda_2,\lambda_3 \in \mathbb{R}$. Of als
+\begin{align*}
+v &= \lambda_1 (e_3 - e_2) + \lambda_2  (e_3 - e_1) + \lambda_3 e_3\\
+&= \lambda_1 e_3 - \lambda_1 e_2 + \lambda_2 e_3 - \lambda_2 e_1 + \lambda_3 e_3\\
+&= (-\lambda_2) e_1+ (- \lambda_1) e_2+ (\lambda_1 + \lambda_2 + \lambda_3)e_3
+\end{align*}
+Dit is een lineaire combinatie van de voortbrengende verzameling $\{e_1,e_2,e_3\}$. Elke vector geschreven ten opzichte van $\{v_1,v_2,v_3\}$ laat zich dus herleiden tot een lineaire combinatie van een voortbrengende verzameling waardoor we kunnen zeggen dat $\{v_1,v_2,v_3\}$ zelf ook voortbrengend is.\\
+\newline
+\textbf{Vrij}\\
+$\{v_1,v_2,v_3\}$ is vrij als en slechts als de enige oplossing van
+$$ 0 = \lambda_1 v_1 + \lambda_2  v_2 + \lambda_3  v_3$$
+de triviale oplossing is, namelijk $\lambda_1 = \lambda_2 = \lambda_3 = 0$.
+We kunnen dit herschrijven als:
+\begin{align*}
+0 &= \lambda_1 (e_3 - e_2) + \lambda_2  (e_3 - e_1) + \lambda_3 e_3\\
+&= \lambda_1 e_3 - \lambda_1 e_2 + \lambda_2 e_3 - \lambda_2 e_1 + \lambda_3 e_3\\
+&= (-\lambda_2) e_1+ (- \lambda_1) e_2+ (\lambda_1 + \lambda_2 + \lambda_3)e_3
+\end{align*}
+Aangezien $\{e_1,e_2,e_3\}$ een basis en dus vrij is, is de enige oplossing die met 
+\begin{equation*}
+\begin{cases}
+-\lambda_2 = 0\\
+-\lambda_1 = 0 \\
+\lambda_1 + \lambda_2 + \lambda_3 = 0
+\end{cases}
+\rightarrow
+\begin{cases}
+\lambda_2 = 0\\
+\lambda_1 = 0\\
+\lambda_3 = 0
+\end{cases}
+\end{equation*}
+Dus ${v_1,v_2,v_3}$ is vrij een voortbrengend en bijgevolg een basis.\qed
 
 \subsection{Oefening 32}
 We berekenen alle $a$ waarvoor de vier gegeven basisvectoren lineair afhankelijk zijn.
