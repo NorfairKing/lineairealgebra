@@ -448,7 +448,6 @@ T^{\beta}_{\beta} =
 \end{pmatrix}
 \]
 
-
 \subsection{Oefening 10}
 \textbf{VERBETERING}
 \[
@@ -548,6 +547,31 @@ T_\beta^\beta =
 1 & 1 & 5\\
 \end{pmatrix}
 \]
+
+
+\subsection{Oefening 12 a (9a)}
+Stel $v \in V$ dan kan $v$ geschreven worden als
+$$v = \lambda_1v_1 + \dots + \lambda_nv_n$$
+Als zo'n afbeelding $T$ bestaat, hebben we:
+
+\begin{align*}
+T(v) &= T( \lambda_1v_1 + \dots + \lambda_nv_n)\\
+&=T( \lambda_1v_1) + \dots + T( \lambda_nv_n)\\
+& = \lambda_1T(v_1) + \dots + \lambda_nT(v_n)\\
+&= \lambda_1w_1 + \dots +  \lambda_nv_n
+\end{align*}
+Dit is noodzakelijkerwijs uniek. Stel namelijk dat dit niet uniek is, dus dat er nog een afbeelding is $P:V \mapsto W$ zo dat, net zoals bij $T$ geldt dat $P(v_i) = w_i$ voor $i=1, \dots, n$.
+We vinden dat
+\begin{align*}
+P(v) &= P(\lambda_1v_1 + \dots + \lambda_nv_n)\\
+&=P( \lambda_1v_1) + \dots + P( \lambda_nv_n)\\
+& = \lambda_1P(v_1) + \dots + \lambda_nP(v_n)\\
+&= \lambda_1w_1 + \dots +  \lambda_nv_n\\
+& = \lambda_1T(v_1) + \dots + \lambda_nT(v_n)\\
+&= T( \lambda_1v_1 + \dots + \lambda_nv_n)\\
+& = T(v)
+\end{align*}
+Er is dus geen andere afbeelding waarvoor $v_i$ wordt afgebeeld op $w_i$, ze is dus noodzakelijkerwijs uniek. \qed
 
 \subsection{Oefening 14}
 \subsubsection*{a)}
