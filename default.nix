@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> {}
+{ pkgs ? import (import ./nixpkgs.nix) {}
 }:
 
 with pkgs;
