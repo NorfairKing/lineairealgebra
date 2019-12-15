@@ -1,6 +1,9 @@
+result*
 *.pdf
 *.swo
 *.swp
+*.fls
+*.fdb_latexmk
 *~
 *.*~*
 *.bak
